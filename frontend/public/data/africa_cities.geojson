@@ -1,0 +1,7519 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.248022,
+          30.051906
+        ]
+      },
+      "properties": {
+        "name": "Cairo",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 11893000,
+        "rank": 14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.389585,
+          6.445208
+        ]
+      },
+      "properties": {
+        "name": "Lagos",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 9466000,
+        "rank": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.313026,
+          -4.327778
+        ]
+      },
+      "properties": {
+        "name": "Kinshasa",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 7843000,
+        "rank": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.232481,
+          -8.83634
+        ]
+      },
+      "properties": {
+        "name": "Luanda",
+        "country": "Angola",
+        "iso_a2": "AO",
+        "population": 5172900,
+        "rank": 13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.532233,
+          15.590024
+        ]
+      },
+      "properties": {
+        "name": "Khartoum",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 4754000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.94805,
+          31.201965
+        ]
+      },
+      "properties": {
+        "name": "Alexandria",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 4165000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.041994,
+          5.321943
+        ]
+      },
+      "properties": {
+        "name": "Abidjan",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 3802000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.028064,
+          -26.168099
+        ]
+      },
+      "properties": {
+        "name": "Johannesburg",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 3435000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.048607,
+          36.765011
+        ]
+      },
+      "properties": {
+        "name": "Algiers",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 3354000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.433042,
+          -33.918065
+        ]
+      },
+      "properties": {
+        "name": "Cape Town",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 3215000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.618313,
+          33.601922
+        ]
+      },
+      "properties": {
+        "name": "Casablanca",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 3181000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.518092,
+          12.001923
+        ]
+      },
+      "properties": {
+        "name": "Kano",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 3140000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.698059,
+          9.035256
+        ]
+      },
+      "properties": {
+        "name": "Addis Ababa",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 3100000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.814711,
+          -1.281401
+        ]
+      },
+      "properties": {
+        "name": "Nairobi",
+        "country": "Kenya",
+        "iso_a2": "KE",
+        "population": 3010000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.327994,
+          -26.147635
+        ]
+      },
+      "properties": {
+        "name": "Benoni",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 2986000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.266396,
+          -6.798067
+        ]
+      },
+      "properties": {
+        "name": "Dar es Salaam",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 2930000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.978065,
+          -29.863067
+        ]
+      },
+      "properties": {
+        "name": "Durban",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 2729000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.190024,
+          30.009989
+        ]
+      },
+      "properties": {
+        "name": "Giza",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 2681863,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.928036,
+          7.381972
+        ]
+      },
+      "properties": {
+        "name": "Ibadan",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 2628000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.475076,
+          14.717778
+        ]
+      },
+      "properties": {
+        "name": "Dakar",
+        "country": "Senegal",
+        "iso_a2": "SN",
+        "population": 2604000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.179678,
+          36.802778
+        ]
+      },
+      "properties": {
+        "name": "Tunis",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 2412500,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.480022,
+          15.616681
+        ]
+      },
+      "properties": {
+        "name": "Omdurman",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 2395159,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.180012,
+          32.8925
+        ]
+      },
+      "properties": {
+        "name": "Tripoli",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 2189000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.218662,
+          5.551981
+        ]
+      },
+      "properties": {
+        "name": "Accra",
+        "country": "Ghana",
+        "iso_a2": "GH",
+        "population": 2121000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.708045,
+          4.062356
+        ]
+      },
+      "properties": {
+        "name": "Douala",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 1906000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.836408,
+          34.025307
+        ]
+      },
+      "properties": {
+        "name": "Rabat",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 1705000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.514678,
+          -18.914692
+        ]
+      },
+      "properties": {
+        "name": "Antananarivo",
+        "country": "Madagascar",
+        "iso_a2": "MG",
+        "population": 1697000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.63196,
+          6.691937
+        ]
+      },
+      "properties": {
+        "name": "Kumasi",
+        "country": "Ghana",
+        "iso_a2": "GH",
+        "population": 1646000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.514705,
+          3.868647
+        ]
+      },
+      "properties": {
+        "name": "Yaound\u00e9",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 1611000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.531382,
+          9.085279
+        ]
+      },
+      "properties": {
+        "name": "Abuja",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 1576000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.042764,
+          -17.815844
+        ]
+      },
+      "properties": {
+        "name": "Harare",
+        "country": "Zimbabwe",
+        "iso_a2": "ZW",
+        "population": 1572000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.001985,
+          12.651961
+        ]
+      },
+      "properties": {
+        "name": "Bamako",
+        "country": "Mali",
+        "iso_a2": "ML",
+        "population": 1494000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.682181,
+          9.533469
+        ]
+      },
+      "properties": {
+        "name": "Conakry",
+        "country": "Guinea",
+        "iso_a2": "GN",
+        "population": 1494000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.220811,
+          6.133883
+        ]
+      },
+      "properties": {
+        "name": "Lom\u00e9",
+        "country": "Togo",
+        "iso_a2": "TG",
+        "population": 1452000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.587217,
+          -25.953332
+        ]
+      },
+      "properties": {
+        "name": "Maputo",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 1446000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.438055,
+          10.521961
+        ]
+      },
+      "properties": {
+        "name": "Kaduna",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 1442000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.581378,
+          0.318605
+        ]
+      },
+      "properties": {
+        "name": "Kampala",
+        "country": "Uganda",
+        "iso_a2": "UG",
+        "population": 1420000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.282744,
+          -4.25724
+        ]
+      },
+      "properties": {
+        "name": "Brazzaville",
+        "country": "Congo (Brazzaville)",
+        "iso_a2": "CG",
+        "population": 1355000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.478072,
+          -11.678079
+        ]
+      },
+      "properties": {
+        "name": "Lubumbashi",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 1352000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.227483,
+          -25.704975
+        ]
+      },
+      "properties": {
+        "name": "Pretoria",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 1338000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.281382,
+          -15.414698
+        ]
+      },
+      "properties": {
+        "name": "Lusaka",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 1328000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.59805,
+          -6.148081
+        ]
+      },
+      "properties": {
+        "name": "Mbuji-Mayi",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 1295000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.618062,
+          6.342423
+        ]
+      },
+      "properties": {
+        "name": "Benin City",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 1190000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.064777,
+          32.118679
+        ]
+      },
+      "properties": {
+        "name": "Banghazi",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 1180000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.52667,
+          12.372262
+        ]
+      },
+      "properties": {
+        "name": "Ouagadougou",
+        "country": "Burkina Faso",
+        "iso_a2": "BF",
+        "population": 1149000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.364732,
+          2.068627
+        ]
+      },
+      "properties": {
+        "name": "Mogadishu",
+        "country": "Somalia",
+        "iso_a2": "SO",
+        "population": 1100000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.758064,
+          -12.74804
+        ]
+      },
+      "properties": {
+        "name": "Huambo",
+        "country": "Angola",
+        "iso_a2": "AO",
+        "population": 1100000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.76,
+          7.530431
+        ]
+      },
+      "properties": {
+        "name": "Ikare",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 1099931,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.958042,
+          -26.647656
+        ]
+      },
+      "properties": {
+        "name": "Vereeniging",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 1074000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.79966,
+          6.314582
+        ]
+      },
+      "properties": {
+        "name": "Monrovia",
+        "country": "Liberia",
+        "iso_a2": "LR",
+        "population": 1041000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.598083,
+          -33.968088
+        ]
+      },
+      "properties": {
+        "name": "Port Elizabeth",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 1021000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.008055,
+          4.811948
+        ]
+      },
+      "properties": {
+        "name": "Port Harcourt",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 1020000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.002323,
+          34.056546
+        ]
+      },
+      "properties": {
+        "name": "Fez",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 1002000,
+        "rank": 12
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.047203,
+          12.115042
+        ]
+      },
+      "properties": {
+        "name": "N'Djamena",
+        "country": "Chad",
+        "iso_a2": "TD",
+        "population": 989000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.238043,
+          8.131952
+        ]
+      },
+      "properties": {
+        "name": "Ogbomosho",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 951000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.148002,
+          11.595015
+        ]
+      },
+      "properties": {
+        "name": "Djibouti",
+        "country": "Djibouti",
+        "iso_a2": "DJ",
+        "population": 923000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.11471,
+          13.518652
+        ]
+      },
+      "properties": {
+        "name": "Niamey",
+        "country": "Niger",
+        "iso_a2": "NE",
+        "population": 915000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.34998,
+          5.100398
+        ]
+      },
+      "properties": {
+        "name": "Aba",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 897560,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.158067,
+          11.851906
+        ]
+      },
+      "properties": {
+        "name": "Maiduguri",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 896000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.708064,
+          11.081927
+        ]
+      },
+      "properties": {
+        "name": "Zaria",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 889000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.687972,
+          -4.03808
+        ]
+      },
+      "properties": {
+        "name": "Mombasa",
+        "country": "Kenya",
+        "iso_a2": "KE",
+        "population": 882000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.001933,
+          31.631939
+        ]
+      },
+      "properties": {
+        "name": "Marrakesh",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 872000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.058586,
+          -1.951644
+        ]
+      },
+      "properties": {
+        "name": "Kigali",
+        "country": "Rwanda",
+        "iso_a2": "RW",
+        "population": 860000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.558288,
+          4.366644
+        ]
+      },
+      "properties": {
+        "name": "Bangui",
+        "country": "Central African Republic",
+        "iso_a2": "CF",
+        "population": 831925,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.76,
+          5.519959
+        ]
+      },
+      "properties": {
+        "name": "Warri",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 830106,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.236162,
+          8.471957
+        ]
+      },
+      "properties": {
+        "name": "Freetown",
+        "country": "Sierra Leone",
+        "iso_a2": "SL",
+        "population": 827000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.620044,
+          30.439988
+        ]
+      },
+      "properties": {
+        "name": "Agadir",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 825467,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.890041,
+          9.929974
+        ]
+      },
+      "properties": {
+        "name": "Jos",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 816824,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.621919,
+          35.711948
+        ]
+      },
+      "properties": {
+        "name": "Oran",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 798000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.54805,
+          8.491956
+        ]
+      },
+      "properties": {
+        "name": "Ilorin",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 771000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.398072,
+          -5.888096
+        ]
+      },
+      "properties": {
+        "name": "Kananga",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 765000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.518045,
+          6.401954
+        ]
+      },
+      "properties": {
+        "name": "Cotonou",
+        "country": "Benin",
+        "iso_a2": "BJ",
+        "population": 762000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.390021,
+          -29.610042
+        ]
+      },
+      "properties": {
+        "name": "Pietermaritzburg",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 750845,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.832704,
+          35.747287
+        ]
+      },
+      "properties": {
+        "name": "Tangier",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 750060,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.97534,
+          18.086427
+        ]
+      },
+      "properties": {
+        "name": "Nouakchott",
+        "country": "Mauritania",
+        "iso_a2": "MR",
+        "population": 742144,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.929982,
+          7.850437
+        ]
+      },
+      "properties": {
+        "name": "Oyo",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 736072,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.240031,
+          13.060016
+        ]
+      },
+      "properties": {
+        "name": "Sokoto",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 732178,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.339984,
+          -3.339604
+        ]
+      },
+      "properties": {
+        "name": "Moshi",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 721018,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.580002,
+          -20.169998
+        ]
+      },
+      "properties": {
+        "name": "Bulawayo",
+        "country": "Zimbabwe",
+        "iso_a2": "ZW",
+        "population": 699385,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.559981,
+          33.900423
+        ]
+      },
+      "properties": {
+        "name": "Meknes",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 697628,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.499997,
+          6.450031
+        ]
+      },
+      "properties": {
+        "name": "Enugu",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 688862,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.880039,
+          -4.770007
+        ]
+      },
+      "properties": {
+        "name": "Pointe-Noire",
+        "country": "Congo (Brazzaville)",
+        "iso_a2": "CG",
+        "population": 659084,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.259984,
+          30.590341
+        ]
+      },
+      "properties": {
+        "name": "Isma\u00eflia",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 656135,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.783302,
+          -13.983295
+        ]
+      },
+      "properties": {
+        "name": "Lilongwe",
+        "country": "Malawi",
+        "iso_a2": "MW",
+        "population": 646750,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.850002,
+          -5.030043
+        ]
+      },
+      "properties": {
+        "name": "Kikwit",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 637736,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.290008,
+          31.25999
+        ]
+      },
+      "properties": {
+        "name": "Bur Said",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 623864,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.933324,
+          15.333339
+        ]
+      },
+      "properties": {
+        "name": "Asmara",
+        "country": "Eritrea",
+        "iso_a2": "ER",
+        "population": 620802,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.650038,
+          25.700019
+        ]
+      },
+      "properties": {
+        "name": "Luxor",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 609248,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.599948,
+          36.359989
+        ]
+      },
+      "properties": {
+        "name": "Constantine",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 605179,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.380038,
+          31.050442
+        ]
+      },
+      "properties": {
+        "name": "El Mansura",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 600000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.700018,
+          26.550407
+        ]
+      },
+      "properties": {
+        "name": "Sohag",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 600000,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.499994,
+          -20.166639
+        ]
+      },
+      "properties": {
+        "name": "Port Louis",
+        "country": "Mauritius",
+        "iso_a2": "MU",
+        "population": 595491,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.350018,
+          7.160427
+        ]
+      },
+      "properties": {
+        "name": "Abeokuta",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 593100,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.989947,
+          -15.790007
+        ]
+      },
+      "properties": {
+        "name": "Blantyre",
+        "country": "Malawi",
+        "iso_a2": "MW",
+        "population": 584877,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.22,
+          0.520006
+        ]
+      },
+      "properties": {
+        "name": "Kisangani",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 578470,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.457965,
+          0.385389
+        ]
+      },
+      "properties": {
+        "name": "Libreville",
+        "country": "Gabon",
+        "iso_a2": "GA",
+        "population": 578156,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.030014,
+          7.689982
+        ]
+      },
+      "properties": {
+        "name": "Bouak\u00e9",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 567481,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.849999,
+          5.007996
+        ]
+      },
+      "properties": {
+        "name": "Uyo",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 554906,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.579997,
+          34.2704
+        ]
+      },
+      "properties": {
+        "name": "Kenitra",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 551786,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.460024,
+          -25.969592
+        ]
+      },
+      "properties": {
+        "name": "Matola",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 543907,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.870006,
+          -19.820045
+        ]
+      },
+      "properties": {
+        "name": "Beira",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 530604,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.829998,
+          36.420347
+        ]
+      },
+      "properties": {
+        "name": "Blida",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 511348,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.549941,
+          30.004976
+        ]
+      },
+      "properties": {
+        "name": "Suez",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 508335,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.759981,
+          36.920006
+        ]
+      },
+      "properties": {
+        "name": "Annaba",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 503524,
+        "rank": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.069997,
+          6.210434
+        ]
+      },
+      "properties": {
+        "name": "Awka",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 500000,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.470016,
+          31.050442
+        ]
+      },
+      "properties": {
+        "name": "Damanh\u00fbr",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 500000,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.749999,
+          28.090003
+        ]
+      },
+      "properties": {
+        "name": "El Minya",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 500000,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.930021,
+          -2.520015
+        ]
+      },
+      "properties": {
+        "name": "Mwanza",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 493944,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.216426,
+          19.615791
+        ]
+      },
+      "properties": {
+        "name": "Port Sudan",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 489725,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.09003,
+          29.080381
+        ]
+      },
+      "properties": {
+        "name": "Beni Suef",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 489450,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.560021,
+          7.480434
+        ]
+      },
+      "properties": {
+        "name": "Ife",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 482365,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.269996,
+          8.549981
+        ]
+      },
+      "properties": {
+        "name": "Nazret",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 476892,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.229913,
+          -29.119994
+        ]
+      },
+      "properties": {
+        "name": "Bloemfontein",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 463064,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.330024,
+          4.960407
+        ]
+      },
+      "properties": {
+        "name": "Calabar",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 461796,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.720007,
+          34.750035
+        ]
+      },
+      "properties": {
+        "name": "Sfax",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 453050,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.319961,
+          36.170414
+        ]
+      },
+      "properties": {
+        "name": "Chlef",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 449167,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.219981,
+          7.630373
+        ]
+      },
+      "properties": {
+        "name": "Ado Ekiti",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 446749,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.150016,
+          5.959984
+        ]
+      },
+      "properties": {
+        "name": "Bamenda",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 445299,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.390025,
+          9.300012
+        ]
+      },
+      "properties": {
+        "name": "Garoua",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 436899,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.840038,
+          -2.50999
+        ]
+      },
+      "properties": {
+        "name": "Bukavu",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 436779,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.780009,
+          -10.970042
+        ]
+      },
+      "properties": {
+        "name": "Likasi",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 434408,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.599991,
+          12.990407
+        ]
+      },
+      "properties": {
+        "name": "Katsina",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 432149,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.729986,
+          -27.969987
+        ]
+      },
+      "properties": {
+        "name": "Welkom",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 431944,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.749993,
+          25.279993
+        ]
+      },
+      "properties": {
+        "name": "Arak",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 423251,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.199982,
+          7.250396
+        ]
+      },
+      "properties": {
+        "name": "Akure",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 420594,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.179947,
+          27.18998
+        ]
+      },
+      "properties": {
+        "name": "Asyut",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 420585,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.47244,
+          -10.716724
+        ]
+      },
+      "properties": {
+        "name": "Kolwezi",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 418000,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.909972,
+          34.690013
+        ]
+      },
+      "properties": {
+        "name": "Oujda",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 409391,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.560021,
+          7.770364
+        ]
+      },
+      "properties": {
+        "name": "Oshogbo",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 408245,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.000009,
+          30.790432
+        ]
+      },
+      "properties": {
+        "name": "Tanta",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 404901,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.220024,
+          -12.810033
+        ]
+      },
+      "properties": {
+        "name": "Kitwe",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 404901,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.200026,
+          -6.16
+        ]
+      },
+      "properties": {
+        "name": "Zanzibar",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 403658,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.598361,
+          11.865024
+        ]
+      },
+      "properties": {
+        "name": "Bissau",
+        "country": "Guinea Bissau",
+        "iso_a2": "GW",
+        "population": 403339,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.169997,
+          1.09041
+        ]
+      },
+      "properties": {
+        "name": "Mbale",
+        "country": "Uganda",
+        "iso_a2": "UG",
+        "population": 402368,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.390016,
+          15.459972
+        ]
+      },
+      "properties": {
+        "name": "Kassala",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 401477,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.650024,
+          -12.999944
+        ]
+      },
+      "properties": {
+        "name": "Ndola",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 396339,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.750013,
+          -0.090035
+        ]
+      },
+      "properties": {
+        "name": "Kisumu",
+        "country": "Kenya",
+        "iso_a2": "KE",
+        "population": 395615,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.216698,
+          13.18329
+        ]
+      },
+      "properties": {
+        "name": "Al-Ubayyid",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 393311,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.889995,
+          12.059973
+        ]
+      },
+      "properties": {
+        "name": "Nyala",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 392373,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.293043,
+          -15.136041
+        ]
+      },
+      "properties": {
+        "name": "Nampula",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 388526,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.099998,
+          32.379973
+        ]
+      },
+      "properties": {
+        "name": "Misrata",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 386120,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.070016,
+          36.760378
+        ]
+      },
+      "properties": {
+        "name": "B\u00e9ja\u00efa",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 384937,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.069984,
+          -0.279997
+        ]
+      },
+      "properties": {
+        "name": "Nakuru",
+        "country": "Kenya",
+        "iso_a2": "KE",
+        "population": 364727,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.483273,
+          -29.316674
+        ]
+      },
+      "properties": {
+        "name": "Maseru",
+        "country": "Lesotho",
+        "iso_a2": "LS",
+        "population": 361324,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.839985,
+          9.40042
+        ]
+      },
+      "properties": {
+        "name": "Tamale",
+        "country": "Ghana",
+        "iso_a2": "GH",
+        "population": 360579,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.289981,
+          11.179975
+        ]
+      },
+      "properties": {
+        "name": "Bobo Dioulasso",
+        "country": "Burkina Faso",
+        "iso_a2": "BF",
+        "population": 360106,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.239989,
+          32.319977
+        ]
+      },
+      "properties": {
+        "name": "Safi",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 353476,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.269981,
+          0.520006
+        ]
+      },
+      "properties": {
+        "name": "Eldoret",
+        "country": "Kenya",
+        "iso_a2": "KE",
+        "population": 353381,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.980011,
+          -25.469622
+        ]
+      },
+      "properties": {
+        "name": "Mbombela",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 348138,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.660011,
+          13.169983
+        ]
+      },
+      "properties": {
+        "name": "Kosti",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 345068,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.669999,
+          -3.360016
+        ]
+      },
+      "properties": {
+        "name": "Arusha",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 341136,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.100003,
+          -18.000001
+        ]
+      },
+      "properties": {
+        "name": "Chitungwiza",
+        "country": "Zimbabwe",
+        "iso_a2": "ZW",
+        "population": 340360,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.87002,
+          -32.970043
+        ]
+      },
+      "properties": {
+        "name": "East London",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 338627,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.450026,
+          0.490447
+        ]
+      },
+      "properties": {
+        "name": "Beni",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 332903,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.520011,
+          14.39996
+        ]
+      },
+      "properties": {
+        "name": "Medani",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 332714,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.360006,
+          -3.376087
+        ]
+      },
+      "properties": {
+        "name": "Bujumbura",
+        "country": "Burundi",
+        "iso_a2": "BI",
+        "population": 331700,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.625026,
+          35.829995
+        ]
+      },
+      "properties": {
+        "name": "Sousse",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 327004,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.324696,
+          10.595566
+        ]
+      },
+      "properties": {
+        "name": "Maroua",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 319941,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.839967,
+          29.310031
+        ]
+      },
+      "properties": {
+        "name": "El Faiyum",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 316772,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.840009,
+          10.310364
+        ]
+      },
+      "properties": {
+        "name": "Bauchi",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 316149,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.898912,
+          24.087508
+        ]
+      },
+      "properties": {
+        "name": "Aswan",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 313442,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.680004,
+          5.890427
+        ]
+      },
+      "properties": {
+        "name": "Sapele",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 309162,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.033294,
+          -19.850017
+        ]
+      },
+      "properties": {
+        "name": "Antsirabe",
+        "country": "Madagascar",
+        "iso_a2": "MG",
+        "population": 307921,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.909986,
+          35.020381
+        ]
+      },
+      "properties": {
+        "name": "Ksar El Kebir",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 306600,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.95002,
+          24.469991
+        ]
+      },
+      "properties": {
+        "name": "Kom Ombo",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 303962,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.720008,
+          26.150457
+        ]
+      },
+      "properties": {
+        "name": "Qena",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 302027,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.199927,
+          0.440424
+        ]
+      },
+      "properties": {
+        "name": "Jinja",
+        "country": "Uganda",
+        "iso_a2": "UG",
+        "population": 301619,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.616626,
+          6.483311
+        ]
+      },
+      "properties": {
+        "name": "Porto-Novo",
+        "country": "Benin",
+        "iso_a2": "BJ",
+        "population": 300000,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.516634,
+          -20.31619
+        ]
+      },
+      "properties": {
+        "name": "Curepipe",
+        "country": "Mauritius",
+        "iso_a2": "MU",
+        "population": 299975,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.820011,
+          31.420394
+        ]
+      },
+      "properties": {
+        "name": "Dumyat",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 299459,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.930011,
+          14.8104
+        ]
+      },
+      "properties": {
+        "name": "Thi\u00e8s",
+        "country": "Senegal",
+        "iso_a2": "SN",
+        "population": 293001,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.530011,
+          7.729979
+        ]
+      },
+      "properties": {
+        "name": "Makurdi",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 292645,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.550029,
+          9.619993
+        ]
+      },
+      "properties": {
+        "name": "Minna",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 291905,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.430042,
+          -8.890014
+        ]
+      },
+      "properties": {
+        "name": "Mbeya",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 291649,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.409948,
+          5.490426
+        ]
+      },
+      "properties": {
+        "name": "Bafoussam",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 290768,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.280011,
+          0.130004
+        ]
+      },
+      "properties": {
+        "name": "Butembo",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 286403,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.704015,
+          4.943276
+        ]
+      },
+      "properties": {
+        "name": "Sekondi",
+        "country": "Ghana",
+        "iso_a2": "GH",
+        "population": 286248,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.51666,
+          30.583332
+        ]
+      },
+      "properties": {
+        "name": "Zagazig",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 285097,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.17,
+          35.569959
+        ]
+      },
+      "properties": {
+        "name": "Batna",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 280798,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.10001,
+          14.149975
+        ]
+      },
+      "properties": {
+        "name": "Kaolack",
+        "country": "Senegal",
+        "iso_a2": "SN",
+        "population": 277812,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.589984,
+          7.200399
+        ]
+      },
+      "properties": {
+        "name": "Owo",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 276574,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.260012,
+          0.040035
+        ]
+      },
+      "properties": {
+        "name": "Mbandaka",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 274996,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.39997,
+          36.180026
+        ]
+      },
+      "properties": {
+        "name": "S\u00e9tif",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 274744,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.169954,
+          10.290443
+        ]
+      },
+      "properties": {
+        "name": "Gombe",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 270366,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.480041,
+          -22.950035
+        ]
+      },
+      "properties": {
+        "name": "Thohoyandou",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 269707,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.083546,
+          -22.570006
+        ]
+      },
+      "properties": {
+        "name": "Windhoek",
+        "country": "Namibia",
+        "iso_a2": "NA",
+        "population": 268132,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.770039,
+          -6.409959
+        ]
+      },
+      "properties": {
+        "name": "Tshikapa",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 267462,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.486003,
+          5.532003
+        ]
+      },
+      "properties": {
+        "name": "Umuahia",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 264662,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.960026,
+          32.079992
+        ]
+      },
+      "properties": {
+        "name": "Tubruq",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 263527,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.909984,
+          -2.963916
+        ]
+      },
+      "properties": {
+        "name": "Kindu",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 262914,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.816328,
+          14.885976
+        ]
+      },
+      "properties": {
+        "name": "Mendefera",
+        "country": "Eritrea",
+        "iso_a2": "ER",
+        "population": 257390,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.840004,
+          7.090406
+        ]
+      },
+      "properties": {
+        "name": "Ondo",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 257005,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.470039,
+          -19.120036
+        ]
+      },
+      "properties": {
+        "name": "Chimoio",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 256936,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.966005,
+          11.748996
+        ]
+      },
+      "properties": {
+        "name": "Damaturu",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 255895,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.450005,
+          6.889979
+        ]
+      },
+      "properties": {
+        "name": "Daloa",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 255168,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.350018,
+          13.629981
+        ]
+      },
+      "properties": {
+        "name": "El Fasher",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 252609,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.860018,
+          9.589995
+        ]
+      },
+      "properties": {
+        "name": "Dire Dawa",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 252279,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.660016,
+          -6.820011
+        ]
+      },
+      "properties": {
+        "name": "Morogoro",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 250902,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.179993,
+          7.629959
+        ]
+      },
+      "properties": {
+        "name": "Iwo",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 250443,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.900015,
+          3.02037
+        ]
+      },
+      "properties": {
+        "name": "Arua",
+        "country": "Uganda",
+        "iso_a2": "UG",
+        "population": 250000,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.650038,
+          -18.970019
+        ]
+      },
+      "properties": {
+        "name": "Mutare",
+        "country": "Zimbabwe",
+        "iso_a2": "ZW",
+        "population": 249365,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.450021,
+          -5.81661
+        ]
+      },
+      "properties": {
+        "name": "Matadi",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 245862,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.430037,
+          -26.269574
+        ]
+      },
+      "properties": {
+        "name": "Springs",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 236083,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.518324,
+          -0.356633
+        ]
+      },
+      "properties": {
+        "name": "Kismaayo",
+        "country": "Somalia",
+        "iso_a2": "SO",
+        "population": 234852,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.096404,
+          13.491643
+        ]
+      },
+      "properties": {
+        "name": "Niamey",
+        "country": "Niger",
+        "iso_a2": "NE",
+        "population": 232555,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.579987,
+          7.320366
+        ]
+      },
+      "properties": {
+        "name": "Ngaound\u00e9r\u00e9",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 231357,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.983317,
+          13.799996
+        ]
+      },
+      "properties": {
+        "name": "Zinder",
+        "country": "Niger",
+        "iso_a2": "NE",
+        "population": 230358,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.320008,
+          34.890414
+        ]
+      },
+      "properties": {
+        "name": "Tlimcen",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 229777,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.390016,
+          -33.759607
+        ]
+      },
+      "properties": {
+        "name": "Uitenhage",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 228912,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.449972,
+          31.940413
+        ]
+      },
+      "properties": {
+        "name": "Er Rachidia",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 228489,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.659996,
+          12.170406
+        ]
+      },
+      "properties": {
+        "name": "Gusau",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 226857,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.68,
+          11.320406
+        ]
+      },
+      "properties": {
+        "name": "Sikasso",
+        "country": "Mali",
+        "iso_a2": "ML",
+        "population": 225753,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.270032,
+          10.270341
+        ]
+      },
+      "properties": {
+        "name": "Mubi",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 225705,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.740035,
+          -2.349587
+        ]
+      },
+      "properties": {
+        "name": "Nyanza",
+        "country": "Rwanda",
+        "iso_a2": "RW",
+        "population": 225209,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.899982,
+          36.880422
+        ]
+      },
+      "properties": {
+        "name": "Skikda",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 225181,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.090007,
+          -5.070041
+        ]
+      },
+      "properties": {
+        "name": "Tanga",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 224876,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.715024,
+          -14.518611
+        ]
+      },
+      "properties": {
+        "name": "Nacala",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 224795,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.151001,
+          8.553996
+        ]
+      },
+      "properties": {
+        "name": "Gueckedou",
+        "country": "Guinea",
+        "iso_a2": "GN",
+        "population": 221715,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.510011,
+          16.01999
+        ]
+      },
+      "properties": {
+        "name": "Saint-Louis",
+        "country": "Mauritania",
+        "iso_a2": "MR",
+        "population": 220792,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.450026,
+          -23.890029
+        ]
+      },
+      "properties": {
+        "name": "Polokwane",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 220045,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.099993,
+          33.900423
+        ]
+      },
+      "properties": {
+        "name": "Gab\u00e8s",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 219517,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.750004,
+          -6.183306
+        ]
+      },
+      "properties": {
+        "name": "Dodoma",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 218269,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.679981,
+          4.58043
+        ]
+      },
+      "properties": {
+        "name": "Bertoua",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 218111,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.839967,
+          27.730412
+        ]
+      },
+      "properties": {
+        "name": "Mallawi",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 217365,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.026004,
+          5.492997
+        ]
+      },
+      "properties": {
+        "name": "Owerri",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 215038,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.190023,
+          4.030386
+        ]
+      },
+      "properties": {
+        "name": "Limbe",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 212474,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.639967,
+          4.770418
+        ]
+      },
+      "properties": {
+        "name": "San-Pedro",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 210273,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.404984,
+          -18.181799
+        ]
+      },
+      "properties": {
+        "name": "Toamasina",
+        "country": "Madagascar",
+        "iso_a2": "MG",
+        "population": 210226,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.920009,
+          6.820448
+        ]
+      },
+      "properties": {
+        "name": "Ijebu Ode",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 209175,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.010015,
+          5.640365
+        ]
+      },
+      "properties": {
+        "name": "Tema",
+        "country": "Ghana",
+        "iso_a2": "GH",
+        "population": 209000,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.639972,
+          35.190344
+        ]
+      },
+      "properties": {
+        "name": "Sidi bel Abbes",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 208604,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.911948,
+          -24.646314
+        ]
+      },
+      "properties": {
+        "name": "Gaborone",
+        "country": "Botswana",
+        "iso_a2": "BW",
+        "population": 208411,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.54123,
+          -12.370009
+        ]
+      },
+      "properties": {
+        "name": "Lobito",
+        "country": "Angola",
+        "iso_a2": "AO",
+        "population": 207932,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.383289,
+          11.600053
+        ]
+      },
+      "properties": {
+        "name": "Bahir Dar",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 206748,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.275503,
+          6.818381
+        ]
+      },
+      "properties": {
+        "name": "Yamoussoukro",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 206499,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.200016,
+          -5.933296
+        ]
+      },
+      "properties": {
+        "name": "Kalemie",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 206257,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.119992,
+          3.800477
+        ]
+      },
+      "properties": {
+        "name": "Ed\u00e9a",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 203149,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.680042,
+          9.700427
+        ]
+      },
+      "properties": {
+        "name": "Djougou",
+        "country": "Benin",
+        "iso_a2": "BJ",
+        "population": 202810,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.730027,
+          34.859977
+        ]
+      },
+      "properties": {
+        "name": "Biskra",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 202103,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.259998,
+          32.660421
+        ]
+      },
+      "properties": {
+        "name": "Al Khums",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 201943,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38,
+          14.039982
+        ]
+      },
+      "properties": {
+        "name": "Gedaref",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 201282,
+        "rank": 10
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.179947,
+          -10.199598
+        ]
+      },
+      "properties": {
+        "name": "Kasama",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 200000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.250007,
+          16.617059
+        ]
+      },
+      "properties": {
+        "name": "Nema",
+        "country": "Mauritania",
+        "iso_a2": "MR",
+        "population": 200000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.719988,
+          32.760415
+        ]
+      },
+      "properties": {
+        "name": "Az Zawiyah",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 200000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.019972,
+          34.220378
+        ]
+      },
+      "properties": {
+        "name": "Taza",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 199633,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.390021,
+          31.460391
+        ]
+      },
+      "properties": {
+        "name": "Rashid",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 199509,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.769997,
+          3.260019
+        ]
+      },
+      "properties": {
+        "name": "Gemena",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 198056,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.860013,
+          -5.249616
+        ]
+      },
+      "properties": {
+        "name": "Mbanza-Ngungu",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 197545,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.65995,
+          13.280364
+        ]
+      },
+      "properties": {
+        "name": "Brikama",
+        "country": "The Gambia",
+        "iso_a2": "GM",
+        "population": 195136,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.387164,
+          10.285947
+        ]
+      },
+      "properties": {
+        "name": "Bongor",
+        "country": "Chad",
+        "iso_a2": "TD",
+        "population": 193941,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.289998,
+          12.589993
+        ]
+      },
+      "properties": {
+        "name": "Ziguinchor",
+        "country": "Senegal",
+        "iso_a2": "SN",
+        "population": 191716,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.440006,
+          -7.0
+        ]
+      },
+      "properties": {
+        "name": "Mwene-Ditu",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 189177,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.449984,
+          -14.440011
+        ]
+      },
+      "properties": {
+        "name": "Kabwe",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 188979,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.889986,
+          -17.880008
+        ]
+      },
+      "properties": {
+        "name": "Quelimane",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 188964,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.620036,
+          9.34001
+        ]
+      },
+      "properties": {
+        "name": "Parakou",
+        "country": "Benin",
+        "iso_a2": "BJ",
+        "population": 188853,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.089984,
+          35.940376
+        ]
+      },
+      "properties": {
+        "name": "Mostaganem",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 188354,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.200006,
+          27.149982
+        ]
+      },
+      "properties": {
+        "name": "Laayoune",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 188084,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.960021,
+          -33.699559
+        ]
+      },
+      "properties": {
+        "name": "Paarl",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 187865,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.420017,
+          16.680492
+        ]
+      },
+      "properties": {
+        "name": "Shendi",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 186611,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.349986,
+          11.770404
+        ]
+      },
+      "properties": {
+        "name": "Ad Damaz\u012bn",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 186051,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.750558,
+          0.072178
+        ]
+      },
+      "properties": {
+        "name": "Jamaame",
+        "country": "Somalia",
+        "iso_a2": "SO",
+        "population": 185270,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.680029,
+          4.090382
+        ]
+      },
+      "properties": {
+        "name": "Yei",
+        "country": "South Sudan",
+        "iso_a2": "SS",
+        "population": 185000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.319961,
+          35.380436
+        ]
+      },
+      "properties": {
+        "name": "Tiarat",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 184195,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.083265,
+          -21.433331
+        ]
+      },
+      "properties": {
+        "name": "Fianarantsoa",
+        "country": "Madagascar",
+        "iso_a2": "MG",
+        "population": 184184,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.630025,
+          11.129978
+        ]
+      },
+      "properties": {
+        "name": "Dese",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 183802,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.82003,
+          -19.450042
+        ]
+      },
+      "properties": {
+        "name": "Gweru",
+        "country": "Zimbabwe",
+        "iso_a2": "ZW",
+        "population": 183358,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.899998,
+          30.591999
+        ]
+      },
+      "properties": {
+        "name": "Shibin el Kom",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 182900,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.850021,
+          -12.539611
+        ]
+      },
+      "properties": {
+        "name": "Chingola",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 182015,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.320008,
+          11.520394
+        ]
+      },
+      "properties": {
+        "name": "Funtua",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 180475,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.509982,
+          33.260359
+        ]
+      },
+      "properties": {
+        "name": "El Jadida",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 180470,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.079149,
+          32.93441
+        ]
+      },
+      "properties": {
+        "name": "Zuwara",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 180310,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.659987,
+          6.190409
+        ]
+      },
+      "properties": {
+        "name": "Obuasi",
+        "country": "Ghana",
+        "iso_a2": "GH",
+        "population": 180117,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.620018,
+          -26.880027
+        ]
+      },
+      "properties": {
+        "name": "Klerksdorp",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 178921,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.800562,
+          31.124882
+        ]
+      },
+      "properties": {
+        "name": "El Arish",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 178651,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.049994,
+          -5.829994
+        ]
+      },
+      "properties": {
+        "name": "Boma",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 178638,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.639951,
+          9.459977
+        ]
+      },
+      "properties": {
+        "name": "Korhogo",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 177711,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.859984,
+          33.370404
+        ]
+      },
+      "properties": {
+        "name": "El Oued",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 177497,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.700037,
+          11.00996
+        ]
+      },
+      "properties": {
+        "name": "Kadugli",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 176931,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.340025,
+          31.969972
+        ]
+      },
+      "properties": {
+        "name": "Ouargla",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 176271,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.460024,
+          0.060396
+        ]
+      },
+      "properties": {
+        "name": "Entebbe",
+        "country": "Uganda",
+        "iso_a2": "UG",
+        "population": 175128,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.150026,
+          9.31996
+        ]
+      },
+      "properties": {
+        "name": "Harar",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 174994,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.45004,
+          -33.950035
+        ]
+      },
+      "properties": {
+        "name": "George",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 174582,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.740018,
+          7.970016
+        ]
+      },
+      "properties": {
+        "name": "Bo",
+        "country": "Sierra Leone",
+        "iso_a2": "SL",
+        "population": 174354,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.01001,
+          9.080413
+        ]
+      },
+      "properties": {
+        "name": "Bida",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 173849,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.769987,
+          1.870001
+        ]
+      },
+      "properties": {
+        "name": "Bata",
+        "country": "Equatorial Guinea",
+        "iso_a2": "GQ",
+        "population": 173046,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.120011,
+          35.410434
+        ]
+      },
+      "properties": {
+        "name": "T\u00e9bessa",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 171742,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.250024,
+          34.679988
+        ]
+      },
+      "properties": {
+        "name": "Djelfa",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 170901,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.14002,
+          -3.369989
+        ]
+      },
+      "properties": {
+        "name": "Uvira",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 170391,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.829984,
+          32.500457
+        ]
+      },
+      "properties": {
+        "name": "Al Marj",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 169540,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.39003,
+          9.14997
+        ]
+      },
+      "properties": {
+        "name": "Sarh",
+        "country": "Chad",
+        "iso_a2": "TD",
+        "population": 169196,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.979983,
+          17.70999
+        ]
+      },
+      "properties": {
+        "name": "Atbarah",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 168612,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.829988,
+          7.760003
+        ]
+      },
+      "properties": {
+        "name": "Nz\u00e9r\u00e9kor\u00e9",
+        "country": "Guinea",
+        "iso_a2": "GN",
+        "population": 168121,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.183336,
+          30.466665
+        ]
+      },
+      "properties": {
+        "name": "Benha",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 167029,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.240032,
+          -25.650025
+        ]
+      },
+      "properties": {
+        "name": "Rustenburg",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 165976,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.860013,
+          -17.860009
+        ]
+      },
+      "properties": {
+        "name": "Livingstone",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 165480,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.770002,
+          -28.746838
+        ]
+      },
+      "properties": {
+        "name": "Kimberley",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 165264,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.610017,
+          -4.879613
+        ]
+      },
+      "properties": {
+        "name": "Kigoma",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 164268,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.440015,
+          13.450018
+        ]
+      },
+      "properties": {
+        "name": "Geneina",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 162981,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.620011,
+          33.010426
+        ]
+      },
+      "properties": {
+        "name": "Settat",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 161748,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.389997,
+          -32.869998
+        ]
+      },
+      "properties": {
+        "name": "Bhisho",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 160997,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.65599,
+          9.536897
+        ]
+      },
+      "properties": {
+        "name": "Malakal",
+        "country": "South Sudan",
+        "iso_a2": "SS",
+        "population": 160765,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.459962,
+          2.189981
+        ]
+      },
+      "properties": {
+        "name": "Bumba",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 160539,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.099984,
+          33.510395
+        ]
+      },
+      "properties": {
+        "name": "Zarzis",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 159161,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.829984,
+          13.839994
+        ]
+      },
+      "properties": {
+        "name": "Ab\u00e9ch\u00e9",
+        "country": "Chad",
+        "iso_a2": "TD",
+        "population": 158317,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.830018,
+          27.230003
+        ]
+      },
+      "properties": {
+        "name": "Hurghada",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 157204,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.620009,
+          2.759972
+        ]
+      },
+      "properties": {
+        "name": "Isiro",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 157196,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.090015,
+          8.549981
+        ]
+      },
+      "properties": {
+        "name": "Moundou",
+        "country": "Chad",
+        "iso_a2": "TD",
+        "population": 156705,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.260021,
+          6.090415
+        ]
+      },
+      "properties": {
+        "name": "Koforidua",
+        "country": "Ghana",
+        "iso_a2": "GH",
+        "population": 156653,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.460028,
+          12.610043
+        ]
+      },
+      "properties": {
+        "name": "Gondar",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 156230,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.783278,
+          3.750015
+        ]
+      },
+      "properties": {
+        "name": "Malabo",
+        "country": "Equatorial Guinea",
+        "iso_a2": "GQ",
+        "population": 155963,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.470025,
+          -25.759631
+        ]
+      },
+      "properties": {
+        "name": "Middelburg",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 154706,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.345016,
+          -15.670014
+        ]
+      },
+      "properties": {
+        "name": "Mahajanga",
+        "country": "Madagascar",
+        "iso_a2": "MG",
+        "population": 154657,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.960026,
+          -6.739603
+        ]
+      },
+      "properties": {
+        "name": "Gandajika",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 154425,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.354998,
+          -5.922909
+        ]
+      },
+      "properties": {
+        "name": "Moanda",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 153915,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.25997,
+          -12.549998
+        ]
+      },
+      "properties": {
+        "name": "Mufulira",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 153624,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.710001,
+          28.300429
+        ]
+      },
+      "properties": {
+        "name": "Samalut",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 152097,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.400013,
+          -13.133321
+        ]
+      },
+      "properties": {
+        "name": "Luanshya",
+        "country": "Zambia",
+        "iso_a2": "ZM",
+        "population": 151993,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.979992,
+          14.250382
+        ]
+      },
+      "properties": {
+        "name": "El Manaqil",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 151827,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.407233,
+          -12.578265
+        ]
+      },
+      "properties": {
+        "name": "Benguela",
+        "country": "Angola",
+        "iso_a2": "AO",
+        "population": 151226,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.989947,
+          1.030466
+        ]
+      },
+      "properties": {
+        "name": "Kitale",
+        "country": "Kenya",
+        "iso_a2": "KE",
+        "population": 150495,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.789996,
+          -27.760025
+        ]
+      },
+      "properties": {
+        "name": "Vryheid",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 150012,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.545001,
+          35.700003
+        ]
+      },
+      "properties": {
+        "name": "M'sila",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 150000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.169997,
+          0.710382
+        ]
+      },
+      "properties": {
+        "name": "Tororo",
+        "country": "Uganda",
+        "iso_a2": "UG",
+        "population": 150000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.449994,
+          15.680398
+        ]
+      },
+      "properties": {
+        "name": "Keren",
+        "country": "Eritrea",
+        "iso_a2": "ER",
+        "population": 150000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.240001,
+          14.660383
+        ]
+      },
+      "properties": {
+        "name": "Diourbel",
+        "country": "Senegal",
+        "iso_a2": "SN",
+        "population": 148024,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.766004,
+          36.821997
+        ]
+      },
+      "properties": {
+        "name": "Jijel",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 148000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.770001,
+          36.270408
+        ]
+      },
+      "properties": {
+        "name": "M\u00e9d\u00e9a",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 147707,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.549989,
+          7.400413
+        ]
+      },
+      "properties": {
+        "name": "Man",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 146974,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.989961,
+          2.140424
+        ]
+      },
+      "properties": {
+        "name": "Wamba",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 146871,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.280035,
+          2.779997
+        ]
+      },
+      "properties": {
+        "name": "Gulu",
+        "country": "Uganda",
+        "iso_a2": "UG",
+        "population": 146858,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.01997,
+          32.170374
+        ]
+      },
+      "properties": {
+        "name": "Gharyan",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 146810,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.800003,
+          -5.020018
+        ]
+      },
+      "properties": {
+        "name": "Tabora",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 146495,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.259989,
+          -1.509535
+        ]
+      },
+      "properties": {
+        "name": "Machakos",
+        "country": "Kenya",
+        "iso_a2": "KE",
+        "population": 144925,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.099993,
+          35.680392
+        ]
+      },
+      "properties": {
+        "name": "Qairouan",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 144522,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.439982,
+          4.640374
+        ]
+      },
+      "properties": {
+        "name": "Kumba",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 144413,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.221787,
+          -1.678799
+        ]
+      },
+      "properties": {
+        "name": "Goma",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 144124,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.046144,
+          36.71171
+        ]
+      },
+      "properties": {
+        "name": "Tizi-Ouzou",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 144000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.935998,
+          31.109004
+        ]
+      },
+      "properties": {
+        "name": "Kafr el Sheikh",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 143970,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.219996,
+          30.769994
+        ]
+      },
+      "properties": {
+        "name": "Ajdabiya",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 143833,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.230004,
+          31.611105
+        ]
+      },
+      "properties": {
+        "name": "B\u00e9char",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 143382,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.189974,
+          7.880409
+        ]
+      },
+      "properties": {
+        "name": "Kenema",
+        "country": "Sierra Leone",
+        "iso_a2": "SL",
+        "population": 143137,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.249986,
+          5.110372
+        ]
+      },
+      "properties": {
+        "name": "Cape Coast",
+        "country": "Ghana",
+        "iso_a2": "GH",
+        "population": 143015,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.450036,
+          15.610118
+        ]
+      },
+      "properties": {
+        "name": "Massawa",
+        "country": "Eritrea",
+        "iso_a2": "ER",
+        "population": 142564,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.140033,
+          34.840392
+        ]
+      },
+      "properties": {
+        "name": "Sa\u00efda",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 142213,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.300009,
+          11.319993
+        ]
+      },
+      "properties": {
+        "name": "Lab\u00e9",
+        "country": "Guinea",
+        "iso_a2": "GN",
+        "population": 140575,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.764662,
+          36.077709
+        ]
+      },
+      "properties": {
+        "name": "Bordj Bou Arr\u00e9ridj",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 140000,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.854995,
+          37.290423
+        ]
+      },
+      "properties": {
+        "name": "Bizerte",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 139843,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.790015,
+          -31.579999
+        ]
+      },
+      "properties": {
+        "name": "Umtata",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 137772,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.890023,
+          2.26039
+        ]
+      },
+      "properties": {
+        "name": "Lira",
+        "country": "Uganda",
+        "iso_a2": "UG",
+        "population": 135445,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.949995,
+          36.290381
+        ]
+      },
+      "properties": {
+        "name": "Souk Ahras",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 134947,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059981,
+          33.099981
+        ]
+      },
+      "properties": {
+        "name": "Touggourt",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 133954,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.799993,
+          -1.489587
+        ]
+      },
+      "properties": {
+        "name": "Musoma",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 133156,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.476999,
+          7.059996
+        ]
+      },
+      "properties": {
+        "name": "Awasa",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 133097,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.160022,
+          -15.190043
+        ]
+      },
+      "properties": {
+        "name": "Mo\u00e7\u00e2medes",
+        "country": "Angola",
+        "iso_a2": "AO",
+        "population": 132900,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.600006,
+          13.54996
+        ]
+      },
+      "properties": {
+        "name": "Sennar",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 130122,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.649987,
+          3.119976
+        ]
+      },
+      "properties": {
+        "name": "Baydhabo",
+        "country": "Somalia",
+        "iso_a2": "SO",
+        "population": 129839,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.580007,
+          -16.170035
+        ]
+      },
+      "properties": {
+        "name": "Tete",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 129316,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.640003,
+          -25.039985
+        ]
+      },
+      "properties": {
+        "name": "Xai-Xai",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 128805,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.009987,
+          -8.730024
+        ]
+      },
+      "properties": {
+        "name": "Kamina",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 128803,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.240244,
+          -11.704158
+        ]
+      },
+      "properties": {
+        "name": "Moroni",
+        "country": "Comoros",
+        "iso_a2": "KM",
+        "population": 128698,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.830041,
+          7.679982
+        ]
+      },
+      "properties": {
+        "name": "Jima",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 128306,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.880007,
+          26.330368
+        ]
+      },
+      "properties": {
+        "name": "Girga",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 128250,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.590036,
+          31.209993
+        ]
+      },
+      "properties": {
+        "name": "Surt",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 128123,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.639139,
+          32.764811
+        ]
+      },
+      "properties": {
+        "name": "Darnah",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 127974,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.360004,
+          5.839002
+        ]
+      },
+      "properties": {
+        "name": "Divo",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 127867,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.43994,
+          -33.640028
+        ]
+      },
+      "properties": {
+        "name": "Worcester",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 127597,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.640003,
+          -9.249579
+        ]
+      },
+      "properties": {
+        "name": "Tukuyu",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 127570,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.989961,
+          7.699981
+        ]
+      },
+      "properties": {
+        "name": "Wau",
+        "country": "South Sudan",
+        "iso_a2": "SS",
+        "population": 127384,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.520038,
+          8.490424
+        ]
+      },
+      "properties": {
+        "name": "Lafia",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 127236,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.780022,
+          34.420443
+        ]
+      },
+      "properties": {
+        "name": "Gafsa",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 126803,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.65001,
+          -10.680034
+        ]
+      },
+      "properties": {
+        "name": "Songea",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 126449,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.340026,
+          -9.54
+        ]
+      },
+      "properties": {
+        "name": "Malanje",
+        "country": "Angola",
+        "iso_a2": "AO",
+        "population": 125856,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.039987,
+          12.870492
+        ]
+      },
+      "properties": {
+        "name": "Gashua",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 125817,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.490019,
+          -14.910009
+        ]
+      },
+      "properties": {
+        "name": "Lubango",
+        "country": "Angola",
+        "iso_a2": "AO",
+        "population": 125632,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.680009,
+          6.220381
+        ]
+      },
+      "properties": {
+        "name": "Kumbo",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 125486,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.669998,
+          32.489992
+        ]
+      },
+      "properties": {
+        "name": "Ghardaia",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 125480,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.099989,
+          -26.699573
+        ]
+      },
+      "properties": {
+        "name": "Potchefstroom",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 123669,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.427998,
+          36.466002
+        ]
+      },
+      "properties": {
+        "name": "Guelma",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 123590,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.879988,
+          6.150411
+        ]
+      },
+      "properties": {
+        "name": "Gagnoa",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 123184,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.260016,
+          13.439992
+        ]
+      },
+      "properties": {
+        "name": "S\u00e9gou",
+        "country": "Mali",
+        "iso_a2": "ML",
+        "population": 122952,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.779999,
+          -25.629613
+        ]
+      },
+      "properties": {
+        "name": "Brits",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 122497,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.160022,
+          35.200421
+        ]
+      },
+      "properties": {
+        "name": "Larache",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 120082,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.388551,
+          -23.866023
+        ]
+      },
+      "properties": {
+        "name": "Maxixe",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 119868,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.379962,
+          -3.309993
+        ]
+      },
+      "properties": {
+        "name": "Bandundu",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 118211,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.690007,
+          11.520394
+        ]
+      },
+      "properties": {
+        "name": "Bama",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 118121,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.149997,
+          8.990471
+        ]
+      },
+      "properties": {
+        "name": "Sokod\u00e9",
+        "country": "Togo",
+        "iso_a2": "TG",
+        "population": 117811,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.98281,
+          16.995873
+        ]
+      },
+      "properties": {
+        "name": "Agadez",
+        "country": "Niger",
+        "iso_a2": "NE",
+        "population": 117770,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.36002,
+          8.900373
+        ]
+      },
+      "properties": {
+        "name": "Jalingo",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 117757,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.940003,
+          4.960407
+        ]
+      },
+      "properties": {
+        "name": "Nkongsamba",
+        "country": "Cameroon",
+        "iso_a2": "CM",
+        "population": 117063,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.869974,
+          10.060018
+        ]
+      },
+      "properties": {
+        "name": "Kindia",
+        "country": "Guinea",
+        "iso_a2": "GN",
+        "population": 117062,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.050008,
+          16.26659
+        ]
+      },
+      "properties": {
+        "name": "Gao",
+        "country": "Mali",
+        "iso_a2": "ML",
+        "population": 116967,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.780022,
+          -0.720022
+        ]
+      },
+      "properties": {
+        "name": "Port-Gentil",
+        "country": "Gabon",
+        "iso_a2": "GA",
+        "population": 116836,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.299991,
+          10.93999
+        ]
+      },
+      "properties": {
+        "name": "Bok\u00e9",
+        "country": "Guinea",
+        "iso_a2": "GN",
+        "population": 116270,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.259927,
+          14.899981
+        ]
+      },
+      "properties": {
+        "name": "Tahoua",
+        "country": "Niger",
+        "iso_a2": "NE",
+        "population": 115956,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.339818,
+          -23.85804
+        ]
+      },
+      "properties": {
+        "name": "Inhambane",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 115776,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.689984,
+          -23.356831
+        ]
+      },
+      "properties": {
+        "name": "Toliara",
+        "country": "Madagascar",
+        "iso_a2": "MG",
+        "population": 115319,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.070016,
+          28.979974
+        ]
+      },
+      "properties": {
+        "name": "Goulimine",
+        "country": "Morocco",
+        "iso_a2": "MA",
+        "population": 115267,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.730032,
+          36.460344
+        ]
+      },
+      "properties": {
+        "name": "Nabeul",
+        "country": "Tunisia",
+        "iso_a2": "TN",
+        "population": 115149,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.970023,
+          8.530421
+        ]
+      },
+      "properties": {
+        "name": "Giyon",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 114534,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.590037,
+          7.200399
+        ]
+      },
+      "properties": {
+        "name": "Shashemene",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 114350,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.939989,
+          -12.380034
+        ]
+      },
+      "properties": {
+        "name": "Kuito",
+        "country": "Angola",
+        "iso_a2": "AO",
+        "population": 114286,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.310011,
+          10.389998
+        ]
+      },
+      "properties": {
+        "name": "Kankan",
+        "country": "Guinea",
+        "iso_a2": "GN",
+        "population": 114009,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.88002,
+          33.809989
+        ]
+      },
+      "properties": {
+        "name": "Laghouat",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 113872,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.516689,
+          14.916698
+        ]
+      },
+      "properties": {
+        "name": "Praia",
+        "country": "Cape Verde",
+        "iso_a2": "CV",
+        "population": 113364,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.250006,
+          -11.759607
+        ]
+      },
+      "properties": {
+        "name": "Kipushi",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 113347,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.580026,
+          4.829975
+        ]
+      },
+      "properties": {
+        "name": "Juba",
+        "country": "South Sudan",
+        "iso_a2": "SS",
+        "population": 111975,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.690007,
+          -7.769618
+        ]
+      },
+      "properties": {
+        "name": "Iringa",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 111820,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.516591,
+          2.767
+        ]
+      },
+      "properties": {
+        "name": "Jawhar",
+        "country": "Somalia",
+        "iso_a2": "SO",
+        "population": 111308,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.383363,
+          6.867034
+        ]
+      },
+      "properties": {
+        "name": "Nsukka",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 111017,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.449998,
+          12.880388
+        ]
+      },
+      "properties": {
+        "name": "Nguru",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 111014,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.532347,
+          -12.983046
+        ]
+      },
+      "properties": {
+        "name": "Pemba",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 110643,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.388005,
+          -26.495001
+        ]
+      },
+      "properties": {
+        "name": "Manzini",
+        "country": "eSwatini",
+        "iso_a2": "SZ",
+        "population": 110537,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.01998,
+          -11.459987
+        ]
+      },
+      "properties": {
+        "name": "Mzuzu",
+        "country": "Malawi",
+        "iso_a2": "MW",
+        "population": 110201,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.90001,
+          36.380478
+        ]
+      },
+      "properties": {
+        "name": "Bou\u00efra",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 110144,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.240009,
+          -13.300029
+        ]
+      },
+      "properties": {
+        "name": "Lichinga",
+        "country": "Mozambique",
+        "iso_a2": "MZ",
+        "population": 109839,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.940017,
+          11.130366
+        ]
+      },
+      "properties": {
+        "name": "Kandi",
+        "country": "Benin",
+        "iso_a2": "BJ",
+        "population": 109701,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.610021,
+          5.790408
+        ]
+      },
+      "properties": {
+        "name": "Soubr\u00e9",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 108933,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.18004,
+          14.48998
+        ]
+      },
+      "properties": {
+        "name": "Mopti",
+        "country": "Mali",
+        "iso_a2": "ML",
+        "population": 108456,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.140033,
+          35.400409
+        ]
+      },
+      "properties": {
+        "name": "Mascara",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 108230,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.19994,
+          12.450414
+        ]
+      },
+      "properties": {
+        "name": "Birnin Kebbi",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 108164,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.420012,
+          12.690426
+        ]
+      },
+      "properties": {
+        "name": "En Nuhud",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 108008,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.420017,
+          -3.659584
+        ]
+      },
+      "properties": {
+        "name": "Shinyanga",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 107362,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.609998,
+          -4.319596
+        ]
+      },
+      "properties": {
+        "name": "Ilebo",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 107093,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.190013,
+          11.68041
+        ]
+      },
+      "properties": {
+        "name": "Azare",
+        "country": "Nigeria",
+        "iso_a2": "NG",
+        "population": 105687,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.729991,
+          13.010019
+        ]
+      },
+      "properties": {
+        "name": "Assab",
+        "country": "Eritrea",
+        "iso_a2": "ER",
+        "population": 105496,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.880002,
+          -31.899618
+        ]
+      },
+      "properties": {
+        "name": "Queenstown",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 105309,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.979996,
+          -5.379479
+        ]
+      },
+      "properties": {
+        "name": "Kongolo",
+        "country": "Congo (Kinshasa)",
+        "iso_a2": "CD",
+        "population": 105202,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.469987,
+          12.390418
+        ]
+      },
+      "properties": {
+        "name": "Koutiala",
+        "country": "Mali",
+        "iso_a2": "ML",
+        "population": 104927,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.610002,
+          -25.830014
+        ]
+      },
+      "properties": {
+        "name": "Mmabatho",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 104428,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.469983,
+          14.280432
+        ]
+      },
+      "properties": {
+        "name": "Adigrat",
+        "country": "Ethiopia",
+        "iso_a2": "ET",
+        "population": 104021,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.490004,
+          6.730376
+        ]
+      },
+      "properties": {
+        "name": "Abengourou",
+        "country": "Ivory Coast",
+        "iso_a2": "CI",
+        "population": 104020,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.210008,
+          -27.660031
+        ]
+      },
+      "properties": {
+        "name": "Kroonstad",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 103992,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.959984,
+          17.589972
+        ]
+      },
+      "properties": {
+        "name": "Ad-Damir",
+        "country": "Sudan",
+        "iso_a2": "SD",
+        "population": 103941,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.670017,
+          -4.179604
+        ]
+      },
+      "properties": {
+        "name": "Loubomo",
+        "country": "Congo (Brazzaville)",
+        "iso_a2": "CG",
+        "population": 103894,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.230007,
+          31.350424
+        ]
+      },
+      "properties": {
+        "name": "Matruh",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 103470,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.450026,
+          -26.469613
+        ]
+      },
+      "properties": {
+        "name": "Bethal",
+        "country": "South Africa",
+        "iso_a2": "ZA",
+        "population": 101919,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.149997,
+          35.849997
+        ]
+      },
+      "properties": {
+        "name": "Oum el Bouaghi",
+        "country": "Algeria",
+        "iso_a2": "DZ",
+        "population": 100821,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.799961,
+          -1.319624
+        ]
+      },
+      "properties": {
+        "name": "Bukoba",
+        "country": "Tanzania",
+        "iso_a2": "TZ",
+        "population": 100504,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.630028,
+          6.900392
+        ]
+      },
+      "properties": {
+        "name": "Kpalim\u00e9",
+        "country": "Togo",
+        "iso_a2": "TG",
+        "population": 100479,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.43332,
+          27.033271
+        ]
+      },
+      "properties": {
+        "name": "Sabha",
+        "country": "Libya",
+        "iso_a2": "LY",
+        "population": 100249,
+        "rank": 9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.549941,
+          25.290406
+        ]
+      },
+      "properties": {
+        "name": "Isna",
+        "country": "Egypt",
+        "iso_a2": "EG",
+        "population": 100000,
+        "rank": 8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.329981,
+          18.819974
+        ]
+      },
+      "properties": {
+        "name": "Arlit",
+        "country": "Niger",
+        "iso_a2": "NE",
+        "population": 100000,
+        "rank": 8
+      }
+    }
+  ]
+}

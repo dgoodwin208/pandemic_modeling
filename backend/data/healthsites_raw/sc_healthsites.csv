@@ -1,0 +1,38 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+55.4762294418881,-4.64095312695406,"2810347276",node,15.625,hospital,hospital,DentalNClinic,,survey,,,,,,,,,,,,,,,,,,,,,,55636590,2,2018/01/21 19:55:28+00,204f7d47810a4b40a70782aea233a2ae
+,,"511670857",way,21.875,clinic,clinic,Jivan Clinic,Dr. Haresh Jivan,,,,,"Mo-Fr 08:00-13:00, 14:00-17:00; Sa 08:00-12:00",,,,,,,,,,,,,,,Mont Fleuri Road,,,71723134,3,2019/06/28 21:53:51+00,6b23b952cccc45ceadb0592df9bff6d4
+55.4526110827639,-4.62450481544249,"6595518886",node,15.625,doctors,doctor,Lanka,,,,,,Mo-Fr 09:00-16:30,,,,,,,,,,,,,,,,,,123670034,2,2022/07/15 21:37:32+00,2fd969eec8814932b615a61e577e8d62
+,,"784178201",way,12.5,hospital,hospital,Medical & Health Center / Hospital,,,,,,,,,,,,,,,,,,,,,,,,116233916,3,2022/01/17 01:52:59+00,13d031d43e644cd4b453c69c88de5c7f
+55.4838852207897,-4.65125264193563,"4397223784",node,31.25,hospital,hospital,Euromedical Family Clinic (Providence branch),Euromedical (Sey) Ltd,,,,,,,,,,,,no,,,,,,,Sunshine House,Providence,SC,Mahe,130734503,3,2022/12/31 22:21:01+00,a883c897d69d476399165194ff2a7729
+55.4542666762787,-4.62671914662286,"6595548186",node,15.625,pharmacy,pharmacy,Central point,,,,,,Mo-Su 09:00-17:00,,,,,,,,,,,,,,,,,,132069301,3,2023/02/04 09:54:31+00,f0d28a0b8f474ed28c8df6a0406e11ab
+,,"341693424",way,12.5,doctors,,Takamaka Health Centre,,"Bing; knowledge",,,,,,,,,,,,,,,,,,,,,,30647391,1,2015/04/30 06:03:05+00,5d0ef115e04f465cb741477d40f4e7d1
+55.7171258420092,-4.32813337590082,"765251897",node,12.5,clinic,clinic,Health Centre,,,,,,,,,,,,,,,,,,,,,,,,62163010,2,2018/08/31 07:51:07+00,c47cf71c0bc943edb6ca0da8ff496a7e
+,,"458800158",way,12.5,clinic,clinic,Les Mamelles Clinic,,,,,,,,,,,,,,,,,,,,,,,,145212793,2,2023/12/17 12:17:45+00,77677ac679bc44a2b8d87924ae8a4ccf
+,,"784186207",way,12.5,hospital,hospital,Eureka Specialist Medical Clinic,,,,,,,,,,,,,,,,,,,,,,,,82568632,1,2020/03/24 11:40:25+00,617ab516ba0a43eb8c1a12c9a87d2352
+55.5178103871513,-4.73972203737046,"2800303349",node,12.5,pharmacy,,Panacea Healthcare,,,,,,"Mo-Fr 09:00-17:00; Sa 9:00-13:00; Su off",,,,,,,,,,,,,,,,,,33033861,2,2015/08/01 17:08:06+00,8395f9334adb464faedc3e42a1a3f78d
+55.4807947292706,-4.75067358059988,"9983215287",node,9.375,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,,125473168,1,2022/08/28 11:18:42+00,816215fcca054a61aa4d3d23b0137188
+55.4760823394874,-4.64074056188957,"4708721746",node,31.25,pharmacy,pharmacy,Eden Pharmacy,Euromedical Family Clinic,,,,,"Mo-Fr 09:00-19:00; Sa 10:00-18:00; Su 10:00-15:00",,,,,,,,,,,,,,"1",Marina Drive,SEZ,Mahe,144198623,4,2023/11/19 08:04:33+00,f2aa922ac5e54683a1a8999f5a735d2a
+,,"363488742",way,15.625,hospital,hospital,Anse Royale Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,114915262,5,2021/12/14 09:36:56+00,24bd90ae4c0e4ea0a46bd3371e7deb31
+55.7580387495894,-4.34249903593087,"5761355866",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,60728016,1,2018/07/15 09:19:34+00,98232a9ee3c64616bccca99d410c11af
+55.4297044310381,-4.61700636486347,"4438684169",node,12.5,pharmacy,pharmacy,Behram's Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,143896693,3,2023/11/11 11:59:09+00,b4abb11fedf840549a04e93106b7c11f
+,,"458790531",way,12.5,clinic,clinic,Dr Chetty's Clinic,,,,,,,,,,,,,,,,,,,,,,,,143896299,2,2023/11/11 11:47:23+00,51c33017f89c4c6db86f41194ade8d61
+55.7600721992993,-4.33636222552238,"2810651232",node,9.375,hospital,,Medical Clinic,,,,,,,,,,,,,,,,,,,,,,,,44957809,2,2017/01/06 16:35:17+00,192eece4bf7341539f10dcf6dbe9ea19
+55.4654790643349,-4.63973423059457,"5109370021",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,145212763,2,2023/12/17 12:16:20+00,04ab35e324b846e0b7b55701a0ca20bc
+,,"1285176984",way,15.625,hospital,hospital,Sanit Mary’s Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,165653279,3,2025/04/30 21:49:49+00,774f98cc5c9344e1b221926f85fb7fc5
+55.4615982431656,-4.63264020684366,"5004542630",node,15.625,pharmacy,pharmacy,Good Health Pharmacy,,,,,,,,,,,,,,,,,,,,,Mont Fleury Road,,,123670092,4,2022/07/15 21:40:24+00,68230fe641004056bb72c7e8a78cb967
+55.4556104629955,-4.62293253804521,"773554563",node,9.375,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,,143896111,3,2023/11/11 11:42:45+00,7c5fb44ebedb46ab96b0496f94e04e86
+55.4759600475201,-4.64078825491865,"2917558083",node,31.25,hospital,hospital,Euromedical Family Clinic,Euromedical (Sey) Ltd,,,,,,,,,,,,yes,,,,,,,206 Eden Plaza,Eden Island Marina,SEZ,Mahe,55636590,6,2018/01/21 19:55:28+00,c0fd5138f2fc4c86a4db1381c3472b86
+,,"635192111",way,12.5,clinic,clinic,Anse Aux Pins clinic,,,,,,,,,,,,,,,,,,,,,,,,130693321,3,2022/12/30 16:01:22+00,875e4ca0c29e4aecbfbe6e9abbc0b626
+,,"458794379",way,12.5,clinic,clinic,Dr Murthy's Clinic,,,,,,,,,,,,,,,,,,,,,,,,143896299,2,2023/11/11 11:47:23+00,38fd23d6bf0b48a4be1d727544e7d876
+55.4545831769425,-4.61982402543427,"773554574",node,15.625,pharmacy,pharmacy,Behram's Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,123670000,3,2022/07/15 21:36:06+00,f5aecb554f7546d7ae870ca30bffba94
+55.7562856745406,-4.33852324779858,"765251909",node,15.625,hospital,hospital,Medical & Health Center / Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,150361648,5,2024/04/22 18:50:35+00,a38b279edcca4c17bf46732c6a2756c0
+,,"616314461",way,12.5,clinic,clinic,Hope and Trust Care,,,,,,,,,,,,,,,,,,,,,,,,130692365,3,2022/12/30 15:37:52+00,944ad8eefa384323a24e0d7256326263
+,,"432246935",way,12.5,clinic,clinic,Silhouette Island clinic,,,,,,,,,,,,,,,,,,,,,,,,69514840,3,2019/04/24 07:28:33+00,dd92bdaf01d749008b4a6dfb379471de
+,,"616315049",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,71538100,3,2019/06/23 17:59:55+00,6ddf2b8b3cf34b478aadc441a124e638
+55.82908879003,-4.34896072890638,"5508452026",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,no,,,,,,,,,,,,150361648,4,2024/04/22 18:50:35+00,d5fdfcd50a414c62bd16de2fd5d73361
+55.4521554425074,-4.62068350578568,"4592899424",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,123670000,2,2022/07/15 21:36:06+00,b43630a6457644b89adfdc4feb02cac8
+55.7584112413664,-4.33783517736705,"11838855745",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,150361648,1,2024/04/22 18:50:35+00,d45021558a944699bd874352f7501eac
+55.7152378183193,-4.32642707187179,"5870471685",node,15.625,clinic,clinic,vision care,,,ophthalmology,,,,,,,,,,,,,,,,,,,,,67953754,2,2019/03/09 10:05:31+00,c689b078f6f34b998cf1b7babcbcaea5
+,,"549122776",way,9.375,,clinic,Nurse,,,,,,,,,,,,,,,,,,,,,,,,132561006,3,2023/02/15 02:06:58+00,a11f672609bb4e70bed710d54dbb4fb0
+55.4606808438632,-4.62954720075362,"12047122907",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,153808466,1,2024/07/11 05:59:36+00,8be005c15bcc4ee7851d22c1f71f341c
+55.4556546356252,-4.59398882055868,"3092794671",node,9.375,hospital,,Eureka Specialist Medical Clinic,,,,,,,,,,,,,,,,,,,,,,,,25630229,1,2014/09/23 17:53:14+00,a5874b826fbd4dc4831a392c257a9002

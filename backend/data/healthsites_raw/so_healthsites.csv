@@ -1,0 +1,100 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+44.0520596939001,9.54787238310612,"8930880128",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,108198739,1,2021/07/18 16:15:30+00,dbb6293e80e04c7d8e80951466a605f6
+44.0974318577877,9.54103886890587,"9277228841",node,9.375,pharmacy,,Saacid  Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,114130257,1,2021/11/23 09:00:04+00,2cf24f88f1f541a1adba2030d5a1a4c1
+,,"1376543408",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,164783856,1,2025/04/10 19:01:33+00,33131603dd514b84b56cf90679f94a36
+46.6248955180273,6.1329983613376,"8178752253",node,12.5,hospital,hospital,Adado General Hospital,,,,,,,,,,,,,,,,,,,,,,,,95040139,2,2020/11/30 11:14:51+00,de1cf9833c8c4b3a8326f40bee6db26f
+,,"1205438985",way,15.625,hospital,hospital,kaamil hospital oodweyne,,,"general;gynaecology",,,,,,,,,,,,,,,,,,,,,140886081,1,2023/09/06 09:19:06+00,fb4f44439d10471882e6dce8643eb172
+,,"305183550",way,15.625,hospital,hospital,Adna Adan hospital,ADna Adan,,,,,,,,,,,,,,,,,,,,,,,108186524,2,2021/07/18 10:11:02+00,5e1311449aa34dde84fc07e096750140
+,,"1373465865",way,12.5,hospital,hospital,Jazeera Specialist Hospital,,,,,,,,,,,,,,,,,,,,,,,,164341520,1,2025/03/31 17:31:29+00,36958b2155ac47dcabbdb811aee6b733
+,,"1386890945",way,12.5,hospital,hospital,Wadamagoo MCH,,,,,,,,,,,,,,,,,,,,,,,,166282025,1,2025/05/15 01:42:09+00,a71633fc47ef4d7a9a32cb842f19b404
+45.3094417294518,2.03746803668838,"4243444489",node,12.5,hospital,hospital,ex dugsi sare banadir,,,,,,,,,,,,,,,,,,,,,,,,79113365,2,2020/01/02 12:51:49+00,be6892129f2943ceba656b99b97a2b5d
+,,"188859423",way,12.5,hospital,hospital,Barawe General Hospital,,,,,,,,,,,,,,,,,,,,,,,,128310487,2,2022/10/31 17:47:52+00,44d45b6702ae434495919f2362bf9668
+49.0857070386025,9.51023428509578,"7169827512",node,9.375,hospital,,Qardho General Hospital,,,,,,,,,,,,,,,,,,,,,,,,80268371,1,2020/01/29 16:24:46+00,a84ee17305224d85a4aaacfa336c4f20
+,,"1373515691",way,12.5,hospital,hospital,Samakaal Hospital,,,,,,,,,,,,,,,,,,,,,,,,164350065,1,2025/03/31 21:36:06+00,1f8868a2a60c45f393644effc3855606
+45.7554519335889,5.7624549576993,"10126035479",node,12.5,hospital,hospital,Balanbale General Hospital,,,,,,,,,,,,,,,,,,,,,,,,127995400,1,2022/10/24 12:41:01+00,2485012010584f1c8c9488d6a2ec90cc
+45.3311935225584,2.03103157324145,"4746076221",node,12.5,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,Via Tanzania,,,159413435,2,2024/11/21 14:53:38+00,0e4c55b6a2ad44b6a85c1f3632a5c33c
+,,"791235104",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,83454107,1,2020/04/13 06:36:36+00,ccd07ba294c54a63961134eb5839a96a
+,,"1375979832",way,12.5,hospital,hospital,Borama Regional Hospital,,,,,,,,,,,,,,,,,,,,,,,,164699814,1,2025/04/08 22:33:49+00,c5939ae198034db3868f778ac998d1e1
+,,"791244577",way,15.625,hospital,hospital,Kaah medical centre,,,,,,,,,,,,,,,,,,,,,Goljano Road,,,113843174,2,2021/11/16 09:46:12+00,68028de1807d4fc9881ce5f3965e71ab
+,,"791242762",way,12.5,hospital,hospital,Garowe General Hospital,,,,,,,,,,,,,,,,,,,,,,,,92541194,2,2020/10/15 19:42:33+00,19e083542ea644ab81ec64e28f4b2647
+,,"1373864082",way,12.5,hospital,hospital,Keysane Hospital,,,,,,,,,,,,,,,,,,,,,,,,164392366,1,2025/04/01 20:14:57+00,adb79fc242684ab0a34add5f338b4eed
+,,"1368707932",way,12.5,hospital,hospital,Baidoa Regional Hospital,,,,,,,,,,,,,,,,,,,,,,,,163771457,1,2025/03/18 12:01:12+00,81da7e9dd94b45ffa19b1e5b7643b22d
+,,"1031517214",way,12.5,hospital,hospital,Kismayo General Hospital,,,,,,,,,,,,,,,,,,,,,,,,117415362,1,2022/02/15 01:24:19+00,828900c2e6b1423bbd56cddfca0ffcf9
+45.5330383843368,2.97425308850825,"11375811669",node,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,144451079,1,2023/11/25 19:13:24+00,cc2d07cdf4e84cd8b75af1048e5da525
+,,"791246027",way,15.625,hospital,hospital,Sajid Hospital,,UNPOS,,,,,,,,,,,,,,,,,,,,,,83457007,1,2020/04/13 07:22:16+00,45139cbadd2e4aebb38a69d6d9066c8b
+,,"848044664",way,12.5,hospital,hospital,Yardimeni Hospital,,,,,,,,,,,,,,,,,,,,,,,,116373421,4,2022/01/20 08:17:56+00,9d2fe73504c2459cb70c7ad9e83a9cd1
+42.2198488341846,3.32954251801817,"3204725433",node,9.375,pharmacy,,Al-Nasri Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,27023799,1,2014/11/25 15:13:23+00,0ccae15421914295865a190a722bb0be
+42.215785287526,3.33230552858029,"1400887801",node,15.625,hospital,hospital,Garbahaarey Hospital,,,,,,,,,,,,,,,,,,,,,,,Garbahaarey,164444009,5,2025/04/03 01:33:12+00,6a3625ab65b542fd9cf5a3c39498b78b
+45.0636583445045,9.40558848708832,"3455527618",node,12.5,clinic,clinic,Bisha Cas الهلال الأحمر,,,,,,,,,,,,,,,,,,,,,,,,90061475,4,2020/08/28 06:35:46+00,ab3099096e4f4bc396b24ecea25860f0
+,,"296937067",way,12.5,hospital,hospital,Hannano Hospital (Red Crescent),,,,,,,,,,,,,,,,,,,,,,,,164426367,4,2025/04/02 15:12:27+00,36acc4db8c9d41e396ad83008a42c6bc
+47.362749760526,8.4735712294316,"7605011185",node,9.375,hospital,,Manhal Hospital,,,,,,,,,,,,,,,,,,,,,,,,86396756,1,2020/06/09 09:06:10+00,0780d1158d594b41ad6f90ff115186b6
+,,"430366600",way,18.75,hospital,hospital,International Hospital المستشفى الدولي,,,,,,,,,,,,,,,,,,,,,Airport Road,,هرجيسا,121786337,4,2022/05/31 21:54:07+00,82f0303720c843a38ae012199bb8e127
+,,"1376543410",way,15.625,hospital,hospital,Berber Mental Health Hospital,,,psychiatry,,,,,,,,,,,,,,,,,,,,,164783856,1,2025/04/10 19:01:33+00,c694fa8937384d6baa2c219fd9908c2f
+,,"791238881",way,21.875,hospital,hospital,مستشفي امامة - عرمو - بنتدلاد - صومال,,,,,,Sa-Th,,,,,,,,,,,,,,"005",Taqwa -Street,,,101534810,2,2021/03/23 01:11:54+00,2e8456c4d3d74a55945b7d7d7c9e26c4
+,,"652715637",way,12.5,hospital,hospital,Baidoa Regional Hospital,,,,,,,,,,,,,,,,,,,,,,,,163771457,4,2025/03/18 12:01:12+00,a3ec6e3d33cc417090520d59ed86afb5
+,,"449347606",way,9.375,hospital,,Gargaar Multi specialty Hospital,,,,,,,,,,,,,,,,,,,,,,,,99216526,2,2021/02/13 14:59:33+00,7a66e78166bf426f8fe10f23845fa8f7
+,,"220105433",way,18.75,hospital,hospital,مستشفى المدينة,,,,,,,,,,,,,yes,,,,,,,,,,مقديشو,164426108,8,2025/04/02 15:06:58+00,75c6951f38cf4b79a23525c9958e7394
+45.8796399712074,5.31360999390887,"1404230797",node,12.5,hospital,,Kulmiye Hospital,,UNDP - 2006,,,,,,,,,,,,,,,,,,,,,,141772912,3,2023/09/26 12:34:29+00,cb428ee978dd47f582241b290a87cf71
+45.3477399861561,2.0463090166987,"4887872522",node,15.625,pharmacy,pharmacy,,Saalim Carab,,,,,,,,,,,,,,,,,,,,W. Nasiib Buunde,,,161931148,2,2025/01/30 10:19:24+00,9ceedb70a8a941e4955d4987aff3a337
+44.095232530214,9.54056755449042,"9277213643",node,9.375,pharmacy,,Bukhan  Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,114130155,1,2021/11/23 08:57:31+00,e918d9b3d1754ad58077fa7d386578fb
+45.3217536555663,2.05232998920533,"11118174805",node,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,139942385,1,2023/08/16 04:07:27+00,51a1537e6cb847c0bd952e67344e77a1
+44.33029998723,1.61099998834317,"8488601144",node,9.375,clinic,,Kurtunwaarey Maternal & Child Health Centre,,,,,,,,,,,,,,,,,,,,,,,,100481841,1,2021/03/05 10:08:48+00,0ad2cf87650c428dbc70613f5cf92f0b
+,,"1373530321",way,12.5,hospital,hospital,Hodan Hospital,,,,,,,,,,,,,,,,,,,,,,,,164351468,1,2025/03/31 22:42:47+00,7c4673b7d1d341bfbf54439469358eb1
+45.3432901175803,2.058424973917,"4873326621",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,161931148,2,2025/01/30 10:19:24+00,5da4ba4eaebc4f40af2c3675964f406c
+,,"1373519816",way,12.5,hospital,hospital,Isbitaalka Xoogga,,,,,,,,,,,,,,,,,,,,,,,,164351468,2,2025/03/31 22:42:47+00,e99166e4e42c46dfbc04130003e9a79c
+,,"237489641",way,9.375,hospital,,Las Anod Hospital,,,,,,,,,,,,,,,,,,,,,,,,17778524,2,2013/09/11 08:04:30+00,a87a4593953e49919e5dd52343e99178
+44.0619177340415,9.57717643861008,"4595635191",node,6.25,dentist,,,,,,,,,,,,,,,,,,,,,,,,,,44993824,1,2017/01/08 05:23:58+00,0739b4e9eb214a5fbc08345275015945
+,,"791245524",way,12.5,hospital,hospital,SHaadhle Hospital Kismaayo,,,,,,,,,,,,,,,,,,,,,,,,99397514,2,2021/02/16 17:33:43+00,427aa60a200f48c98c466852e21f6c05
+44.8982999910594,2.04709993308217,"8497141641",node,9.375,clinic,,Bariire Maternal & Child Health Centre,,,,,,,,,,,,,,,,,,,,,,,,100642782,1,2021/03/08 13:57:46+00,ea0c765927424092976e09f564ebb4b3
+,,"127235810",way,12.5,hospital,hospital,Medical Quarters,,,,,,,,,,,,,,,,,,,,,,,,132049257,4,2023/02/03 16:31:51+00,9232d0cdc8eb40d3a7791fa2d3bf7878
+,,"674458719",way,12.5,hospital,,Jowhar Regional Hospital,,"UNSOA II: E045N02_02, SPOT5 image based data capture using different Ancillary Sources coming from UNSOA field mission",,,,,,,,,,,,,,,,,,,,,,140948207,3,2023/09/07 16:12:18+00,07b458167e7543448f73bac55ebde759
+,,"1373453766",way,12.5,hospital,hospital,Lazaretto Forlanini Hospital,,,,,,,,,,,,,,,,,,,,,,,,164339477,1,2025/03/31 16:35:28+00,abc693ab8be14acba7a26f3b303017ef
+44.0620783313063,9.55965884771066,"4997437522",node,12.5,hospital,hospital,p/p GARGAAR HOSPITAL,,,,,,,,,,,,,,,,,,,,,,,,106039031,2,2021/06/08 13:37:21+00,9a17f68d8ed545d3846a0485ddf2a30f
+49.1805472671824,11.2843451447738,"8615023864",node,12.5,hospital,hospital,BanderQasim Hospital,,,,,,,,,,,,,,,,,,,,,,,,102702184,1,2021/04/10 14:47:50+00,4979d23fef8248b39d9e6a775a9f485e
+45.3045620368813,2.0323441792784,"4217845990",node,15.625,clinic,clinic,Dr. Kuule Pediatric clinic,,,,,,,,,,,,,,,,,,,,,W. Afgooye,,,79113365,2,2020/01/02 12:51:49+00,4470ec10dca24fc284a6d04653dc6953
+,,"965340306",way,18.75,hospital,hospital,Adna Adan Maternity Hospital,Adna AAdan Isamaciil,,,private,,,,,,,,,,,,,,,,,,,,108186524,1,2021/07/18 10:11:02+00,44b3196440284b26a9335bd91208aae2
+,,"277858955",way,9.375,hospital,,Dhuusamarreeb Hospital مستشفى دوسمريب,,,,,,,,,,,,,,,,,,,,,,,,141258127,4,2023/09/14 13:29:58+00,7e2cbb2002d944fbbf17213e941a1a26
+44.0584289344836,9.53991276021449,"8929222551",node,31.25,pharmacy,pharmacy,Daryeel Phermecy,Cabdiqadir,,,,,Mo-Su 10:00-21:00,,,,,yes,,,,,,,,,"60",Xaashi Kabadoon Street,,Hargeysia,108170294,1,2021/07/17 18:38:30+00,69435b9aca02424e9380215de8c1185b
+45.7669380746028,5.7640919433891,"10297949310",node,12.5,hospital,hospital,Balanbale MCH,,,,,,,,,,,,,,,,,,,,,,,,139442816,2,2023/08/04 13:44:17+00,448ac9a574dc4e83b8df8a8af774c41e
+,,"1376502290",way,12.5,hospital,hospital,Lughaya Regional Hospital,,,,,,,,,,,,,,,,,,,,,,,,164775411,1,2025/04/10 15:39:10+00,57f454796e3d49978dd07b1c8a6a014b
+,,"804267095",way,12.5,hospital,hospital,Qoryooley General Hospital,,,,,,,,,,,,,,,,,,,,,,,,85262770,1,2020/05/15 12:58:43+00,543b6f9e22af414783ff18296c4106d6
+,,"752162110",way,9.375,hospital,,EYL Hospital,,,,,,,,,,,,,,,,,,,,,,,,141656600,3,2023/09/23 18:25:40+00,875f661e46c14ee69b0d46dfa01633fa
+44.0553957751822,9.55104099396283,"8929222545",node,28.125,hospital,hospital,Birjeex Militery Hospital,Govermantal,,,county_government,,,,,,,,,,,,,,,,"1",Birjeex Street,,Hargaysia,108170294,1,2021/07/17 18:38:30+00,b46263ad0ca04e87a6574515db57deaa
+44.0898090197656,9.53986506718545,"9277226733",node,9.375,pharmacy,,Kulaan  Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,114130112,1,2021/11/23 08:56:26+00,98e711d107134856bc3c258de921467c
+,,"550425480",way,15.625,hospital,hospital,Isbitaalka Tababarada & Cilmibaarista ee Muqdisho Somaliya Turkiga,,,,,,,,,,,,,yes,,,,,,,,,,,164350526,3,2025/03/31 21:55:15+00,8828b662aa954672babf3a3b087ed6a3
+45.1208746404905,2.14500156797717,"12686512208",node,28.125,hospital,hospital,SRCS Clinic Afgoye,SRCS Somalia,,clinical_pathology,public,,Sa-Th 08:00-14:00,,,,,,,,,,,,,,,,,Afgooye,163893818,1,2025/03/21 08:22:32+00,289fc5ef22c9480b8bc56e64cb66ac14
+,,"791249655",way,15.625,hospital,hospital,Disabled people hospital,,,,,,,,,,,,,,,,,,,,,Road Number 1 / طريق رقم 1,,,83457870,1,2020/04/13 07:35:40+00,32c899fdf90047938d93a945e40a77c5
+,,"791245129",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,83456722,1,2020/04/13 07:17:52+00,c9675f9a078e4481b703813428c6419b
+,,"357089660",way,12.5,clinic,,المستشف الدولى,,GPS trace,,,,,,,,,,,,,,,,,,,,,,95579602,5,2020/12/09 23:46:13+00,a8d2bf57b99245deb005b28f0c6c6f97
+44.5326278980884,1.78627379796646,"5161423621",node,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,52834698,1,2017/10/11 17:50:31+00,bea6a1d3c46e4bcd9e96820d590c23a4
+,,"368147204",way,12.5,hospital,hospital,Odweyne General Hospital,,,,,,,,,,,,,,,,,,,,,,,,90429768,5,2020/09/04 18:58:23+00,96c3337ad1fb45d69cef9a33b8cb8d01
+44.0552700466346,9.56208876144066,"1104353861",node,18.75,hospital,hospital,,,300TDI,,,,,,,,,,no,,,,,,,,,,,هرجيسا,106039031,8,2021/06/08 13:37:21+00,7b947ff99c3a4fb182293c8c703a26c8
+,,"1371916774",way,12.5,hospital,hospital,Kalkaal Hospital,,,,,,,,,,,,,,,,,,,,,,,,164140654,1,2025/03/26 22:08:18+00,eced595ba2824568aa45ac458e0f6295
+46.2210554231274,6.24141668632541,"6445482385",node,25,pharmacy,,Kadawe polyclinic center,Kadawe,,,,,Sa-Th 00:00-24:00,,,,,,,,,,,,,,"2580",Kadawe street,"252",,69844313,2,2019/05/03 13:32:44+00,7bf6329e0201481faca4cca954938a1a
+42.5686499162669,-0.074511724038842,"11143201905",node,18.75,hospital,,,,,,,,24/7,,,,,,,,,,,,,,"001",Kismaayo - Jilib Highway,JH 09010,,140361828,1,2023/08/25 09:26:17+00,942a92d7204d47fcb0de59c6b4dcbfb2
+46.95450396968,5.2940635633463,"6737970385",node,12.5,hospital,,Isbitaalka xiindheer,,,,,,,,,,,,,,,,,,,,,Wadada xiindheere,,,73649859,1,2019/08/23 06:29:12+00,c030e5149f3542a3b4d9b1709096e1ea
+45.5443662750187,9.51301908860617,"6166824486",node,9.375,clinic,,,,,,,,,,,,,,,,,,,,,,,wadada October,,,65823157,1,2018/12/27 19:44:52+00,252e27b762684f52a31afcb91d2fceab
+,,"1371916683",way,12.5,hospital,hospital,Martino Hospital,,,,,,,,,,,,,,,,,,,,,,,,164140609,1,2025/03/26 22:06:30+00,ac547e46818d495d95408203b843e1d7
+,,"276883215",way,12.5,hospital,hospital,Galdogob general hospital,,,,,,,,,,,,,,,,,,,,,,,,120917025,4,2022/05/13 06:30:53+00,ec1d13af9d2f41d6a9d3fb0fa5deac6d
+,,"1376135308",way,12.5,hospital,hospital,Adal Hospital,,,,,,,,,,,,,,,,,,,,,,,,164728561,1,2025/04/09 14:46:18+00,058a2c218c404d22a5fdcfca614eac60
+44.0913868292189,9.53961444828056,"9277218363",node,9.375,pharmacy,,Muhuran Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,114130125,1,2021/11/23 08:56:45+00,c970e5fa3f4e42fc9af4ef387c593001
+,,"791242083",way,18.75,hospital,hospital,Dhakhtarka Adna مستشفى أدنا آدن,,,,,,24/7,,,,,,,,,,,,,,,,,هرجيسا,142997091,3,2023/10/23 04:10:08+00,65617ff718dd4d179a0bc9cc9a36ad22
+45.3434784589446,2.05928696883936,"11421375245",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,145166644,1,2023/12/15 21:08:33+00,cc09d5e6ed0b47b0b9de919c44ec8819
+,,"1065724009",way,15.625,hospital,hospital,Benadir Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,164426108,5,2025/04/02 15:06:58+00,d2eccf2069434ba1b7466598ac2d6387
+,,"1373683895",way,15.625,hospital,hospital,SOS Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,164373960,1,2025/04/01 12:56:27+00,03b5c6c090fd4715a8fcb38afff3108a
+42.5438622816499,3.8003403567723,"4617758189",node,12.5,hospital,hospital,Luuq Hospital,,,,,,,,,,,,,,,,,,,,,,,,164444653,3,2025/04/03 02:36:59+00,7994ebd6d8b044d5a0ffbdc33efe6cfe
+42.5511345884813,-0.359439434996744,"4543414240",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,132049257,2,2023/02/03 16:31:51+00,dbb3e95b787c4863b5179a0377c344aa
+44.0837664219488,9.54055908876822,"9277214018",node,9.375,pharmacy,,Nairobi  Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,114130057,1,2021/11/23 08:55:00+00,d9d4e7fadbf640e8b4500cd76d5c61cb
+45.5389693352034,9.52659006039633,"6166824485",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,65823157,1,2018/12/27 19:44:43+00,437916a038724d4285565aa4d0fe7f2b
+45.333387569533,2.02869067532313,"8812218797",node,15.625,hospital,hospital,Wabari,,,,,,,,,,,,,,,,,,,,,Via Londra,,,146133975,2,2024/01/11 09:07:06+00,20ccfbe189ca43d6b5ee0c1351571924
+44.9842063681418,1.98267469745281,"8497141643",node,9.375,hospital,,Afgoi District Hospital,,,,,,,,,,,,,,,,,,,,,,,,100642782,1,2021/03/08 13:57:46+00,7a48df33d581448e8ed31febd5e7f89f
+,,"1025461925",way,31.25,pharmacy,pharmacy,Tufah Pharmacy,Pharmacy,,,,,24/7,,,,,yes,,,,,,,,,,Makka Al-mukarama مكة المكرمة,"252",Mogadishu,171131445,2,2025/08/28 12:06:19+00,5af4c58a2ae2499fbce9723303a371a9
+,,"1029298542",way,18.75,hospital,hospital,Saafi Specialist Hospital,,,,,,,,,,,,,,,,,,,,,"Via Alto Juba, Suuq Bacaad",,"Mogadishu, Banadir",145166965,3,2023/12/15 21:21:12+00,adacfbe05234423390574fdd08067c63
+,,"1373443360",way,12.5,hospital,hospital,United Arab Emirates Hospital,,,,,,,,,,,,,,,,,,,,,,,,164337784,1,2025/03/31 15:56:46+00,4496b698d6ae4568b8cb9edf750d9c31
+44.0684781658364,9.52198889846827,"6503396585",node,18.75,clinic,clinic,MSF Somalia,Médecins sans frontières,,,ngo,,,,,,,,,,,,,,,,,,,,110024829,3,2021/08/21 11:35:41+00,9742a90710d945d5af5e760b9bbe580b
+45.5329249771869,2.97438879152062,"11375814969",node,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,144451112,1,2023/11/25 19:14:56+00,a185274f4c5c4ab99db66a8a174acf1c
+44.0511068391473,9.54241065117924,"5954605612",node,9.375,clinic,,Hargeisa Care Clinic,,,,,,,,,,,,,,,,,,,,,,,,63199712,1,2018/10/04 15:21:09+00,fa201f12cca243e38842a634278b056a
+45.5357066793931,9.52797801974285,"6166837385",node,9.375,pharmacy,,Mansha Allah pharmacy,,,,,,,,,,,,,,,,,,,,,,,,65823360,1,2018/12/27 19:53:14+00,d9fa6f62b2b74d2b9102aab56ac62164
+50.2292199975327,10.2814209257636,"7769496885",node,15.625,hospital,hospital,Iskushuban Hospital,,,,,,,,,,,,,,,,,,,,,Dhalmado,,,126491624,3,2022/09/22 07:20:49+00,c1377e07677244679e8dcc94377db629
+,,"1376167062",way,12.5,hospital,hospital,"Al-Hayatt Hospital Borama, Teaching Hospital of Amoud University",,,,,,,,,,,,,,,,,,,,,,,,164733824,1,2025/04/09 16:41:13+00,ad6ec95d1294431799dc9dd51f4efdae
+44.7649405588075,1.7139386441313,"6517696674",node,12.5,hospital,,Marka Regional Hospital,,UN UNSOS mission,,,,,,,,,,,,,,,,,,,,,,70874617,1,2019/06/03 07:13:26+00,c5a93ea40b874434827369091bc500df

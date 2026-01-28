@@ -1,0 +1,557 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+-13.2185454087372,8.48165582649955,"3342039261",node,12.5,clinic,,GINER HALL COMMUNITY HOSPITAL,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29064206,2,2015/02/24 11:00:04+00,5d330c0e2bf0415a9dfdc9c1c3aac513
+,,"1285134137",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,170083709,4,2025/08/07 01:45:27+00,384a8eb4599549e09657945c715fe432
+-12.0620300225091,8.89039547908052,"8687897518",node,12.5,clinic,,Stocco,,,,,,,,,,,,,,,,,,,,,Stucco Road,,,103955422,1,2021/05/01 12:46:00+00,9c5f2f0eaa5848208afe943d0555660f
+-12.1730366791969,8.56748886192923,"10047419963",node,12.5,clinic,,CHC MABANG,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,127326453,3,2022/10/10 22:51:55+00,eb49c3dde4134aceae6474f9dbe46bcf
+-11.7408233391404,7.96409669104489,"3589640103",node,15.625,clinic,clinic,Ramsy Medical Laboratories,,,,,,,,,,,,,,,,,,,,,Fenton Road,,,142405175,5,2023/10/10 17:51:17+00,8689b983ae4c4584a7200b0885c2200d
+-13.2504245525341,8.48479568742835,"5677572523",node,21.875,pharmacy,pharmacy,Abie's,Abie,,,,,24/7,,,,,,,,,,,,,,,Ascension Town Road,,,148545808,3,2024/03/12 11:39:22+00,18709a855e6243e989d56d8dd1d0ecaa
+-12.0625512092485,8.89099864083289,"8687912417",node,12.5,clinic,,Stocco,,,,,,,,,,,,,,,,,,,,,Stucco Road,,,103955422,1,2021/05/01 12:45:59+00,5b875fdef2354cbaad4a27b6760cf98d
+-10.8131154693623,7.77791693574545,"4504609544",node,34.375,clinic,,Jojoima Community Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,,,,,,yes,,yes,,piped,none,,,,,,,Bumpeh,43703720,1,2016/11/16 16:13:57+00,a0c80b07036c4c27a7ebcf4a58817f4c
+,,"309799179",way,9.375,hospital,,Lakka Isolation Hospital,,,,,,,,,,,,,,,,,,,,,,,,26348506,1,2014/10/26 19:36:38+00,d5edb77a66dc4b6ab9861d3d9eb1d397
+-11.4389000622128,8.4727199633453,"6819889276",node,9.375,clinic,,Mondema Community Health Center,,,,,,,,,,,,,,,,,,,,,,,,74855827,1,2019/09/24 12:41:16+00,5e6f3dbc9f974859b423ee2900390702
+-11.7143700527248,7.95333474646526,"6743930785",node,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,73716069,1,2019/08/25 12:10:44+00,7b8157e9de70444c8ed2fe577b929020
+-11.4459137035122,9.91171747264235,"4513810340",node,21.875,pharmacy,,Gbindi Enterprise Pharmacy,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,1 Gbindi town,yerba road,,Bindi,148545808,2,2024/03/12 11:39:22+00,e38cdbd8977f42e3a9d1ad5dc9265b0d
+-11.7306143487132,7.96362839411461,"1795616965",node,9.375,pharmacy,,Happy Life Drug Store,,,,,,,,,,,,,,,,,,,,,,,,53262323,2,2017/10/26 12:33:24+00,312ec0c3d9234b58a5298db6dc1ac552
+-10.766584507361,8.85466099509992,"4504695174",node,34.375,hospital,,Gandorhun CHC,Ministry of Health and Sanitation,Red Cross Field Survey,hospital,,,24/7,,,,,yes,,yes,,pub_tap,,,,,,,,Kornor,152309258,3,2024/06/06 01:31:15+00,dc0783d35b524093a958853dade979fc
+,,"307630448",way,12.5,hospital,hospital,Leicester Health Center,,,,,,,,,,,,,,,,,,,,,,,,68514688,4,2019/03/25 17:08:19+00,4500dead0a914cf5b646d12303848120
+-11.4701986753959,6.99279621924197,"4504580020",node,28.125,clinic,,Fatmata Cornel West,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,,,,,,,,,,,Koije,152309258,2,2024/06/06 01:31:15+00,6250b6429073448db677888965c181b4
+-10.689038743418,8.08351794032859,"4504613257",node,37.5,clinic,,Pendency Community Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,piped,solar,,,,,,,Pendembu,166195665,4,2025/05/13 10:45:33+00,3ae6bada331b4f7fb910f29a2c90370d
+-10.8698753707205,9.3448937851044,"4504695186",node,34.375,clinic,,Community Health Post.,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,,,,,,yes,,yes,,Hand pump in the Community.,solar,,,,,,,Kamaron,166195665,4,2025/05/13 10:45:33+00,556f638777fd4bd89369ed8afd524b54
+,,"269006959",way,15.625,hospital,,Kailahun Government Hospital,,,,,,,,,,,,,yes,,,,,,,,,,Kailahun,120335170,7,2022/04/29 07:24:55+00,7337fdabcaeb4ab7a14124dde7c966e1
+-10.7529582150099,7.99233658012196,"4504613262",node,34.375,clinic,,Mobai Community Health Center,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,piped,,,,,,,,Mobai,152309258,2,2024/06/06 01:31:15+00,a4ab28ac126d47d3b81a38f9826add8f
+,,"308361035",way,12.5,clinic,,Waterloo Ebola Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29201522,2,2015/03/02 15:20:47+00,05338773eb5f47dd95fbb19b39c7ea7b
+,,"808370575",way,12.5,hospital,hospital,Sowa Clinic,,,,,,,,,,,,,,,,,,,,,,,,85760938,1,2020/05/26 09:45:06+00,020dca500a0343adafd603be425d8470
+-12.3621847178672,8.42032736881669,"8425062746",node,12.5,clinic,,Makrugba PHU,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,99300983,1,2021/02/15 10:34:12+00,f9adabd5d5694afea35a1ba06424ef19
+-12.0326162478926,8.88875304515366,"8687620819",node,12.5,clinic,,Tonko MCHP isolation unit,,,,,,,,,,,,,,,,,,,,,Arabic College Road,,,103950430,1,2021/05/01 10:25:37+00,69c0d6da7d80468e8c664c66a5d06ea1
+-12.043607437524,8.88918236623422,"8688041217",node,12.5,pharmacy,,C.C. C Rogbaneh Road Makeni city,,,,,,,,,,,,,,,,,,,,4 Rogbabeh Road,,,,103958029,1,2021/05/01 13:51:03+00,c758a1bdb6a04738b4e6085b27bf9f6d
+,,"309034740",way,12.5,clinic,,Bible College Treatment Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29071705,2,2015/02/24 16:57:30+00,c4195c847f324af598d36ee610e74644
+,,"308027431",way,12.5,clinic,,Matanal Children's Health Post Hospital Building,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29112007,2,2015/02/26 12:09:26+00,ca335ee370bb424884421130120fec3a
+-11.7369835054776,7.96541952300373,"1795617005",node,12.5,pharmacy,pharmacy,Prisamon Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,f54e7c4cd9a046de92ac21bc13d9bca8
+-13.2248676268439,8.48870333068785,"4540110882",node,25,pharmacy,pharmacy,D J S General,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"18",Fourah Road,,Freetown,148545808,3,2024/03/12 11:39:22+00,d446e65d718747cea8e38ff4c61d89fb
+,,"248303133",way,9.375,hospital,,Mahera Hospital,,,,,,,,,,,,,,,,,,,,,,,,19113513,1,2013/11/25 17:35:21+00,e2191efaa5a5429fac2c0dbc76da4965
+,,"1428236844",way,21.875,hospital,hospital,Rokupa Government Hospital,,,,,,,,,,,,,yes,,,,,,,,Bai Bureh Road,,Freetown,171672453,1,2025/09/09 08:29:35+00,5a270496ef294c9c850ee986660232bd
+,,"296366810",way,9.375,clinic,,Fourah Bay College Hospital,,,,,,,,,,,,,,,,,,,,,,,,96451014,3,2020/12/26 13:16:48+00,ab5882f5d8d84ebd8b28557c4b7192b8
+-13.2386907262815,8.48842312366475,"5830236286",node,21.875,dentist,dentist,Connaught Hospital,,,,,,,,,,,,,,,,,,,,"1",Wallace Johnson Street,"233",,114665707,3,2021/12/07 15:29:36+00,99434dd4c77e4f9397e97de6a0f1d604
+-10.6741834126046,7.92812214935739,"4504609548",node,37.5,clinic,,Ales Sesay,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,rain,solar,,,,,,,Naigbena,166195665,4,2025/05/13 10:45:33+00,c1c12fcd13674a5f9f6c614a3fdb5f14
+-11.7360579757292,7.96595303114074,"1795616991",node,12.5,pharmacy,pharmacy,Mamadu S. Barrie,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,317d43e04e174ec1993296c24d31bec9
+-11.7333103040499,7.96236599567763,"1795616959",node,15.625,pharmacy,,Family Patent,,,,,,,,,,,,,,,,,,,,"5",Jakai Street,,,74120877,3,2019/09/05 10:35:16+00,c8c2b28b28ab4be19fc70cdb6c683338
+-12.2141621518416,8.46582526125187,"8926520518",node,12.5,pharmacy,,PA ALIE ENTERPRISE,,,,,,,,,,,,,,,,,,,,,1 Main Lorry Park Mile 91,,,108116740,1,2021/07/16 12:05:46+00,2d37487210c44cfe90e2aa08ef726d88
+,,"808382731",way,40.625,hospital,hospital,Manowa Community Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,hospital,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,protected_spring,none,,,,,,,Manowa,85763434,1,2020/05/26 10:23:01+00,6600d9a8f3dc4baa886f94d02de03df3
+-13.2374775296162,8.48779959388767,"4540110801",node,25,pharmacy,pharmacy,Mohammed Butcher,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"4",kabia street,,Freetown,166092611,4,2025/05/11 04:24:04+00,5ab21397abbc4a329c5f81077248f553
+-12.056435521236,8.87165572287935,"8687934317",node,12.5,hospital,,Make nice Regionale Hospital,,,,,,,,,,,,,,,,,,,,,Aggienold Road,,,103955886,1,2021/05/01 12:59:44+00,fc9f49ab17694621b1be4f2ddba2c83c
+,,"311195619",way,12.5,hospital,,AWAKE HOSPITAL,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,4,2015/03/31 11:24:01+00,42347dbc58b04781bbaaf39282dc0aee
+-11.8183439573739,9.71145595237334,"4504695160",node,37.5,clinic,,Thellia,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,solar,,,,,,,Thellia,166195665,5,2025/05/13 10:45:33+00,e19994951bec4d0aa1a015a3f5fd1f63
+-10.5969014271544,9.016884097663,"4504695142",node,37.5,clinic,,Community Health Post,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,piped,none,,,,,,,Kondewakoro,43705872,2,2016/11/16 17:58:51+00,c48d00f0efd346168a2f59554adbe593
+-12.4148599501708,8.48225094162487,"10047499369",node,12.5,clinic,,Mathoir CHC,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,a2585a9bd79140eb894e8eb73efc406e
+-11.3816428625393,7.01887491840475,"4509027348",node,25,pharmacy,pharmacy,Krios,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,Main Road,Bo Waterside Road,,Jendema,148545808,3,2024/03/12 11:39:22+00,0911a9ee01a9445ebb76aa573fc20920
+-12.2146836738571,8.46687425643404,"8688406520",node,12.5,pharmacy,,Tonkolili health care enterprises,,,,,,,,,,,,,,,,,,,,,Yonibana-Bo,,,103964812,1,2021/05/01 16:32:10+00,25e12aceca6d4c11865738a5580b84a0
+-11.7356922732938,7.96274988684297,"1795616940",node,12.5,pharmacy,pharmacy,AK Enterprise,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,a5504b6dab0345efa342c260be5fe816
+-12.2141800052954,8.46665439911379,"8688406424",node,12.5,pharmacy,,Young generation enterprises,,,,,,,,,,,,,,,,,,,,,6 freetown road Mile 91,,,103964812,1,2021/05/01 16:32:13+00,4b0eef9de8a642e08fedb8f0d06094ff
+-10.737457310014,8.94004543107172,"4504696817",node,34.375,clinic,,Bandapirie,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,,,surface_water,none,,,,,,,Bandaperi,44185400,3,2016/12/05 15:05:42+00,de0f123202f341d5b3ae24aa2879c8ed
+-10.5739394548677,8.27553502063611,"4504637937",node,31.25,clinic,,Under Fives/ Chc,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,,,piped,,,,,,,,Kailahun,152309258,3,2024/06/06 01:31:15+00,ef18d2c27c83422f9a7353bf483c5203
+,,"865980151",way,12.5,hospital,hospital,GOVERNMENT HOSPITA,,,,,,,,,,,,,,,,,,,,,,,,93369811,1,2020/11/01 14:33:29+00,2d559103f06e4328be6e9a3e2ba97801
+-12.0438968646406,8.90579035300124,"4861866360",node,9.375,pharmacy,,A.A.A.&T Enterprises,,,,,,,,,,,,,,,,,,,,,,,,48790984,1,2017/05/18 12:44:25+00,fd75af6f2cf54fac9021e09f8629aac2
+-11.0996461354831,7.52391568146976,"4504695178",node,34.375,clinic,,Vandi Massaquoi,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,,,,,,yes,,yes,,tubewell,solar,,,,,,,Mano Njeigbla,166195665,4,2025/05/13 10:45:33+00,1075405ed11b4cc4a3436ad41f6df3af
+-10.337520583603,8.46188769459803,"4530647913",node,25,pharmacy,pharmacy,Mr Joshua Tamba's Pharmacy,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,6C,Guinea Road,,Koindu Town,148545808,4,2024/03/12 11:39:22+00,c52aeaa9e96045998924e483c6c3dcad
+,,"308469620",way,12.5,clinic,,Maternal and Child Health Post,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29092466,3,2015/02/25 14:13:23+00,9e050b0fa9254b37a29a488d11a7379a
+-13.2349145112638,8.48923407279679,"4540108158",node,25,pharmacy,pharmacy,Amalan,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,5B,Gloucester Street,,Freetown,166092611,5,2025/05/11 04:24:04+00,6a83c3a0e3aa4c12977d4367ba75e480
+-12.0610569673697,8.89099369551002,"4861867443",node,9.375,clinic,,Stocco Health post,,,,,,,,,,,,,,,,,,,,,,,,68147855,2,2019/03/14 18:55:49+00,fb356ee3f9c2401cb690011899c8be30
+-11.7382777551466,7.9651193670511,"3589578569",node,12.5,pharmacy,pharmacy,Hamdalaye Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,1f2d132f3ad34b8cb72f090e99559554
+-13.2482046054786,8.47350585058686,"12037880469",node,18.75,pharmacy,,HEALTH FOR ALL MEDICALS,,,,,,,,,,,,,,,,,,,,"39",Old Railway Line,"000",,153628946,1,2024/07/06 15:42:08+00,e04ece25e41a4ce4984397b4dcc259ac
+-12.0426664012548,8.89103334191202,"8687957417",node,12.5,pharmacy,,Rogbaneh Road Makeni,,,,,,,,,,,,,,,,,,,,,Rogbaneh Road,,,103956477,1,2021/05/01 13:14:24+00,67102f4494904e6194d8129c883d22b3
+,,"306453543",way,15.625,clinic,clinic,Davidson Nicle Hospital,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,114664618,5,2021/12/07 14:56:38+00,73e548dde9564463a2ba323c4692bd89
+,,"306728886",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,84780316,3,2020/05/06 19:23:05+00,7c134f806d1747c4a9dc28bd7ffef9b5
+-10.4926619838128,8.33446407471655,"4504637941",node,37.5,clinic,,Manosewallu Health Post,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,pub_tap,none,,,,,,,Manosewallu,44066019,2,2016/11/30 17:46:51+00,b4385086a8e34ef18c0515ef80f4e9ef
+-12.570084079765,8.3640700463728,"10053251636",node,12.5,doctors,,Makondu MCHP,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,3b046d2ef4a342839d6e41caaa2acd7f
+-11.5726167311779,9.85826859067581,"4504696789",node,34.375,clinic,,MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,,none,,,,,,,Hamdalai,43705440,1,2016/11/16 17:37:08+00,aee632aad1604602a3e6a7306f998861
+,,"330068376",way,12.5,clinic,,Molensheni Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29088469,2,2015/02/25 11:03:22+00,daa4601430404f73890266db9af2b108
+-12.2153844009624,8.46683913625972,"8688288720",node,12.5,pharmacy,,Young star Enterprise,,,,,,,,,,,,,,,,,,,,,11 Freetown Road Mile 91,,,108116740,2,2021/07/16 12:05:39+00,ffbf0f3cad684dd687cd8768044debdd
+-10.563687130001,8.17641465701968,"4504637953",node,34.375,clinic,,District Health Management Team Clinic,District Health Management Team,Red Cross Field Survey,hospital,,,08:00-17:00,,,,,yes,,,,pub_tap,none,,,,,,,Giema,43704220,1,2016/11/16 16:35:38+00,40ca36f920194ba8a2feac9aeb7cfee2
+,,"308488174",way,9.375,clinic,,Kent Community Health Post,,,,,,,,,,,,,,,,,,,,,,,,29092210,2,2015/02/25 14:00:16+00,f389ede1249e46468f4d66ceb8aa0c2e
+-12.9102230516507,9.10274294935445,"4504696818",node,37.5,clinic,,Senthai MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,solar,,,,,,,Kambia,166195665,4,2025/05/13 10:45:33+00,262c0e4857594020983d62e3555d0ef8
+-10.8147164128685,7.81023428544029,"4504609545",node,34.375,clinic,,Njama Maternal Child Health Post,government,Red Cross Field Survey,clinic,,,24/7,,,,,no,,yes,,protected_well,,,,,,,,Komboima,152309258,2,2024/06/06 01:31:15+00,6a6b897587e2461089b08734a5fbe03a
+-10.4095071340851,8.38465994006145,"4504637936",node,37.5,clinic,,Dia Community Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,piped,none,,,,,,,Dia,44066762,2,2016/11/30 18:40:17+00,9978e0fb72d147bb9547921836f816c0
+,,"1303698620",way,15.625,hospital,hospital,,,,,,,,,,,,,,no,,,,,,,,,,Bo,154394436,1,2024/07/25 13:28:53+00,06f83eb7a7b049658c72e624217afe11
+-12.135608464042,8.35398334791284,"8425062748",node,12.5,clinic,,Mashemgbe PHU,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,126645413,2,2022/09/26 09:09:13+00,2ce333d9c4d540d2a72728ccdd401d29
+-10.7869388695705,7.8769384767235,"4504609542",node,37.5,clinic,,Jojoima Community Health Center,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,solar,,,,,,,Jojoima,166195665,5,2025/05/13 10:45:33+00,f44977ee72684ef18334e91ecd0e7a74
+-11.7612105584103,7.9648626293569,"1795616960",node,9.375,pharmacy,,Fatibra Health Centre,,,,,,,,,,,,,,,,,,,,,,,,53262323,2,2017/10/26 12:33:23+00,42b6606e1dd849c5adfe63402117cad1
+,,"1434882165",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172755228,1,2025/10/02 15:38:01+00,9a5b5ed5ec724d0aa7d53299f3a58557
+,,"970931299",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,109268534,1,2021/08/06 15:08:41+00,7bae40bfe23040a4bbb64b865410e736
+-10.3728077254112,8.27870446968313,"4530474816",node,21.875,pharmacy,,Emmanuel Kollie Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"14",Kailahun Road,,Buedu,148545808,2,2024/03/12 11:39:22+00,b7ebec09ad5d41f08d55fee92e3b3ae3
+,,"814982335",way,21.875,hospital,hospital,Port Loko ETU,GOAL,"UNMEER ; https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,c26e5a407f32447e9e0ced43370a0ec5
+,,"808386957",way,40.625,hospital,hospital,Mamudia MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,hospital,,,24/7,,,,,yes,,yes,,public hand pump,none,,,,,,,Mamudia,85764395,1,2020/05/26 10:38:56+00,a038b5b815844de8a58d5835f29d862d
+-11.471025717782,7.17587358071981,"4504580026",node,34.375,clinic,,Amina Yanbasu,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,,,no,,unprotected_well,none,,,,,,,Futagolawoma,43703078,1,2016/11/16 15:46:33+00,9157cea73e2748b4a7a817ec13ae0a83
+-10.6309885318853,8.76539624087292,"4504695172",node,37.5,clinic,,Foakor Community Health Post,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,unprotected_well,none,,,,,,,Foakor,43705440,1,2016/11/16 17:37:05+00,6d56bc9a29ce40cdb8add00dfa69761b
+,,"311780203",way,12.5,hospital,hospital,Mattru General Hospital,,,,,,,,,,,,,,,,,,,,,,,,114072558,2,2021/11/21 20:40:30+00,686983ddcdd343c8a358610b2aa7b392
+-12.0459702122096,8.88854123446046,"8687950418",node,12.5,hospital,,Old government hospital,,,,,,,,,,,,,,,,,,,,,Mabanta Road,,,103956258,1,2021/05/01 13:09:15+00,06dbcb9df81e4c0fbc0a2310d6ab3aaa
+-12.0345250587023,8.37368098800866,"10047566209",node,12.5,doctors,,MCHP Mayorgbo,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,a26721163d594b8dac190fdd0ae95ba5
+-12.6394272294434,9.45819507160496,"4504695169",node,37.5,clinic,,Barukuya Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,none,,,,,,,Barukuya,43705440,1,2016/11/16 17:37:05+00,2c7e5fe3bcb2459cbf52e0e941365d77
+-12.0446016150595,8.88816237243702,"4861866358",node,9.375,pharmacy,,Tambaka Enterprise,,,,,,,,,,,,,,,,,,,,,,,,67976924,2,2019/03/10 02:33:42+00,fda2139b0ef24d6ab87abebd5bb99832
+,,"275178202",way,37.5,hospital,hospital,"District Health Management Team (DHMT);District Health Management Team (dhmt) Office",Ministry of Health and Sanitation,Red Cross Field Survey,hospital,,,08:00-17:00,,,,,yes,,yes,,piped,,,,,,,,Kailahun,152309258,7,2024/06/06 01:31:15+00,1e6ee3786dcc4a1e84e1f91a56d99f4f
+-10.3715269706063,8.28081419471189,"4530474813",node,21.875,pharmacy,,Amadu's enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"19",Kangama road,,Buedu,148545808,5,2024/03/12 11:39:22+00,4febfdf6b54c405e92d0b5382229bbc4
+-12.2851449694188,8.66146927488163,"10042305070",node,12.5,clinic,,Rochen Malal CHC,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,127326453,2,2022/10/10 22:51:55+00,152ca77575f04e44bca6cfd436cacf9d
+,,"865977926",way,12.5,hospital,hospital,MSF HOSPITAL,,,,,,,,,,,,,,,,,,,,,,,,93369449,1,2020/11/01 14:20:19+00,ee515b3ab0f04c55b4d5ec6bd67b0cc7
+-10.5817720081072,8.61374866936288,"4504696807",node,37.5,clinic,,Sahr Kamanda,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,solar,,,,,,,Koardu,166195665,4,2025/05/13 10:45:33+00,938918d6f66d41cbb9873ff323c884c5
+-12.6701983694598,9.38855377763073,"4504696798",node,37.5,clinic,,Kukuna Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,none,,,,,,,Kukuna,43705440,1,2016/11/16 17:37:10+00,275ed33dae6e4f2db0b6eb782a3009c0
+-13.088016461368,8.36681034197733,"11759381458",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,149109955,1,2024/03/25 00:07:56+00,bdf523d114ac423eb02599ba976bebac
+-12.2147188778504,8.46687559753855,"8926520217",node,12.5,pharmacy,,TONKOLILI HEALTH CARE ENTERPRISE,,,,,,,,,,,,,,,,,,,,,Freetown Road Mile 91 Junction,,,108116740,1,2021/07/16 12:05:41+00,44f7c611f1f246979a4da4265efaf46b
+-11.4541912519912,7.04740121711325,"4504580024",node,31.25,clinic,,MCHP,,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,,,protected_well,none,,,,,,,Wai,48630446,2,2017/05/12 17:49:19+00,f08d18792c314b75b61bcdbe397ca346
+,,"308541347",way,9.375,clinic,,Haston Health Centre,,,,,,,,,,,,,,,,,,,,,,,,29092909,2,2015/02/25 14:36:43+00,6c63a4e231bd41898d1a0c3d62a0af86
+-12.2401865362718,8.46878734201437,"8688629418",node,12.5,hospital,,community health foundation,,,,,,,,,,,,,,,,,,,,,2 silicon hills mile 91,,,140229698,2,2023/08/22 13:29:01+00,bf87c9acec034bc5b8b729b4a3981234
+,,"1430730198",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172086348,1,2025/09/17 21:43:30+00,2391081a678d4e22b8f9037c7a152881
+-10.5693197689336,8.27766134183318,"4513732505",node,21.875,pharmacy,,Sowa Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"50",Buedu road,,Kailahun,148545808,2,2024/03/12 11:39:22+00,f28d44f773674bfbbcf52549b3ba78ee
+-10.6954908810239,8.09603916256529,"8170338387",node,21.875,clinic,clinic,Pendembu Community Health Centre (CHC),Ministry of Health and Sanitation (MoHS),,general,public,,,,,,,,,,,,,,,,,,,,94894386,3,2020/11/27 11:44:33+00,950e503dddbf4b418dd371a1799c542b
+,,"310247368",way,12.5,clinic,,Tombo Community Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29091646,2,2015/02/25 13:29:58+00,18cf940d4b73416a8c9bd83395fed887
+,,"910575048",way,9.375,hospital,,DOCTOR QUARTER,,,,,,,,,,,,,,,,,,,,,,,,99925963,1,2021/02/24 18:57:05+00,3feb1bcf8efe41ca9559051fc90945b7
+-13.0901212410739,8.39526799289882,"3369935516",node,9.375,clinic,,John Thorpe Ebola Isolation Centre,,,,,,,,,,,,,,,,,,,,,,,,29064437,1,2015/02/24 11:13:58+00,3f5bd78d38894e878cb7e150392fbb59
+,,"808374591",way,21.875,hospital,hospital,Bo CMC,MSF,"UNMEER ; https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,152302143,3,2024/06/05 19:19:42+00,a14c31cf455442028d5427091876ae7b
+-12.1977009321992,8.45631766848214,"10053124232",node,12.5,clinic,,CHC HINISTAS,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,1f294640049a4f1980a487a2c949c1f4
+,,"314739879",way,9.375,hospital,,Ola During Children's Hospital,,,,,,,,,,,,,,,,,,,,,,,,27126718,2,2014/11/30 08:58:12+00,94bd49cabd494e6c86562f8a8b8f8ec8
+,,"306887970",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,114665707,4,2021/12/07 15:29:36+00,4c49e110f87449bfac2bcfcc69a351ca
+-10.3376727151456,8.46188149198969,"4513760212",node,25,pharmacy,pharmacy,Tamba Jimmy,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"00",Guinea Road,,Koindu,166092612,5,2025/05/11 04:24:22+00,7890ed93e30e4b30a750c7c39ba471b7
+-10.6903362620293,8.08429544566695,"4504613259",node,37.5,clinic,,Hand Maids Catholic Clinic and Maternity,ngo,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,piped,solar,,,,,,,Pendembu,166195665,4,2025/05/13 10:45:33+00,b6a538d8b732430ea2099c058b8cdea8
+-12.042688110384,8.89086687731501,"8688135317",node,12.5,pharmacy,,Rogbaneh Road Makeni,,,,,,,,,,,,,,,,,,,,,Rogbaneh Road,,,103959607,1,2021/05/01 14:29:29+00,4dbdee5379bf4c72a8843ab0c3776bdc
+,,"297225533",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,25984800,2,2014/10/10 15:08:04+00,5e2bc9b6d2f941af8d142cbb0b18de8d
+-11.7396065382567,7.96728793304015,"3589579507",node,12.5,clinic,clinic,Mariestops,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,2e26b9614e5e43a4a4ad078c5f1f1e3c
+-13.2707110213279,8.46019647799471,"11708600669",node,15.625,hospital,,LIFE CARE HOSPITAL,,,,,,,,,,,,,,,,,,,,"198",Wilkinson Road,,,148426444,1,2024/03/09 14:53:09+00,bea0394a108949e4a03ffd9f3f56d0a3
+,,"314840979",way,21.875,hospital,hospital,Kerry Town ETU,Save the Children,"UNMEER;https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,127305170,5,2022/10/10 13:46:13+00,020bf010de7345f2839794c3965d994e
+,,"309957378",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,26703549,2,2014/11/11 05:41:02+00,292bc77e742c434a9da7d005862ee025
+-11.7284793103368,7.94499902757823,"1795616989",node,15.625,pharmacy,,Magret Memorial Patent Pharmacy,,,,,,,,,,,,,,,,,,,,"101",Main Sewa Road,,,74120877,3,2019/09/05 10:52:15+00,da3427daea5843c083e81dd140b213cb
+-10.4654431781804,8.29569936510066,"4504637965",node,31.25,clinic,,Momoh S Salia,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,,,yes,,pub_tap,,,,,,,,Sandeyalu,152309258,2,2024/06/06 01:31:15+00,901dc556363748118a1f28e1fa10f124
+-10.5526485826167,8.68049493780003,"4504695150",node,37.5,clinic,,Mohamed Gbaika,government,Red Cross Field Survey,clinic,,,24/7,,,,,no,,yes,,protected_spring,none,,,,,,,Sindadu,43705440,1,2016/11/16 17:37:00+00,dd07ba6e6c474cfa9ad1792a675798bd
+-10.3166533327383,8.21068113447848,"4504637940",node,37.5,clinic,,Madopolahun Health Center,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,protected_well,none,,,,,,,Mandopolahun,44956399,2,2017/01/06 15:43:39+00,3da307b6cca54e7685f1333263dfa756
+-10.436357303616,8.19988373444841,"4504637960",node,31.25,clinic,,Ministry of Health and Sanitation Clinic,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,,,,,,yes,,,,pub_tap,none,,,,,,,Konjo,43704220,1,2016/11/16 16:35:40+00,026303701cc343eaa3665b2198edd8be
+,,"298793988",way,12.5,hospital,,York Hospital,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29110288,3,2015/02/26 10:27:40+00,e63a9bf99f004c1da11d96dc54e879bf
+-12.2205441329179,8.46288447052345,"8688288819",node,12.5,hospital,,St. Maries,,,,,,,,,,,,,,,,,,,,,Bamba Street,,,103963002,1,2021/05/01 15:51:00+00,aec86984df69481f905ecf0bb0d9943b
+-12.0354552823165,8.88845272156297,"8687621119",node,12.5,clinic,,City garden clinic,,,,,,,,,,,,,,,,,,,,,Arabic College Road,,,103950430,1,2021/05/01 10:25:39+00,68fa665949f84659b076ce9291ab7f02
+-12.0324525493236,8.88869814368789,"4861867439",node,9.375,clinic,,Fullah Town Community Health Post,,,,,,,,,,,,,,,,,,,,,,,,68147855,2,2019/03/14 18:55:49+00,dcd47028bed44e5da85b9b962bf6349b
+,,"307999816",way,12.5,clinic,,Health Center,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,4,2015/03/31 11:24:55+00,7779f8557472402d831e57b8d1bf80b7
+-12.4889338460003,8.36139311795628,"8425062796",node,12.5,clinic,,Ronietta PHU,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,99300983,1,2021/02/15 10:34:12+00,8d2c2f9b33a846ae9794d82d266a7e81
+,,"314753136",way,12.5,hospital,,Macauley Street Health Clinic,Government of Sierra Leone,,,,,,,,,,,,,,,,,,,,,,,57776991,2,2018/04/03 15:59:07+00,04321b7886f3400092b87e477d525d4b
+-11.3465000571037,8.23161996679622,"6814494087",node,9.375,clinic,,Gendema maternal and child health post,,,,,,,,,,,,,,,,,,,,,,,,74757280,1,2019/09/21 19:15:02+00,966fddc03fde45bbad1eb69c98ea82dc
+,,"308205497",way,12.5,clinic,,Arab Clinic,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29196178,2,2015/03/02 11:10:03+00,69b9a7e7d4894434a2abcb2cf027f12d
+-12.0528657524934,8.88546717147159,"6656999385",node,9.375,pharmacy,,Eve-Andy's,,,,,,,,,,,,,,,,,,,,,,,,72758398,1,2019/07/29 08:01:31+00,e6db70693d474b6d82ff50c300339617
+-13.1108931058804,8.38055054439258,"3370474297",node,12.5,clinic,,Health Life Charity Clinic,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29071342,1,2015/02/24 16:45:17+00,82272f5712f84932b9653a3388b0b9fa
+-12.0438046637057,8.88674675281007,"4861867437",node,25,clinic,"clinic;pharmacy",Loreto Clinic,,,"infectious_diseases;pharmacology",,,Mo-Fr 00:00-23:55,,,,,,,,,,,,,,,Dr Vicent Kanu road,,Makeni,83154246,3,2020/04/06 15:21:02+00,fc855bcf42244c42920f171a3dcde02b
+-11.7373822326116,7.96834966871515,"1795616946",node,12.5,pharmacy,pharmacy,Betty's Medicine Shop,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,64f7ac4f4ac0453681dabcf264b1c04a
+-10.7117558803131,8.157266785953,"4504648656",node,37.5,clinic,,Mende Kema Maternal And Child Health Post,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,piped,solar,,,,,,,Mende kema,166195665,4,2025/05/13 10:45:33+00,90b2aa856ba24092bbf5146e2d3da7c5
+,,"306728887",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,84780316,3,2020/05/06 19:23:05+00,5da09970c8154f31b2c100dfa0487840
+-11.7328439349573,7.95856857444488,"1795616994",node,15.625,pharmacy,,Maria Pharmacy,,,,,,,,,,,,,,,,,,,,"147",Old Railway Line,,,74120877,3,2019/09/05 10:32:44+00,462ae6bc6af147398a8d4cecf5fc155c
+-11.7371633811197,7.96520083914996,"3589578472",node,12.5,pharmacy,pharmacy,Caji Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,2e14a4839daf4cdb93c27ae3b0b69608
+,,"1430493521",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172079525,2,2025/09/17 18:09:28+00,a42e11579cea408f8f372eccd21dcf77
+,,"314868716",way,12.5,hospital,hospital,China Sierra Leone Friendship Hospital,,,,,,,,,,,,,,,,,,,,,,,,129098467,4,2022/11/18 19:06:55+00,21b2d1e6016c424b9eb10c8111c5b69d
+-10.3378076637867,8.4618947353967,"4513760209",node,25,pharmacy,pharmacy,Emmanuel Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"00",Guinea Road,,Koindu,148545808,4,2024/03/12 11:39:22+00,94e8651928544e63a489f3823f5dfa4b
+,,"308498279",way,12.5,clinic,,One-House Community Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29088066,2,2015/02/25 10:41:58+00,0c279a4f16924ec58cf544d8503ebb85
+,,"306780514",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172112902,10,2025/09/18 13:21:16+00,a36b2372832749cda4717669bcb3e0e5
+-12.0534350513569,8.87855729813342,"4861866348",node,9.375,clinic,,Mena Police Clinic,,,,,,,,,,,,,,,,,,,,,,,,48790984,1,2017/05/18 12:44:24+00,0931c8177cfd4f0bbcd1c203f2555cfb
+-13.2238675819762,8.48640618630412,"4540111505",node,21.875,pharmacy,pharmacy,,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"40",fourah bah road,,Freetown,126962862,3,2022/10/03 23:17:26+00,8d92f3298acf45b09d405abbfdb271d7
+-13.1110199240754,8.80358611956919,"12073524534",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,154394650,1,2024/07/25 13:32:42+00,7848eccbdbce4a7188e901b35085583b
+-12.9135403574697,9.1076189538876,"4504695153",node,37.5,clinic,,Kambia MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,unprotected_spring,none,,,,,,,Kambia,43705440,1,2016/11/16 17:37:01+00,65b2ddf0283b4b12ae24c9f6f0ff01ae
+-11.7369592817774,7.96668141852652,"1795616937",node,12.5,pharmacy,pharmacy,A Bah Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,9b02701bd8304370914ef74d528fbcb4
+-12.0558617799637,8.86243319863658,"4861867441",node,15.625,clinic,clinic,Makama Community Health Centre,,,,,,,,,,,,,,,,,,,,"25",,,,161444352,3,2025/01/17 07:40:01+00,c5fd8327c5c74fa6b5ede5e590e8468f
+-11.718873816938,7.94718594993523,"3589579865",node,9.375,pharmacy,,Tenrex Patent Medicine,,,,,,,,,,,,,,,,,,,,,,,,55637071,3,2018/01/21 20:18:16+00,017b79b54a704859b527016c2971d4e1
+-10.5844432368296,8.59917044426834,"4504696805",node,37.5,clinic,,Koardu,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,solar,,,,,,,Koardu,166195665,5,2025/05/13 10:45:33+00,ffbbab2b714b4380a4c3b0d46acda5ba
+,,"308162255",way,12.5,clinic,,Charlotte Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,4,2015/03/31 11:24:24+00,fd062f4ec8fb404bb37f94c5ca26e60b
+-12.4286854803604,8.37691036766336,"10047469782",node,12.5,clinic,,CHC RORUKS,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,3fda45cac9bc4abb9c5f55594fd3ef38
+-11.7286060447128,7.94332876573284,"1795616976",node,15.625,pharmacy,,Jenkin's Patent Medical,,,,,,,,,,,,,,,,,,,,"7",Old Railway Line,,,74120877,3,2019/09/05 10:53:41+00,a520004d080142a8a76f88dc269db5c2
+-12.2571346606697,8.38395829094679,"10042320443",node,12.5,doctors,,MCHP Petfu Fulamasa,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,72fa1f521a5540e085b241995fceb402
+,,"308027480",way,12.5,clinic,,Matanal Children's Health Post Hospital Building,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29112007,2,2015/02/26 12:09:26+00,cca5f89256e041509992bb14f340bcc7
+,,"306728897",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,59742196,2,2018/06/11 13:23:55+00,e71a8dd9911a48fa91da01a043acfd2b
+,,"330280827",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,94895265,4,2020/11/27 12:01:26+00,d710581c6cba4f419fb2d1fcb47f3bd9
+-12.2008896596234,8.45680767454166,"8688240117",node,21.875,clinic,clinic,MSF Hospital,Médecins sans frontières,,,ngo,,,,,,,,,,,,,,,,,Yonibana-Bo,,,110029602,2,2021/08/21 13:57:51+00,577fae7eb88b464393417b9456e38c06
+,,"306912779",way,9.375,hospital,,Choithram Memorial Hospital,,,,,,,,,,,,,,,,,,,,,,,,121589442,6,2022/05/27 18:40:07+00,2e5a9e2170754bbdbc2b58de45739e56
+-11.7182969743616,7.93257679561799,"12083822769",node,12.5,pharmacy,pharmacy,Moity Enterprise,,,,,,,,,,,,,,,,,,,,,,,,154619972,1,2024/07/30 19:01:07+00,b94425039d0b45438eb5ef97caad5ed3
+-12.9140854326331,9.10836812839324,"4504696801",node,37.5,clinic,,Dibia CHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,rain,solar,,,,,,,Kambia,166195665,4,2025/05/13 10:45:33+00,e1468c5a5b3c42bc9caff41a0c05f69c
+-12.2469790629656,8.45825061917299,"8688629218",node,12.5,hospital,,Yoni Bana Hospital,,,,,,,,,,,,,,,,,,,,,Mile 88 Road,,,157152703,2,2024/09/27 03:44:11+00,83876a206faa4f67ad0a287bf16ab641
+,,"868013408",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,93707770,1,2020/11/07 13:45:28+00,9c06632a6d164416a9fcad1dd02c322d
+,,"331939089",way,15.625,hospital,,Port Loko Hospital,,Bing,,,,,,,,,,,,,,,,,,,,,Port Loko,123375635,4,2022/07/08 17:31:18+00,30cef2dfa321412994f698868519940a
+-10.5164373359835,8.24676447326917,"4504637957",node,40.625,clinic,clinic,Kpandebu Maternal-Child Health Post (MCHP),Ministry of Health and Sanitation (MoHS),Red Cross Field Survey,"clinic;community",public,,08:00-17:00,,,,,yes,,,,pub_tap,none,,,,,,,Kpandebu,94893690,2,2020/11/27 11:31:51+00,76fb55723ea64a3a97a650a95090f053
+-10.6807086404061,8.89798847752735,"4504695151",node,37.5,clinic,,Kundundu MCHP,combination,Red Cross Field Survey,clinic,,,24/7,,,,,no,,yes,,surface_water,solar,,,,,,,Kundundu,166195665,4,2025/05/13 10:45:33+00,ee014c3f156d464da7eac9335dea1f68
+,,"224729043",way,15.625,hospital,,Holy Spirit Hospital,,Bing,,,,,,,,,,,yes,,,,,,,,,,,67715303,5,2019/03/02 14:49:14+00,0a4eb1fdeaf0457794aee4afb6b6eb37
+-11.1858830110077,7.87643497579987,"12063346094",node,12.5,pharmacy,pharmacy,Millie B Drug Store,,,,,,,,,,,,,,,,,,,,,,,,154148401,1,2024/07/19 15:34:12+00,6889369c71214753af03cd881950c36c
+-12.0296502276356,8.90831716153193,"8687897519",node,12.5,hospital,,Makeneh Kabala Highway Makeni,,,,,,,,,,,,,,,,,,,,,Ibrahim Sesay Street,,,103955448,1,2021/05/01 12:46:33+00,234bcc80b1ca4241801f626ba8c71676
+-11.7402116278468,7.96444076817016,"3589607770",node,15.625,pharmacy,pharmacy,Jagisa Pharmacy,,,,,,,,,,,,,,,,,,,,,Fenton Road,,,108431838,3,2021/07/22 13:28:21+00,5a468420acc54b708db5dca87485321e
+-11.4373499130398,7.28757844994195,"4504602482",node,37.5,clinic,,Musu Kula Kamara,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,no,,no,,pub_tap,none,,,,,,,Sengama,43703532,1,2016/11/16 16:04:57+00,648ee07e4a9b4ab2afd09a5e423ec32d
+-12.214303051634,8.46665238745703,"8688406423",node,15.625,pharmacy,,Ishamiel Tamaraneh Enterprise,,,,,,24/7,,,,,,,,,,,,,,,4 Freetown road mile 91,,,108116740,2,2021/07/16 12:05:42+00,07a8e600d34045649e9291364feb68e5
+-10.8663884151813,8.43570145561753,"4504695188",node,28.125,clinic,,Ibriam Rogers,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,,,,solar,,,,,,,,166195665,6,2025/05/13 10:45:33+00,718b1e88371745b8b4a6688ba8a6aafe
+,,"272696637",way,21.875,pharmacy,,Med Mike Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,49 A,massanta section,,Kailahun,166092612,4,2025/05/11 04:24:22+00,e17703851cd54486994d6b4737af78c1
+,,"330362045",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,29114760,1,2015/02/26 14:33:40+00,db8a5eaacae549ada171f4b28ac91321
+-10.585627683567,8.22095156425601,"4504637956",node,37.5,clinic,,Miatta Sandi,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,no,,yes,,pub_tap,none,,,,,,,Bandajuma Sinneh,43704220,1,2016/11/16 16:35:38+00,b776c164633542f98f1eec551e9cd251
+-10.6556332550532,8.27404094639544,"4504648655",node,25,clinic,,Boama Clinic,,Red Cross Field Survey,clinic,,,,,,,,,,,,pub_tap,none,,,,,,,Baoma,43704485,1,2016/11/16 16:48:28+00,7fb3be610cc04a399654a1a136b6159d
+,,"263583248",way,15.625,hospital,hospital,Dr. Muana Private Hospital,,,,,,,,,,,,,,,,,,,,,Bi-Tiama Highway,,,126962610,6,2022/10/03 23:08:11+00,a32bb337570d4452a46449a8a30967c2
+,,"292226416",way,37.5,hospital,hospital,Sia Ngegba,government,Red Cross Field Survey,hospital,,,08:00-17:00,,,,,yes,,yes,,,none,,,,,,,Laleihun,86522114,2,2020/06/11 14:22:31+00,d64be43eb93d49148b6d80f2ca721487
+-12.9103947130277,9.12781732887899,"4504696822",node,37.5,clinic,,Madina Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,piped,solar,,,,,,,Kambia,166195665,5,2025/05/13 10:45:33+00,ff871a38a04c4576955da23d8477668b
+-10.5097961026421,8.68963909124813,"4504695164",node,37.5,clinic,,Kamiendor Health Centremm,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,protected_well,solar,,,,,,,Gbangbatu,166195665,5,2025/05/13 10:45:33+00,e0a53100c9e44bb19bd5826223f6a37a
+-12.243588918408,8.4393665265992,"8688476719",node,12.5,hospital,,yonibana CHP,,,,,,,,,,,,,,,,,,,,,Station Road,,,103965975,1,2021/05/01 16:59:42+00,679e8274ac4b4502a073f328f9906e2c
+,,"285181622",way,15.625,hospital,hospital,Magburaka Hospital,,Local_knowledge,,,,,,,,,,,,,,,,,,,,,,123538870,7,2022/07/12 22:30:30+00,5f803fd9a860434baaaf841a018f1597
+-13.2686916532153,8.46210252277638,"11704174369",node,15.625,pharmacy,,Rapha trading enter,,,,,,24/7,,,,,,,,,,,,,,,Lumley Road,,,148545808,2,2024/03/12 11:39:22+00,e634ba09621f4c9ba7b824be10869d3f
+,,"1292616195",way,12.5,hospital,hospital,Bonthe Government Hospital,,,,,,,,,,,,,,,,,,,,,,,,161133320,2,2025/01/08 13:15:50+00,eada771099984362b05aad873ee86a81
+-11.7385537712181,7.96478308509577,"3589578730",node,12.5,pharmacy,pharmacy,Kakua Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,20e690e3245f456eb97d979c064783a4
+-13.2708913160651,9.04909206352141,"4504696820",node,37.5,clinic,,Alhajie I Sum And,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,piped,solar,,,,,,,Mapotolon,166195665,4,2025/05/13 10:45:33+00,813a07937f4e408db19c9b15f39b4fb7
+-13.2220244014684,8.48644315049711,"4540110842",node,25,pharmacy,pharmacy,R U Y I enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"68",kiss road,,Freetown,148545808,3,2024/03/12 11:39:22+00,05e45d4f1cc043898c0b6e3c37138aae
+-13.0922351570542,8.36204598439448,"11763684913",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,149173172,1,2024/03/26 11:49:27+00,52be0b0a72a84c65bb65d856285a8d6a
+,,"307061926",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172086348,5,2025/09/17 21:43:30+00,4adffa860ef44b438faeefbec4a31269
+,,"309068167",way,12.5,clinic,,Kissy Town Community Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29110714,2,2015/02/26 10:52:16+00,5d0252b6c6544ecb9c7e03b0ed357fdf
+-10.3175783595725,8.21352905371972,"4504637964",node,37.5,clinic,,Sallay Rogers,combination,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,none,,,,,,,Mandopolahun,43704220,1,2016/11/16 16:35:40+00,9b2fcd6370fc49848c8eea36efb1e974
+,,"1333723292",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,159129860,1,2024/11/14 13:14:09+00,21171852273e4db38757670907a18e96
+-13.2224536387299,8.48657047160631,"4540108136",node,25,clinic,clinic,panasonic,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"59",kissi,,Freetown,148545808,4,2024/03/12 11:39:22+00,5b6b6ea868514df9a357d610b4a88f57
+,,"308521068",way,9.375,hospital,,AHS - Waterloo Hospital,,,,,,,,,,,,,,,,,,,,,,,,29201522,2,2015/03/02 15:20:41+00,445fc940b82b40a7b7e410a38bf3787f
+,,"865984510",way,12.5,hospital,hospital,BO BRANCH,,,,,,,,,,,,,,,,,,,,,,,,93370647,1,2020/11/01 14:57:37+00,049335bf12304ca79432dc6b8d952373
+,,"290557117",way,18.75,pharmacy,,Mr. Boima's enterprise,,,,,,,,,,,,,,,,,,,,"35",Kangama road,,Buedu,148545808,5,2024/03/12 11:39:22+00,bd8a03835f8a49f3969470f9099f23f3
+,,"306631513",way,12.5,clinic,,Treasure Health Hospital,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,4,2015/03/31 11:26:11+00,aa6d2d250e2044ddbaac5efe64a8d6f3
+-12.7679908719755,8.76074319496422,"3165535722",node,9.375,hospital,,,,,,,,,,,,,,yes,,,,,,,,,,,,26535443,1,2014/11/03 20:58:06+00,7c3307474ab44ab58eb04bef65fd110f
+-12.0425452827539,8.89116787145795,"8688105917",node,12.5,pharmacy,,Rogbaneh Road,,,,,,,,,,,,,,,,,,,,,Rogbaneh Road,,,103959288,1,2021/05/01 14:21:21+00,8a51165369234bf983ade99a172d4db2
+-10.6281493298234,7.93800759832217,"4504609546",node,34.375,clinic,,Regigna A Lasana,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,rain,,,,,,,,Sienga,152309258,2,2024/06/06 01:31:15+00,755762ce938d4b3bbb51994e9d31cedf
+-11.7382855503166,7.96474251668442,"1795616983",node,18.75,pharmacy,pharmacy,Leigh's Pharmacy,,,,,,,,,,,,,,,,,,,,"34",Fenton Road,,,108431838,4,2021/07/22 13:28:21+00,cc4b1b28f7f1483eb432cea447594cec
+-11.7351986630159,7.96458426635252,"3589578456",node,12.5,pharmacy,pharmacy,CAJ Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,329dbe229b3d4f439f5360684fed2be9
+-11.7382499272281,7.94647969077383,"1795616975",node,9.375,pharmacy,,Jehova Rohi Patent Store,,,,,,,,,,,,,,,,,,,,,,,,53262323,2,2017/10/26 12:33:25+00,084aee272ca9404d92014d2b41b89cdc
+-12.2844817094206,8.51311193564331,"10047412213",node,12.5,doctors,,Mamanka MCHP,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,127326453,2,2022/10/10 22:51:55+00,b76792435d5e4e899f4b2c56db6484aa
+-10.57227631764,8.27974634024758,"4504637943",node,28.125,pharmacy,,,,Red Cross Field Survey,yes,,,24/7,,,,,yes,,yes,,pub_tap,,,,,,,,Kailahun,152309258,4,2024/06/06 01:31:15+00,c6aae447043c44f8906e54d50fbd71c1
+-13.2405414505022,8.48657768004304,"4540110978",node,25,pharmacy,pharmacy,Fatie Bie Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,5Walpol St,Walpole St,,Freetown,152812769,4,2024/06/17 17:24:57+00,b3cdd58be82544f3b50b955fa100231f
+-10.9970677338934,7.52447936445819,"4504696800",node,37.5,clinic,,Marian Mamie Kallon,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,tubewell,solar,,,,,,,Faama,166195665,4,2025/05/13 10:45:33+00,094311fb79e2479aaf5b058a96d7a718
+-11.32300977346,7.26990713493831,"4504602485",node,37.5,clinic,,CHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,Mo-Sa,,,,,yes,,yes,,protected_well,solar,,,,,,,Manjama,166195665,4,2025/05/13 10:45:33+00,85daf6e269f444a9b690755b87cf061e
+-12.1415384090802,8.49328848318086,"10047463704",node,12.5,doctors,,MCHP MAMANSO KAFLA,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,fa91eb5d67db43c1b2db0c92c63b3d51
+,,"309290645",way,12.5,clinic,,MSF Post,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29064437,2,2015/02/24 11:13:59+00,60ac79488b174f15a7127dc05fb9e782
+-10.9445867102863,9.32403474850486,"4504696803",node,37.5,clinic,,Maternal Child Health Post.,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected Hand pump from the community.,none,,,,,,,Tambaia Balia,43705990,2,2016/11/16 18:03:10+00,618fe2ef4de84678a05c988e4bd78884
+,,"306453530",way,15.625,clinic,clinic,Davidson Nicle Hospital,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,114664618,6,2021/12/07 14:56:38+00,f48544c735274a30928d47481ba2e17d
+-11.3451004469118,7.29753447453143,"4504602483",node,37.5,clinic,,Gbahama,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,Mo-Sa,,,,,yes,,yes,,protected_well,solar,,,,,,,Gbahama,166195665,4,2025/05/13 10:45:33+00,b6273257e9ad48e4a02dca1c75c02ac5
+-12.3178102519144,8.60814302015851,"10053117402",node,12.5,doctors,,Makoba Bana MCHP,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,127326453,2,2022/10/10 22:51:55+00,ca204dd03c944cac88cc8420b0854cbf
+,,"306639828",way,15.625,clinic,clinic,Wilberforce Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,114664618,5,2021/12/07 14:56:38+00,00ac18a2583044bd9448e51d787da8c9
+,,"330042693",way,9.375,clinic,,MCH Health Centre,,,,,,,,,,,,,,,,,,,,,,,,29065571,1,2015/02/24 12:17:09+00,b166bbacf7ed4744b0fdb31f22f1b47e
+-12.099405347855,8.53945458093702,"10053191638",node,12.5,doctors,,MCHP KUMBRA BAI STATION,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,127326453,2,2022/10/10 22:51:55+00,7206432fc55e4175b690992e93c4fba2
+,,"290213184",way,15.625,pharmacy,,,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,Jabama Road,,Jojoima,44293228,3,2016/12/09 22:00:12+00,04f65f7700b14b348156b3a70bebfc37
+,,"310233748",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,26414199,1,2014/10/29 14:59:11+00,abe765b2a16243a5af788095c118bb03
+-10.9647459417899,8.64873112899076,"11195855737",node,12.5,clinic,,Koidu government hospital,,,,,,,,,,,,,,,,,,,,,Services,,,141340411,1,2023/09/16 12:34:42+00,ffc86a26e6924bbaaa3fec93bb9acc37
+,,"678487707",way,12.5,hospital,hospital,Pujehun Government Hospital,,,,,,,,,,,,,,,,,,,,,,,,121908955,3,2022/06/03 18:16:03+00,74c59251b1844e689057ed40e5d865d3
+-10.7631442390225,7.79316697037933,"9183838496",node,15.625,hospital,hospital,,,,biology,,,,,,,,,,yes,,,,,,,,,,,112714231,1,2021/10/19 19:32:32+00,4589ed32efc840c6964a3badd4d100a8
+-11.7401755018442,7.96203583251162,"1795616966",node,18.75,pharmacy,pharmacy,Hawa Lenga,,,,,,,,,,,,,,,,,,,,"2",Dambala Road,,,108431838,4,2021/07/22 13:28:21+00,696781afd46447c79be8c9f0ae9a57c6
+,,"367277933",way,18.75,hospital,hospital,Child Rescue Centre Bo,,,paediatrics,,,,,,,,,,,,,,,,,,,,Bo,108431838,3,2021/07/22 13:28:21+00,0ec271e4dd1e42f28c6e3bf3a1f1ac82
+-12.9107165781096,9.10342096150217,"4504696792",node,37.5,clinic,,Dibia MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,solar,,,,,,,Kambia,166195665,4,2025/05/13 10:45:33+00,562b041510c64e758508be1891d647a0
+-10.7759363643698,7.79368337943387,"4504609547",node,37.5,clinic,,Maternal And Child Health Post,government,Red Cross Field Survey,clinic,,,24/7,,,,,no,,yes,,pub_tap,none,,,,,,,Madina,43703720,1,2016/11/16 16:13:57+00,f3b730ec073e40cf8637b1c0583d5d2c
+-11.7382007254565,7.97317404072473,"1795617008",node,12.5,pharmacy,pharmacy,Retail Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,5,2021/07/22 13:28:21+00,67f36894c3014653975f5840c37cde10
+-12.0364613621544,8.89218442867485,"8687620823",node,12.5,clinic,,Holy spirit hospital,,,,,,,,,,,,,,,,,,,,,Masuba Road,,,103950657,1,2021/05/01 10:31:57+00,991b631bdd504fdf80fa7fbfc7349dfd
+-11.737436128249,7.96522095571757,"1795617016",node,12.5,pharmacy,pharmacy,Two Brothers Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,a1940e5c5cab4d9ebd2414c2b59a5394
+,,"308519940",way,12.5,clinic,,Waterloo Police Clinic,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29196079,2,2015/03/02 11:04:46+00,68ddfc6adb8846848bdd8744fbd0ae98
+,,"1434882166",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172755228,1,2025/10/02 15:38:01+00,1be7128708584daf84736fcc606c4395
+-13.1095441223837,9.01229441894228,"4504696810",node,37.5,clinic,,Joseph G Harunacc,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,piped,solar,,,,,,,Samuya,166195665,5,2025/05/13 10:45:33+00,580b81d9cda24906ad59d2520f773eaa
+-12.052246665125,8.88404937254978,"4861866361",node,9.375,pharmacy,,Flamingo Enterprise,,,,,,,,,,,,,,,,,,,,,,,,48790984,1,2017/05/18 12:44:26+00,8e5a1837134f4834a768d9c186497ca9
+-12.0311798411458,8.91728437300407,"8688687918",node,12.5,clinic,,Panlap Health Center,,,,,,,,,,,,,,,,,,,,,Panlap kabala highways,,,103970113,1,2021/05/01 18:48:04+00,a18ca2a634e645e692b54db04b31d49b
+,,"311664116",way,12.5,clinic,,Cabala Town Health Center,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,5,2015/03/31 11:24:22+00,90a5c02c5ed348819730ada0d399f81d
+-13.1811368072357,8.4610484984523,"3342209846",node,12.5,clinic,,KUNTOLOR COMMUNITY HEALTH CENTER,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29064206,2,2015/02/24 11:00:05+00,f5844ef38466406aa6bf06486b123c78
+-10.6538759052338,8.95988489296926,"4504695163",node,37.5,clinic,,Yaraw Echo And,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,no,,protected_well,solar,,,,,,,Kpetema,166195665,5,2025/05/13 10:45:33+00,adcd7363e601481cb7e3d490ae683f4f
+-10.4835534534532,8.20404635520245,"4504637949",node,37.5,clinic,,CHP,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,none,,,,,,,Nyandehun Mabaibu,43704220,1,2016/11/16 16:35:37+00,22d52f23ff5449a08ac4521526116ce6
+-13.0353856531512,9.07518752649057,"4504695173",node,34.375,clinic,,Magbengeh,,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,solar,,,,,,,Magbengbe,166195665,4,2025/05/13 10:45:33+00,bd742ab522534a4cabdbd6f746fba1ad
+-12.448670535916,8.33483472247488,"10047388307",node,12.5,doctors,,MCHP BATH BANA,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,49311fa2fa854b28b6a8bef6131c8cdf
+-10.57145480731,8.27951935830964,"4504637961",node,18.75,clinic,,Kailahun Clinic,,Red Cross Field Survey,clinic,,,,,,,,,,,,,,,,,,,,Kailahun,43704220,1,2016/11/16 16:35:40+00,05209a7c8438471ebe32132e18c7c325
+,,"890584590",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,96716897,1,2020/12/31 08:48:35+00,fb6b04077e3240f39d08b3536f98df2e
+,,"307062424",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,114665707,3,2021/12/07 15:29:36+00,936f8cfe34d94669a2d9ebadcd7e7a5b
+-12.2142363316847,8.46660368859958,"8926520517",node,12.5,pharmacy,,YOUNG GENERATION ENTERPRISE,,,,,,,,,,,,,,,,,,,,,6 Freetown Road Mile 91,,,108116740,1,2021/07/16 12:05:45+00,4f34e1a97d374bdb9e3a543a73f3e3db
+-11.7375662153862,7.96508793491421,"1795616943",node,12.5,pharmacy,pharmacy,Alpha Bah Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,237f01fe85f54851870774dba0942536
+-13.0953973138455,8.38747902555579,"3369919934",node,9.375,clinic,,El-Shaddai Medical Clinic,,,,,,,,,,,,,,,,,,,,,,,,29064242,1,2015/02/24 11:02:21+00,72b28d364f8d4c759098368ea428e6fe
+-10.5152893505249,8.64823215429485,"4504695148",node,37.5,clinic,,Koindu Kutay Health Centre,combination,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,unprotected_spring,none,,,,,,,Koindukutay,43705656,2,2016/11/16 17:48:25+00,214002b84e104149ba029a32f8839c48
+-13.2392617015257,8.82181499877191,"4365881001",node,12.5,clinic,,,,,,,,24/7,,,,,,,,,,,,,,,Bailor CHP,,,41681199,1,2016/08/25 08:04:54+00,d55a370741014e5594326afadb397cc5
+,,"1265587196",way,18.75,clinic,clinic,yoni clinic,,,,,,,,,,,,,,,,,,,,,kamakwe highway,,Makeni city,149061350,1,2024/03/23 17:36:41+00,0c0dc8bf78ed4c36bfe62989d83e9fb2
+-12.5972870436005,8.45692057877741,"10053246466",node,12.5,doctors,,Magbafth MCHP,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,b66283ae32c34095bcce4eb8241c9cd6
+-13.2379165737044,8.48749097221284,"4540110897",node,15.625,pharmacy,pharmacy,,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,,,Freetown,114665707,2,2021/12/07 15:29:36+00,df3c415f4ef340cbbebc3bd73f2ffa86
+-12.0283457520447,8.8707881959009,"4861866332",node,9.375,clinic,,Teko Barracks Clinic,,,,,,,,,,,,,,,,,,,,,,,,48790984,1,2017/05/18 12:44:21+00,d116de6fed0d4322bc1fadd0d53ce105
+-11.485932681119,7.17021294623061,"4504580019",node,34.375,clinic,,Juliana Konneh,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,,,no,,protected_well,none,,,,,,,Navai,43703078,1,2016/11/16 15:46:31+00,45e72ea18dbd4ff6b21f61dc8a68986f
+-12.6649969794454,9.39785173900208,"4539925749",node,21.875,pharmacy,,Morray's farmacy,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"44",center street,,Kukuna,148545808,2,2024/03/12 11:39:22+00,23b2b1e811a7487cbba672f9e7fb7777
+-10.9647652201672,8.64876071710898,"11195855837",node,12.5,hospital,,Koidu government hospital,,,,,,,,,,,,,,,,,,,,,Services,,,141340411,1,2023/09/16 12:34:43+00,d6880f7b7b1d4c6abec72e70a1f26180
+-11.7382790124321,7.96490344922535,"3589579576",node,12.5,pharmacy,pharmacy,Qadara Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,b28d35c358974d7e994aedce4bf82218
+,,"1292614890",way,12.5,hospital,hospital,Kambia Hospital,,,,,,,,,,,,,,,,,,,,,,,,152719702,1,2024/06/15 12:45:45+00,1c9c64547732455da717caa6d878f863
+-10.7280708357451,9.01307142136648,"4504696815",node,34.375,clinic,,Durukoro MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,no,,,,surface_water,none,,,,,,,Durukoro,43705440,1,2016/11/16 17:37:13+00,cc2485fb5e984666862103cd035d4f94
+-11.7371069709114,7.97630862105453,"3712336391",node,15.625,clinic,clinic,MHRL,,,,,,,,,,,,,,,,,,,,,,,Bo,108431838,2,2021/07/22 13:28:21+00,e724e75016fb46bb9c06face37f29718
+,,"814997048",way,37.5,hospital,hospital,Konobendu Health Post,,Red Cross Field Survey,hospital,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,protected_well,none,,,,,,,Konobendu Village,86524556,1,2020/06/11 15:28:14+00,0088e34a4b8c4977975f8314c48219f2
+-12.1007511462285,8.4709635355353,"8425062750",node,12.5,clinic,,Makeleh PHU,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,99300983,1,2021/02/15 10:34:12+00,2f8e5e49333a461cb10ea8dc4398285a
+,,"314741466",way,12.5,hospital,,34 Military Hospital,Republic of Sierra Leone Armed Forces,,,,,,,,,,,,,,,,,,,,,,,27071740,1,2014/11/27 16:43:19+00,9dedc90d9b2b40b9b8371ebb60246245
+-11.7274685366331,7.94222067813331,"1795616945",node,9.375,pharmacy,,Aunty Musu Drug Store,,,,,,,,,,,,,,,,,,,,,,,,53262323,2,2017/10/26 12:33:22+00,4b8240d8038b48778fb5146afd2ec994
+,,"318228093",way,15.625,hospital,hospital,Kambia General Hospital,,,,,,,,,,,,,,,,,,,,,,,Kambia,118889502,4,2022/03/25 02:56:46+00,b4585be102ae40f895c1114a756e6b66
+-10.6476766496467,7.99566327367248,"4504613260",node,37.5,clinic,,Mathew .M.Moigboi,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,pub_tap,solar,,,,,,,Baiwalla,166195665,4,2025/05/13 10:45:33+00,88e69e60529543f2a2147931c6f3b7ee
+,,"261175511",way,12.5,clinic,,One-House Community Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29088066,2,2015/02/25 10:41:58+00,5babf39ce0a24516ba8c7f5301b3a5e6
+-13.0821042021455,8.35801462424413,"3371812823",node,12.5,clinic,,Deapeye water Health centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29092680,1,2015/02/25 14:24:33+00,139514b9bb8a40a0afbcbc9bede3085a
+-10.4183114013596,8.2522751555106,"4504637952",node,31.25,clinic,,District Health Management Team Clinic,District Health Management Team,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,,,,none,,,,,,,Dodo Kutuma,43704220,1,2016/11/16 16:35:38+00,bca2e589f5b9458fa6d7cacc9bcbad95
+-12.0448008528979,8.88823621700399,"4861866359",node,9.375,pharmacy,,Tamaraneh International Pharmaceutical,,,,,,,,,,,,,,,,,,,,,,,,67976924,2,2019/03/10 02:33:42+00,a0e73ddacd8842618e46574f9136f0f7
+-12.4888745021258,8.36142505300737,"10053203759",node,12.5,doctors,,MCHP ROBARIE,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,6745261fd32d4d6a80a48409eba185e0
+,,"890584851",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,96716989,1,2020/12/31 08:49:56+00,9f7ef9509bc546729345d4c6836b6681
+-10.5739447354667,8.27954483929531,"4504637939",node,31.25,pharmacy,,Sheikadmseray Enterprise,,Red Cross Field Survey,yes,,,24/7,,,,,no,,no,,pub_tap,,,,,,,,Kailahun,152309258,3,2024/06/06 01:31:15+00,bda1699f85764eb19dcf6747ec1e1bb4
+-11.7369981738082,7.96487855497293,"3589578713",node,12.5,pharmacy,pharmacy,Jailah and Sons,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,3eb6acc8c8474fb49c836f902fb15059
+,,"307898109",way,9.375,clinic,,Masjid Rahman Community Mosque,,,,,,,,,,,,,,,,,,,,,,,,29066975,2,2015/02/24 13:31:55+00,dfdb1f48615e4fcc957aba54a72091ea
+-11.7383981192762,7.96519245724679,"3589578570",node,12.5,pharmacy,pharmacy,Hamdalaye Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,44da50d0b6564388be9e5a4a7512ef2a
+,,"309470157",way,12.5,clinic,,Rogbangba Community Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29065200,2,2015/02/24 11:56:49+00,dd6e5222c82640e7adc35736a957abd7
+-12.0365280821037,8.8917046485372,"8687620822",node,12.5,clinic,,School of midwifery,,,,,,,,,,,,,,,,,,,,,Masuba Road,,,103950657,1,2021/05/01 10:31:56+00,53543ae9bfa6442b9234a59e3e73ddfa
+,,"290529180",way,18.75,pharmacy,,Gospel Free Pantecostl Church,,,,,,,,,,,,,,,,,,,,"00",Tangabu Road,,Buedu,148545808,5,2024/03/12 11:39:22+00,ecdb0eeb097e47d88056f503591260e5
+-12.9248711818177,9.11274842717268,"4540031206",node,18.75,pharmacy,,Alima Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,barracks Road,,Kambia,148545808,2,2024/03/12 11:39:22+00,63061fb97af44bb980439d8cfbc22782
+,,"306753978",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,166197013,5,2025/05/13 11:15:11+00,172e8da499d848d8808a3ea2dae7d92f
+-12.9516792741947,9.17487886535119,"4504695154",node,40.625,clinic,clinic,Gbalamuya Communit Health Centre (CHC),Ministry of Health and Sanitation (MoHS),Red Cross Field Survey,clinic,public,,24/7,,,,,yes,,yes,,protected_well,,,,,,,,Gbalamuya,152309258,3,2024/06/06 01:31:15+00,4f70f54ff1504844b533535520ab2ae9
+-13.1761089226171,8.45913742452876,"3343683831",node,12.5,clinic,,APPROVED COMMUNITY HEALTH CENTER,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,3,2015/03/31 11:26:22+00,a6f6407a090349ceb6ee359563f392c5
+-11.7355154151368,7.96141917589514,"1795616984",node,18.75,pharmacy,pharmacy,Lugbu Patent,,,,,,,,,,,,,,,,,,,,"30",Old Railway Line,,,108431838,4,2021/07/22 13:28:21+00,aa8cd8ba3eee4ba2ac101c9f72f847a7
+-13.2193483112422,8.48986137443029,"3212073781",node,15.625,hospital,hospital,Princess Christian Maternity Hospital,,https://data.hdx.rwlabs.org/dataset/sierra-leone-ebola-care-facilities,,,,,,,,,,,,,,,,,,,,,,114673597,3,2021/12/07 19:13:22+00,7c86a87fcb194e2eadfa76402d25e325
+-10.6690657578029,8.64275893916061,"4504696797",node,37.5,clinic,,Gbamandu MCHP,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,unprotected_spring,solar,,,,,,,Gbamundu,166195665,4,2025/05/13 10:45:33+00,11e04c33601143e28350a0463ea9680f
+,,"308248939",way,12.5,clinic,,Primary Health,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,4,2015/03/31 11:25:49+00,176c9daed4d946eca98383c557a81411
+-12.2142394329889,8.46671952650144,"8688406320",node,12.5,pharmacy,,Alie Abass enterprises,,,,,,,,,,,,,,,,,,,,,Masiaka-Yonibama Highway,,,103964812,1,2021/05/01 16:32:12+00,c5d9280465dd428db2751539362724a2
+-11.737085010325,7.96707377541406,"3589578745",node,12.5,pharmacy,pharmacy,Ko Fan Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,b57fbcb3fae44868a3799d820e873c32
+-11.7360378591616,7.96550082746452,"3589578374",node,12.5,pharmacy,pharmacy,AB Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,eec41214b86746329c62e76decbca2d8
+-12.0418697013581,8.89170825275556,"8688093420",node,12.5,pharmacy,,Rogbneh Road,,,,,,,,,,,,,,,,,,,,,46 Rogbaneh Road,,,103959288,1,2021/05/01 14:21:20+00,0a07cc091c554064a7d4fb690d048dd0
+-10.6802834264581,8.50157106080175,"4504695171",node,37.5,clinic,,Sukudu Phu,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,no,,pub_tap,solar,,,,,,,Sukudu,166195665,4,2025/05/13 10:45:33+00,b7f3dcd3e3374cae995fa6e412b5dc66
+-11.7389434458967,7.9642437934456,"1795616987",node,18.75,pharmacy,pharmacy,MS Bah,,,,,,,,,,,,,,,,,,,,"7",Fataba Street,,,108431838,4,2021/07/22 13:28:21+00,955ff5f2cc05471290c86ddf1f703b0a
+-11.7371078091017,7.96492582890681,"1795616968",node,12.5,pharmacy,pharmacy,Hope Enterprise,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,ac81a8b5288c457886bc89243b9cd3e4
+,,"306705603",way,12.5,clinic,,Touch Ram Hospital,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29089327,2,2015/02/25 11:47:04+00,c49a7af9084f478c97ce3886b41c7e50
+-10.8662448331799,8.4344435834083,"4530600308",node,15.625,pharmacy,,,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"1",Old town road,,,148545808,4,2024/03/12 11:39:22+00,96895454868149d6b3a21c44316492a8
+-11.7595602454945,7.96425368409135,"1795616956",node,9.375,pharmacy,,Faith Patent Medical Store,,,,,,,,,,,,,,,,,,,,,,,,53262323,2,2017/10/26 12:33:23+00,2453b79ae6944ee0856994ea03ab495b
+-10.9602678262004,9.53220442678003,"4504696809",node,25,clinic,,Bendugu Clinic,,Red Cross Field Survey,clinic,,,,,,,,yes,,,,pub_tap,,,,,,,,Bendugu,152309258,4,2024/06/06 01:31:15+00,66905b1e6c744083a196f9cb39875212
+,,"1434882167",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172755228,1,2025/10/02 15:38:01+00,2917b0da7bd94200ba2fa88575d3e3f1
+-10.7513190500253,7.98703846294501,"4504613256",node,31.25,clinic,,Madam Nurse Clinic,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,,,yes,,tubewell,,,,,,,,Mobai,152309258,3,2024/06/06 01:31:15+00,d4b1d1ce68f6459f8182b09cf2cb7779
+-10.3355620681074,8.46019362814764,"3123413640",node,12.5,hospital,hospital,"Secondary Hospital Centres ""Referral Unit""",,,,,,,,,,,,,,,,,,,,,,,,131917898,2,2023/01/31 11:35:12+00,c6913eb036dc40b5a94d5247b8fd02da
+-11.7547392262462,7.95660394016002,"1795617004",node,15.625,pharmacy,,New World Patent Medical Store,,,,,,,,,,,,,,,,,,,,"246",Bo-Tiama Road,,,74120877,3,2019/09/05 10:59:13+00,aad859b0900d4a0187f658230ba6671f
+-12.0412573195123,8.89241233262211,"8688105717",node,12.5,pharmacy,,Robana Road Makeni,,,,,,,,,,,,,,,,,,,,,Rogbaneh Road,,,103959288,1,2021/05/01 14:21:19+00,552140e140bc4650ac66f9c9b1b90429
+,,"290480462",way,18.75,pharmacy,,Mamodu Kabba,,,,,,,,,,,,,,,,,,,,"00",Kongor Street,,Buedu,148545808,3,2024/03/12 11:39:22+00,4c44fc9cbc9448628ab0105802e475be
+-12.062581803195,8.89097525532304,"8687897417",node,12.5,clinic,,DHMT Bombali,,,,,,,,,,,,,,,,,,,,,Stucco Road,,,103955215,1,2021/05/01 12:40:35+00,f9c012fd90864fa1aa3007896ce4ced1
+-10.4135486363383,8.38458483820901,"4504637946",node,31.25,pharmacy,,Sahr Tommy,,Red Cross Field Survey,yes,,,24/7,,,,,yes,,yes,,piped,,,,,,,,Dia,152309258,3,2024/06/06 01:31:15+00,bba29772ba9c4afc806714ba254a8936
+-12.0354956830898,8.88847837018668,"4861867436",node,9.375,clinic,,ABD Hospital Masuba,,,,,,,,,,,,,,,,,,,,,,,,68147855,3,2019/03/14 18:55:49+00,01f6eb6817464cd8a130b573c4d1d18e
+,,"616414283",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,123052406,3,2022/06/30 16:19:42+00,f297dca86aa446aeb9d3dcf66e20afb6
+-11.7371519817314,7.96466364297555,"1795616972",node,12.5,pharmacy,pharmacy,IS Barrie Enterprise,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,0ac00686edf14d87a9d70dda1d20857b
+-10.5702622301264,8.27802897210637,"4504637945",node,31.25,pharmacy,,Usmania Bah Pharmacy,,Red Cross Field Survey,yes,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,pub_tap,,,,,,,,Kailahun,152309258,3,2024/06/06 01:31:15+00,92e43a9fa96d41de8f907ab67c33460d
+,,"401191049",way,12.5,hospital,,Magbenteh Community Hospital,,Bing,,,,,,,,,,,,,,,,,,,,,,37702823,2,2016/03/09 08:35:53+00,8910d4b14b3c47378fd6de914d5762a0
+,,"495032467",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,170401496,3,2025/08/13 17:33:48+00,2abdf932b8ea43cca28f3e1391b883ce
+,,"1265673222",way,18.75,pharmacy,pharmacy,,,,,,,sunrise-sunset,,,,,,,,,,,,,,,kamakwe highway,,Makeni,149070784,1,2024/03/23 23:31:56+00,d937906bbcb74c699c88d06ae1d51969
+-13.2454862704604,8.47160273947131,"6305484385",node,15.625,,laboratory,EcoMed Laboratory,,,,,,Mo-Sa 09:00-17:00,,,,,,,,,,,,,,,19 Off KingHarman Road,,,74248947,3,2019/09/09 08:27:28+00,d70d03286092438c8a825dfe95a9c083
+,,"772435576",way,18.75,hospital,hospital,Masanga Hospital,,,"general;surgery;gynaecology",,,,,,,,,,,,,,,,,,,,Masanga,110928307,5,2021/09/08 16:01:39+00,f929876ef6e347cf87cfaf4eea30b8d2
+,,"307162599",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,131042597,3,2023/01/09 07:59:57+00,87f1fc64c0ce4422bb1b76ea0b0240b9
+-13.2227869032001,8.48913776472932,"4540108155",node,25,pharmacy,pharmacy,Zharmcy Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"232","53",,Freetown,148545808,4,2024/03/12 11:39:22+00,bc6f12bb014c470b804bcefe9d9e488f
+-11.7353437537598,7.96642074133783,"1795616982",node,12.5,pharmacy,pharmacy,Lamco Drug Store,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,59af7097d32749d29008299d79d19ed2
+-12.2205173108278,8.46310172945368,"8688268519",node,18.75,clinic,clinic,MSF,Médecins sans frontières,,,ngo,,,,,,,,,,,,,,,,,,,,110029568,2,2021/08/21 13:56:52+00,0c87aa002a7249f989dc101ba24c24b7
+-11.7367617203197,7.96586937974706,"1795617012",node,12.5,pharmacy,pharmacy,Tamaraneh Patent,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,7e01d03840a64a7b90623ca9ef5c84e2
+-10.6544955793354,8.9591005982893,"4504696812",node,34.375,clinic,,Kpetema MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,,solar,,,,,,,Kpetema,166195665,5,2025/05/13 10:45:33+00,19c130089b6b430cbf0767a1b93c591c
+-12.6284073737031,8.37391844732556,"10053061726",node,12.5,doctors,,Rosaries MCHP,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,a2f58098a257402fa5e0c28756cbdd94
+-12.2437397088461,8.43963097564432,"10053220668",node,12.5,doctors,,MCHP Yoni Bana,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,1b9ce4e234cf4d88adb1a10f6bb418a0
+-11.7320207482466,7.96398579846593,"1795616978",node,9.375,pharmacy,,Kebson Enterprise,,,,,,,,,,,,,,,,,,,,,,,,53262323,2,2017/10/26 12:33:25+00,3b8bfc6f1e4d446ebdd0210a6d3e4303
+-10.4836392003227,8.20404635520245,"4504637954",node,31.25,clinic,,Nyandehun Clinic,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,Mo-Sa 08:00-17:00,,,,,,,,,pub_tap,none,,,,,,,Nyandehun Mabaibu,43704220,1,2016/11/16 16:35:38+00,d4d097506b0144b48e79662036dfe5ba
+,,"808374396",way,21.875,hospital,hospital,Nixon Memorial Hospital Segbwema,,"Bing;http://segbwema.blogspot.de/2014/10/robin-fallay-calls-for-closure-of.html;https://www.youtube.com/watch?v=hT0ANgcRGKY;aerial imagery",,,,,,,,,,,no,,,,,,,,,,Segbwema,102566388,3,2021/04/08 12:55:31+00,5b4b5ea5ae024664a32f8694fe4d4a55
+,,"1238851065",way,12.5,hospital,hospital,Mabesseneh Hospital,,,,,,,,,,,,,,,,,,,,,,,,146143881,1,2024/01/11 13:45:00+00,82e92af82e194fe997998606b215aa89
+,,"808387797",way,37.5,hospital,hospital,Kamaron MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,hospital,,,24/7,,,,,yes,,,,piped,none,,,,,,,Kamaron,85764468,1,2020/05/26 10:39:59+00,d48e3b565fff41bfb5ada35b34f3f4dd
+-10.6939587529428,8.1987395208462,"4504648650",node,34.375,clinic,,Fatima M Boima,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,,none,,,,,,,Mandebuima,43704485,1,2016/11/16 16:48:27+00,a2cf035a81704936a4400abdf28b147f
+-12.9739952532038,9.08604686878508,"4504695143",node,37.5,clinic,,Worreh MCHP,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,solar,,,,,,,Worreh,166195665,5,2025/05/13 10:45:33+00,1f109d81220b49d4a73a135dbcc5f35b
+-10.5580000086978,8.29799994606469,"3197529885",node,18.75,hospital,,Kailahun CMC,MSF,"UNMEER ; https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,7b9dcde4b3cc4915929f268ef83fc5ef
+-11.4871287787019,9.97369016340315,"4504695179",node,37.5,clinic,,Fulamansa Health Center,government,Red Cross Field Survey,doctor,,,24/7,,,,,yes,,yes,,protected_well,none,,,,,,,Fulamansa,44290170,3,2016/12/09 19:33:48+00,5b024e147d444012b667354495751fed
+,,"814982334",way,21.875,hospital,hospital,Goderich ETC,EMERGENCY,"JIATF;UNMEER;https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,168255352,4,2025/06/29 08:43:37+00,b667c04c70744525bb900cebea92828d
+,,"1430730197",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172086348,1,2025/09/17 21:43:30+00,f759680ccc074f2188a84346e53f9491
+-10.9204316579018,9.46221654110954,"4504695183",node,31.25,clinic,,Seria Clinic,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,,,,,unprotected_spring,solar,,,,,,,Seria,166195665,4,2025/05/13 10:45:33+00,1f4e86b70ee54a16bcaca31b16e2bf56
+-11.7782931285351,9.32533838590544,"4760232021",node,9.375,clinic,,Kagbasia PHU ADP-SL Site 2017,,,,,,,,,,,,,,,,,,,,,,,,47236935,1,2017/03/28 17:54:00+00,3815440de9354e46b25238bd278f3056
+-12.9275253114576,9.10522516616027,"4514040967",node,15.625,pharmacy,,Mr J Y Pharmacy,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,,,Kambia,148545808,2,2024/03/12 11:39:22+00,3a95aaa859ae45218db961d918332dd4
+-13.1548783162499,8.43165039799476,"5430860421",node,12.5,hospital,,Ahmaddya hospital,,,,,,,,,,,,,,,,,,,,,Bai Bureh Road,,,56601982,1,2018/02/23 08:19:17+00,69e3afab19ec4c1f86f7546954f7d241
+-12.8348958098397,9.22512175317291,"4504695159",node,37.5,clinic,,Clinic,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,none,,,,,,,Kanku-bramaia,45923983,2,2017/02/08 17:02:37+00,e7b13432f70746e59a011541b10a260f
+,,"330064303",way,12.5,clinic,,Newton Community Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29088469,2,2015/02/25 11:03:23+00,7e18c0dbfe964caea1239dfea3ad806d
+-13.2225358652,8.48922376305589,"4540110789",node,25,pharmacy,,Nenebaya Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"59",Fourah Bay Road,"242",Freetown,44190478,1,2016/12/05 19:20:44+00,b9733e5840b948c08f76a7f3ee9e304e
+-12.923590846108,9.11411316864738,"4504695184",node,37.5,clinic,,Red Cross CHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,piped,none,,,,,,,Kambia,43705440,1,2016/11/16 17:37:07+00,b1db5ad38bb84a05b1879ec3127917aa
+-10.5739070169024,8.27927293035634,"4504637938",node,31.25,pharmacy,,,,Red Cross Field Survey,yes,,,24/7,,,,,no,,no,,pub_tap,none,,,,,,,Kailahun,118290817,3,2022/03/09 18:52:07+00,00af7a145e61412092ce5b08cd10b469
+-12.2142717033161,8.46664853178157,"8926508520",node,12.5,pharmacy,,ALIE ABASS I HOPE TO GOD ENTERPRISE,,,,,,,,,,,,,,,,,,,,,4 Freetown Road Mile 91,,,108116740,1,2021/07/16 12:05:43+00,b9af62699caf408688a6ac5cd5024bad
+-13.158383628157,8.44082003242852,"3342260382",node,12.5,clinic,,SLI SCHOOL OLD WHARF,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,3,2015/03/31 11:26:38+00,491c1a5d8cdb469ebf9693bcea462644
+-11.7346202278779,7.96370642963313,"3589578788",node,12.5,pharmacy,pharmacy,Mac Enterprise,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,46d95971a2d74166a022ff7afdd9adff
+-10.3257987434719,8.46134756475755,"4504637962",node,40.625,clinic,clinic,Theresa Tengbeh,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,protected_well,none,,,,,,,Ngisio,103267377,3,2021/04/20 11:37:49+00,de3cc34743114e309cd1277a1f4a8792
+-10.3392235348707,8.46156046509816,"4504637944",node,40.625,clinic,clinic,Koindu Community Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,piped,none,,,,,,,Koindu,131917898,3,2023/01/31 11:35:12+00,2a07613b172247539e82827c9d09a18e
+-13.2647306172326,8.48540387832261,"5749208921",node,21.875,dentist,dentist,Wilkinson Dental Clinic,,,,,,Mo-Fr 00:00-24:00,,,,,,,,,,,,,,"21",Wilkinson Road,,,114664618,2,2021/12/07 14:56:38+00,5e2d4ed9e77c4139af95b064b4c2f89f
+-13.1938956564274,8.46594981633302,"7649005105",node,9.375,hospital,,,,smec,,,,,,,,,,,,,,,,,,,,,,89120978,2,2020/08/08 09:10:54+00,ebc1d98be9be4097a4e1d444bc9ca6d7
+-10.6475803415792,8.20109315925731,"4504637950",node,37.5,clinic,,Foday B. Kandeh,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,piped,solar,,,,,,,Ngeihun Luawa,166195665,4,2025/05/13 10:45:33+00,617346c9c85c4efc80aab49a1714f51b
+-11.3601496511457,7.24280986690189,"4504602479",node,37.5,clinic,,Gofor Community Health Post,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,Mo-Sa,,,,,yes,,yes,,protected_well,solar,,,,,,,Gofor,166195665,5,2025/05/13 10:45:33+00,278f497c209d4e429560095916b934f9
+,,"308027449",way,12.5,clinic,,Matanal Children's Health Post Hospital Building,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29112007,2,2015/02/26 12:09:26+00,ea1d901ecfa546c49321a4ec4193ba7e
+,,"789850675",way,21.875,hospital,hospital,Maforki ETU,MoH / Cuba / Plan,"UNMEER ; https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,152260692,5,2024/06/04 20:21:52+00,9c9bd438d2274585982639a19889664f
+-13.0750513335392,9.00514398498302,"4504695161",node,34.375,clinic,,Bunbu Sankohc,,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,protected_spring,none,,,,,,,Bureya,43706535,2,2016/11/16 18:25:09+00,7365de7c0b31413598bbc2983965482e
+-12.5401694026149,8.42552389732717,"10053224141",node,12.5,doctors,,Makeni Rokefula,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,24257c4eafc44fe5bdf46acee96020d3
+-13.1910743078192,8.47032424778024,"12037782372",node,15.625,,alternative,Dwelling house,,,,,,,,,,,,,,,,,,,,"28",Macauley Street,,,153626707,1,2024/07/06 14:44:07+00,ee735144739e4f7e8ecf078eb91e91e6
+,,"330208529",way,12.5,clinic,,Fogbo Community Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29089736,1,2015/02/25 11:54:57+00,e410377ca90b4af2b4a663c1f7e54866
+,,"890583840",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,96716663,1,2020/12/31 08:44:51+00,a25656c08c8f439ba48c6aae198566b0
+-12.1357030119098,8.35388385472217,"10053159648",node,12.5,doctors,,MCHP Masengbeh,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,8457089166db48c0bd08843fe3c4cc5b
+-12.2159690387087,8.46685489423768,"8926508519",node,12.5,pharmacy,,MAYKORD ENTERPRISE,,,,,,,,,,,,,,,,,,,,,42 Freetown Road Mile 91,,,108116740,1,2021/07/16 12:05:38+00,b9fd646ed3bf4b0da6451d2bcd25a3b1
+-13.2222176043365,8.48923398897776,"4540108118",node,25,pharmacy,pharmacy,Eventually Drugs,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"61",Fourah Road,,Freetown,148545808,3,2024/03/12 11:39:22+00,3cae1f6265f745c58c4a62477ad34dd8
+-13.2278717009413,8.48788634658553,"4540110913",node,21.875,pharmacy,pharmacy,,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"49",Kissi Street,,Freetown,118040187,4,2022/03/03 03:51:09+00,fcf0d942695e44f88ea7486555c437fa
+-11.7371944779805,7.9650559998631,"1795616971",node,12.5,pharmacy,pharmacy,IK Kamara Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,32d44e5951b34ce58b7ff4315d95ba85
+-12.2842732514887,8.66655767684117,"8425062749",node,12.5,clinic,,Rochen Malal PHU,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,99300983,1,2021/02/15 10:34:12+00,dfe15e79b8c345b2b85074d283795ca1
+,,"745687557",way,18.75,pharmacy,pharmacy,Pharmaprix,#osmsl-Geoweek,,,,,,,,,,yes,,,,,,,,,,,,,77125293,1,2019/11/15 12:25:59+00,77c5ea2bf1b84f0aab36ef4756cfed1c
+-13.2217669094029,8.48632647440493,"4540108161",node,25,pharmacy,pharmacy,Staff Electronics Center,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,70b,kiss road,,Freetown,148545808,3,2024/03/12 11:39:22+00,0a972bb40206404aa8efaea150d3b68d
+-11.1921438735832,7.8734053368978,"4489244893",node,9.375,pharmacy,,St. Martin's Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,43496262,1,2016/11/08 19:18:05+00,5d2d5d4899de47a9aac3550e12c8fc65
+,,"306453533",way,15.625,clinic,clinic,Davidson Nicle Hospital,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,114664618,5,2021/12/07 14:56:38+00,cf5bbc9270574a24887edf1eae05202b
+,,"248304184",way,9.375,hospital,,Governement Hospital,,,,,,,,,,,,,,,,,,,,,,,,92007410,3,2020/10/05 20:57:22+00,3fb4d1e1b3094e6e849df0bb710c55d0
+,,"307898984",way,9.375,,hospital,,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,99925963,4,2021/02/24 18:57:05+00,0daaaa2dce0d45d49853052f696da063
+,,"428899724",way,21.875,hospital,,Old Hospital,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,old hospital,upper kamaron,,Kamaron,148545808,3,2024/03/12 11:39:22+00,7cd7903d689b41c991ab1b50e605dd04
+-12.0434562279908,8.88839161748882,"8687950518",node,12.5,clinic,,Arab clinic,,,,,,,,,,,,,,,,,,,,,Flower Corner,,,103956258,1,2021/05/01 13:09:14+00,d9652dd3e8b44fcea1f702c3ac0e5ac1
+,,"330052212",way,12.5,hospital,,Hamilton Village Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,66807600,2,2019/01/31 16:37:17+00,e2fcce4a2fdf4eb8baf4b13266cfb430
+-13.1527262626101,8.40769642746741,"3341969369",node,12.5,clinic,,HEALTH POST-UPPER ALLEN TOWN,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,3,2015/03/31 11:26:29+00,0751d0526304412aa2027c9762156a9a
+-12.2141033108813,8.46603288099348,"8688406521",node,15.625,pharmacy,,Pa Alie Enterprises,,,,,,24/7,,,,,,,,,,,,,,,Park milk 91,,,103964812,1,2021/05/01 16:32:14+00,c6b6a11fbf2e4da4af324d6e5c0b4948
+-11.4048937590285,7.08787767899523,"4504580021",node,37.5,clinic,,Seray Conten,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,tanker_truck,solar,,,,,,,Fairo,166195665,4,2025/05/13 10:45:33+00,b021d4d3ac1a479cb3af8d76d8cf1a0f
+-13.2373909445564,8.48820318252547,"4540110864",node,21.875,pharmacy,pharmacy,,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"122",Yardu rd.,,Freetown,114665707,2,2021/12/07 15:29:36+00,64e6664a35a14f2aa5abfcb203d289c8
+-12.9235482660398,9.10524301961402,"4514040924",node,18.75,pharmacy,,Health is Wealth Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,Freetown Road,,Kambia,148545808,2,2024/03/12 11:39:22+00,b7a438085a774bfbaabc11ddd23dacba
+-10.9226509344051,9.46546243311349,"4504696804",node,37.5,clinic,,Hospital,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,none,,,,,,,Seria,43705440,1,2016/11/16 17:37:11+00,eeab0efb47cc47e0987e73777e6812e1
+-11.5980005705676,9.50047137955539,"4760232721",node,9.375,clinic,,Hermakono PHU Kabala 2017,,,,,,,,,,,,,,,,,,,,,,,,47236935,1,2017/03/28 17:54:09+00,e1ac1a688b4346b5af9ad90685cfe45b
+,,"309068075",way,12.5,clinic,,Kissy Town Community Ebola Care Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29196514,2,2015/03/02 11:28:28+00,7476546bc59142bd8aa62485916039d1
+-12.6276469674472,9.54537717435042,"4504695144",node,37.5,clinic,,Konta CHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,unprotected_spring,none,,,,,,,Konta,43705440,1,2016/11/16 17:36:59+00,5d50024687e24d269e25a108dd0e96f1
+-11.3813967698622,7.01776984829036,"4526409894",node,21.875,pharmacy,pharmacy,Base Three Enter,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,Liberia Highway,,Jendema,148545808,4,2024/03/12 11:39:22+00,aca7d48e4eab4e57b7c4b715730e4450
+-10.5671722415215,8.27814539674145,"4530280405",node,21.875,clinic,,Community Mental Health,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"00",Buedu Road,,Kailahun,148545808,2,2024/03/12 11:39:22+00,03c2374008be46f58029f0b9f800a16d
+,,"307063066",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172050473,6,2025/09/17 08:22:28+00,1bef2f32e4c447d982456190b81bf507
+-11.7361061716724,7.96590994815844,"3589578378",node,12.5,pharmacy,pharmacy,AIJ's Patent Medic,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,ec28cc503128450c80453793796ff71a
+-13.2712776379824,8.46102637022793,"11704202869",node,12.5,,laboratory,Royal Lab,,,,,,,,,,,,,,,,,,,,,Wilkinson Road,,,148386442,1,2024/03/08 14:20:07+00,441c0e49eed7484fbcce3481e25f594f
+-12.0378112676605,8.89737944844276,"8687950417",node,12.5,clinic,,Super life clinic,,,,,,,,,,,,,,,,,,,,,Kabala Highway,,,103956258,1,2021/05/01 13:09:11+00,b9ddbdf5b80f4613b01b24cd5496b809
+,,"1292615730",way,12.5,hospital,hospital,Kababala Government Hospital,,,,,,,,,,,,,,,,,,,,,,,,152719915,1,2024/06/15 12:50:41+00,b9bedaafe97349ac947e3957ac5a179d
+-13.2285464441467,8.4880188644747,"4540108178",node,18.75,pharmacy,,,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"37",Kiss I Street,,Freetown,118040187,2,2022/03/03 03:51:09+00,cfacf98c3d82476c850caf4cfec2aa0f
+-11.7319946805278,7.9435306857803,"1795617000",node,9.375,hospital,,Nafaya Clinic,,,,,,,,,,,,,,,,,,,,,,,,53262323,2,2017/10/26 12:33:28+00,44e3b2e53c864a91b734a6ff96da5715
+-11.116000066765,8.0049999594365,"3106738524",node,18.75,hospital,,Rural Kenema Field Hospital,"IFRC; MOH Sierra Leone","UNMEER ;https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers;British Red Cross",,,open,,,,,,,,,,,,,,,,,,,152260692,4,2024/06/04 20:21:52+00,72edf06656ac423992639b3c3b072340
+-13.08835995176,8.36317267981906,"11757871600",node,18.75,clinic,clinic,Asheeha clinic,,,,,,,,,,,,,,,,,,,,,Kabba Drive,,freetown,149084474,1,2024/03/24 11:32:57+00,d73c720b336b4083a43e4b53f74d850a
+,,"1430730196",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172086348,1,2025/09/17 21:43:30+00,0610578fe5d644e9a7cc4d1f6740c256
+,,"307060072",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172086348,5,2025/09/17 21:43:30+00,cba41aedaf014b058a3c27c8839be5bb
+-13.1724974119967,8.46025573805017,"13130524315",node,12.5,hospital,hospital,RGH,,,,,,,,,,,,,,,,,,,,,,,,171672453,1,2025/09/09 08:29:35+00,520738c2062541a289a1af4915d66641
+,,"308027493",way,12.5,clinic,,Matanal Children's Health Post Hospital Building,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29112007,2,2015/02/26 12:09:26+00,4b823f6db57f407e9b66f6557e6cfb20
+-11.7370566794923,7.96521165180505,"1795616998",node,12.5,pharmacy,pharmacy,Mohamed Jalloh,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,6e79e867ba5c4c5a9945ecfe07cc8478
+,,"307899070",way,9.375,clinic,,Songo Community Health Centre,,,,,,,,,,,,,,,,,,,,,,,,29066975,2,2015/02/24 13:31:56+00,829f41db75264530ad7e7857e090780b
+-10.5716693002122,8.2781497553311,"4504637955",node,28.125,pharmacy,,,,Red Cross Field Survey,yes,,,Mo-Fr,,,,,yes,,yes,,pub_tap,,,,,,,,Kailahun,152309258,3,2024/06/06 01:31:15+00,9c29e4468b8c4afe8f3f26238fb244a5
+,,"932956441",way,12.5,hospital,,Koidu Government Hospital,"Koidu Government, Partners in Health (PIH)",,,,,,,,,,,,,,,,,,,,,,,160143085,3,2024/12/10 20:17:17+00,c8d8a300369d43c88aeb81d1a62ca655
+-11.3912773573231,7.02440144244318,"4504580025",node,37.5,clinic,clinic,Mohammed Sam Kpakacc,combination,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,,,protected_well,solar,,,,,,,Jendema,166195665,5,2025/05/13 10:45:33+00,671acb54f7484761975f904775d7a19e
+,,"808390079",way,34.375,hospital,hospital,Old Government Hospital,,,community,,,Mo-Fr 09:00-17:00,,,,imaging_equipment,,,,public,manual_pump,,,,,,Mabanta Road,,Makeni,169381192,3,2025/07/24 07:30:40+00,e89a70d9ade043f7958d6c85d1e4e607
+-11.7404899070322,7.96446633297487,"3589578407",node,12.5,pharmacy,pharmacy,Alcam Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,5,2021/07/22 13:28:21+00,649f1eaf5f2e4e959fd0ece66e8ca44b
+-13.2465324157955,8.48351283714766,"3341831443",node,15.625,clinic,clinic,DENTAL CLINIC,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,114664618,3,2021/12/07 14:56:38+00,9407158cb1664e9d94e5f85941105e67
+-13.1428364550556,8.3886881989076,"3197529881",node,21.875,hospital,hospital,"China-SL Friendship Hospital, Jui",Chinese CDC,"UNMEER ; https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,152260692,5,2024/06/04 20:21:52+00,6fca38cc6c0e47c18c5dda92f6dae0d3
+,,"314751386",way,15.625,hospital,,Emergency Hospital,Emergency Ong Onlus,,,,,,,,,,,,yes,,,,,,,,,,,114697052,2,2021/12/08 10:48:13+00,9bed9604bc7d464488f2d5e3928136b3
+-12.4239509623528,8.42005244239257,"10053219643",node,12.5,doctors,,MCHP Magbessa,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,5e1f25296ecf43e6aff3b511d0b98a91
+-12.9192889181232,9.21700966346256,"4504695181",node,40.625,clinic,clinic,Mafari Community Health Centre (CHC),Ministry of Health and Sanitation (MoHS),,clinic,public,,24/7,,,,,yes,,yes,,protected_well,none,,,,,,,Mafaray,94894647,4,2020/11/27 11:49:40+00,df9dde6438114d94bcc8af59009c2673
+,,"428661109",way,18.75,pharmacy,,Ibrahim S. Bah Enterprises,,,,,,,,,,,,,,,,,,,,"24",Salunya Road,,Bindi,148545808,3,2024/03/12 11:39:22+00,4e57160eec86413aa374aef7b860cff2
+,,"308822529",way,12.5,clinic,,Medical Lab,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29088581,2,2015/02/25 11:09:23+00,0b08e32e871b4768bf10d919a019c966
+-13.1946487704276,8.47151967481085,"12040005869",node,15.625,clinic,,Looking town  clinic,,,,,,,,,,,,,,,,,,,,"1",Falcon Street,,,153663530,1,2024/07/07 14:02:23+00,41dc0e4cd3ca45e19bd2e8ade381d670
+-11.3324000195852,8.35818997365854,"6805782446",node,9.375,clinic,,Baama community health centre,,,,,,,,,,,,,,,,,,,,,,,,74630265,1,2019/09/18 14:17:56+00,cacaf3d74073441faefe4311bbb40b21
+-12.9407358614113,9.27798339900312,"4504695170",node,37.5,clinic,,Fodaya Health Centre,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,solar,,,,,,,Fodaya,166195665,5,2025/05/13 10:45:33+00,0e6697fd4ece41eaa655257ee931881a
+-12.7378859256233,9.34846011726665,"4504695177",node,31.25,clinic,,Ministry of Health and Sanitation Clinic,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,,,protected_spring,,,,,,,,Gbolon,152309258,2,2024/06/06 01:31:15+00,8bc223088ab9405586a7bf5ca72ed379
+,,"308619453",way,12.5,clinic,,IBM Clinic,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29196597,2,2015/03/02 11:33:33+00,ba9345cb6da44f658f1a93127e11a6ff
+,,"306316437",way,12.5,hospital,,King Harman Road Government Hospital,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29064131,3,2015/02/24 10:55:36+00,9b8dce98c7f3427fa34ca0c487159f9e
+,,"678487705",way,15.625,hospital,hospital,Pujehun Government Hospital - Maternal and Child Health Complex,,,"maternity;paediatrics;surgery",,,,,,,,,,,,,,,,,,,,,123239331,3,2022/07/05 14:55:05+00,88eb2e216b614e59ba562d97f5cc9f3d
+,,"307060071",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172086348,5,2025/09/17 21:43:30+00,2fec986e5bd64208ad1104f4de0609dc
+-11.4081430037937,7.07052764234027,"4504580023",node,34.375,clinic,,Esther,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,,,protected_well,none,,,,,,,Malema,43703078,1,2016/11/16 15:46:32+00,70e82af44a9c4a61ba9c4fa67ef81444
+-12.0364124118399,8.89215333181406,"4861866411",node,9.375,hospital,,Holy Spirit Hospital,,,,,,,,,,,,,,,,,,,,,,,,48790984,1,2017/05/18 12:44:32+00,183a8b844e074973b57ef378e816ad35
+-11.8316539166993,7.62366946550904,"10230670720",node,15.625,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,Mattru,,Bagbo Chiefdom,129600045,1,2022/12/01 11:45:56+00,99ffca7f6e714d7aabe459ae6820ae50
+-13.1468437591439,8.40831115624616,"3341883760",node,12.5,clinic,,MAYEMIE M.C.H POST (Maternal Child & Health Post),,MSF-CH,,,,,,,,,,,,,,,,,,,,,,125040367,5,2022/08/18 02:26:57+00,25183e8ba23e4812901114c57f7f665a
+-11.7583001101714,7.96251016441221,"1795616958",node,9.375,pharmacy,,Faithful Rose Medical Store,,,,,,,,,,,,,,,,,,,,,,,,74120877,3,2019/09/05 11:01:16+00,135cda098a2c47f1a133539b8f9e91bd
+,,"308767430",way,12.5,clinic,,Arab Clinic Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29116167,2,2015/02/26 15:39:21+00,61ee04ac2f0d41409285e5c5f96af780
+-13.1977052314198,8.4720118601652,"3342113914",node,9.375,clinic,,ARAB EGYPT CLINIC,,,,,,,,,,,,,,,,,,,,,,,,28752178,1,2015/02/10 15:06:21+00,b833092a5d274803bf9e71f1dc61ff31
+,,"1341622350",way,12.5,hospital,hospital,Maternal Center of Excellence,,,,,,,,,,,,,,,,,,,,,,,,160143085,1,2024/12/10 20:17:17+00,518931393c764597a5f0d2649c5a5dec
+-13.218307278868,9.05854852668179,"4504695157",node,37.5,clinic,,Zainab Kam,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,unprotected_well,solar,,,,,,,Sorobolomia,166195665,5,2025/05/13 10:45:33+00,c115fcea449146058399784392b70231
+-11.7305975010878,7.96379351760712,"1795616985",node,9.375,pharmacy,,M Patent Medicine,,,,,,,,,,,,,,,,,,,,,,,,53262323,2,2017/10/26 12:33:26+00,6e3ed471427b40d7a901da99cefdf3fd
+-12.7794600815449,9.30816981745414,"4504696793",node,37.5,clinic,,Shakaia MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,none,,,,,,,Shekaia,43706535,2,2016/11/16 18:25:10+00,8cdb1c26a6f946cf92d81495e4156985
+-13.2379970399749,8.4874708556452,"4540110796",node,25,pharmacy,pharmacy,Amalan Pharmaceutical retail,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"35",lightfoot boasting Street,,Freetown,166092611,4,2025/05/11 04:24:04+00,c7cb95f17eaa42d69ac80fc838f98d29
+-12.9499197450805,9.10381289929455,"4504696790",node,37.5,clinic,,Tawuya MCHP,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,solar,,,,,,,Tawuya,166195665,5,2025/05/13 10:45:33+00,da362d678ef643cba2c41e0c82bb5002
+-10.3390797014123,8.46173212647514,"4504637963",node,40.625,clinic,clinic,Oliver Morie Yawulie,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,protected_well,solar,,,,,,,Koindu,166195665,5,2025/05/13 10:45:33+00,e6cec477f99e41618191ffe560c43d33
+,,"293052822",way,12.5,hospital,hospital,Kenema Government Hospital,,,,,,,,,,,,,,,,,,,,,,,,85762644,2,2020/05/26 10:10:49+00,ed37807c341940af93a7e1cab6773445
+,,"306283030",way,15.625,clinic,clinic,Well Women,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,114664618,5,2021/12/07 14:56:38+00,4ccb8d1317ca435290654430d275ec45
+,,"808367568",way,12.5,hospital,hospital,EDC Unit,,,,,,,,,,,,,,,,,,,,,,,,89143844,2,2020/08/09 05:10:57+00,d28a146f93b34530aa74125d6ecae029
+-11.8053888040099,9.48249077232467,"4760232221",node,9.375,clinic,,Sawuria PHU ADP-SL SITE KABALA 2017,,,,,,,,,,,,,,,,,,,,,,,,47236935,1,2017/03/28 17:54:04+00,a9ac96da45d243889fcc0a0452e5a851
+-11.7370429331711,7.96475073094953,"1795616942",node,12.5,pharmacy,pharmacy,All Nations Patent,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,726ab325ce8e423dbe4e430cc162e2ea
+-12.0454159169527,8.90328206847659,"4861867440",node,9.375,clinic,,Masuba Community health Post,,,,,,,,,,,,,,,,,,,,,,,,68147855,2,2019/03/14 18:55:49+00,2f15a36abc254facb4d5d760b368c767
+,,"306599114",way,18.75,hospital,hospital,Aspen Medical Sierra Leone Private Hospital,,,,private,,,,,,,,,yes,,,,,,,,,,,105852098,5,2021/06/04 17:12:21+00,8e70c4364cc34ebc896c87525e50df7a
+,,"330507869",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,29135799,1,2015/02/27 13:56:08+00,23f42f1f79274cecbb04d4f4ca36dd01
+-13.2466403747084,8.69628946086408,"11704136971",node,15.625,hospital,,Life Care Hospital,,,,,,,,,,,,,,,,,,,,"198",198 Wilkinson Road,,,148385726,1,2024/03/08 14:00:33+00,cc3adb17a3da4f79ae612cbef4edf738
+-12.215924949898,8.46678733609812,"8688288719",node,12.5,pharmacy,,Maykord enterphise,,,,,,,,,,,,,,,,,,,,,Yonibana-Bo,,,103962999,1,2021/05/01 15:50:54+00,7107b587f0bb44c2b3682956b6eff538
+-11.7372086433969,7.9675511247998,"3589578502",node,12.5,pharmacy,pharmacy,Dabor Drug Store,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,ac3262555d3a42d89b3058e7b8fedb2b
+-11.676115381917,9.46620171697339,"4760232521",node,9.375,clinic,,Lengekoro PHU Kabala 2017,,,,,,,,,,,,,,,,,,,,,,,,47236935,1,2017/03/28 17:54:07+00,da05b8a88d7c4ed884dbd6af085df2c8
+-12.043084322947,8.89049765448021,"8687984517",node,12.5,pharmacy,,Rogbaneh Road,,,,,,,,,,,,,,,,,,,,,Rogbaneh Road,,,103956890,1,2021/05/01 13:24:32+00,b991ffff8c4844f4b514b6af5fc08664
+,,"808371398",way,12.5,hospital,hospital,Tengbewabu (MCHP),,,,,,,,,,,,,,,,,,,,,,,,85761069,1,2020/05/26 09:47:02+00,1d4e8837e68445958f007eea93110cb2
+,,"789902142",way,37.5,hospital,hospital,Malema,government,Red Cross Field Survey,hospital,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,protected_spring,,,,,,,,Malema,152309258,3,2024/06/06 01:31:15+00,9e3aebcf43b0434ba3eec82f94dbe140
+-12.0745401806336,8.87748676146009,"8687827819",node,12.5,hospital,,Magbenteh Community Hospital,,,,,,,,,,,,,,,,,,,,,Lunsar-Makeni Highway,,,103954283,1,2021/05/01 12:16:39+00,e14c5cdb37064fdf89eaa2b586f16d7f
+-10.385738655075,8.47297712013466,"4504637958",node,34.375,clinic,,Mohamed Sillah,combination,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,,,unprotected_well,solar,,,,,,,Foidu,166195665,4,2025/05/13 10:45:33+00,aa393a3d0b584193bf7aee3e496089a5
+,,"808377564",way,15.625,hospital,hospital,SL SACRIFICE HOSPITAL MENTAL,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,85762378,3,2020/05/26 10:06:54+00,101e9038cee9460a82f61597d3b27477
+,,"970914544",way,12.5,clinic,clinic,Torkpombu community health center,,,,,,,,,,,,,,,,,,,,,,,,109458896,2,2021/08/10 11:20:52+00,5772379062fa480db973ba8ddeb86cda
+,,"293347527",way,15.625,hospital,hospital,Mali & Sierra Leone Friendship Hospital,,,,,,,,,,,,,,,,,,,,,Nyandeyama,,,126962610,3,2022/10/03 23:08:11+00,6b11279750e74d38b0b4167aa08e3f52
+-10.7174850787702,8.23693216557049,"4504648651",node,37.5,hospital,,Gbahama Community Health Post,Ministry of Health and Sanitation,Red Cross Field Survey,hospital,,,Mo-Fr 08:00-17:00,,,,,yes,,yes,,protected_spring,none,,,,,,,Gbahama,43704485,1,2016/11/16 16:48:28+00,c1dd9b48ab7a451dad6089f4cbd8b552
+-13.2263173608168,8.49047845014192,"3341855623",node,12.5,clinic,clinic,MABELL HEALTH CENTER,,,,,,,,,,,,,,,,,,,,,,,,114665707,2,2021/12/07 15:29:36+00,5476c6e2fc3748c6b5a12fc766b989e7
+,,"493088181",way,9.375,clinic,,MCHP,,,,,,,,,,,,,,,,,,,,,,,,48630446,1,2017/05/12 17:49:19+00,37431240b8c44c4cad229ab278e6368e
+-11.7400013258962,7.96447261940224,"3589579519",node,12.5,pharmacy,pharmacy,Misuyden Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,295e94b8bada49c1bcffb8b118f04183
+-10.7262489452714,8.03687616956731,"4504613258",node,37.5,clinic,,Banadete Sesay,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,pub_tap,solar,,,,,,,Levuma,166195665,4,2025/05/13 10:45:33+00,163625dd8ec44f5bb102d77f6a9ff20e
+,,"367277907",way,18.75,hospital,hospital,Mercy Hospital,,,,,,,,,,,,,,,,,,,,,Mahei-Boima Road,,Bo,148545808,6,2024/03/12 11:39:22+00,dc3512f4d39245ebb8abfc4569d022c9
+-13.2374699020843,8.48746984981682,"4540110805",node,25,pharmacy,pharmacy,Sarafina pharmaceutical,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,15 Percival Street,Percival Street,,Freetown,166092611,4,2025/05/11 04:24:04+00,5ac2c183bdba4d6f9ce8555ff6c4bab9
+-13.0075735764121,8.96333429758224,"4504696816",node,37.5,clinic,,Sahr Edward Kabba,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,pub_tap,none,,,,,,,Lutty,43705440,1,2016/11/16 17:37:14+00,4bf08387e73e41a1bb914f351fa21f28
+,,"808376295",way,21.875,hospital,hospital,Police Training Sch-Hastings 1 ETC,MOH,"UNMEER;https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,961627d4f3d141f4be6914c81e32c0a1
+-12.215399153112,8.46701431803606,"8688455217",node,12.5,pharmacy,,GILA ENTERPRISE,,,,,,,,,,,,,,,,,,,,,34 Freetown Road Mile 91,,,108116740,2,2021/07/16 12:05:40+00,cfa1d0fc86b64958a02cf04932f45f64
+-10.9651597563496,8.64929975730206,"11195855937",node,12.5,hospital,,Koidu government hospital,,,,,,,,,,,,,,,,,,,,,Servit,,,141340411,1,2023/09/16 12:34:44+00,4672bbf0c6744d4ca3a378d2e1505ab8
+,,"307715543",way,12.5,clinic,,Regent Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29873620,4,2015/03/31 11:25:53+00,e0e9bd9e0a454acf980ecd790364d6a7
+,,"255003019",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,19782636,1,2014/01/03 09:21:56+00,db663646e845428f82047c7b5416c79a
+,,"1372025111",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,170353361,2,2025/08/12 17:23:50+00,9d108a1cc7f6436cb3dcb75e13d711ce
+,,"1303699329",way,21.875,hospital,hospital,Tei MCHP,Mr Samuel,,community,,,,,,,,,,no,,,,,,,,,,,154394612,1,2024/07/25 13:31:56+00,1f8fede319494932a6154c9bb946b62e
+-11.7413867706718,7.9638307332572,"1795616948",node,18.75,pharmacy,pharmacy,Boris Pharmacy,,,,,,,,,,,,,,,,,,,,"2",Fenton Road,,,108431838,3,2021/07/22 13:28:21+00,2c1ac41606c44caeb2e1a4f0f0c88f05
+-12.4988680776416,8.46013277553061,"10053049993",node,12.5,doctors,,Magbosie MCHP,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,4ee56d190c6a4a22943d046dc65fca57
+-11.7402124660371,7.96424714620687,"3589579588",node,12.5,pharmacy,pharmacy,Rodyna Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,5,2021/07/22 13:28:21+00,c2a3828929be408986e031ace70c5e95
+-11.8717474094253,9.52190843219779,"4816102621",node,9.375,clinic,,Madina MCHP 2017 ADP SITE,,,,,,,,,,,,,,,,,,,,,,,,48132748,1,2017/04/25 16:59:46+00,ea8867092330412faf33c249814c3eff
+-11.7390534164663,7.96415318507229,"1795616981",node,18.75,pharmacy,pharmacy,Kon Farm Patent,,,,,,,,,,,,,,,,,,,,"6",Fataba Street,,,108431838,4,2021/07/22 13:28:21+00,81e31a378c4f4de4aff5d93ab512a650
+,,"255797321",way,15.625,hospital,,Government Hospital,Governement of Sierra Leone,,,,,,,,,,,,yes,,,,,,,,,,,92007410,5,2020/10/05 20:57:22+00,ccc5a4045d3c4ccda22cdb1b54418049
+-12.0715030818378,8.31761737134713,"10053256477",node,12.5,doctors,,MCHP FOINDU,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,0e6f8ef0708240b6b346306825be6e71
+-12.0518688089299,8.86102042885668,"8687954119",node,12.5,clinic,,ARAB CLINIC,,,,,,,,,,,,,,,,,,,,,Magburaka Highway,,,103956723,1,2021/05/01 13:20:09+00,facd18477c644438a32f4dbbd503d717
+,,"306293247",way,12.5,clinic,,Wilberforce Village Health Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29089114,2,2015/02/25 11:37:48+00,088c55816c164ac48c2bf3205fb94d38
+-10.5656826096895,8.12023218497114,"4504613261",node,37.5,clinic,,Dorah Sesay,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,none,,,,,,,Gbeworbu,43703880,1,2016/11/16 16:20:33+00,b5f1ecc29fb946248f8d0b8650fca284
+-11.5771008817377,6.96783424103899,"4504580022",node,37.5,clinic,clinic,Francis Sellu,government,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,,,protected_well,none,,,,,,,Sullima,137971271,2,2023/06/30 19:17:46+00,6254de7025834d4bbd285815783880a5
+-10.6147192578256,8.81862392441474,"4504695140",node,18.75,clinic,,Saiama Clinic,,Red Cross Field Survey,clinic,,,,,,,,,,,,,,,,,,,,Saiama,43705440,1,2016/11/16 17:36:59+00,8f6a1772baae40989a7b8d5209fb323a
+-13.1695371752529,8.44115623056479,"3339906977",node,12.5,clinic,,COMMUNITY CLINIC,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29064206,2,2015/02/24 11:00:03+00,81143466dbee4c1aa8a0295bd345d1ae
+-13.035010143889,8.96593159791863,"4504695147",node,15.625,clinic,,,,Red Cross Field Survey,clinic,,,,,,,,,,,,,,,,,,,,Koya Samu,43706535,2,2016/11/16 18:25:09+00,9de24c502ed74f0399d8c2fe3e498f7d
+,,"302974128",way,9.375,hospital,,Panguma Hospital,,,,,,,,,,,,,,,,,,,,,,,,25379166,1,2014/09/11 22:54:38+00,c871a6236747440e8ee20eadf426532c
+-12.2104964103077,8.54061966547815,"10053076785",node,12.5,doctors,,MCHP MARUNIA,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,127326453,2,2022/10/10 22:51:55+00,ef508d181a614a9180fddf543d342dc3
+-10.573955967217,8.27667412127741,"4530282320",node,21.875,pharmacy,,Sow Pharmacy,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"5",pendembu road,,Kailahun,148545808,2,2024/03/12 11:39:22+00,7217792c7d0e42049fea10f8a52335fe
+-12.2082721046626,8.46402315206956,"8688359617",node,15.625,hospital,hospital,Our lady of guadalupe Catholic clinic,,,,,,,,,,,,,,,,,,,,,Old railway line,,,162453674,3,2025/02/13 06:10:19+00,bcc338e0ca604ce6940ca14978d489d1
+-13.2118876630465,8.48672084294924,"3341999166",node,9.375,dentist,,Dental Hospital,,,,,,,,,,,,,,,,,,,,,,,,74248947,2,2019/09/09 08:27:28+00,40d9ec6b78b04912ab864ed4ad5e5d08
+-10.8587482266196,8.44039423174729,"4504696814",node,31.25,clinic,,Bandasuma MCHP,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,,,yes,,pub_tap,none,,,,,,,,44389481,3,2016/12/14 05:14:55+00,76cb2259fd7a49bb8d13caa5f5a12ad6
+-10.7399718809661,9.36735753706651,"4504695146",node,34.375,clinic,,Ministry of Health and Sanitation Clinic,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,,,protected_well,none,,,,,,,Masadukura,43705440,1,2016/11/16 17:37:00+00,09207cbbe286488bb07c4252b1784e66
+,,"1059802054",way,25,hospital,hospital,Hangha Maternal and Children Hospital,MOH,,"paediatrics;gynaecology",government,,,,,,,,,,,,,,,,,,,Hangha,168709941,4,2025/07/09 18:42:13+00,089319a80c0b41e183aac86d587c5fbe
+-10.5990386448256,8.32049881820109,"4504648652",node,34.375,clinic,,Ministry of Health and Sanitation Clinic,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,,,pub_tap,solar,,,,,,,Mafindo,166195665,4,2025/05/13 10:45:33+00,f569a274b8f740d0a4915bd9dc25f5ff
+-10.3391157435959,8.46173212647514,"4504637947",node,37.5,clinic,clinic,Alphonsus Vandi,government,Red Cross Field Survey,clinic,,,,,,,,yes,,yes,,protected_well,solar,,,,,,,Koindu,166195665,5,2025/05/13 10:45:33+00,83b9786286224d8fa5688ae91c91ecc2
+-10.751577212643,8.1709680963375,"4504648654",node,37.5,hospital,hospital,Mansary Cac,government,Red Cross Field Survey,hospital,,,24/7,,,,,yes,,yes,,pub_tap,,,,,,,,Manowa,152309258,3,2024/06/06 01:31:15+00,23a597f4553640c38af217ea35c0fb06
+,,"307062425",way,6.25,,hospital,,,,,,,,,,,,,,,,,,,,,,,,,172086348,7,2025/09/17 21:43:30+00,90096ecbdbcd4c2680a35bbd1d36d0b1
+-12.9258368608823,9.11215674862765,"4540031167",node,18.75,pharmacy,,Keys Multi Purpose Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,check point,,Kambia,148545808,4,2024/03/12 11:39:22+00,8c4a80f94fca499385e2a6fa45b327a2
+-10.5708332053706,8.28053558025042,"4530280450",node,21.875,pharmacy,,Amodu Sow,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"34",Manosewallu road,,Kailahun,148545808,3,2024/03/12 11:39:22+00,35d18785e40b4e2c9a253f7c6562fdc8
+-10.7888317547641,7.87791597427159,"4526609102",node,21.875,pharmacy,,Jojoima Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"6",Jabama Road,,Jojoima,148545808,2,2024/03/12 11:39:22+00,0cbefdc940c74ee1a32f061833b6d946
+-11.7396817239282,7.96414907793974,"3589579843",node,12.5,pharmacy,pharmacy,Southern Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,49f92ae0c8c741b6853f5f5295e05bc1
+-10.7756138287356,8.844608830081,"4504695141",node,37.5,clinic,,Koima MCHP,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,none,,,,,,,Koima,43705872,2,2016/11/16 17:58:50+00,b61ca4ea7b5141eba45826e052c6a33a
+-11.3830993020348,7.02083972032767,"4526409675",node,21.875,pharmacy,pharmacy,The Bun Man's Lucky Pantent Enterprises,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,Liberia Highway,,Jendema,148545808,3,2024/03/12 11:39:22+00,70d14ec1a54746129660bd88897eb8dc
+,,"306087720",way,18.75,hospital,hospital,Shriners Hospitals for Children,#osmsl-Geoweek,,paediatrics,,,,,,,,,,,,,,,,,,,,,77125293,2,2019/11/15 12:25:59+00,b8fcb99c44094d90a838b19da6a361de
+-13.2269431537077,8.46370857924344,"6979628967",node,18.75,hospital,hospital,Shriners Hospitals for Children,-osmsl-geoweek,,paediatrics,,,,,,,,,,,,,,,,,,,,,77125293,1,2019/11/15 12:25:59+00,c2d08f6a617d4fb9a3fe50a62a3bae98
+-10.3380053090635,8.46213806204582,"4530647924",node,25,pharmacy,pharmacy,Mohamed Bar's Pharmacy,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"1",Koindu Market Road,,Koindu Town,166092612,5,2025/05/11 04:24:22+00,ba778e77a005477aa322dcc409a652f8
+,,"330042241",way,12.5,clinic,,Mother Child Rehabilitation Centre,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29065528,1,2015/02/24 12:14:15+00,ec2edf5991f74ddf8790014244effae3
+,,"1002867082",way,12.5,hospital,hospital,Blue Shield Hospital,,,,,,,,,,,,,,,,,,,,,,,,114664618,3,2021/12/07 14:56:38+00,d88b0854a3a747ef9d8a8a126fe1e6bd
+-12.2437932692074,8.43952569894046,"8688629217",node,15.625,hospital,,Yoni Bana CHP,,,,,,24/7,,,,,,,,,,,,,,,Station Road,,,103968878,1,2021/05/01 18:14:31+00,841e9c0e4b984ed1a0569f70253f642d
+-12.0500272209837,8.87420315089187,"4861864802",node,9.375,pharmacy,,Pharmacy Board Sierra Leone,,,,,,,,,,,,,,,,,,,,,,,,48790984,1,2017/05/18 12:44:17+00,744825811bb84d15b3e329ca97a1fb3e
+-11.0905035745966,8.54395767459798,"3589579881",node,9.375,clinic,,UMC Health Center,,,,,,,,,,,,,,,,,,,,,,,,74095431,2,2019/09/04 17:21:39+00,ace0b76df76145f499a917417dd5e697
+-10.7398438054856,9.3671269509102,"4504695149",node,37.5,clinic,,Masadu Community Health Post,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,pub_tap,none,,,,,,,Masadukura,43705440,1,2016/11/16 17:37:00+00,6595dc02905845039fc621de5d79cd2b
+-10.9968122534847,7.52463375911464,"4504695180",node,37.5,clinic,,Health Center,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,Mo-Sa,,,,,yes,,yes,,protected_well,solar,,,,,,,Faama,166195665,5,2025/05/13 10:45:33+00,30ec086022c24bb487f7bc8bae9aff60
+,,"317992556",way,9.375,hospital,,United Methodist Hatfield Archer Memorial Hospital,,,,,,,,,,,,,,,,,,,,,,,,27578001,1,2014/12/19 20:54:15+00,d99430aefc2941df9a33892b0f5da4f1
+,,"272907223",way,21.875,pharmacy,,Alla Patent Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"00",Manosewallu road,,Kailahun,148545808,3,2024/03/12 11:39:22+00,3ca2f09cc94543eba5201420ed2074b7
+-11.7393388202694,7.96601488958615,"3589579502",node,12.5,pharmacy,pharmacy,Mama Hawa Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108431838,5,2021/07/22 13:28:21+00,d9f23fe38dad4fed9eccb4b1f6d8a8d0
+-11.5673182787248,9.5478925834928,"7660776285",node,18.75,hospital,,"Tyler Perry Town, Kabala",,,,,,24/7,,,,,,,,,,,,,,"0001","Kathombo II, Kabala Makeni High way",,,87251087,1,2020/06/28 13:56:11+00,540df8f0ac8945a7b6832aaa70195a33
+-12.3755427054977,8.47657647699543,"10053218206",node,12.5,doctors,,Rokimbie,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,74542034b66e47eebc82c1bd7625b308
+-11.7398358671276,7.96710671629353,"3589579862",node,12.5,pharmacy,pharmacy,Tamareneh Patent,,,,,,,,,,,,,,,,,,,,,,,,108431838,4,2021/07/22 13:28:21+00,8e4cf9727b9349da8986a0a131561056
+-12.2047135676702,8.50205285259617,"10053251635",node,12.5,doctors,,MCHP Mathinka Lol,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,127326453,2,2022/10/10 22:51:55+00,cd9ff910ad37454fb19953373ff58caa
+-10.7486086778151,8.17388851904124,"4526778439",node,21.875,pharmacy,,Foday Enterprise,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"4",Gbonobo highway,,Manowa,148545808,2,2024/03/12 11:39:22+00,132bbc45b12d43d2a42b8a9f44759793
+-11.721055458696,7.94788659322151,"3684861519",node,9.375,doctors,,MSF Office,,,,,,,,,,,,,,,,,,,,,,,,33168832,1,2015/08/07 00:33:20+00,09354cdd300b4b53b44720e1e67e55d8
+-10.4878986320583,8.25544988515659,"4504637951",node,34.375,clinic,,Jinnah Kargay,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,08:00-17:00,,,,,yes,,yes,,cart,,,,,,,,Gbalahun,152309258,2,2024/06/06 01:31:15+00,6803b653697a44cca953bf622641f2e7
+-13.2361316474236,8.48323321685777,"6807436686",node,9.375,pharmacy,,bodicare pharmacy,,,,,,,,,,,,,,,,,,,,,,,,74659840,1,2019/09/19 08:36:27+00,79a6b9a9b26148d88236a70ae6131ccf
+-12.0433555613337,8.8884562419623,"8687950617",node,12.5,clinic,,Arab clinic,,,,,,,,,,,,,,,,,,,,,Flower Corner,,,103956258,1,2021/05/01 13:09:13+00,1b46aac2c9374e3188135db79c265d8a
+-10.7101597144917,8.78344876483288,"4539738895",node,15.625,pharmacy,,,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,,koidu road,,Kombayedeh,148545808,3,2024/03/12 11:39:22+00,1e68bd3e60954f1da99d0e93c361c8e7
+-13.264000050552,8.39699994555156,"3197529888",node,18.75,hospital,,Lakka Hospital ETU,Emergency / MOH,"UNMEER ; https://data.hdx.rwlabs.org/dataset/ebola-treatment-centers",,,open,,,,,,,,,,,,,,,,,,,152260692,3,2024/06/04 20:21:52+00,5aaa02bcf0d643108cd46c59d27a549d
+-12.0434697228549,8.88914456385089,"8688020117",node,12.5,pharmacy,,C.C.C Drug Store,,,,,,,,,,,,,,,,,,,,4 Rogbaneh Road,,,,103957750,2,2021/05/01 13:43:49+00,440dfe6708b9411bae5d11396c314e0d
+-12.2469331301362,8.45830007240173,"8688477318",node,12.5,hospital,,YONIBABA SAI HOSPITAL,,,,,,,,,,,,,,,,,,,,,88 high way road,,,103965975,1,2021/05/01 16:59:49+00,0ce5c0d059064dcea283c7cd450ad8b7
+-10.5694807014746,8.27794808674074,"4504637959",node,31.25,pharmacy,,,,Red Cross Field Survey,yes,private,,Mo-Fr 08:00-17:00,,,,,yes,,no,,pub_tap,,,,,,,,Kailahun,163590580,4,2025/03/13 22:11:43+00,374fa01381be4843aea5f7d5c268ec23
+-10.5672754227496,8.79765332468395,"4504695145",node,21.875,clinic,,Ministry of Health and Sanitation Clinic,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,,,,,,,,,,,,,,,,,,Kongoifeh,43705656,2,2016/11/16 17:48:25+00,d81e7ebd06544e94bb89697c5574ba5d
+,,"310233764",way,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,26414199,1,2014/10/29 14:59:12+00,98b443862bab4a43a16ab24e36453e3e
+-11.7498147743127,7.94663182231645,"1795616993",node,15.625,pharmacy,,Maria Pharmacy,,,,,,,,,,,,,,,,,,,,"147",Old Railway Line,,,74120877,3,2019/09/05 10:57:48+00,76b8863be16e4a3c81aa3d0ee2632e40
+-12.0454452536139,8.88832255060669,"4861867442",node,37.5,clinic,clinic,Red Cross Clinic,,,"child_psychiatry;community",community,,Mo-Fr 09:00-17:00,,,,,,,no,unknown,,grid,,,,,Mabanta Road,,Makeni,83154016,3,2020/04/06 15:15:44+00,b481bbcdf4a14478980635c003b3e135
+,,"308293635",way,12.5,clinic,,City of Rest Health Center,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29091807,2,2015/02/25 13:38:17+00,533daca7296a4ee4a887468fa2b612c4
+-11.1952977322903,7.86717825339213,"9869952117",node,12.5,clinic,,Marie Stopes,,,,,,,,,,,,,,,,,,,,52 Blama road,,,,123268316,1,2022/07/06 09:19:47+00,d20f1ee8e5fe483ea40a53f93745f88d
+,,"310233749",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,126550052,2,2022/09/23 14:02:26+00,ed437df7f46b430b8fd37d0f8ac38a17
+,,"309123527",way,12.5,clinic,,Children's Hospital,,MSF-CH,,,,,,,,,,,,,,,,,,,,,,29088469,3,2015/02/25 11:03:14+00,131f2c7bb16b440b8e2b1181480e7965
+-10.921586265064,9.46537844644371,"4504696813",node,37.5,clinic,,Maternal Child Health Post,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,none,,,,,,,Seria,43705440,1,2016/11/16 17:37:13+00,df6a8e5b194546d68cfc50d92cbff5df
+-11.7385144600923,7.97014389890847,"1795617013",node,12.5,pharmacy,pharmacy,Tamareneh Patent,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,1f2febc5669c46559aedfa3f4fe37606
+-13.1434073464808,8.93667506780565,"4504696821",node,34.375,hospital,,Helen K Koroma,government,Red Cross Field Survey,hospital,,,08:00-17:00,,,,,yes,,yes,,pub_tap,,,,,,,,Kychom,152309258,2,2024/06/06 01:31:15+00,3b628079a21440f78945cd6f164c3f03
+-10.5332172355847,8.20436495134206,"4504637967",node,18.75,clinic,,Talia Hospital,,Red Cross Field Survey,hospital,,,,,,,,,,,,,,,,,,,,Talia,43704220,1,2016/11/16 16:35:41+00,1c963b229f0d4c8cb7355203664b74b2
+-13.2322345653621,8.49013068497925,"4037297324",node,15.625,pharmacy,pharmacy,City Pharmacy,,,,,,,,,,,,,,,,,,,,,Wilberforce Street,,,114665707,3,2021/12/07 15:29:36+00,8b071ac458ac40ef88ecd2c5e6414bc8
+-11.657978116916,9.80121465215433,"4504695156",node,28.125,clinic,,MCHP,Ministry of Health and Sanitation,Red Cross Field Survey,clinic,,,24/7,,,,,,,yes,,,,,,,,,,Mamudia,152309258,2,2024/06/06 01:31:15+00,bd5805b8bb504be8a767606688876bfa
+-13.1943750174699,8.46230997487993,"12044110569",node,21.875,pharmacy,,Zanab Pharmacy,,,,,,24/7,,,,,,,,,,,,,,"1",Falcon Street,"0000",,153756599,1,2024/07/09 18:52:11+00,dc941b5e4593475c82649f147ba7be11
+,,"1331910955",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,169979121,2,2025/08/04 22:48:07+00,22aa1ed38de345c193e05067d73b2485
+,,"454318274",way,21.875,pharmacy,,Tifa's Pharmacy,,Red Cross Field Survey,,,,,,,,,,,,,,,,,,"00",Council Road,,Kailahun,148545808,2,2024/03/12 11:39:22+00,87405ffaa7d9455a8e4a9afa2aac6b3c
+-11.3629170202974,7.24082478077329,"4504602481",node,34.375,clinic,,Aminata Yanbasu,government,Red Cross Field Survey,clinic,,,Mo-Fr 08:00-17:00,,,,,yes,,,,pub_tap,none,,,,,,,Gofor,43703532,1,2016/11/16 16:04:56+00,eb081985716d44ec9b4647008e4215b6
+-10.3257966479961,8.46135703630813,"4504637966",node,37.5,clinic,clinic,Mr. Patrick Kanyako,,Red Cross Field Survey,clinic,private,,08:00-17:00,,,,,yes,,yes,,protected_well,,,,,,,,Ngisio,163590580,4,2025/03/13 22:11:43+00,0a474bc16bb245c780ef47b863d1ceca
+-10.5056763134133,8.72764783701683,"4504695185",node,37.5,clinic,,Sambaya Phu,government,Red Cross Field Survey,clinic,,,24/7,,,,,yes,,yes,,protected_well,solar,,,,,,,Sambaya,166195665,4,2025/05/13 10:45:33+00,1260e606572b4ff0b9c719a7afcec5fb
+,,"263572644",way,12.5,hospital,hospital,Nduvuibu (MCHP),,,,,,,,,,,,,,,,,,,,,,,,126962610,4,2022/10/03 23:08:11+00,7a50acbe653349b9b5337372400dd800
+-12.2410651273625,8.44232148274398,"11904689714",node,12.5,hospital,hospital,UMC CHP,,,,,,,,,,,,,,,,,,,,,,,,151323232,1,2024/05/14 17:16:06+00,6b38533f561544389a839cbb2adfd688
+-12.04254301964,8.89109997804226,"8688105718",node,12.5,pharmacy,,Rogbaneh Road Makeni,,,,,,,,,,,,,,,,,,,,,33 Rogbaneh Road Makeni,,,103959288,1,2021/05/01 14:21:21+00,59c200bdf8b64c07adcc68971062fa57
+,,"416377473",way,12.5,pharmacy,,,,,,,,,,,,,,,,,,,,,,,Kono High Way,,Masofinia,148545808,3,2024/03/12 11:39:22+00,3b792e879519424e9adebd456b098fb0
+-11.7373998346083,7.96828998956454,"1795616973",node,12.5,pharmacy,pharmacy,Idalanda Drug Store,,,,,,,,,,,,,,,,,,,,,,,,108431838,3,2021/07/22 13:28:21+00,5183c0ca1ca84fc1b93e2c1bf9b69c1a
+-11.7418041056308,7.95777883152786,"3589640122",node,15.625,clinic,,Sierra Loene Red Cross (SLRC),Red Cross,,,,,,,,,,,,,,,,,,,,Water Street,,,31995985,2,2015/06/16 00:52:39+00,fba12c4d7da742d9b8c40deab751c013

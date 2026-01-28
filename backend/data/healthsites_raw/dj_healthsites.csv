@@ -1,0 +1,49 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+43.1459617954268,11.5954613578261,"3644582972",node,21.875,clinic,clinic,Pôle Medical المركز الطبي,"Dr Guillard, Dr Dell'Aquila",,general,,,,,,,,,,,,,,,,,,,,جيبوتي,79469513,4,2020/01/12 08:36:49+00,fd8a4954019143ac8f7a404b73ad2845
+43.1524777193159,11.5685503356781,"5359716344",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,55724302,1,2018/01/24 21:10:22+00,12967dd31dc348828ce7f356252aa4b4
+,,"400002960",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,37442253,2,2016/02/25 17:49:29+00,3086177204f34204b2150b25fa98a8d9
+,,"554269783",way,15.625,hospital,hospital,Hôpital Docteur Chakib Saad Omar مستشفى الدكتور شكيب سعد عمر,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,172509033,5,2025/09/27 03:20:49+00,57ea66549ed44b3a9a9fa22fa60cd6ad
+43.1458760485574,11.5914710690013,"5814678354",node,15.625,pharmacy,pharmacy,الصيدلية الوطنية,,,,,,Sa-Th 08:00-23:00,,,,,,,,,,,,,,,,,,93720257,4,2020/11/07 20:47:01+00,3d6259ad75ed401bbb0548353145b87b
+43.1522366557806,11.5909344595601,"4620272290",node,15.625,clinic,clinic,Ministere de la santè وزارة الصحة,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,79469513,3,2020/01/12 08:36:49+00,842d50bbcc27433db931588cef4152d3
+,,"400002964",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,37442253,2,2016/02/25 17:49:29+00,ab9f82df5c604d1bb751bf6330a180a0
+43.1477839373577,11.5963580538275,"4631673591",node,15.625,doctors,doctor,Nicolas Gorgalis طبيب عام,Nicolas Gorgalis,,,,,,,,,,,,,,,,,,,,,,,78394317,4,2019/12/13 22:09:24+00,e245935e70ac44a691715d1213554578
+,,"551157489",way,15.625,hospital,hospital,Hôpital de Tadjourah مستشفى تجرة,,,,,,,,,,,,,,,,,,,,,,,تجرة,120139754,4,2022/04/24 21:38:33+00,75756971f82c4ff8a4b4520d472871f8
+43.1085916668609,11.5502165988667,"5314085236",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,79788292,3,2020/01/20 09:33:51+00,4d991f46c1df43398e2cf9936a0a45cc
+,,"555239716",way,15.625,hospital,hospital,CSC_Balbala 2,Public,,,,,,,,,,,,,,,,,,,,,,,79993771,3,2020/01/23 19:17:11+00,4290c71a52e44ff19af17a383277cd8c
+,,"335328161",way,21.875,hospital,hospital,Croissant rouge de Djibout / الهلال الأحمر لجيبوتي، بلبالا 2,Croissant Rouge الهلال الأحمر,,,,,,,,,,,,yes,,,,,,,,,,جيبوتي,73042302,7,2019/08/05 22:42:44+00,1c8f44ee82ed4c4e97f253d4f55b0f84
+43.1482108276863,11.5427369237508,"2195660097",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,79469513,2,2020/01/12 08:36:49+00,b6cd2f58ab5048f995bf7f400cf3520c
+43.1004896354344,11.5576612376273,"5313246188",node,15.625,pharmacy,pharmacy,Pharmacie populaire,,,,,,,,,,,,,,,,,,,,,,,Balbala,143391569,3,2023/10/30 23:13:26+00,afa52d5f690b4d658108608d138855e0
+,,"550937696",way,18.75,hospital,hospital,Hôpital militaire,France,,,,,,,,,,,,yes,,,,,,,,,,,55383222,3,2018/01/12 15:27:39+00,2d187d3fed984f86a6f9cb5d03c96348
+43.1476352423954,11.5669646472357,"5322627429",node,9.375,,physiotherapist,Kiné Pro,,,,,,,,,,,,,,,,,,,,,,,,55385436,3,2018/01/12 16:51:17+00,a2622040a2c344a4b6586596df043d63
+,,"739480373",way,21.875,hospital,hospital,Hôpital Régional d'Ali Sabieh,,,"ophthalmology;paediatrics;maternity;orthopaedics",,,,,,,,,,yes,,,,,,,,,,Ali Sabieh علي صبيح,85191605,3,2020/05/14 09:31:03+00,df040c6d09064dfbba92c1afff93230a
+,,"557960596",way,18.75,hospital,hospital,Centre de Santé Communautaire Wahledaba,Ministère de la Santé,,general,,,,,,,,,,,,,,,,,,,,,158681382,2,2024/11/03 00:11:50+00,0c6422984ab04edc9de11aa41670bf64
+,,"353240926",way,15.625,hospital,hospital,Dar Al Hanan دار الحنان,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,117211370,5,2022/02/09 17:01:31+00,2de9a67d71c54f53a2a6a967aa7f12b0
+43.1113600418411,11.5495753832739,"5349267468",node,21.875,pharmacy,pharmacy,Al-Ouma الأمة,,,,private,,,,,,,,yes,,,,,,,,,,,جيبوتي,93205123,3,2020/10/29 00:18:26+00,171744d8167b427788ec6a6f75d9608a
+,,"643189842",way,12.5,hospital,hospital,Centre médical المركز الطبي,,,,,,,,,,,,,,,,,,,,,,,,67267498,2,2019/02/17 01:47:10+00,50b99f5e24e440f1b7b294de60adf3d8
+43.0982480630687,11.5539822526864,"5313346185",node,15.625,clinic,clinic,Maison de santé مركز صحي,,,,,,,,,,,,,,,,,,,,,,,بلبالا,78723163,3,2019/12/21 22:58:24+00,b6e905c9893148c6a5dbcb91d386caf3
+43.1524184592604,11.5686180614558,"5335540127",node,15.625,dentist,dentist,Clinique Dentaire de Djibouti,Ramsiss Fathi,,,,,,,,,,,,,,,,,,,,,,,142137901,4,2023/10/04 10:22:20+00,90ef916ba5504f35b6ab38a3a9a02f99
+,,"335328162",way,18.75,hospital,hospital,Centre de Santé Communantaire de Hayabley,,,,,,,,,,,,,yes,,,,,,,,,,جيبوتي,80848686,6,2020/02/11 11:58:51+00,da0a2b60223f4eb5914248bc49dcab09
+,,"998316092",way,18.75,hospital,hospital,Hôpital Militaire Soudanais المستشفى العسكري السوداني,,,,,,,,,,,,,,,,,,,,,Boulevard Hassan Gouled,,Djibouti,171160548,3,2025/08/29 01:34:50+00,8590f8af986b4b9a9124cf2047245380
+,,"228050145",way,18.75,hospital,hospital,Hôpital Général Peltier مستشفى بلتيير العام,,,"surgery;neurology;orthopaedics",,,,,,,,,,,,,,,,,,,,جيبوتي,113067999,4,2021/10/28 07:13:49+00,3d15e813550748f6a4f8b3753d9aab8a
+43.1464263205007,11.5951983337044,"5345274811",node,15.625,dentist,dentist,Clinique dentaire Fathi,Nasibe Fathi,,,,,,,,,,,,,,,,,,,,,,,155633597,2,2024/08/23 04:57:50+00,7efbe13bc2df4074bdafd8035a91dfd5
+,,"550175737",way,21.875,hospital,hospital,Centre de Santé communantaire de Ouéa,Ministere de la Santé,,general,government,,,,,,,,,,,,,,,,,,,,144303549,6,2023/11/21 21:31:58+00,877839f28e8b4fe4adf2f6091bb54d1a
+43.132758789186,11.5905385822732,"5351742926",node,15.625,pharmacy,pharmacy,Pharmacie BSH صيدلية بي إس أيتش,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,100510942,4,2021/03/05 19:14:52+00,fdfcc54603bc47f6997240c619c96706
+,,"550510225",way,25,hospital,hospital,Hopital cheikho,Ministère de la Santé,,"CHIRURGIE_VISCERALE;GYNECOLOGIE-OBSTRIQUE;OPHTALMOLOGIE;O.R.L;ANATOMIE-PATHOLOGIE;IMAGERIE_MEDICAL;LABORATOIRE;PHARMACIE;KINESITHERRAPIE;CENTRE_D’APPAREILLAGE;ORTHOPEDIQUE",,,,,,,,,,yes,,,,,,,,,,جيبوتي,113063645,8,2021/10/28 04:48:04+00,3c9b8d26dd234483bcfe682729c8b18a
+,,"739165042",way,15.625,hospital,hospital,Centre Médico-Hospitalier d'Ali Sabieh مستشفى علي صبيح,,,,,,,,,,,,,,,,,,,,,,,Ali Sabieh علي صبيح,86004101,3,2020/05/31 10:28:47+00,d0a058a179de456c92399316484a820b
+43.1480622165431,11.5593890831476,"5335418845",node,15.625,pharmacy,pharmacy,Pharmacie de l'Aviation صيدلية الطيران,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,78723163,4,2019/12/21 22:58:24+00,a8961926b92042979ae00dfe42272404
+43.1425742492593,11.5894632679151,"5337784455",node,15.625,clinic,clinic,Affi أفى,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,79454868,3,2020/01/11 15:57:39+00,6ab64bd333e14df5b26338990f9d85c4
+43.0807656761626,11.5538423587225,"5380475275",node,18.75,hospital,hospital,Centre de santé communautaire Tora-Dora,Ministère de la Santé,,general,,,,,,,,,,,,,,,,,,,,,143391569,2,2023/10/30 23:13:26+00,616b1e9cd31441259655f2f85cf03492
+43.146178886719,11.5943733867941,"3739299269",node,15.625,pharmacy,pharmacy,Pharmacie de l'Indépendance صيدلية الاستقلال,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,79469513,4,2020/01/12 08:36:49+00,0fae537910aa40dda2af664cb8f540b3
+43.1451421291155,11.5930160213942,"3739299265",node,15.625,pharmacy,pharmacy,La Pharmacie Moderne صيدلية حديثة,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,79469513,4,2020/01/12 08:36:49+00,07b53b2d2cb94c9b8d71da22106327c3
+,,"652953006",way,18.75,hospital,hospital,Service de Santé des Armées خدمة الصحة العسكرية,Service de Santé des Armées خدمة الصحة العسكرية,,general,,,,,,,,,,,,,,,,,,,,,171152852,3,2025/08/28 19:54:28+00,55bb6e8d55db40c1823ab8ad670af05c
+,,"554564940",way,9.375,,laboratory,Laboratoire d'analyses médicales Abdan,,,,,,,,,,,,,,,,,,,,,,,,79262363,3,2020/01/06 19:22:54+00,67f505bfa63144ddb5936a6903ca0b8e
+43.141464317641,11.5906748720188,"5351742589",node,9.375,,laboratory,Laboratoire d'analyses médicales Abdan,,,,,,,,,,,,,,,,,,,,,,,,65055295,2,2018/11/30 19:16:13+00,3a36de7f43ba479eb8f0ddfe5bae52ac
+,,"549878593",way,15.625,hospital,hospital,Tulyani الطلياني,,,,,,,,,,,,,,,,,,,,,,,بلبالا,93720506,3,2020/11/07 20:57:32+00,d6ae75c4249443d69390152dcf6a438f
+43.1481554233064,11.5954776187182,"5337784450",node,15.625,pharmacy,pharmacy,Pharmacie de la Corne d'Afrique صيدلية القرن الأفريقي,,,,,,,,,,,,,,,,,,,,,,,جيبوتي,79198780,4,2020/01/04 20:37:13+00,91184fac3b694e73b0d958c928e45eab
+,,"711138844",way,12.5,hospital,hospital,Hôpital Al-Rahma مستشفى الرحمة,,,,,,,,,,,,,,,,,,,,,,,,171158450,4,2025/08/28 23:11:35+00,93dc14b51969470785669c09763a604e
+43.1461250749007,11.5940810260114,"5337784444",node,18.75,clinic,clinic,Laboratoire Affi,Affi,,laboratory,,,,,,,,,,,,,,,,,,,,,55416643,1,2018/01/13 21:00:40+00,0f1386d345c1482ca0ee57bd832bdac3
+,,"400017075",way,15.625,hospital,hospital,Hôpital مستشفى,,,,,,,,,,,,,,,,,,,,,,,علي عدي,85680091,4,2020/05/24 12:05:33+00,9e82b0d1df08401e9203d83a9954ebaf
+43.1489688870094,11.5927250855351,"4347535789",node,21.875,pharmacy,pharmacy,عسل سهيل للعسل اليمني والإثيوبي ولجميع أنواع الأعشاب الطبية,,,,,,"Sa-Th 08:00-22:00; Fr 17:00-22:00",,,,,,,,,,,,,,,شارع ١,,جيبوتي,158551512,6,2024/10/30 17:17:22+00,f5d571dd412e471a95b30cb8f4337da4
+43.1457123499884,11.5923334830188,"9371609717",node,12.5,pharmacy,pharmacy,Pharmacie Centrale,,,,,,,,,,,,,,,,,,,,,,,,161652180,2,2025/01/22 20:33:46+00,02d73cbc26844f8f82619fb5bca17b11
+43.1152063295694,11.5623886310172,"5317174086",node,12.5,pharmacy,pharmacy,Pharmacie Place Cheick Moussa صيدلية ساحة الشيخ موسى,,,,,,,,,,,,,,,,,,,,,,,,158620324,4,2024/11/01 13:55:51+00,20a5036247944a959d145c9970d277d9
+43.1520900562941,11.5877186585885,"5335540126",node,18.75,pharmacy,pharmacy,Pharmacie Océan Indien الصيدلة من المحيط الهندي,,,,,,,,,,,,,,,,,,,,,شارع الجنرال ديغول,,جيبوتي,60361970,3,2018/07/03 01:32:10+00,b3b85af84f50495494c8859324222d06

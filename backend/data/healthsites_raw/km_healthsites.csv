@@ -1,0 +1,69 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+43.2506636683665,-11.7050797188854,"4994963121",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,Place de l'Europe,,,131251667,4,2023/01/14 04:18:51+00,0d9bce616a6147319298eadc3412239d
+,,"404358862",way,18.75,hospital,,hôpital,,"#opendri-comoros;survey",,,,,,,,,,,no,,,,,,,,,,Ntsudjini,43528494,2,2016/11/10 09:00:49+00,83bdddc3a75f4976a78e5fcaa2e41cc5
+43.2586920228642,-11.6912446333262,"4195378700",node,18.75,clinic,clinic,Clinique Ascobef,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue de la COI,,,104903397,4,2021/05/18 16:29:28+00,900431c3768c4146a7ed1576571f8867
+43.2571129561253,-11.6903293294997,"4993468642",node,15.625,pharmacy,pharmacy,Pharmacie Al-Camar صيدلية القمر,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,,,,85285038,4,2020/05/16 00:22:58+00,ecae233eff3f4e74a948665d93cb7ce0
+,,"406157830",way,9.375,hospital,,,,#opendri-comoros,,,,,,,,,,,,,,,,,,,,,,41360229,3,2016/08/10 06:34:51+00,0d00bd7e941e4c63a43068582e743288
+43.2544540488006,-11.6989365382305,"4993593028",node,15.625,clinic,clinic,Cabinet Medical,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,,,,104903397,3,2021/05/18 16:29:28+00,9fa6182a6d8e4f328442b363dc6153dc
+43.2560008452123,-11.6929955290801,"4993501758",node,15.625,pharmacy,pharmacy,SOS Pharma,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,,,,104903397,3,2021/05/18 16:29:28+00,976f5a47329e4480849a74ad3871eb4a
+,,"432355756",way,15.625,pharmacy,pharmacy,Dépôt Pharmaceutique Moroni,,#opendri-comoros,,,,,,,,,,,,,,,,,,,,,,131251295,7,2023/01/14 03:38:38+00,070deba6605140f098acf2a21c863d28
+43.2643910464699,-11.6773251420021,"4195377991",node,12.5,pharmacy,pharmacy,Pharmacie Itsandra,,,,,,,,,,,,,,,,,,,,,,,,131251202,4,2023/01/14 03:27:08+00,afc0497d1ea241eca0a834d91fc29c5d
+,,"438412961",way,12.5,hospital,hospital,,,"#opendri-comoros;survey",,,,,,,,,,,,,,,,,,,,,,104903397,4,2021/05/18 16:29:28+00,e19201eb1e584a7e9fd7d8cd47ae3cdd
+43.7466797201037,-12.2874113522179,"6025065409",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,64015991,1,2018/10/30 15:42:05+00,8385828825354341a01569292237a597
+,,"438773629",way,12.5,pharmacy,pharmacy,,,"#opendri-comoros;survey",,,,,,,,,,,,,,,,,,,,,,104903397,4,2021/05/18 16:29:28+00,f5e9ecc818c74c30ba44ccbf0e7fac85
+43.262743164306,-11.6913619799706,"4195354390",node,12.5,pharmacy,pharmacy,Pharmacie Generique,,,,,,,,,,,,,,,,,,,,,,,,104903397,2,2021/05/18 16:29:28+00,c9805aa482ab4f3a984e24e68251bcd0
+43.6751003624777,-12.2580776247767,"8011100646",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,131211048,2,2023/01/13 02:44:08+00,ecf7e61e993643c182c8eded8045b984
+43.2529966872958,-11.6955936676068,"4980294711",node,18.75,pharmacy,pharmacy,Pharm Assine,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue Ahmed Djoumoi,,,104903397,4,2021/05/18 16:29:28+00,954a23592fa948baaaa07a2bc2366d8b
+43.2520478558566,-11.6982336318303,"8887427617",node,12.5,doctors,doctor,Cabinet médical Docteur Abbas Cheick,,,,,,,,,,,,,,,,,,,,,,,,131251633,2,2023/01/14 04:15:06+00,1955174ce66849f381ddca8a32a0e143
+43.7462593676595,-12.2884953837553,"6025179485",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,91873455,2,2020/10/02 15:48:42+00,0a67f72b743744528a1f904e3b5ef6ac
+,,"476553507",way,15.625,pharmacy,pharmacy,Pharmacie des Écoles,,,,,,,,,,,,,,,,,,,,,Boulevard de la République Poulaire de China,,,131242891,6,2023/01/13 19:38:16+00,f50def6392ca4cb99e09b05cc46f8c47
+43.2583741810959,-11.6882692253377,"4993170470",node,21.875,pharmacy,pharmacy,Pharmacie Oasis صيدلية الواحة,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue de l'Union Africaine شارع الاتحاد الأفريقي,,Moroni موروني,85285038,4,2020/05/16 00:22:58+00,de8286d9cd804ef6b675061511e95593
+44.4006946466615,-12.1628941572618,"2716272375",node,9.375,hospital,,Polyclinique du Croissant Rouge Iranien,,,,,,,,,,,,,,,,,,,,,,,,54925902,2,2017/12/26 10:19:48+00,afda2d460e4f460aac0567d06b78af65
+,,"445882944",way,15.625,clinic,clinic,,,"#opendri-comoros;survey",,,,,,,,,,,,,,,,,,,Route de l'Alliance Française,,,104903397,4,2021/05/18 16:29:28+00,0eaa78bbb2ea4de2905b1d2f0fb9a9ef
+43.800394727496,-12.3467289075104,"8011100644",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,131275786,2,2023/01/14 18:56:50+00,eecb6cad82aa4cf79a2e50cfe347e042
+43.3636539862594,-11.6198609093202,"5907601369",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,62625957,2,2018/09/16 03:52:16+00,ee6d9cffbc5c46d6b8b387f7924c6662
+43.2861296799885,-11.3936872383045,"4002475742",node,9.375,hospital,,CMC Mitsamiouli,,,,,,,,,,,,,,,,,,,,,,,,37166925,1,2016/02/12 12:27:55+00,58fe22135bb442a791ef165f481c2710
+44.3998748965311,-12.16353922853,"1552597635",node,15.625,pharmacy,,Pharmacie Anjouanaise,Rachid Mohamed,,,,,,,,,,no,,,,,,,,,,,,,88739618,5,2020/07/30 14:54:48+00,5f06c2533b5f48c880ff48f2e6540ad8
+43.3268518992715,-11.3842921306754,"5623871662",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,59040107,1,2018/05/17 07:31:44+00,1a6fb94592054476a0e43f768a6d737f
+43.2556400880997,-11.7009749332632,"4786740360",node,12.5,pharmacy,pharmacy,Pharmacie Mangali,,,,,,,,,,,,,,,,,,,,,,,,131251633,5,2023/01/14 04:15:06+00,3c7d6af6f43a45d882fe601bf4c327cc
+43.2549023968014,-11.6905788587571,"5413722324",node,21.875,doctors,doctor,Centre de Traitement Traditionnel,,,,,,Mo-Sa 08:30-15:30,,,,,,,,,,,,,,,Rue de la Corniche,"06859",,104903397,2,2021/05/18 16:29:28+00,ffc08e28d53b44dfa38e1c784a9778ce
+43.2449748706827,-11.7159147536607,"4197753697",node,18.75,clinic,clinic,PNAC,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Avenue du Président Ali Soilihi,,,121121926,5,2022/05/18 01:15:07+00,7e6c0cb00f434bd1923b9b5215e1340d
+43.2796780452968,-11.8041656328798,"3747965355",node,9.375,hospital,,Centre de santé de Mitsoudjé,,,,,,,,,,,,,,,,,,,,,,,,34086159,1,2015/09/17 15:24:52+00,ec496651090f49449d52a49e99f9c63e
+43.2824581549414,-11.6462574502514,"9889186814",node,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,123641016,1,2022/07/15 08:32:41+00,1b330c4218264aff9af7b38d35ea9813
+43.2544491872968,-11.6989603428355,"4993593029",node,12.5,dentist,dentist,,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,,,,104903397,3,2021/05/18 16:29:28+00,2ab95560067b43fb9266e01292f09a6a
+,,"390174517",way,12.5,hospital,hospital,Hôpital de Miringoni,,,,,,,,,,,,,,,,,,,,,,,,131211048,5,2023/01/13 02:44:08+00,72677d50088040a8a7f41599f50cae1b
+43.2520600934352,-11.7056121373749,"4195403789",node,15.625,pharmacy,pharmacy,Traleni,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,,,,104903397,7,2021/05/18 16:29:28+00,bad2279a02cd44a389ae83a537c3411e
+,,"783882642",way,12.5,hospital,hospital,CMC Mitsamiouli,,,,,,,,,,,,,,,,,,,,,,,,82523962,1,2020/03/23 13:05:23+00,7ee0e251dd8641508445669a2a724a4f
+,,"406160283",way,15.625,hospital,hospital,maternité,,,maternity,,,,,,,,,,,,,,,,,,,,,171313039,2,2025/09/01 12:23:38+00,b5bf73832be7499bb6272e9ddd7c3a79
+43.255527351502,-11.6949657792401,"2656235862",node,15.625,pharmacy,pharmacy,Pharmacie de la Corniche,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,,,,131251633,8,2023/01/14 04:15:06+00,cdba8970ba3e4da9b9d70140c4462a02
+,,"412481010",way,9.375,hospital,,,,,,,,,,,,,,,yes,,,,,,,,,,,62604675,2,2018/09/15 08:29:31+00,c236c139e8b94cfd801d6eda5fbbf2ef
+43.4353317474286,-11.7970803263082,"4779915808",node,18.75,hospital,,Dispensaire Caritas,Commune,,general,private,,,,,,,,,,,,,,,,,,,,109576268,3,2021/08/12 13:47:28+00,d804b575918a4564ab72cbcf26c19d66
+,,"625719626",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,62606034,1,2018/09/15 09:09:24+00,c9e5aff4017640909250176eb553c556
+,,"783883234",way,12.5,hospital,hospital,PS Ivembeni,,,,,,,,,,,,,,,,,,,,,,,,84195212,2,2020/04/27 11:20:27+00,513aec5304fa4c0b92ea546255775b3f
+43.7479198226782,-12.2877469636209,"8011100645",node,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,92543191,1,2020/10/15 20:41:23+00,4351a71d41fd4d8eb3196ec42098a273
+,,"438540783",way,12.5,hospital,hospital,,,"#opendri-comoros;survey",,,,,,,,,,,,,,,,,,,,,,104903397,3,2021/05/18 16:29:28+00,75ed37989a554556aa1c1c8e8bbbb5df
+,,"370308263",way,9.375,hospital,,Centre de santé de Mitsoudjé,,,,,,,,,,,,,,,,,,,,,,,,82523833,4,2020/03/23 13:01:59+00,0756aae2d4bc4835ad3c35c175ccfe93
+43.2569085215069,-11.7039432166341,"4002529047",node,15.625,clinic,clinic,Santé Militaire الصحة العسكرية,Gendermérie Nationale الدرك الوطني,,,,,,,,,,,,,,,,,,,,,,,104903397,3,2021/05/18 16:29:28+00,da1f6ead1d1b48b0bfff222acdeead32
+,,"144754191",way,18.75,hospital,hospital,Hôpital El Maarouf مستشفى المعروف,Ministère de la Santé,,,,,,,,,,,,yes,,,,,,,,,,,172964272,15,2025/10/07 15:13:09+00,06d85f74d50d4f41a2e03ef6a31d4968
+43.2605280787544,-11.6919950651173,"4195378697",node,15.625,doctors,doctor,Cabinet médical,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,,,,104903397,4,2021/05/18 16:29:28+00,6568b20fe20a4e9fa50afdf7dc5c5eef
+,,"404912075",way,15.625,pharmacy,pharmacy,Oco Pharma,,"#opendri-comoros;survey",,,,,,,,,,,,,,,,,,,,,,131251633,5,2023/01/14 04:15:06+00,01d1cc082d0d475f8f6aba8f8661f5ef
+43.2532616392552,-11.6955637442125,"2656239968",node,18.75,pharmacy,pharmacy,L'Avicenne,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue Ahmed Djoumoi,,,104903397,5,2021/05/18 16:29:28+00,3713cc1748564e749d657bd10571c1f9
+43.7167181881148,-12.3610610399277,"8011100648",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,131211048,2,2023/01/13 02:44:08+00,3998b0d27a7b414ca78a4d06ce653fbb
+43.2745903977086,-11.7266489541408,"4782809479",node,9.375,clinic,,Centre de Santé du Karthala,,,,,,,,,,,,,,,,,,,,,,,,47565403,1,2017/04/08 11:36:13+00,460acf97396347c5bd5f7a7b009e6d6d
+43.2547390335085,-11.6965755237445,"2656240210",node,12.5,pharmacy,pharmacy,La Pharmacie des Comores,,,,,,,,,,,,,,,,,,,,,,,,131251633,6,2023/01/14 04:15:06+00,4b34d9e1f92243ada45057f9be6c1c37
+43.2520497836943,-11.7102248663294,"8916155917",node,12.5,pharmacy,pharmacy,Pharmacie Espérance,,,,,,,,,,,,,,,,,,,,,,,,131251667,2,2023/01/14 04:18:51+00,f62f932840064760b5a16182d5685f26
+43.2591524408055,-11.6872125188046,"4195376590",node,18.75,doctors,doctor,Cabinet Medical,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue de l'Union Africaine,,,104903397,4,2021/05/18 16:29:28+00,1b243c79451345fb83ea6457a1ead99b
+43.2531752218335,-11.6906300721855,"4781565909",node,12.5,doctors,clinic,Centre d'imagerie médicale,,,,,,,,,,,,,,,,,,,,,,,,131251538,5,2023/01/14 04:07:23+00,4afd888f65d84489a2e493596ea19686
+43.2458112169813,-11.7143068531749,"8804809819",node,9.375,pharmacy,,Pharmacie de l'archipel,,,,,,,,,,,,,,,,,,,,,,,,105851241,1,2021/06/04 16:55:30+00,517b0204717f46939ebda2ec27f58452
+,,"549124680",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,82517911,3,2020/03/23 10:34:30+00,08466ee670a44e21aa43dd9f16bc7673
+,,"438785892",way,12.5,hospital,hospital,,,"#opendri-comoros;survey",,,,,,,,,,,,,,,,,,,,,,104903397,3,2021/05/18 16:29:28+00,d6eb1909ab6a4b77b06398fb9c2500a4
+43.4346685712495,-11.802301413795,"4779867363",node,21.875,clinic,clinic,Maternité,Commune,,general,public,,,,,,,,,,,,,,,,,,,,109576268,2,2021/08/12 13:47:28+00,fcab0e54116a4373ba6340fc47cb9467
+,,"438773722",way,12.5,pharmacy,pharmacy,,,"#opendri-comoros;survey",,,,,,,,,,,,,,,,,,,,,,104903397,4,2021/05/18 16:29:28+00,433e973d5ddc4083b536068ea7981512
+43.6349588414465,-12.304017075871,"8011100647",node,12.5,hospital,hospital,Clinique de Miringoni,,,,,,,,,,,,,,,,,,,,,,,,131211048,3,2023/01/13 02:44:08+00,256e8bce241d43d5b328952c87a06f35
+,,"437876502",way,12.5,hospital,hospital,,,"#opendri-comoros;survey",,,,,,,,,,,,,,,,,,,,,,104903397,3,2021/05/18 16:29:28+00,8c94b0233b964cdd8367d402c02b4070
+43.2527374350307,-11.7070440178941,"4777553415",node,12.5,pharmacy,pharmacy,Pharmacie Ibn Sina,,,,,,,,,,,,,,,,,,,,,,,,107858337,4,2021/07/12 19:00:03+00,0b67cb6b5263450cad027bb0defbd90f
+43.2499890927991,-11.7099019116001,"4777566890",node,15.625,pharmacy,pharmacy,Tea Pharma,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,,,,77044325,4,2019/11/14 01:03:48+00,ad63f9ae49534bc7950813bfd07972b3
+,,"686666702",way,12.5,hospital,hospital,Anjouan Island Humbo Hospital,,,,,,,,,,,,,,,,,,,,,,,,117833861,2,2022/02/25 04:27:02+00,e02395b6454a49578b3bd17337324f3b
+,,"404863922",way,15.625,,hospital,Hopital Kaz,,,,,,,,,,,,,,,,,,,,,Nkouhouni,,Mkazi,64454251,3,2018/11/13 18:58:19+00,d47a122c74804f83ac4598a61c7ad8c7
+43.2584779490572,-11.6909300605001,"4195377992",node,18.75,pharmacy,pharmacy,Pharmacie des Iles,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue de la COI,,,131251538,6,2023/01/14 04:07:23+00,365695a60b8e4e9fa14610e1fac4074e
+43.2544231195779,-11.6960834222092,"4993574080",node,18.75,clinic,clinic,Biomedical Comores,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue Ahmed Djoumoi,,,104903397,3,2021/05/18 16:29:28+00,8b4f2bea7772450fa672ace4046bd117

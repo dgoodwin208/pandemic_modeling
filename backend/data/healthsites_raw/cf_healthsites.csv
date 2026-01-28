@@ -1,0 +1,432 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+17.0421913544197,7.64146458122255,"2441042887",node,18.75,hospital,,PS de Oda-Kete,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Oda-Kota,168848572,3,2025/07/12 18:47:30+00,de785a944cc043ec976bd4d95881f832
+18.2785999403936,6.50582994072323,"2590515742",node,21.875,hospital,hospital,Centre de Santé de Bouca,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bouca,141327887,5,2023/09/16 06:22:04+00,2b71ca1721ee4877b6b82931d7ffd628
+18.28268963859,6.84658104299771,"2590484754",node,18.75,hospital,,Poste de Santé de Ngatoua,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Ngatoua,141327887,5,2023/09/16 06:22:04+00,06ef3358a2a74d8d91a7901c62711d0a
+,,"260677530",way,21.875,doctors,doctor,Centre de Santé EEB Gamboula,,"Bing;UNICEF",,private,,,,,,,,,,,,,,,,,,,Gamboula,134614861,5,2023/04/07 12:54:12+00,ede4041a2e1d45b7a54dcadeb77b0a03
+20.4448049987783,5.55959806493164,"7433542168",node,12.5,doctors,,New point palu ganamanji,,MissingMapsKobo,,,,,,,,,,,,,,,,,,,,,,83936180,1,2020/04/22 11:08:38+00,599ec1fe16dc4867a62515691b7ed23d
+,,"263741823",way,21.875,hospital,hospital,Centre de Santé de Batobadja,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Batobadja,84320144,3,2020/04/29 08:19:15+00,0cfdd28739c74962b3f5c8982412c0ca
+15.5049078999672,3.92073717576633,"4733949188",node,9.375,clinic,,Maternité du CDS Sosso Nakombo,,,,,,,,,,,,,,,,,,,,,,,,53596269,2,2017/11/07 23:29:43+00,2021a86ee89a49d3bbbec13a859407da
+16.975829228605,7.22273889683871,"2440007344",node,18.75,hospital,,PS Boyanga,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Boyanga-Kota,141327887,4,2023/09/16 06:22:04+00,bccbd95d015543c1a6c931bafcd7733b
+15.9432486627005,5.69781925248125,"2590840276",node,18.75,doctors,,Centre de Santé Privé EEB,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Baoro,88789830,4,2020/07/31 15:40:17+00,b0fe22f1ca624aa6bbb9e6f8bb2093cf
+18.6269676780818,7.69168467026762,"2110769192",node,18.75,hospital,,Centre de Santé Kabo,,"MSF,UNICEF",,government / ONG,open,,,,,,,,,,,,,,,,,,,118827373,5,2022/03/23 15:48:47+00,624dd69f173f43c09c2ced077344d636
+,,"754652930",way,21.875,hospital,hospital,Poste de Santé de Yamissi,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Yamissi 2,84681135,4,2020/05/05 09:21:32+00,2af2e32f51c64b319dabc621ec878720
+20.829799557859,6.12260815416371,"7469578179",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,119389032,2,2022/04/06 13:57:31+00,eb45a513dd3b43a0a74b6b3ef5b31987
+22.2207101724686,4.65150267511311,"8904561276",node,12.5,hospital,hospital,Poste de santé de Gandakototi,,,,,,,,,,,,,,,,,,,,,,,,107642838,1,2021/07/08 14:20:37+00,5f0308436b8840f2b5461b92c50ad82d
+16.4381760728535,7.24341713578681,"2417190469",node,18.75,hospital,,ACABEF,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Paoua,117850383,4,2022/02/25 13:56:33+00,9db2f01b567a4bc995d87552f12422a8
+17.2725978865381,6.99402777227525,"2590317910",node,21.875,hospital,hospital,Poste de Santé de Bonanse,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bonanse,115751659,6,2022/01/04 11:57:22+00,5d45cf027c304bcc9adea0e59a1a0424
+,,"480373905",way,9.375,clinic,,Sale de Observación du CDS - Sosso Nakombo,,,,,,,,,,,,,,,,,,,,,,,,46836335,1,2017/03/14 10:35:04+00,4a059d4e6e024805ba5814322bdc0fa4
+,,"261556656",way,18.75,doctors,,Poste de Santé de Bouzou,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bouzou,88789830,4,2020/07/31 15:40:17+00,cc8bfdc510e3473a9c4dbeaff1bf3253
+15.7953999373468,6.52474999166165,"2665791731",node,18.75,doctors,,Poste de Santé Maikolo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Maikolo,88789830,2,2020/07/31 15:40:17+00,56d1bdbe341d4d57aee2796d9229d5ca
+15.5007187923991,3.92261178841107,"2661864692",node,18.75,doctors,,Poste de Santé Saint Charles Lwanga (inactive),,UNICEF,,private,,,,,,,,,,,,,,,,,,,Sosso-Nakombo,88789830,4,2020/07/31 15:40:17+00,b4173a6c259549fd99389af4c04e9b8f
+,,"261554818",way,21.875,hospital,hospital,Poste de Santé de Beboye,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Beboye,84259872,3,2020/04/28 10:43:50+00,b494a802ed3c46ffb197aea6772f85f7
+16.7025029936486,4.77958293328922,"2696621266",node,21.875,hospital,hospital,Centre de Santé de Gadzi,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Gadzi centre,137655734,2,2023/06/22 16:58:31+00,9c6f470b80d7468ea2cec8a301b4f39b
+15.8656999650914,5.83060997260282,"2590840279",node,18.75,hospital,,PS Koursou,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Koursou,20743746,2,2014/02/24 02:13:55+00,69419764563a48ae837d67e10c344120
+,,"260994757",way,18.75,doctors,,Centre de Santé de Bayanga-Didi,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bayanga-Didi,88789830,4,2020/07/31 15:40:17+00,e79462c60ddb4bc8882c9287dd0eb593
+,,"188499972",way,21.875,hospital,hospital,Centre de santé scolaire et universitaire de Bangui,,"Bing;survey",,government,open,,,,,,,,,,,,,,,,,,,107249315,6,2021/07/01 09:06:20+00,45e899636a454a66894e9edb966648a9
+22.8277323779794,4.74358265915896,"5000266554",node,9.375,hospital,,Hôpital MSF-B,,,,,,,,,,,,,,,,,,,,,,,,50653239,1,2017/07/28 16:07:29+00,062308a8bba84055ad9381c4f19c8414
+17.0893030984919,5.32094298571926,"8483585628",node,12.5,hospital,,Yaloke secondary hospital,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,100368198,1,2021/03/03 17:59:02+00,9870668850d44d4b87a27a5a0f09036e
+15.4054999532528,6.62948991844175,"2659652582",node,18.75,doctors,,Poste de Santé Danko Bira,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Danko Bira,88789830,3,2020/07/31 15:40:17+00,49ddba1dc33b4711ada50fdd30c7aab1
+19.114399990417,6.73427996900284,"2669537543",node,18.75,hospital,,Poste de Santé de Badia,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Badia,20533834,1,2014/02/13 01:54:18+00,14e079c710424573b5686b33faebca5d
+19.0274999387133,7.11441998122254,"2590668545",node,18.75,hospital,,PS de Patcho,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Patcho,84681135,3,2020/05/05 09:21:32+00,e98395cff42344f6b3df449ec6a39f49
+,,"778511629",way,12.5,pharmacy,pharmacy,"Pharmacie, ANC/PMC/PMTCT",,,,,,,,,,,,,,,,,,,,,,,,141566331,5,2023/09/21 15:51:36+00,caccca82d28c4d1692a6e16b359ccbdb
+16.1089999597665,4.00002997978777,"2659976340",node,18.75,doctors,,Centre de Santé privé EEB de Bania,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Bania,88789830,2,2020/07/31 15:40:17+00,549e75a170e244f68f514cc0818d728d
+,,"261233099",way,12.5,clinic,clinic,,,Bing,,,,,,,,,,,,,,,,,,,,,,137802430,2,2023/06/26 17:40:30+00,734acb9ea20d4c0d843de3297b221db8
+,,"261321250",way,21.875,hospital,hospital,Poste de Santé de Ndenga,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Denga,84259872,3,2020/04/28 10:43:50+00,895f96c0ea684e6baf53e760773aa55f
+,,"362762708",way,12.5,hospital,hospital,Centre De Sante Zime Fleuve,,,,,,,,,,,,,,,,,,,,,,,,84320144,3,2020/04/29 08:19:15+00,c29ac3cae1e44d2fa2be2de6f21ebbe8
+20.6699223823561,5.75788497645104,"11966306669",node,12.5,,laboratory,Laboratory,MSF,,,,,,,,,,,,,,,,,,,,,,,152449984,1,2024/06/09 11:18:15+00,353b7e4382f54eccbd8cf4d7a59e1ad8
+20.7101999416758,5.32377992466735,"2664379225",node,18.75,hospital,,Poste de Santé de Ngakobo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ngakobo,20476640,1,2014/02/10 02:14:05+00,0e8f0156fcb54bdc882c87b8d02e2785
+,,"796855801",way,18.75,doctors,,Centre de Santé de Niem,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Niem,88789830,2,2020/07/31 15:40:17+00,abb1d36ad6a241a4905f3ed764c66794
+,,"784201278",way,18.75,doctors,,Centre de Santé De Gaulle,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Degaulle,88789830,5,2020/07/31 15:40:17+00,f6310d224a834b0bbb6b362e9a96d30f
+,,"747118272",way,21.875,hospital,hospital,Centre de santé Raoul Fol,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Bossangoa,141327887,5,2023/09/16 06:22:04+00,77f9d56126e342f2b3b75e3c000c7907
+,,"189662266",way,15.625,hospital,hospital,ACABEF,,Bing,,,,,,,,,,,,,,,,,,,,,,84320144,3,2020/04/29 08:19:15+00,e1e64b6c6cca479aa025a8f69c4958ef
+15.9936158541463,6.68962051834211,"2420714751",node,18.75,hospital,,PS Herba,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Herba,141327887,4,2023/09/16 06:22:04+00,9916df50c9c34ad284903dbcdf8b8d0c
+,,"261242536",way,21.875,hospital,hospital,Poste de Santé de Ngadja,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Ngadja,84209828,3,2020/04/27 16:18:11+00,2f7ee6f685e74c248e5e97780523d06b
+,,"261559269",way,18.75,doctors,,Poste de Santé de Nzole,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Nzole,88789830,4,2020/07/31 15:40:17+00,8c2d57c1d0a5449aa3329e2c1c118f3f
+,,"265221408",way,18.75,doctors,,Poste de Santé de Komo-Bombo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Komo-Bombo,88789830,4,2020/07/31 15:40:17+00,4150b2a4cbbc4528847c34a16af33136
+,,"312168398",way,12.5,hospital,hospital,Poste Sante Diguandigui,,,,,,,,,,,,,,,,,,,,,,,,84320144,2,2020/04/29 08:19:15+00,c262b1c3bede493a9225a2be46a721d2
+14.8238999762483,5.78800995555181,"2663468486",node,18.75,doctors,,Centre de Santé de Baboua,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Baboua,88789830,2,2020/07/31 15:40:17+00,5f53d6065fb3401d853f59fcff9e45a2
+16.4825049412531,4.43868699172791,"2660732746",node,18.75,doctors,,Centre de Santé de Mboula,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Mboula,98469292,2,2021/01/31 22:22:55+00,a5c874bac680461f90a35712b801fbc5
+,,"261565272",way,18.75,doctors,,Poste de Santé de Pougol,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Pougol,88789830,4,2020/07/31 15:40:17+00,a18738b5baaf415a8fbe207e48b7fe01
+18.1588649564741,6.63495718242476,"2590515745",node,18.75,hospital,,Poste de Santé de Wangue 1,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Wangue,141327887,4,2023/09/16 06:22:04+00,80e7a1287d9a4a4183cd30258372b3d3
+16.4950999242377,5.55302992178585,"2670853365",node,18.75,doctors,,Centre de Santé de Tedoa,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Tedoa,98469292,2,2021/01/31 22:22:55+00,c6fac3460422413f83350df4d310a34c
+,,"314528642",way,12.5,hospital,hospital,Poste De Sante Batimbilika,,,,,,,,,,,,,,,,,,,,,,,,84320144,3,2020/04/29 08:19:15+00,95548b54c94f492fb5c2042bd1ff4314
+15.138474478731,4.12044088037914,"2661965355",node,21.875,doctors,doctor,Poste de Santé de Gamboula,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Gamboula,134613767,5,2023/04/07 12:29:50+00,c44c112d90964263b480cb4549f94e7a
+15.7627745527103,4.24697677289552,"4733955757",node,15.625,doctors,doctor,Centre de Santé Sant Francis,,,,,,,,,,,,,,,,,,,,centre desante sant franciis,,,,134614304,3,2023/04/07 12:41:37+00,3e35121ee60e4d14a40149017a77809e
+,,"785811791",way,18.75,doctors,,Poste de Santé de Boko,,"bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Boko,88789830,3,2020/07/31 15:40:17+00,e49377af4d5c4ca598ce099660a42d27
+,,"500634403",way,21.875,hospital,hospital,Poste de Santé de Ngolomanda,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ngolomanda,84209828,3,2020/04/27 16:18:11+00,c441e761f13946bb946a62d4f270facf
+,,"212749298",way,28.125,hospital,hospital,Dispensaire Saint-Jean de Galabadja,Eglise,"Bing;Survey",,private,open,,,,,,,,,,,,,,,,Galabadja,,,107249315,4,2021/07/01 09:06:20+00,e802963d88814c8e9ebcc3d6bbd79813
+,,"214258328",way,18.75,doctors,,Centre de Santé Herman,,"Bing;UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bouar,97559922,4,2021/01/15 12:22:33+00,2ab794175bf0431fb935880811daecf1
+18.534016227563,4.45328089098138,"2225279274",node,18.75,hospital,,Hopital de district de Begoua,,survey,,government,open,,,,,,,,,,,,,,,,,,,107218798,2,2021/06/30 16:40:17+00,1a2b94f5f6d143a09197804c5f14b5a5
+,,"261627748",way,18.75,doctors,,Poste de Santé de Bouyangou,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Bouyangou,88789830,4,2020/07/31 15:40:17+00,cd624f0632c2446eb16cae5ce010d655
+18.5566786306303,4.41636665412909,"2225509419",node,21.875,hospital,,Centre de santé communautaire Cité Jean XXIII,,Survey,,NGO,open,,,,,,,,,,,,,,,,Cité Jean XXIII,,,107245715,2,2021/07/01 07:54:45+00,a8ab7eaac35b4052806095440b757cca
+,,"785842104",way,12.5,hospital,hospital,Bakouma Centre de Santé,,,,,,,,,,,,,,,,,,,,,,,,104463827,3,2021/05/10 16:17:52+00,0e1d9d85764b404a9a0a14a64e41728e
+,,"261554828",way,21.875,hospital,hospital,Poste de Santé de Bégouladjé 1,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Bégouladjé 1,84259872,3,2020/04/28 10:43:50+00,c3f46a5ad8454bc48bfab9b736842c5e
+15.6155424839731,6.3763510781836,"2665791729",node,18.75,doctors,,Poste de Santé Forte,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Forte,88789830,3,2020/07/31 15:40:17+00,69bd01c334cb4bdda0e3b4d3ed060845
+,,"785842105",way,12.5,hospital,hospital,PDS de Imila,,,,,,,,,,,,,,,,,,,,,,,,84320144,2,2020/04/29 08:19:15+00,9b15b3a522bf46e3b223ed525054f592
+15.5592009234023,6.00984967971266,"9816612368",node,12.5,hospital,hospital,CSP Maigaro,,,,,,,,,,,,,,,,,,,,,,,,122359692,1,2022/06/14 08:15:40+00,598999cf4ac542cbac2ed60d106b8ade
+,,"783882048",way,21.875,hospital,hospital,Hôpital Préfectoral,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bouar,97559922,2,2021/01/15 12:22:33+00,d9cc33fcf0eb42728e4e610b2bba4d67
+,,"784201277",way,21.875,hospital,hospital,Centre de Santé Jean Paul II,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Bodanga 2,84259872,2,2020/04/28 10:43:50+00,c4077a56670d46ad8f3fc97a679e7737
+,,"779907398",way,21.875,hospital,hospital,Poste de Santé de Ngbawele,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Ngbawele,141278387,4,2023/09/14 22:29:39+00,6300bcbbfe464ffab7eeaddeeb9c004d
+,,"499264038",way,21.875,hospital,hospital,Poste de Santé de Krakondji,,"Digital Globe Premium Imagery Service;UNICEF",,government,,,,,,,,,,,,,,,,,,,Krakondji,84320144,3,2020/04/29 08:19:15+00,488390872a2948cf87dbeec379226936
+,,"435849329",way,18.75,doctors,,Centre de Santé de Yenga,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Yenga,88789830,4,2020/07/31 15:40:17+00,5f19e30b74da452aa0bb9ab3beeaf42b
+,,"261559280",way,18.75,doctors,,Poste de Santé de Borodoul,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Borodoul,88789830,5,2020/07/31 15:40:17+00,219425b49fba4c44897251e047e87fe2
+,,"256434593",way,21.875,hospital,hospital,Centre de Santé de Kouango,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kouango,84209828,3,2020/04/27 16:18:11+00,a8b3ddf9958541a7bb0a1a2eca8afab2
+,,"784201264",way,18.75,doctors,,SMI Bohong,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bohong,98469292,3,2021/01/31 22:22:55+00,240191f0495d4eb2af270e655c27f49f
+,,"278482030",way,21.875,hospital,hospital,Kounpala,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kounpala,84259872,5,2020/04/28 10:43:50+00,305b4b11f30c468591021b2b9e923cc0
+21.1229610637614,5.89820574692661,"2666392857",node,18.75,hospital,,Centre de Santé de Seko,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Seko,20496902,1,2014/02/11 03:47:15+00,a305888f542241bfb54cfc771d35f4dc
+17.3761753271671,6.81768988004407,"2590317902",node,18.75,hospital,,Poste de Santé de Bokongo,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bokongo,141327887,6,2023/09/16 06:22:04+00,bf94be8f86b64ef08101ab47bc4cd375
+,,"238383113",way,18.75,doctors,,Poste de Santé de Nzakoun,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Nzakoun,88789830,4,2020/07/31 15:40:17+00,9737378f990e47e0b397e97bde621cf9
+18.5736482965193,4.37340713725098,"8951524536",node,12.5,hospital,hospital,Institut Pasteur,,,,,,,,,,,,,,,,,,,,,,,,140151113,3,2023/08/20 20:40:45+00,fe85a5284bf14315850345bf50a6a9c2
+17.3029101173558,6.75251949322259,"2590317890",node,18.75,hospital,,Poste de Santé de Bokini,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bokini,141327887,6,2023/09/16 06:22:04+00,a0dde71d9f534e64a60b2bc94332deab
+,,"784160434",way,18.75,doctors,,Poste de Santé de Zabo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Zabo,88789830,3,2020/07/31 15:40:17+00,f790878357ae4d06b70462560a48c638
+,,"680531962",way,12.5,hospital,hospital,Hopitale Prefectoral de Mbaiki,,,,,,,,,,,,,,,,,,,,,,,,137653706,3,2023/06/22 15:57:29+00,f4f5df38eee84c98be99921ecf010434
+18.603553753576,4.37643845253368,"4637264310",node,9.375,clinic,,CS Ngaragba,,,,,,,,,,,,,,,,,,,,,,,,47159838,2,2017/03/25 18:41:43+00,bf4f081c21024a5899604b79cdc5c68f
+,,"261559272",way,18.75,doctors,,Poste de Santé Kounang,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Kounang,88789830,4,2020/07/31 15:40:17+00,8db53b9ca3864499897b515488487ef8
+,,"339656897",way,21.875,hospital,hospital,Poste de Santé de Ndoumbou,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Ndoumbou,141327887,6,2023/09/16 06:22:04+00,0ed977c4ca7540d1b8b93c491032252c
+22.7740619623119,5.0992244638783,"3554954223",node,9.375,hospital,,Centre de Sante Banabongo Pk50 Bssou,,,,,,,,,,,,,,,,,,,,,,,,32930883,3,2015/07/28 12:20:42+00,63dc00d73ac8401ea9885e937b56ef2b
+,,"784201280",way,18.75,doctors,,Poste de Santé de Bang,,"bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Bang,88789830,3,2020/07/31 15:40:17+00,86880328fc6e40a59b7da5ca8fa27c15
+16.5003159825826,7.46107906794887,"2671538082",node,18.75,hospital,,Poste de Santé de Bédaya,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bédaya,28548494,2,2015/02/01 16:17:33+00,047d40acd1e74b2f83e1bb4ebfa38e19
+,,"542100681",way,21.875,hospital,hospital,Centre de Santé de Ngakobo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ngakobo,120297393,7,2022/04/28 10:02:51+00,fd2a15b376f546a698c61b2fcead661d
+,,"261559263",way,18.75,doctors,,Poste de Santé de Mbereguili,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Mbereguili,88789830,6,2020/07/31 15:40:17+00,eaed1cf819634af3a9fd5b9f6130aeaa
+,,"477563109",way,12.5,hospital,hospital,CDS Vougba,,,,,,,,,,,,,,,,,,,,,,,,83818377,3,2020/04/20 11:27:05+00,e124d453eb784bb18ce946299fa18e53
+16.5594650616213,7.59089865485254,"2441469955",node,15.625,hospital,,Hôpital de Bétoko,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,,141896988,4,2023/09/29 06:33:41+00,7ba0939959e14592a28ea90f9bb60afe
+,,"460251247",way,21.875,doctors,doctor,Centre de Santé de Tapourou,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Tapourou,134614861,4,2023/04/07 12:54:12+00,08c81fa3b6c544048eb7868a559f0d8f
+16.174299930811,5.94418995738391,"2670844327",node,18.75,doctors,,Poste de Santé de Bogali 2,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bogali 2,88789830,2,2020/07/31 15:40:17+00,876998367e7b432998e830f705e06556
+,,"391993097",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,36645128,2,2016/01/17 23:17:38+00,60eb3ae39c8d424390a06961e4f4d467
+,,"253091444",way,21.875,hospital,hospital,Poste de Santé de Ngrevaï,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Ngrevaï,141327887,6,2023/09/16 06:22:04+00,af0d531757b447bd8a3ea60e46b1ec8c
+,,"278033382",way,21.875,hospital,hospital,Kella Moelle,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Kella Moelle,84182808,3,2020/04/27 08:25:59+00,8d5f5819a9fa4a4c93da6779031dba1f
+,,"253051216",way,21.875,hospital,hospital,Poste de Santé de Kakouda,,"Bing;UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Kakouda,141327887,6,2023/09/16 06:22:04+00,7549fad8f05b4ade87a237941bc8b848
+17.6363342627901,5.26345176330921,"8483585633",node,12.5,hospital,,Hopital de District Bossembélé,,MSFsurvey,,,,,,,,,,,,,,,,,,,,,,100368348,1,2021/03/03 18:02:39+00,f7919a0feca7445392b0241f4b380437
+,,"261009898",way,21.875,hospital,hospital,Poste de Santé de Ouza,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Ouza,84209828,3,2020/04/27 16:18:11+00,40384382e1db434c9b69d1422e84b8d6
+14.8433999710673,5.80314993579705,"2663468488",node,18.75,doctors,,Centre de Santé du peuple,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Baboua,88789830,2,2020/07/31 15:40:17+00,a22e0967238c4cccbda3cd160bbd7678
+,,"772696199",way,21.875,hospital,hospital,Poste de Santé de Ndow-Kota,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ndow-Kota,84320144,3,2020/04/29 08:19:15+00,54e801a1ac214cedbaed7a17dfb2d6e6
+,,"250579478",way,21.875,hospital,hospital,Centre de Santé de Nana-Bakassa,,"Bing;UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Nana-Bakassa,115751659,4,2022/01/04 11:57:22+00,7a179c30c29b496ea6b347d7d88bfda5
+,,"481686480",way,21.875,hospital,hospital,Hôpital Régional de Berbérati,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Berbérati,134614171,4,2023/04/07 12:37:55+00,e754174062f14b42b74f183e7b8290ff
+18.610312668838,4.37246048510656,"4637264309",node,9.375,clinic,,Dispensaire St Paul,,,,,,,,,,,,,,,,,,,,,,,,47024115,2,2017/03/20 21:06:09+00,711b1df73eeb4bfd91ebee14da93c5bf
+,,"966565978",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,108448363,1,2021/07/22 19:51:45+00,cfe29bb3673949bc9c8abf9d28c425d9
+,,"253056551",way,21.875,doctors,doctor,Centre de Santé E E B,,"Bing;UNICEF",,private,,,,,,,,,,,,,,,,,,,Berbérati,134614171,5,2023/04/07 12:37:55+00,981e863f4d43433dae69c093dcdcccc3
+,,"746117577",way,21.875,hospital,hospital,Poste de Santé de Maraze,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Maraze,84320144,3,2020/04/29 08:19:15+00,b123aee4c020490bb124599301429f9b
+,,"783882052",way,18.75,doctors,,Centre de Santé Mission catholique,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Baoro,98469292,3,2021/01/31 22:22:55+00,3895a9f1f4534cecacc6e432cfc5ed57
+18.8601216304224,5.1698511343896,"7371472722",node,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,83136420,1,2020/04/06 09:43:04+00,4a55f62e252e4fab8a2568213620a1ea
+15.494899991397,6.88375998035221,"2665815219",node,18.75,doctors,,Poste de Santé de Boukayan,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bokayan,88789830,2,2020/07/31 15:40:17+00,3baa82ca7fc4424686a84f310d016fc7
+,,"475387800",way,21.875,hospital,hospital,Centre de Santé de Gontikiri,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Gontikiri,84259872,3,2020/04/28 10:43:50+00,dae470dee1244eb5a68bfae309e474bd
+15.0128999905086,4.45218998628334,"2665980820",node,18.75,doctors,,Poste de Santé de Beina,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Beina,88789830,2,2020/07/31 15:40:17+00,8ac9cea9b5354de89f76f036d2b227dd
+,,"264125080",way,21.875,hospital,hospital,Poste de Santé de Bombalou,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Bombalou,84320144,3,2020/04/29 08:19:15+00,ecb967b700d84947a684dad27a38afd0
+16.4320794955802,7.25454855465833,"2417190486",node,18.75,doctors,,Amitié Sainte Famille,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Paoua,117850383,5,2022/02/25 13:56:33+00,a42365b211eb4bbda390c98fb67011eb
+15.6460858876802,5.93470197826761,"2589437008",node,18.75,doctors,,Centre de Santé de Wantiguere,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Wantiguere,97428766,4,2021/01/13 09:38:37+00,cd8e91d22f754185ba5139c641255789
+,,"681218780",way,21.875,hospital,hospital,Poste de Santé de Bokiné,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bokiné,141327887,6,2023/09/16 06:22:04+00,3805bd91d54e48e9bc425fd2e8a272e8
+16.3192999825522,6.64658992292507,"2412541031",node,15.625,hospital,,PS de Beh,,,,government,,,,,,,,,,,,,,,,,,,Beh,141327887,4,2023/09/16 06:22:04+00,16ebdc282074442aa46c4e6e49da2ddf
+,,"786136266",way,18.75,doctors,,Poste de Santé de Nguinze,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Nguinze,88789830,3,2020/07/31 15:40:17+00,47f63a6686be4da6828cb125d64d48db
+,,"201613620",way,21.875,hospital,hospital,Poste de Santé de Kando,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kaga-Bandoro,84259872,3,2020/04/28 10:43:50+00,89c5e1f5a6014653a91f9ad4a8c39d08
+18.5806717446455,4.36274795480423,"3219353553",node,15.625,pharmacy,pharmacy,Pharmacie La Paloma,,,,,,24/7,,,,,,,,,,,,,,,,,,120594850,4,2022/05/05 15:33:49+00,b0e191467e144570a291387851c884e6
+17.6370999496451,6.78714999673622,"2590353168",node,18.75,hospital,,Poste de Santé de Bodora,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bodora,141327887,4,2023/09/16 06:22:04+00,b29ef3d0640e45eeb63dec63176b7507
+,,"263741825",way,21.875,hospital,hospital,Centre de Santé Ngougbia,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Ngaloa,84320144,3,2020/04/29 08:19:15+00,3b72e50f0f964c8ebefd519fcf0a7d6b
+,,"253080813",way,21.875,hospital,hospital,Centre de Santé de Gbazian-Bea,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gbazian-Bea,141327887,5,2023/09/16 06:22:04+00,6931b1d89c5d4f66b02f9ea2e585e8a5
+16.3430669528198,4.88207692911399,"2663478003",node,21.875,doctors,doctor,Poste de Santé de Ndinguiri,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ndinguiri,137655734,3,2023/06/22 16:58:31+00,31a96ce3fd384e4ba0600048e47b3958
+16.2898999542569,7.22425996080761,"2417190588",node,18.75,hospital,,PS Pende,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Pende,141327887,4,2023/09/16 06:22:04+00,d636982296b74700b9620453d3bdbbac
+,,"783882041",way,25,hospital,hospital,Centre de Santé de Ngola 100 logements,,Survey,,NGO,open,,,,,,,,,,,,,,,,Ngola 100 logements,,,106044547,3,2021/06/08 15:34:54+00,7bfb0deb47dd464fb64732c2ee3211be
+,,"778511618",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,168849082,6,2025/07/12 19:03:57+00,673e2cf53c5041deb3cd3a1ce28b8807
+,,"253078029",way,21.875,hospital,hospital,PS Ngaidoa,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Ngaidoua,84182808,3,2020/04/27 08:25:59+00,d46a7d944a6a4ab2bbd39b60589b90fa
+,,"261735723",way,18.75,doctors,,Poste de Santé de Mbartoua,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Mbartoua,88789830,4,2020/07/31 15:40:17+00,39bac2594c144b84b29e85d85783b94f
+15.4352999659675,6.72633995976463,"2671543264",node,18.75,doctors,,Poste de Santé de Sah,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Sah,88789830,3,2020/07/31 15:40:17+00,12f532486010436aafc5b9db79ebd88f
+20.9434999905887,5.4194199544481,"2693948742",node,18.75,hospital,,Centre de Santé de Bokolobo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bokolobo,20820852,1,2014/02/28 04:21:38+00,02b690789cae406a8f286977e95d2711
+,,"398338629",way,21.875,hospital,hospital,Hôpital Maman Elisabeth Domitien,,survey,,,open,,,,,,,,,,,,,,,,,,"Bimbo, Bangui",114093602,4,2021/11/22 11:11:22+00,9b7290a5fd9f41fda2d7b97f0d3e9aa6
+,,"266903579",way,18.75,doctors,,Centre de Santé de Besson,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Besson,88789830,4,2020/07/31 15:40:17+00,72532586daf6418b891ed9693b920ee2
+18.364199958915,6.19241993604851,"2670725532",node,18.75,hospital,,Poste de Santé de Donzi,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Donzi,20722109,2,2014/02/22 21:10:29+00,370a1b0ca3874df8991d5c942f6fcbc3
+,,"786136262",way,9.375,doctors,,Poste de Santé de Bogali 2,,,,,,,,,,,,,,,,,,,,,,,,88789830,2,2020/07/31 15:40:17+00,ff51e2aed513435eb49400997345b94a
+,,"253056600",way,21.875,doctors,doctor,Centre de Santé du 2e art,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Berbérati,134614304,5,2023/04/07 12:41:37+00,8285bfcf618943b78dba23f657b06c80
+16.9051676893765,6.56630629412948,"2590585633",node,18.75,hospital,,Poste de Santé de Bangba,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bangba,141327887,5,2023/09/16 06:22:04+00,0831775d319a40ff8582a8e59cc54b87
+,,"314544449",way,12.5,hospital,hospital,Centre Sante Mbalazime,,,,,,,,,,,,,,,,,,,,,,,,84320144,3,2020/04/29 08:19:15+00,f7f971d62f954927a1de7f2da78670f4
+,,"188769694",way,28.125,hospital,hospital,Centre National Hospitalier Universitaire de Bangui,,"Bing;survey",,government,open,,,,,,,,,,,,,,,"1344",Avenue de l'independance,,,107249315,5,2021/07/01 09:06:20+00,d9abfd71fc354a2aa42efb9420930dbc
+,,"236025596",way,21.875,hospital,hospital,PS de Bondjomo,,"Bing;UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bondjomo,86407010,6,2020/06/09 11:53:07+00,0f6e8f7aceac44f79fe1c8ffa13b250d
+,,"261468981",way,21.875,hospital,hospital,Poste de Santé de Bodangui,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Bodangui,84259872,3,2020/04/28 10:43:50+00,9adc94e6fe7549859eda312ff7fc8ba3
+,,"261306630",way,21.875,hospital,hospital,Poste de Santé de Ramadane,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Ramadane,84209828,3,2020/04/27 16:18:11+00,0e6ee67197024c7da40c41dbb942b8ad
+16.2545859903585,6.17397044515425,"2420372474",node,18.75,hospital,,PS Bouforo-Croisement,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bouforo croisement,141327887,4,2023/09/16 06:22:04+00,bc44767a64a444ce8f4cb7c58b66314f
+15.5351999303982,6.73079997044326,"2665815214",node,18.75,doctors,,Poste de Santé Bogang 1,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Sanguere-Pende,88789830,2,2020/07/31 15:40:17+00,bcc32e478c7148848a4fa8887ce47131
+,,"510725753",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,50616190,1,2017/07/27 10:49:50+00,282444c1a7704169b75b49d96c6fbaae
+16.3496999718961,6.41691999245759,"2412541010",node,15.625,hospital,,Kokol,,,,private,,,,,,,,,,,,,,,,,,,Kokol,141327887,4,2023/09/16 06:22:04+00,89cd6bcd408e4cd4a074afa4a14652c6
+17.30005825862,7.16891257777226,"2440005990",node,18.75,hospital,,Poste de Santé de Kouki,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Kouki,141327887,5,2023/09/16 06:22:04+00,bbcd6cca28524a0cb62354a1594a5201
+,,"503199517",way,21.875,hospital,hospital,Centre de Santé d'Awatche,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Awatche,84182808,3,2020/04/27 08:25:59+00,9d3a472536e444ae831db4ad2c9bbed3
+15.5259919906669,5.95854337983533,"2589437009",node,18.75,hospital,,Enfant Jésus Yole,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Yole,97428766,3,2021/01/13 09:38:37+00,84dcccac0c06493a95afff926d7573a9
+,,"784201276",way,21.875,hospital,hospital,Hôpital Préfectoral de Kaga-Bandoro,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Kaga-Bandoro,84259872,2,2020/04/28 10:43:50+00,bb2f8d6cae054287b23b919c789ce55f
+17.0914059503601,6.70924909155576,"2590268985",node,18.75,hospital,,PS Gbade,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gbade,116098647,4,2022/01/13 09:41:19+00,350deb423c304bef9abc0929106caa96
+15.8767526778922,4.93629225230671,"2661637074",node,18.75,hospital,,Hôpital Préfectoral de Carnot,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Carnot,20452594,1,2014/02/08 19:08:47+00,08841cfa66184edcacc5ce6a4bc5c042
+22.7896580857279,4.85496323254733,"3528950730",node,9.375,clinic,,Poste De Sante Oudandi,,,,,,,,,,,,,,,,,,,,,,,,31292491,1,2015/05/19 18:36:12+00,c7de829e12864d33bf8b3f79977cf003
+18.5824996700896,7.27054256701791,"2440002787",node,18.75,hospital,,PS de Bongono,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bongono,141327887,4,2023/09/16 06:22:04+00,b3604abd6b344a53aaf61994335bf09e
+18.8454793675876,7.25535548047685,"2590609613",node,18.75,hospital,,Poste de Santé de Outa,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Ouandago,141327887,5,2023/09/16 06:22:04+00,7c7750caa3494b959add3c6f55ee8adc
+20.6748076908018,5.77642599772796,"3040808556",node,12.5,hospital,hospital,Clinique Endjitokowo,,,,,,,,,,,,,,,,,,,,,,,,79449059,2,2020/01/11 11:32:42+00,f5c0daeef31e4fd29fc6643c0923aeac
+,,"261019963",way,21.875,hospital,hospital,Poste de Santé de Binguenendji,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Binguinendji,83818235,3,2020/04/20 11:24:47+00,9b3c0e4cb49e4a86888dcdce8d615540
+,,"783882051",way,21.875,hospital,hospital,Poste de Santé de Nana-Outa,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Outa,141327887,5,2023/09/16 06:22:04+00,8a8566682eef4c5d90875596021bf16e
+,,"784201279",way,18.75,doctors,,Poste de Santé Zaguindi,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Zaguindi,88789830,3,2020/07/31 15:40:17+00,3a0988baff2641d39e04e33f6b560bf9
+,,"314294636",way,9.375,hospital,,Cds De Yongofongo,,,,,,,,,,,,,,,,,,,,,,,,32883955,2,2015/07/26 07:35:23+00,3016cc6cea4a41fbae332911e6442114
+,,"261166526",way,21.875,hospital,hospital,Poste de Santé de Moroubanda,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Moroubanda,84209828,3,2020/04/27 16:18:11+00,b6c6005d347d48b7bea788984c709bab
+16.1933999412106,6.02121998282462,"2420372476",node,18.75,hospital,,PS de Boyali Yaho,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Boyali Yaho,141327887,4,2023/09/16 06:22:04+00,11d8df02aae840af9320866a0f75b677
+,,"253056593",way,21.875,doctors,doctor,Centre de Santé de Sangbanda,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Berbérati,141566331,6,2023/09/21 15:51:36+00,ada3b72a74b74e9bae4b88ac7214973b
+17.4519531800927,6.48918926453382,"2517058895",node,21.875,hospital,hospital,Hôpital Régional de Bossa,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bossangoa,96261301,5,2020/12/22 13:16:45+00,437ca3c410e74b5484418e6c24c394d8
+,,"459010289",way,21.875,clinic,clinic,Poste de Santé de Zaorossongou,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Zaorossongou,137655734,5,2023/06/22 16:58:31+00,83914d709f6042af84030c01edc4e97e
+,,"261019945",way,21.875,hospital,hospital,Poste de Santé de Maloum,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Maloum,84209828,3,2020/04/27 16:18:11+00,b2b04b062f9245909b0da4ae1af5820a
+17.1364913693401,7.63785457934475,"2441042884",node,18.75,hospital,,PS de Belé,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bele,168848572,3,2025/07/12 18:47:30+00,5418b7c1df79448298b420a20bded874
+20.651732143727,5.76838507037553,"2663462971",node,21.875,hospital,hospital,Centre de Santé Notre-Dame de la Victoire,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Kidigra,141566331,5,2023/09/21 15:51:36+00,68c1cc49531b4cda8792cd245563a4a3
+14.9418509558963,4.50142897356196,"2665980824",node,18.75,doctors,,Poste de Santé de Dilapoko,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Dilapoko,88789830,2,2020/07/31 15:40:17+00,6eebce873d0f42e7a7694767f6ae3bea
+15.6016457914256,7.4758957581887,"2671729496",node,18.75,doctors,,Poste de Santé de Ngaoundaye,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ngaoundaye,88789830,3,2020/07/31 15:40:17+00,062705023a254e81bcb1a51985e36284
+16.2929999173266,7.22130994998571,"2417190501",node,18.75,doctors,,Centre de Santé Pende,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Pende,141327887,6,2023/09/16 06:22:04+00,5abfc2f2631b4b1bacd9f79646bab776
+,,"784201273",way,21.875,hospital,hospital,Centre de Santé de Atongo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Atongo-Bakari,84209828,2,2020/04/27 16:18:11+00,ada3db6aebf34a2aa912525c300a6a5d
+,,"783882053",way,18.75,doctors,,Poste de Santé Ndongue,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ndongue Douane,88789830,3,2020/07/31 15:40:17+00,b632d9c5f60347309777022ad45612be
+,,"261559260",way,18.75,doctors,,Poste de Santé de Letele,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Letele,88789830,5,2020/07/31 15:40:17+00,f6396dee101546fdb1bce272e690e1f3
+,,"261735724",way,18.75,doctors,,Centre de Santé de Kounde,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kounde,88789830,4,2020/07/31 15:40:17+00,bfc02b25dd1d4c11b305d42f71f4c53e
+,,"255224642",way,18.75,doctors,,Centre de Santé d'Abba,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Abba,88789830,5,2020/07/31 15:40:17+00,de3cd4d42f3c42b7adb1e18cea3e4584
+16.9832461232662,6.81401055982704,"2590268984",node,18.75,hospital,,PS Bodouk,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bodouk,141327887,5,2023/09/16 06:22:04+00,26920dec8e954b7fb0796e1d6dacea8b
+,,"266045201",way,12.5,hospital,hospital,Centre De Sante Maliko,,,,,,,,,,,,,,,,,,,,,,,,84320144,3,2020/04/29 08:19:15+00,4d6853ce7d9a4107a0bb3df3db8ddf8b
+17.3456713184048,6.49528667999741,"7652716534",node,21.875,hospital,hospital,CS Ngouwe,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Bossangoa,96261301,2,2020/12/22 13:16:45+00,2ef40210f8a84e859b01a3fa5b6dbae3
+,,"260696360",way,21.875,doctors,doctor,Poste de Santé de Dongo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Dongo,134614861,5,2023/04/07 12:54:12+00,2d324005bebe427199629292f83dab2b
+,,"244317134",way,21.875,hospital,hospital,Groupement d'Assistance,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Bossangoa,141278387,7,2023/09/14 22:29:39+00,34f53f52c9804e5cae05fa932b04a0d6
+,,"784201275",way,21.875,hospital,hospital,Centre de Santé de Ndomete,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ndomete,84209828,2,2020/04/27 16:18:11+00,06f16eec0edb4f309e66485b803ae280
+17.4043999611803,6.76413999614428,"2590317846",node,18.75,hospital,,Centre de Santé de Léré,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Léré,141327887,6,2023/09/16 06:22:04+00,ff747b3235794178b8c99aa8afce8772
+18.5682890752682,4.37103028096806,"2277007286",node,12.5,clinic,clinic,CS Saidou,,,,,,,,,,,,,,,,,,,,,,,,120594850,4,2022/05/05 15:33:49+00,75f949c852e94bd29f0253b8eedac0aa
+,,"261233113",way,21.875,hospital,hospital,Poste de Santé de Zoubingui,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Zoubingui,84209828,3,2020/04/27 16:18:11+00,82c131b20afb4c6eab7184f084c71802
+16.3718999453654,6.66887991803441,"2419413777",node,18.75,doctors,,Centre de Santé de Taley,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Taley,141327887,5,2023/09/16 06:22:04+00,91e699c5424b4fbaa78cb35e85ca4407
+,,"251864791",way,18.75,doctors,,Village SOS,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bea,98469292,6,2021/01/31 22:22:55+00,e2094e50085b4458840f0f4cb29faad2
+,,"783882044",way,21.875,hospital,hospital,CS ACABEF,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bossangoa,141327887,4,2023/09/16 06:22:04+00,bedbb721c9934df181fbbdba830a3bb9
+,,"260858639",way,18.75,doctors,,Centre de Santé de Mbouli,,"Bing;UNICEF",,private,,,,,,,,,,,,,,,,,,,Mbouli,88789830,4,2020/07/31 15:40:17+00,9e0d3e61812c4e08a216f54d2a9442c7
+,,"261306622",way,21.875,hospital,hospital,Poste de Santé de Koukourou,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Koukourou,84209828,3,2020/04/27 16:18:11+00,c8a59b120a064477826bf2af66564e6b
+16.3705999960022,7.06701998350019,"2417190573",node,18.75,hospital,,PS Gouze,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gouze,141327887,4,2023/09/16 06:22:04+00,a0972a031b1647d98c8d8a06c1aecb84
+,,"261567693",way,12.5,hospital,hospital,Centre de santé Shékina,,,,,,,,,,,,,,,,,,,,,,,,84320144,4,2020/04/29 08:19:15+00,3368e4253c224ed99e823a5384bfd333
+,,"261321246",way,21.875,hospital,hospital,Poste de Santé de Doukoumbe,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Doukoumbe 3,84259872,3,2020/04/28 10:43:50+00,dde71a47679441278f00d7923d0e87d4
+20.6791542943305,5.79092275072364,"3040808554",node,12.5,hospital,hospital,Centre de santé Bagolo,,,,,,,,,,,,,,,,,,,,,,,,79449059,2,2020/01/11 11:32:42+00,2df286bc570a445f9e0e4894a00d783b
+,,"188879859",way,15.625,hospital,hospital,Hôpital Communautaire,,"Bing;Survey",,,,,,,,,,,,,,,,,,,,,,113324267,4,2021/11/03 10:12:16+00,6d76e6543ceb47c087cd211b59c99522
+17.5566014926711,6.89770084552944,"2590317867",node,18.75,hospital,,Poste de Santé de Boding-Mon,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Boding-Mon,141327887,6,2023/09/16 06:22:04+00,33a95af15dac4c42a48bcf22e7f1e950
+17.854206832179,6.42399205562219,"2590530499",node,15.625,clinic,,Poste de Santé de Kango,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,,141591030,6,2023/09/22 07:37:48+00,aa0f151e53f8481899c3d64a5cfb429b
+,,"278497040",way,18.75,doctors,,Poste de Santé de Lemona,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Lemona,88789830,4,2020/07/31 15:40:17+00,0749591d83d84906a2db2585aa0fef88
+,,"238384434",way,18.75,doctors,,Poste de Santé de Doko,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Doko,88789830,4,2020/07/31 15:40:17+00,84fca00601eb420ea9465eb6b82fb6bf
+21.4858999857455,5.72346997166801,"2669062497",node,18.75,hospital,,Centre de Santé de Boyo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Boyo,20527091,1,2014/02/12 18:05:03+00,230e80e1fb774e8fbd34eb4253474c28
+,,"480373904",way,12.5,clinic,,Maternité du CDS Sosso Nakombo,,,,,,,,,,,,,,,,,,,,,,,Sosso-Nakombo,46836335,1,2017/03/14 10:35:04+00,ba1778d2cef94cffb621ffd68177b441
+15.5047802435818,3.92105233532564,"4733949190",node,15.625,doctors,,CDS - Centre de Santé de Sosso Nakombo,,,,,,24/7,,,,,,,,,,,,,,consultas e farnacia e triagem,,,,46836335,1,2017/03/14 10:35:03+00,59e40a4be2b2417fa8fa1bafb09944a8
+,,"785842106",way,12.5,hospital,hospital,Centre Sante Zotte,,,,,,,,,,,,,,,,,,,,,,,,84320144,2,2020/04/29 08:19:15+00,19ca38584a5b42dd837f5feb1c88d00a
+,,"783882054",way,18.75,doctors,,Poste de Santé de Bogbatoyo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bogbatoyo,88789830,3,2020/07/31 15:40:17+00,1030d57d41404ab2b03de2b993670060
+20.6699640404149,5.75739304255379,"11966304369",node,18.75,doctors,doctor,Radiology,MSF,,radiology,,,,,,,,,,,,,,,,,,,,,152451477,2,2024/06/09 12:00:19+00,6bef02db894f4013a92f7408625d4bcc
+,,"260645112",way,18.75,doctors,,Centre de Santé de Dombia,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Carnot,88789830,4,2020/07/31 15:40:17+00,a1f4a396a9414319b354945c2042157e
+,,"231083421",way,21.875,hospital,hospital,Poste de Santé de Farazara,,"MSF;UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Farazara,141327887,7,2023/09/16 06:22:04+00,42c1bc0b59f4458bae7805982fba0846
+15.5404153181908,6.80822034111478,"2665815209",node,18.75,hospital,,Bomari 2,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bomari 2,22380732,2,2014/05/16 23:32:50+00,bbdb0bc3876c494ab8091577794163b0
+15.3183705726783,7.2065112808377,"2672346042",node,18.75,doctors,,Poste de Santé de Assana,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Assana,88789830,2,2020/07/31 15:40:17+00,a90932e37f9549c2b41681799ae4efe8
+21.1278668240508,6.13029829886832,"2668577577",node,21.875,hospital,clinic,Poste de Santé de Mbandje-Lokoto,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Mbandje-Lokoto,137802430,2,2023/06/26 17:40:30+00,dce7e2802da44944bdd96242545c3e69
+,,"253521966",way,18.75,doctors,,Centre de Santé de Bania,,"UNICEF;Bing",,government,,,,,,,,,,,,,,,,,,,Bania,88789830,4,2020/07/31 15:40:17+00,c462b74e3b724489a6685cc4e1ae300f
+17.6392219960715,6.79005323653843,"2590353154",node,18.75,hospital,,Centre de Santé de Bounsouma,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bounsouma,141327887,6,2023/09/16 06:22:04+00,49accd89c8af420e82e7793b1451fb91
+16.6354960480228,5.68027073235913,"2670840590",node,18.75,hospital,,CSB de Bossemptele,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bossemptele,20550756,1,2014/02/13 23:55:20+00,88a2a8c4a94d466c9293e60bd34a1322
+,,"251862411",way,12.5,doctors,,Centre de Santé de Wantiguere,,Bing,,,,,,,,,,,,,,,,,,,,,,88789830,4,2020/07/31 15:40:17+00,0b275710189a4cab997aecfa8a134316
+,,"253457013",way,18.75,doctors,,Poste de Santé de Ngbako,,"UNICEF;Bing",,government,,,,,,,,,,,,,,,,,,,Ngbako,88789830,4,2020/07/31 15:40:17+00,2c1dc0c7864b40cf8d0aded92be50627
+20.6499748777267,8.41116477518159,"6337444306",node,15.625,hospital,hospital,Hôpital Préfectoral,,UNICEF,,,,,,,,,,,,,,,,,,,,,,68131126,1,2019/03/14 10:14:55+00,47424a5a2a9041eaa5d27864bc3aff9b
+,,"314300933",way,12.5,hospital,hospital,Centre de Sante Niakari,,,,,,,,,,,,,,,,,,,,,,,,84320144,5,2020/04/29 08:19:15+00,be3e46ae54a74c34b9022db904fc3778
+,,"261556648",way,18.75,doctors,,Sanguere Lim,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Sanguere Lim,98469292,4,2021/01/31 22:22:55+00,70fea36fb0154fbcbe671049482d8e72
+,,"261314237",way,21.875,hospital,hospital,Poste de Santé de Maromba,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Maromba,83818235,2,2020/04/20 11:24:47+00,b0a305813faa405386f96c8ac11aa560
+18.5265259912491,4.45287042918295,"4637848217",node,9.375,clinic,,CS Charles Luanga,,,,,,,,,,,,,,,,,,,,,,,,45563583,1,2017/01/27 15:27:15+00,d30d3176a2574270a59eef1187070ccc
+17.424995219287,7.16850144542161,"2440005989",node,18.75,hospital,,Poste de Santé de Bode,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bode,141327887,5,2023/09/16 06:22:04+00,8738d4db5a2c47718fea724ddd242458
+15.5970999500584,5.62730992861438,"2589437007",node,18.75,doctors,,Centre de Santé de Ndongue,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Ndongue,168846104,4,2025/07/12 17:38:00+00,4638a5afe5894e08b84f3e6e03b1097f
+,,"278497042",way,18.75,doctors,,Poste de Santé de Ndouboure,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Ndouboure,88789830,5,2020/07/31 15:40:17+00,abafa11a96de41508dbfb67b2aefd4df
+18.530791374136,4.35286602623879,"2225267665",node,15.625,hospital,,Centre de Santé Guitangola,,Survey,,,open,,,,,,,,,,,,,,,,,,,15502222,1,2013/03/26 11:43:33+00,d163961641af46308510f2b0e4e3b695
+18.5318233540548,4.33835653275028,"4637848223",node,9.375,clinic,,Dispensaire,,,,,,,,,,,,,,,,,,,,,,,,45563583,1,2017/01/27 15:27:16+00,31df48ce5188435c97adcbfe3d182946
+19.2882895287312,5.69368387291254,"6303165255",node,12.5,,clinic,Poste de Santé,,RRM,,,,,,,,,,,,,,,,,,,,,,137652258,2,2023/06/22 15:17:21+00,ddff98c40c864a6a89c2373578a5d180
+,,"786136267",way,18.75,doctors,,Poste de Santé de Kounde,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Kounde,88789830,3,2020/07/31 15:40:17+00,61645b8ab369438fa03ad70f20a99c51
+15.7765999990808,6.85512999750148,"2665815221",node,18.75,doctors,,Poste de Santé de Sangame,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Sangame,88789830,2,2020/07/31 15:40:17+00,854dd45bd699469b91178192774a59cd
+17.6363329216856,6.78861942818156,"7595855862",node,12.5,clinic,,Benzembe health post,,MissingMapsKobo,,,,,,,,,,,,,,,,,,,,,,86250529,1,2020/06/05 14:55:23+00,c01832a5ff31403f9a4141dab77a9987
+,,"190614327",way,25,hospital,hospital,Clinique Centrafrique Assistance Santé,,"Bing;Survey",,NGO,open,,,,,,,,,,,,,,,"3316",,,,107245715,4,2021/07/01 07:54:45+00,bb3045589cb4476e95449f8b61b7b44c
+,,"260857071",way,18.75,doctors,,Centre de Santé d'Amada-Gaza,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Amada-Gaza,88789830,3,2020/07/31 15:40:17+00,b61469e3583e43bf8e7a94c7bb2b961d
+15.6447333837842,6.48739067575085,"2665791720",node,18.75,doctors,,Centre de Santé de Bohong,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Bohong,88789830,2,2020/07/31 15:40:17+00,df74377da5eb4e68805306fac2c8cdbd
+,,"457485591",way,21.875,hospital,hospital,Poste de Santé de Lakandja,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Lakandja,84320144,3,2020/04/29 08:19:15+00,5204ce65d16749c6a0e25973f9257396
+,,"260993303",way,18.75,doctors,,Centre de Santé de Ngambi,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ngambi,88789830,4,2020/07/31 15:40:17+00,1f5e6bff0f34415daddd89450994bc0b
+,,"260992437",way,18.75,doctors,,Centre de Santé de Noufou,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Noufou,88789830,4,2020/07/31 15:40:17+00,53c3870d7a294bf894ddafd23fcd19a0
+,,"784160432",way,18.75,doctors,,Poste de Santé de Mayo-Lara,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Mayo-Lara,88789830,3,2020/07/31 15:40:17+00,664887695370439599c3773dec89450a
+,,"444654268",way,18.75,doctors,,Poste de Santé de Bondiba,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bondiba,88789830,4,2020/07/31 15:40:17+00,c630da7b1d94406784cbd9fde9944bce
+,,"278500575",way,18.75,doctors,,Poste de Santé de Nzapoye,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Nzapoye,88789830,4,2020/07/31 15:40:17+00,a83283ff29f04d5da7972f22084ff4b8
+22.829096867997,4.74240936035275,"3545491589",node,9.375,hospital,,HURB,,,,,,,,,,,,,,,,,,,,,,,,31458807,1,2015/05/25 21:55:05+00,cd1eaaf5684d4f9c96091ba72f52512a
+,,"784201266",way,21.875,hospital,hospital,Poste de Santé de Akpa,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Akpa,84209828,2,2020/04/27 16:18:11+00,c88f9f5e11df4aad8a1712e5327592b8
+14.9416999978202,5.48241993126186,"2663521073",node,18.75,doctors,,Poste de Santé de Abo-Boguirma,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Abo-Boguirma,88789830,2,2020/07/31 15:40:17+00,49f35d418b39489b817fcc12052ef40d
+,,"261565308",way,18.75,doctors,,Poste de Santé de Kounmbam 1,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kounmbam 1,88789830,4,2020/07/31 15:40:17+00,9ed5a4e357b1420f9801234af3173559
+,,"282403584",way,21.875,hospital,hospital,PS de Kadjama,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Kadjama,168848572,4,2025/07/12 18:47:30+00,0a414e95e0ad4b0f996db7c11dda942c
+,,"786136263",way,18.75,doctors,,Centre de Santé de Balembe,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Balembe,98469292,3,2021/01/31 22:22:55+00,8f5202dbc4c946d9b7c304fccc291a81
+,,"483217988",way,18.75,doctors,,Centre de Santé de Bamba,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Bamba,88789830,3,2020/07/31 15:40:17+00,28cd1be9b2f147b795b328df14f618b7
+,,"314300934",way,9.375,hospital,,Centre de santé Niakari,,,,,,,,,,,,,,,,,,,,,,,,92588422,4,2020/10/16 13:38:54+00,f195e1f899a74b8b8da95bb2ac45c06b
+,,"261576502",way,18.75,doctors,,Poste de Santé de Ndanga,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Ndaga,88789830,5,2020/07/31 15:40:17+00,7bb4f4d797674a3fae5933aebe3bbc44
+15.13858277292,4.12023334445658,"6441781626",node,18.75,clinic,clinic,Sala de Observação de Adultos,,Bing,,,,,,,,,,,,,,,,,,observacao adulto,,,,69786199,1,2019/05/02 01:44:00+00,4e595cbac42041749705be6393c37f67
+,,"278033381",way,18.75,doctors,,Yelewa,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Yelewa,98469292,4,2021/01/31 22:22:55+00,de608d5b0e634c94969ecf914ad2eefc
+15.8716505296114,4.9485793679878,"2661637075",node,18.75,doctors,,Poste de Santé Arche de Noé,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Carnot,88789830,3,2020/07/31 15:40:17+00,0553e37b594d4641a7f749e4e9cce994
+,,"785842102",way,21.875,hospital,hospital,Poste de Santé de Doukouma,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Doukouma,84320144,2,2020/04/29 08:19:15+00,b85d518d10384e96aeedfa337b401c75
+18.5733654911062,4.36339646265279,"3234599245",node,12.5,pharmacy,pharmacy,Pharmacie Awa,,,,,,,,,,,,,,,,,,,,,,,,120594850,3,2022/05/05 15:33:49+00,62c2fa7c043c417fb4d9b519b238e1c5
+,,"261317843",way,21.875,hospital,hospital,Poste de Santé de Mbiti-Bamala,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Mbiti-Bamala,84209828,3,2020/04/27 16:18:11+00,048f100de2934b2ea392ad3b6da53690
+16.9587896576436,7.62385059843663,"2441042883",node,18.75,hospital,,CS de Markounda,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Markounda,168846104,3,2025/07/12 17:38:00+00,0b0c4cd395484ce7a9b3a1277cebd39e
+15.0740268634201,5.78678812552621,"2663468489",node,18.75,doctors,,Poste de Santé communautaire de Fambe,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Fambele,88789830,2,2020/07/31 15:40:17+00,aaeb5c372baa488bb5e2730ac7ab0845
+21.1497156795961,5.92404472365862,"2666392859",node,21.875,hospital,hospital,Poste de Santé de Tagbara,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Tagbara,137802430,2,2023/06/26 17:40:30+00,393a6d253efd41729d606a1e9ae5f0de
+20.6862999506049,4.93037999308424,"2666204776",node,18.75,hospital,,Poste de Santé de Goya,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Gbada,20620462,2,2014/02/17 18:04:12+00,c12c9998edac4283a21170c8ecb9d446
+,,"261565319",way,18.75,doctors,,Poste de Santé de Kounmbam 2,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kounmbam 2,88789830,5,2020/07/31 15:40:17+00,276603cd5bff413d9b962a065c3d5836
+15.5530289928195,6.87761084854606,"2665815216",node,18.75,doctors,,Poste de Santé Boukayan,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bokayan,88789830,3,2020/07/31 15:40:17+00,0fb2621096d34828a60d6b850c4e5e3a
+,,"263840832",way,21.875,hospital,hospital,Poste de Santé de Gazao,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Gazao,84320144,3,2020/04/29 08:19:15+00,5187f905457346f286e24b0879bd7c2d
+14.9846999992906,4.78668994899004,"2665960674",node,18.75,doctors,,Centre de Santé de Gbambia,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Gbambia,88789830,2,2020/07/31 15:40:17+00,0248aa6194284ee6a9caa48c9e052e74
+18.5479784665933,4.37771736331987,"2225514666",node,21.875,hospital,,Centre de Santé Urbain des Castors,Ministère de Santé,survey,,government,open,,,,,,,,,,,,,,,,,,,107249315,2,2021/07/01 09:06:20+00,be918e85a5c44967a8e886ed8afd52b9
+,,"786136264",way,21.875,hospital,hospital,Centre de Santé du Camp de Ndassima,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ndassima,84259872,2,2020/04/28 10:43:50+00,a44dd9a1b52b4fa2b6f163452945b543
+16.9946525523808,7.30284298526831,"2440007345",node,18.75,hospital,,PS de Sido,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Sido,141327887,4,2023/09/16 06:22:04+00,67193617238b4ab38889c3766adb95f7
+,,"260791414",way,18.75,doctors,,Centre de Santé de Gallo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Gallo,88789830,5,2020/07/31 15:40:17+00,6c68b12e8e474435a1e0f65de3f7987c
+,,"244375542",way,21.875,hospital,hospital,Poste de Santé de Soumbe,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gbade,96261301,6,2020/12/22 13:16:45+00,1b8a8a7c5e954138baa3707cb36d6ab8
+,,"1005223767",way,12.5,hospital,hospital,Saint Donatien,,,,,,,,,,,,,,,,,,,,,,,,114093602,1,2021/11/22 11:11:22+00,5db63daadbff441f966b9636ce47f68e
+,,"749343851",way,21.875,hospital,hospital,Centre de Santé du Camp de Réfugiés Soudanais,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Camp de Réfugiés Soudanais,83818134,2,2020/04/20 11:23:10+00,a8495be83e7d493d960648c54e3a9076
+18.5370228162313,4.35628953077099,"2225666466",node,12.5,hospital,,Centre de Santé de ADECOM,,Survey,,,,,,,,,,,,,,,,,,,,,,15505988,1,2013/03/26 17:12:20+00,06aa82b1ed0547e5b377bff6f3b47db1
+18.3442999796766,5.85464994145673,"2670707179",node,18.75,hospital,,Poste de Santé de Gbangou,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Gbangou,20548832,1,2014/02/13 21:26:37+00,1ba1c633b99c4ad589402138fcd15915
+,,"260661195",way,21.875,doctors,doctor,Centre de Santé E E B,,"Bing;UNICEF",,private,,,,,,,,,,,,,,,,,,,Carnot,168179022,5,2025/06/27 10:39:20+00,60f660b27d0b4f88be0300f707bb8de1
+,,"484961616",way,18.75,doctors,,Centre de Santé de Nguia-Bouar,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Nguia-Bouar,88789830,4,2020/07/31 15:40:17+00,1e0b3484ebdd43e18e02e3fe9a64fdf6
+18.570235017909,4.36397556834302,"4637264311",node,12.5,clinic,clinic,CS Lakouanga,,,,,,,,,,,,,,,,,,,,,,,,120594850,4,2022/05/05 15:33:49+00,76b6efbfcc734196a7a3e225fd2183db
+15.5590999214691,6.64902997875791,"2665791714",node,18.75,doctors,,Centre de Santé Mbotoga,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Mbotoga,88789830,2,2020/07/31 15:40:17+00,4ab1f93bcfbb4342b1aeebc460f4216a
+,,"260787801",way,18.75,doctors,,Centre de Santé de Lokoti,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Lokoti,88789830,4,2020/07/31 15:40:17+00,1cd7282f606b4b83a3627d05a219c7c1
+19.6219067932147,6.67498445811566,"2694879395",node,18.75,hospital,,Poste de Santé de Blakadja,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Blakadja,20833406,1,2014/02/28 19:10:23+00,b5f3912ff191446084ccf6a990309617
+17.7959518507518,6.99379274371026,"2590353163",node,18.75,hospital,,Poste de Santé de Kakouda-Bede,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Kakouda-Bede,141327887,6,2023/09/16 06:22:04+00,389637bc36f74c15a8ec7cd15eb3ccbc
+,,"260696353",way,21.875,doctors,doctor,Centre de Santé de Mbe-Gote,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Nassouri,134614861,5,2023/04/07 12:54:12+00,9d6ff5ab47864c1a8f11cbae87a80946
+15.7171806874838,6.88489078290937,"2665815223",node,18.75,doctors,,Poste de Santé de Herba,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Sangame,88789830,3,2020/07/31 15:40:17+00,9b3962fa58ad4fe3af8092eaaa5bb340
+,,"785811793",way,21.875,hospital,hospital,Poste de Santé de Rendekouzou,,"bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Rendekouzou,84259872,2,2020/04/28 10:43:50+00,0ce973b64497424dae72903ef3bc18db
+,,"260585039",way,18.75,doctors,,Centre de Santé Sabewa,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Sabewa,88789830,4,2020/07/31 15:40:17+00,d7c086259c964738bb82994fb8128f8c
+,,"261565289",way,18.75,doctors,,Poste de Santé de Nzounapaye,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Nzounapaye,88789830,4,2020/07/31 15:40:17+00,fa0618159850451fa071ad37246ac921
+15.7231878298502,5.89565454705766,"2589437005",node,18.75,doctors,,Centre de Santé Tedoa,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Institut Doaka,97559922,5,2021/01/15 12:22:33+00,1d120a8f727849b7a252caaf1dcd59bc
+18.4037999251822,6.03688995080751,"2670725531",node,18.75,hospital,,Centre de Santé de Marali,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Marali,20549205,1,2014/02/13 21:43:54+00,32900016148c46db88b8d554679fb0a1
+20.7043069608306,5.14928253073504,"2666204778",node,18.75,hospital,,Poste de Santé de Kossamba,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Kossamba,27155508,3,2014/12/01 14:32:30+00,82bfc2dce709478081b0f3052b785ed1
+,,"786136265",way,12.5,hospital,hospital,Centre De Sante Baptiste Cezakoba,,,,,,,,,,,,,,,,,,,,,,,,84320144,2,2020/04/29 08:19:15+00,59a4c2eb9fd84627b71750478fcd0db6
+,,"244316569",way,21.875,hospital,hospital,Centre de Santé Urbain Pi,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Bossangoa,96261301,5,2020/12/22 13:16:45+00,fd5dd9af1e8949469332a7475db26075
+,,"783882035",way,12.5,hospital,hospital,Institut Pasteur,,,,,,,,,,,,,,,,,,,,,,,,140151113,2,2023/08/20 20:40:45+00,db22421ec476413cb2643af1b1d625d8
+19.1423999894252,6.46037999277419,"2669498908",node,18.75,hospital,,Centre de Santé de Dissikou,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Dissikou,20533394,1,2014/02/13 00:35:27+00,97704ea384b9413899a4a34c090fec59
+,,"253056605",way,18.75,doctors,,Poste de Santé de Wapo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Wapo,88789830,5,2020/07/31 15:40:17+00,b75889522b9442fda1a7b1f15fa1155a
+15.6878964970904,5.9191882489599,"2589437006",node,18.75,doctors,,Centre de Santé de Kpocte,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Kpocte,97559922,4,2021/01/15 12:22:33+00,9e1938727ecf44f3a67335a90266d05e
+,,"783882039",way,28.125,hospital,hospital,Clinique Chouaib,,survey,,private,open,,,,,,,,,,,,,,,"53",Mme Leopold Seaton Lengor,,,140151113,4,2023/08/20 20:40:45+00,dc26cda1dc2e471192dff4f85925ba93
+,,"261277051",way,21.875,hospital,hospital,Poste de Santé de Lafolo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Lafolo,83818235,3,2020/04/20 11:24:47+00,339ae84f52b648b39d46968a7f745a50
+20.5447063881325,4.97956935949608,"2666204775",node,18.75,hospital,,Centre de Santé de Boy-Kotto,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Boy-Kotto,20495152,1,2014/02/10 23:34:24+00,abf7b27c49244a0eac3df0618be61574
+18.5746085273469,4.37217415929413,"8951441258",node,12.5,hospital,hospital,Hôpital pédiatrique,,,,,,,,,,,,,,,,,,,,,,,,140151113,3,2023/08/20 20:40:45+00,44ef8b2771f64820801bfe73747088b1
+,,"238378965",way,18.75,doctors,,Poste de Santé de Nzakoundou,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Nzakoundou,88789830,5,2020/07/31 15:40:17+00,40f0e3a9b28745eaba74b759ff7960af
+,,"244317135",way,21.875,hospital,hospital,Centre de Santé Evangélique,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Bossangoa,96261301,4,2020/12/22 13:16:45+00,045d930bb56b4965947572371fe65f88
+,,"253072995",way,21.875,doctors,doctor,Centre de Santé Be-ngote,,"Bing;UNICEF",,private,,,,,,,,,,,,,,,,,,,Berbérati,134614171,5,2023/04/07 12:37:55+00,5f7859cd668d4c4aaa7ef3cb44ffbae2
+,,"263836417",way,21.875,hospital,hospital,Centre de Santé de Zougougbada,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Zougougbada,84320144,3,2020/04/29 08:19:15+00,ff42d1f74bc94aa1b56db63e224dc305
+,,"314886852",way,12.5,hospital,hospital,Poste De Sante Yongossaba,,,,,,,,,,,,,,,,,,,,,,,,84320144,4,2020/04/29 08:19:15+00,efab837c5d92448fa331307b4b2b3017
+18.3573033289838,6.34734323913779,"2590491423",node,18.75,hospital,,Poste de Santé de Gbangola,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gbangola,141327887,5,2023/09/16 06:22:04+00,3ad3272eb9ee4860b863f9fc17a9fce4
+16.3722999297848,6.32200994262422,"2412540996",node,15.625,hospital,,HP Bozoum,,,,government,,,,,,,,,,,,,,,,,,,Bozoum,141327887,4,2023/09/16 06:22:04+00,fa69771b8b2347d28c54c351b1c4beb9
+18.3068415896703,6.90109308556279,"2590484753",node,18.75,hospital,,Poste de Santé de Gbakaya,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gbakaya,141327887,5,2023/09/16 06:22:04+00,42d28799ce3245a287b03236e20f2c5d
+17.23341265684,6.81190628303531,"2590317877",node,18.75,hospital,,Poste de Santé de Bofiota,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bofiota,141327887,6,2023/09/16 06:22:04+00,eb57c807f5e2480b961c3954e7d3ddde
+,,"944614212",way,9.375,clinic,yes,,,,,,,,,,,,,,,,,,,,,,,,,121474224,2,2022/05/25 12:38:47+00,17c46507fc9249ad99dc6a3aad372fd2
+17.2283558546554,6.81548049418657,"2590317918",node,18.75,hospital,,Poste de Santé de Bossio,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bossio,141327887,6,2023/09/16 06:22:04+00,a26bd41bca18467c9df75ea7d601b612
+,,"253092233",way,18.75,doctors,,Centre de Santé de Baoro,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Baoro,88789830,5,2020/07/31 15:40:17+00,5c68fcd9df6f42ae9d5d011f951130a7
+,,"238384574",way,18.75,doctors,,Poste de Santé de Kosse,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kosse,88789830,5,2020/07/31 15:40:17+00,8a3bcaf216c14886a52492e8d4a8298c
+,,"314572164",way,12.5,hospital,hospital,Poste Sante Aou 2,,,,,,,,,,,,,,,,,,,,,,,,84320144,3,2020/04/29 08:19:15+00,9f1f656926dc4800bdb753b37df02c39
+,,"260677612",way,15.625,clinic,clinic,"Triagem, Consultas e Sala de Observação Pediátricas.",,Bing,,,,,,,,,,,,,,,,,,,,,,69786114,4,2019/05/02 01:37:24+00,2df74d58551c4553a203a854337d33fe
+,,"785842103",way,15.625,hospital,hospital,Centre de santé Niakari,Mission catholique,,,,,,,,,,,,,,,,,,,,,,,84320144,2,2020/04/29 08:19:15+00,3d34f93c24094104b28eaded96996509
+18.5458814820574,4.35970197119099,"2225650029",node,18.75,hospital,,Centre de Santé Saint-Jacques,,Survey,,private,open,,,,,,,,,,,,,,,,,,,107249315,2,2021/07/01 09:06:20+00,11ef98441a3c4b039253cac06251e2ca
+22.6222281449134,4.90097912659863,"3670323118",node,9.375,hospital,,Poste De Sante Nganzi,,,,,,,,,,,,,,,,,,,,,,,,32932332,1,2015/07/28 13:20:32+00,25f7abc5d0d04b7882c52bd662f35d97
+20.3756999789691,5.14061991762424,"2668627522",node,18.75,hospital,,Poste de Santé de Ndoro,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ndoro,20522596,1,2014/02/12 13:44:35+00,387c5fa21e25421aa9418ec22262f732
+17.4353999271534,6.60269993097566,"2517058897",node,18.75,hospital,,PS Gazouiene,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gazouiene,141327887,4,2023/09/16 06:22:04+00,bd7717c8789c4068818f27694c25b530
+,,"261277019",way,21.875,hospital,hospital,Poste de Santé de Kopia,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kopia,84209828,3,2020/04/27 16:18:11+00,b1b53cbcb27841bcb7b52b65a3469826
+22.7925993793705,10.2791352645872,"8874865217",node,21.875,hospital,hospital,Hôpital de ville de Birao,,,,,,,,,,,,,,,,,,,,"2",Birao,"236",,162655516,3,2025/02/18 10:57:12+00,6d60ee992d6c4238a0f8987d5ffc305e
+,,"461236635",way,21.875,hospital,hospital,Poste de Santé de Makondji-Wali,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Makondji-wali,84320144,3,2020/04/29 08:19:15+00,8e934ee52a524917af4a81296652f1f9
+22.5304529268669,4.66469922728851,"3529009625",node,9.375,clinic,,Pds Mabo,,,,,,,,,,,,,,,,,,,,,,,,31293418,1,2015/05/19 19:05:41+00,3713949e967347e4bf9021faa8d9e946
+15.8986158664919,6.77263052878294,"2420714750",node,18.75,doctors,,Centre de Santé de Ngoutere,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Ngoutere,141327887,5,2023/09/16 06:22:04+00,27c5ae6fae874c8aaa23c995f0d44202
+21.9858549452409,6.54030889942749,"6128625526",node,12.5,hospital,hospital,Hôpital régional de Bria,,,,,,,,,,,,,,,,,,,,,,,,65348328,1,2018/12/10 15:41:19+00,aaf81f6ea0aa4c209336588e5ae25934
+,,"238380921",way,18.75,doctors,,Centre de Santé de Ndim,,"Bing;UNICEF",,private,,,,,,,,,,,,,,,,,,,Ndim,88789830,5,2020/07/31 15:40:17+00,7f65d559cada4549a69ed4db918f86c0
+15.1898558804607,4.77390075730887,"2664306362",node,18.75,doctors,,Centre de Santé EEB d'Amada-Gaza,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Amada-Gaza,88789830,3,2020/07/31 15:40:17+00,48db6190dc144bc9815912749644e937
+,,"482811065",way,18.75,doctors,,Centre de Santé de Dédé-Mokouba,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Dédé-Mokouba,88789830,4,2020/07/31 15:40:17+00,f6a56feda6d44d8dbccd09b88504f67f
+,,"315299209",way,21.875,hospital,hospital,Poste de Santé de Ndakara,,"UNICEF;Bing",,government,,,,,,,,,,,,,,,,,,,Ndakara,84259872,3,2020/04/28 10:43:50+00,2d5490600f094e26ad04defe6d89297e
+,,"238374396",way,18.75,doctors,,Poste de Santé de Kowone,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kowone,88789830,5,2020/07/31 15:40:17+00,bfc51fd4df5c41859e716750b205682f
+,,"261453233",way,12.5,doctors,,Centre de Santé Sant Francis,,Bing,,,,,,,,,,,,,,,,,,,,,,46837133,3,2017/03/14 11:06:25+00,e71459bfed7a40aeb9966d9adb246a37
+,,"201737501",way,21.875,hospital,hospital,Centre de Santé de Jean-C,,"Bing;UNICEF",,private,,,,,,,,,,,,,,,,,,,Kaga-Bandoro,84209828,4,2020/04/27 16:18:11+00,0dbcfa820f16466d9580e303cb332538
+18.4775337671999,6.80255115708434,"2590484755",node,18.75,hospital,,Poste de Santé de Sogbafo,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Songbafo,141327887,5,2023/09/16 06:22:04+00,2b13b9b1fa1845f3bde553d4390c10c6
+18.5299147947021,4.39729765677129,"2225484450",node,25,hospital,,Centre de Santé St. Jonas,Bienfaisance,Survey,,NGO,open,,,,,,,,,,,,,,,,Quartier Bangui MPOKO II,,,107245715,2,2021/07/01 07:54:45+00,8508b1e81c1347f982ba1976bf64e2aa
+20.6522730279388,5.76977101806528,"7375340819",node,12.5,pharmacy,pharmacy,Pharmacie de Kidigra,,,,,,,,,,,,,,,,,,,,,,,,141566331,3,2023/09/21 15:51:36+00,1aa86cc8e052437ea1f0a7c55b5b8c53
+,,"785811792",way,12.5,doctors,,Poste de Santé de Boko,,bing,,,,,,,,,,,,,,,,,,,,,,88789830,2,2020/07/31 15:40:17+00,240810b562d046cd953433b9c8726a31
+,,"260677554",way,18.75,doctors,,Centre de Santé de Mbangou,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Mbangou,88789830,4,2020/07/31 15:40:17+00,414246a16a4749979b5f8a524d57460f
+14.9003999301324,4.52277994405875,"2665980826",node,18.75,doctors,,Poste de Santé de Godawa,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Godawa,88789830,2,2020/07/31 15:40:17+00,ca38369559fe486bad3ca50e8b027790
+20.3858933790565,6.19637124902351,"2694663671",node,18.75,hospital,,Centre de Santé de Bakala,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bakala,20829462,1,2014/02/28 15:37:10+00,7d642240afc846569064ae5e44ec1e99
+,,"783882036",way,18.75,hospital,hospital,Centre médico-social (CMS) de Bangui,,Survey,,,,"Mo-Fr 08:30-12:30, 15:00-18:00",,,,,,,,,,,,,,,,,,84182808,2,2020/04/27 08:25:59+00,45ce0d3ba5204e90ab95ded431c9d86c
+18.5596787652332,4.36041518733202,"4007611328",node,9.375,clinic,,CS Bruxelle,,,,,,,,,,,,,,,,,,,,,,,,45553472,2,2017/01/27 10:52:41+00,9b7f8e8930d044f18b0a184159cf04d2
+18.5752307998385,4.40543438927696,"2225267750",node,18.75,hospital,,Centre de santé Saint Luc,,survey,,private,,,,,,,,,,,,,,,,,Boy - Raba,,,107245715,2,2021/07/01 07:54:45+00,11d3d4b6fdb94f5381491ca7e6a52b1e
+,,"261321244",way,21.875,hospital,hospital,Poste de Santé de Domodo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Domodo,84259872,3,2020/04/28 10:43:50+00,414e3e7fec3947ad8a657c0cf7c0b2aa
+,,"260791413",way,18.75,doctors,,Poste de Santé de Ngorom,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ngorom,88789830,4,2020/07/31 15:40:17+00,d39f36ebdce04ca693a442861b236ce7
+15.1635455893133,5.79643075075606,"2663509116",node,18.75,doctors,,Centre de Santé Emmanuel,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Gallo,88789830,3,2020/07/31 15:40:17+00,15a36c104abb45c695fb0b7fa2924cf6
+16.4944446270476,6.12809042175337,"2420372475",node,18.75,hospital,,PS de Boyabane,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Boyabane,141327887,4,2023/09/16 06:22:04+00,2c00d6caca7744edb20a46125ea2c047
+,,"244318701",way,21.875,hospital,hospital,Poste de Gazouwène,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gazouwène,141327887,6,2023/09/16 06:22:04+00,9400c4419370435da8bd8c1f9ae22cd1
+18.6204698591037,4.36642165914617,"2225615058",node,18.75,hospital,,Centre de Santé Urbain de Ouango Bangui,,Survey,,government,open,,,,,,,,,,,,,,,,,,,107249315,2,2021/07/01 09:06:20+00,fa671de4e00d44168b8c92158aa92218
+,,"263982696",way,21.875,doctors,doctor,Centre de Santé de Djomo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Djomo,137655734,5,2023/06/22 16:58:31+00,fcca56a29a9c4d09a3ee8d7b9a736e75
+14.7911999926736,5.58617992974195,"2663521072",node,18.75,doctors,,Centre de Santé de Bera-Boyere,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bera-Boyere,88789830,2,2020/07/31 15:40:17+00,7df0b2306db84564a377d8d4d46bc089
+16.0590999756036,6.54672994017258,"2421395599",node,18.75,doctors,,Poste de Santé de Mboko-Tatali,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Mboko-Tatali,141327887,6,2023/09/16 06:22:04+00,73ee329b3e0e42f782f172caa3368456
+20.6503579307017,5.77125612366956,"7375322928",node,15.625,hospital,hospital,Centre de Santé Kidigra,,msf,,,,,,,,,,,,,,,,,,,,,,141566331,2,2023/09/21 15:51:36+00,ac853f89af804931b76ff80782ffe2c3
+20.0558589590845,5.74167295078993,"2666225494",node,18.75,hospital,,SC de Grimari,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Grimari,83137119,4,2020/04/06 09:53:32+00,e8f2130bf8654c099503edff6229f361
+,,"251850784",way,21.875,hospital,hospital,Poste de Santé Yalingui-Botombo,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Botombo,141327887,5,2023/09/16 06:22:04+00,6e6879b50ac340b58b461bf890b34c7e
+19.6835999475047,6.66102993043629,"2669473170",node,18.75,clinic,,Poste de Santé de Maoroka,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Maoroka,45832080,2,2017/02/05 15:34:36+00,e8db90f53040402ab1f4dee761b5a9e9
+,,"257843615",way,18.75,doctors,,Poste de Santé Catholique,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Bohong,88789830,4,2020/07/31 15:40:17+00,6e47d329cba442ed8034475a8fe3b163
+16.444399971236,6.31113995531268,"2420372473",node,18.75,doctors,,Centre de Santé de Bata,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Bata,141327887,5,2023/09/16 06:22:04+00,1fda5edc1eba4d70987920b471455c13
+,,"311731894",way,12.5,hospital,hospital,Centre Sante Ngoulapalo,,,,,,,,,,,,,,,,,,,,,,,,84320144,3,2020/04/29 08:19:15+00,984d9c1e67364c858b7cb4b8c8c56ea1
+15.6162999565629,5.73185992146858,"2589437011",node,18.75,doctors,,Poste de Santé de Zotoua,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Zotoua,168846104,4,2025/07/12 17:38:00+00,027df59ce3c54048a62e522d4c39bb7a
+20.6676999207297,5.76431993115543,"2663462940",node,25,hospital,hospital,ACABEF Antenne Ouaka,Association Centrafricaine pour le Bien-Etre Familial,UNICEF,,private,,,,,,,,,,,,,,,,,,,Bambari,79449059,2,2020/01/11 11:32:42+00,9a4ed0b468d742bab17c59e314986021
+,,"261011750",way,21.875,hospital,hospital,Poste de Santé de Yekétché,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Yekétché,83818169,3,2020/04/20 11:23:45+00,45b0abb612204e4b93f0a6c60cb469ec
+,,"260787800",way,18.75,doctors,,Poste de Santé de Ndiba-Bouassa,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Ndiba,88789830,4,2020/07/31 15:40:17+00,688744d832fb48b5aeafd6d93571da77
+,,"779478129",way,21.875,hospital,hospital,Centre de Santé Le Samaritain,,UNICEF,,private,,,,,,,,,,,,,,,,,,,Sambia,84182808,2,2020/04/27 08:25:59+00,cc459238f1bb43379c450d820c7d9933
+,,"480373906",way,12.5,clinic,,CDS - Centre de Santé de Sosso Nakombo - Sale de Consultation,,,,,,,,,,,,,,,,,,,,,,,Sosso-Nakombo,47065561,2,2017/03/22 11:33:21+00,1a90edd5535c42e192b41d8408c07de4
+18.5432164559434,4.34540127091051,"2225470752",node,18.75,hospital,,Centre de santé Urbain de Petevo,,survey,,government,open,,,,,,,,,,,,,,,,,,,107249315,2,2021/07/01 09:06:20+00,491aea78b6a6496a83552ca90fec9af1
+,,"459363924",way,21.875,hospital,hospital,Poste de Santé de Poumayassi,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Poumayassi,118897997,6,2022/03/25 08:39:44+00,9e439badd53545419be0493565484c3f
+,,"461019014",way,15.625,clinic,clinic,Poste de Santé de Ndinguiri,,Digital Globe Maps API,,,,,,,,,,,,,,,,,,,,,,137655734,3,2023/06/22 16:58:31+00,0bc5d2f544bc4795880bd3f2eabb64d7
+,,"261576478",way,18.75,doctors,,Poste de Santé de Nzoro,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Nzoro,88789830,4,2020/07/31 15:40:17+00,a76f1c8b737e4adfaf6fe901895b6e4b
+18.5048513954708,6.94981055082596,"2590484752",node,18.75,hospital,,Poste de Santé de Boya,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Boya 1,141327887,6,2023/09/16 06:22:04+00,7ade224140f540f9ab472efab5cf5b76
+,,"481119514",way,18.75,doctors,,Centre de Santé de Barka-Basso,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Barka-Basso,88789830,4,2020/07/31 15:40:17+00,4553a8be06b64e3eaa0b2cdfebe30453
+,,"745505598",way,21.875,hospital,hospital,Centre de Santé de Kobadja,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Kobadja,84209828,2,2020/04/27 16:18:11+00,b46de27f97b94d95a5d0849e04de6607
+16.9212999193194,7.13504994040835,"2440007343",node,21.875,hospital,hospital,Centre Médical de Boguila,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Centre medical,141327887,5,2023/09/16 06:22:04+00,d6095e1033e448beb59d58b1fbaf14ed
+,,"783882038",way,18.75,hospital,hospital,Batangafo,,,,government,open,,,,,,,,,,,,,,,,,,,141278387,4,2023/09/14 22:29:39+00,67afd6031c764c6ba80521d858fd2c70
+25.1057056727742,5.00173287168653,"5002023821",node,9.375,hospital,,AIM,,,,,,,,,,,,,,,,,,,,,,,,50678431,1,2017/07/29 18:58:28+00,aadebc563cbc47a38e1027a3c2ae26e8
+20.4268032691516,4.83660158399834,"2668753007",node,18.75,hospital,,Centre de Santé de Bianga,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bianga,20618906,2,2014/02/17 16:34:56+00,1100e722aec04312b2467ad61109c682
+,,"783882037",way,21.875,hospital,hospital,Complexe pédiatrique,,survey,,government,open,,,,,,,,,,,,,,,,,,,107249315,4,2021/07/01 09:06:20+00,d6ca8badf567457ebcbf5a82719d215f
+20.1232999196567,5.39897992918822,"2694836987",node,18.75,hospital,,Poste de Santé de Goussema,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Goussema,20832540,1,2014/02/28 18:23:01+00,d6838cfc6bc24fa8ad098c6de3c527f8
+,,"260858601",way,18.75,doctors,,Centre de Santé de Nandobo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Nandobo,88789830,4,2020/07/31 15:40:17+00,b68ae35f4079475893a2882a75a0a184
+20.6901599846544,5.76448647957147,"7433542169",node,15.625,doctors,doctor,Point palu elevage,,MissingMapsKobo,,,,,,,,,,,,,,,,,,,,,,141566331,2,2023/09/21 15:51:36+00,2a6c26d19bb24d74a3b236283595bd23
+17.2283908910107,6.81422446599603,"2590317860",node,18.75,hospital,,Centre de Santé de Gbangayanga,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bomboye,141327887,5,2023/09/16 06:22:04+00,48fde096d331435e9f957966eb02a96b
+17.27302016682,6.77985732188012,"2590317926",node,18.75,hospital,,Poste de Santé de Kollo-Gassa,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Kollo-Gassa,141327887,6,2023/09/16 06:22:04+00,0f55b1c2ed974bf4811d174407deced3
+15.5049099954429,3.9208717891313,"4733949189",node,9.375,clinic,,Salle d'Observation - CDS Sosso Nakombo,,,,,,,,,,,,,,,,,,,,,,,,53596269,2,2017/11/07 23:29:43+00,98c5f403b7d94af79fb2966eb2e1478e
+,,"263836416",way,12.5,hospital,,Centre de Santé de Bangao,,Bing,,,,,,,,,,,,,,,,,,,,,,82819933,2,2020/03/30 11:10:11+00,f47fff254a95438a8749fa3177b62960
+18.3473999427463,6.64259996937642,"2590491422",node,18.75,hospital,,Poste de Santé de Bongo,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bongo,141327887,4,2023/09/16 06:22:04+00,ff26420c4645461da2145fdcfd97a33d
+17.7665393334208,7.52769097447816,"2429132084",node,25,hospital,hospital,Le Samaritain,,"UNICEF,2012",general,government,,,,,,,,,,,,,,,,,,,Ouogo,168848572,4,2025/07/12 18:47:30+00,fee8df7d5a8548b08905ecb80c899c58
+19.9255865817714,6.33098176414307,"2667915528",node,18.75,hospital,,Poste de Santé de Saboyombo,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Saboyombo,20514061,1,2014/02/12 01:11:06+00,b2075766d13b47aaa9acb628761e8b44
+,,"479912374",way,21.875,hospital,hospital,Poste de Santé de Boyaram,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Boyaram,84259872,3,2020/04/28 10:43:50+00,39a80f3f1433432b8a022b34adb133f2
+20.1822991302666,5.2706947334795,"2694836985",node,18.75,hospital,,Centre de Santé de Bangao,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bangao,20832540,1,2014/02/28 18:23:01+00,918b431df84846fcb40ac24804b8e384
+16.8933810571339,6.34726025829636,"2590585634",node,21.875,hospital,hospital,Poste de Santé de Bossa,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bossa,141327887,6,2023/09/16 06:22:04+00,a6ec998782e044049a62257c6a877c79
+16.5139981822279,7.69927171756319,"2671538075",node,18.75,hospital,,Poste de Santé de Bédam,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bédam,28548494,2,2015/02/01 16:17:33+00,87de4d60dcc94223af05ad140a0c2759
+,,"474355443",way,18.75,doctors,,Centre de Santé de Mamvoula,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Mamvoula,98469292,4,2021/01/31 22:22:55+00,e31c138971764d5dbf6a9009694f4bc6
+22.8605215450038,4.7806472673542,"3451784639",node,12.5,pharmacy,,Depot Pharmaceutique Barama CDES,,,,,,,,,,,no,,,,,,,,,,,,,30161333,1,2015/04/12 11:34:07+00,eb55c4ff4de34d00a2c9d0e9a689c422
+17.4271375499191,6.65806198234157,"2517058887",node,18.75,hospital,,CS Bokini,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bokini,141327887,5,2023/09/16 06:22:04+00,f20aa3d1637340139e21db782488a385
+,,"458941123",way,21.875,clinic,clinic,Poste de Santé de Irma-Baro,,"Digital Globe Maps API;UNICEF",,government,,,,,,,,,,,,,,,,,,,Irma-Baro,137655734,5,2023/06/22 16:58:31+00,45e9575c5da04493a4f6ffc51a285cf0
+,,"253051218",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,115628496,3,2022/01/01 07:24:03+00,1d601066236446d78579c07fffda7cba
+18.5554328283617,4.36122898631115,"2225249940",node,21.875,hospital,,Centre de Santé Urbain de Lakouanga,Ministère de la Santé Publique,Survey,,government,open,,,,,,,,,,,,,,,,,,,107249315,3,2021/07/01 09:06:20+00,a231a91ed23d46f69bd337b230bede15
+,,"263738602",way,21.875,hospital,hospital,Centre de Santé de Gouassi 2,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Gouassi 2,84259872,3,2020/04/28 10:43:50+00,9753b316f0db41a8b28658c0831a84d7
+15.6396351749979,6.98516022163187,"2665811211",node,18.75,doctors,,Centre Bocaranga,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bocaranga,98469292,3,2021/01/31 22:22:55+00,a852fb88b8ce41aa9a069ad8d2b1f7ed
+,,"732412711",way,21.875,hospital,hospital,Centre de Santé de Siou,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Siou,84182808,4,2020/04/27 08:25:59+00,930c8c11b54c4a288b3929ed252c3b2f
+,,"261314233",way,21.875,hospital,hospital,Poste de Santé d'Azené,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Azené,84209828,3,2020/04/27 16:18:11+00,f1100299ae924303b6c3f4e7eb8af194
+22.412351575876,5.06643722469155,"3670534655",node,9.375,hospital,,Poste De Sante Ndanda,,,,,,,,,,,,,,,,,,,,,,,,32935274,1,2015/07/28 15:41:38+00,a58bb0aee7564af3b3ad0aaedb1b970b
+16.27399487389,7.08730829631267,"2417190544",node,18.75,hospital,,Kounpo,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Kounpo1,141327887,4,2023/09/16 06:22:04+00,54fac618f8354333ba2012a6ca1723a6
+,,"261554816",way,21.875,hospital,hospital,Poste de Santé de Beboye 3,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Beboye 3,84259872,3,2020/04/28 10:43:50+00,d89aa40e57dc49f1b724438f171d06d6
+,,"253038036",way,18.75,doctors,,Centre de Santé Bavara,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bavara,141327887,6,2023/09/16 06:22:04+00,a4d52bd0ea4446129e7e52c38eb9c199
+,,"261472042",way,21.875,hospital,hospital,Poste de Santé de Bedaya 2,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Bedaya 2,84259872,3,2020/04/28 10:43:50+00,f2a860d8905c46be91383afe43993d14
+19.7992483345319,6.66813317428068,"2084480255",node,25,hospital,hospital,Centre de Santé de Mbrès,,UNICEF,,government,open,,,,,,,,,,,,,,,,,,Mbrès,120599458,4,2022/05/05 17:38:21+00,bfae2f8ccf9845dc9d5c58bb4f85fabb
+,,"233809693",way,21.875,hospital,hospital,PS de Tolle,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Tolle,141327887,4,2023/09/16 06:22:04+00,4324b022f45f4ccaa6aaf77c7b3aff1c
+,,"261556664",way,21.875,hospital,hospital,Toubangko2,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Toubanco2,84259872,3,2020/04/28 10:43:50+00,78d611dc456b4f57aede3866ba72ad72
+,,"783882047",way,12.5,hospital,hospital,Enfant Jésus Yole,,,,,,,,,,,,,,,,,,,,,,,,82523891,1,2020/03/23 13:03:27+00,356f0454da4549e799c51fc4b569db0c
+,,"262066208",way,21.875,hospital,hospital,Centre de Santé Elevage,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Sambia,84182808,4,2020/04/27 08:25:59+00,c2889141768e4c9d975245fb1da7a40f
+,,"261627759",way,18.75,doctors,,Poste de Santé de Kaita,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Kaita,88789830,4,2020/07/31 15:40:17+00,3e87ee3699c044aa885fcd6754b8480d
+18.4419865349362,7.45458887650258,"2426053906",node,18.75,hospital,,Poste de santé Gbazara,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Gbazara,141327887,5,2023/09/16 06:22:04+00,1aa849d9009046158f5b77e7722e978f
+,,"193291294",way,25,hospital,hospital,Centre Médical Padre Pio,,"Bing;survey",,private,open,,,,,,,,,,,,,,,,Rue des Soeurs Camboniennes,,,107249315,4,2021/07/01 09:06:20+00,b21910c216f5425a96ed8bc839570555
+18.5772680214048,4.36324005633955,"3234609963",node,12.5,pharmacy,pharmacy,Pharmacie du Centre,,,,,,,,,,,,,,,,,,,,,,,,120594850,3,2022/05/05 15:33:49+00,a11c11ef9337400d8f59d7ac0b8d2ff1
+16.4314411298345,7.24471121781778,"2417190515",node,18.75,doctors,,CSU de Paoua,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Paoua,117850383,5,2022/02/25 13:56:33+00,abadb463d2254bcba0dfd4d3738861ab
+20.6553308300356,5.76858087163367,"7375340818",node,12.5,hospital,hospital,Clinique Naomi,,,,,,,,,,,,,,,,,,,,,,,,141566331,2,2023/09/21 15:51:36+00,0a385fe47c1d489f825a5d9588f5c4fe
+,,"261576518",way,18.75,doctors,,Centre de Santé de Mann,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Mann,88789830,4,2020/07/31 15:40:17+00,f8572f443645460f8a65298008da93ed
+,,"473890231",way,21.875,hospital,hospital,Poste de Santé de Lambla,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Lambla,84209828,3,2020/04/27 16:18:11+00,5ea3925d798045fbae0ba310a37a7c67
+,,"244317132",way,21.875,hospital,hospital,CSU de Ngouey,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bossangoa,96261301,6,2020/12/22 13:16:45+00,a1647488576d4dd2ae8874013ba57e16
+,,"261583167",way,18.75,doctors,,Centre de Santé de Cantonnier,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Cantonnier,88789830,4,2020/07/31 15:40:17+00,e2245da49ac74dc699a6988db26b2e8b
+,,"261463448",way,21.875,hospital,hospital,Poste de Santé de Ngbaina-Bondjo,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Ngbaina-Bondjo,84259872,3,2020/04/28 10:43:50+00,d7e6a2c70e6448fd87292ebdf13be105
+14.8624999814669,5.18691995819313,"2663959781",node,18.75,doctors,,Centre de Santé de Sagani,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Sagani,88789830,3,2020/07/31 15:40:17+00,07899789ca9d4326ac58d8394f4ddd86
+16.2744999673752,6.3488399955875,"2412541037",node,15.625,hospital,,PS de Ndonga,,,,government,,,,,,,,,,,,,,,,,,,Ndonga,141327887,4,2023/09/16 06:22:04+00,7354e9105ae741bd9910adc625babd34
+17.4557999707352,6.47693995123603,"2517058889",node,21.875,hospital,hospital,CS de Pierre Djongobe,,"UNICEF,2012",,private,,,,,,,,,,,,,,,,,,,Bossangoa,96261301,4,2020/12/22 13:16:45+00,97b2cf135c004bc8993c117b339e0691
+,,"783882040",way,28.125,hospital,hospital,Maternité du Camp Henri Izamo / Gendarmerie,Ministère de la défanse nationale,survey,,government,open,,,,,,,,,,,,,,,,Avenue Gamal Abdel Nasser,,,107249315,3,2021/07/01 09:06:20+00,8bd97fb1c48c4bd9ae0c0d0bae0e8793
+18.6246494951211,4.37753522456393,"4637264308",node,9.375,clinic,,Clinique Mangapou,,,,,,,,,,,,,,,,,,,,,,,,45553472,1,2017/01/27 10:52:40+00,016dccf0b8124565889ae82eb3fb3d87
+,,"232937344",way,21.875,hospital,hospital,Ndol Bassai,,"UNICEF, Bing",,government,,,,,,,,,,,,,,,,,,,Ndol Bassai,141327887,5,2023/09/16 06:22:04+00,1b42585053d74cab9272ea66563db420
+,,"783882043",way,21.875,hospital,hospital,HP de Paoua,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Paoua,141327887,4,2023/09/16 06:22:04+00,2c92e79222ba4262bfa1a11d5af89cab
+,,"436600159",way,18.75,doctors,,Centre de Santé de Balego,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Balego,88789830,4,2020/07/31 15:40:17+00,81ddd272d3774b888cbdfa80471c2668
+,,"261321261",way,21.875,hospital,hospital,Poste de Santé de Banziti,,"Bing;UNICEF",,government,,,,,,,,,,,,,,,,,,,Banziti,84259872,3,2020/04/28 10:43:50+00,983abd0a9434419588204d89ca04d2c9
+18.0562999659295,6.46682995108526,"2590515744",node,18.75,hospital,,Poste de Santé de Bobo,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Bobo,141327887,4,2023/09/16 06:22:04+00,2fa40723a6cc44db9a383bbefa33f7f8
+17.6748757623245,7.19719907023097,"2440003877",node,18.75,hospital,,Poste de Santé de Mbali,,"UNICEF,2012",,government,,,,,,,,,,,,,,,,,,,Mbali,141327887,5,2023/09/16 06:22:04+00,7be748c17a264de7a01287ab05ff690a
+15.1381606602762,4.12040366472905,"4734606505",node,15.625,clinic,clinic,"Triagem, Consultas e Sala de Observação Peiátricas.",,,,,,,,,,,,,,,,,,,,pediatrie,,,,69786114,2,2019/05/02 01:37:16+00,4eca921742164f81b4cfb7209c3fa981
+,,"507080228",way,25,hospital,hospital,Hôpital Universitaire Régional de Bambari,Ministry of Health,UNICEF,,government,,,,,,,,,,,,,,,,,,,Bambari,152451564,12,2024/06/09 12:02:20+00,8274c31e869040db8eaf6de6fbf0751d
+20.2725039987536,5.1563632272599,"2668627514",node,18.75,hospital,,Poste de Santé de Mbalangao,,UNICEF,,government,,,,,,,,,,,,,,,,,,,Mbalangao,82840417,2,2020/03/30 19:12:28+00,db1c95565b634dd3aa77aed00e6c0846

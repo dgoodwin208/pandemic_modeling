@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-700 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    @apply bg-emerald-500 text-white;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-slate-200 rounded-2xl shadow-sm;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:border-slate-300 hover:shadow-md;
+  }
+
+  .stat-card {
+    @apply bg-white border border-slate-200 rounded-xl p-5 shadow-sm;
+  }
+
+  .glow-blue {
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+  }
+
+  .glow-green {
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.15);
+  }
+
+  .glow-red {
+    box-shadow: 0 4px 20px rgba(239, 68, 68, 0.12);
+  }
+
+  .glow-purple {
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.12);
+  }
+
+  .btn-primary {
+    @apply bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200;
+    @apply shadow-md shadow-emerald-500/20 hover:shadow-lg hover:shadow-emerald-500/30;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium px-4 py-2 rounded-lg transition-all duration-200;
+    @apply border border-slate-200;
+  }
+
+  .input-range {
+    @apply w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer;
+  }
+
+  .input-range::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 bg-emerald-500 rounded-full cursor-pointer;
+    @apply shadow-md shadow-emerald-500/30 transition-all duration-150;
+  }
+
+  .input-range::-webkit-slider-thumb:hover {
+    @apply bg-emerald-600 scale-110;
+  }
+
+  .input-range::-moz-range-thumb {
+    @apply w-4 h-4 bg-emerald-500 rounded-full cursor-pointer border-0;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r;
+  }
+
+  .text-gradient-blue {
+    @apply text-gradient from-blue-500 to-cyan-500;
+  }
+
+  .text-gradient-green {
+    @apply text-gradient from-emerald-500 to-teal-500;
+  }
+
+  .text-gradient-red {
+    @apply text-gradient from-red-500 to-orange-500;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.slate.300') transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+
+  /* Tabular numerals for data display */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.03) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Map styling - light theme */
+.map-container {
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+/* Leaflet custom tooltip - light theme */
+.custom-tooltip {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border: 1px solid rgba(226, 232, 240, 1) !important;
+  border-radius: 0.75rem !important;
+  padding: 0.75rem 1rem !important;
+  color: #334155 !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.custom-tooltip::before {
+  display: none !important;
+}
+
+/* Leaflet container overrides - light theme */
+.leaflet-container {
+  background: #f8fafc !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #64748b !important;
+  font-size: 10px !important;
+}
+
+.leaflet-control-attribution a {
+  color: #10b981 !important;
+}
+
+/* Chart tooltip styling */
+.recharts-tooltip-wrapper {
+  font-family: 'Inter', system-ui, sans-serif !important;
+}

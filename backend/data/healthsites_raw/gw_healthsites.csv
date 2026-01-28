@@ -1,0 +1,62 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+-15.850300061023,11.3563999239478,"6815633187",node,40.625,clinic,clinic,Soga Centro de Saude,moh,,,government,operational,Mo-Fr 08:00-15:00,,"0","2",,,,,no,powered_pump,solar,,,,,,,,134179726,4,2023/03/27 14:10:12+00,9c5bf557f0bc4526bda595c8bd8f89c4
+-16.142700071022,11.1595999620514,"6815647887",node,34.375,clinic,clinic,Orango grande Centro de Saude,moh,,,government,operational,Mo-Fr 08:00-15:00,,,"2",,,,,,powered_pump,solar,,,,,,,,134179726,4,2023/03/27 14:10:12+00,2e0046da22a645158d871c81219b5395
+-15.5793044142439,11.8588953544761,"4496409590",node,12.5,pharmacy,pharmacy,Farmácia Moderna,,,,,,,,,,,,,,,,,,,,,,,,107848272,2,2021/07/12 15:12:43+00,2e172d91a3994c1eafbf91c27f956140
+-15.5830512087816,11.8635605541444,"4487355693",node,12.5,pharmacy,pharmacy,Farmácia Simão Mendes,,,,,,,,,,,,,,,,,,,,,,,,157840116,3,2024/10/13 15:21:53+00,389392f98c8e4a6087f039f1573e257a
+-15.7173000447792,11.2726999990568,"6815647885",node,37.5,clinic,clinic,Canhabaque Centro de Saude,moh,,,government,operational,Mo-Fr 08:00-15:00,,,"2",,,,,no,powered_pump,solar,,,,,,,,134179726,4,2023/03/27 14:10:12+00,0ae85d60bee34356956d2f1892e040c6
+,,"767912425",way,18.75,clinic,clinic,Health Centre,Ministerio di Saude,,,government,,,,,,,,,,,,,,,,,,,,80269367,1,2020/01/29 16:46:15+00,85f09003e8604f839b984a69295ea90b
+-16.0576000330249,11.767799992596,"6815664985",node,31.25,clinic,clinic,Pecixe Centro de Saude,moh,,,government,operational,Mo-Fr 08:00-16:00,,,,,,,,,powered_pump,solar,,,,,,,,134179726,4,2023/03/27 14:10:12+00,431b4addf82b4cfba0ff7b4920358431
+-15.6005174186145,11.8583121416533,"5709585676",node,15.625,pharmacy,pharmacy,Farmácia Central,,,,,,,,,,,yes,,,,,,,,,,,,,60055809,1,2018/06/21 20:31:26+00,7c752632651f4cf08ebc6b886c493f0f
+-15.581211548673,11.8616565210195,"1945674156",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,107848272,2,2021/07/12 15:12:43+00,f615c2200e25412a9d4c4d5da6f8bcdd
+,,"545035359",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,126186198,2,2022/09/14 14:51:47+00,dd9297ee25a842f78744fedae643a056
+-15.5834048412764,11.8605608386367,"4487223992",node,12.5,pharmacy,pharmacy,Rama II,,,,,,,,,,,,,,,,,,,,,,,,107848272,2,2021/07/12 15:12:43+00,1e7c7a70eedd4a66b2fd9bcaa6811ba2
+-15.8502062675265,11.3564895264927,"7151933691",node,9.375,clinic,,Centro di Saude,,,,,,,,,,,,,,,,,,,,,,,,79931258,1,2020/01/22 17:32:47+00,74ebb5717a134fa2a1849f3cc613c21f
+-15.9137861044017,11.4614671640468,"6815647886",node,34.375,clinic,clinic,Formosa Centro de Saude,moh,,,government,operational,,,,"2",,,,,no,powered_pump,solar,,,,,,,,134179726,6,2023/03/27 14:10:12+00,05917d463fbe4e668a1e71e5a1d047d4
+,,"942281965",way,9.375,doctors,,Ambulatorio medico,,,,,,,,,,,,,,,,,,,,,,,,104584978,1,2021/05/12 16:12:09+00,7bd483938f0b4b4fb0f42bae36a37080
+,,"378441514",way,12.5,hospital,,Hospital 3 de Agosto,,,,,,,,,,,,,yes,,,,,,,,,,,134179726,2,2023/03/27 14:10:12+00,efee71d12fd249bdb3042699c5dd1682
+-15.7399856657183,11.7999845729446,"9108219424",node,28.125,hospital,hospital,Centro de Saúde de Prábis,Ministério da Saúde,,general,public,,,,,,,,,,,,,,,,,Bairro Novo,,Prabis,111456297,1,2021/09/20 16:02:42+00,ba16f2e9a27f45f298a98465c6a5e213
+-15.6416662767691,11.881725563245,"11355743273",node,9.375,pharmacy,,Farmacia Naçao,,,,,,,,,,,,,,,,,,,,,,,,144097782,1,2023/11/16 13:55:37+00,763af62d707149b9bbe6793e99056b87
+,,"424813641",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,134178049,2,2023/03/27 13:27:27+00,a6857c7b4fb9479188ce68f7a7bd0d47
+,,"1096301995",way,18.75,hospital,hospital,Uno Centro di Saude,Ministry of Health,,,public,,,,,,,,,,,,,,,,,,,,126422125,1,2022/09/20 12:50:54+00,aa8405d3f69444d79a95801cb0a844dd
+,,"591259427",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,59300879,1,2018/05/26 20:01:21+00,42fb0910de8f4f24a7db4e92810dc1d3
+,,"494018717",way,12.5,hospital,hospital,Canogo,,,,,,,,,,,,,,,,,,,,,,,,79295776,3,2020/01/07 13:32:31+00,5907fb46e5604b79bf21611cdd2e9993
+-15.5882067497855,11.8600658872543,"1945690848",node,12.5,pharmacy,pharmacy,Pharmacia Salvador,,,,,,,,,,,,,,,,,,,,,,,,107880887,2,2021/07/13 06:26:02+00,5bf5e99751f24b6abdb68b33234485f9
+,,"129946595",way,9.375,clinic,,Madrugada,,,,,,,,,,,,,,,,,,,,,,,,113635894,3,2021/11/11 05:58:35+00,c92708dc930747469f5b8bfa6d3c4ab4
+,,"732678671",way,18.75,hospital,hospital,Hospital do setor de Tite,,,general,,,,,,,,,,,,,,,,,,,,Tite,75422499,1,2019/10/08 16:15:24+00,d4d3dde230cc49cbbdc5515c20f2deb2
+,,"771685008",way,18.75,hospital,hospital,Hospital Marcelino Banca,Ministerio di Saude,,,government,,,,,,,,,,,,,,,,,,,,80861008,1,2020/02/11 16:38:44+00,1d3a4718f4e24675bcbcdd3188aebf6d
+-15.5958575833642,11.8455794439995,"6911857686",node,9.375,clinic,,Projeta de Saude Bandim,,,,,,,,,,,,,,,,,,,,,,,,76143511,1,2019/10/24 09:37:14+00,d395fbc3bbe04fe8a24d6ce67913bc11
+-15.6045014210119,11.8581070364826,"5709585652",node,15.625,pharmacy,pharmacy,Farmácia Salah-Din,,,,,,,,,,,yes,,,,,,,,,,,,,60055809,1,2018/06/21 20:31:25+00,49734276c8814799ada2002fdc086638
+,,"601314145",way,12.5,hospital,hospital,Hospital de Bafatá,,,,,,,,,,,,,,,,,,,,,,,,158831641,2,2024/11/06 20:06:04+00,0bcc2fbaad82455296af65f96bb29a4c
+,,"783958576",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,83369551,2,2020/04/10 14:24:39+00,43c999819a4b456bbc88d6ec5f697840
+-16.2547000670549,11.8569999547115,"6815662785",node,31.25,clinic,clinic,Jeta Centro de Saude,moh,,,government,operational,Mo-Fr 08:00-16:00,,,,,,,,,powered_pump,solar,,,,,,,,134179726,4,2023/03/27 14:10:12+00,e51b66ed9c13487c85f9f5ba7b8f7ac7
+,,"493090442",way,15.625,pharmacy,pharmacy,Farmácia Sadibò,,,,,,,,,,,yes,,,,,,,,,,,,,59304589,2,2018/05/27 01:54:52+00,56d965f1b7034cc480dc5f947253efff
+,,"130275531",way,12.5,hospital,,Hospital Militar,,,,,,,,,,,,,yes,,,,,,,,,,,134179726,4,2023/03/27 14:10:12+00,e0905bc30137497fabb78560f5523909
+-15.5974757097719,11.8584104613775,"5709585697",node,15.625,pharmacy,pharmacy,Farmácia Amílcar Cabral,,,,,,,,,,,yes,,,,,,,,,,,,,60055809,1,2018/06/21 20:31:26+00,7c6885ccd7a74c08bcfaf9c3278bf953
+-15.5956633746677,11.8583645285481,"2130831642",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,14808474,1,2013/01/27 14:38:05+00,7c38b797986c490ba8e12aeda7f7017d
+-16.1139983390801,11.3313832957361,"6815633185",node,37.5,clinic,clinic,Uracane Centro de Saude,MoH,,,government,operational,,,"0","2",,,,,no,powered_pump,solar,,,,,,,,134179726,4,2023/03/27 14:10:12+00,b1c422bb52ae4977b8b1dc0e710c0698
+,,"732678670",way,18.75,hospital,hospital,Hospital do setor de Tite,,,general,,,,,,,,,,,,,,,,,,,,Tite,75422499,1,2019/10/08 16:15:24+00,c363a36b4de44ecfa527ac84d3358325
+-15.5834275562341,11.8605315857946,"4494323991",node,12.5,pharmacy,pharmacy,Farmácia Rama Ii,,,,,,,,,,,,,,,,,,,,,,,,107848272,2,2021/07/12 15:12:43+00,a7c58268f4ed42468e38b93f2c7b93dc
+-16.3028000375112,11.4932999559192,"6815643886",node,37.5,clinic,clinic,Caravela Cento de Saude,moh,,,government,operational,Mo-Fr 08:00-15:00,,,"02",,,,,no,powered_pump,solar,,,,,,,,134179726,4,2023/03/27 14:10:12+00,d84f2597a4234bd185cb9716c6cdc96a
+,,"130631676",way,9.375,hospital,,Hospital Raoul Follereau,,,,,,,,,,,,,,,,,,,,,,,,134179726,3,2023/03/27 14:10:12+00,78192d951a2840b49cc271b303762681
+-16.0254450407945,12.0641983380469,"8293282865",node,15.625,hospital,hospital,Hospital Regional de Cacheu - Buota Na Fantchamna,,,,,,,,,,,,,no,,,,,,,,,,,96977668,1,2021/01/05 11:59:58+00,39d8e8aba9084194825b4008e41b3b16
+-14.6590992698155,12.1696679933173,"6036940765",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,145615624,2,2023/12/28 11:46:38+00,176e867aea104fcda0f6178abeb772fa
+-15.0398432819779,11.2378240734182,"6037152895",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,64171624,1,2018/11/04 16:54:16+00,e706cafb14d3491295c6561019083464
+,,"1089673284",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,125443028,1,2022/08/27 13:33:00+00,374569fcbce94531849c86cc9097d8a3
+-15.58226012476,11.862323469055,"1945674102",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,107848272,2,2021/07/12 15:12:43+00,5ce55fed1641486c8c6a73cf7b033f00
+-15.5880407042837,11.8548101825074,"4144862790",node,9.375,clinic,,Cieu e Terra,,,,,,,,,,,,,,,,,,,,,,,,54010300,2,2017/11/22 19:28:23+00,99ea906b08b64ab9a6c9c9bcbc3fc6e7
+,,"750443845",way,9.375,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,,,,84242171,5,2020/04/28 06:52:44+00,762d67f9f16542dcaca0b30c32c966c5
+,,"732678669",way,18.75,hospital,hospital,Hospital do setor de Tite,,,general,,,,,,,,,,,,,,,,,,,,Tite,75422499,1,2019/10/08 16:15:24+00,8b15530d304f41bc98bde7b51e7a11b5
+-14.2196048219293,12.2791391691627,"6037567865",node,12.5,pharmacy,pharmacy,Ideal,,,,,,,,,,,,,,,,,,,,,,,,144429441,3,2023/11/25 05:19:39+00,e106bc14e10f4db593e6d23f21145462
+,,"1094526269",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,126186198,1,2022/09/14 14:51:47+00,b30b3ec516574714b69a948a9cff3c4c
+-15.5880133792793,11.8579491214269,"4494349890",node,12.5,pharmacy,pharmacy,Farmácia Moçambique,,,,,,,,,,,,,,,,,,,,,,,,107880729,2,2021/07/13 06:24:02+00,c81a3632305345e6af067c5d1a18596c
+-15.5935363829184,11.858879345041,"1945690843",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,107880887,2,2021/07/13 06:26:02+00,e217038e04314ed5a526b7e504796266
+,,"640933481",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,64171624,1,2018/11/04 16:54:16+00,5980877c204744ec98292e8adb522a19
+,,"493090492",way,18.75,clinic,clinic,Centro de Saude,Ministerio de Saude,,,government,,,,,,,,,,,,,,,,,,,,109955136,2,2021/08/19 21:31:02+00,b64f25d9f53e41df96784f724d91e61a
+-15.8374625057605,11.3042568586766,"6815657485",node,31.25,clinic,hospital,Hospital Marcelino Banca,Ministerio di Saude,,,government,,24/7,,,,emergency_department,,,,,powered_pump,solar,,,,,,,,134179726,5,2023/03/27 14:10:12+00,daf2e953f06e467ca4c93009d1aec89b
+-16.0263648708488,12.0637545162739,"8293282867",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,no,,,,,,,,,,,,,96977668,1,2021/01/05 11:59:58+00,e59f8689686e40d6bcf95491a2075212
+,,"591259419",way,12.5,hospital,hospital,Hospital Militar e Civil,,,,,,,,,,,,,,,,,,,,,,,,59380944,3,2018/05/29 22:09:12+00,8aeae364cb57426181888835ad1d2cd0
+-16.4478000054334,11.2935999393438,"6815643885",node,37.5,clinic,clinic,Unhocomo Centro de Saude,moh,,,government,operational,Mo-Fr 09:00-16:00,,,"2",,,,,no,powered_pump,solar,,,,,,,,134179726,4,2023/03/27 14:10:12+00,f63538c61319442399e103a8c3e9618e
+-15.5828690700256,11.8584959567899,"1945674078",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,107848272,2,2021/07/12 15:12:43+00,719d3fa91fd6457a8c6952a5ece3ec0e
+-15.5884228352493,11.8599134204356,"4487353795",node,12.5,pharmacy,pharmacy,Farmácia Salvador,,,,,,,,,,,,,,,,,,,,,,,,107880965,2,2021/07/13 06:26:58+00,3b2f7e02a40a4c2d8d6f51f6e9406885
+,,"493102536",way,18.75,clinic,clinic,Uno Health Centre,Ministerio de Saude,,,government,,,,,,,,,,,,,,,,,,,,85093948,2,2020/05/12 15:13:37+00,06b50653969e4a00be8197655b54c674
+-16.0269607403454,11.1586977339938,"6815616985",node,43.75,clinic,clinic,Canogo Centro de Saude,Ministerio di Saude,,,government,operational,,,"0","2",,,yes,no,no,powered_pump,solar,,,,,,,,134179726,7,2023/03/27 14:10:12+00,3d38ecbbf0914b80aaecce8900b4bdd5

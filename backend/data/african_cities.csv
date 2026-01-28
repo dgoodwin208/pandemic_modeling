@@ -1,0 +1,443 @@
+city,country,country_code,latitude,longitude,population,medical_services_score
+Cairo,Egypt,EG,30.0519,31.248,11893000,55
+Lagos,Nigeria,NG,6.4452,3.3896,9466000,37
+Kinshasa,Congo (Kinshasa),CD,-4.3278,15.313,7843000,28
+Luanda,Angola,AO,-8.8363,13.2325,5172900,32
+Khartoum,Sudan,SD,15.59,32.5322,4754000,35
+Alexandria,Egypt,EG,31.202,29.948,4165000,55
+Abidjan,Ivory Coast,CI,5.3219,-4.042,3802000,36
+Johannesburg,South Africa,ZA,-26.1681,28.0281,3435000,52
+Algiers,Algeria,DZ,36.765,3.0486,3354000,62
+Cape Town,South Africa,ZA,-33.9181,18.433,3215000,52
+Casablanca,Morocco,MA,33.6019,-7.6183,3181000,53
+Kano,Nigeria,NG,12.0019,8.5181,3140000,37
+Addis Ababa,Ethiopia,ET,9.0353,38.6981,3100000,34
+Nairobi,Kenya,KE,-1.2814,36.8147,3010000,42
+Benoni,South Africa,ZA,-26.1476,28.328,2986000,52
+Dar es Salaam,Tanzania,TZ,-6.7981,39.2664,2930000,36
+Durban,South Africa,ZA,-29.8631,30.9781,2729000,52
+Giza,Egypt,EG,30.01,31.19,2681863,55
+Ibadan,Nigeria,NG,7.382,3.928,2628000,37
+Dakar,Senegal,SN,14.7178,-17.4751,2604000,38
+Tunis,Tunisia,TN,36.8028,10.1797,2412500,65
+Omdurman,Sudan,SD,15.6167,32.48,2395159,35
+Tripoli,Libya,LY,32.8925,13.18,2189000,58
+Accra,Ghana,GH,5.552,-0.2187,2121000,45
+Douala,Cameroon,CM,4.0624,9.708,1906000,38
+Rabat,Morocco,MA,34.0253,-6.8364,1705000,53
+Antananarivo,Madagascar,MG,-18.9147,47.5147,1697000,32
+Kumasi,Ghana,GH,6.6919,-1.632,1646000,45
+Yaoundé,Cameroon,CM,3.8686,11.5147,1611000,38
+Abuja,Nigeria,NG,9.0853,7.5314,1576000,37
+Harare,Zimbabwe,ZW,-17.8158,31.0428,1572000,40
+Bamako,Mali,ML,12.652,-8.002,1494000,28
+Conakry,Guinea,GN,9.5335,-13.6822,1494000,30
+Lomé,Togo,TG,6.1339,1.2208,1452000,36
+Maputo,Mozambique,MZ,-25.9533,32.5872,1446000,32
+Kaduna,Nigeria,NG,10.522,7.4381,1442000,37
+Kampala,Uganda,UG,0.3186,32.5814,1420000,38
+Brazzaville,Congo (Brazzaville),CG,-4.2572,15.2827,1355000,36
+Lubumbashi,Congo (Kinshasa),CD,-11.6781,27.4781,1352000,28
+Pretoria,South Africa,ZA,-25.705,28.2275,1338000,52
+Lusaka,Zambia,ZM,-15.4147,28.2814,1328000,38
+Mbuji-Mayi,Congo (Kinshasa),CD,-6.1481,23.5981,1295000,28
+Benin City,Nigeria,NG,6.3424,5.6181,1190000,37
+Banghazi,Libya,LY,32.1187,20.0648,1180000,58
+Ouagadougou,Burkina Faso,BF,12.3723,-1.5267,1149000,32
+Mogadishu,Somalia,SO,2.0686,45.3647,1100000,19
+Huambo,Angola,AO,-12.748,15.7581,1100000,32
+Ikare,Nigeria,NG,7.5304,5.76,1099931,37
+Vereeniging,South Africa,ZA,-26.6477,27.958,1074000,52
+Monrovia,Liberia,LR,6.3146,-10.7997,1041000,32
+Port Elizabeth,South Africa,ZA,-33.9681,25.5981,1021000,52
+Port Harcourt,Nigeria,NG,4.8119,7.0081,1020000,37
+Fez,Morocco,MA,34.0565,-5.0023,1002000,53
+N'Djamena,Chad,TD,12.115,15.0472,989000,24
+Ogbomosho,Nigeria,NG,8.132,4.238,951000,37
+Djibouti,Djibouti,DJ,11.595,43.148,923000,35
+Niamey,Niger,NE,13.5187,2.1147,915000,26
+Aba,Nigeria,NG,5.1004,7.35,897560,37
+Maiduguri,Nigeria,NG,11.8519,13.1581,896000,37
+Zaria,Nigeria,NG,11.0819,7.7081,889000,37
+Mombasa,Kenya,KE,-4.0381,39.688,882000,42
+Marrakesh,Morocco,MA,31.6319,-8.0019,872000,53
+Kigali,Rwanda,RW,-1.9516,30.0586,860000,44
+Bangui,Central African Republic,CF,4.3666,18.5583,831925,22
+Warri,Nigeria,NG,5.52,5.76,830106,37
+Freetown,Sierra Leone,SL,8.472,-13.2362,827000,30
+Agadir,Morocco,MA,30.44,-9.62,825467,53
+Jos,Nigeria,NG,9.93,8.89,816824,37
+Oran,Algeria,DZ,35.7119,-0.6219,798000,62
+Ilorin,Nigeria,NG,8.492,4.548,771000,37
+Kananga,Congo (Kinshasa),CD,-5.8881,22.3981,765000,28
+Cotonou,Benin,BJ,6.402,2.518,762000,38
+Pietermaritzburg,South Africa,ZA,-29.61,30.39,750845,52
+Tangier,Morocco,MA,35.7473,-5.8327,750060,53
+Nouakchott,Mauritania,MR,18.0864,-15.9753,742144,34
+Oyo,Nigeria,NG,7.8504,3.93,736072,37
+Sokoto,Nigeria,NG,13.06,5.24,732178,37
+Moshi,Tanzania,TZ,-3.3396,37.34,721018,36
+Bulawayo,Zimbabwe,ZW,-20.17,28.58,699385,40
+Meknes,Morocco,MA,33.9004,-5.56,697628,53
+Enugu,Nigeria,NG,6.45,7.5,688862,37
+Pointe-Noire,Congo (Brazzaville),CG,-4.77,11.88,659084,36
+Ismaïlia,Egypt,EG,30.5903,32.26,656135,55
+Lilongwe,Malawi,MW,-13.9833,33.7833,646750,35
+Kikwit,Congo (Kinshasa),CD,-5.03,18.85,637736,28
+Bur Said,Egypt,EG,31.26,32.29,623864,55
+Asmara,Eritrea,ER,15.3333,38.9333,620802,28
+Luxor,Egypt,EG,25.7,32.65,609248,55
+Constantine,Algeria,DZ,36.36,6.5999,605179,62
+Sohag,Egypt,EG,26.5504,31.7,600000,55
+El Mansura,Egypt,EG,31.0504,31.38,600000,55
+Port Louis,Mauritius,MU,-20.1666,57.5,595491,68
+Abeokuta,Nigeria,NG,7.1604,3.35,593100,37
+Blantyre,Malawi,MW,-15.79,34.9899,584877,35
+Kisangani,Congo (Kinshasa),CD,0.52,25.22,578470,28
+Libreville,Gabon,GA,0.3854,9.458,578156,48
+Bouaké,Ivory Coast,CI,7.69,-5.03,567481,36
+Uyo,Nigeria,NG,5.008,7.85,554906,37
+Kenitra,Morocco,MA,34.2704,-6.58,551786,53
+Matola,Mozambique,MZ,-25.9696,32.46,543907,32
+Beira,Mozambique,MZ,-19.82,34.87,530604,32
+Blida,Algeria,DZ,36.4203,2.83,511348,62
+Suez,Egypt,EG,30.005,32.5499,508335,55
+Annaba,Algeria,DZ,36.92,7.76,503524,62
+Damanhûr,Egypt,EG,31.0504,30.47,500000,55
+Awka,Nigeria,NG,6.2104,7.07,500000,37
+El Minya,Egypt,EG,28.09,30.75,500000,55
+Mwanza,Tanzania,TZ,-2.52,32.93,493944,36
+Port Sudan,Sudan,SD,19.6158,37.2164,489725,35
+Beni Suef,Egypt,EG,29.0804,31.09,489450,55
+Ife,Nigeria,NG,7.4804,4.56,482365,37
+Nazret,Ethiopia,ET,8.55,39.27,476892,34
+Bloemfontein,South Africa,ZA,-29.12,26.2299,463064,52
+Calabar,Nigeria,NG,4.9604,8.33,461796,37
+Sfax,Tunisia,TN,34.75,10.72,453050,65
+Chlef,Algeria,DZ,36.1704,1.32,449167,62
+Ado Ekiti,Nigeria,NG,7.6304,5.22,446749,37
+Bamenda,Cameroon,CM,5.96,10.15,445299,38
+Garoua,Cameroon,CM,9.3,13.39,436899,38
+Bukavu,Congo (Kinshasa),CD,-2.51,28.84,436779,28
+Likasi,Congo (Kinshasa),CD,-10.97,26.78,434408,28
+Katsina,Nigeria,NG,12.9904,7.6,432149,37
+Welkom,South Africa,ZA,-27.97,26.73,431944,52
+Arak,Algeria,DZ,25.28,3.75,423251,62
+Akure,Nigeria,NG,7.2504,5.2,420594,37
+Asyut,Egypt,EG,27.19,31.1799,420585,55
+Kolwezi,Congo (Kinshasa),CD,-10.7167,25.4724,418000,28
+Oujda,Morocco,MA,34.69,-1.91,409391,53
+Oshogbo,Nigeria,NG,7.7704,4.56,408245,37
+Kitwe,Zambia,ZM,-12.81,28.22,404901,38
+Tanta,Egypt,EG,30.7904,31.0,404901,55
+Zanzibar,Tanzania,TZ,-6.16,39.2,403658,36
+Bissau,Guinea Bissau,GW,11.865,-15.5984,403339,28
+Mbale,Uganda,UG,1.0904,34.17,402368,38
+Kassala,Sudan,SD,15.46,36.39,401477,35
+Ndola,Zambia,ZM,-12.9999,28.65,396339,38
+Kisumu,Kenya,KE,-0.09,34.75,395615,42
+Al-Ubayyid,Sudan,SD,13.1833,30.2167,393311,35
+Nyala,Sudan,SD,12.06,24.89,392373,35
+Nampula,Mozambique,MZ,-15.136,39.293,388526,32
+Misrata,Libya,LY,32.38,15.1,386120,58
+Béjaïa,Algeria,DZ,36.7604,5.07,384937,62
+Nakuru,Kenya,KE,-0.28,36.07,364727,42
+Maseru,Lesotho,LS,-29.3167,27.4833,361324,38
+Tamale,Ghana,GH,9.4004,-0.84,360579,45
+Bobo Dioulasso,Burkina Faso,BF,11.18,-4.29,360106,32
+Safi,Morocco,MA,32.32,-9.24,353476,53
+Eldoret,Kenya,KE,0.52,35.27,353381,42
+Mbombela,South Africa,ZA,-25.4696,30.98,348138,52
+Kosti,Sudan,SD,13.17,32.66,345068,35
+Arusha,Tanzania,TZ,-3.36,36.67,341136,36
+Chitungwiza,Zimbabwe,ZW,-18.0,31.1,340360,40
+East London,South Africa,ZA,-32.97,27.87,338627,52
+Beni,Congo (Kinshasa),CD,0.4904,29.45,332903,28
+Medani,Sudan,SD,14.4,33.52,332714,35
+Bujumbura,Burundi,BI,-3.3761,29.36,331700,30
+Sousse,Tunisia,TN,35.83,10.625,327004,65
+Maroua,Cameroon,CM,10.5956,14.3247,319941,38
+El Faiyum,Egypt,EG,29.31,30.84,316772,55
+Bauchi,Nigeria,NG,10.3104,9.84,316149,37
+Aswan,Egypt,EG,24.0875,32.8989,313442,55
+Sapele,Nigeria,NG,5.8904,5.68,309162,37
+Antsirabe,Madagascar,MG,-19.85,47.0333,307921,32
+Ksar El Kebir,Morocco,MA,35.0204,-5.91,306600,53
+Kom Ombo,Egypt,EG,24.47,32.95,303962,55
+Qena,Egypt,EG,26.1505,32.72,302027,55
+Jinja,Uganda,UG,0.4404,33.1999,301619,38
+Porto-Novo,Benin,BJ,6.4833,2.6166,300000,38
+Curepipe,Mauritius,MU,-20.3162,57.5166,299975,68
+Dumyat,Egypt,EG,31.4204,31.82,299459,55
+Thiès,Senegal,SN,14.8104,-16.93,293001,38
+Makurdi,Nigeria,NG,7.73,8.53,292645,37
+Minna,Nigeria,NG,9.62,6.55,291905,37
+Mbeya,Tanzania,TZ,-8.89,33.43,291649,36
+Bafoussam,Cameroon,CM,5.4904,10.4099,290768,38
+Butembo,Congo (Kinshasa),CD,0.13,29.28,286403,28
+Sekondi,Ghana,GH,4.9433,-1.704,286248,45
+Zagazig,Egypt,EG,30.5833,31.5167,285097,55
+Batna,Algeria,DZ,35.57,6.17,280798,62
+Kaolack,Senegal,SN,14.15,-16.1,277812,38
+Owo,Nigeria,NG,7.2004,5.59,276574,37
+Mbandaka,Congo (Kinshasa),CD,0.04,18.26,274996,28
+Sétif,Algeria,DZ,36.18,5.4,274744,62
+Gombe,Nigeria,NG,10.2904,11.17,270366,37
+Thohoyandou,South Africa,ZA,-22.95,30.48,269707,52
+Windhoek,Namibia,NA,-22.57,17.0835,268132,45
+Tshikapa,Congo (Kinshasa),CD,-6.41,20.77,267462,28
+Umuahia,Nigeria,NG,5.532,7.486,264662,37
+Tubruq,Libya,LY,32.08,23.96,263527,58
+Kindu,Congo (Kinshasa),CD,-2.9639,25.91,262914,28
+Mendefera,Eritrea,ER,14.886,38.8163,257390,28
+Ondo,Nigeria,NG,7.0904,4.84,257005,37
+Chimoio,Mozambique,MZ,-19.12,33.47,256936,32
+Damaturu,Nigeria,NG,11.749,11.966,255895,37
+Daloa,Ivory Coast,CI,6.89,-6.45,255168,36
+El Fasher,Sudan,SD,13.63,25.35,252609,35
+Dire Dawa,Ethiopia,ET,9.59,41.86,252279,34
+Morogoro,Tanzania,TZ,-6.82,37.66,250902,36
+Iwo,Nigeria,NG,7.63,4.18,250443,37
+Arua,Uganda,UG,3.0204,30.9,250000,38
+Mutare,Zimbabwe,ZW,-18.97,32.65,249365,40
+Matadi,Congo (Kinshasa),CD,-5.8166,13.45,245862,28
+Springs,South Africa,ZA,-26.2696,28.43,236083,52
+Kismaayo,Somalia,SO,-0.3566,42.5183,234852,19
+Niamey,Niger,NE,13.4916,7.0964,232555,26
+Ngaoundéré,Cameroon,CM,7.3204,13.58,231357,38
+Zinder,Niger,NE,13.8,8.9833,230358,26
+Tlimcen,Algeria,DZ,34.8904,-1.32,229777,62
+Uitenhage,South Africa,ZA,-33.7596,25.39,228912,52
+Er Rachidia,Morocco,MA,31.9404,-4.45,228489,53
+Gusau,Nigeria,NG,12.1704,6.66,226857,37
+Sikasso,Mali,ML,11.3204,-5.68,225753,28
+Mubi,Nigeria,NG,10.2703,13.27,225705,37
+Nyanza,Rwanda,RW,-2.3496,29.74,225209,44
+Skikda,Algeria,DZ,36.8804,6.9,225181,62
+Tanga,Tanzania,TZ,-5.07,39.09,224876,36
+Nacala,Mozambique,MZ,-14.5186,40.715,224795,32
+Gueckedou,Guinea,GN,8.554,-10.151,221715,30
+Saint-Louis,Mauritania,MR,16.02,-16.51,220792,34
+Polokwane,South Africa,ZA,-23.89,29.45,220045,52
+Gabès,Tunisia,TN,33.9004,10.1,219517,65
+Dodoma,Tanzania,TZ,-6.1833,35.75,218269,36
+Bertoua,Cameroon,CM,4.5804,13.68,218111,38
+Mallawi,Egypt,EG,27.7304,30.84,217365,55
+Owerri,Nigeria,NG,5.493,7.026,215038,37
+Limbe,Cameroon,CM,4.0304,9.19,212474,38
+San-Pedro,Ivory Coast,CI,4.7704,-6.64,210273,36
+Toamasina,Madagascar,MG,-18.1818,49.405,210226,32
+Ijebu Ode,Nigeria,NG,6.8204,3.92,209175,37
+Tema,Ghana,GH,5.6404,0.01,209000,45
+Sidi bel Abbes,Algeria,DZ,35.1903,-0.64,208604,62
+Gaborone,Botswana,BW,-24.6463,25.9119,208411,48
+Lobito,Angola,AO,-12.37,13.5412,207932,32
+Bahir Dar,Ethiopia,ET,11.6001,37.3833,206748,34
+Yamoussoukro,Ivory Coast,CI,6.8184,-5.2755,206499,36
+Kalemie,Congo (Kinshasa),CD,-5.9333,29.2,206257,28
+Edéa,Cameroon,CM,3.8005,10.12,203149,38
+Djougou,Benin,BJ,9.7004,1.68,202810,38
+Biskra,Algeria,DZ,34.86,5.73,202103,62
+Al Khums,Libya,LY,32.6604,14.26,201943,58
+Gedaref,Sudan,SD,14.04,35.38,201282,35
+Kasama,Zambia,ZM,-10.1996,31.1799,200000,38
+Nema,Mauritania,MR,16.6171,-7.25,200000,34
+Az Zawiyah,Libya,LY,32.7604,12.72,200000,58
+Taza,Morocco,MA,34.2204,-4.02,199633,53
+Rashid,Egypt,EG,31.4604,30.39,199509,55
+Gemena,Congo (Kinshasa),CD,3.26,19.77,198056,28
+Mbanza-Ngungu,Congo (Kinshasa),CD,-5.2496,14.86,197545,28
+Brikama,The Gambia,GM,13.2804,-16.6599,195136,38
+Bongor,Chad,TD,10.2859,15.3872,193941,24
+Ziguinchor,Senegal,SN,12.59,-16.29,191716,38
+Mwene-Ditu,Congo (Kinshasa),CD,-7.0,23.44,189177,28
+Kabwe,Zambia,ZM,-14.44,28.45,188979,38
+Quelimane,Mozambique,MZ,-17.88,36.89,188964,32
+Parakou,Benin,BJ,9.34,2.62,188853,38
+Mostaganem,Algeria,DZ,35.9404,0.09,188354,62
+Laayoune,Morocco,MA,27.15,-13.2,188084,53
+Paarl,South Africa,ZA,-33.6996,18.96,187865,52
+Shendi,Sudan,SD,16.6805,33.42,186611,35
+Ad Damazīn,Sudan,SD,11.7704,34.35,186051,35
+Jamaame,Somalia,SO,0.0722,42.7506,185270,19
+Yei,South Sudan,SS,4.0904,30.68,185000,18
+Tiarat,Algeria,DZ,35.3804,1.32,184195,62
+Fianarantsoa,Madagascar,MG,-21.4333,47.0833,184184,32
+Dese,Ethiopia,ET,11.13,39.63,183802,34
+Gweru,Zimbabwe,ZW,-19.45,29.82,183358,40
+Shibin el Kom,Egypt,EG,30.592,30.9,182900,55
+Chingola,Zambia,ZM,-12.5396,27.85,182015,38
+Funtua,Nigeria,NG,11.5204,7.32,180475,37
+El Jadida,Morocco,MA,33.2604,-8.51,180470,53
+Zuwara,Libya,LY,32.9344,12.0791,180310,58
+Obuasi,Ghana,GH,6.1904,-1.66,180117,45
+Klerksdorp,South Africa,ZA,-26.88,26.62,178921,52
+El Arish,Egypt,EG,31.1249,33.8006,178651,55
+Boma,Congo (Kinshasa),CD,-5.83,13.05,178638,28
+Korhogo,Ivory Coast,CI,9.46,-5.64,177711,36
+El Oued,Algeria,DZ,33.3704,6.86,177497,62
+Kadugli,Sudan,SD,11.01,29.7,176931,35
+Ouargla,Algeria,DZ,31.97,5.34,176271,62
+Entebbe,Uganda,UG,0.0604,32.46,175128,38
+Harar,Ethiopia,ET,9.32,42.15,174994,34
+George,South Africa,ZA,-33.95,22.45,174582,52
+Bo,Sierra Leone,SL,7.97,-11.74,174354,30
+Bida,Nigeria,NG,9.0804,6.01,173849,37
+Bata,Equatorial Guinea,GQ,1.87,9.77,173046,45
+Tébessa,Algeria,DZ,35.4104,8.12,171742,62
+Djelfa,Algeria,DZ,34.68,3.25,170901,62
+Uvira,Congo (Kinshasa),CD,-3.37,29.14,170391,28
+Al Marj,Libya,LY,32.5005,20.83,169540,58
+Sarh,Chad,TD,9.15,18.39,169196,24
+Atbarah,Sudan,SD,17.71,33.98,168612,35
+Nzérékoré,Guinea,GN,7.76,-8.83,168121,30
+Benha,Egypt,EG,30.4667,31.1833,167029,55
+Rustenburg,South Africa,ZA,-25.65,27.24,165976,52
+Livingstone,Zambia,ZM,-17.86,25.86,165480,38
+Kimberley,South Africa,ZA,-28.7468,24.77,165264,52
+Kigoma,Tanzania,TZ,-4.8796,29.61,164268,36
+Geneina,Sudan,SD,13.45,22.44,162981,35
+Settat,Morocco,MA,33.0104,-7.62,161748,53
+Bhisho,South Africa,ZA,-32.87,27.39,160997,52
+Malakal,South Sudan,SS,9.5369,31.656,160765,18
+Bumba,Congo (Kinshasa),CD,2.19,22.46,160539,28
+Zarzis,Tunisia,TN,33.5104,11.1,159161,65
+Abéché,Chad,TD,13.84,20.83,158317,24
+Hurghada,Egypt,EG,27.23,33.83,157204,55
+Isiro,Congo (Kinshasa),CD,2.76,27.62,157196,28
+Moundou,Chad,TD,8.55,16.09,156705,24
+Koforidua,Ghana,GH,6.0904,-0.26,156653,45
+Gondar,Ethiopia,ET,12.61,37.46,156230,34
+Malabo,Equatorial Guinea,GQ,3.75,8.7833,155963,45
+Middelburg,South Africa,ZA,-25.7596,29.47,154706,52
+Mahajanga,Madagascar,MG,-15.67,46.345,154657,32
+Gandajika,Congo (Kinshasa),CD,-6.7396,23.96,154425,28
+Moanda,Congo (Kinshasa),CD,-5.9229,12.355,153915,28
+Mufulira,Zambia,ZM,-12.55,28.26,153624,38
+Samalut,Egypt,EG,28.3004,30.71,152097,55
+Luanshya,Zambia,ZM,-13.1333,28.4,151993,38
+El Manaqil,Sudan,SD,14.2504,32.98,151827,35
+Benguela,Angola,AO,-12.5783,13.4072,151226,32
+Kitale,Kenya,KE,1.0305,34.9899,150495,42
+Vryheid,South Africa,ZA,-27.76,30.79,150012,52
+Keren,Eritrea,ER,15.6804,38.45,150000,28
+M'sila,Algeria,DZ,35.7,4.545,150000,62
+Tororo,Uganda,UG,0.7104,34.17,150000,38
+Diourbel,Senegal,SN,14.6604,-16.24,148024,38
+Jijel,Algeria,DZ,36.822,5.766,148000,62
+Médéa,Algeria,DZ,36.2704,2.77,147707,62
+Man,Ivory Coast,CI,7.4004,-7.55,146974,36
+Wamba,Congo (Kinshasa),CD,2.1404,27.99,146871,28
+Gulu,Uganda,UG,2.78,32.28,146858,38
+Gharyan,Libya,LY,32.1704,13.02,146810,58
+Tabora,Tanzania,TZ,-5.02,32.8,146495,36
+Machakos,Kenya,KE,-1.5095,37.26,144925,42
+Qairouan,Tunisia,TN,35.6804,10.1,144522,65
+Kumba,Cameroon,CM,4.6404,9.44,144413,38
+Goma,Congo (Kinshasa),CD,-1.6788,29.2218,144124,28
+Tizi-Ouzou,Algeria,DZ,36.7117,4.0461,144000,62
+Kafr el Sheikh,Egypt,EG,31.109,30.936,143970,55
+Ajdabiya,Libya,LY,30.77,20.22,143833,58
+Béchar,Algeria,DZ,31.6111,-2.23,143382,62
+Kenema,Sierra Leone,SL,7.8804,-11.19,143137,30
+Cape Coast,Ghana,GH,5.1104,-1.25,143015,45
+Massawa,Eritrea,ER,15.6101,39.45,142564,28
+Saïda,Algeria,DZ,34.8404,0.14,142213,62
+Labé,Guinea,GN,11.32,-12.3,140575,30
+Bordj Bou Arréridj,Algeria,DZ,36.0777,4.7647,140000,62
+Bizerte,Tunisia,TN,37.2904,9.855,139843,65
+Umtata,South Africa,ZA,-31.58,28.79,137772,52
+Lira,Uganda,UG,2.2604,32.89,135445,38
+Souk Ahras,Algeria,DZ,36.2904,7.95,134947,62
+Touggourt,Algeria,DZ,33.1,6.06,133954,62
+Musoma,Tanzania,TZ,-1.4896,33.8,133156,36
+Awasa,Ethiopia,ET,7.06,38.477,133097,34
+Moçâmedes,Angola,AO,-15.19,12.16,132900,32
+Sennar,Sudan,SD,13.55,33.6,130122,35
+Baydhabo,Somalia,SO,3.12,43.65,129839,19
+Tete,Mozambique,MZ,-16.17,33.58,129316,32
+Xai-Xai,Mozambique,MZ,-25.04,33.64,128805,32
+Kamina,Congo (Kinshasa),CD,-8.73,25.01,128803,28
+Moroni,Comoros,KM,-11.7042,43.2402,128698,35
+Jima,Ethiopia,ET,7.68,36.83,128306,34
+Girga,Egypt,EG,26.3304,31.88,128250,55
+Surt,Libya,LY,31.21,16.59,128123,58
+Darnah,Libya,LY,32.7648,22.6391,127974,58
+Divo,Ivory Coast,CI,5.839,-5.36,127867,36
+Worcester,South Africa,ZA,-33.64,19.4399,127597,52
+Tukuyu,Tanzania,TZ,-9.2496,33.64,127570,36
+Wau,South Sudan,SS,7.7,27.99,127384,18
+Lafia,Nigeria,NG,8.4904,8.52,127236,37
+Gafsa,Tunisia,TN,34.4204,8.78,126803,65
+Songea,Tanzania,TZ,-10.68,35.65,126449,36
+Malanje,Angola,AO,-9.54,16.34,125856,32
+Gashua,Nigeria,NG,12.8705,11.04,125817,37
+Lubango,Angola,AO,-14.91,13.49,125632,32
+Kumbo,Cameroon,CM,6.2204,10.68,125486,38
+Ghardaia,Algeria,DZ,32.49,3.67,125480,62
+Potchefstroom,South Africa,ZA,-26.6996,27.1,123669,52
+Guelma,Algeria,DZ,36.466,7.428,123590,62
+Gagnoa,Ivory Coast,CI,6.1504,-5.88,123184,36
+Ségou,Mali,ML,13.44,-6.26,122952,28
+Brits,South Africa,ZA,-25.6296,27.78,122497,52
+Larache,Morocco,MA,35.2004,-6.16,120082,53
+Maxixe,Mozambique,MZ,-23.866,35.3886,119868,32
+Bandundu,Congo (Kinshasa),CD,-3.31,17.38,118211,28
+Bama,Nigeria,NG,11.5204,13.69,118121,37
+Sokodé,Togo,TG,8.9905,1.15,117811,36
+Agadez,Niger,NE,16.9959,7.9828,117770,26
+Jalingo,Nigeria,NG,8.9004,11.36,117757,37
+Nkongsamba,Cameroon,CM,4.9604,9.94,117063,38
+Kindia,Guinea,GN,10.06,-12.87,117062,30
+Gao,Mali,ML,16.2666,-0.05,116967,28
+Port-Gentil,Gabon,GA,-0.72,8.78,116836,48
+Boké,Guinea,GN,10.94,-14.3,116270,30
+Tahoua,Niger,NE,14.9,5.2599,115956,26
+Inhambane,Mozambique,MZ,-23.858,35.3398,115776,32
+Toliara,Madagascar,MG,-23.3568,43.69,115319,32
+Goulimine,Morocco,MA,28.98,-10.07,115267,53
+Nabeul,Tunisia,TN,36.4603,10.73,115149,65
+Giyon,Ethiopia,ET,8.5304,37.97,114534,34
+Shashemene,Ethiopia,ET,7.2004,38.59,114350,34
+Kuito,Angola,AO,-12.38,16.94,114286,32
+Kankan,Guinea,GN,10.39,-9.31,114009,30
+Laghouat,Algeria,DZ,33.81,2.88,113872,62
+Praia,Cape Verde,CV,14.9167,-23.5167,113364,58
+Kipushi,Congo (Kinshasa),CD,-11.7596,27.25,113347,28
+Juba,South Sudan,SS,4.83,31.58,111975,18
+Iringa,Tanzania,TZ,-7.7696,35.69,111820,36
+Jawhar,Somalia,SO,2.767,45.5166,111308,19
+Nsukka,Nigeria,NG,6.867,7.3834,111017,37
+Nguru,Nigeria,NG,12.8804,10.45,111014,37
+Pemba,Mozambique,MZ,-12.983,40.5323,110643,32
+Manzini,eSwatini,SZ,-26.495,31.388,110537,36
+Mzuzu,Malawi,MW,-11.46,34.02,110201,35
+Bouïra,Algeria,DZ,36.3805,3.9,110144,62
+Lichinga,Mozambique,MZ,-13.3,35.24,109839,32
+Kandi,Benin,BJ,11.1304,2.94,109701,38
+Soubré,Ivory Coast,CI,5.7904,-6.61,108933,36
+Mopti,Mali,ML,14.49,-4.18,108456,28
+Mascara,Algeria,DZ,35.4004,0.14,108230,62
+Birnin Kebbi,Nigeria,NG,12.4504,4.1999,108164,37
+En Nuhud,Sudan,SD,12.6904,28.42,108008,35
+Shinyanga,Tanzania,TZ,-3.6596,33.42,107362,36
+Ilebo,Congo (Kinshasa),CD,-4.3196,20.61,107093,28
+Azare,Nigeria,NG,11.6804,10.19,105687,37
+Assab,Eritrea,ER,13.01,42.73,105496,28
+Queenstown,South Africa,ZA,-31.8996,26.88,105309,52
+Kongolo,Congo (Kinshasa),CD,-5.3795,26.98,105202,28
+Koutiala,Mali,ML,12.3904,-5.47,104927,28
+Mmabatho,South Africa,ZA,-25.83,25.61,104428,52
+Adigrat,Ethiopia,ET,14.2804,39.47,104021,34
+Abengourou,Ivory Coast,CI,6.7304,-3.49,104020,36
+Kroonstad,South Africa,ZA,-27.66,27.21,103992,52
+Ad-Damir,Sudan,SD,17.59,33.96,103941,35
+Loubomo,Congo (Brazzaville),CG,-4.1796,12.67,103894,36
+Matruh,Egypt,EG,31.3504,27.23,103470,55
+Bethal,South Africa,ZA,-26.4696,29.45,101919,52
+Oum el Bouaghi,Algeria,DZ,35.85,7.15,100821,62
+Bukoba,Tanzania,TZ,-1.3196,31.8,100504,36
+Kpalimé,Togo,TG,6.9004,0.63,100479,36
+Sabha,Libya,LY,27.0333,14.4333,100249,58
+Isna,Egypt,EG,25.2904,32.5499,100000,55
+Arlit,Niger,NE,18.82,7.33,100000,26

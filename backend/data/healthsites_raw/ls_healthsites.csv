@@ -1,0 +1,182 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+,,"314630042",way,18.75,hospital,hospital,Makoanyane Military Hospital,,,,,,,,,,,,,,,,,,,,,Army Road,,Maseru,167028200,4,2025/05/31 20:42:51+00,59ddca88440546baa54d6d4413014632
+27.2586142666977,-29.5793238672834,"5416446788",node,12.5,clinic,clinic,Sekameng Health Centre,,,,,,,,,,,,,,,,,,,,,,,,167554364,2,2025/06/12 23:37:44+00,2ad2dd022cf744939e62153cfd736a95
+,,"414536958",way,12.5,clinic,clinic,Matukeng Health Centre,,,,,,,,,,,,,,,,,,,,,,,,110676482,2,2021/09/03 12:26:33+00,ca65101858ad4d7e831d434b86375ffe
+27.4933074717371,-29.3173221702476,"10845854606",node,31.25,clinic,clinic,Karabo Family Clinic,,,"general;maternity;fertility;clinic;surgery",private,,Mo-Fr 08:00-18:00,,,,,,yes,,,,,,,,"Mothamo House, Cathedral Area",Main South Road,,,135518285,2,2023/04/29 21:14:11+00,cbba4254d2144bf2969a4aeccc94260f
+,,"367462726",way,12.5,clinic,clinic,St Theresa Health Centre,,,,,,,,,,,,,,,,,,,,,,,,167554515,5,2025/06/12 23:49:21+00,f006e1d9f3c14ecbbcb13932e58cf579
+,,"129710013",way,18.75,hospital,hospital,Berea Hospital,MInistry of Health,,,,,,,,,,,,yes,,,,,,,,,,,173117379,12,2025/10/11 00:40:14+00,e16720c22e9640b4b7e9fb410a405d78
+27.4952968326363,-29.3119411560482,"10839342191",node,28.125,pharmacy,pharmacy,Therapharm Pharmacy,,,,,,08:00-18:00,,,,,yes,limited,,,,,,,,,Phamola Road,,Maseru,167766719,4,2025/06/18 06:42:12+00,83f019f9886748c8bbb2a75936dec4b9
+27.4764516320932,-30.1512292512583,"7143023065",node,12.5,clinic,clinic,District Health,,,,,,,,,,,,,,,,,,,,,,,,79760016,1,2020/01/19 17:06:47+00,b1ccf30b84494ecd9da6a3a144cffcd9
+27.5148212187935,-29.3419908656585,"5310240624",node,12.5,doctors,doctor,Ear Doctor,,,,,,,,,,,,,,,,,,,,,,,,78898534,2,2019/12/26 21:36:19+00,60b2a197cf9b4a15971443339b753a37
+,,"341199236",way,15.625,clinic,clinic,Pitseng Health Centre,,,,,,,,,,,,,no,,,,,,,,,,,79093637,2,2020/01/01 22:59:43+00,7208fb8538174be6a834f9405a81c901
+,,"365686879",way,12.5,hospital,hospital,Wilies Mini Hospital,,,,,,,,,,,,,,,,,,,,,,,,99086718,5,2021/02/11 07:39:02+00,3c7e186efe4640c3b530ae2326f9228d
+27.7219691430718,-29.1443195211082,"4756559727",node,25,pharmacy,pharmacy,"National Drug Service Organization, Teyateyaneng",ministry of health,,,,,24/7,,,,,,,,,,,,,,,Main North 1,"200",,112318591,3,2021/10/10 01:02:53+00,371d0b0fe27a4c47a19e03a52219c437
+,,"319499965",way,15.625,clinic,clinic,Likotsi Filter Clinic,,,,,,,,,,,,,no,,,,,,,,,,,113617558,4,2021/11/10 17:02:39+00,a67d2063b2894806892480467b137e9f
+,,"761617871",way,25,hospital,hospital,St. Paul Health Center,,,general,public,,,,,,,,yes,yes,,,,,,,,,,,153525316,2,2024/07/04 03:04:55+00,52a0e925d5dc4773bca4dd9c4d85d3e0
+,,"494594166",way,12.5,clinic,clinic,Mabote Clinic,,,,,,,,,,,,,,,,,,,,,,,,78984862,2,2019/12/29 17:28:48+00,1a294f6cfe1947839240ce22fb09d225
+,,"392756270",way,12.5,clinic,clinic,Lepoqong Clinic,,,,,,,,,,,,,,,,,,,,,,,,78899905,3,2019/12/26 22:39:27+00,d2720e50a3ca44e7a85198114d927d53
+28.4689181696089,-28.7480027710397,"12817377053",node,15.625,clinic,,St. Peters (Ha Motebang) Health Centre,Ministry of Health And Social Welfare,Boocha34,,,,,,,,,,,,,,,,,,,,,,166997707,2,2025/05/31 06:02:52+00,ff255bc075c34f2393851c412f5422d4
+,,"327986815",way,25,clinic,clinic,Loretto Health Centre,Christian Health Association of Lesotho,,"dentist;maternity;clinic;general;vaccination",religious,,,,,,,,limited,,,,,,,,,,,,167555317,8,2025/06/13 01:01:26+00,355ffad909ed43e4a2c0cc5ed9269b4d
+27.7018318721545,-30.4077075255598,"5211949231",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,164340348,3,2025/03/31 16:59:41+00,5e10b6de59e145bf845eda91f9b6ab1c
+27.5084390700791,-29.3339684623121,"3380570655",node,12.5,pharmacy,pharmacy,Opti Care Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,127115658,4,2022/10/06 19:06:52+00,903ccc5843b844408233f2cec1535183
+,,"404008081",way,12.5,clinic,clinic,Mphaki Health Center,,,,,,,,,,,,,,,,,,,,,,,,167554268,4,2025/06/12 23:30:33+00,d46fe71c1bf543c686d3a6f9fa4528d5
+,,"1010173934",way,9.375,hospital,,Mokhotlong Hospital,,,,,,,,,,,,,,,,,,,,,,,,138548220,2,2023/07/15 14:56:58+00,773cfbf452f646b8899938d114e0878e
+,,"294441289",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,78948327,2,2019/12/28 06:13:57+00,379c88c61b584b2ba0dfb47442727699
+28.2340961347178,-29.5766809693937,"7436597853",node,12.5,clinic,,Auray Clinic,Roman Catholic Church,,,,,,,,,,,,,,,,,,,,,,,135786917,2,2023/05/06 18:09:14+00,95859af2249c4667919652e9f9226115
+27.51781498315,-29.3475774041237,"1313949451",node,31.25,doctors,doctor,Beatitudes Surgery,Dr Bulane,,"general;fertility;clinic;vaccination",,,"Mo-Fr 11:00-18:00; Su 09:00-15:00",,,,,,limited,,,,,,,,Maseru,"Ha Mots'oeneng, Main South 1 Rd",,,134841683,5,2023/04/13 02:05:29+00,1780e63eb10a43269d9dd06595c9d0a6
+,,"314630477",way,34.375,hospital,hospital,Queen Mamohato Memorial Hospital (QMMH),Lesotho Government,,"general;cardiology;vaccination;surgery;dentist;emergency;covid19;maternity;clinic;fertility;paediatrics",government,,,,,,,,yes,yes,,,,,,,"Ha Leqele, Maseru",Lepereng Road,,,138949533,9,2023/07/24 16:28:58+00,e00c519163ad4222a8e36401d5ed2379
+,,"361426895",way,15.625,clinic,clinic,Mahobong Government Clinic,,,,,,,,,,,,,yes,,,,,,,,,,,79103825,4,2020/01/02 08:13:14+00,a118258d30914a69ba61da640f225090
+,,"314631210",way,12.5,hospital,hospital,Baylor Kids Clinic,,,,,,,,,,,,,,,,,,,,,,,,78978387,4,2019/12/29 13:19:04+00,2dbd46d71f3848129eab9ac5ab8b70a3
+,,"363017909",way,12.5,clinic,clinic,Red Cross,,,,,,,,,,,,,,,,,,,,,,,,79182293,4,2020/01/04 07:51:30+00,15e22f0c689b4f4ab5414c456f3dda7d
+,,"325157064",way,18.75,clinic,clinic,Old Peka Health Centre,,,,,,,,,,,,,no,,,,,,,,,,Peka,167553977,6,2025/06/12 23:08:46+00,553becdc1d8b4c67841dc13550bdfa5e
+,,"332063664",way,28.125,hospital,hospital,Centre for Equal Health Access Lesotho,Dr. Mbeya,,general,private,,,,,,,,,yes,,,,,,,,,"200",,133829764,3,2023/03/18 16:27:22+00,4ddf8420f397400ab46a04a91e2371a7
+27.7468733699619,-29.149656865592,"4118221792",node,18.75,pharmacy,pharmacy,Mumzie Pharmacy,,,,,,,,,,,,,,,,,,,,,Mofolo Street,,Teyateyaneng,167746765,5,2025/06/17 16:35:35+00,a052b291ae904759a3ef64855a0cc56a
+27.4660613411003,-29.3091220705539,"11260262930",node,31.25,clinic,clinic,Mohloling Clinic,,,general,private,,"Mo-Fr 08:00-17:00; Sa 08:00-13:00",,,,,,yes,,,,,,,,"8",Kofi Annan Road,,,142605689,2,2023/10/15 07:58:33+00,e714be141dab4262bce4e8b0d505fbb9
+27.4727785983035,-29.3158057163254,"9501096818",node,15.625,hospital,,Target Lab,,,,,,Mo-Su 09:00-16:00,,,,,,,,,,,,,,,Orpen Road,,,143139235,2,2023/10/26 00:49:14+00,19f5a79224d24b56be0e88c504ed73ea
+,,"1394847906",way,18.75,hospital,hospital,Villa Private Hospital,,"https://www.openstreetmap.org/node/11061148678;https://www.openstreetmap.org/way/1191980234",,,,,,,,,,,,,,,,,,,,,Maseru,167553277,1,2025/06/12 22:18:19+00,ab193b4276b54e2f87d81a92c97cb3f1
+,,"294549884",way,15.625,clinic,clinic,St Margaret Health Centre,,,,religious,,,,,,,,,,,,,,,,,,,,166709447,6,2025/05/24 18:44:32+00,4cbba9a4f188482e8172c1fb6bdf0f38
+,,"367474084",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,167554385,2,2025/06/12 23:39:00+00,e231bfceaf054ae1a73fc127fd0aa0c9
+27.4664130457575,-29.3094133416892,"11260208284",node,31.25,clinic,clinic,SHE Health Clinic,Dr. Lineo Letlala,,gynaecology,private,,,,,,,,yes,,,,,,,,"11",Kofi Annan Road,,,142605721,4,2023/10/15 07:59:14+00,a631a8b6410b49028b03d61777647903
+,,"363108171",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,167549299,5,2025/06/12 19:43:23+00,ec1abc45e0e5483ca4c681b389dd3a9c
+,,"483060737",way,12.5,hospital,hospital,Paray Hospital,,,,,,,,,,,,,,,,,,,,,,,,79815930,3,2020/01/20 20:05:40+00,e3f801c4e72a42a6ae36852fa7514b02
+27.5006539584116,-29.3219607154638,"5343542622",node,37.5,clinic,clinic,Maseru Seventh Day Adventist Clinic,Seventh Day Adventist Mission,,general,religious,,Mo-Fr 07:45-18:00,,,,,,yes,,,,,,,,Adventville,Main South Road,,Maseru,167032636,4,2025/06/01 00:53:48+00,909907b637d440e8af96c3eebd49229d
+,,"795112435",way,15.625,clinic,clinic,Popa Clinic,,,,,,,,,,,,,,,,,,,,,,,Ha Popa,167554411,2,2025/06/12 23:40:46+00,32b81cd02d9e4f9ab356a68cfe047bb2
+,,"1264597268",way,15.625,clinic,clinic,Kuebunyane Health Centre,,LSPP,,,,,,,,,,,,,,,,,,,,,,167553743,2,2025/06/12 22:50:34+00,48cd0e4fd4a64e61998e895614aba90f
+,,"363003301",way,12.5,hospital,hospital,Mamohau Hospital,,,,,,,,,,,,,,,,,,,,,,,,79094892,5,2020/01/02 00:55:35+00,cdefed507137465da7ce043004618603
+,,"462555169",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,78948653,2,2019/12/28 06:51:40+00,8aa09a7f7eb04270be22c78875012fac
+28.0579294847684,-30.2783463449408,"6346916196",node,15.625,clinic,clinic,Makoae Health Centre,,,,,,,,,,,,,,,,,,,,,,,Makoae,167554349,2,2025/06/12 23:36:53+00,35f03259f98d4adc8e716c3c80676d93
+,,"488957704",way,18.75,clinic,clinic,St Barnabas Health Centre,Anglican Church of Lesotho,,,religious,,,,,,,,,,,,,,,,,,,,167036051,3,2025/06/01 06:01:27+00,0603c60a92b544638aaff3fcf4a57815
+,,"475865597",way,12.5,clinic,clinic,Bua Sono,,,,,,,,,,,,,,,,,,,,,,,,79169863,2,2020/01/03 19:06:51+00,6bd8122c4ae346c48bc76e774b760fef
+27.4968508374847,-29.3160042836116,"5310240627",node,21.875,pharmacy,pharmacy,Cathedral Pharmacy,,,,,,,,,,,,limited,,,,,,,,,Main North 1,,Maseru,167762605,4,2025/06/18 03:26:08+00,40aa475fce064a15b99fb395dd923964
+28.5980746641525,-28.9594348536681,"12916034569",node,15.625,clinic,clinic,Motete Health Centre,,,,,,,,,,,,,,,,,,,,,,,Ha Sekhobe (Motete),167634594,1,2025/06/15 03:00:03+00,3a75e7d970ff4e109c81046ebbcbcf9d
+,,"368408353",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,167554475,5,2025/06/12 23:46:25+00,26b79af7b8144194827decf62e3228d8
+,,"559087803",way,12.5,hospital,hospital,Scott Hospital,,,,,,,,,,,,,,,,,,,,,,,,79315572,3,2020/01/08 01:00:07+00,7bb2716dab82463e85ad35663a698565
+,,"362673358",way,25,hospital,hospital,Maryland Health Centre,,,general,religious,,,,,,,,yes,yes,,,,,,,,,,,167261230,4,2025/06/06 11:05:29+00,0e635c8019214b75b24d6e5d5473f2cc
+27.4566705920608,-29.3549621122766,"5302057024",node,28.125,pharmacy,pharmacy,Khayalethu Pharmacy,,,,,,08:00-19:00,,,,,yes,,,,,,,,,"Ha Tsolo, By Pass Stop",Kofi Annan Road,,Maseru,167555712,5,2025/06/13 01:34:52+00,764a8da21c4d48eb95f95b71003b445d
+,,"309393929",way,12.5,hospital,hospital,Butha Buthe Hospital,,,,,,,,,,,,,,,,,,,,,,,,78948340,4,2019/12/28 06:15:25+00,04ebd327751e44a6b8b60972c07aa22b
+,,"294606507",way,12.5,hospital,hospital,Mohlomi Mental Clinic,,,,,,,,,,,,,,,,,,,,,,,,78978387,4,2019/12/29 13:19:04+00,a6f5330c421b4a009c900991eaf888c8
+,,"361560565",way,12.5,clinic,clinic,Malaoaneng Health Centre,,,,,,,,,,,,,,,,,,,,,,,,167553321,4,2025/06/12 22:20:56+00,dfdcb69333834364ad7ba10b4a4464f3
+,,"365477618",way,18.75,hospital,hospital,St. Rose Health Centre,catholic,,,religious,,,,,,,,,,,,,,,,,,,,161274831,7,2025/01/12 14:27:48+00,0d936c04ac1142359708218d87da08ba
+27.5039052986526,-29.3275941087677,"5287236328",node,12.5,clinic,clinic,Men's Clinic,,,,,,,,,,,,,,,,,,,,,,,,78899905,2,2019/12/26 22:39:27+00,1deac549ac314edc9f4317471ce2b818
+,,"760121352",way,12.5,clinic,clinic,Holy Trinity Health Centre,,,,,,,,,,,,,,,,,,,,,,,,79103825,1,2020/01/02 08:13:14+00,373c7d641cf345408dd4c1e456ef6339
+,,"301482651",way,12.5,clinic,clinic,,,bing,,,,,,,,,,,,,,,,,,,,,,167572594,4,2025/06/13 12:10:10+00,d2e8345e5862492dae97dafd59459b81
+27.5094543700105,-29.362255541504,"4269252291",node,28.125,clinic,clinic,Lithoteng Filter Clinic,,,"general;emergency;clinic;fertility;maternity;dentist",public,,,,,,,,yes,,,,,,,,"Lithoteng, Ha Seoli, Maseru",Qoaling Road,,,138949589,6,2023/07/24 16:29:56+00,dbac6099407f464f8dd840cdb6d24f6a
+,,"314769782",way,18.75,clinic,clinic,Thamae Health Centre (Hall),,,,,,,,,,,,,,,,,,,,,Upper Thamae Road,,Maseru,167028122,5,2025/05/31 20:39:17+00,a71a1c5327b74599b1fc6bcef9a856de
+,,"1379146932",way,18.75,hospital,hospital,Seboche Hospital,Roman Catholic Church,,,religious,,,,,,,,,,,,,,,,,,,,166708763,2,2025/05/24 18:20:11+00,c32e9c402cc747fbb5cb9350a330db45
+,,"366482140",way,25,clinic,clinic,Levi's Nek Health Clinic,,,,,,,,,,,,,no,,,,,,,"95",Likiteng Upperlodge,,Butha-Buthe,167554466,7,2025/06/12 23:46:09+00,628af29ffff74be7a361c7cdf967d587
+,,"265772940",way,15.625,hospital,hospital,Mafeteng Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,79072722,6,2020/01/01 03:11:17+00,da6dc89cd4244c91a4291674a01ea39e
+,,"273011104",way,18.75,hospital,hospital,Machabeng Hospital,,Bing,,,,,,,,,,,yes,,,,,,,,,,,78947844,5,2019/12/28 05:18:10+00,9f3b7357c7284c47ad6a92d4b5674c03
+,,"365389600",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,79937991,4,2020/01/22 20:53:11+00,0cc6316a65ca46b28334a73a059387da
+27.4784681503587,-29.29888768296,"10839257858",node,28.125,pharmacy,pharmacy,Tripharm Agencies,"Vernon Smith, Maud Boikanyo and Craig Smith",,,,,,,,,,yes,yes,,,,,,,,Maseru Industrial Area,Moshoeshoe Road,,,135333765,8,2023/04/25 09:10:56+00,2930a8946d9649178aa436bd9cf7f671
+,,"332485394",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,78968859,2,2019/12/29 00:47:24+00,bed374a2fb4d40e5b5093f0959e08869
+,,"294982374",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,78949457,3,2019/12/28 08:03:57+00,da55f754d4dc4fef83a348dd68d79883
+27.4872870859637,-29.3149671069129,"1604838577",node,31.25,pharmacy,pharmacy,Husteds Pharmacy,,local knowledge,,,,"Mo-Fr 08:00-17:00; Sa 08:00-14:00; Su 09:00-13:00",,,,,yes,limited,,,,,,,,shop no 2,Kingsway,,,133909020,4,2023/03/20 17:39:17+00,350419351da24866add723842c39da0a
+27.6236414560385,-30.3951116205658,"5490393963",node,12.5,clinic,clinic,Karabo Family Clinic,,,,,,,,,,,,,,,,,,,,,,,,79531637,2,2020/01/13 20:03:07+00,daadbf627b524fad949ac589bc2ee69b
+27.4952968326363,-29.3119411560482,"10839356585",node,25,pharmacy,pharmacy,Therapharm Pharmacy,,,,,,,,,,,yes,limited,,,,,,,,Maseru,Phamola Road,,,135334718,1,2023/04/25 09:32:19+00,9561e2f015ce4e639fd093f838ddf0df
+,,"414186459",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,167554524,2,2025/06/12 23:50:08+00,dd7ac575b77f494aaeb2460805e29360
+,,"343700321",way,12.5,pharmacy,pharmacy,Super-Pharm,,,,,,,,,,,,,,,,,,,,,,,,85262913,5,2020/05/15 13:02:05+00,edae22fb7f0b41dcb925b3577285be76
+27.1659010298671,-29.6479712351793,"5414191235",node,12.5,clinic,clinic,Ts'akholo Health Centre,,,,,,,,,,,,,,,,,,,,,,,,79315703,2,2020/01/08 01:09:18+00,fdedae09d58342e59a8731685e0aa972
+27.4726622574875,-29.304545048507,"10845838706",node,28.125,clinic,clinic,Josh Medical Clinic,,,"general;clinic",private,,,,,,,,,,,,,,,,House no.5,"Maluti Rd, Maseru West",,,135419604,1,2023/04/27 09:49:00+00,ba940c23a27e4baea0ab8847cd761ce3
+28.2281684527935,-29.6841217130144,"7436641597",node,9.375,clinic,,Popa Clinic,,,,,,,,,,,,,,,,,,,,,,,,83976379,1,2020/04/23 05:45:38+00,fad3bb3fb4e945b79315a8827fa3e7a6
+27.4938186840116,-29.314454804991,"5300462222",node,12.5,doctors,doctor,Diabetes Centre & Healthy Lifestyles Clinic,,,,,,,,,,,,,,,,,,,,,,,,78899905,2,2019/12/26 22:39:27+00,42533f52c8124ac7a37cdf9de347f942
+,,"301449956",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,167554221,7,2025/06/12 23:27:18+00,ef4869173c9348afbcad2fc7839228ce
+27.6910736994313,-30.3987281603281,"12848926729",node,12.5,pharmacy,pharmacy,J. Raphah,,,,,,,,,,,,,,,,,,,,,,,,166477586,1,2025/05/19 13:40:48+00,d0067bb410b74c43b319ab9c32181e85
+,,"365343692",way,12.5,hospital,hospital,Mapholaneng Hospital,,,,,,,,,,,,,,,,,,,,,,,,134034988,4,2023/03/23 18:16:54+00,f27391af43154882835d0cb1a972cdd3
+27.4841477279491,-29.3363273813222,"9392031029",node,25,pharmacy,,Beautez Pharmacy,,,,,,"Mo-Fr 09:00-19:00; Sa 09:00-10:30; Su 09:00-16:00",,,,,yes,yes,,,,,,,,"Shop 79, Maseru Mall",Pope John Paul II Road,,,135523916,3,2023/04/30 05:19:27+00,993f0e5e4d6d41ca9a4fae31a083ce9d
+27.4918211926664,-29.3128413724491,"9897034017",node,34.375,clinic,clinic,Khanya Medical Clinic,Dr. Teboho Thabane,,general,private,,Mo-Sa 08:00-16:30,,,,,,limited,,,,,,,,Cnr Airport Rd & Moshoeshoe Rd,Moshoeshoe Road,,,136528878,5,2023/05/25 07:10:43+00,13bde9eca7364fc5a664828a38023b99
+27.503813935908,-29.3662472552523,"5293365621",node,18.75,pharmacy,pharmacy,Lovely Care Pharmacy,,,,,,,,,,,no,no,,,,,,,,,,,,144876005,3,2023/12/07 18:06:40+00,213f95fa45b74555a615667c1f7731f4
+27.5087409862315,-29.3126811104604,"11124448826",node,12.5,clinic,clinic,Carewell Health Clinic,,,,,,,,,,,,,,,,,,,,,,,,140043728,1,2023/08/18 07:40:49+00,ecff46bf3566445f93ad9f09cc37621a
+27.49521427089,-29.3499386700667,"6400679187",node,12.5,pharmacy,pharmacy,Womanique Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,113617558,2,2021/11/10 17:02:39+00,714b2352899f489fb4c60da4119be831
+,,"294343830",way,15.625,clinic,clinic,,Lesotho Correctional Service,,,,,sunrise-sunset,,,,,,,,,,,,,,,,,,78947653,3,2019/12/28 04:53:37+00,7f6ee4661b594ff1953e8dff689d39fc
+,,"454330365",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,167552911,3,2025/06/12 21:57:39+00,d95f3544cefe4bfcbaf7986511b6a83a
+27.4895493616302,-29.3155628087715,"3353690053",node,31.25,dentist,dentist,Dental Consultant PTY Ltd,Dr Edraline Gallego - Pereira,Mapillary,dentist,,,Mo-Fr 08:00-17:00,,,,,,yes,,,,,,,,,Kingsway,,,136610504,3,2023/05/27 04:37:47+00,cae7a242a8354793b159c24a7637620f
+27.7250612271525,-29.4467114302423,"3359327683",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,78969233,4,2019/12/29 01:28:56+00,b274c031c38d4abeba55914b46ebfbdd
+,,"426537006",way,12.5,clinic,clinic,Malefiloane Clinic,,,,,,,,,,,,,,,,,,,,,,,,167553904,3,2025/06/12 23:02:17+00,c9d80292968d4cc1b5543c56f485eeb1
+,,"636963526",way,18.75,clinic,clinic,St. Peter Clever Clinic,Roman Catholic,,,religious,,,,,,,,,,,,,,,,,,,,166707957,4,2025/05/24 17:57:06+00,fd70b9a1cb684477911a46b40720cae9
+28.137381042036,-29.7527512274566,"7436573327",node,12.5,clinic,,Ha Seng Clinic,Government Facility,,,,,,,,,,,,,,,,,,,,,,,133633271,2,2023/03/13 16:45:30+00,223bc0b9fecc4d24beda8bb28e79c59f
+27.5129866716459,-29.3394423479986,"5310236227",node,12.5,pharmacy,pharmacy,Opti-Care Pharmacy & Chemist,,,,,,,,,,,,,,,,,,,,,,,,78898534,3,2019/12/26 21:36:19+00,a994e61d74a44e09825012358bc5bbb1
+,,"494359361",way,12.5,clinic,clinic,Khubetsoana Clinic,,,,,,,,,,,,,,,,,,,,,,,,78984862,3,2019/12/29 17:28:48+00,08091fb5b58f44929099e8e2d4acde2b
+27.5091341813093,-29.3620400427735,"5305848222",node,12.5,pharmacy,pharmacy,Centre Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,79334335,2,2020/01/08 10:23:29+00,ac08ba1cd3f3465695e79d808f3c8610
+,,"332485383",way,15.625,clinic,clinic,Pilot Health Centre,,,,,,08:00-16:30,,,,,,,,,,,,,,,,,,78968859,3,2019/12/29 00:47:24+00,8191526f6506485eb236d3650d8d575e
+27.4896297440816,-29.3155675026372,"3353690051",node,12.5,pharmacy,pharmacy,,,Mapillary,,,,,,,,,,,,,,,,,,,,,,164305655,4,2025/03/30 21:14:08+00,c247059d8348444ba9b9015a58763e45
+,,"795107290",way,18.75,clinic,clinic,Ha Seng Clinic,Government Facility,,,,,,,,,,,,,,,,,,,,,,Ha Seng,167554427,3,2025/06/12 23:42:07+00,24f66c1e1cb643f798a3bf6a8a847a29
+,,"425307087",way,12.5,clinic,clinic,Makhnoane Health Center,,,,,,,,,,,,,,,,,,,,,,,,167553343,4,2025/06/12 22:22:26+00,0596cd350cd14d8a95a08baa9ba2704f
+,,"325154789",way,15.625,clinic,clinic,Peka Health Center,,,,,,,,,,,,,yes,,,,,,,,,,,167553305,4,2025/06/12 22:20:05+00,91413ebfcb0042bcaebe6dafe81b61de
+27.4930602894125,-29.313490802307,"5310219223",node,12.5,pharmacy,pharmacy,S & T Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,78899905,2,2019/12/26 22:39:27+00,ae9c0946ebd34e9ca9871c3ae1d71d4e
+,,"294982371",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,78949457,3,2019/12/28 08:03:57+00,f2dc4dd0fe3c4374bf17581c7d7fdc6a
+28.6138362463371,-29.5100791211483,"3820509386",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,82532559,3,2020/03/23 16:46:59+00,e705d1e05827451a8745dc11a039fe0d
+27.4775870446971,-29.3036777729856,"11119507335",node,21.875,clinic,clinic,Mafumahali Hospital,,,"general;clinic",,,,,,,,,,,,,,,,,,"Lancers Rd, Maseru West",,,139972053,1,2023/08/16 16:00:40+00,79a187e1a8974a158ee25919443191d2
+,,"363653923",way,12.5,clinic,clinic,Maqhaka Health Centre,,,,,,,,,,,,,,,,,,,,,,,,79169863,3,2020/01/03 19:06:51+00,5a530e70b8b64dea8fb85b0d98b488fa
+,,"1384383439",way,21.875,clinic,clinic,St. Peters (Ha Motebang) Health Centre,Ministry of Health And Social Welfare,Boocha34,,government,,,,,,,,,,,,,,,,,,,,166997707,2,2025/05/31 06:02:52+00,90fd80b5af5a49b58407dbb9f8bf835a
+,,"1195695320",way,12.5,clinic,clinic,Makhoathi Clinic,,,,,,,,,,,,,,,,,,,,,,,,167554231,2,2025/06/12 23:28:02+00,1e45d503bcba45f3920a5b6781f52d52
+27.7486241818968,-29.1479651460745,"4118222789",node,15.625,pharmacy,pharmacy,Batho Pele,,,,,,,,,,,,,,,,,,,,,Main North 1,,,79075060,4,2020/01/01 07:35:44+00,7224c5d352bb4836a6fd43c925c9c725
+,,"294383613",way,18.75,hospital,hospital,Ntsekhe Hospital,,,,,,,,,,,,,,,,,,,,,Hospital Road,,Mohale's Hoek,167771300,6,2025/06/18 08:49:18+00,8b88ab529afe4bdc94cd1e33b2c10dd6
+,,"479339054",way,12.5,clinic,clinic,St Luke Health Centre,,,,,,,,,,,,,,,,,,,,,,,,79764810,5,2020/01/19 20:39:48+00,a6e320b8a70c4cef966db2fac504ad96
+,,"795106448",way,18.75,clinic,clinic,St. Leornard Health Centre,Roman Catholic Church,,,religious,,,,,,,,,,,,,,,,,,,,166708264,4,2025/05/24 18:06:01+00,c856aa075b514d5e8fc0031db5a60306
+27.4845302780099,-29.3140230531585,"10931057344",node,25,dentist,dentist,Dr Peerbhai's Dental Centre,Dr Peerbhai,,dentist,,,,,,,,,,,,,,,,,,Kingsway Road,,Maseru,167554073,2,2025/06/12 23:14:59+00,3664f15e5db44931819402007e696c68
+27.7066384745294,-30.4074220379377,"4272632089",node,12.5,clinic,clinic,LPPA,,,,,,,,,,,,,,,,,,,,,,,,78947671,2,2019/12/28 04:55:18+00,80d760a3191040e6a2c519d96b286193
+,,"459513609",way,12.5,hospital,hospital,Tebellong Hospital,,,,,,,,,,,,,,,,,,,,,,,,167554763,3,2025/06/13 00:08:46+00,8cb3bb80dd0941d49dc8587aa6b491cb
+,,"294433933",way,9.375,hospital,,Roma Hospital,,,,,,,,,,,,,,,,,,,,,,,,50066868,5,2017/07/05 19:28:21+00,becd62351ca84e0fafa45bd8fc3fae49
+27.4774714582523,-29.3166986404705,"1604768106",node,31.25,pharmacy,pharmacy,Link Pioneer Centre Pharmacy,,,,,,"Mo-Fr 09:00-18:00; Sa 09:00-13:00; Su 10:00-13:00",,,,,yes,yes,,,,,,,,,Pioneer Road,"100",Maseru,167760039,11,2025/06/18 00:13:33+00,35d9afd0924f4277b70e53a4988c0efd
+27.4962559738164,-29.3156984279648,"5300351824",node,25,pharmacy,pharmacy,Batho-Pele Pharmacy,,,,,,,,,,,yes,limited,,,,,,,,"Near Captain Dorego, Cathedral Area",Main North 1,,,134842270,3,2023/04/13 02:53:33+00,04112c9afd8d4faa9123a3edd973a074
+,,"490870366",way,12.5,clinic,clinic,St. David Health Centre,,,,,,,,,,,,,,,,,,,,,,,,167554570,2,2025/06/12 23:53:51+00,044398f114694e49815eb10ff2792e72
+,,"325159746",way,18.75,clinic,clinic,Thaba Phatsoa Health Clinic,,bing,,,,,,,,,,,yes,,,,,,,,,,,167554540,7,2025/06/12 23:51:14+00,98ef5c0c8b014b40b82bc1b54fd54cb1
+,,"399054375",way,12.5,hospital,hospital,Quthing Hospital,,,,,,,,,,,,,,,,,,,,,,,,166198320,7,2025/05/13 11:44:15+00,83a3db3d6f204309a7f4a70dabdb4e64
+27.4796015513058,-29.3142158369315,"10872576983",node,31.25,pharmacy,pharmacy,Husteds Pharmacy,,,,,,"Mo-Fr 08:00-17:00; Sa-Su 08:00-14:00",,,,,yes,yes,,,,,,,,Shop 29,Kingsway,,Maseru,167759109,3,2025/06/17 23:02:11+00,b99e0920d9654d30952d1154e86fe6a0
+,,"338659317",way,12.5,clinic,clinic,Health Center,,,,,,,,,,,,,,,,,,,,,,,,78947760,6,2019/12/28 05:08:05+00,4f127a90ca1841d9a4c5808ad114ef7c
+28.1427481422761,-29.5436001121388,"5414211068",node,12.5,clinic,clinic,Marakabei Clinic,,,,,,,,,,,,,,,,,,,,,,,,78993828,3,2019/12/30 01:32:12+00,8ab6875ac934473a83a23f8bedf6a4e5
+27.4867796455455,-29.3262300378452,"5443437821",node,12.5,clinic,clinic,Katlehong LMPS AHF,,,,,,,,,,,,,,,,,,,,,,,,78979039,2,2019/12/29 13:42:36+00,f5a58f7e6cfc45998c49b750db5d4363
+,,"365993850",way,12.5,clinic,clinic,Lenkotong,,,,,,,,,,,,,,,,,,,,,,,,78948730,2,2019/12/28 06:59:31+00,27a392e2ed8941429165309c246945f4
+,,"399054376",way,18.75,hospital,hospital,Quthing Hospital,,,,,,,,,,,,,,,,,,,,,Dooda Street,,Quthing,167554727,7,2025/06/13 00:06:39+00,2cda0455661848858f40c887e25300c4
+,,"427606143",way,12.5,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,Matebeng,167553819,4,2025/06/12 22:56:29+00,13f2d50456684d31821602626cf77004
+27.5091917649841,-29.3344575463623,"6400679185",node,12.5,pharmacy,pharmacy,Batho-Med Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,78898534,2,2019/12/26 21:36:19+00,5b6e062c3f804926af96f509c8baa474
+,,"147255489",way,15.625,hospital,hospital,Queen Elizabeth II Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,130224396,9,2022/12/18 21:17:13+00,a267cb9f48d347e0ba6ef51308a76bbb
+27.4596447427639,-29.3584206531641,"4584969194",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,113617558,2,2021/11/10 17:02:39+00,8a86e09f24544d959ce6e32fc992f1ee
+,,"1279711872",way,9.375,clinic,,Lebakeng Health Centre,,,,,,,,,,,,,,,,,,,,,,,,150892587,1,2024/05/04 18:13:55+00,4910e92e73e549e9ba3d6bbb0e2e561a
+,,"1410181181",way,12.5,clinic,,'Melikane Health Centre,,Boocha34,,,,,,,,,,,,,,,,,,,,,,168205162,2,2025/06/27 21:15:39+00,d04f4d767f2e44edadebb619f4807bd5
+27.4933074717371,-29.3173220026095,"10857196820",node,34.375,clinic,clinic,Karabo Family Clinic,,,"general;maternity;fertility;clinic;surgery",private,,Mo-Fr 08:00-18:00,,,,,,yes,,,,,,,,"Mothamo House, Cathedral Area",Main South Road,,,135522617,1,2023/04/30 03:04:33+00,65a9c5c8a89f4d44b408d625fc870efd
+,,"389684276",way,25,clinic,clinic,Hermitage Clinic,Christian Health Association of Lesotho,,,religious,,,,,,,,,yes,,,,,,,,manteko,,,167075112,6,2025/06/02 05:32:03+00,dde314555c92475fb44b37d090ed6c98
+,,"429266980",way,21.875,clinic,clinic,Sekake Health Centre,Ministry of Health,,,government,,,,,,,,,,,,,,,,,,,Ha Sekake,167553741,2,2025/06/12 22:50:10+00,873466631795451aa81fd458d0ad5404
+27.4889669869977,-29.3149797635867,"10931069305",node,25,dentist,dentist,Maseru Dental Services,,,dentist,,,,,,,,,limited,,,,,,,,Carlton Centre,Kingsway,,,136610660,1,2023/05/27 04:52:28+00,a7dc14e78e2a4010833502385feeda84
+,,"473287241",way,12.5,clinic,clinic,Health Centre,,,,,,,,,,,,,,,,,,,,,,,,79138449,3,2020/01/03 03:16:12+00,a91c59ba7a28400ab11410afd0cccd22
+28.7174194704793,-30.0403900649959,"11897272571",node,12.5,clinic,,St. Francis Health Centre,,Boocha34,,,,,,,,,,,,,,,,,,,,,,151197735,1,2024/05/11 18:09:37+00,007bf691828140b2bdde1e81c4df997f
+,,"400796935",way,12.5,clinic,clinic,St. Mathews Health Centre,,,,,,,,,,,,,,,,,,,,,,,,166293204,3,2025/05/15 09:06:52+00,971876d7c366449ab4203b83ece3ac71
+,,"422381111",way,15.625,clinic,clinic,Dilli-Dilli Health Centre,Government,,,,,,,,,,,,,,,,,,,,,,,167115928,3,2025/06/03 04:25:10+00,fa8e2a7f78e6408f88a8e57cb44993ac
+,,"365878931",way,28.125,clinic,clinic,Lehlakeng Clinic,,,"maternity;general",private,,,,,,,,limited,,,,,,,,Cnr Airport Rd & Moshoeshoe Rd,Moshoeshoe Road,,,134764984,5,2023/04/11 09:29:48+00,f8faafd300294d98aa082a1eefaa95c0
+28.2510322729941,-30.1711553820346,"5744947723",node,12.5,clinic,clinic,Paballong Health Centre,,,,,,,,,,,,,,,,,,,,,,,,167554356,3,2025/06/12 23:37:16+00,ea9a88dc61024d92bd744fd7723de3fd
+27.4894789536436,-29.3159189558373,"5283497956",node,25,dentist,dentist,Lady Dentist,,,dentist,,,,,,,,,yes,,,,,,,,,Kingsway,,,135448662,3,2023/04/28 02:43:51+00,e927f77d774a47e6bf09eed68df4ac46
+27.4322143778953,-29.6986995190138,"4664483847",node,21.875,clinic,clinic,Motsekuoa Health Centre,Roman Catholic,,,religious,,,,,,,,,,,,,,,,,,,Motsekuoa,166707812,3,2025/05/24 17:52:46+00,fcafd1e8f4394db9ba1924c46d1c3794
+,,"273264055",way,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Qacha's Nek,168178570,5,2025/06/27 10:29:28+00,cdf25c6fc70246bda9b7d6d6bf548dcd
+,,"274230049",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,167554241,2,2025/06/12 23:28:41+00,aac30271802d4b74b214120b45a975ce
+27.5180665240642,-29.3468797783225,"5313118822",node,12.5,pharmacy,pharmacy,Lithabaneng Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,78978387,2,2019/12/29 13:19:04+00,46171629ee7d4f2f9a3134b4418eb961
+,,"294315605",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,78948102,4,2019/12/28 05:47:01+00,601e0010987049edae08c5716ff625f2
+,,"331464652",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,78948730,4,2019/12/28 06:59:31+00,6b9d2704ce974a7c9eb83caa48e63fba
+27.8443121561637,-29.9323877338626,"11709032035",node,12.5,clinic,,St Helena Health Centre,,Boocha34,,,,,,,,,,,,,,,,,,,,,,148436059,1,2024/03/09 18:57:02+00,542202a5ab56440ab5961b12de34b856
+27.6864432846612,-29.4289870577916,"4508715016",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,79074418,2,2020/01/01 06:36:27+00,b781b6b1f373418780c8d24ec71b9a84
+,,"1314921127",way,18.75,clinic,clinic,Phamong Health Center,,Boocha34,,,,,,,,,,,,,,,,,,,,,Phamong,167554284,2,2025/06/12 23:31:18+00,d9a9e31cea474e3684a34dbd09b090c2
+28.2099923795807,-28.9998320227461,"3475052750",node,15.625,clinic,clinic,Seventh Adventist Pitseng Clinic,,,,,,,,,,,,,no,,,,,,,,,,,78947526,3,2019/12/28 04:33:55+00,8b1e57fb22dd4717b1c24a10625bb02d
+,,"294988713",way,12.5,clinic,clinic,LPPA,,,,,,,,,,,,,,,,,,,,,,,,78949457,4,2019/12/28 08:03:57+00,6e607cf28d294ec4b2b0d881d8761a71
+27.4924020585563,-29.3140043615144,"5300598022",node,12.5,dentist,dentist,Dentist,,,,,,,,,,,,,,,,,,,,,,,,78899905,2,2019/12/26 22:39:27+00,f5f4e8466b564cb191fbb237ca6ecbf5
+27.4983135634075,-29.3069762195225,"4686199910",node,21.875,clinic,clinic,Domiciliary Clinic,ministry of health,,,,,,,,,,,,,,,,,,,,Airport Road,"100",,79528843,2,2020/01/13 18:29:39+00,352fc8a5e166447a84e45cb153d522d4
+,,"138316936",way,12.5,hospital,hospital,CareWell Hospital,,,,,,,,,,,,,,,,,,,,,,,,167760897,4,2025/06/18 01:22:46+00,c8413b52ace44b45b104f81d337e95e7
+,,"795111875",way,18.75,clinic,clinic,Auray Clinic,Roman Catholic Church,,,religious,,,,,,,,,,,,,,,,,,,,166708710,2,2025/05/24 18:18:30+00,e037a66c77214db09dc4b4ac077b0b85
+,,"426543926",way,12.5,clinic,,St. Francis Health Centre,,Boocha34,,,,,,,,,,,,,,,,,,,,,,151197735,2,2024/05/11 18:09:48+00,64a02d842c5a4d46b2d7ac70dda5606a
+,,"338206001",way,12.5,pharmacy,pharmacy,Infinite Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,167553277,5,2025/06/12 22:18:19+00,bb59bac663b64dda9be07a8549e54eca
+,,"1300759159",way,15.625,clinic,,Nths'upe Medical Centre,Ministry Of Health,Boocha34,,,,,,,,,,,,,,,,,,,,,,153829244,1,2024/07/11 20:42:14+00,8fae395d21fd42e2b01c31ff29689b46
+27.4662420549327,-29.3400308414204,"10845854605",node,34.375,clinic,clinic,Family Health Clinic,,,"general;clinic;fertility;blood_check;surgery",private,,"Mo-Fr 08:00-17:00; Sa-Su 08:00-15:00",,,,,,yes,,,,,,,,Thetsane Office Park,Kofi Annan Road,,,135420298,3,2023/04/27 10:04:54+00,b0c58af255c541919082389b64a0efdf
+,,"294326780",way,28.125,clinic,clinic,Ratjomose Clinic,,,"general;maternity;clinic;fertility;dentist",government,,,,,,,,yes,,,,,,,,"Ha Ratjomose, Maseru",Kofi Annan Road,,,135438870,5,2023/04/27 18:07:09+00,6d374b763ed5466fb9e05c2abd67fd98
+,,"646375306",way,12.5,hospital,hospital,St James Hospital,,,,,,,,,,,,,,,,,,,,,,,,144463056,2,2023/11/26 08:25:47+00,4630b839515f456a913eeeabfdae2572
+,,"294549640",way,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,39806115,3,2016/06/04 22:07:15+00,a97312448ae74e0cb8095d7a56ce08b5
+,,"617233414",way,12.5,doctors,doctor,Partners in Health Lesotho,,,,,,,,,,,,,,,,,,,,,,,,169361382,4,2025/07/23 18:40:48+00,b4d25389cb2b461fa2de16e43484216e
+,,"362485725",way,15.625,hospital,hospital,Libibing Clinic,,,,,,,,,,,,,no,,,,,,,,,,,166998774,8,2025/05/31 06:49:26+00,7001f91953f74c5a87ac4bfa07568a54
+,,"405901406",way,15.625,clinic,clinic,Maqokho Health Centre,,,,,,,,,,,,,,,,,,,,,,,Maqokho,167554308,4,2025/06/12 23:33:13+00,1a8702b776654bfc98e0c1e00f5e48e2
+,,"1178387156",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,167553824,2,2025/06/12 22:56:51+00,b907dcc491b64df88957287dab84d2a8
+27.4822710198285,-29.3142745102537,"10926155733",node,25,pharmacy,pharmacy,Maseru Optical Pharmacy,,,,,,Mo-Sa 08:50-16:30,,,,,,yes,,,,,,,,,Kingsway,,Maseru,172260969,3,2025/09/21 18:48:09+00,98d3a470e3ca48a8bb8e9896fb040231
+,,"314632915",way,12.5,hospital,hospital,Sankatana HIV/AIDS and Oncology Centre,,,,,,,,,,,,,,,,,,,,,,,,78948730,2,2019/12/28 06:59:31+00,bd6ee1d66e944968becb62fe07daa0a2
+,,"1259482717",way,15.625,clinic,clinic,St Helena Health Centre,,Boocha34,,,,,,,,,,,,,,,,,,,,,,167554432,2,2025/06/12 23:42:37+00,d6be506fd7244f328b7c67a006f1d888
+,,"294345170",way,21.875,clinic,clinic,Lesotho Planned Parenthood Association (LPPA),Government of Lesotho,,,,,"Mo-Th 08:00-16:30; Fr 08:00-13:00",,,,,,limited,,,,,,,,,,,,134727477,8,2023/04/10 12:25:59+00,a785f43f08b044f9a4fdb7b15bd8f536
+27.4896186799695,-29.3150030652776,"10931044995",node,25,dentist,dentist,Lesotho Dental Laboratory,,,,,,Mo-Fr 08:00-17:00,,,,,,yes,,,,,,,,,Kingsway,,Maseru,167765506,3,2025/06/18 05:58:48+00,9dc6f83dbfa344f08c7bd783b6962fdb
+,,"403751484",way,12.5,hospital,hospital,Mohlanapeng Health Centre,,,,,,,,,,,,,,,,,,,,,,,,167028065,2,2025/05/31 20:36:56+00,97d128beb5c745d899b79472ea46e68e
+,,"1161158301",way,9.375,clinic,,Semenanyane Health Centre,,,,,,,,,,,,,,,,,,,,,,,,134743701,1,2023/04/10 18:14:22+00,b1732bcdb4de411caf06b98baeb63243
+,,"795105509",way,12.5,clinic,clinic,Semonkong Clinic,,,,,,,,,,,,,,,,,,,,,,,,166296124,2,2025/05/15 10:07:35+00,48f79466055e4f43bef91a5b1927f2ce
+,,"294363196",way,12.5,clinic,clinic,Clinic,,,,,,,,,,,,,,,,,,,,,,,,79319678,3,2020/01/08 04:00:46+00,074381ce14b243e68ef76a7889c9e9fb

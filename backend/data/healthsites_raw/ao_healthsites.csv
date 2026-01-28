@@ -1,0 +1,790 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+12.3012058703715,-5.5447983051304,"11459451740",node,12.5,hospital,hospital,Entrada Principal,,,,,,,,,,,,,,,,,,,,,,,,145572531,1,2023/12/27 12:23:36+00,84ae409609cb4d059a5b5b455c0db24a
+,,"420817749",way,9.375,pharmacy,,Farmácia Simena,,,,,,,,,,,,,,,,,,,,,,,,39558276,1,2016/05/25 14:55:53+00,4fe812811d8b4ac2bbc04a442c9113da
+,,"443826596",way,34.375,hospital,hospital,Centro Médico Corpo & Mente,Grupo Unione,,,private,,24/7,,,,,,,yes,,,,,,,"659",Avenida 4 Fevereiro,,Lubango,101788837,5,2021/03/26 11:44:23+00,ee6c54fecf924b548b6949feec806943
+,,"919609484",way,28.125,hospital,hospital,Centro de Saúde do Rio Capitão (CS Rio Capitão),Direção Municipal da Saúde do Lubango,,"Banco_de_Urgências;Consultas_gerais;PAV;CPN;Partos;PF;Aconselhamento_e_Testagem_Voluntária_de_VIH;PTV;Pediatria;Medicina;Curativos;Injeções;Puericultura;Laboratório;Farmácia;IEC.",public,,,,,,,,,,,,,,,,,Avenida da Indústria,,Lubango,107020952,2,2021/06/27 02:38:53+00,7ef009836b5748cda1a4442e17d70bef
+13.2923158806776,-8.89792091838194,"12880219881",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,ce0bf793e8974b48973003d18cdaa036
+13.1654108491455,-8.93394692495491,"4555877391",node,9.375,clinic,,Clínica Morales,,,,,,,,,,,,,,,,,,,,,,,,44706180,2,2016/12/27 13:27:10+00,6b1b7ef8c78f40e2bde42c1090f785e6
+,,"917062620",way,18.75,clinic,clinic,Posto Médico do Senhor Domingos,,,,,,,,,,,,,,,,,,,,Ferrovia,,,Lubango,100993217,1,2021/03/14 15:00:02+00,176f5bde017f4e5c91155892b128e8f4
+,,"473607957",way,12.5,clinic,,Centro Médico,,,,,,,,,,,,,,,,,,,,,,,Luanda,45951354,1,2017/02/09 16:21:59+00,f2057092742143b79dc01d44118f14b4
+13.2279179700526,-8.89667033842844,"7207704906",node,25,clinic,clinic,Centro Médico Cardiozono,,,,,,"Mo 08:00-17:00, Sa 08:00-12:00",,,,,,,,,,,,,,"1",Rua 3,,Luanda,80943184,1,2020/02/13 07:50:39+00,16915d8a0c06490f9ce9fc857b8e026a
+13.247337247144,-8.93547310188475,"6605385252",node,18.75,clinic,clinic,Clínica Éden,,,,,,,,,,,,,,,,,,,,"61",Rua dos Lírios,,,72136817,1,2019/07/11 13:44:56+00,c3ec6cd6bb634a539892279a9fc21ee8
+13.489282055714,-14.9200022669833,"5798460154",node,31.25,hospital,hospital,Banco de Urgência Obstétrica - Maternidade Irene Neto,MINSA-Ministério da Saúde,,Obstetrics-Gynecology,public,,,,,,,,,yes,,,,,,,,Avenida 14 de Abril,,Lubango,120040215,5,2022/04/22 09:44:42+00,db4d0400f07c497fb38dd858c502fead
+,,"184256060",way,25,hospital,hospital,Hospital Militar do Lubango,Ministério da Defesa,,,military,,,,,,,,,,,,,,,,,Rua do Estado Maior,,Lubango,88318132,6,2020/07/22 02:28:29+00,9373f0b1bcf2484a8bb0f802f42e6590
+13.4933505476954,-14.9203588331443,"4208936390",node,25,clinic,clinic,Clínica Anaclin,,,,,,08:00-16:00,,,,,,,yes,,,,,,,,Rua Anibal de Melo,,Lubango,106924965,7,2021/06/24 21:48:44+00,6d55319c775f4f26a6c34fddd8f86aa1
+,,"1204647545",way,9.375,hospital,,Hospital Municipal de Buco-Zau,,,,,,,,,,,,,,,,,,,,,,,,140753631,1,2023/09/03 11:22:39+00,248c21cb188f4be4870d3bbd708afafe
+13.2386444591818,-8.91211877271044,"5664433604",node,21.875,pharmacy,pharmacy,Farmácia Muzadi,,,,,,,,,,,yes,,,,,,,,,,Rua do Mufulama,,Luanda,59545758,1,2018/06/04 17:56:46+00,96bf447421644eabbd6fc5d5a96b99c7
+13.2296128746933,-8.89672892793163,"8875754075",node,12.5,dentist,dentist,Odonto Excellence,,,,,,,,,,,,,,,,,,,,,,,,107162533,1,2021/06/29 17:29:46+00,e50e75b213ca4626b5ee2322509132e7
+13.3949903388777,-8.98702800901023,"11093013305",node,9.375,pharmacy,,Farmácia,,,,,,,,,,,,,,,,,,,,,,,,139506682,1,2023/08/06 08:54:13+00,51735ed501fb4d05a338cd9831ae164e
+,,"207202557",way,18.75,hospital,hospital,Hospital Militar Central,,,,,,,,,,,,,yes,,,,,,,,,,Luanda,137224219,3,2023/06/12 02:01:23+00,b5491bf59b234528a61cf9154c32b17f
+,,"1328357109",way,15.625,hospital,hospital,Quimbele Hospital,,,,,,,,,,,,,,,,,,,,,,,Kimbele,158406476,2,2024/10/27 10:30:13+00,c0857efca54347f4a59656ce31353c32
+,,"152307630",way,15.625,mortuary,hospital,Casa Mortuária do Hospital Josina Machel,,,,,,,,,,,,,,,,,,,,,,,Luanda,124878703,5,2022/08/14 08:50:26+00,2e864cf597f74dbbaf3cf0fcaf13222e
+13.4162307520716,-12.5849873550646,"4167398309",node,18.75,clinic,clinic,Centro Médico Nossa Senhora das Dores,,,,,,"Mo-Fr 07:30-15:00; Sa 08:00-09:30",,,,,,,,,,,,,,,,,Benguela,134291993,2,2023/03/30 07:52:22+00,f1c9e3dc7a8a4239840db6187a59d6af
+,,"1122850425",way,18.75,pharmacy,pharmacy,farmacia bom samaritano,,,,,,Mo-Fr 08:00-11630,,,,,yes,,,,,,,,,,,,,130181003,1,2022/12/17 09:58:11+00,2386b3535b6149a4839796d9fc2ab3cf
+13.2537651610497,-8.90143586947775,"6136077627",node,18.75,pharmacy,pharmacy,Farmácia Famorosa,,,,,,24/7,,,,,yes,,,,,,,,,,,,,65457993,1,2018/12/13 23:56:47+00,05f9f582168a4cef8389d5f6523f88cd
+13.1844734762569,-8.92534273370924,"12250035899",node,18.75,hospital,hospital,Urgência Pediatria (CSE-LS),,,,,,,,,,,,,,,,,,,,,Via S10,,"Talatona, Luanda",157867274,2,2024/10/14 09:25:13+00,e99cc1a20a9b4d69bef1406d30c0b969
+,,"1365280368",way,12.5,pharmacy,pharmacy,Farmacia Ngila,,,,,,,,,,,,,,,,,,,,,,,,163322190,1,2025/03/07 11:01:36+00,7d6bee0a00fb4e9fa2f2b3e582ddad57
+15.7356184437136,-12.7781077452869,"10011239589",node,12.5,pharmacy,pharmacy,Farmácia Portugal,,,,,,,,,,,,,,,,,,,,,,,,125991760,2,2022/09/09 18:10:12+00,55bed21d20f944aeb2c7921acfe02183
+13.4073263210543,-9.02988727832638,"6247987947",node,15.625,pharmacy,pharmacy,+Limfarma,,,,,,,,,,,yes,,,,,,,,,,,,,66783804,1,2019/01/30 21:00:37+00,37832a5656cd45b28f31afa5c730a358
+13.2501095616187,-8.81900203106107,"5177628264",node,18.75,dentist,dentist,Cleandente - Clínica Dentária,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Valódia (ex Combatentes),,Luanda,53088576,1,2017/10/20 06:26:06+00,2306d33569d440439f115d3d50f0947b
+13.2231183246574,-8.82695075747856,"4737271195",node,18.75,pharmacy,pharmacy,Farmácia Vitória,,,,,,,,,,,,,,,,,,,,,Rua dos Heróis (ex Rua da Samba),,Luanda,106857311,2,2021/06/23 19:24:06+00,9f92c6cc2a6247959235f82de33e14d8
+,,"945410227",way,15.625,doctors,doctor,Centro Médico Mejac,,,,,,,,,,,,,,,,,,,,,,,Soyo,158052978,3,2024/10/18 14:09:44+00,4e6448bc0455412a857acca194771bfd
+,,"915926978",way,25,dentist,dentist,Clínica Dentária da Doutora Hilay Carvalho,,https://andaimescarvalho-ao.com/consultorio-dentario/,dentistry,,,,,,,,,,,,,,,,,,Rua Patrice Lumumba,,Lubango,115911782,5,2022/01/08 14:25:21+00,e4c29468c37a40269db634df8a0b74d4
+,,"952005719",way,12.5,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,Centralidade do Lossambo,106085674,2,2021/06/09 10:03:15+00,7c2ff8e3611c47519172f53a3d429360
+,,"291769788",way,12.5,hospital,,Hospital Militar da Catumbela,,,,,,,,,,,,,yes,,,,,,,,,,,25245489,2,2014/09/05 10:40:47+00,22f849363fc147afb99a0d09e68be8e4
+13.2507790242252,-8.90191288358736,"6219110252",node,15.625,pharmacy,pharmacy,Farmácia Gloria Carla,,,,,,,,,,,yes,,,,,,,,,,,,,66434447,1,2019/01/18 17:22:32+00,87c98f56801a4c5caff8d9b98f4c1caa
+13.2314119663905,-8.8240101343882,"5921880134",node,15.625,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,Rua Kruame Krumah,,Luanda,62815547,1,2018/09/22 04:26:20+00,bde7527c0ea34a4e8eb623bb47c24d3a
+13.2006614458559,-8.95605151236606,"4641433035",node,12.5,pharmacy,,,,,,,,,,,,,,,,,,,,,,,Avenida do Patriota,,Luanda,45611264,1,2017/01/29 05:18:11+00,9482938169e84192b3c38a78af1dd30c
+13.1842920918722,-8.96025763519756,"6597699133",node,12.5,clinic,clinic,Centro Neurocirurgico de Hidrosefalia,,,,,,,,,,,,,,,,,,,,,,,,72032930,1,2019/07/09 00:19:27+00,e3d15721dc054121a341fe1e7917fcc5
+13.2152670797738,-8.8500103789373,"6201975251",node,18.75,pharmacy,pharmacy,Farmácia Califarma,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,66237143,1,2019/01/11 19:54:01+00,110e1fdebf074fb2b1b717421827de90
+,,"1072047832",way,18.75,hospital,hospital,Hospital Municipal do Cuvelai,Administração Municipal do Cuvelai,,,public,,,,,,,,,,,,,,,,,,,,122681138,1,2022/06/21 18:50:06+00,f7b688ea55b3441eb928d7cc86a29489
+,,"718345933",way,12.5,clinic,clinic,Pitágoras,,,,,,,,,,,,,,,,,,,,,,,,104682917,3,2021/05/14 11:54:44+00,47438a54eae14bb59c7c03c56dc2ebb5
+13.2414466970508,-8.90843081913314,"6136077513",node,15.625,pharmacy,pharmacy,Farmácia Samuel M Luanika,,,,,,,,,,,yes,,,,,,,,,,,,,65457993,1,2018/12/13 23:56:43+00,61626feab3684412ac1a7a5557a0073e
+,,"235862384",way,12.5,hospital,hospital,Centro de Saúde do Lombo Lombo,,,,,,,,,,,,,,,,,,,,,,,,161346182,3,2025/01/14 13:54:35+00,f8316f7d0cea431591573c4cbfa8558a
+,,"948188082",way,25,hospital,hospital,Centro de Saúde da Mapunda,Direcção Municipal da Saúde do Lubango,,general,public,,,,,,,,,,,,,,,,,,,Lubango,105497645,1,2021/05/28 14:18:20+00,0a5ccfa7b9df4ed48ff044547e7e5b44
+,,"1158434696",way,15.625,clinic,clinic,Centro materno infantil,,,,,,,,,,,,,,,,,,,,,,,Benguela,134301137,1,2023/03/30 11:48:00+00,4915a58a1a0145cdb2c763b4c2925979
+13.4961780989119,-14.9226762617337,"8520559779",node,18.75,hospital,hospital,Mediag,,,,,,,,,,,,,,,,,,,,,Rua Rainha Lussinga,,Lubango,101045251,1,2021/03/15 10:58:18+00,fff7c3e9c2354037933395ad3d8a0cef
+13.4040258628607,-9.01790057005502,"6317031941",node,15.625,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,,,,67782351,1,2019/03/04 21:03:30+00,f9ed7df7daf4432d9818bf8842022dcf
+13.2714099892393,-9.00283007578713,"4225657956",node,9.375,pharmacy,,Farmácia Hanga,,,,,,,,,,,,,,,,,,,,,,,,39801429,1,2016/06/04 17:42:16+00,e46bd257da294697b4dcc1cf08d2888e
+13.2606110804667,-8.91256007991254,"5694854267",node,25,pharmacy,pharmacy,Farmácia Uhenha,,,,,,24/7,,,,,yes,,,,,,,,,,Via Expressa Golfe-Camama,,Luanda,65477287,2,2018/12/14 15:38:56+00,286b52a164c74d3bbb2f0e6860703de8
+13.2888690744546,-8.90040321900676,"12880219885",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,1758c6774914400cb17d63467243fd6b
+13.502039144706,-14.9220410811112,"3958416260",node,12.5,,pharmacy,Venda de Materiais de Construção,,,,,,,,,,,,,,,,,,,,,Rua 4 Fevereiro,,,104581815,5,2021/05/12 15:02:13+00,e8bbe3ff863040fab7b83d0f4cf60c9e
+13.204771428258,-8.93195530094187,"6231161362",node,15.625,pharmacy,pharmacy,Farmácia Marula,,,,,,,,,,,yes,,,,,,,,,,,,,66582137,1,2019/01/23 21:18:41+00,96a61cef70bf493eba89b86fd24dbddf
+,,"828418667",way,12.5,hospital,hospital,Hospital Municipal do Curoca,,,,,,,,,,,,,,,,,,,,,,,,110163067,2,2021/08/24 10:03:53+00,b599a679f7a942af8b74d9e616140f31
+,,"702594466",way,12.5,hospital,hospital,Hospital Materno Infantil do Golf 1,,,,,,,,,,,,,,,,,,,,,,,,72037249,1,2019/07/09 04:51:04+00,643f05d0fcd9488b8f09e862fec12a84
+,,"317634605",way,9.375,clinic,,OR,,,,,,,,,,,,,,,,,,,,,,,,27525854,2,2014/12/17 09:45:27+00,bb5a258bd41e4df9a878d10ae1dd5803
+,,"305526952",way,9.375,doctors,,Posto Médico,,,,,,,,,,,,,,,,,,,,,,,,25743187,1,2014/09/29 10:08:59+00,026040416738435f9521644ae9276120
+,,"296202232",way,12.5,hospital,hospital,Hospital São Pedro,,,,,,,,,,,,,,,,,,,,,,,,137342298,3,2023/06/14 19:18:45+00,d8d92e206c354d51940d30e62664993d
+13.2279812534216,-8.82100714993823,"9904368435",node,18.75,clinic,clinic,Clinica Central 29 de Novembro,,,,,,,,,,,,,,,,,,,,,Avenida do 1º Congresso do MPLA,,Luanda,124878880,2,2022/08/14 08:56:21+00,bb27699f834d4b70a9b98dba138c7777
+,,"1365289599",way,12.5,pharmacy,pharmacy,farmácia tchimbimja,,,,,,,,,,,,,,,,,,,,,,,,163324104,1,2025/03/07 11:53:22+00,2818e0d2a7dc4e2ea93acb999492038e
+13.50605374105,-14.9230002222914,"3958417435",node,21.875,pharmacy,pharmacy,Farmácia Bem do Povo,,,,,,,,,,,yes,,,,,,,,,,Avenida 21 de Janeiro,,Lubango,100115507,4,2021/02/27 20:39:14+00,79213d36c1294bdcb00c29c29811f2f3
+13.4958945391276,-14.9227319175708,"8500130975",node,18.75,hospital,hospital,Centro de Saúde da Organização da Mulher Angolana (O.M.A.),,,,,,,,,,,,,,,,,,,,,Rua Rainha Lussinga,,Lubango,104575528,3,2021/05/12 12:51:22+00,839baff712ab4ceab13ffcac42a55e7b
+,,"823816669",way,25,hospital,hospital,Centro Médico do Caminho de Ferro de Moçâmedes (CFM),Clínica Sagrada Esperança,,,private,,,,,,,,,,,,,,,,,Largo Afonso Cerqueira,,Lubango,121026308,5,2022/05/15 21:47:28+00,2677de99d32d472787b437b2406abd47
+13.4946186458265,-14.9190953450599,"8500345847",node,21.875,pharmacy,pharmacy,Farmácia Consola,,,,,,,,,,,yes,,,,,,,,,,Avenida Deolinda Rodrigues,,Lubango,102003098,2,2021/03/30 18:18:12+00,03b3c5ced5ea47678cec8b330f29cd6f
+,,"783355757",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,83366342,2,2020/04/10 13:20:58+00,4e958d1900fc4d9599be5df729ffb1c0
+13.2052285772571,-8.87438797085102,"5737572921",node,15.625,clinic,clinic,Centro Médico Horizonte Futuro,,,,,,,,,,,,,,,,,,,,,,,Luanda,60392398,1,2018/07/03 22:05:07+00,b3f90db87e154cecb4cd7a4a9ffed590
+13.2420317538923,-8.8256436834977,"4892751292",node,15.625,pharmacy,pharmacy,Axiluandas,,,,,,,,,,,,,,,,,,,,,,,Luanda,166039657,2,2025/05/09 17:46:38+00,51be208c1754479a8f18210b9e763119
+,,"315027075",way,12.5,pharmacy,pharmacy,Intercal - Depósito de Medicamentos,,,,,,,,,,,,,,,,,,,,,,,,106779035,5,2021/06/22 13:12:46+00,3ea6daeeb1fd4c53976fe859c90f48bf
+,,"206793168",way,12.5,hospital,,Hospital do Dande,,,,,,,,,,,,,yes,,,,,,,,,,,15131297,1,2013/02/23 06:00:03+00,ca5731eb522e47c4993ceb3796551f02
+13.4802974937023,-14.9219364749596,"10931273755",node,25,pharmacy,pharmacy,Farmácia Hospital Central,,,,,,24/7,,,,,yes,,,,,,,,,,Rua do Hospital,,Lubango,140596992,2,2023/08/30 16:15:54+00,cf694bc63ab9413f87345ac064cdda93
+13.2409892965946,-8.82146061089992,"3746056350",node,15.625,pharmacy,pharmacy,Farmácia Maculusso,,,,,,,,,,,,,,,,,,,,,,,Luanda,137224219,6,2023/06/12 02:01:23+00,72ed1506288440df82c089f742a50a1a
+13.2338809397893,-8.84300520336004,"9993195657",node,12.5,pharmacy,pharmacy,Farmácia Ninafarma,,,,,,,,,,,,,,,,,,,,,,,,151242122,2,2024/05/12 20:57:02+00,2f9c041c781d4bb09e672817cd23d4dc
+13.2469992888081,-8.82037347805831,"6145481548",node,21.875,pharmacy,pharmacy,Farmácia Lea Pharma,,,,,,,,,,,yes,,,,,,,,,,Avenida Hoji Ya Henda,,Luanda,65584663,1,2018/12/18 15:53:22+00,590083b405c54a1ebc258d9430b0f9d7
+,,"921642515",way,18.75,dentist,dentist,Doutora Hilay Carvalho,,,,,,,,,,,,,,,,,,,,,Rua Patrice Lumumba,,Lubango,104979043,2,2021/05/19 18:20:35+00,5086ca47afe944359e1b137d19aa082d
+13.4031279933928,-9.01437966780796,"6317031968",node,15.625,pharmacy,pharmacy,Farmácia Mulala,,,,,,,,,,,yes,,,,,,,,,,,,,67782351,1,2019/03/04 21:03:31+00,e2e521acb62c4174a154a8ea7d1f4ebe
+13.2442371164363,-8.81639400188863,"5170532698",node,18.75,clinic,clinic,Consultório Médico Lusolo,,,,,,,,,,,,,,,,,,,,,Comandante Eurico,,Luanda,52971032,1,2017/10/16 04:09:43+00,0bcd6953993c4d188707958914580d67
+19.8630029340883,-11.6086367027806,"11407390070",node,9.375,doctors,,Posto Médico de Luanguirico,,,,,,,,,,,,,,,,,,,,,,,,144964470,1,2023/12/10 13:19:55+00,fef95e4305464acea05fc47a75373617
+,,"777716992",way,25,clinic,clinic,Centro de Saúde da Vila Paula,Missionárias das Irmãs de Santa Doroteia,,,religious,,,,,,,,,,,,,,,,,Rua das Missionárias das Irmãs de Santa Doroteia,,Vila Paula,81684634,1,2020/03/02 14:10:32+00,c422a39a563441748cf92bbd155f9b1f
+,,"702425081",way,12.5,hospital,hospital,Hospital Municipal do Sambizanga,,,,,,,,,,,,,,,,,,,,,,,,72010862,1,2019/07/08 12:01:40+00,f1f32c61beb44f10a19d4efd21efb8cc
+13.4072163504847,-9.0328624348578,"6330266477",node,15.625,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,,,,68012068,1,2019/03/11 07:33:08+00,46f19b2a0b7e44cc9ddd7979bc3e575e
+,,"804323579",way,12.5,hospital,hospital,Posto de Saúde Zambela,,,,,,,,,,,,,,,,,,,,,,,,111472223,2,2021/09/21 03:24:11+00,fda9d732951044759157af0b06ac90ec
+15.728416963964,-12.7744152654818,"10011239585",node,9.375,pharmacy,,Farmácia Chitunda,,,,,,,,,,,,,,,,,,,,,,,,125979640,1,2022/09/09 12:15:48+00,fa887360e35348f08ebe4324b6e35c2f
+,,"702645559",way,12.5,hospital,hospital,Hospital das 500 Casas,,,,,,,,,,,,,,,,,,,,,,,,72045898,1,2019/07/09 09:26:35+00,019ed166188b445996bf5501aa511ca7
+13.2115182735794,-8.84849124280612,"4680082464",node,15.625,pharmacy,pharmacy,Farmácia Kifembe e Filhos,,,,,,,,,,,,,,,,,,,,,,,Luanda,123974981,3,2022/07/23 12:58:32+00,21e23711f1cc4ce693c7f3664426919b
+13.2912306756737,-8.897292443282,"12880219882",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,24747db1ab1049f1bd473465ed1c0a67
+13.2471977722752,-8.82045830291844,"6145481550",node,18.75,clinic,clinic,Consultório Médico Sara,,,,,,,,,,,,,,,,,,,,,Avenida Hoji Ya Henda,,Luanda,65584663,1,2018/12/18 15:53:22+00,3bd213fac97c4568b270818a5232b5a2
+,,"705413862",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,72383519,1,2019/07/18 10:38:01+00,dde9c080f6cc48ed8c110feba17aaac4
+13.2493028872572,-8.82134552736935,"4362213897",node,12.5,pharmacy,pharmacy,Farmácia Valódia,,,,,,,,,,,,,,,,,,,,,,,,166039657,2,2025/05/09 17:46:38+00,9e91806c65d34663a0180b7d34cfb6fa
+13.2428726264187,-8.93453491546254,"5676693605",node,21.875,pharmacy,pharmacy,Farmácia Emanuel Buada,,,,,,Mo-Su 07:00-21:00,,,,,yes,,,,,,,,,,,,Luanda,61692856,2,2018/08/15 17:44:49+00,cd33523cb74c425ea412095586f56666
+13.5100176268798,-14.9101106154102,"10931300887",node,12.5,pharmacy,pharmacy,Farmacia da Lalula,,,,,,,,,,,,,,,,,,,,,,,,140853887,2,2023/09/05 14:36:03+00,1ff2a61a231a4556851ced00d59dba2f
+,,"996851351",way,12.5,clinic,clinic,Cligest - Clínica Vida de Luanda (Sede),,,,,,,,,,,,,,,,,,,,,,,,113032479,2,2021/10/27 11:00:46+00,328bf64e42644a41b4c2b641309658e5
+13.5450508808409,-14.9279059825807,"8540726752",node,21.875,pharmacy,pharmacy,Ervanária Global,,,,,,,,,,,yes,,,,,,,,,,Avenida do Estádio Nacional da Tundavala,,Lubango,101384719,1,2021/03/20 12:15:27+00,558debc830dc4f5daf961e5f9faa8008
+,,"917114798",way,18.75,clinic,clinic,Posto Médico Privado da Sofrio,,,,,,,,,,,,,,,,,,,,Luta Continua,,,Lubango,105645266,3,2021/05/31 21:27:47+00,f2450d088b5d4f4f85f3b109254310c5
+13.2719420724528,-8.99482812428445,"5776228853",node,9.375,pharmacy,,KAJYFARMA,,,,,,,,,,,,,,,,,,,,,,,,60943224,1,2018/07/22 03:40:50+00,0e9da63698e04fc5a022a1a021f21eaa
+,,"1219370140",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,143334446,2,2023/10/29 22:30:16+00,7c2cda45e78546b0a4c09c45b35da724
+,,"1168306387",way,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,"Viana, Luanda",135667528,1,2023/05/03 16:02:14+00,3413e6efc2e24f6c9c606d3d9badb2ef
+13.1616833329852,-8.93267824009058,"5168357086",node,12.5,pharmacy,pharmacy,Farmácia Alcifarma,,,,,,,,,,,,,,,,,,,,,,,,52945284,1,2017/10/15 04:15:39+00,db3b89176a864e78b1e1a62cfdd6210e
+13.1764073193759,-8.90223927489694,"4794521539",node,15.625,clinic,,Clínica do Corpo,,,,,,,,,,,,,,,,,,,,,Estrada do Futungo,,Luanda,47803253,1,2017/04/15 04:27:33+00,016b3da3265a4b2bb5ea237b1e648083
+,,"915503718",way,18.75,,alternative,Medicina Chinesa,,,,,,,,,,,,,,,,,,,,Comercial,Rua Domingos Pedro,,Lubango,100786885,1,2021/03/10 15:02:18+00,4677265144804390a6ba6d0bbdda06cd
+13.4846209631782,-14.9225478509771,"8515630356",node,21.875,pharmacy,pharmacy,Farmácia Huíla,,,,,,,,,,,yes,,,,,,,,,,Rua Comandante Saydi Mingas,,Lubango,105094484,3,2021/05/21 13:58:10+00,ed5cb0d543994f9ba55a58c0ef8f38bd
+13.4159844917564,-9.06165561336334,"6316579382",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,67774217,1,2019/03/04 16:55:44+00,ffeda13e54084e6fbd1310aa8c8a7449
+13.2397105534465,-8.89153617127758,"5494141723",node,21.875,pharmacy,pharmacy,Farmácia Lucas Sisenga,,,,,,,,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,169003970,2,2025/07/16 09:42:05+00,e1fc536e038b49d2b4e5e8073089ca2e
+,,"718347191",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,73747754,1,2019/08/26 11:38:24+00,de61892ba7cf44cab07046afc994bda0
+13.2370221418226,-8.83032145602076,"4616658389",node,21.875,clinic,clinic,Dr Fernando Póvoas,,,,,,,,,,,,,,,,,,,,"276",Rua Comandante Stona (ex Veriador Jaime de Amorim),,Luanda,151242122,3,2024/05/12 20:57:02+00,728a44d08e214e9b8fdddc72ded39c30
+13.2849940367985,-8.89658325045448,"12880219886",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,53b1396e510b4f23b07ba7da492b2d8f
+13.2870235470139,-8.78767642814972,"5549072837",node,18.75,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,Estrada de Cacuaco,,Luanda,58049019,1,2018/04/12 22:18:17+00,16f91bf482bb42e896f2368361aec67c
+13.5227873725456,-14.9272689579396,"8510642134",node,15.625,clinic,clinic,Clínica,,,,,,,,,,,,,,,,,,,,,,,Comandante Valódia,104514752,3,2021/05/11 13:06:35+00,82a4c02676364dcc9bb997f96b5d7293
+,,"911162677",way,18.75,clinic,clinic,Centro Médico da Palanca,,,general,public,,,,,,,,,,,,,,,,,,,,138041967,2,2023/07/02 23:28:53+00,8b70e46a62cc4af187022beee62f3cae
+13.2096832235177,-8.92967701584027,"6228755352",node,18.75,pharmacy,pharmacy,Farmácia Sango Pai,,,,,,,,,,,yes,,,,,,,,,"330",,,,66582137,2,2019/01/23 21:18:43+00,4bab82ce57d945aa915c0c7f1a68fff7
+13.2622904785866,-8.91960615917731,"5694685400",node,21.875,pharmacy,pharmacy,Farmácia Anipluris,,,,,,,,,,,yes,,,,,,,,,,Via Expressa Golfe-Camama,,Luanda,59893282,1,2018/06/16 12:03:56+00,e7d88d92b1f8462aa594fc255d4d7df2
+13.2322075766397,-8.90159252724806,"3814285560",node,12.5,pharmacy,pharmacy,MediRite,,,,,,,,,,,,,,,,,,,,,,,,80503319,5,2020/02/04 01:30:22+00,777839a3ac144c2db8abb049072def1a
+13.1539752510078,-8.97054005109663,"2872982684",node,9.375,pharmacy,,Farmácia,,,,,,,,,,,,,,,,,,,,,,,,63264278,3,2018/10/06 20:19:25+00,043b1e67ff1345999808d3f80a2b1ac8
+13.5016818241737,-14.8954247666789,"8807351119",node,15.625,hospital,hospital,Unidade Especial de Nutrição (UEN),Centro de Saúde da Mitcha,,,,,,,,,,,,,,,,,,,,,,,105891179,1,2021/06/05 17:12:31+00,2183999205d4435297538474b7dd1f07
+13.4882356589218,-14.9158382213057,"7683838576",node,25,hospital,hospital,Clínica Sagrada Esperança Lubango (CFM/CSE),Endiama,,,private,,,,,,,,,,,,,,,,,Largo Afonso Cerqueira,,Lubango,121026299,4,2022/05/15 21:47:17+00,baa82226b3fe4b95b1bdb56388fc247d
+13.1872579444911,-8.94948730871474,"6596314108",node,15.625,clinic,clinic,Affagus Consultório Médico,,,,,,"Mo-Fr 08:00-20:00, Sa 08:00-13:00",,,,,,,,,,,,,,,,,,72011128,2,2019/07/08 12:07:53+00,8e1eef0611a943b1a0b02f34b0c94e9b
+,,"359249620",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,105822949,3,2021/06/04 08:16:41+00,52f78384db464ebb88c7eb9efc9e9796
+13.1929619972387,-8.89495171300175,"4834685429",node,15.625,pharmacy,,Farmácia Abi,,,,,,,,,,,,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,48394440,1,2017/05/04 13:06:55+00,2ff89997a1b94cb6b5c486dc8a55205d
+13.2391118341028,-8.93196787379662,"5693759957",node,21.875,pharmacy,pharmacy,Farmácia Tunga Adolfo,,,,,,,,,,,yes,,,,,,,,,,Rua do Mufulama,,Luanda,59883562,1,2018/06/15 20:41:34+00,1a2501f46725436d9f9da57a88193465
+13.2344880410361,-8.83917425451457,"9947394256",node,15.625,,physiotherapist,Diamond Clinic,,,,,,,,,,,,,,,,,,,,,Avenida Ho Chi Minh,,Luanda,124775702,1,2022/08/11 13:02:00+00,f81f269c50fc4d93903396b20cb7085d
+,,"498555206",way,12.5,clinic,clinic,CMS,,,,,,,,,,,,,,,,,,,,,,,,137224219,2,2023/06/12 02:01:23+00,f45dc568f9924d08bb731e068ecc0682
+,,"732756321",way,21.875,pharmacy,pharmacy,Prince Farma,,,,,,,,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,75431217,1,2019/10/08 21:14:09+00,6f034783f312495593bf851715ee2a5a
+,,"1171758198",way,12.5,clinic,clinic,Kwanda Base Clinic,,,,,,,,,,,,,,,,,,,,,,,,135992441,1,2023/05/11 20:10:15+00,6255deb7a0da428985c4eac3a97a47bf
+,,"1093132536",way,9.375,clinic,,Centro de Saúde Benfica,,,,,,,,,,,,,,,,,,,,,,,,130393829,2,2022/12/22 21:55:18+00,7389691f8d1946c6942de8ec70168b7b
+13.2387237519858,-8.91445112108752,"5664434758",node,21.875,pharmacy,pharmacy,Farmácia Marlua+,,,,,,,,,,,yes,,,,,,,,,,Rua do Mufulama,,Luanda,59545758,1,2018/06/04 17:56:48+00,e0eb1eb2033b47c1911ae5d7387c7558
+,,"152307634",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,106857311,2,2021/06/23 19:24:06+00,e388bc377b4543eb88f10f78c6ee16a2
+,,"783921106",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,161358371,4,2025/01/14 20:24:20+00,54528aeef605484cb189abfc627deb70
+,,"783360498",way,12.5,hospital,hospital,Centro Materna Infantil,,,,,,,,,,,,,,,,,,,,,,,,119916406,3,2022/04/19 16:55:16+00,56f1ee1adbc9476ea4ea3901fb36b587
+13.216981765706,-8.85908596841745,"8870847378",node,15.625,pharmacy,pharmacy,Farmácia Deontologia,,,,,,,,,,,yes,,,,,,,,,,,,,107055728,1,2021/06/28 02:44:42+00,f354f8c7737d4820946ab70bc9f4311f
+,,"1160420305",way,15.625,clinic,clinic,Posto Médico,,,,,,,,,,,,,,,,,,,,,Bairro Kassange,,,134611704,1,2023/04/07 11:41:22+00,05d4e590709d412bbc347cbe027dc946
+,,"425416402",way,12.5,pharmacy,,Farmácia Morro Bento II,,,,,,,,,,,,,,,,,,,,,,,Luanda,44697350,2,2016/12/27 04:18:08+00,88e745d4d8b443eca0170a7b4cd7d47a
+13.508948598949,-14.9231983704824,"8544540144",node,18.75,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,Avenida 21 de Janeiro,,Lubango,102150590,3,2021/04/01 22:25:46+00,ec23d5d9ad944ca284a96bac71ee3836
+13.481931629545,-14.920115171219,"8529294872",node,21.875,pharmacy,pharmacy,Farmácia do Hospital Central,,,,,,,,,,,yes,,,,,,,,,,Rua do Hospital,,Comandante Cowboy,107201648,3,2021/06/30 11:03:31+00,c694e6f06e0c41c4be89ad1b89f425cf
+,,"1189616137",way,15.625,hospital,hospital,Hospital Municipal da Ganda,,,,,,,,,,,,,,,,,,,,,,,Ganda,138503012,1,2023/07/14 11:20:29+00,d1820152e7bd4e2a8e745abc3a48ddc3
+13.2327145979627,-8.8357561144004,"5170184427",node,18.75,pharmacy,pharmacy,Farmácia Gika,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Gika,,Luanda,52969109,1,2017/10/15 23:57:28+00,6240eddeb15b473da6acc2eb14e33f86
+,,"953026667",way,15.625,clinic,clinic,Centro Médico Adventista,,,,,,,,,,,,,,,,,,,,,,,Huambo,106160649,2,2021/06/10 13:59:01+00,bbfeb648b87a44b99b1a969749d335b9
+,,"918004841",way,15.625,,alternative,Ervanária Tchiogolola,,,,,,,,,,,,,,,,,,,,Bula Matadi,,,Lubango,140821279,2,2023/09/04 19:44:44+00,d3ea13779bb44e51b8f7bd83ebca156b
+20.3734178381921,-12.2301401547661,"11407391373",node,9.375,doctors,,Posto médico,,,,,,,,,,,,,,,,,,,,,,,,144964470,1,2023/12/10 13:20:00+00,c6a5537ac4d44aa3a0b6631a1a54960b
+13.4934527230951,-14.92062495857,"8506280490",node,12.5,clinic,clinic,Clínica Geral,,,,,,,,,,,,,,,,,,,,,,,,106924965,2,2021/06/24 21:48:44+00,5995368a614d49628812ae332d9e9f01
+13.5092778401057,-14.9083885534031,"11090533542",node,12.5,pharmacy,pharmacy,Farmácia Quesson Seven,,,,,,,,,,,,,,,,,,,,,,,,140738857,2,2023/09/02 23:19:19+00,2f4dcd726bd644f9a16fb8af5c0fae13
+13.5115991243705,-14.9232090154994,"8543781921",node,21.875,pharmacy,pharmacy,Farmácia Josilda,,,,,,,,,,,yes,,,,,,,,,,Avenida 21 de Janeiro,,Lubango,105095152,2,2021/05/21 14:12:30+00,51e98919a1f548368d7561e83ac3763e
+13.2339657646494,-8.83949285065418,"4779215944",node,21.875,clinic,clinic,Hipocrates,,,,,,24/7,,,,,,,,,,,,,,,Avenida Ho Chi Minh,,Luanda,124775702,3,2022/08/11 13:02:00+00,c0c5b2400bfd4a77945cc0b46183d8d4
+13.2906232391508,-8.90161918170014,"12880219878",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,0f2e0d1744814c1398b349e0a4a1370c
+,,"916251683",way,12.5,pharmacy,pharmacy,Bolaxi - Déposito de Medicamentos,,,,,,,,,,,,,,,,,,,,,,,,140902452,6,2023/09/06 16:13:22+00,d86a624b8c5747e88679cb29495003e1
+,,"783922688",way,15.625,hospital,hospital,Hospital Neves Bendinha,,,,,,24/7,,,,,,,,,,,,,,,,,,116344879,3,2022/01/19 14:22:47+00,b28b748498a64b0d9be93a6289259cb5
+13.2512717963127,-8.94079435311446,"5677586973",node,25,pharmacy,pharmacy,Farmácia Wendyla,,,,,,,,,,,yes,,,,,,,,,"74",Rua das Zinais,,Luanda,59688300,1,2018/06/09 10:48:52+00,492c9b470f944337aa7bef29cc9aab0d
+13.2144112874598,-8.84933580336988,"6201975246",node,18.75,pharmacy,pharmacy,Farmácia Rema,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,66237143,1,2019/01/11 19:54:01+00,77afbb95b392482ca2f88735b84470ea
+13.2025302749875,-8.8896533443677,"8876952661",node,21.875,clinic,clinic,Centro Médico Afrisaude,,,,,,"Mo-Fr 08:00-20:00, Sa 08:00-12:00",,,,,,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,107164160,1,2021/06/29 18:07:23+00,be2dd421cd6b4b4fa91818e9642ee5d1
+12.1866748748564,-15.2106981522481,"8467836123",node,18.75,pharmacy,pharmacy,Farmacia Tchitata,,,,,,,,,,,yes,,,,,,,,,,,,Moçâmedes,104414790,2,2021/05/10 00:38:38+00,9df6713371a64110bedec2a34ff7627e
+13.2328866784348,-8.84012601961993,"4779215935",node,15.625,pharmacy,,FarmáciaHoChiMin,,,,,,,,,,,,,,,,,,,,,Avenida Ho Chi Minh,,Luanda,64282433,2,2018/11/08 06:37:19+00,242316d724914a27992ec389fdbe69c4
+,,"439154743",way,12.5,hospital,,Hospital Militar,,,,,,,,,,,,,yes,,,,,,,,,,,41714792,1,2016/08/26 13:20:35+00,5cd9479e6df74af6be3875efb31a06ab
+13.488431627818,-14.921382766436,"8515522679",node,21.875,pharmacy,pharmacy,Farmácia Caridade,,,,,,,,,,,yes,,,,,,,,,,Rua Comandante Saydi Mingas,,Lubango,106924965,2,2021/06/24 21:48:44+00,43c53bc898c643cdbb6f0adb2c8e2b00
+,,"443826444",way,15.625,clinic,clinic,Clínica Andefil,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Eurico Gonçalves,,,104537348,4,2021/05/11 22:28:47+00,ac5b4a252ad54205bf8a7a360bd9a84d
+13.2220813994158,-8.90241102009296,"10596110784",node,28.125,hospital,hospital,Clínica CEMI,"+24493188080",,general,,,,,,,,,,,,,,,,,"8011",Rua 130A,,Luanda,131943247,2,2023/02/01 01:19:57+00,66636c49fe0240e6b11dc8e9287d4ffa
+13.1615975861157,-8.93644313953902,"4555913691",node,9.375,pharmacy,,Farmácia Santa Esperança,,,,,,,,,,,,,,,,,,,,,,,,52945284,2,2017/10/15 04:15:56+00,de7ea9a4b81441a6baf1165d4f4d7974
+13.5867397850169,-8.60552132747807,"4325252266",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,137830680,2,2023/06/27 11:06:38+00,003df9779b5549b8a5631c4249dfc955
+,,"201331260",way,21.875,hospital,hospital,Clínica Climed,,,,,,,,,,,,,,,,,,,,"65",Alameda do Principe Real,,Luanda,113031856,6,2021/10/27 10:49:01+00,a064ef2643234ae9ae56b5839e64f21f
+,,"310917652",way,18.75,hospital,hospital,Hostpital & Maternidade do Palanca,,,,,,,,,,,,,yes,,,,,,,,,,Luanda,151244912,3,2024/05/12 23:27:59+00,60bf0ecc09d34411bc91b6fd57420b61
+13.4976510507566,-14.9214837683692,"8500275624",node,21.875,pharmacy,pharmacy,Farmácia Ludmila e Yembeti,,,,,,,,,,,yes,,,,,,,,,,Avenida Comandante Eurico Gonçalves,,Lubango,107335794,2,2021/07/03 01:02:38+00,5612f2c1902f4b988031b2be2c7275ce
+13.222105790754,-8.82816990529517,"4737271370",node,25,pharmacy,pharmacy,Farmácia Variedades,,,,,,24/7,,,,,,,,,,,,,,"146",Rua dos Heróis,,Luanda,126408836,3,2022/09/20 07:18:41+00,6fa7dd1211aa4187adb0b89db4483568
+15.7312223869562,-17.0688425365634,"8461568915",node,18.75,pharmacy,pharmacy,Farmácia Ondjiva,,,,,,,,,,,yes,,,,,,,,,,,,Ondjiva,104502387,2,2021/05/11 09:42:09+00,3a6a04a204764bab961f5ed1589661ab
+,,"702603247",way,12.5,hospital,hospital,Centro de Saúde Cassequel,,,,,,,,,,,,,,,,,,,,,,,,72039052,1,2019/07/09 06:10:01+00,7dce78cedbc946d8a2c625bfe0db1fb9
+13.2877610706741,-8.84930135374785,"4464962789",node,12.5,pharmacy,,Farmácia,,,,,,,,,,,,,,,,,,,,,Rua dos Comandos,,,43195096,1,2016/10/26 15:22:55+00,244ffd332cb1493d849ca6dea4825755
+13.2427040663459,-8.8130073777304,"4734128121",node,25,clinic,clinic,Zdravexport,,,,,,Mo-Fr 09:00-17:00,,,,,,,,,,,,,,"70","Marechal Tito ""Presidente""",,Luanda,65379003,5,2018/12/11 15:05:36+00,afd52c1c10844dccbbd54819ab9b7483
+13.4836858780602,-14.9343081640437,"8723670006",node,12.5,pharmacy,pharmacy,N & F Farmácia,,,,,,,,,,,,,,,,,,,,,,,,141776598,4,2023/09/26 14:10:10+00,9cb0cd121f604a548f0c74ad4ad22dea
+13.495507462839,-14.9225518742906,"8520491796",node,18.75,hospital,hospital,Centro Médico de Medicina Natural,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Eurico Gonçalves,,Lubango,101044972,1,2021/03/15 10:54:38+00,d7fb30bfb34b436d85673f727c66a243
+13.1946154952778,-8.97435431995476,"8167545617",node,12.5,clinic,clinic,Laboratório Mediag Luanda/Benfica,,,,,,,,,,,,,,,,,,,,,,,,113932976,3,2021/11/18 08:24:23+00,3c4025e016314516b71e8da6140bf273
+13.2891639498083,-9.00743207590551,"6597688084",node,12.5,clinic,clinic,Centrab Vacinação,,,,,,,,,,,,,,,,,,,,,,,,72032830,1,2019/07/09 00:08:47+00,50fe7e4639d745fc802c2b2baff1c0e7
+13.2264620334714,-8.82749583264194,"8880999550",node,18.75,hospital,hospital,Hospital Psiquiátrico de Luanda,,,,,,,,,,,,,,,,,,,,,Avenida Revolução de Outubro,,Luanda,107226603,1,2021/06/30 20:01:50+00,ef683383e067432590348d8ea28d88a0
+12.3013754362727,-5.54391376288851,"11459451738",node,12.5,hospital,hospital,Banco de Urgência,,,,,,,,,,,,,,,,,,,,,,,,145572531,1,2023/12/27 12:23:36+00,2ac4b05a1e1c4e5b9af1587657dd12b3
+,,"824281988",way,25,clinic,clinic,Centro Médico Tchiena,Ministério da Saúde,,general,private,,,,,,,,,,,,,,,,,,,Lubango,104720888,3,2021/05/15 08:26:11+00,ad47dd63efa84c9395fe1f9df8db31f4
+13.5499785178976,-12.3608919769407,"2845902201",node,9.375,pharmacy,,Kukala,,,,,,,,,,,,,,,,,,,,,,,,22603110,3,2014/05/28 15:49:20+00,24325f1cb3fb48fc87b31a023998ac6c
+13.4862758861408,-14.9273137173025,"8723808198",node,12.5,clinic,clinic,Consultório de Medicina Imunex,,,,,,,,,,,,,,,,,,,,,,,,140513873,2,2023/08/28 21:35:01+00,ef83a2044ed6419ca52ba51fb16f4ec1
+13.2508861449477,-8.82060196873883,"6801054666",node,9.375,,physiotherapist,Fisio Luanda,,,,,,,,,,,,,,,,,,,,,,,,74556963,1,2019/09/17 04:42:38+00,cf7a1fe854294022bd52bba9953d85e7
+13.5046420609175,-14.9275906553834,"8722961985",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,105295946,2,2021/05/25 13:36:23+00,4d47311e562f4c1b97e010832ae0f7e3
+,,"941154320",way,28.125,hospital,hospital,Centro Médico 5 de Abril,Administração Local do Estado,,general,public,,,,,,,,,,,,,,,,,Estrada do Bairro 5 de Abril,,Moçâmedes,153102812,6,2024/06/24 09:36:00+00,f114fbb7b75e47f687e2464805017ddb
+,,"276925010",way,25,hospital,hospital,Posto de Médico do Cassanje,Administração Local do Estado,,general,public,,,,,,,,,,,,,,,,,,,Moçâmedes,153102812,3,2024/06/24 09:36:00+00,9ee7b1f9d1414b0097595e2d66984091
+13.2054168348023,-8.85987185565898,"5916953284",node,18.75,pharmacy,pharmacy,Farmácia Farmambo III,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,62743982,1,2018/09/19 21:15:48+00,725c6ebc7ac2434e89b4cac58af5ff80
+13.1965342805523,-8.93732784941898,"6237222522",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,66646826,1,2019/01/26 00:11:39+00,e647c6662c2241b5b8f4e9c9dcb5cb94
+13.402441850799,-9.01495525309889,"6329924471",node,15.625,pharmacy,pharmacy,Farmácia Framambo,,,,,,,,,,,yes,,,,,,,,,,,,,68006313,1,2019/03/11 01:55:04+00,de20096ad745416fa18569e5c1d138c1
+,,"312765908",way,9.375,hospital,,,,,,,,,,,,,,,yes,,,,,,,,,,,26777253,1,2014/11/14 13:45:30+00,1e82f7e96736448a96036a7e86adb0ab
+13.9238296719852,-11.1893550467593,"13228105402",node,12.5,hospital,hospital,Banco de Urgência (HGCS),,,,,,,,,,,,,,,,,,,,,,,,173192363,1,2025/10/12 17:19:11+00,cf8e39bba37d4cc4bc0bc1d1ef73b3d7
+,,"912798304",way,12.5,hospital,hospital,Centro Médico Esperança,,,,,,,,,,,,,,,,,,,,,,,,100288476,1,2021/03/02 15:03:33+00,eb9f47440cb74d0db3adff9965aad979
+13.2614330937109,-8.91428817688981,"5694854261",node,18.75,pharmacy,pharmacy,Farmácia Arte,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,59895445,1,2018/06/16 14:11:24+00,acbb7a67115c4d9bb01fc1530b2a847c
+,,"703367990",way,15.625,clinic,clinic,Clínica Santo António,,,,,,Mo-Fr 08:00-16:00,,,,,,,,,,,,,,,,,,114202988,2,2021/11/25 03:07:17+00,cb9d43dfa8314abcbf272630777b8fc3
+13.4136455216758,-9.05695286276881,"6316579876",node,15.625,pharmacy,pharmacy,Farmácia Rayssana,,,,,,,,,,,yes,,,,,,,,,,,,,68012068,2,2019/03/11 07:33:13+00,6c9370979f874fcba811d4f0f8529d6a
+,,"917973381",way,21.875,hospital,hospital,Maternidade do Centro de Saúde do Nambambe,Ministério da Saúde,,gynaecology,public,,,,,,,,,,,,,,,,,,,,131428037,6,2023/01/18 15:23:58+00,1f93503df74c44229ff1b1fa69182e97
+13.1743952435191,-8.94005884111098,"4635223492",node,15.625,clinic,,Clínica Global Diagnostic,,,,,,,,,,,,,,,,,,,,,Avenida do Patriota,,Luanda,66613726,2,2019/01/24 20:57:38+00,9f2e13569d64459aac472c27c45cd55f
+12.245306036098,-5.55655467870255,"11200158737",node,12.5,hospital,hospital,28 de Agosto,,,,,,,,,,,,,,,,,,,,,,,,161346182,2,2025/01/14 13:54:35+00,dd02bc8ac85248fa8aa0948898b6eaf9
+13.2445663575929,-8.81772236590356,"5536388042",node,18.75,dentist,dentist,Odonto Excellence,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Valódia (ex Combatentes),,Luanda,57897267,1,2018/04/07 18:02:43+00,3564748079314d808f9ff324e762b9a0
+15.7228811360131,-17.067272606099,"8461900266",node,15.625,pharmacy,pharmacy,"Farmácia Saúde para Todos, Lda",,,,,,,,,,,yes,,,,,,,,,,,,,132230629,2,2023/02/07 23:56:52+00,593995d427ad48e0b9ee1c9f548b6113
+13.2301619731702,-8.84029667516853,"5171764333",node,21.875,clinic,clinic,Centro Médico - A Minha Vida,,,,,,24/7,,,,,,,,,,,,,,,Rua do Laboratório de Engenharia,,Luanda,107293620,4,2021/07/02 06:54:06+00,a3510781b67d482593087268cbd9fbe6
+13.2365528390639,-8.9103128078527,"5895278058",node,21.875,clinic,clinic,Consultório Medico Saúde e Vida,,,,,,,,,,,,,,,,,,,,E139,Rua 51,,Luanda,62438337,1,2018/09/10 02:23:35+00,67295bb07b2b45549c4ebd82e90a2253
+13.289171074426,-9.00736954690782,"6597688080",node,12.5,dentist,dentist,Odonto Excellence,,,,,,,,,,,,,,,,,,,,,,,,92591572,2,2020/10/16 14:54:00+00,f5ff3b142f444cbcb96d1344e585ffd4
+,,"1174776060",way,18.75,hospital,hospital,Hospital Dr. Walter Strangway,Ministerio da Saúde,,,,,,,,,,,,,,,,,,,,,,Cuíto,171353961,3,2025/09/02 10:27:36+00,0df5086d87d547b5a1449e1cc1ff6b6c
+13.4005423439018,-9.05546624842196,"10284921163",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,130463474,1,2022/12/24 17:40:07+00,856e8f039205413081d5f9771eb8d2ea
+,,"778684093",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,81840087,1,2020/03/05 21:42:02+00,e4d16d5b6b874bd282458832111dcda0
+13.544340682185,-12.3487792048456,"2823991626",node,9.375,pharmacy,,Colina das Saudades,,,,,,,,,,,,,,,,,,,,,,,,22017378,1,2014/04/29 07:58:54+00,7b9d3dd42f004ec3be8d0507c3b430cb
+,,"702600667",way,12.5,clinic,clinic,Saumor Consultório Médico,,,,,,,,,,,,,,,,,,,,,,,,72038502,1,2019/07/09 05:46:52+00,1d21cd7340cd46f8bcf66d78360c4d50
+13.3952806880037,-8.98712540672508,"6139526669",node,18.75,pharmacy,pharmacy,Farmácia Adelaide Mendes,万通修理厂 (Wantong Repair Shop),,,,,,,,,,yes,,,,,,,,,,,,,65509880,1,2018/12/15 21:24:41+00,abab1815a577423fbbebe826dc90bb1a
+13.1088709727456,-8.95924837023642,"7013229087",node,15.625,pharmacy,pharmacy,Farmácia Kyeto Kimbangi,,,,,,,,,,,yes,,,,,,,,,,,,,77610817,1,2019/11/27 07:25:47+00,fa125188af504ff08b73ac064d7d28e1
+,,"938406172",way,12.5,hospital,hospital,Hospital Municipal de Quipungo.,,,,,,,,,,,,,,,,,,,,,,,,119912706,2,2022/04/19 15:18:55+00,24385e9bda9f4e2a82b0583c1d8afee8
+13.0391655572121,-9.06692447769822,"7013299101",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,77612697,1,2019/11/27 07:53:25+00,05a9bc8ed595493e9dcec1d856d2ce78
+13.4065473907924,-9.02723247813424,"6247988220",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,66783804,1,2019/01/30 21:00:40+00,ba455520cf884e97865e5967c00c0d41
+13.2122312382634,-8.91583522475855,"3812871192",node,12.5,pharmacy,,Farmácia Orquídea,,,,,,,,,,,,,,,,,,,,,,,Luanda,50235374,2,2017/07/12 16:45:47+00,45a79e6ee47345fa95b8dd6bddf8fdbe
+13.2255223383066,-8.89717593482789,"5553417380",node,25,pharmacy,pharmacy,Farmácias de Angola,,,,,,"Su-Th 09:00-22:00, Fr-Sa 09:00-23:00",,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,58099491,1,2018/04/14 22:52:40+00,bd58f840e84a44029b216e7c00e143db
+12.1679263176568,-15.2011679283398,"11060581246",node,25,hospital,hospital,Centro de Saúde 5 de Abril,Administração Local do Estado,,general,public,,,,,,,,,,,,,,,,,,,Moçâmedes,153102812,3,2024/06/24 09:36:00+00,9debb130f4244dae874eefed42ccbc0e
+13.551371590205,-14.9275337422608,"7712050043",node,18.75,hospital,hospital,Centro Médico El Shaday,Ministério da Saúde,,,private,,,,,,,,,,,,,,,,,,,,87946217,1,2020/07/14 00:04:57+00,ade69f61e4884ebbba4049f3d754f65f
+,,"62372132",way,12.5,hospital,,Hospital do Prenda,,,,,,,,,,,,,,,,,,,,,,,Luanda,62738471,3,2018/09/19 17:41:44+00,40fdac598b0149958dd051ad91a72c2b
+,,"769362137",way,25,clinic,clinic,Clínica Clinus,Dr. Antonio Mário Flavio Hilário,,"gynaecology;ginecologia;obstetrics;obstetrícia",private,,,,,,,,,,,,,,,,,Rua Senhor General Joaquim Guilherme Tchiloya,,,101459279,3,2021/03/21 22:11:37+00,12b84b51487b4e06a3d7f75de0417b63
+13.2581128542258,-8.90175077757999,"6136077663",node,15.625,pharmacy,pharmacy,Farmácia Mwata Bamba,,,,,,,,,,,yes,,,,,,,,,,,,,65457993,1,2018/12/13 23:56:49+00,d612121a225742b491d4e987b156ac03
+13.208965732606,-8.93033248066843,"6231160281",node,15.625,pharmacy,pharmacy,Farmácia Shadai,,,,,,,,,,,yes,,,,,,,,,,,,,66582137,1,2019/01/23 21:18:39+00,824c1399bea9461089c335146c4951a5
+,,"1214750370",way,18.75,hospital,hospital,Hospital Sanatório do Huambo,,,,,,,,,,,,,,,,,,,,,Rua Silva da Carvalho,,Huambo,171896890,3,2025/09/13 23:36:22+00,8d79fc2f52cb4cd98905d2fef308e776
+12.1297237822868,-15.2005089431123,"11060477921",node,28.125,hospital,hospital,Posto Médico Kamburuku,Administração Local do Estado,,,public,,,,,,,,,no,,,,,,,,Avenida Praia Azul,,Moçâmedes,138829382,1,2023/07/21 20:00:32+00,4178d82bb6ff4967bc6108fe9efcb0fe
+,,"961858227",way,15.625,clinic,clinic,Consultório,,,,,,,,,,,,,,,,,,,,,,,Huambo,130393994,4,2022/12/22 22:01:48+00,54ad6faccd5241fcb92b747879236349
+,,"343669267",way,18.75,doctors,doctor,Posto Médico,IESA Igreja Local de Galileia,,,,,,,,,,,,,,,,,,,,,,Lubango,106576874,4,2021/06/18 08:57:22+00,d060bba0f2cc494ab641ccf6d695c652
+13.5101779726875,-14.9222530594425,"8464490181",node,21.875,pharmacy,pharmacy,Farmácia Afomar,,,,,,,,,,,yes,,,,,,,,,,Rua da Maxiqueira,,Lubango,100115507,1,2021/02/27 20:39:14+00,333e4d79d29745cf9eb29fefefa12bbc
+13.2911143348577,-8.90068384512503,"12880219879",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,90e2d743546448618a58685953497456
+13.2389342215745,-8.91768770917895,"5667658693",node,21.875,pharmacy,pharmacy,Farmácia Associação de Desenvolvimento e Apoio a Criança Rural (A.D.A.C.R.U),,,,,,,,,,,yes,,,,,,,,,,Rua do Mufulama,,Luanda,59580756,1,2018/06/05 20:14:16+00,5f2fc050dea84d56ab14f96209e38cb4
+,,"191197605",way,12.5,hospital,hospital,Hospital do Sumbe,,,,,,,,,,,,,,,,,,,,,,,,161358558,3,2025/01/14 20:30:38+00,6561f94076a141f886e5d8c43a9fb5bc
+,,"1431576004",way,28.125,hospital,hospital,Futuro hospital materno-Infantil do Lubango,MINSA,,"maternity;paediatrics",government,,,,,,,,,,,,,,,,,Avenida Lúcio Lara,,Eiva-Lubango,172222442,1,2025/09/20 20:54:09+00,99c916cfea724db0a0b93182cffd321e
+13.1476075191669,-8.98176258125565,"10307192849",node,18.75,pharmacy,pharmacy,Farmacia Paulina e Filhos,,,,,,,,,,,,,,,,,,,,,Rua D,,Luanda,130878772,1,2023/01/04 18:51:27+00,16618a7258834ba0afed95649a50425a
+13.5463732937046,-12.353404841931,"2847206976",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,25599910,2,2014/09/22 10:41:17+00,95d5d516387e444a82670912dc693ce2
+,,"480170947",way,21.875,clinic,clinic,Centro Médico da Eywa,Ministério da Saúde,,"serviços_de_parto;consultas_pré_natais;programa_alargado_de_vacinação_(PAV);planeamento_familiar;tuberculose;Laboratório;doenças_de_transmissão_sexual;ginecologia;obstetrícia",public,,,,,,,,,,,,,,,,,,,,81650352,3,2020/03/01 17:51:29+00,fe8c2531034644e182f8434dbe1fdade
+13.1712715596634,-8.91598350062571,"5508539213",node,18.75,clinic,clinic,Gabinete Dan Ecographia & Laboratório,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de Castro Vandunem-Loy,,Luanda,59878083,2,2018/06/15 16:05:46+00,5fb0f6ce89d240cc9c2d395579516472
+13.2128422790047,-8.89859046480743,"4775147838",node,15.625,pharmacy,,Nasabel Pharmacy,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,60883367,2,2018/07/19 20:25:09+00,fdee2eb4b5324b40b4cbd946d7477279
+13.2510544535634,-8.83039320511193,"8727368929",node,31.25,clinic,clinic,Centro Médico La Paz,,,"general;gynaecology;paediatrics;orthopaedics;ophthalmology;dermatology;urology;otolaryngology;cardiology",,,Mo-Sa 08:00-18:00,,,,,,yes,,,,,,,,"71",Rua da Liberdade,,"Vila Alice, Luanda",141505049,2,2023/09/20 09:56:22+00,2f7e4b60da5b421383c4495b486910f3
+13.1853105769268,-8.92437797665397,"5004236228",node,18.75,pharmacy,pharmacy,Farmácia Belas,,,,,,,,,,,,,,,,,,,,,Via Luanda Sul,,Luanda,157049980,4,2024/09/24 17:24:58+00,eb3d40f180ed45bcba5805d8fe6ea1e5
+13.1997615647312,-8.91066610507144,"5650190108",node,15.625,pharmacy,pharmacy,Farmácia MixCenter,,,,,,,,,,,yes,,,,,,,,,,,,,96570862,2,2020/12/29 04:32:14+00,46f82c44c121423cb0484178f9cff143
+13.2892275684533,-8.89569342761357,"12879626452",node,18.75,doctors,doctor,Posto de saúde,,,,,,,,,,,,,,,,,,,,,yes,,Kilamba Kiaxi,167066059,1,2025/06/01 19:52:30+00,256d885f0a0749c4ac4fe43a129f3466
+,,"1426691829",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,171373180,1,2025/09/02 17:46:04+00,c638319a0bc94518a7723710c92b8277
+13.2464087837295,-8.97389574603216,"4641549384",node,15.625,pharmacy,,Farmácia Coração,,,,,,,,,,,,,,,,,,,,,Via Expressa Fidel Castro Ruz,,Luanda,45612887,1,2017/01/29 07:26:55+00,fc1250b2db484292b4dda63b3264f25c
+,,"1165666387",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,135385034,1,2023/04/26 12:35:08+00,1f9bcece43c645e6934855da52760549
+13.2406771545204,-8.90540377862106,"5895278064",node,18.75,clinic,clinic,"Consultório Médio Aldolase, Lda",,,,,,,,,,,,,,,,,,,,,Rua 51,,Luanda,104227537,2,2021/05/06 06:55:47+00,097158a60b694d599f4bb0e6763ab46e
+,,"916306383",way,25,clinic,clinic,Posto Médico Comandante Nzanji,,,general,,,,,,,,,,,,,,,,,Comercial,Rua Patrice Lumumba,,Lubango,105292611,2,2021/05/25 12:34:29+00,c8b688811faa48a9b2920e5da4eb8e9d
+13.2340213366674,-8.90559061124279,"5762135162",node,21.875,pharmacy,pharmacy,Vital Farma - Nova Vida,,,,,,,,,,,yes,,,,,,,,,,Rua 54,,Luanda,106862544,4,2021/06/23 22:50:42+00,0689bdfbce5042da881872355359ded7
+,,"1323820363",way,21.875,hospital,hospital,Hospital Geral do Cunene,Gabinete Provincial da Saúde do Cunene,,,public,,,,,,,,,,,,,,,,,,,Ondjiva,157869749,2,2024/10/14 10:26:09+00,756ab037eaa64e84bdcdbcf04700806d
+13.2420855657107,-8.90793192825626,"6136077518",node,15.625,clinic,clinic,Centro de Saúde,,,,,,24/7,,,,,,,,,,,,,,,,,,65457993,1,2018/12/13 23:56:43+00,b474f4442275424f92b09744bdb1288f
+13.2497912169361,-8.82850501378402,"1728690243",node,18.75,clinic,clinic,Centro Médico da Endiama,,,,,,,,,,,,,yes,,,,,,,,,,Luanda,70783993,4,2019/05/30 19:20:24+00,568d6681ee8d49369f31cca81e678ed1
+,,"854505395",way,21.875,clinic,clinic,Clínica Margon,Ministério da Saúde,,,,,,,,,,,,,,,,,,,,Rua da Mitcha,,Lubango,106685576,2,2021/06/21 01:53:47+00,e97531a439cd4b0daff49f3bdfaf8e51
+13.411839221542,-9.0502106274941,"6330269945",node,15.625,pharmacy,pharmacy,Farmácia e Cosméticos Benjamim,,,,,,,,,,,yes,,,,,,,,,,,,,68012068,1,2019/03/11 07:33:09+00,18965d71942049ae986c05b5a05686b3
+,,"1158422141",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,134300650,2,2023/03/30 11:36:00+00,e215789e13554621be0f63a4c1da9a44
+,,"240940866",way,15.625,hospital,hospital,Hospital dos Cajueiros,,,,,,,,,,,,,yes,,,,,,,,,,,166039657,3,2025/05/09 17:46:38+00,23469710b55c47a2bc5ff9493b18cda6
+,,"747799675",way,18.75,hospital,hospital,Hospital Municipal da Chibia,Administração Municipal da Chibia,,,government,,,,,,,,,,,,,,,,,,,,125228215,4,2022/08/22 13:44:56+00,2f26898a89cc413cbdc00cba0a14509f
+,,"783323695",way,18.75,hospital,hospital,Clínica São Filipe,,,,,,,,,,,,,,,,,,,,,Rua de Malange,,Benguela,83365884,2,2020/04/10 13:11:08+00,d288b960f57b4cf29a14989bf55a3876
+13.5478247878771,-12.3881673604196,"6348236499",node,15.625,pharmacy,pharmacy,Prince Farmacácia,,,,,,,,,,,yes,,,,,,,,,,,,,68310000,1,2019/03/19 20:20:02+00,3718d6498dcc4d3d920433ba636e3438
+13.2031915233288,-8.91509082793772,"5650188373",node,21.875,pharmacy,pharmacy,Farmácia Cristal,,,,,,,,,,,yes,,,,,,,,,,Rua do MAT (Ministério da Administração do Território),,Luanda,59376897,1,2018/05/29 19:13:48+00,21c396955d7f4d4ca506f974b0e5f4fa
+,,"921870507",way,12.5,hospital,hospital,Hospital Municipal do Cuvango,,,,,,,,,,,,,,,,,,,,,,,,132640812,5,2023/02/16 17:55:02+00,a0af061e988741b7bfc730af0fc6123e
+,,"183716353",way,15.625,hospital,hospital,Hospital Provincial do Cunene,,,,,,,,,,,,,yes,,,,,,,,,,,88285825,4,2020/07/21 09:04:11+00,c9c88c79e7cd4214a98469b5f541f58c
+13.2891604294089,-9.00746325658531,"6597721086",node,15.625,pharmacy,pharmacy,Farmácia Wakylú,,,,,,,,,,,yes,,,,,,,,,,,,,72032830,1,2019/07/09 00:08:47+00,e9d77b84da7941c9ade82d7ce89d4288
+13.2546828956282,-8.94079586185703,"5678453225",node,21.875,pharmacy,pharmacy,FarmáciaAzul,,,,,,,,,,,yes,,,,,,,,,,Rua do Jardim do Éden,,Luanda,59699689,1,2018/06/09 20:55:19+00,a796bacc6c8c4935b970b902ff133b5a
+13.3724596993283,-8.91567471131279,"8705043845",node,9.375,pharmacy,,Farmácia Jokeyo,,,,,,,,,,,,,,,,,,,,,,,,104245157,1,2021/05/06 10:46:06+00,86f0974654bc499a840f7ae85e0445b2
+,,"1168926178",way,25,hospital,hospital,Hospital Sanatório Evangélico de Caluquembe,Igreja Evangélica Sinodal de Angola (IESA),,"general;radiology;infectious_diseases;blood_check",religious,,,,,,,,,yes,,,,,,,,,,,135734089,1,2023/05/05 09:57:01+00,ae768bb4228a44e8922ab2f63b5dbc67
+13.2949589462053,-8.89567942983527,"12879626453",node,18.75,doctors,doctor,Posto de saúde,,,,,,,,,,,,,,,,,,,,,yes,,Kilamba Kiaxi,167066059,1,2025/06/01 19:52:30+00,58a9c7b3b72542a2a1a4e0fafa1a81fd
+13.2770076756357,-8.99608960071208,"5776228753",node,12.5,pharmacy,,Farmácia orquidea,,,,,,24/7,,,,,,,,,,,,,,,,,,60943224,1,2018/07/22 03:40:49+00,30a1354f2b2f48138f7452093edb31e9
+13.2451086667283,-8.81860313628903,"5177720504",node,18.75,pharmacy,pharmacy,Farmácia Luafar,,,,,,,,,,,,,,,,,,,,,Rua da Liga Africana (ex Conde de Ficalho),,Luanda,53090017,1,2017/10/20 07:37:44+00,ba2634d9874941d38c9184f2b7634fff
+,,"702429693",way,12.5,clinic,clinic,Centro Ortopedico de Viana,,,,,,,,,,,,,,,,,,,,,,,,72012128,1,2019/07/08 12:29:58+00,075a19fe10ff43e794a89832ef15ccdf
+,,"224360779",way,15.625,hospital,hospital,Hospital Especializado Augusto N’Gangula,,,,,,,,,,,,,yes,,,,,,,,,,,151244912,3,2024/05/12 23:27:59+00,e60d94e6184a4dd19bfc01723c3ef7ec
+13.5102582713199,-14.9083071651233,"11090570409",node,12.5,pharmacy,pharmacy,Farmácia A@S- Augusto Santos,,,,,,,,,,,,,,,,,,,,,,,,139460658,1,2023/08/04 23:03:41+00,b2b8bcbf240a4222a2d0da3fdba21cd2
+,,"152307629",way,12.5,hospital,hospital,Hospital Josina Machel,,,,,,,,,,,,,,,,,,,,,,,,83365671,3,2020/04/10 13:06:20+00,3a06ecc2e4534efe876f7e368e71e41d
+13.2953496267122,-8.97243980945092,"9969165763",node,9.375,pharmacy,,Farmácia Winner,,,,,,,,,,,,,,,,,,,,,,,,125208099,1,2022/08/22 05:39:37+00,032637f02c6d4884b72320d4cf3939ce
+,,"1157876142",way,12.5,hospital,hospital,Hospital do Mbongo,,,,,,,,,,,,,,,,,,,,,,,,134210870,1,2023/03/28 09:11:15+00,691229a938fc42c1a91d28e8ab135dc5
+13.2629321970935,-8.93454991906921,"6320599509",node,15.625,pharmacy,pharmacy,Farmacia a sua Saúde é a Nossa Preocupação,,,,,,,,,,,yes,,,,,,,,,,,,,102595818,3,2021/04/09 01:37:25+00,52748221c7714ce094db21d01253420f
+,,"276950649",way,28.125,hospital,hospital,Hospital Provincial Ngola Kimbanda,Governo Provincial do Namibe (GPN),,,public,,,,,,,,,yes,,,,,,,,Rua Gerrilheiro Faria,,Moçâmedes,140077348,6,2023/08/18 23:41:37+00,855467a54d91412aabedbfa65fc8610b
+13.2891780314056,-9.00730668263404,"6597688076",node,12.5,clinic,clinic,Aurora Care,,,,,,,,,,,,,,,,,,,,,,,,72032830,1,2019/07/09 00:08:47+00,d470c713b19140148858fd4f1264b58a
+13.2970735327379,-8.97226211310362,"6311949181",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,67704853,1,2019/03/02 02:19:18+00,6c2901bba42d4f28824b35a6990d617c
+,,"173244150",way,15.625,hospital,hospital,Hospital Geral do Kwanza Sul,,,,,,,,,,,,,yes,,,,,,,,,,,161358558,6,2025/01/14 20:30:38+00,9f490084832146b684ec66e3dff488fb
+,,"1178487862",way,15.625,hospital,hospital,Hospital Municipal da Bibala,,,,,,,,,,,,,,,,,,,,,,,Bibala,136887042,1,2023/06/03 00:03:00+00,bde35ad045b144ad88fa86f96d2cb5da
+12.1892299304007,-5.55691342415838,"6443614993",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,109194249,2,2021/08/05 10:36:18+00,483c5ce3cda34a398c9e40a44174615a
+13.3227599588322,-8.91093675672494,"6214913356",node,21.875,pharmacy,pharmacy,Farmácia Maria Luísa,,,,,,,,,,,yes,,,,,,,,,,Rua do Calemba 2,,Luanda Sul,84916391,2,2020/05/08 21:00:42+00,92c896b55d334929a10b334d03bafb8e
+13.4730190680816,-14.9275642523884,"8542907991",node,15.625,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,Lubango,140514197,2,2023/08/28 21:49:42+00,7ee90befa87441788916acb7767ea143
+,,"702596305",way,12.5,clinic,clinic,Centro Médico do Cariango,,,,,,,,,,,,,,,,,,,,,,,,72037664,1,2019/07/09 05:13:11+00,81a1f8b988ca4c1eb73d5992c9f6c7d0
+13.6145902508725,-14.8362695688508,"8532470494",node,15.625,hospital,hospital,Centro Médico dos Chineses,,,,,,,,,,,,,,,,,,,,,"EN105;EN280",,,104966860,2,2021/05/19 13:51:51+00,a8fac86803f74cc798d04ebcf70bba2b
+,,"724235239",way,12.5,hospital,hospital,CSE,,,,,,,,,,,,,,,,,,,,,,,,74421329,1,2019/09/13 07:30:54+00,fe9df0461b524ea2a2db88f1fa17c1b0
+13.1680082333009,-8.9156776449789,"5166833966",node,18.75,pharmacy,pharmacy,Farmácia Adaldie,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de Castro Vandunem-Loy,,Luanda,57568883,2,2018/03/27 14:03:00+00,1b2ae16c57e04a80aa9697009f2cb74f
+,,"913196132",way,21.875,pharmacy,pharmacy,Farmácia Lubango,,,medicamentos,,,,,,,,yes,,,,,,,,,,Avenida Senhora do Monte,,,100361159,2,2021/03/03 15:34:38+00,624ee9d412fd4e12a579df3d51eeebc2
+13.3766518243815,-8.90684236466274,"9907145799",node,9.375,pharmacy,,Cuida+,,,,,,,,,,,,,,,,,,,,,,,,124000655,1,2022/07/24 08:42:10+00,75bb1615a05f4d768d1ba898e999db14
+,,"783923912",way,21.875,clinic,clinic,Paulina e Filhos,,,general,,,,,,,,,,,,,,,,,,Rua D,,Luanda,130879159,8,2023/01/04 19:05:24+00,bb887338eea94a69ab418ae63cadbfd3
+13.2621391852343,-8.922241345716,"6137535728",node,15.625,pharmacy,pharmacy,Farmácia Vip Pharma,,,,,,,,,,,yes,,,,,,,,,,,,,65477287,1,2018/12/14 15:38:51+00,8005cecdd1ee4a8291260864efaf1bad
+13.2389955771058,-8.92483227580598,"5676645268",node,21.875,pharmacy,pharmacy,Farmácia Zola Ndonga,,,,,,,,,,,yes,,,,,,,,,,Rua do Mufulama,,Luanda,59681266,1,2018/06/09 00:13:16+00,77a2ac4d8f3b4b2b99ec962d5e35c50f
+13.2391570963799,-8.92575177058413,"5676645285",node,15.625,clinic,clinic,Consultório Médico Glovi,,,,,,,,,,,,,,,,,,,,,,,Luanda,61238939,2,2018/07/31 19:06:24+00,8b738573baef4b31b4fcb0742370d1cc
+13.237031194278,-8.8158250383012,"4471323192",node,21.875,clinic,clinic,Clínica Meditex,,,,,,24/7,,,,,,,,,,,,,,,Rua da Missão,,Luanda,137224219,4,2023/06/12 02:01:23+00,20f2c96cff0241e69db618fd875de757
+13.2891833958236,-9.00725982779528,"6597688073",node,12.5,clinic,clinic,San Miguel - Clínica de Estomatologia,,,,,,,,,,,,,,,,,,,,,,,,72032830,1,2019/07/09 00:08:47+00,cd84a762112d4a768d1474f577c3f3b0
+13.4044764739753,-9.01944091240122,"6317031917",node,15.625,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,,,,67782351,1,2019/03/04 21:03:29+00,992be68a0d1c4ceea0762c80d17c12ea
+13.2657159947755,-8.90225813417908,"6320010224",node,15.625,pharmacy,pharmacy,Farmácia Lutchi,,,,,,,,,,,yes,,,,,,,,,,,,,67828548,1,2019/03/06 03:21:04+00,e3a46fa54a054be5a64e0a7f61301ca1
+12.1926723780341,-5.55481157811857,"7881443934",node,21.875,clinic,clinic,Cligest - Centro Médico do (BNA) Banco Nacional de Angola,,,"general;paediatrics;gynaecology;obstetrics;imagiology",,,"Mo-Fr 07:00-19:30; Sa 08:00-16:00; Su, PH 08:00-12:00",,,,,,,,,,,,,,,Rua António Brissac,,,90485983,1,2020/09/06 16:18:21+00,637385e9fe5749f7aec0cbbfe457781c
+,,"911425529",way,12.5,clinic,clinic,Centro de Diagnóstico Laboratorial de Viana,,,,,,,,,,,,,,,,,,,,,,,,100083212,1,2021/02/27 05:28:42+00,ee07b7cf15e442f2942ee5cbdf71b7f5
+,,"486686403",way,18.75,clinic,,Centro de Saúde da Samba,"Comissão Administrativa da Cidade de Luanda, Direcção de Repartição de Saúde",,,,,,,,,,,,,,,,,,,,Estrada da Samba,,Luanda,47763861,1,2017/04/14 03:23:27+00,1a97fcbedc5c48039931457853330c11
+13.1008178916336,-12.953441904613,"4347541247",node,12.5,pharmacy,pharmacy,Farmácia,,,,,,,,,,,,,,,,,,,,,,,,136770135,3,2023/05/31 04:43:30+00,f17cc1605bc24c5c8bc25a71bc49fe94
+13.2438419935207,-8.82266760495691,"6045627733",node,15.625,,laboratory,Laboratório,,,,,,,,,,,,,,,,,,,,,Rua da Liga Africana (ex Conde de Ficalho),,Luanda,64283165,1,2018/11/08 07:24:34+00,de2d98d25dce433d9d1a70a64018b095
+13.2177161880621,-8.85131225613819,"6201975798",node,18.75,pharmacy,pharmacy,Farmácia A Daniel,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,66237143,1,2019/01/11 19:54:03+00,9e949967d46744bd9adfc55ea1482c10
+,,"414606485",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,138106222,3,2023/07/04 12:30:17+00,f1e9554a01854c69a4f4fc0e0922f7a9
+,,"291762039",way,12.5,clinic,clinic,Clínica do Porto do Lobito,,,,,,,,,,,,,,,,,,,,,,,,137486897,3,2023/06/18 17:28:37+00,e9e6f5d965e94de9b3a2e36b4135e3e7
+13.2124855452057,-8.92795495383328,"6231160257",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,66582137,1,2019/01/23 21:18:38+00,706d2396d9084a25af71af78c9daf0e6
+,,"443826352",way,18.75,clinic,clinic,Clínica Corpo e Mente,,,,,,,,,,,,,,,,,,,,,Rua Gamal Abdel Nasser,,Lubango,71402116,2,2019/06/19 13:29:45+00,6c1c274aba1842ca8f7778976fbb080b
+13.4741376330601,-14.9251093605869,"8541546889",node,21.875,pharmacy,pharmacy,Farmácia Tchimbanda,,,,,,,,,,,yes,,,,,,,,,,Avenida Senhora do Monte,,Lubango,131539552,2,2023/01/21 12:32:10+00,6372f57076c046799600d80f94023f87
+13.1973730576028,-8.95401931994164,"4641433026",node,18.75,pharmacy,pharmacy,Farmácia Isicar,,,,,,,,,,,,,,,,,,,,,Avenida do Patriota,,Luanda,79959472,2,2020/01/23 07:48:34+00,4f482012ee3e44bc8fc7249525a296d1
+13.5256599345822,-14.8867676018051,"8488852395",node,15.625,hospital,hospital,Farmácia Roguel,,,,,,,,,,,,,,,,,,,,,Pequena rua sem nomeaçao,,,131381739,3,2023/01/17 14:25:26+00,45fefaee893f4c32b5fce736cf5ad5a1
+,,"248403553",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,143895539,2,2023/11/11 11:28:18+00,e43159b0337746a99d6eaecdcdb38c01
+,,"1079473933",way,15.625,dentist,dentist,Clínica dentária Medisaf,,,,,,,,,,,,,,,,,,,,,,,Huambo,125991760,3,2022/09/09 18:10:12+00,de8c61f4b9cb4b1da0f29f13f994eb1f
+13.3108329297115,-8.79000005934748,"5977869362",node,12.5,pharmacy,pharmacy,Prince Farma,,,,,,,,,,,,,,,,,,,,,,,,151244912,2,2024/05/12 23:27:59+00,c859ebfe4e4343e8b0f0c2aaeac1b08f
+,,"62133014",way,15.625,clinic,,Clínica Multiperfil,,,,,,,,,,,,,,,,,,,,,Estrada do Futungo,,Luanda,113020666,6,2021/10/27 06:22:21+00,dce06cb8ff774eee8e90f86d89411b96
+,,"363651137",way,12.5,clinic,clinic,Centro Médico do Cuangar,,,,,,,,,,,,,,,,,,,,,,,,125756696,2,2022/09/04 00:16:41+00,762f8d7d174c472fa476e2d7b9646177
+13.2111140982084,-8.87275484083668,"4855544494",node,15.625,pharmacy,,Farmácia,,,,,,,,,,,,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,53017580,2,2017/10/17 17:05:58+00,c940b0b2cefb490281bb0480b2440853
+13.2082306396977,-8.91362097739722,"5648211104",node,18.75,pharmacy,pharmacy,Farmácia Mbayi,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,59348281,1,2018/05/28 18:55:39+00,b62fcf99cdd04b9b9042fbf38105701a
+,,"1219107752",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,143289536,1,2023/10/29 00:31:45+00,cde21c93d3d049e2b1e52b144dd01b1b
+13.2303178765692,-8.84292917949824,"5172297544",node,21.875,pharmacy,pharmacy,Mia Farma,,,,,,,,,,,,,,,,,,,,"44",Rua 24,,Luanda,107122378,4,2021/06/29 05:38:33+00,44a04f4968a448ec9d35474fd4463f1d
+,,"1186487922",way,12.5,hospital,hospital,Centro de Saúde de Zenza do Lucula,,,,,,,,,,,,,,,,,,,,,,,,138021215,1,2023/07/02 12:16:24+00,a5f4a5be6ee3439993aa710c3f0e7bb4
+12.1949150400472,-15.1991274378313,"11060575670",node,25,hospital,hospital,Posto de Saúde Boa Esperança,Administração Local do Estado,,general,public,,,,,,,,,,,,,,,,,,,Moçâmedes,153102812,2,2024/06/24 09:36:00+00,c113df0d8cd042c3ba6f50fb58843f02
+13.1396210741851,-8.88447693242483,"6597720204",node,12.5,clinic,clinic,Centro de Saúde Emilio Nkai,,,,,,,,,,,,,,,,,,,,,,,,72032901,1,2019/07/09 00:15:34+00,d167e987d8914303bcf61e4002741877
+,,"60355326",way,15.625,hospital,hospital,Hospital Geral de Luanda,,,,,,,,,,,,,yes,,,,,,,,,,,137224219,4,2023/06/12 02:01:23+00,a366a10d88854dc19c71c36c88d6636c
+13.1708710723298,-8.92234041981152,"3626039512",node,12.5,pharmacy,pharmacy,Farmácia Dolce Vita,,,,,,,,,,,,,,,,,,,,,,,,157332902,4,2024/10/01 10:47:22+00,1da0b5fbbb0b4af98fba04d20d0789aa
+13.5160861247774,-14.9043992704067,"10269217458",node,25,pharmacy,pharmacy,Farmacia Alkar,Jandira Lopes e Alkar,,,,,Mo-Sa 08:00-21:00,,,,,,,,,,,,,,,Avenida Comandante Kwenha,,Lalula,134201735,2,2023/03/28 04:42:43+00,e306214ec2694b8da41914a48d81588e
+13.2449426212264,-8.81780191016469,"4317152793",node,25,clinic,clinic,Centro Médico Máxima Estética,,,,,,"Tu-We, Fr 08:00-17:00; Mo, Th 10:00-19:00; Sa 08:00-12:00",,,,,,,,,,,,,,"106",Avenida Comandante Valódia (ex Combatentes),,Luanda,72139337,6,2019/07/11 14:36:25+00,0d9a2ad4f83b4872873566af2a349346
+,,"646299412",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,74347193,2,2019/09/11 10:47:50+00,aedeb4a35d92401ba789e1660fa744d3
+13.1848245941808,-8.89644193156698,"7772651685",node,15.625,dentist,,Risodente,,,,,,,,,,,,,,,,,,,,"11",Rua do Kika Gil,,,88777892,1,2020/07/31 10:54:49+00,ec90f4c6e8624bc7bca428df0f65cc9f
+,,"1219370138",way,12.5,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,Chicomba,143327276,1,2023/10/29 19:09:59+00,773b2e53480348a7a7090be9adf94eab
+13.2492564515137,-8.7729231050979,"5151070625",node,15.625,pharmacy,,Farmácia Nkundikla,,,,,,,,,,,,,,,,,,,,,Avenida Murtala Mohamed (Ex Avenida Marchal Gomes da Costa),,Luanda,70233453,3,2019/05/14 13:03:57+00,c1ac1d02e5be4f909c32c93caac38944
+13.250979351711,-8.83045095642478,"9050993018",node,21.875,clinic,clinic,Centro Médico La Paz,,,,,,"Mo-Fr 08:00-17:00; Sa 08:00-12:00",,,,,,,,,,,,,,"71",Rua da Liberdade,,,137224219,2,2023/06/12 02:01:23+00,ca50cb7363f745f49df2365e286fca3c
+13.2379412175056,-8.90431832216009,"5895278014",node,18.75,clinic,clinic,Diamond Clinic,,,,,,,,,,,,,,,,,,,,,Rua 48,,Luanda,62438337,1,2018/09/10 02:23:34+00,72c3ddbfe75a4e2cbc57cf8b47240f30
+,,"317634604",way,9.375,clinic,,Clínica Rio da Huila,,,,,,,,,,,,,,,,,,,,,,,,63435297,2,2018/10/11 22:42:22+00,1444c0cbd1354344b6cc04bc9530182b
+13.4045877856495,-9.02316423760993,"6317031897",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,67782351,1,2019/03/04 21:03:29+00,bc59fac667444a4faec11da6d81594b3
+13.1615843427087,-8.93650374069898,"5168357639",node,21.875,clinic,clinic,Clínica Santa Esperança,,,,,,24/7,,,,,,,,,,,,,,,Estrada da Samba,,Luanda,52945284,1,2017/10/15 04:15:43+00,4fc26e9eee7d49889cdd4dd1e7a2f9f6
+13.196058272271,-8.89262875235625,"6864671019",node,21.875,pharmacy,pharmacy,Farmácias de Angola,,,,,,,,,,,yes,,,,,,,,,,Avenida 21 de JaneiroFarmácias,,Luanda,75479353,2,2019/10/09 19:04:45+00,99f0bbab5692454abfe1e2628ac87f4e
+,,"864110861",way,12.5,clinic,clinic,Posto de Saúde do Missombo (PS Missombo),,,,,,,,,,,,,,,,,,,,,,,,107491471,2,2021/07/06 10:51:27+00,f9ebc9e6c40b4d44b7a919a512529133
+13.2488653519116,-8.90297285906269,"6219110266",node,15.625,pharmacy,pharmacy,Farmácia Mama Lucia,,,,,,,,,,,yes,,,,,,,,,,,,,67751606,2,2019/03/04 01:59:25+00,4eb4bd946ef34dd485beca14a1506dbf
+13.211165982189,-8.89323157883248,"8849480549",node,9.375,pharmacy,,Farmácia Yohan,,,,,,,,,,,,,,,,,,,,,,,,106650803,1,2021/06/20 02:41:12+00,c65a414b597043c9ba03e14d958b0a7a
+,,"920161934",way,18.75,pharmacy,pharmacy,Farmácia dos Navegantes,,,,,,,,,,,yes,,,,,,,,,,,,"Benguela, Angola",101443729,1,2021/03/21 15:11:15+00,a7aa4d1696eb4fd08c9ca57b1dff3c84
+13.2162280649726,-8.85062116822155,"6201975274",node,18.75,pharmacy,pharmacy,Farmácia Miga-far,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,66237143,1,2019/01/11 19:54:02+00,f626734ed7324c8d9997165b3ccd9df1
+13.2072982367887,-8.88720247587977,"8878225787",node,21.875,pharmacy,pharmacy,Farmácia Mama Lúcia,,,,,,,,,,,yes,,,,,,,,,,Rua do Gamek a Direita,,Luanda,107170075,1,2021/06/29 20:43:13+00,c0b90e11807149508dd82021496112d8
+,,"1195011831",way,18.75,hospital,hospital,Hospital do Alto Zambeze,,,,,,,,,,,,,yes,,,,,,,,,,Cazombo,167687150,2,2025/06/16 10:44:05+00,664c5afeaea540848ceabaedf5e2c133
+13.2185937733243,-8.83285564062624,"4738111182",node,15.625,clinic,,Centro de Medicina Sousa,,,,,,,,,,,,,,,,,,,,,Rua da Samba,,Luanda,62806883,2,2018/09/21 18:26:19+00,370afdb128434c7fbde628286735a83c
+13.2449279528958,-8.81908568245473,"5643811983",node,15.625,clinic,clinic,Centro de Diagnostico do Luanda,,,,,,,,,,,,,,,,,,,,,,,Luanda,70842580,2,2019/06/01 19:34:33+00,f9f82d51a8f3452c9fe75b6de4cfb36b
+13.224881625628,-8.84977870313358,"8870940567",node,12.5,clinic,clinic,Clifa - Clínica da Forca Aérea,,,,,,,,,,,,,,,,,,,,,,,,107057850,1,2021/06/28 04:05:02+00,c5299a5d3b19466cb2e90b8426eed5f4
+13.3171540581707,-8.87332514552861,"4198873691",node,15.625,clinic,,Coimbra,,,,,,,,,,,,,,,,,,,,,Rua dos Fiéis,,Luanda,46877614,3,2017/03/15 18:44:52+00,a04b70c2f56b4c008ff62ad37da5679b
+13.1609969389343,-8.93892694890644,"5169888257",node,18.75,pharmacy,pharmacy,Farmácia A&W,,,,,,,,,,,,,,,,,,,,,Estrada da Samba,,Luanda,52964736,1,2017/10/15 20:09:38+00,f800bfc5a7df4804b891cc2a1bb86fdf
+,,"1432321226",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,172484965,2,2025/09/26 13:05:20+00,a2ea89dcdd9140e7828aef0f6bf04f3b
+13.2543745254104,-8.82400921237885,"5586548908",node,21.875,pharmacy,pharmacy,Farmácia Bulivar,,,,,,,,,,,yes,,,,,,,,,,Avenida Hoji Ya Henda (ex Avenida Brasil),,Luanda,58532923,1,2018/04/29 17:23:45+00,5025552afaff47cfae0f7c1285261b0d
+,,"1198268577",way,12.5,clinic,clinic,Centro Médico Boa Esperança,,,,,,,,,,,,,,,,,,,,,,,,139911656,1,2023/08/15 12:04:23+00,63f982d5eb764ff49ab3ea889dfc3915
+13.2044573583461,-8.90644145823393,"4795578747",node,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,66622568,2,2019/01/25 06:49:21+00,f20e1ab13387498fba537c37dfc1b118
+13.5446457834605,-14.9266991561618,"8503987769",node,21.875,pharmacy,pharmacy,Farmácia Esperança,,,,,,,,,,,yes,,,,,,,,,,Avenida do Estádio Nacional da Tundavala,,Lubango,100787046,1,2021/03/10 15:06:24+00,0ee4c710465e48e88fe5ab4a90f2e973
+13.2900102705717,-8.90297503835751,"12880219876",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,0aca59b052e442bca8528d7f0c906817
+,,"1199650019",way,18.75,clinic,clinic,Centro de Saúde São José Operário,,,general,,,,,,,,,,,,,,,,,,,,Moçâmedes,140076963,2,2023/08/18 23:14:36+00,049e317c0c584601889ce3ffe21f54cd
+13.254463038308,-8.90117351590843,"6219110228",node,15.625,pharmacy,pharmacy,Farmácia Medina,,,,,,,,,,,yes,,,,,,,,,,,,,66434447,1,2019/01/18 17:22:31+00,c0e117a67d11441c8c0d1378a112e6f8
+13.1926650264093,-8.87464420563103,"4679862029",node,15.625,pharmacy,,Farmácia Kapapharma - Corimba,,,,,,,,,,,,,,,,,,,,,Rua da Samba,,Luanda,47763861,2,2017/04/14 03:23:31+00,b5e15c90d21149509615c66c0a53244c
+13.5626326771186,-12.3323193263077,"2019469228",node,12.5,pharmacy,pharmacy,Farmácia da Restinga,,,,,,,,,,,,,,,,,,,,,,,,121683116,5,2022/05/30 00:38:11+00,4789b446ad45469686c03d3d11abf328
+13.4119351943333,-9.05081127467551,"6330269949",node,12.5,clinic,clinic,Centro Médico,,,,,,,,,,,,,,,,,,,,,,,,68012068,1,2019/03/11 07:33:09+00,80475b305ed9480aab8931198aca9f5a
+13.5293816672293,-14.9249051774256,"8540689563",node,21.875,pharmacy,pharmacy,Angola Enterprise,"Angola Enterprise, Lda - Depósito de Medicamentos",,,,,,,,,,,,,,,,,,,,Avenida Mártires de 8 de Novembro,,Lubango,140851806,4,2023/09/05 13:52:57+00,7391a16e4c374d95847a1962bc86a378
+,,"1093355421",way,15.625,hospital,hospital,Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,126014403,1,2022/09/10 12:42:21+00,16fc1db2fb554c26a606712025d4340d
+,,"778685109",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,81840273,1,2020/03/05 21:48:14+00,4f3d95f7887c49b8a7ec9316bfffc0cc
+13.4041370907158,-9.04352471860872,"10284921245",node,15.625,clinic,clinic,Centro Médico Letícia Miguel,,,,,,24/7,,,,,,,,,,,,,,,,,,130463474,1,2022/12/24 17:40:07+00,09962f49b7ef4be7a97901cd818b9cd1
+13.232298268832,-8.90205898015967,"5762135210",node,18.75,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,80503319,2,2020/02/04 01:30:22+00,a5c15b0ccd80423cb2fa62c5e848a4fa
+13.2108437818311,-8.87356897509193,"4855544489",node,15.625,pharmacy,,"Africa Pharmacy, Lda",,,,,,,,,,,,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,48698709,1,2017/05/15 11:18:30+00,dbadb6c163b24d3d9f79b6050551fb57
+13.2624879562253,-8.93639955364253,"6138154272",node,15.625,pharmacy,pharmacy,Farmácia Marlau,,,,,,,,,,,yes,,,,,,,,,,,,,65486484,1,2018/12/14 21:47:12+00,f5b149b205c34b4dad294b258ac10ddd
+11.8581262310409,-15.8047296651253,"6396268956",node,12.5,clinic,clinic,Posto medico,,,,,,,,,,,,,,,,,,,,,,,,161358752,3,2025/01/14 20:37:14+00,3f911d6233a140a09d7c6a22f4d209ca
+13.2346913860071,-8.90544686160337,"7229491508",node,21.875,pharmacy,pharmacy,Farmácia mediquel,,,,,,,,,,,yes,,,,,,,,,,Rua 53,,Luanda,81252036,1,2020/02/20 05:26:54+00,e60e98be3a4a4c008a77c579edc9a823
+,,"1324057127",way,15.625,clinic,clinic,Clinica Sagrada Esperança,,,,,,,,,,,,,,,,,,,,,,,Ondjiva,157910385,1,2024/10/15 08:45:30+00,228eccef314b468291538f51327b4558
+13.7574583655415,-10.7246943536898,"6583602248",node,12.5,clinic,clinic,Clinigroup,,,,,,,,,,,,,,,,,,,,,,,,119916406,2,2022/04/19 16:55:16+00,b84c0a9054384987b7f902443248b66d
+,,"1337842574",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,159595287,1,2024/11/26 01:20:44+00,55893ed92e71426c8a2f9f4ce2061afd
+,,"917836820",way,18.75,doctors,doctor,Posto Médico Rodrigues,,,,,,,,,,,,,,,,,,,,,Joaquim Kapango,,Lubango,105645389,2,2021/05/31 21:34:13+00,511a0dec49ef44f0a56297a307dcf72e
+12.1330853445546,-15.2156882344834,"11060229558",node,28.125,hospital,centre,"Centro Médico Valódia II "" Bag-Dad""",Administração Local do Estado,,general,public,,,,,,,,,no,,,,,,,,,,Moçâmedes,138827380,1,2023/07/21 19:04:04+00,2bf793f5fa0b4e3aa01d4c393b6dc80c
+16.8500546643539,-9.4831274606839,"10788487808",node,12.5,hospital,hospital,Caculama Municipal Hospital,,,,,,,,,,,,,,,,,,,,,,,,134548640,1,2023/04/05 17:49:17+00,e74cc6ffe75446dc932ed12c1974dc45
+13.1621645380464,-8.93604466386216,"4555913690",node,9.375,clinic,,Clínica Santa Esperança,,,,,,,,,,,,,,,,,,,,,,,,44706180,2,2016/12/27 13:27:10+00,890c830fc0f14923a9a75ad5bf16e588
+16.9106067901648,-12.439616404108,"11886077884",node,21.875,pharmacy,pharmacy,Farmácia Lufamor,Privado,,,,,"Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off",,,,,,yes,,,,,,,,,,,,171354167,2,2025/09/02 10:33:49+00,d9aee35816b5480dbf046c0a9db2aba6
+13.5469232303718,-14.9286036083819,"8540746726",node,21.875,pharmacy,pharmacy,Tchombé,,,,,,,,,,,yes,,,,,,,,,,Avenida do Estádio Nacional da Tundavala,,Lubango,101385230,1,2021/03/20 12:31:12+00,f160fb73357641219da0f42903046faa
+,,"1214877500",way,15.625,hospital,hospital,"Centro de medecina física e reabilitaçõ ""Princesa Diana""",,,,,,,,,,,,,,,,,,,,,,,Huambo,142448456,1,2023/10/11 18:28:51+00,63e5453f263d47539b00a78ed47fd333
+13.2224060305257,-8.82820058306078,"9952119903",node,25,clinic,clinic,Centro Médico Líder Luemba,,,,,,24/7,,,,,,,,,,,,,,"14",Rua dos Heróis,,Luanda,124876372,1,2022/08/14 07:21:39+00,3e45590553054e66adf54290d51ed462
+,,"1234284274",way,12.5,hospital,hospital,Hospital de Negage,,,,,,,,,,,,,,,,,,,,,,,,145589031,2,2023/12/27 19:07:06+00,5bbbbe9b7f5c4e4da34e6ae2b8e4f3e6
+13.2127672609713,-8.89860555223314,"5771694729",node,18.75,dentist,dentist,Dentista,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,106622918,2,2021/06/19 08:51:12+00,e217137866b64462be29f47d9beae7bf
+13.2101663564166,-8.87643751381501,"4855503027",node,15.625,pharmacy,,Farmácia Laudine,,,,,,,,,,,,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,53017580,2,2017/10/17 17:05:59+00,a4f4dc52d0584bfda1a6dd83c34ea533
+13.482050484932,-14.9203239644271,"8542902754",node,18.75,pharmacy,pharmacy,Farmácia Tiba,,,,,,,,,,,yes,,,,,,,,,,,,Lubango,107201648,3,2021/06/30 11:03:31+00,c7de02c9a2cc469383abc42b4039d92d
+13.4006281745903,-9.00464970314707,"6317032863",node,15.625,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,,,,67782351,1,2019/03/04 21:03:37+00,e5f4377804374b088093bd296e3eeca9
+,,"420810162",way,21.875,hospital,hospital,Edifício Luanda Medical Center,,,,,,,,,,,,,,,,,,,,Nº3,Rua Amílcar Cabral (Largo Serpa Pinto),,Luanda,113063608,5,2021/10/28 04:46:16+00,9d22077842ec4733bbcfbb80a42291af
+13.5340923806318,-14.9247870764099,"10931406340",node,25,pharmacy,pharmacy,Farmácia J.J.N.T,,,,,,24/24,,,,,yes,,,,,,,,,,Avenida Mártires de 8 de Novembro,,Lubango,140900696,3,2023/09/06 15:36:43+00,feca9f347b2843d38b96a20bdd1ebf84
+13.2164883230662,-8.90652117013312,"5531326519",node,21.875,pharmacy,pharmacy,Farmácia Chocovala III,,,,,,,,,,,yes,,,,,,,,,,Rua do IFAL (Instituto de Formação da Administração Local),,Luanda,63425439,4,2018/10/11 16:53:33+00,6261a8e1628b45df864b235191e8d7b0
+,,"210358393",way,9.375,hospital,,Hospital do Cacuso,,,,,,,,,,,,,,,,,,,,,,,,119795993,2,2022/04/16 19:17:26+00,4ed06457bc17431ea428da73da0b2a76
+,,"909022536",way,12.5,hospital,hospital,HOSPITAL MUNICIPAL DE CHIPINDO,,,,,,,,,,,,,,,,,,,,,,,,108583576,2,2021/07/26 00:13:59+00,e01155c89b44429aba453e9b165283b6
+13.3019712464003,-8.97255891629501,"6311948764",node,15.625,pharmacy,pharmacy,Farmácia Ari II,,,,,,,,,,,yes,,,,,,,,,,,,,67704853,1,2019/03/02 02:19:12+00,d67b6cc0771f48fe91408f5499bc13c8
+13.4968820949595,-14.9182491081155,"8576321364",node,21.875,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,Comercial,Avenida Deolinda Rodrigues,,Lubango,106779035,2,2021/06/22 13:12:46+00,853f66d71b434ee6a6ce70a28a7c5da5
+13.4161904351174,-9.06757700886027,"6330450727",node,15.625,pharmacy,pharmacy,Farmácia Ngaxi & Filhos,,,,,,,,,,,yes,,,,,,,,,,,,,68015132,1,2019/03/11 09:26:48+00,27cda86318f948ad82afca44251fd11f
+,,"1041634285",way,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,118660601,1,2022/03/19 10:30:07+00,63c00308d14e4298921dc020c8fa989e
+13.1993192517007,-8.89336510255004,"4795578818",node,15.625,pharmacy,,Farmácia Azul,,,,,,,,,,,,,,,,,,,,,Rua do IMETRO (Instituto Superior Politécnico Metropolitano de Angola),,Luanda,47821762,1,2017/04/15 18:40:46+00,12dedb00a61d4181b040d5bd7ba675f1
+13.2389070642082,-8.91640443980307,"5664434788",node,25,pharmacy,pharmacy,Farmácia Nova-vida II,,,,,,Mo-Fr 07:00-22:00,,,,,yes,,,,,,,,,,Rua do Mufulama,,Luanda,59545758,1,2018/06/04 17:56:49+00,56828859f7f14bebbdc206dadfe3835d
+13.3285019816012,-8.9056312634732,"5005001924",node,12.5,pharmacy,,Farmácia E.R.W,,,,,,,,,,,,,,,,,,,,,GLANKENI,,,50719950,1,2017/07/31 12:23:42+00,0a65e50b9283410c9900e96c3623118c
+,,"702613827",way,21.875,clinic,clinic,Cligest - Centro Médico Vida do Zango,Cligest,,"general;paediatrics;radiology;gynaecology;gastroenterology;laboratory",,,"Mo-Fr 07:00-19:30; PH,Sa 08:00-16:00; Su 08:00-14:00",,,,,,,,,,,,,,,,,,114202988,3,2021/11/25 03:07:17+00,c95cd56fbe0c4cd893d43ff0c162bdf6
+13.2587331988797,-8.90105885147301,"10004001642",node,15.625,pharmacy,pharmacy,Farmácia Nacional,,,,,,,,,,,yes,,,,,,,,,,,,,125852038,1,2022/09/06 10:50:17+00,8755e447de4140b8b99d06cd4b95bcfa
+13.2200133324458,-8.8528124491682,"5172303346",node,15.625,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,Rua 21 de Janeiro,,Luanda,52999767,1,2017/10/17 03:49:26+00,5c469c20cdd34bd2baaa85f9ede9e57d
+,,"824270662",way,18.75,clinic,clinic,Centro Médico Ebenézer,Ministério da Saúde,,general,,,,,,,,,,,,,,,,,,,,,140820570,3,2023/09/04 19:22:39+00,f8c9867acc5446e098140731e76b1855
+13.4012457532161,-9.00984304653434,"6317032727",node,15.625,pharmacy,pharmacy,Farmácia Vanesp,,,,,,,,,,,yes,,,,,,,,,,,,,68006313,2,2019/03/11 01:55:11+00,0433e64fb0174ad1b32f4d2eed6e141c
+15.126541666097,-11.4198133790393,"13179063825",node,12.5,hospital,hospital,Hospital da Cela - Banco de Urgência,,,,,,,,,,,,,,,,,,,,,,,,172584707,1,2025/09/28 20:53:35+00,30520e923c7b42d792df3b4c1d02cdf9
+,,"996563138",way,18.75,pharmacy,pharmacy,Ama e Fil,,,,,,,,,,,yes,,,,,,,,,,,,Lubango,112980442,1,2021/10/26 07:53:36+00,31f440aacd9741b599df02a6ccc47f60
+20.0434031995116,-11.9679997372328,"11199529337",node,12.5,doctors,doctor,Posto de enfermagem do Dala sector,,,,,,,,,,,,,,,,,,,,,,,,161654340,2,2025/01/22 21:56:37+00,2623d5ef5f5543deb2c560dd5e9a5466
+,,"595421850",way,25,pharmacy,pharmacy,Farmácia Bosim,,,,,,Mo-Su 07:00-22:00,,,,,yes,,,,,,,,,,Rua Garcia Neto,,Luanda,59701705,2,2018/06/10 00:15:30+00,4a4ce3fe2f53401f8bf58eecb60bbb5a
+13.208255282493,-8.88876637137389,"8852801776",node,9.375,pharmacy,,Farmácia Lito,,,,,,,,,,,,,,,,,,,,,,,,106714388,1,2021/06/21 12:08:43+00,e3b89c6ec3d5418fac05e89bedbc1259
+13.399887884902,-9.051272111712,"10284921193",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,130463474,1,2022/12/24 17:40:07+00,75266b5c6ef3433a971c095ad7ad4838
+,,"1275720406",way,15.625,clinic,clinic,Posto Médico do Kwahamba,,,community,,,,,,,,,,,,,,,,,,,,,150449957,1,2024/04/24 14:13:49+00,9a8718d49cd84ad6ba082dd2083545f5
+13.2583805722132,-8.89956310085168,"6858673178",node,12.5,doctors,doctor,Consultório Médico Herman,,,,,,,,,,,,,,,,,,,,,,,,75390414,1,2019/10/07 18:47:42+00,53084a7d517e4042b14e8850b27b93e8
+,,"285896694",way,12.5,clinic,clinic,Clínica Restinga,,,,,,,,,,,,,,,,,,,,,,,,121683116,2,2022/05/30 00:38:11+00,1af9d341998a476ca21a3f5e5b5b028d
+12.1741376431846,-15.1883722825932,"11060568589",node,25,hospital,centre,Centro de Saúde Forte Santa Rita,Administração Local do Estado,,general,public,,,,,,,,,,,,,,,,,,,Moçâmedes,138830584,1,2023/07/21 20:41:17+00,61e61d56f3c9469f9ba319e04e95b971
+13.5008784187545,-14.9183529598958,"8520947076",node,12.5,hospital,hospital,Farmácia Ann,,,,,,,,,,,,,,,,,,,,,,,,105093942,2,2021/05/21 13:44:54+00,75cb919363f34d45a92f492161421902
+13.291804416946,-8.89773877962597,"12879626454",node,18.75,doctors,doctor,Posto de saúde,,,,,,,,,,,,,,,,,,,,,Rua Universal,,Kilamba Kiaxi,167066059,1,2025/06/01 19:52:30+00,5cac75dc885544bb84135158414951a4
+14.3544651187693,-9.48491004003182,"7142318639",node,15.625,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,Cassoalala,79749435,1,2020/01/19 09:11:57+00,9b30569d97404d9a9719da0c46d81df4
+13.3245495789788,-8.91209438137221,"6214913325",node,21.875,pharmacy,pharmacy,Farmácia Milze,,,,,,,,,,,yes,,,,,,,,,"253",,,Luanda Sul,84916391,2,2020/05/08 21:00:42+00,0dd5248eff0849bc9dbd682c24abafc0
+,,"913871760",way,21.875,hospital,hospital,Centro de Saúde da Sófrio,Ministério da Saúde,,general,public,,,,,,,,,,,,,,,,,,,,105497645,3,2021/05/28 14:18:20+00,0950590174fb4d65860db3b101ec66a8
+,,"748815732",way,12.5,clinic,clinic,Centro de Saúde da Maria Augusta,,,,,,,,,,,,,,,,,,,,,,,,77440918,1,2019/11/22 18:14:59+00,87c71bde7d4a4e67bbbc9e13d888e8fb
+13.5493267411068,-12.354651566209,"3055242469",node,9.375,pharmacy,,Farmácia SAGRADA FAMÍLIA,,,,,,,,,,,,,,,,,,,,,,,,25181257,2,2014/09/02 12:50:35+00,8edd7269832741108fc041da67f7e331
+,,"913608599",way,21.875,clinic,clinic,Clínica Frisilda,,,,,,24/24,,,,,,,,,,,,,,Mitcha,,,Lubango,104747403,2,2021/05/15 19:53:03+00,a347540e865f4dc2b66c99be5b21f908
+13.5296765425829,-14.9248752540313,"8540682137",node,18.75,hospital,hospital,Centro Médico Natural Sadracke,,,,,,,,,,,,,,,,,,,,,Avenida Mártires de 8 de Novembro,,Lubango,140851806,3,2023/09/05 13:52:57+00,cd0fdeb099eb4b429778238087c1995a
+13.1847982750049,-8.89937350220191,"6605512720",node,15.625,clinic,clinic,Clínica Castelo,,,,,,24/7,,,,,,,,,,,,,,,,,,72138204,1,2019/07/11 14:13:48+00,3d0996eb790d42c2ac40c3981396ed70
+13.188779092279,-8.87745876489765,"4679747217",node,15.625,pharmacy,,Nesbel Farmácia,,,,,,,,,,,,,,,,,,,,,Rua da Samba,,Luanda,47763861,2,2017/04/14 03:23:31+00,32957e0e10234cbe841b313a7f4e48a9
+13.2090569277125,-8.8816092318921,"8870602795",node,15.625,pharmacy,pharmacy,Farmácia Longevidade,,,,,,,,,,,yes,,,,,,,,,,,,,107053002,1,2021/06/27 22:38:56+00,7b654d813e5d40dda92ef221280bfd54
+13.2008848235754,-8.89073494515321,"4855309458",node,18.75,pharmacy,pharmacy,Farmácia Rosa,,,,,,,,,,,,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,152045677,3,2024/05/30 16:55:08+00,2579c8a712e4490993b17728001b76b9
+13.1987395592772,-8.9232082820661,"3633613508",node,18.75,pharmacy,pharmacy,Mecofarma,,,,,,,,,,,,,,,,,,,,,Via AL16,,Luanda,151242122,3,2024/05/12 20:57:02+00,9d9bddfddd644a4c9c0a4b34a4c57bb0
+13.148117725613,-8.98013422892612,"2888537272",node,18.75,pharmacy,pharmacy,Farmácia Evacias,,,,,,,,,,,,,,,,,,,,,Rua D,,Luanda,73006902,6,2019/08/05 06:42:41+00,541e9a83ab48484ab0412c46db91d11d
+,,"242273865",way,15.625,hospital,hospital,Hospital Sanatório do Lubango (HSL),Direção Provincial da Saúde,,,,,,,,,,,,,,,,,,,,,,,107168341,11,2021/06/29 19:58:10+00,67930cbc8cbf4ece9721cc5fb06815f4
+13.2000027959045,-8.89158470249694,"4780449577",node,18.75,pharmacy,pharmacy,Farmácia A&W,,,,,,,,,,,,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,152045677,2,2024/05/30 16:55:08+00,2440e93bbc23499f8a2235bb7425f6ef
+13.185356090661,-8.90514452635591,"5772014245",node,21.875,pharmacy,pharmacy,Farmácia Flor-de-Lis,,,,,,,,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,60887117,1,2018/07/20 01:42:47+00,af6e51ffe4b84aa298cb4b6b6a084649
+13.1889811799645,-8.9022864650118,"5563186432",node,21.875,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,58219446,1,2018/04/19 01:10:56+00,a4d0d735cb69445c9de080d6d6aa9574
+13.1526304584626,-8.97102326781459,"6683191481",node,18.75,pharmacy,pharmacy,Farmacia Ehora,,,,,,,,,,,yes,,,,,,,,,,Rua F,,,73006902,1,2019/08/05 06:42:41+00,2f79663e963642978be9d0f8f7d0efd4
+13.2458361321047,-8.81861026090672,"5056126122",node,15.625,clinic,clinic,Clínica L&S,,,,,,,,,,,,,,,,,,,,,,,Luanda,166039657,4,2025/05/09 17:46:38+00,9b786d7d140147de84b53577e22d3683
+13.8450369323071,-11.2005608131119,"8449757896",node,18.75,pharmacy,pharmacy,Farmácia Kudissanga,,,,,,,,,,,yes,,,,,,,,,,,,Sumbe,99836057,1,2021/02/23 14:45:11+00,2d8c60c00b4645b688e1b5f5678e9e8e
+,,"425353662",way,25,hospital,hospital,Centro de Saúde da Mitcha (CS Mitcha),Direção Municipal da Saúde do Lubango,,"Banco_de_Urgências;Consultas_gerais;PAV;CPN;Partos;PF;Aconselhamento_e_Testagem_Voluntária_de_VIH;PTV;Pediatria;Medicina;Curativos;Injeções;Puericultura;Radiologia;Laboratório;Estomatologia;Farmácia;IEC.;Nutrição",public,,,,,,,,,,,,,,,,,,,Lubango,107020952,5,2021/06/27 02:38:53+00,cee381eb61c842a08fd9806e6c22e08b
+13.1848260191043,-8.88366740821635,"5916656190",node,21.875,pharmacy,pharmacy,Farmácia Incuba II,,,,,,,,,,,yes,,,,,,,,,,Estrada do Futungo,,Luanda,62740652,1,2018/09/19 18:56:45+00,d513c66438fa4747ad3cccc1b3be8525
+,,"1326531484",way,21.875,hospital,hospital,Hospital Geral do Uíge,Serviço Nacional de Saúde,,,public,,,,,,,,,,,,,,,,,,,Uíge,158172879,1,2024/10/21 14:22:50+00,69ba464adaf94706895c4979263a9cbf
+,,"486686420",way,15.625,pharmacy,,Farmácia Central - Samba,,,,,,,,,,,,,,,,,,,,,Estrada da Samba,,Luanda,47763861,1,2017/04/14 03:23:29+00,c3662a9ea05a4896846ae1131672946a
+,,"1275713417",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,150448960,1,2024/04/24 13:51:28+00,d2c107d610cf4021a18092293fd1b700
+,,"1034187622",way,12.5,clinic,clinic,Ana Paula,,,,,,,,,,,,,,,,,,,,,,,,117730267,1,2022/02/22 14:33:20+00,160e0391b9034f8482a26925cd78833c
+,,"916375658",way,15.625,clinic,clinic,,,,,,,,,,,,,,,,,,,,,Laurianos,,,Lubango,102015850,2,2021/03/31 02:17:47+00,b9b14c0cec4f4b60a2c14f5484899b80
+13.5300932908087,-14.9242748583069,"8722810320",node,18.75,pharmacy,pharmacy,HFCV,,,,,,,,,,,,,,,,,,,,,Avenida Mártires de 8 de Novembro,,Lubango,140851806,3,2023/09/05 13:52:57+00,982e1503c16444fb8d498ed5c6018811
+13.4915168387381,-14.9202618545246,"3958435538",node,21.875,pharmacy,pharmacy,Farmácia Carifarma,,,,,,00:00-24:00,,,,,,,,,,,,,,,Avenida Deolinda Rodrigues,,Lubango,107094742,7,2021/06/28 14:48:19+00,3e1831b35b6643a6a13dfbe611e4197f
+13.2327355527206,-8.82216946845131,"8479378499",node,25,clinic,clinic,Cardiozono BMA,,,"cardiology;surgery;plastic_surgery;dermatology;gastroenterology;gynaecology;general;neurology;ophthalmology;paediatrics;pulmonology;urology;psychology;laboratory;radiology",,,,,,,,,,,,,,,,,"114",Avenida Lenine,,Luanda,137224219,2,2023/06/12 02:01:23+00,0bb25d8478b542249139ef56417b6aff
+13.21101007879,-8.87675904362072,"5563186084",node,21.875,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,58219446,1,2018/04/19 01:10:53+00,685c1f4e50134201b0962e043893a72f
+13.4924451345146,-14.9159572443308,"8501362063",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,105292611,2,2021/05/25 12:34:29+00,839975f967bb4ac48f7103d46c533085
+13.2296716318346,-8.89642315610385,"5557191091",node,18.75,pharmacy,pharmacy,Socinter,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,80942434,2,2020/02/13 07:35:39+00,62fb8fb93a564226916142d262f06686
+,,"916380119",way,15.625,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,Rua Rei Katyavala,,Lubango,140601950,4,2023/08/30 17:59:57+00,4543f90fe6b5400eb381a9cca4c12365
+,,"901418426",way,25,hospital,hospital,Centro de Saúde da Pedreira,Ministério da Saúde,,general,,,,,,,,,,,,,,,,,,Estrada da Mapunda,,Lubango,140751935,3,2023/09/03 10:36:27+00,6e2b6c0919ef4cadb962cf33f9de0fd2
+13.3969553922577,-8.99355214716437,"6141186505",node,15.625,pharmacy,pharmacy,Farmácia Azul,,,,,,,,,,,yes,,,,,,,,,,,,,65532322,1,2018/12/16 21:30:35+00,9a8bc57d1c4e433aa355b0207d780ae3
+13.4932295968326,-14.9208561314596,"8500321412",node,21.875,pharmacy,pharmacy,Farmácia Rodrigues,,,,,,,,,,,yes,,,,,,,,,,Rua Anibal de Melo,,Lubango,106924965,4,2021/06/24 21:48:44+00,32d3d8bbaf58445a9b9a4d4bd294e1be
+13.2423580613828,-8.82177803357311,"12652705121",node,25,dentist,dentist,BioDente,https://biodenteangola.com/,,,,,,,,,,,,,,,,,,,"12",Rua do Maculusso,,Luanda,163495670,1,2025/03/11 17:38:29+00,23eecbbca2cc41a4a972869ec43b3130
+,,"992452027",way,21.875,hospital,hospital,Hospital Municipal Sacomar,Administração Municipal de Moçâmedes,,,public,,,,,,,,,,,,,,,,,,,Sacomar,134880631,2,2023/04/13 22:24:28+00,7a3cbafe3f554da4a1fc3df367423e1b
+,,"917568749",way,21.875,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,Cidade,Rua 29 de Novembro,,Lubango,138031457,3,2023/07/02 16:56:19+00,3cca3b09f0f846a3b2aa4aff99351d99
+13.2576397796107,-8.9536642625232,"6138808052",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,65496763,1,2018/12/15 11:03:00+00,ce41e5d162844013a11c4d2ef2b12586
+13.228568741015,-8.82376546663457,"8879009389",node,12.5,clinic,clinic,Centro Médico Naturmed - Maianga,,,,,,,,,,,,,,,,,,,,,,,,107182833,1,2021/06/30 05:31:23+00,f0e17531ef6547f4b6295e7592883d07
+13.2271918457807,-8.82271144231049,"9904368029",node,18.75,,blood_donation,Instituto Nacional de Sangue (INS),,,,,,24/7,,,,,,,,,,,,,,,Avenida do 1º Congresso do MPLA,,Luanda,123944292,1,2022/07/22 15:12:44+00,ae8ecf20e8f542c5b809993abcf0afed
+14.5519326992535,-14.8233629467062,"8525034651",node,15.625,pharmacy,pharmacy,Farmárcia,,,,,,,,,,,yes,,,,,,,,,,,,,101132668,1,2021/03/16 16:21:03+00,32df3ef0786f45c29ffd4518807dd3e8
+13.4524668929572,-8.69589827643713,"6598252151",node,28.125,clinic,laboratory,Cligest - Centro Médico Vida do Panguila,,,"general;paediatrics",,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,"356",Rua C,,Panguila,98433461,4,2021/01/31 00:24:15+00,83d10906db6e41e189386fcd70ea31ea
+13.2090032835322,-8.88165097376989,"4780554472",node,18.75,pharmacy,pharmacy,Farmácia Longe Vida,,,,,,,,,,,,,,,,,,,,,Avenida 21 de Janeiro,,Luanda,124801571,2,2022/08/12 05:56:05+00,5e8638a9bcfa47f08df2eba408243f67
+,,"317634855",way,12.5,hospital,,Clínica Rio da Huila,UIEA,,,,,,,,,,,,,,,,,,,,,,,63435297,2,2018/10/11 22:40:11+00,169c4aa1030c4826802be089ee882b20
+13.4760239803693,-14.9235150387843,"8554857398",node,21.875,pharmacy,pharmacy,Medirite Lubango,,,,,,,,,,,yes,,,,,,,,,,Avenida Lopo do Nascimento,,Lubango,121026314,4,2022/05/15 21:47:40+00,5a2a70a30267432c85158468a3e2899d
+13.1852143526784,-8.92447118341727,"5004236224",node,18.75,clinic,clinic,Atelier Óptica Médica,,,,,,,,,,,,,,,,,,,,,Via Luanda Sul,,Luanda,157049980,4,2024/09/24 17:24:58+00,68561a7632234a88b7c4a4fdfd1e242a
+13.206047070102,-8.85778266629299,"4792601723",node,15.625,pharmacy,,Farmácia Celifarma,,,,,,,,,,,,,,,,,,,,,Estrada da Samba,,Luanda,47763861,1,2017/04/14 03:23:24+00,8d2e819965224b52b4ce7dd5a4509f79
+,,"678142415",way,12.5,hospital,hospital,Hospital de Menongue,,,,,,,,,,,,,,,,,,,,,,,,107968816,2,2021/07/14 10:05:12+00,0c951bbba4e34eef9245ca97e86f875b
+13.191198277173,-8.90335742078028,"4781761105",node,15.625,pharmacy,,Farmácia Popular,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,58219446,2,2018/04/19 01:10:59+00,13080fe6d020422c8d0962cd85a55201
+,,"152307644",way,15.625,hospital,hospital,Hospital Psiquiátrico de Luanda,,,,,,,,,,,,,,,,,,,,,,,Luanda,83365729,4,2020/04/10 13:07:32+00,67be818a703544bf900cb35e027f39fb
+13.3799845529023,-8.96952600845069,"6320279206",node,15.625,pharmacy,pharmacy,Farmácia Suku Akuetche Prisca & Filhos,,,,,,,,,,,yes,,,,,,,,,,,,,67834207,1,2019/03/06 07:57:15+00,d939576ae8d641e89523ad7b585f73f0
+13.549023651488,-12.3432218354035,"2841623527",node,12.5,pharmacy,,MEDTECH Farmácia 24 Horas,,,,,,,,,,,yes,,,,,,,,,,,,,22186597,1,2014/05/07 12:37:17+00,04c79ab8b2de4566b467d2bf1179d891
+,,"1186508697",way,12.5,hospital,hospital,Hospital da Missão Católica do Zenze do Lucula,,,,,,,,,,,,,,,,,,,,,,,,138023781,1,2023/07/02 13:27:33+00,df64960235b14057b6f1d49dc80471f8
+13.2344049763757,-8.81786636700008,"4248948753",node,15.625,pharmacy,pharmacy,Farmácia Kiluba,,,,,,,,,,,,,,,,,,,,,,,Luanda,137224219,4,2023/06/12 02:01:23+00,61dc8b52ab8c4e778f95ae38778360b8
+13.2634013322141,-8.93451060794334,"5693977916",node,18.75,pharmacy,pharmacy,Farmácia Marlu,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,59886197,1,2018/06/16 00:11:21+00,03df4b5e4e6d4f869e80232c4b5f86de
+13.4583171260962,-14.9038496690157,"8552984328",node,21.875,pharmacy,pharmacy,Farmácia Cosmético,,,,,,,,,,,yes,,,,,,,,,,Estrada da Tundavala,,Lubango,140632619,4,2023/08/31 12:11:13+00,cdc863ef8437430496b33bc1b528af69
+13.4922955175429,-14.9188289681771,"4413721889",node,18.75,pharmacy,pharmacy,Mecofarma Ginga,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Hoji-ya-Henda,,Lubango,104966860,5,2021/05/19 13:51:51+00,850379a7a2f34b8286a1ed7cf344a0fd
+13.2253792592194,-8.89653145029285,"5553417377",node,21.875,dentist,dentist,Dentum,,,,,,"Su-Th 09:00-22:00, Fr-Sa 09:00-23:00",,,,,,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,58099491,1,2018/04/14 22:52:40+00,fbe4691f56564eb0bbb738eb6bcd4f41
+13.2471663401383,-8.81840800558317,"2426689661",node,18.75,pharmacy,pharmacy,Farmácia Modelo,,,,,,,,,,,,,,,,,,,,,Alameda Manuel Van-Dunem,,Luanda,166039657,3,2025/05/09 17:46:38+00,3116e670035241d389ebaa8769483b23
+13.509677573068,-14.9247869087718,"8503906123",node,15.625,,laboratory,Laboratório de Análises Clinas do Dack Doy,,,,,,,,,,,,,,,,,,,,,Rua da Maxiqueira,,Dack-Doy,104988616,2,2021/05/20 00:39:16+00,88b977be27094b14b4bdd1d3e942557e
+,,"920080949",way,21.875,pharmacy,pharmacy,Farmácia do Benfica,,,,,,,,,,,yes,,,,,,,,,,Rua Deolinda Rodrigues,,Lubango,101435394,1,2021/03/21 11:39:36+00,a061f0d5194a45d6a732f88b272f61db
+,,"820362782",way,31.25,hospital,hospital,Hospital Pediátrico Pioneiro Zeca,Direção Provincial da Saúde,,paediatrics,public,,,,,,,,,yes,,,,,,,,Rua da Mongua,,Lubango,107020952,2,2021/06/27 02:38:53+00,92c1e49e219d4839b5123c0ee4417a7b
+13.4804768664302,-14.9192879611948,"7298011018",node,18.75,hospital,hospital,Entrada - Hospital Doutor Agostinho Neto - Hospital Universitário do Lubango (HAG-HUL),Direção Provincial da Saúde,,,public,,,,,,,,,,,,,,,,,,,,140597316,6,2023/08/30 16:23:56+00,a99df4a5ef364c7ab181548b9fbce456
+,,"491311031",way,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,48389878,1,2017/05/04 10:08:32+00,c90b5531022d4a51bf4064716414d93e
+,,"487782082",way,18.75,hospital,hospital,Clínica Girassol II,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Gika,,Luanda,113017240,4,2021/10/27 04:27:36+00,a5ea9f728cd9403bab874b6a4e4ae293
+13.5017661461196,-14.9204947037947,"8723028092",node,9.375,dentist,,"Guiodente, Lda",,,,,,,,,,,,,,,,,,,,,,,,107334471,2,2021/07/02 23:19:54+00,554fe384aad8497196614ca1c99be075
+,,"62371086",way,15.625,hospital,hospital,Hospital Américo Boavida (HAB),,,,,,,,,,,,,,,,,,,,,,,Luanda,137224219,3,2023/06/12 02:01:23+00,3c89c956bc7b4479b1553b1ecbf866d0
+13.2308433380792,-8.81347517174652,"9905614019",node,21.875,pharmacy,pharmacy,Kajyfarma,,,,,,,,,,,yes,,,,,,,,,,Rua Rainha Jinga,,Luanda,123970030,2,2022/07/23 10:24:39+00,b16558851c804b6ebe0b4817528939b7
+13.2486139786354,-8.81861746934345,"5177628246",node,18.75,clinic,clinic,Centro Médico,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Valódia (ex Combatentes),,Luanda,130491387,2,2022/12/25 18:58:30+00,08208abadd3f4c34a80ccd28701407a9
+13.2903651603521,-8.89989837697863,"12879626456",node,18.75,doctors,doctor,Posto de saúde,,,,,,,,,,,,,,,,,,,,,Rua Simão Toco,,Kilamba Kiaxi,167066059,1,2025/06/01 19:52:30+00,6d55146a00204709a10abfb6071ff179
+,,"1324185483",way,12.5,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,N'Zeto,157932502,1,2024/10/15 17:58:05+00,03683c27cfd5457aa4e510248cff877a
+,,"583775732",way,18.75,clinic,clinic,Centro Médico Cidadela,,,,,,,,,,,,,,,,,,,,,Avenida Hoji Ya Henda (ex Avenida Brasil),,Luanda,58453475,1,2018/04/26 18:34:12+00,4e7b6d5aea524ad584a500391432be51
+,,"702427000",way,12.5,clinic,clinic,Clínica Videira Nguepe,,,,,,,,,,,,,,,,,,,,,,,,72011312,1,2019/07/08 12:12:15+00,2d5b68f49f0b4f439fa6c10a08244b9d
+13.2307348762521,-8.84665325907824,"5915245344",node,25,pharmacy,pharmacy,Farmácia Maca,,,,,,24/7,,,,,yes,,,,,,,,,,Rua 8,,Luanda,62717155,1,2018/09/19 05:39:25+00,b1d65d3139bd4d18967b18a0de80e127
+,,"918001335",way,21.875,pharmacy,pharmacy,Farmácia do Centro de Saúde do Nambambe,,,,,,,,,,,yes,,,,,,,,,Nambambi,,,Lubango,131346188,3,2023/01/16 17:05:07+00,53374d95db564eb091001d0d69a255c3
+13.3783732996552,-8.9307214009757,"8703273674",node,15.625,pharmacy,pharmacy,Farmácia Maria fiel ou,,,,,,,,,,,yes,,,,,,,,,,,,,104211800,1,2021/05/05 23:47:46+00,02203ccc6cb94e4aa9e53e36d1930ef7
+13.2886137616839,-8.89839147842611,"12880219883",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,06ae1acd3e4e42ddadde8918780c698b
+13.1886913337528,-8.950140342791,"4635858773",node,15.625,pharmacy,,Farmácia PEGOS+ II,,,,,,,,,,,,,,,,,,,,,Avenida do Patriota,,Luanda,66584657,2,2019/01/24 00:24:25+00,df7ab1858b314de5bcf1b5b4500f800e
+13.2475743711848,-8.82638564956662,"6141294558",node,21.875,pharmacy,pharmacy,Mecofarma - Farmácia Atlântico,,,,,,,,,,,yes,,,,,,,,,,Rua G. João de Almeida,,Luanda,124756061,2,2022/08/11 04:30:52+00,d3714dbcb1df443a91432f08dbcaffd4
+13.4875368596542,-14.9579440413456,"11028206305",node,9.375,pharmacy,,Farmácia MD,,,,,,,,,,,,,,,,,,,,,,,,138156117,1,2023/07/05 16:55:31+00,0c8a288b497a4475bf9a93407636f4b6
+13.4950783932156,-14.9249181693755,"8494256962",node,21.875,pharmacy,pharmacy,Farmácia Movic,,,,,,,,,,,yes,,,,,,,,,,Rua Steve Biko,,Lubango,105093364,2,2021/05/21 13:31:57+00,c541029ee45a46e2800a69fb62fca96f
+13.2126853697773,-8.84406844777757,"5919170810",node,21.875,pharmacy,pharmacy,Farmácia Erasmo,,,,,,,,,,,yes,,,,,,,,,,Estrada da Samba,,Luanda,62779515,2,2018/09/20 23:27:45+00,712d43be23384dab83ffc223c3daa269
+,,"911612739",way,21.875,pharmacy,pharmacy,Farmácia Afomar,,,,,,,,,,,yes,,,,,,,,,,Rua da Maxiqueira,,Lubango,100115507,1,2021/02/27 20:39:14+00,8d9d42c55d11404e91d2913c28c398a3
+,,"777520286",way,6.25,,clinic,,,,,,,,,,,,,,,,,,,,,,,,,141151716,2,2023/09/12 08:44:31+00,5181a91486804ed7a577367483a45201
+13.2272652712525,-8.91801586068817,"5661741898",node,25,pharmacy,pharmacy,Depósito de Medicamentos,ABE Group,,,,,,,,,,yes,,,,,,,,,,Dangereux-Camama,,Luanda,59516571,1,2018/06/03 19:36:56+00,18774d41b34e4a2b910d4a61904d7f69
+13.2195975900484,-8.85454180343095,"8870890242",node,15.625,pharmacy,pharmacy,Farmácia Julião Santos - Rocha Pinto Zona 6,,,,,,,,,,,yes,,,,,,,,,,,,,107056586,1,2021/06/28 03:25:09+00,8115af089b10435cb70a466a1c1c4a13
+13.2147308894278,-8.82703013410162,"5163886019",node,18.75,pharmacy,pharmacy,Farmácia VMF,,,,,,,,,,,,,,,,,,,,,Avenida Agostinho Neto,,Luanda,52871525,1,2017/10/12 20:37:17+00,a9e9693b89204ecd83a4025a8dcd3b7f
+,,"1415903626",way,15.625,hospital,hospital,Cacula Municipal Hospital,,,,,,,,,,,,,,,,,,,,,,,Cacula,169159165,1,2025/07/19 15:53:06+00,6a3d31e5705745aab39f28b4ff4c782d
+,,"702436367",way,12.5,clinic,clinic,Clínica Sagrada Esperança Zango,,,,,,,,,,,,,,,,,,,,,,,,72013487,1,2019/07/08 13:01:16+00,49a3b1e8296b4c4e8a5c568e953e3f94
+13.2163785201346,-8.8351921799549,"4786386744",node,15.625,pharmacy,,Farmácia Mambo II,,,,,,,,,,,,,,,,,,,,,Estrada da Samba,,Luanda,47625306,1,2017/04/10 14:21:14+00,20a8dcf426f44f888b1c9a1d98efe8f0
+,,"210365291",way,9.375,hospital,,Posto Médico do Soqueco,,,,,,,,,,,,,,,,,,,,,,,,15382683,1,2013/03/16 11:21:27+00,a80774395f0f48c0aba735699ae4971f
+,,"1441673118",way,28.125,hospital,hospital,Hospital Geral do Cuanza Sul (HGCS) - Comandante Raúl Díaz Arguelles,Ministério da Saúde,,,public,,,,,,,,,,,,,,,,Km 5,Estrada CSU 244-1 (Chingo - Cuacra),,Sumbe,173192363,1,2025/10/12 17:19:11+00,a0474d1316944d78af28451bbae0dc19
+,,"420845993",way,15.625,hospital,,Centro Materno Infantil Ana Paula dos Santos,MINSA,,,,,,,,,,,,,,,,,,,,,,"vIANA, lUANDA",104211674,2,2021/05/05 23:41:45+00,1eacc33c55d34d8bac0781b67d78b4d5
+13.200207565799,-8.93292810462418,"6237222565",node,15.625,pharmacy,pharmacy,Farmácia Pak,,,,,,,,,,,yes,,,,,,,,,,,,,66646826,1,2019/01/26 00:11:40+00,bc0ffa4b0fb24622a6d4a86ed94c725c
+,,"783357134",way,18.75,hospital,hospital,Hospital Dombe Grande,,Survey,,,,,,,,,,,yes,,,,,,,,,,,119865719,3,2022/04/18 15:42:07+00,330973cd41e6454eba388a0aa99452cf
+,,"1128060386",way,21.875,hospital,hospital,Hospital Municipal Olga Chaves,Governo Provincial da Huíla,,"paediatrics;urgência;general;vaccination;gynaecology;surgery;radiology;community",public,,,,,,,,,,,,,,,,,,,,164797427,3,2025/04/11 05:36:58+00,60f50d5b3185487f85cd82b5a50b0f8d
+,,"912861343",way,18.75,hospital,hospital,Hospital de Ombadja,,,,,,,,,,,,,,,,,,,,,Estrada do aeroporto,,Xangongo,138316501,3,2023/07/10 01:45:26+00,0ba7143727f3437fb74da342ba371792
+,,"291765313",way,12.5,hospital,hospital,Hospital Pediatrico do Lobito,,,,,,,,,,,,,,,,,,,,,,,,137280123,3,2023/06/13 10:36:56+00,d2115f3f7f5d4021b175e44a91e8e350
+,,"234883654",way,25,hospital,hospital,Hospital Geral de Benguela,,local knowledge,,,,24/7,,,,,,,,,,,,,,,Rua 31 de Janeiro,,Benguela,133972810,4,2023/03/22 10:50:31+00,d0209e4df7aa4e20893537d422835e66
+13.1518846367183,-8.95254150659312,"5168357800",node,18.75,pharmacy,pharmacy,Farmácia Grandiosa,,,,,,,,,,,,,,,,,,,,,Estrada da Samba,,Luanda,52945284,1,2017/10/15 04:15:48+00,0ae128484c6c48f0b8d2d7b3d324a132
+13.2303090755709,-8.8435397173254,"5172297564",node,18.75,pharmacy,pharmacy,Farmácia Pereira - Bairro Cassenda,,,,,,,,,,,,,,,,,,,,,Rua 8,,Luanda,107124173,3,2021/06/29 06:07:19+00,a7c5bc4162814186871ca357c44a1dde
+,,"976687034",way,12.5,clinic,hospital,Clínica Raiar da Vida,,,,,,,,,,,,,,,,,,,,,,,,110794846,3,2021/09/06 10:44:01+00,d3ed465305b542ecaf6fb52920e92339
+13.4029241455076,-9.01366435619113,"6317031965",node,15.625,pharmacy,pharmacy,Farmácia Bakala,,,,,,,,,,,yes,,,,,,,,,,,,,67782351,1,2019/03/04 21:03:31+00,e3a7bacc95ec46f78b7f679719daf470
+,,"783118135",way,15.625,hospital,hospital,Clínica Mutamba,,,,,,,,,,,,,,,,,,,,,,,Luanda,137224219,6,2023/06/12 02:01:23+00,5e41bcd39851474a9ca582f7f4b00020
+13.162586231595,-8.90770343757575,"5161925626",node,18.75,pharmacy,pharmacy,Farmácia PEGOS+,,,,,,,,,,,,,,,,,,,,,Rua das Construções,,Luanda,52843713,1,2017/10/11 22:25:37+00,18bd9d2a16d8444b80ae72006bab5c1c
+,,"1231341621",way,12.5,hospital,hospital,Clínica da Sagrada Esperança - Urbanização 4 de Abril,,,,,,,,,,,,,,,,,,,,,,,,145257375,2,2023/12/18 16:04:52+00,aec17d02c5304143b750f5261066a36c
+13.225507669976,-8.83133851615185,"8881056966",node,21.875,pharmacy,pharmacy,Farmácia Margoso,,,,,,,,,,,yes,,,,,,,,,,Avenida Revolução de Outubro,,Luanda,107228029,1,2021/06/30 20:47:04+00,18db64b8e340485295ea7ecbea026b0f
+,,"755569658",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,78422405,1,2019/12/15 05:07:48+00,03ce4b0f594941009ac77001f3f85e4a
+13.2238706842863,-8.89603071539727,"5771174822",node,18.75,dentist,dentist,Odento Excellence,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,124855107,3,2022/08/13 14:23:38+00,638024e82aee48a9bdc55706225e73c4
+13.4832279746898,-14.9282972498209,"8489240317",node,12.5,clinic,clinic,Centro de Saúde CMS,,,,,,,,,,,,,,,,,,,,,,,,101460426,2,2021/03/21 22:59:00+00,38ee3006825b4490af4786dad2315622
+13.5201727216696,-14.9239247462114,"3958436338",node,18.75,pharmacy,pharmacy,Prince Farma,,,,,,8:00 - 15:30,,,,,,,,,,,,,,,,,Lubango,140902452,3,2023/09/06 16:13:22+00,853327133f614c88be1cca2775d5c719
+,,"783325058",way,21.875,hospital,hospital,Clínica Medicrisal,,,,,,,,,,,,,yes,,,,,,,,Rua 15 de Agosto,,Lobito,113180439,3,2021/10/31 06:18:04+00,e34a2273611a4013b2c63437a57b9d0c
+13.5482924980742,-12.3912369809998,"3043037750",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,26080398,2,2014/10/14 19:30:32+00,ed6349742d6240189c5dc9b80c71847d
+13.4041609791398,-9.04361641662945,"10284921244",node,12.5,pharmacy,pharmacy,Farmácia Domingas Miguel,,,,,,,,,,,,,,,,,,,,,,,,130463474,1,2022/12/24 17:40:07+00,6cd8615d771f4abb9d2d52e722bd8863
+13.4776155361438,-14.9232703710306,"8555580727",node,21.875,pharmacy,pharmacy,Farmácia Ndayula,,,,,,,,,,,yes,,,,,,,,,,Avenida Senhora do Monte,,Lubango,107300574,2,2021/07/02 09:10:44+00,91e016e79ace46d9815bc7baa771a73d
+13.2611028467259,-8.90141466326273,"6219110190",node,12.5,dentist,dentist,Dr. Dentista,,,,,,,,,,,,,,,,,,,,,,,,66434447,1,2019/01/18 17:22:30+00,19788c3e07c34ccf841e9aad2fe1282d
+13.3969390475465,-8.99348291264414,"6141186504",node,12.5,dentist,dentist,Odonto Excellente,,,,,,,,,,,,,,,,,,,,,,,,65532322,1,2018/12/16 21:30:35+00,544c09b28c2a45b5b0f993d14a0526c6
+,,"152313539",way,15.625,hospital,hospital,Complexo Hospitalar de Doenças Cardio-Pulmonares Cardial Dom Alexandre do Nascimento,,,,,,,,,,,,,no,,,,,,,,,,,126359839,9,2022/09/19 08:24:06+00,1eb10bd8ab894c7e8f4edfe33fed96f9
+13.1506261777758,-8.96216443435048,"6683191484",node,15.625,dentist,dentist,Clínica Dentária,,,,,,,,,,,,,,,,,,,,,Avenida Comandante Fidel Castro,,,73045274,2,2019/08/06 02:30:22+00,0a5291da85ae4068a7c5e5396f0e4ed1
+,,"414630163",way,31.25,hospital,hospital,Centro Evangélico de Medicina de Lubango (CEML),Aliança Evangélica de Angola,,"Obstetrics;Obstetrícia;paediatrics;pediatria;general;gynaecology;surgery",religious,,,,,,,,,yes,,,,,,,,Rua do Cristo Rei,,Humpata,104690997,13,2021/05/14 14:36:40+00,74472ec09f514a34aabadea04e1efa60
+,,"242203591",way,31.25,hospital,hospital,Centro Materno-Infantil Irene Neto,Direção Provincial da Saúde,,"paediatrics;gynaecology;Obstetrics-Gynecology",public,,,,,,,,,yes,,,,,,,,Praça Gabriel Calofe,,Lubango,120040215,10,2022/04/22 09:44:42+00,b353cabd467147e493401fcf20f3ccdb
+,,"918003188",way,15.625,,alternative,Ervanária Senhor Paulo,,,,,,,,,,,,,,,,,,,,Nambambi,,,Lubango,104732559,2,2021/05/15 12:57:59+00,a941bed2315b451b97b63849e5fdc2d2
+,,"915027849",way,15.625,doctors,doctor,CATV,,,,,,,,,,,,,,,,,,,,,,,Xangongo,138314505,2,2023/07/09 23:24:57+00,0ff8149b1d854ff4bc7a8a5863f35a49
+13.2605456178029,-9.00310164944995,"4460865221",node,12.5,pharmacy,,Uzema,,,,,,Mo-Su 08:00-23:00,,,,,,,,,,,,,,,,,,43108528,1,2016/10/23 20:13:30+00,d2ac7e6198094dc8bac75847f42d06fc
+15.7430703747301,-12.7685901780524,"11254722423",node,15.625,pharmacy,pharmacy,Farmácia central da baixa,,,,,,,,,,,,,,,,,,,,,,,Huambo,142427289,1,2023/10/11 09:13:52+00,52ae5e38666f42e8ad626435b115105a
+13.1802657608638,-8.92057351462256,"7881761608",node,15.625,clinic,clinic,Luanda Medical Center - Talatona,,,,,,"Mo-Fr 08:00-22:00, Sa 08:00-13:00",,,,,,,,,,,,,,,,,,93690140,2,2020/11/07 01:07:53+00,e74ce3af52b34fc297da48177408d80a
+13.4952860967762,-14.8973192444342,"8525069401",node,28.125,pharmacy,pharmacy,Farmácia Mitcha,Nzila filhos,,,,,Mo-Su 08:00-18:00,,,,,yes,,,,,,,,,,Rua da Mitcha,,Lubango,146338348,3,2024/01/16 20:46:13+00,0dd4d6b3c1764ea69ce3319f692d0159
+,,"825803095",way,28.125,hospital,hospital,Centro de Saúde Bula Matadi,Ministério da Saúde,,"paediatrics;general;gynaecology",public,,,,,,,,,,,,,,,,,Rua de Angola,,Lubango,140738857,5,2023/09/02 23:19:19+00,eab55e5a01ad401db517087b371b82b1
+13.1735236932271,-8.91452387600705,"5146755875",node,15.625,pharmacy,,Farmácia Central,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,63264278,2,2018/10/06 20:16:28+00,353fcc5f158142a7b8451593dfb069e7
+,,"976732476",way,12.5,pharmacy,pharmacy,Farmácia Squina,,,,,,,,,,,,,,,,,,,,,,,,114548325,3,2021/12/04 09:20:29+00,ab7c809b072e434f849dce7ade8d1c2e
+13.4818225809847,-14.9201867526721,"8873717528",node,15.625,,laboratory,Laboratório de Análises Clínicas,,,,,,,,,,,,,,,,,,,,,Rua do Hospital,,Comandante Cowboy,107201648,2,2021/06/30 11:03:31+00,2fd92e282ba24d4ab1f4bfc4049514c9
+13.5023649492823,-8.65805373215161,"4325129038",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,98064065,2,2021/01/24 16:24:42+00,96c5306760b44490a43282ee60f7fec1
+,,"1117810201",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,129475278,1,2022/11/28 12:36:01+00,40e7cd4227ca459abeb596014a3aeb83
+15.7457304555212,-12.7671085090284,"10011239608",node,12.5,clinic,clinic,Clínica Chissola,,,,,,,,,,,,,,,,,,,,,,,,125991760,2,2022/09/09 18:10:12+00,8a9b661c4b0b449e8049140d63a504c8
+13.235121629097,-8.81259347935168,"8268907710",node,25,,physiotherapist,Ana Carolina Centro de Fisioterapia,,,"neurology;orthopaedics;psychology;speech_therapist;paediatrics;osteopathy;occupational",,,"Mo-Fr 07:00-18:00, Sa 08:00-13:00",,,,,,,,,,,,,,41/43,Major Kanhangulo,,Luanda,137224219,2,2023/06/12 02:01:23+00,fde97d05750b48029cc69084c4720c2a
+13.4848134954941,-14.9301821722065,"7704386723",node,25,clinic,clinic,Centro de Saúde da Polícia Nacional de Angola (PNA),Comando Provincial Huíla da Polícia Nacional de Angola,,,public,,,,,,,,,,,,,,,,,Avenida Presidente Samora Machel,,Lubango,158569111,2,2024/10/31 07:22:46+00,858fa6baafd243dabbc53379f712d4bc
+13.2059491694729,-8.85795885389769,"4792601722",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,47763861,1,2017/04/14 03:23:24+00,388c919a75e54155862f521edd87e7e5
+13.2895163250177,-8.90117904796452,"12880219880",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,7de01d4cc6d64b0991ed928b06ef82ec
+,,"1005827464",way,25,hospital,hospital,Hospital Provincial Materno-Infantil - Liepey,Governo Provincial do Namibe,,"paediatrics;gynaecology;emergency;maternity",public,,,,,,,,,,,,,,,,,,,Moçâmedes,114179167,2,2021/11/24 11:56:34+00,d6d21986752f4c4d8ca8c58934587995
+,,"203082808",way,12.5,hospital,hospital,Hospital da Cela,,,,,,,,,,,,,,,,,,,,,,,,172584707,2,2025/09/28 20:53:35+00,c0395737a4f94de485ed8acc3cc874d7
+13.2420972165561,-8.81667186197882,"2005927002",node,28.125,pharmacy,pharmacy,Farmácia Kinaxixi,"Socinter, Lda",,,,,24/7,,,,,,,,,,,,,,"23",Avenida Comandante Valódia,,Luanda,126396083,5,2022/09/19 20:24:41+00,1e78904e9ca441858801e36ceb36338f
+13.2125927497472,-8.84358011809869,"4783570657",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,151242122,2,2024/05/12 20:57:02+00,ad036bf31ced4d5d8988d91d20bcc27c
+13.4915381287722,-14.9180487806296,"4446601599",node,18.75,pharmacy,pharmacy,Moniz Silva,,,,,,,,,,,,,,,,,,,,,Rua 1º de Agosto,,Lubango,107372618,4,2021/07/04 00:38:24+00,76f2f702bc654cbd853d4e840edb300c
+13.5345590850005,-12.3547139275686,"2871349358",node,12.5,pharmacy,pharmacy,Farmácia Restinga,,,,,,,,,,,,,,,,,,,,,,,,137486735,6,2023/06/18 17:23:07+00,09de1066033d4f30b5ae1baab17909f7
+,,"913608240",way,21.875,pharmacy,pharmacy,,Farmácia Soma,,,,,,,,,,yes,,,,,,,,,Mitcha,,,Lubango,100440311,1,2021/03/04 18:39:00+00,20d193eaeee04086ab5acfbade12c77a
+16.9137347487911,-12.4246239453586,"12385016629",node,28.125,pharmacy,pharmacy,ASF & Filhos,Privado,,,,,Mo-Su 10:00-20:00,,,,,yes,,,,,,,,,,Avenida Don José Nambi,,Cuito,159752538,1,2024/11/29 18:30:08+00,0e440fd6e30e4afba9fa6a542ee03c27
+,,"783924230",way,15.625,hospital,hospital,Hospital do Cambiote,,,,,,,,,,,,,,,,,,,,,Rua da SOS,,,83368841,2,2020/04/10 14:10:14+00,ca56291f33e74e7cb12c7ab45e0e15d3
+13.4742951290207,-14.9326726032775,"8542869540",node,12.5,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,Lubango,104391507,2,2021/05/09 10:39:20+00,a2cf41d913c44f8fa027d3c2a3fd91b1
+,,"778684696",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,83341331,2,2020/04/10 06:20:15+00,247a56c370324771970d4310d1fdb94f
+13.404948542762,-9.02148207346204,"6317031905",node,15.625,pharmacy,pharmacy,Farmácia HSG,,,,,,,,,,,yes,,,,,,,,,,,,,67782351,1,2019/03/04 21:03:29+00,fdb87807683d4ec6a99c5907beca0693
+,,"1204647533",way,9.375,hospital,,Hospital Regional Norte de Buco-Zau,,,,,,,,,,,,,,,,,,,,,,,,140753631,1,2023/09/03 11:22:39+00,ac466ddc353849b1bb8beb2fbfd089a7
+,,"1050662625",way,12.5,hospital,hospital,Namacunde Hospital,,,,,,,,,,,,,,,,,,,,,,,,119520637,1,2022/04/10 00:18:56+00,2f96de72412c4d13818e7d35974832f1
+13.2294471644676,-8.90241160682618,"7187829654",node,18.75,clinic,clinic,,,,,,,,,,,,,,,,,,,,,"1302",Rua 127,,Luanda,80591114,1,2020/02/05 13:28:02+00,93b9e8202beb4d208abb8fe04834aaab
+,,"975387074",way,15.625,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,Rua Joaquim Kapango,,Cuíto,110794846,5,2021/09/06 10:44:01+00,439db1498390426abdbf9dab3784fbc1
+13.2507695526746,-8.82552055334008,"6223905936",node,18.75,dentist,dentist,Dentista,,,,,,,,,,,,,,,,,,,,,Anibal de Melo,,Luanda,66489278,1,2019/01/21 01:05:34+00,ef8ad2d50075434f96dac193710ccc75
+13.2292847231841,-8.83759074536704,"5171684595",node,21.875,pharmacy,pharmacy,Farmácia das Prendas,,,,,,,,,,,yes,,,,,,,,,,Avenida Revolução de Outubro,,Luanda,107288876,2,2021/07/02 05:10:04+00,ddb732db49c147bbb8c81c8e293c46d0
+13.2584378206119,-8.8995687167268,"6858673177",node,15.625,pharmacy,pharmacy,Farmácia Branca,,,,,,,,,,,yes,,,,,,,,,,,,,75390414,1,2019/10/07 18:47:42+00,604c8b217f0642afa88dd631b53ee2bd
+13.503710999113,-14.915767645681,"8507033954",node,21.875,pharmacy,pharmacy,Farmácia FM,,,,,,,,,,,yes,,,,,,,,,,Avenida Deolinda Rodrigues,,14 de Abril,105093167,2,2021/05/21 13:27:51+00,8cda5536d6444ff99f6a319609dc48ad
+13.2055537951002,-8.88720960049747,"8853091754",node,9.375,dentist,,Dentista Morro Bento,,,,,,,,,,,,,,,,,,,,,,,,106719914,1,2021/06/21 13:55:00+00,07ef8cbda34a4cdfa1e5b25743c8fe42
+,,"1153002138",way,12.5,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,Cahama,133489097,1,2023/03/09 18:01:09+00,d475e9c37b884c26b472c18b97332bf8
+12.1617985597038,-15.1803368034778,"11060570392",node,28.125,hospital,centre,Centro de Saúde dos Eucaliptos,Administração Local do Estado,,general,public,,,,,,,,,,,,,,,,,Rua do Mercado Municipal dos Eucaliptos,,Moçâmedes,138830268,1,2023/07/21 20:31:54+00,e38d03f4cce24ec1ab854bce3c2c766e
+,,"942471451",way,31.25,clinic,clinic,Centro Médico La Paz,,,"general;paediatrics;ophthalmology;orthopaedics;gynaecology;cardiology;surgery;dermatology;vaccination;internal;community;maternity;physiatry",,,Mo-Fr 08:00-17:00,,,,,,yes,,,,,,,,"71",Rua da Liberdade,,"Vila Alice, Luanda",141505049,2,2023/09/20 09:56:24+00,16db95dbb0204804ae07476d4a4ae936
+13.2328477864041,-8.84012015228771,"9947394248",node,21.875,pharmacy,pharmacy,Farmácia Orquihaza II - Avinida Ho Chi Minh,,,,,,,,,,,yes,,,,,,,,,,Avenida Ho Chi Minh,,Luanda,124775702,1,2022/08/11 13:02:00+00,1e4c105180854301999d3e284484540a
+13.1720298704435,-8.92204462244854,"12216072482",node,21.875,clinic,clinic,Clínica Golden Care - Talatona,,,,,,,,,,,,,,,,,,,,R/C,"Via S8, Condomínio Dolce Vita, Lote 9C",,"Talatona, Luanda",157380113,1,2024/10/02 13:51:30+00,bfdfa8110e8645eab523525bce39cb7a
+13.1998913165923,-8.90990762665328,"8266802217",node,18.75,clinic,clinic,Clínica Caixa de Previdência e Aposentação dos Trabalhadores Tributários (CPATT),,,,,,Mo-Sa 08:00-18:00,,,,,,,,,,,,,,2° Andar,,,,96570862,2,2020/12/29 04:32:14+00,8004c706792b48a3be8e53c90b96e64a
+13.2088523254561,-8.97109686092443,"4641433075",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,45611264,1,2017/01/29 05:18:12+00,684f56f6766e4baba9da6b62dca2493e
+13.4911036947307,-14.9169413635824,"8557581103",node,6.25,,optometrist,,,,,,,,,,,,,,,,,,,,,,,,,101659660,1,2021/03/24 15:56:07+00,d63f4faea58543eea0127fec1c43be20
+,,"159347663",way,18.75,hospital,hospital,Clínica Caridade,,,,,,,,,,,,,yes,,,,,,,,,,Luanda,80973324,4,2020/02/13 19:47:31+00,9d19deedcad241669a55f1ee049b9365
+13.249291655507,-8.82918126573207,"6598150777",node,28.125,dentist,dentist,AfroDente,,,,,,"Mo-Fr 08:30-17:30, Sa 08:30-12:00",,,,,,,,,,,,,,"19",Rua Liberdade,"1120",Luanda,72039499,1,2019/07/09 06:27:29+00,a4c312bdfeba413cae1845bcad64d31a
+,,"917810413",way,18.75,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,ferrovia,,,Lubango,101372645,2,2021/03/20 02:07:10+00,70223f11f07c46128784b10e9e48aee8
+,,"290512195",way,12.5,hospital,hospital,Hospital do Caminho de Ferro,,,,,,,,,,,,,,,,,,,,,,,,137280123,6,2023/06/13 10:36:56+00,129ed03bb4a94085ab7bc09c84f83e75
+,,"1088455010",way,18.75,hospital,hospital,Centro Ortopédico do Lubango,Ministério da Saúde (MINSA),,,public,,,,,,,,,,,,,,,,,,,,125269210,1,2022/08/23 12:23:16+00,54cc6d8de19645b7aa89e6bc36a83b8c
+13.2828252193523,-8.82756875519956,"6598130872",node,15.625,clinic,clinic,Clínica Kieu,,,,,,,,,,,,,,,,,,,,,Rua dos Comandos,,,72040149,1,2019/07/09 06:49:05+00,a1e98631adc64680a6b08d390df8f680
+13.517579863742,-14.9053759297645,"8484621616",node,21.875,pharmacy,pharmacy,Farmácia Kafumbelo,,,,,,,,,,,yes,,,,,,,,,,Avenida Comandante Kwenha,,Lalula,102016163,3,2021/03/31 02:29:41+00,ee6c65548ca84a4aa68d74046c477594
+,,"783331666",way,21.875,hospital,hospital,Clínica Órbita Visual,,,,,,24/7,,,,,,,,,,,,,,,Avenida Deolinda Rodrigues,,Luanda,83366296,2,2020/04/10 13:19:51+00,aab48064864e4f38a360125eb537d309
+13.1848359935691,-8.92569360017609,"12250035900",node,18.75,hospital,hospital,International SOS Talatona Clinic,,,,,,,,,,,,,,,,,,,,,Via S10,,"Talatona, Luanda",158989790,2,2024/11/11 00:32:32+00,83919b3e71674c3abe4529992dd8c603
+20.8357983183222,-7.3773278448046,"12879270603",node,12.5,hospital,,Clínica Sagrada Esperança,,,,,,,,,,,,,,,,,,,,,Rua 28 de Agosto,,,167056577,1,2025/06/01 15:47:01+00,c91ef2a5c4564968ad9e381611fab4f3
+13.2892421529649,-8.90353126145209,"12879626457",node,18.75,doctors,doctor,Posto de saúde,,,,,,,,,,,,,,,,,,,,,Rua da Carne de Caça,,Kilamba Kiaxi,167066059,1,2025/06/01 19:52:30+00,1c8024f0bf7045ac9d7a5c475520a265
+,,"702554529",way,12.5,hospital,hospital,Hospital Geral do Ramiros,,,,,,,,,,,,,,,,,,,,,,,,72030949,1,2019/07/08 21:43:02+00,e185bc464cfd46e99dd3a1d50e568963
+,,"1226764013",way,12.5,hospital,hospital,Centro de Saúde de Tali Sumbi,,,,,,,,,,,,,,,,,,,,,,,,144450841,1,2023/11/25 19:01:38+00,c6ff5342829f434aaed7ec5720f1203f
+,,"234383793",way,18.75,hospital,hospital,Centro de Saúde do Rangel,,,,,,,,,,,,,yes,,,,,,,,Rua da Saúde,,,151240568,4,2024/05/12 20:00:32+00,efdfdaa36566470bbea6a19b8cb9bee8
+13.5009355833342,-14.8951598147196,"8807351120",node,18.75,hospital,hospital,Banco de Urgência,Centro de Saúde da Mitcha,,,public,,,,,,,,,,,,,,,,,,,,105891179,1,2021/06/05 17:12:31+00,abd67518f5fb4a888ccd6f349298779f
+13.2472818427641,-8.81091315922248,"6144115133",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,65569227,1,2018/12/18 03:54:23+00,110f1ddd154c4cc68f97281decf3d382
+13.4922628281205,-14.9185418041743,"8746088720",node,18.75,clinic,clinic,Clínica Danfran,,,,,,,,,,,,,,,,,,,,,Rua Hoji Ya Henda,,Lubango,104966860,1,2021/05/19 13:51:51+00,761ec54ed1864c7ba14aa93f3b2b149c
+13.291870633981,-8.97362760894961,"6139209732",node,15.625,pharmacy,pharmacy,Farmácia Brasileira,,,,,,,,,,,yes,,,,,,,,,,,,,65504085,1,2018/12/15 16:38:35+00,1d43b56376c941f297ec125e53249db5
+13.2273363497914,-8.91796012103208,"5661741897",node,21.875,pharmacy,pharmacy,Farmácia Vicera,,,,,,,,,,,yes,,,,,,,,,,Dangereux-Camama,,Luanda,59516571,1,2018/06/03 19:36:56+00,0c66636e8d7d4b70bba1d96889c0f767
+,,"913212327",way,12.5,clinic,clinic,Centro Médico da Quilemba,,,,,,,,,,,,,,,,,,,,,,,,100359760,1,2021/03/03 15:05:13+00,6084dbc42cf84022888506de114f444f
+,,"825801242",way,18.75,clinic,clinic,Centro Médico Nova Apostólica,Igreja Nova Apostólica,,,private,,,,,,,,,,,,,,,,,,,,88431565,2,2020/07/24 03:10:19+00,96dc04db95854bc5a33edf5bee5a89df
+13.3748658922723,-8.91805181905281,"8704593918",node,12.5,pharmacy,,Farmácia Tchipuila,,,,,,,,,,,,,,,,,,,,,Farmácia Tchipulia,,,104233726,1,2021/05/06 08:20:51+00,8125ccfddd36495b8a31ccb8ed1de17f
+13.2050243940957,-8.86686320109601,"6832644788",node,18.75,pharmacy,pharmacy,Farmácia Slo Antunes,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,75038200,1,2019/09/28 11:46:52+00,59a59b5bf3fc485798f73ea2bb1281a1
+13.2185520314465,-8.8329331732306,"4738111183",node,15.625,pharmacy,,Farmácia Sousa,,,,,,,,,,,,,,,,,,,,,Rua da Samba,,Luanda,62806883,2,2018/09/21 18:26:19+00,c4490beee9434b728fe921982f678d13
+13.2886044577714,-8.89827765218101,"12879626455",node,18.75,doctors,doctor,Posto de saúde,,,,,,,,,,,,,,,,,,,,,yes,,Kilamba Kiaxi,167066059,1,2025/06/01 19:52:30+00,0b9f46c92b574361baee098ea15a8d42
+,,"443826886",way,18.75,dentist,dentist,Clínica Dentária Cristo Rei,,,,,,,,,,,,,,,,,,,,,Rua Jeanette Schoon,,Lubango,87787505,4,2020/07/10 00:24:29+00,95183e9c2eb844dda8341b94a4fa4676
+13.5102455308271,-14.9281768018723,"8726042953",node,18.75,pharmacy,pharmacy,"AARNEXT Farmácia (SU), Lda. - Depósito de Medicamentos",,,,,,,,,,,,,,,,,,,,,Avenida Paiva Domingos da Silva,,Lubango,106987404,4,2021/06/26 00:05:56+00,a8192461b7784e02a592066fb9c6032c
+,,"1381082837",way,12.5,hospital,hospital,Hospital Geral do Cuanza Norte Mário Pinto de Andrade,,,,,,,,,,,,,,,,,,,,,,,,165415076,1,2025/04/25 09:49:31+00,70a109930f164aad9480516b844fc8fd
+13.2236815885506,-8.82669502561274,"4737271193",node,18.75,clinic,clinic,Centro de Medicina Física e de Reabilitação,,,,,,,,,,,,,,,,,,,,,Rua dos Heróis (ex Rua da Samba),,Luanda,106857311,2,2021/06/23 19:24:06+00,e6a1e3a77c664f8ba1343f3565da8259
+13.2303125959702,-8.82369212498179,"4787692332",node,15.625,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,Rua Kruame Krumah,,Luanda,106857311,2,2021/06/23 19:24:06+00,c2f8e99be60949e59abd7e681ee4c65b
+13.2604387485375,-8.826862076943,"1178801322",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,137224219,5,2023/06/12 02:01:23+00,3564f926958d4d959db0d691737ac979
+,,"215025898",way,25,clinic,clinic,Centro Auditivo Internacional de Angola,,,,,,Mo-Fr 08:00-17:00,,,,,,,no,,,,,,,,Rua D,,Luanda,130879159,8,2023/01/04 19:05:24+00,7907c8a9c5744d25b677608eb6c11dd6
+13.3632944234841,-8.9293033505968,"6598257496",node,15.625,clinic,clinic,Cligest - Fertile,,,,,,Th 08:00-12:00,,,,,,,,,,,,,,,,,,90487655,3,2020/09/06 17:15:40+00,1b0d597a8b364f9f8e806d18b659bce5
+13.2460343641147,-8.82254003239061,"3694288024",node,12.5,clinic,clinic,Clínica da Sonangol,,,,,,,,,,,,,,,,,,,,,,,,137224219,3,2023/06/12 02:01:23+00,ba15cdfa60574b7bac95e39a24099a3a
+,,"1327602946",way,12.5,hospital,hospital,Hospital Municipal de Buengas,,,,,,,,,,,,,,,,,,,,,,,,158267823,1,2024/10/23 19:09:38+00,66bef2685f484828afc4e6a7daff2a7e
+13.5468807341227,-12.3517548642913,"2895338222",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,25322759,2,2014/09/09 08:04:24+00,ce8a56d64f1b4a01958bc0a2720268dd
+,,"425425398",way,25,pharmacy,pharmacy,Farmácia Central Gamek II,,,,,,24/7,,,,,,,,,,,,,,"8",Avenida 21 de Janeiro,,Luanda,107168588,5,2021/06/29 20:04:33+00,d4b228341d7c4a64a32acbd61d38c1e0
+13.1698896352872,-8.92002056047019,"4769945612",node,18.75,dentist,,Yasis Sorriso odontologia,,,,,,,,,,,,,,,,,,,,"67",Via C4,,Luanda,47363458,1,2017/04/01 18:14:51+00,1901d2ab46a44f079227d1a9c01ba0f5
+13.2880366676505,-8.89911550722223,"12880219884",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,83c4cee066c64a47a96011624b25627f
+13.1686982315701,-8.94847896576297,"2873145218",node,9.375,pharmacy,,Saccir Farmácia,,,,,,,,,,,,,,,,,,,,,,,,125039715,6,2022/08/18 01:23:11+00,86e010676dcd4a5987f95838f2240a92
+13.1750972279099,-8.94132802888953,"4635223496",node,21.875,clinic,clinic,Meditrop - Centro de Saúde,,,,,,"Mo-Fr 07:00-19:30, Sa-Su 07:00-13:00",,,,,,,,,,,,,,,Avenida do Patriota,,Luanda,72135145,3,2019/07/11 13:04:18+00,a871ccda53624e768419e57bb0563606
+13.5182503321768,-14.8893101683138,"8488874390",node,18.75,pharmacy,pharmacy,Farmácia Pôr-do-Sol,,,,,,,,,,,yes,,,,,,,,,,EN105,,,105294803,3,2021/05/25 13:13:28+00,fc0bd61d22f34003b4f8aca4ee6daa0b
+13.2237123501353,-8.89609416640431,"5771174825",node,18.75,dentist,dentist,TOPDente,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,60878294,1,2018/07/19 16:46:29+00,163b0ea693914b3f927c53106e8923c9
+,,"486686429",way,15.625,clinic,,Clínica da Corimba,,,,,,,,,,,,,,,,,,,,,Estrada da Samba,,Luanda,47763861,1,2017/04/14 03:23:29+00,79bc97778a4c49aabc2f0cde0675a7fa
+13.2374846552397,-8.83680326556387,"4779215957",node,18.75,clinic,clinic,Mediag - Ho Chi Minh,,,,,,,,,,,,,,,,,,,,,Avenida Ho Chi Minh,,Luanda,151242122,5,2024/05/12 20:57:02+00,3e31d1e30cfd44fe9ae587d70c70ab07
+,,"1138725467",way,12.5,hospital,hospital,Hospital Geral do Cubal,,,,,,,,,,,,,,,,,,,,,,,,132207339,1,2023/02/07 13:54:28+00,0ed6949ff5b14ac9ba9704572ff463e6
+,,"420113227",way,12.5,pharmacy,pharmacy,Farmacare,,,,,,,,,,,,,,,,,,,,,,,,81321570,2,2020/02/21 14:25:37+00,853272e67dcc4e058f33ca7bdb2b5c8f
+13.5464391754635,-12.3519344046573,"2847247996",node,9.375,pharmacy,,Fisionaja,,,,,,,,,,,,,,,,,,,,,,,,22241249,1,2014/05/09 22:34:42+00,b8d9bd33973644efbca526e1f4610a69
+13.1531613682096,-8.96564300798653,"2345209663",node,9.375,pharmacy,,Farmácia,,,,,,,,,,,,,,,,,,,,,,,,63264278,3,2018/10/06 20:18:43+00,043c8e73afd741bf93107308cf1bacea
+13.188121448156,-8.91796364143141,"3742569642",node,21.875,pharmacy,pharmacy,Mecofarma,,,,,,,,,,,,,,,,,,,,Centro Comercial Brisas de Talatona - Bloco 2,Avenida Samora Machel,,"Talatona, Luanda",157166137,6,2024/09/27 11:22:09+00,cd1b17c9061c461a8559014beeb765c3
+13.2306057949432,-8.84041410563199,"5596159918",node,18.75,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,Rua do Laboratório de Engenharia,,Luanda,58674969,1,2018/05/04 10:26:48+00,2e3cab24b78842a59f85c403d127fb32
+13.2271775965453,-8.82652805810153,"8880939651",node,18.75,hospital,hospital,"Ministério da Saúde, Hospital Pediátrico David Bernardino",,,,,,,,,,,,,,,,,,,,,Avenida Revolução de Outubro,,Luanda,107225439,1,2021/06/30 19:30:32+00,f9b735d8436f47e09520efeaee5f3cac
+13.2096500311811,-8.85178524693427,"4680082432",node,15.625,pharmacy,pharmacy,Farmácia Nsumbu,,,,,,,,,,,,,,,,,,,,,,,Luanda,123970554,2,2022/07/23 10:42:20+00,96279f78b3c34136a92622788a387bc8
+,,"915490945",way,21.875,dentist,dentist,Sorridente,,,,,,,,,,,,,,,,,,,,Comercial,Rua da Môngua,,Lubango,104719700,2,2021/05/15 07:45:40+00,50569e639fb74153a1bc7e6d9ec5ae3f
+,,"912360028",way,25,hospital,hospital,Posto Médico da Cidade Huíla,Governo,,general,public,,,,,,,,,,,,,,,,,Estrada da Huila,,,105804778,2,2021/06/04 00:12:03+00,89f1d42e96264d6291ab9ce701ac5fa3
+13.2150048938425,-8.89770022287138,"8849342104",node,9.375,clinic,,Labomed Diagnóstico,,,,,,,,,,,,,,,,,,,,,,,,106649673,1,2021/06/20 00:51:25+00,de0ef4aac1db41b59903ac49ee95dd0a
+,,"1092139318",way,12.5,clinic,clinic,Centro comunal de saude,,,,,,,,,,,,,,,,,,,,,,,,138030751,2,2023/07/02 16:35:05+00,44b4fe1651fa4890af799930bfac4223
+,,"917879343",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,133802359,3,2023/03/17 19:41:50+00,f89e300aa3f34a1898f400830389bca3
+13.2285419189248,-8.91707113638151,"5661741904",node,21.875,pharmacy,pharmacy,Farmácia-Sara,,,,,,,,,,,yes,,,,,,,,,,Dangereux-Camama,,Luanda,59516571,1,2018/06/03 19:36:57+00,03c2ff4d770e48ef9a1c092f50a12865
+13.2892290771959,-9.00685355694847,"6597688047",node,12.5,clinic,clinic,Mediag,,,,,,,,,,,,,,,,,,,,,,,,72032830,1,2019/07/09 00:08:47+00,69705a3612554f0fb3f68f3ffde31e24
+,,"996637699",way,18.75,pharmacy,pharmacy,Farmácia Huíla,,,,,,,,,,,yes,,,,,,,,,,,,Lubango,112995572,1,2021/10/26 13:51:00+00,ac580d88a9a043e889ff001d2b1ee63c
+,,"825459897",way,21.875,hospital,hospital,Centro de Saúde do Nambambe (CS Nambambe),Ministério da Saúde,,general,public,,,,,,,,,,,,,,,,,,,,131428037,4,2023/01/18 15:23:58+00,763cebd3248c4f30bc2487f60de22db4
+13.2083527640269,-8.91376271537987,"3805919944",node,21.875,pharmacy,pharmacy,Farmácia Sabedoria,,,,,,24/7,,,,,,,,,,,,,,,Rua do Instituto de Formação da Administração Local (IFAL),,Luanda,151244912,5,2024/05/12 23:27:59+00,b0c66a9727e545698e3eee38f66cc1e1
+13.4743587476658,-14.9334075285477,"11377223831",node,31.25,pharmacy,pharmacy,Farmácia Anjesca,ANJESCA,,,,,De Segunda a Domingo das 08:00-21:00,,,,,yes,yes,,,,,,,,,Rua da Feira Popular,,Lubango,144463085,1,2023/11/26 08:27:11+00,0a14d2adfd1344d4aba21df90c737bee
+13.2929394942737,-8.97362760894961,"6139209724",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,65504085,1,2018/12/15 16:38:35+00,fde3edfe890449d0bf85388ad95cc6d3
+13.1798901677826,-8.89653564124444,"4678708995",node,15.625,pharmacy,,Farmácia Farmax - Loja n º1,,,,,,,,,,,,,,,,,,,,,Estrada do Futungo,,Luanda,113610167,4,2021/11/10 14:13:16+00,8d63db2392fb4aa9a76d4e55e79646b3
+13.1894627203019,-8.92439247734646,"6605373799",node,15.625,clinic,clinic,Peandra - Talatona,,,,,,"Mo-Fr 08:00-21:00, Sa 09:00-14:00",,,,,,,,,,,,,,,,,,157671138,3,2024/10/09 12:57:10+00,34d73b56abfd4e10bcf0286e6348a661
+13.4083388549577,-9.03372292103762,"6247987906",node,15.625,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,,,,66783804,1,2019/01/30 21:00:36+00,fe674b7f695847b0ab00e898e8a44c5b
+13.2392430947065,-8.82287111756597,"8467895746",node,28.125,clinic,clinic,Cardiozono - BMA,,,"cardiology;surgery;plastic_surgery;dermatology;gastroenterology;gynaecology;general;neurology;ophthalmology;orthopaedics;paediatrics;pulmonology;urology;psychology;laboratory;radiology",,,Mo-Fr 08:00-14:30,,,,,,,,,,,,,,"114",Rua Major Marcelino Dias,,Luanda,100148026,2,2021/02/28 17:31:52+00,44d234ac90ff44518718b309c5e52698
+13.2445603226226,-8.84167407331702,"5579694070",node,18.75,pharmacy,pharmacy,Farmácia Luki,,,,,,,,,,,yes,,,,,,,,,,,,Luanda,58951117,2,2018/05/14 12:20:02+00,4ba01b26b58043fa9c1fdb8130000c93
+,,"915548878",way,25,clinic,clinic,Centro Médico,,,general,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,Estrada da Chavola,,Lubango,140820570,2,2023/09/04 19:22:39+00,0501fb71391c45a3a444f30c28320200
+13.2770169795482,-8.99656971612586,"6598042959",node,12.5,clinic,clinic,Casa das Vacinas,,,,,,,,,,,,,,,,,,,,,,,,121123911,2,2022/05/18 04:14:53+00,8fc0221f2cd64e49be939e8294239b8e
+,,"828402794",way,15.625,clinic,clinic,Clínica Médico Militar,,,,,,,,,,,,,,,,,,,,,,,Ondjiva,104502387,3,2021/05/11 09:42:09+00,b3181f5e087542e7a90193a2daf2c9d9
+,,"778685098",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,81840273,1,2020/03/05 21:48:14+00,401ca9a32307495bbbe445bdb73e6735
+15.7247815649196,-17.068234010393,"11886539898",node,12.5,pharmacy,pharmacy,Farmácia Bem do Povo,,,,,,,,,,,,,,,,,,,,,,,,151009328,1,2024/05/07 12:46:13+00,f71a6097ddb54f1d9cfc6153e1681d6d
+13.146059968384,-8.97668784179828,"11693430698",node,18.75,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,Rua C,,Bairro das Tendas-Luanda,148240103,1,2024/03/05 09:02:20+00,c99e226b43ef4d269528ee23453eca5c
+13.2252829511519,-8.90176410480603,"9966433908",node,12.5,pharmacy,pharmacy,Farmácia 35,,,,,,,,,,,,,,,,,,,,,,,,151242122,2,2024/05/12 20:57:02+00,dfc4f94eb82b4810a54bb0919533aaf5
+13.5128912785638,-14.9029645400405,"8558428291",node,15.625,pharmacy,pharmacy,Farmácia da Rua do Meio,,,,,,,,,,,yes,,,,,,,,,,,,,105094138,2,2021/05/21 13:49:39+00,187058c99ac04fd1bcb540e90feb3b73
+13.203107536659,-8.91049846700798,"6605431246",node,15.625,dentist,dentist,Clínica Guiodente,,,,,,,,,,,,,,,,,,,,"159",,,,72137307,1,2019/07/11 13:55:10+00,5bc250b84878472fbbd920382e935e26
+13.2336429775582,-8.84401916218692,"4778716983",node,18.75,pharmacy,pharmacy,Farmácia Lildia - Mártires de Kifangondo,,,,,,,,,,,,,,,,,,,,,Avenida Revolução de Outubro (ex Avenida de Lisboa),,Luanda,107115914,2,2021/06/29 02:23:52+00,47b3e9986ae14f2da01e7a01ef76a6bb
+13.2891727508066,-9.00735387274889,"6597721088",node,12.5,clinic,clinic,Mediag,,,,,,,,,,,,,,,,,,,,,,,,72032830,1,2019/07/09 00:08:47+00,bef1a54b746b4c05a9644ff8e9424fef
+,,"828466585",way,15.625,hospital,hospital,Hospital Municipal,,,,,,,,,,,,,,,,,,,,,,,Tômbua,133898786,3,2023/03/20 13:10:24+00,95573c6f2d1b4d43917feec473607bd7
+13.256293394504,-8.82464514737262,"5581067728",node,18.75,clinic,clinic,Centro Médico Betel,,,,,,,,,,,,,,,,,,,,,Avenida Hoji Ya Henda (ex Avenida Brasil),,Luanda,58453475,1,2018/04/26 18:34:08+00,0b983ece31c04382a71f72214e6fab39
+13.50428951807,-14.9124323187702,"10931295884",node,25,pharmacy,pharmacy,Farmacia ANGLIS,,,,,,"PH,Mo-Su 08:00-23:00",,,,,yes,yes,,,,,,,,,Rua 1 de Setembro,,,145637679,4,2023/12/28 21:28:33+00,dc2987d58f0b420c9ab9cdeb3f7b1abf
+,,"1180242954",way,15.625,clinic,clinic,Posto de saude da Bela Vista,,,,,,,,,,,,,,,,,,,,,,,Benguela,137061542,1,2023/06/07 15:35:10+00,771acc5ab064407e8ee3553aebdc9b53
+,,"284185200",way,25,hospital,hospital,Clínica Girassol,,,,,,,,,,,,,yes,,,,,,,"225",Avenida Comandante Gika,,Luanda,126478273,12,2022/09/21 19:31:59+00,63d817f943174c1696f4a99b9303a2bf
+13.542430949366,-14.9250905013048,"8726295590",node,9.375,pharmacy,,Farmácia Brenner e Mamefil,,,,,,,,,,,,,,,,,,,,,,,,107103634,3,2021/06/28 18:01:55+00,dfbdef1f507147699760c8e864a17912
+13.2772849489927,-8.99926567146258,"5776228653",node,12.5,pharmacy,pharmacy,Kajyfarma,,,,,,,,,,,,,,,,,,,,,,,,126524384,2,2022/09/22 23:17:48+00,eb04dfcbd5cb49c7b26c67af31a6643a
+13.207109057234,-8.93141475200619,"6231161316",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,66582137,1,2019/01/23 21:18:40+00,3ce14ae556ea483ea2878986bce6ccd9
+13.5455501908129,-14.9282863533467,"8524351978",node,18.75,doctors,doctor,Consultório Médico,,,,,,,,,,,,,,,,,,,,,Avenida do Estádio Nacional da Tundavala,,Lubango,106803182,3,2021/06/23 00:35:48+00,3ca8e48a577e4507b00953679635c0e3
+13.2612524636976,-8.90625848128767,"6219109034",node,15.625,pharmacy,pharmacy,Farmácia A.V.M,,,,,,,,,,,yes,,,,,,,,,,,,,66434447,1,2019/01/18 17:22:29+00,afaa7a58cda24274836d10f23b03dd27
+13.1957259298102,-8.8971081252312,"4835360110",node,9.375,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,Luanda,48403789,1,2017/05/04 19:22:13+00,86152445d6dd4048b3e890ee9bb9499c
+13.2612344426057,-8.92019213802814,"4464949694",node,9.375,pharmacy,,Farmácia Simana,,,,,,,,,,,,,,,,,,,,,,,,112486921,3,2021/10/14 05:25:26+00,47b659152a5345509d5c8c9c44b9e739
+,,"802492144",way,25,hospital,hospital,Clínica Espírito Santo,,,,,,24/7,,,,,,,,,,,,,,"15",Rua da Liberdade,,Luanda,126406342,2,2022/09/20 06:12:29+00,dd85e05940c64734bd2ab76a710a36dd
+13.5278322724277,-14.9258720299567,"10931360427",node,12.5,pharmacy,pharmacy,Farmácia Comandante Valódia,,,,,,,,,,,,,,,,,,,,,,,,140902452,2,2023/09/06 16:13:22+00,186eb27b46a74f3b85843cf921d20dd2
+13.5506710307378,-14.9257757218892,"8726368923",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,104597873,1,2021/05/12 21:08:37+00,1403dee862064cd2994115ce53526680
+,,"434353776",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,137830922,2,2023/06/27 11:13:21+00,7cd3f054c0ed47ed942fa62377a62beb
+12.1900922605992,-5.55495231027288,"2438976048",node,15.625,hospital,hospital,Clínica da Chevron,,,,,,,,,,,,,yes,,,,,,,,,,,102010126,5,2021/03/30 21:26:22+00,3be3b8f9c5574abe8d9f2bb1e757d76c
+,,"1201897329",way,18.75,hospital,hospital,Centro Médico da Praia Amélia,,,,,,,,,,,,,yes,,,,,,,,,,Moçâmedes,140363869,1,2023/08/25 10:07:56+00,05c5fd3a05fe4df0aad6aaf9dcce44c1
+,,"276923913",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,134705825,2,2023/04/09 22:32:42+00,bceb7e4ddebf4765bb3eb61b19ed8cc8
+13.2471562818545,-8.81667647202556,"3204243553",node,15.625,pharmacy,,Farmácia Alameda,,,,,,,,,,,,,,,,,,,,,Alameda Ho Chi Minh,,Luanda,65584663,2,2018/12/18 15:53:26+00,14a37986a95e40a29ac8e191a63c2d83
+13.5143884541086,-14.9262354692783,"8537378601",node,15.625,pharmacy,pharmacy,Esperança,,,,,,,,,,,yes,,,,,,,,,,,,,101339596,1,2021/03/19 15:53:13+00,7d096833f8d246769a9997e294c14ecb
+,,"1158431321",way,15.625,hospital,hospital,Hospital da Nossa Senhora da Graça,,,,,,,,,,,,,,,,,,,,,,,Benguela,134300789,1,2023/03/30 11:39:21+00,41712cacb2c04aff979c8138344dd522
+13.2311216172646,-8.83168980171385,"4801947665",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,151242122,2,2024/05/12 20:57:02+00,173f796d79824b38bc591cc7da6a4482
+13.4985472438439,-14.9176557531898,"8525730674",node,21.875,pharmacy,pharmacy,Farmácia Micarlos,,,,,,,,,,,yes,,,,,,,,,,Avenida Deolinda Rodrigues,,Lubango,102003098,2,2021/03/30 18:18:12+00,23c9cd33919248a58f47c15fe9a5f89e
+13.4800603696615,-14.9214054813935,"6027703985",node,21.875,clinic,clinic,Sensus - Centro de Fisioterapia e Reabilitação Física,,,physiotherapy,,,,,,,,,,,,,,,,,,Rua do Hospital,,Lubango,125663817,7,2022/09/01 16:35:28+00,e122360aea56492c8f2f829223b7a908
+,,"1324953393",way,15.625,hospital,hospital,Centro Médico do Soyo,,,,,,,,,,,,,,,,,,,,,,,Soyo,158039834,1,2024/10/18 08:33:19+00,f3cfbd6ffbfb4bee8b710059d8b05d73
+13.1625721499977,-8.9076816446275,"5161925625",node,18.75,clinic,clinic,PEGOSClínic - Centro Médico,,,,,,,,,,,,,,,,,,,,,Rua das Construções,,Luanda,63435297,2,2018/10/11 22:48:21+00,43fcf45d9668434f8ca358b8796b3fbe
+13.5514467758765,-12.3635294265933,"3068147178",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,25325096,1,2014/09/09 10:33:18+00,a8413912ecef48ca95b45a279af6f9a8
+13.2394673944354,-8.93833560563755,"8714559244",node,9.375,pharmacy,,Farmácia Marlua,,,,,,,,,,,,,,,,,,,,,,,,104392024,1,2021/05/09 10:57:10+00,e30d02079b674b2fae320b514cdcc044
+13.1886827842116,-8.9497769034694,"6231371801",node,18.75,pharmacy,pharmacy,Farmácia Patriota,,,,,,,,,,,,,,,,,,,,,"Avenida ""O Lar do Patriota""",,Luanda,158899931,3,2024/11/08 15:18:19+00,d1926dc9c6ad4ca9bd4916dae4bbe3de
+12.1450762437775,-15.202877333673,"9260268470",node,18.75,pharmacy,pharmacy,Farmacia Angela 2,,,,,,,,,,,yes,,,,,,,,,,,,Moçâmedes,113897272,1,2021/11/17 12:54:16+00,3d8ef219fa354e15ab2844ab7a56deb7
+13.2315043349635,-8.82988433977027,"8467929120",node,28.125,clinic,clinic,Centro Médico Dona Hosmida Ferreira do Nascimento,,,"cardiology;surgery;plastic_surgery;dermatology;gastroenterology;gynaecology;general;internal;neurology;otolaryngology;paediatrics;pulmonology;psychiatry;urology;laboratory;radiology;psychology;emergency",,,"Mo-Sa, PH 07:00-22:00",,,,,,,,,,,,,,"16",Sisenando Marques,,Luanda,100443079,3,2021/03/04 19:51:14+00,b2d3e018f7ed4ab58a30b6b957e05d10
+,,"919608994",way,28.125,hospital,hospital,Centro de Saúde da Machiqueira,Ministério da Saúde,,"general;paediatrics;gynaecology;obsthetrics",public,,,,,,,,,,,,,,,,,Rua da Maxiqueira,,Lubango,105240804,2,2021/05/24 16:52:13+00,8609030222fd430f87099c5a209d0cbb
+,,"945051457",way,25,hospital,hospital,Centro de Reabilitação Física da Mapunda,Igreja Evangélica Sinodal de Angola (IESA),,,private,,,,,,,,,,,,,,,,,Estrada da Tundavala,,Lubango,105016739,2,2021/05/20 09:36:11+00,cd9511c8e7a942b081d6c7789cff119a
+,,"304334597",way,9.375,hospital,,Hospital Geral de Viana,,,,,,,,,,,,,,,,,,,,,,,,25571967,1,2014/09/21 05:43:32+00,d6fbb1d4abd94c8092bf5dab2cbe6c55
+13.1733055961065,-8.93858832001823,"4635127992",node,15.625,pharmacy,,Farmácia Vallis,,,,,,,,,,,,,,,,,,,,,Avenida do Patriota,,Luanda,45520202,1,2017/01/26 17:04:18+00,2bbbf7c18a774d91b3cdc8c1fcab7e78
+13.4947787401771,-14.9190365040996,"8570225924",node,21.875,pharmacy,pharmacy,Farmácias Ahumada,,,,,,,,,,,yes,,,,,,,,,,Avenida Deolinda Rodrigues,,Lubango,105094706,3,2021/05/21 14:02:58+00,61d68e20322f4488bbdeb743281cc565
+13.2326081477924,-8.83196296793827,"8462474624",node,25,clinic,clinic,Clínica Florence,,,"general;internal;dermatology;pulmonology;infectious_diseases;endocrinology;cardiology;neurology;podiatry;gynaecology;surgery;plastic_surgery;neurosurgery;gastroenterology;psychology;radiology",,,,,,,,,,,,,,,,,66-68,Rua Comandante Stona,,Luanda,107121462,2,2021/06/29 05:21:42+00,2ba722e869ad4369ab6170d43d66dbdd
+,,"206512834",way,12.5,hospital,,Hospital de Cacuaco,,,,,,,,,,,,,yes,,,,,,,,,,,15111467,1,2013/02/21 12:19:57+00,a635fde0ffa04640960e3fd46896c92f
+13.2610289183399,-9.00306451761887,"9915336785",node,9.375,pharmacy,,Uzema Farmacia,,,,,,,,,,,,,,,,,,,,,,,,124154180,1,2022/07/27 18:53:31+00,4d2cdc504eb446d6a45872c21339fc45
+,,"778689595",way,12.5,hospital,hospital,Terreno de Hospital,,,,,,,,,,,,,,,,,,,,,,,,81840540,1,2020/03/05 21:58:31+00,dda13826c7cd401b95c23f65b77f954c
+13.2346969180632,-8.83564756875433,"4893442078",node,15.625,pharmacy,pharmacy,Farmácia de Angola,,,,,,,,,,,,,,,,,,,,,,,Luanda,151242122,3,2024/05/12 20:57:02+00,3d3a2bc6d9c14526b12c7cd9ede19998
+13.3044170857463,-8.94621543281096,"6513093044",node,15.625,pharmacy,pharmacy,Farmácia Nacha,,,,,,,,,,,yes,,,,,,,,,,,,,70807533,1,2019/05/31 12:42:24+00,e804be1f731e4bcc8b46dff95bea96a7
+13.1718274474819,-8.91589616119464,"5166695331",node,15.625,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,57573859,3,2018/03/27 16:55:29+00,3e9b3435a7084805b7374b7a302559a8
+13.245876532878,-8.81956361857368,"4189842670",node,25,pharmacy,pharmacy,Farmácia Medtech,Medtech Angola,,,,,24/7,,,,,,,,,,,,,,,Avenida Rei Katyavala (ex Coronel Artur de Paiva),,Luanda,166039657,5,2025/05/09 17:46:38+00,96fa46f9e6a94e6e9837cd2f26de4f51
+,,"678174430",way,12.5,hospital,hospital,Hospital Municipal do Cuito Cuanavale,,,,,,,,,,,,,,,,,,,,,,,,160616795,2,2024/12/25 21:05:55+00,bfb0488d9ab7482ab1344cd942b0f0a6
+13.2157212951068,-8.85005882633763,"6201975255",node,15.625,clinic,clinic,Centro Médico,,,,,,,,,,,,,,,,,,,,,,,Luanda,66237143,1,2019/01/11 19:54:01+00,9f6c920191ef48a79700d5bf105ab6db
+13.2221594349343,-8.82812497829414,"4737271371",node,18.75,dentist,dentist,"Clínica Dental Saúde, Lda",,,,,,,,,,,,,,,,,,,,,Rua dos Heróis (ex Rua da Samba),,Luanda,106857311,2,2021/06/23 19:24:06+00,9d87829a690d4bae8a5572441f95257b
+13.5011009582838,-14.9196682481418,"9589470339",node,12.5,,alternative,,,,,,,,,,,,,,,,,,,,,,Avenida 4 de Fevereiro,,Lubango,118659889,1,2022/03/19 10:08:34+00,64a02ab8978d4eb7a55cf7e700382bd0
+13.2390304458229,-8.93020256116924,"5693545496",node,21.875,pharmacy,pharmacy,Farmácia JDR,,,,,,,,,,,yes,,,,,,,,,,Rua do Mufulama,,Luanda,59880710,1,2018/06/15 18:21:33+00,a6c3e7d6f2d24eeeb018718d373c092a
+,,"919346975",way,12.5,doctors,doctor,Centro Médico Jotchi,,,,,,,,,,,,,,,,,,,,,,,,106844493,2,2021/06/23 14:27:05+00,80383e732bcb42f1b09668fe7a6d2ddb
+13.5129366246599,-14.9271732366053,"3958423366",node,18.75,pharmacy,pharmacy,Farmácia Esperança,,,,,,,,,,,,,,,,,,,,,Avenida do Aeroporto,,Lubango,107103634,4,2021/06/28 18:01:55+00,0985032849614dd1aa0d731212cad604
+,,"781669957",way,28.125,hospital,hospital,Hospital Doutor Agostinho Neto - Hospital Universitário do Lubango (HAN-HUL),Direção Provincial da Saúde,,,public,,,,,,,,,yes,,,,,,,,Rua do Hospital,,Lubango,107372544,13,2021/07/04 00:32:05+00,8d2f16f7fdb344f09d2357ff979b5a34
+13.229112894169,-8.8378806753978,"8886622641",node,15.625,doctors,doctor,Consultório Médico Nguyen – Ecografia 4D,,,,,,,,,,,,,,,,,,,,,,,Luanda,107288522,1,2021/07/02 05:00:36+00,15306811d9a640e6aff1118f69397319
+,,"425222603",way,18.75,pharmacy,pharmacy,Farmácia Diamond,,,,,,,,,,,,,,,,,,,,,Rua da Ponte Molhada,,Luanda,151244912,3,2024/05/12 23:27:59+00,716773b18c8146b9bf0471ff48f63a55
+,,"1240196833",way,31.25,hospital,hospital,Hospital Municipal de Moçâmedes,Administração Local do Estado,,general,public,,,,,,,,,yes,,,,,,,,Estrada para Virei,,Moçâmedes,147172282,2,2024/02/07 11:32:01+00,07177ebe893b47b592cbd1c5db6b55c2
+,,"1327179697",way,15.625,hospital,hospital,Zaire Hospital,,,,,,,,,,,,,,,,,,,,,,,M'banza Congo,158200019,1,2024/10/22 08:04:47+00,82fef47c8e014779943a4571bb30eed0
+15.7220729529091,-17.0686938416011,"11886565375",node,12.5,pharmacy,pharmacy,Farmácia Bem do Povo 2,,,,,,,,,,,,,,,,,,,,,,,,151009532,1,2024/05/07 12:51:05+00,a0cb631fae5542e3972f3a99d371e40e
+13.1976044819495,-8.9350173778092,"6237222538",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,66646826,1,2019/01/26 00:11:39+00,c54ce29d093d4f3a95fbe61a4da2fbcb
+13.1860733301156,-8.92410036802087,"3777467164",node,12.5,pharmacy,pharmacy,Farmácia Sagrada Esperança,,,,,,,,,,,,,,,,,,,,,,,,157049980,6,2024/09/24 17:24:58+00,22d7a50403f34841a8423c5b1a2f2146
+13.5698866275821,-14.8825589644027,"7057902491",node,21.875,clinic,clinic,Centro de Saúde de Vila Paula,Ministério da Saúde,,general,public,,,,,,,,,,,,,,,,,,,,81684634,2,2020/03/02 14:10:32+00,76fc3030e4714f839d0928eeb72212a2
+13.1055585284305,-8.96935401179758,"8544391473",node,15.625,pharmacy,pharmacy,Farmácia Nilia,,,,,,,,,,,yes,,,,,,,,,,,,,101443259,1,2021/03/21 15:00:43+00,5a8c9a0c86a1462f8896918e0584e1eb
+13.1617679902072,-8.93438412502445,"10007576563",node,18.75,pharmacy,pharmacy,Miafarma,,,,,,,,,,,yes,,,,,,,,,,Estrada da Samba,,,125921357,1,2022/09/08 00:12:35+00,74c657ccb54f42a584f39cce166b1a7b
+,,"974998259",way,12.5,hospital,hospital,,,,,,,,,,,,,,yes,,,,,,,,,,,109989127,1,2021/08/20 13:28:52+00,a08b96cd5cff4f1ba3d0615c974f5441
+13.2249104593749,-8.89573525331042,"5771174814",node,21.875,pharmacy,pharmacy,Farmácia Nessfarmacos,,,,,,,,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,131722465,3,2023/01/26 08:15:14+00,652c4e2e19864d31b313212210b13e81
+13.4012154945457,-9.01017354497645,"6329924418",node,12.5,clinic,clinic,Clínica do Zango,,,,,,,,,,,,,,,,,,,,,,,,68006313,1,2019/03/11 01:55:02+00,695c1f134b79481fb2ed312d69c083f3
+13.2345386677313,-8.905556832173,"5557340550",node,15.625,clinic,clinic,Clínica de Fisioterapia Vital Fisio,,,,,,,,,,,,,,,,,,,,,,,Luanda,58146119,1,2018/04/16 18:11:01+00,739b4894cf6c48729cbdfc4255b2db01
+,,"913585301",way,15.625,,laboratory,Laboratório de Analises Clínicas Sumária,,,,,,,,,,,,,,,,,,,,Mitcha,,,Lubango,105671968,2,2021/06/01 10:36:31+00,2859c7a6d1874b6d8c8230f136151883
+13.5482031469864,-14.938490063175,"8869074399",node,21.875,hospital,hospital,Centro de Saúde da Terceira Idade (CS Terceira Idade),Direção Municipal da Saúde do Lubango,,"Banco_de_Urgências;Consultas_gerais;PAV;CPN;Partos;PF;Aconselhamento_e_Testagem_Voluntária_de_VIH;PTV;Pediatria;Medicina;Curativos;Injeções;Puericultura;Laboratório;Farmácia;IEC.",public,,,,,,,,,,,,,,,,,,,,107020952,1,2021/06/27 02:38:53+00,9e4e518e8af640918fc100403a10f191
+13.242725524018,-8.82285452139766,"5855124076",node,21.875,pharmacy,pharmacy,Farmácia Maculusso,,,,,,,,,,,yes,,,,,,,,,,Avenida Commandante Che Guevara (ex General Carmona),,Luanda,61975201,1,2018/08/25 02:41:24+00,c46b6758e46c497ebfbcecf31a740cff
+13.229012478969,-8.89464996448751,"5771170741",node,21.875,pharmacy,pharmacy,Farmácia Salutar,,,,,,,,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,124838970,3,2022/08/13 03:05:17+00,94291e08db17479a9fad5126cec89937
+13.2526808780552,-8.82309927297032,"5586549527",node,21.875,pharmacy,pharmacy,Apo Pharmacia,,,,,,,,,,,yes,,,,,,,,,,Avenida Hoji Ya Henda (ex Avenida Brasil),,Luanda,58532923,1,2018/04/29 17:23:46+00,35657f5632c0497bb792e44573125d9a
+13.290193498975,-8.90257220409097,"12880219877",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,4bf436bd2d0947bdbf29c46df4071522
+,,"283159584",way,18.75,hospital,hospital,Maternidade do Chimbicato,,,,,,,,,,,,,yes,,,,,,,,,,Luanda,137224219,5,2023/06/12 02:01:23+00,1196ac23aa4d4191a8fe4714ec039333
+,,"1167110233",way,25,hospital,hospital,Hospital Evangélico de Caluquembe,Igreja Evangélica Sinodal de Angola (IESA),,"general;paediatrics;gynaecology;vaccination;radiology;infectious_diseases;blood_check",religious,,,,,,,,,yes,,,,,,,,,,,135734089,2,2023/05/05 09:57:01+00,62a0affb858b4dc393886c019f72c6b5
+,,"1326279020",way,12.5,hospital,hospital,Hospital do Mpala,,,,,,,,,,,,,,,,,,,,,,,,158133424,1,2024/10/20 15:27:27+00,72b60d21a4924f949967417f1698d57b
+13.2290909335827,-8.7888253356177,"8875517781",node,21.875,pharmacy,pharmacy,Farmácia Cruz,,,,,,,,,,,yes,,,,,,,,,,Avenida Murtala Mohamed,,Luanda,107158110,1,2021/06/29 15:57:38+00,31cb3bd025ae4406a268d39f9caf048b
+13.2539046359186,-8.81315347430271,"4328313514",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,166039657,2,2025/05/09 17:46:38+00,d9b9934972004bc5916f8979861f84cc
+13.1837826397973,-8.92546837843781,"12250035898",node,18.75,hospital,hospital,Urgência Adultos (CSE-LS),,,,,,,,,,,,,,,,,,,,,Via S10,,"Talatona, Luanda",157867274,2,2024/10/14 09:25:13+00,6f220a017bf945e68ecc533dcf47faf0
+,,"1067915461",way,12.5,clinic,clinic,Posto de Saúde da Mumba,,,,,,,,,,,,,,,,,,,,,,,,122120711,1,2022/06/08 14:12:46+00,15d4c404830042cc999d19dc823b6f52
+12.1352283457389,-15.2032748035215,"11060440392",node,25,hospital,centre,Centro Médico Valódia I,Administração Local do Estado,,,public,,,,,,,,,yes,,,,,,,,,,Moçâmedes,138829182,2,2023/07/21 19:53:36+00,6e1e3068592f4607ba1692e0a48d2f39
+13.4964857985774,-14.9167956022862,"4413718738",node,25,pharmacy,pharmacy,Farmácia Mecofarma Central,Mecofarma,,,,,,,,,,yes,,,,,,,,,,Rua 4 de Abril,,Lubango,103914003,5,2021/04/30 12:41:55+00,050810a485d040f08616e7c5c7f2c3d0
+,,"1199650036",way,25,hospital,hospital,Hospital Sanatório,,,internal,,,,,,,,,,yes,,,,,,,,Avenida Hospital Sanatório,,Moçâmedes,157665842,2,2024/10/09 10:37:01+00,3643a1e384d24d1eb147b808b800969c
+13.4667744663982,-14.9261948170479,"4938952121",node,12.5,clinic,clinic,Semodente,,,,,,,,,,,,,,,,,,,,,,,,71402116,3,2019/06/19 13:29:45+00,5478333b435047c0b366bb3a487788fe
+13.3963786335003,-8.99134150402136,"6141186494",node,18.75,pharmacy,pharmacy,Farmácia,,,,,,24/7,,,,,yes,,,,,,,,,,,,,65532322,1,2018/12/16 21:30:35+00,360fa6c236584398b5344a58ce037a48
+,,"718258039",way,12.5,clinic,clinic,Centro Materno Infantil Santa Mária,,,,,,,,,,,,,,,,,,,,,,,,73733535,1,2019/08/26 05:13:05+00,d0ba0066ed4e465ebeb05617d202354e
+,,"1165666386",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,135385034,1,2023/04/26 12:35:08+00,2ec65cad5e0b4f11a9f924a1a5f85ab6
+,,"1189157819",way,12.5,hospital,hospital,Centro de Saúde de Sassa Zau,,,,,,,,,,,,,,,,,,,,,,,,138423404,1,2023/07/12 13:24:55+00,122d99d87b134f478b95bf771cce52f4
+13.2375493635322,-8.90919457815031,"5895278055",node,15.625,clinic,clinic,Medieg Analise Clinica,,,,,,,,,,,,,,,,,,,,,,,Luanda,62438337,1,2018/09/10 02:23:35+00,1e24de0ecda4417ebfb8ce3e40f41677
+,,"384576144",way,12.5,clinic,clinic,Clínica Cemedic,,,,,,,,,,,,,,,,,,,,,,,,166039657,4,2025/05/09 17:46:38+00,7c171ca5b60a407182ffd9b2897564ab
+13.4036870663344,-9.04305935534452,"10284921247",node,12.5,pharmacy,pharmacy,Farmácia,,,,,,,,,,,,,,,,,,,,,,,,130463474,1,2022/12/24 17:40:07+00,072e9465d64d464bbdb70fb82a6826d5
+,,"948951795",way,12.5,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,Soyo,158039834,3,2024/10/18 08:33:19+00,050af2f11eb4452581f2571fb78e55bb
+13.182065020199,-8.90997107766032,"4794521587",node,12.5,pharmacy,,,,,,,,,,,,,,,,,,,,,,,Via P. Dubai,,Luanda,47803253,1,2017/04/15 04:27:34+00,6d3a59c16bba47a38a5e3cee74e54996
+13.4067967524118,-9.0281066268162,"6247988223",node,15.625,pharmacy,pharmacy,Farmácia Marlua,,,,,,,,,,,yes,,,,,,,,,,,,,66783804,1,2019/01/30 21:00:40+00,7858d2c72ac64fdda5688506bf6caca3
+13.2283192955765,-8.78983736660689,"5148614726",node,18.75,pharmacy,pharmacy,Farmácia Eloim,,,,,,,,,,,,,,,,,,,,,Avenida Murtala Mohamed (Ex Avenida Marchal Gomes da Costa),,Luanda,107124923,3,2021/06/29 06:20:23+00,6297be35e6af41d7879fa5fff2c476e6
+,,"248403552",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,143895539,2,2023/11/11 11:28:18+00,86489cbbd9724725a89c9471838e7065
+13.2302004461058,-8.81421906565316,"8874602193",node,21.875,pharmacy,pharmacy,Mecofarma,,,,,,,,,,,yes,,,,,,,,,,Avenida do 1º Congresso do MPLA,,Luanda,107138365,1,2021/06/29 09:56:01+00,f00b5128dfd143cf988173bba5a0a254
+13.2368484687888,-8.81539060425973,"7850531593",node,12.5,clinic,clinic,Clínica Meditex,,,,,,,,,,,,,,,,,,,,,,,,104382914,2,2021/05/09 02:26:59+00,17731b5753bc4dfe91d8bc1da55d36f7
+13.2508534555253,-8.82044983719624,"6801054665",node,21.875,clinic,clinic,Clínica Atália,,,,,,24/7,,,,,,,,,,,,,,,Custódio Bento de Azevedo,,Luanda,74556963,1,2019/09/17 04:42:38+00,cff1b6eda5ec47fb99e8205a80a0d560
+13.2611817204348,-8.91131042196841,"5694854248",node,18.75,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,Via Expressa Golfe-Camama,,Luanda,59895445,1,2018/06/16 14:11:23+00,481eb4c1fde24af6bd0befc9a1e3e4e9
+13.2544309356188,-8.93940237045445,"6605421760",node,15.625,clinic,clinic,Clínica Zediweza,,,,,,24/7,,,,,,,,,,,,,,,,,,72136993,1,2019/07/11 13:48:36+00,9d7dbe0e671d40dda9c012f980a14592
+,,"1133016560",way,18.75,hospital,hospital,Hospital do Ekuma,,,,,,,,,,,,,yes,,,,,,,,,,Ondjiva,131400411,2,2023/01/18 00:33:57+00,5b6eb961f28d4a8b9438361493711e9a
+,,"702432820",way,12.5,hospital,hospital,Hospital Municipal da Samba,,,,,,,,,,,,,,,,,,,,,,,,112996075,2,2021/10/26 14:03:38+00,b5cf5b698b12469abdf74ecbbff50ba9
+13.263260935336,-8.92902523904951,"6137570856",node,12.5,clinic,clinic,Centrab,,,,,,,,,,,,,,,,,,,,,,,,65478118,1,2018/12/14 16:04:47+00,bdfa2674615349bbaa7d4152d4b33ed7
+,,"911612742",way,21.875,pharmacy,pharmacy,Farmácia Bem do Povo,,,,,,,,,,,yes,,,,,,,,,,Avenida 21 de Janeiro,,Lubango,115896032,2,2022/01/08 00:06:24+00,3d4215ff731e411d956cca2eddc3491b
+,,"921815722",way,12.5,hospital,hospital,Centro Médico de Oftalmologia,,,,,,,,,,,,,,,,,,,,,,,,104747771,2,2021/05/15 20:07:51+00,fdca1b1f296c475497c32c3f1208392f
+,,"235839301",way,12.5,hospital,hospital,Hospital Central,,,,,,,,,,,,,,,,,,,,,,,,102010126,2,2021/03/30 21:26:22+00,f500d477342d4f48b834ab89782e6f85
+13.5045249657302,-14.932803444786,"8517135852",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,100988100,1,2021/03/14 12:55:43+00,e87bb36351854afda02f2f39a4c3484e
+,,"827918552",way,18.75,hospital,hospital,Hospital do Chiulo,Dioceses of Ombadja,,,,,,,,,,,,yes,,,,,,,,,,,88233079,2,2020/07/20 08:38:52+00,336eaea0d22e46b9917a8aa419251fd9
+13.3719753929629,-8.91049796409379,"8705575073",node,9.375,pharmacy,,Farmácia Central - Viana,,,,,,,,,,,,,,,,,,,,,,,,104253511,1,2021/05/06 12:38:28+00,91ca4ae788bd4803818999954cee6ec6
+13.2230439771762,-8.85010794429022,"5172303242",node,18.75,pharmacy,pharmacy,Farmácia Aufrada,,,,,,,,,,,,,,,,,,,,,Rua 21 de Janeiro,,Luanda,107329786,2,2021/07/02 20:10:24+00,4b10fce624c64840a57fb4a9a2840a4f
+13.2336913411395,-8.83183992159968,"6598080128",node,18.75,clinic,clinic,Clínica Santa Apolónia,,,,,,,,,,,,,,,,,,,,,Rua Comandante Dangereux,,Luanda,72038051,1,2019/07/09 05:29:40+00,b1906e26f30e4d60a3cd074124ab0e58
+13.2269560628444,-8.84790040245142,"5172297615",node,18.75,pharmacy,pharmacy,Farmácia Malonda,,,,,,,,,,,,,,,,,,,,,Rua 9,,Luanda,58674969,2,2018/05/04 10:26:59+00,eb31708791fb4ab18e8eec3d8290066d
+13.5214005866655,-14.9252959417516,"8510217732",node,18.75,pharmacy,pharmacy,Sachis Comercial,farmacia,,,,,,,,,,yes,,,,,,,,,,,,,100948233,3,2021/03/13 10:48:41+00,d6706b7f570a42518b6b9c02dd428d15
+13.1764435291976,-8.94376506723722,"6234477579",node,15.625,clinic,clinic,Centro Médico Vital Center,,,,,,,,,,,,,,,,,,,,,Avenida do Patriota,,,66613726,1,2019/01/24 20:57:31+00,84d9adb34a3b429e9733ef4933e94df5
+13.2542040374999,-8.90143930605805,"6136077633",node,15.625,pharmacy,pharmacy,Farmácia Famorosa,,,,,,,,,,,yes,,,,,,,,,,,,,65457993,1,2018/12/13 23:56:48+00,244ded0f794448cd953bf243764c72b4
+13.2408729557786,-8.89069404146574,"5494141730",node,18.75,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,57391623,1,2018/03/21 16:27:30+00,32243573b9c446d391beae325666769b
+,,"1233853337",way,25,hospital,hospital,Hospital Geral de Cabinda,Ministério da Saúde (MINSA),,"general;gynaecology;emergency;surgery;oncology;paediatrics;ophthalmology;psychiatry;dermatology;intensive;nephrology;vascular_surgery",public,,,,,,,,,yes,,,,,,,,,,,145572531,2,2023/12/27 12:23:36+00,6b39707a09cf4626937c78d061c06cad
+13.662888453339,-8.57966717950129,"4306547647",node,15.625,pharmacy,pharmacy,Farmácia Caxito,,,,,,,,,,,,,,,,,,,,,,,Caxito,137830680,3,2023/06/27 11:06:38+00,0b09d80aab7c47038b12c182b818302e
+,,"1275734751",way,18.75,hospital,hospital,Hospital Mama Muxima,,,general,,,,,,,,,,,,,,,,,,,,Toco,150452286,1,2024/04/24 15:05:15+00,2e269596d1c944a8a8706a2c3d5da2d0
+,,"207186559",way,18.75,hospital,hospital,Chevron Clinic,,,,,,,,,,,,,yes,,,,,,,,,,Luanda,166039657,3,2025/05/09 17:46:38+00,f2b456d4526c4d22bde6dca76250b30e
+13.2204694756165,-8.89687443777072,"5771476067",node,21.875,pharmacy,pharmacy,Farmácia - TS,,,,,,,,,,,yes,,,,,,,,,,Avenida Pedro de C. Vandunem-Loy,,Luanda,106961248,2,2021/06/25 12:09:30+00,a00de0f1a5fb42038de3401845d5ef95
+13.2106628165415,-8.84977635620069,"5917055938",node,15.625,pharmacy,pharmacy,Farmácia Nsumbu I,,,,,,,,,,,yes,,,,,,,,,,,,,123971376,3,2022/07/23 11:11:41+00,c82320a2ee75402b84cffd7a449c1805
+,,"903996869",way,12.5,hospital,hospital,CD-3: Saúde e Estética,,,,,,,,,,,,,,,,,,,,,,,,98735728,1,2021/02/05 03:37:56+00,a8e5d966831944418ec404098b9c3ff2
+,,"280500067",way,15.625,hospital,hospital,Maternidade da Restinga,,,,,,,,,,,,,yes,,,,,,,,,,,137486453,5,2023/06/18 17:13:59+00,8dbcdfa401264101a1ae734b56ba569d
+13.5407174369002,-14.9248986395411,"8726325961",node,12.5,pharmacy,pharmacy,Farmácia Jemacache,,,,,,,,,,,,,,,,,,,,,,,,106293954,2,2021/06/13 18:50:53+00,02954443f9f342b2a67097c1a845c13a
+13.2386405196873,-8.91241096585509,"5664434729",node,21.875,pharmacy,pharmacy,Farmácia Alberta,,,,,,,,,,,yes,,,,,,,,,,Rua do Mufulama,,Luanda,59545758,1,2018/06/04 17:56:47+00,888772df8eef4f1ab7ac4f0888f27e49
+13.171384044804,-8.97564203173931,"9890809884",node,9.375,pharmacy,,Farmácia Remédio Santo,,,,,,,,,,,,,,,,,,,,,,,,123673330,1,2022/07/16 01:39:50+00,1b55dbe8ff40493eb6e5c5a531861876
+13.2392384846597,-8.92855317026277,"5799621756",node,15.625,,alternative,Medicina Tradicional Mvuluzi a Makanda II,,,,,,,,,,,,,,,,,,,,,Rua do Mufulama,,Luanda,61238939,1,2018/07/31 19:06:18+00,ea19eee089394b6990d6e569b73b704a
+13.2463338495151,-8.82071403478426,"5177627782",node,18.75,pharmacy,pharmacy,Farmácia life,,,,,,,,,,,,,,,,,,,,,Alameda Ho Chi Minh (ex Alameda Manuel Van Dunem),,Luanda,53088576,1,2017/10/20 06:26:02+00,c1a912b435c6454dbed3823157a7c3b0
+,,"705164164",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,159817911,2,2024/12/01 19:37:11+00,978fe38b44a0465a8697f65de1db40a1
+13.2893499442397,-8.89477493866383,"12880219887",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,Kilamba Kiaxi,167074321,1,2025/06/02 04:55:04+00,73029d31c00348bd942de4e109815577
+15.028151366247,-14.7372154222694,"10311336681",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,130953386,1,2023/01/06 15:53:57+00,410b2ee661dd4453bbdbfe0fa8015d9c
+13.3998038982322,-9.00259705887891,"6317319787",node,15.625,pharmacy,pharmacy,Farmácia,,,,,,,,,,,yes,,,,,,,,,,,,,67788250,1,2019/03/05 02:13:18+00,bc2d02faa74e4e818150891daa608eb2
+,,"208899482",way,12.5,hospital,hospital,Hospital Provincial de Malanje,,,,,,,,,,,,,,,,,,,,,,,,153388117,3,2024/06/30 22:42:34+00,5bf166db979b45ffb052c59ba5aca291
+,,"1236641831",way,18.75,hospital,hospital,Hospital Municipal de Cabinda - Chinga,Ministério da Saúde (MINSA),,,public,,,,,,,,,,,,,,,,,,,,145847791,2,2024/01/03 17:01:37+00,9db9b2dd288f4970a86204f19458e6e0
+,,"235587551",way,15.625,hospital,hospital,Hospital Central do Lobito,,,,,,,,,,,,,yes,,,,,,,,,,,137280123,5,2023/06/13 10:36:56+00,9371092a58464701a104542ae6a05bf2
+13.263250290319,-8.92896832592695,"6137570855",node,15.625,pharmacy,pharmacy,Farmácia Dikoso,,,,,,,,,,,yes,,,,,,,,,,,,,65478118,1,2018/12/14 16:04:47+00,458b9302f6154d09883c94358f61249f
+,,"234791053",way,12.5,hospital,hospital,Hospital 1º de Maio,,,,,,,,,,,,,,,,,,,,,,,,102010126,5,2021/03/30 21:26:22+00,603cb04b6546413892e31ec8ae5f657e
+12.3016280668344,-5.54435574064286,"11459451739",node,12.5,hospital,hospital,Consulta Externa,,,,,,,,,,,,,,,,,,,,,,,,145572531,1,2023/12/27 12:23:36+00,a4d178ec4b754315b58f9b8a5716dda4

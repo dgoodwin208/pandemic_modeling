@@ -1,0 +1,342 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+57.4717275705937,-20.236909240093,"4997963231",node,18.75,dentist,dentist,Centre Medical Clinique Dentaire,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,,78843378,3,2019/12/25 10:30:16+00,83c1e1d6c1a04705aa510cb34f311c5b
+,,"1215253180",way,12.5,hospital,hospital,Sri Sathya Sai Baba Centre of Vacoas,,,,,,,,,,,,,,,,,,,,,,,,142518023,2,2023/10/13 10:51:53+00,4dbf7fb715de45acb10e8d5ad02af2a0
+,,"224268361",way,21.875,hospital,hospital,Jawaharnal Nehru Hospital,,Bing,,,,,,,,,,,,,,,,,,M2,Rose Belle,,,133100183,6,2023/02/27 19:01:04+00,b3cfab0b960b433782f355643470f8af
+57.4668652285627,-20.2424803558563,"4624252891",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,48943428,2,2017/05/24 10:36:53+00,a056ed70775f46de8ee7cca5186d7e02
+57.4678877369309,-20.2502800520354,"4624252894",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,62380333,4,2018/09/07 15:59:41+00,b9b5d0c7afdf46188d1571865f83e45a
+,,"1167665319",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,135558722,1,2023/05/01 04:08:21+00,eb0a628d3566437a8b822c5be4aabda7
+,,"509045374",way,15.625,pharmacy,pharmacy,Desforges Pharmacy,,,,,,,,,,,,,,,,,,,,,Sir Seewoosagur Ramgoolam Street,,,129794162,3,2022/12/06 18:47:06+00,c68c87a4dde240ed85cfbd4675cb193d
+57.4179119803633,-20.2569221235672,"4985849490",node,15.625,pharmacy,,Cabinet Medical Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rivière Noire Road,,,50483674,3,2017/07/22 15:30:10+00,8dc49dbd0fb94ac78bf2ccb24eff4d35
+,,"510536614",way,21.875,pharmacy,pharmacy,Pharmacie De Beau Bassin,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Beau Bassin,,Beau Bassin,168256135,3,2025/06/29 09:05:05+00,c82202c5f82b46068702d5082ca2e1eb
+57.521036965859,-20.1474855649819,"4983601224",node,15.625,pharmacy,,Pharmacy Good Heart,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Temple Road,,,50530879,2,2017/07/24 14:52:15+00,04d6e356e8b24d369984a9da29feb18a
+57.6840756276008,-20.1484001144372,"3753991177",node,9.375,hospital,,Primary School,,,,,,,,,,,,,,,,,,,,,,,,45344904,2,2017/01/21 08:22:20+00,a62f331ebbf44e8ba73206a63d3ddaff
+57.5024575554655,-20.2217706009523,"4983213389",node,18.75,pharmacy,pharmacy,Pharmacie de Moka,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Leclezio Avenue,,,113118290,4,2021/10/29 10:43:53+00,4144536148c643feb61d6fff069b3b4f
+57.5236801990247,-20.1461238409923,"4990452204",node,18.75,dentist,dentist,Clinique Dentaire,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Pamplemousses Road,,,78843378,3,2019/12/25 10:30:16+00,513699e7321946baa9f4ec1fac06c34e
+,,"784244087",way,12.5,hospital,hospital,Triolet Medi Clinic,,,,,,,,,,,,,,,,,,,,,,,,82579489,1,2020/03/24 16:05:41+00,40d7b830c38c40a09a87dbdb819c52a1
+,,"1200032819",way,12.5,clinic,clinic,Vet Clinic,,,,,,,,,,,,,,,,,,,,,,,,140116079,1,2023/08/20 03:03:57+00,4f733fbd926241c284c2302528d08fe3
+63.3777186382325,-19.7225923086049,"8093889424",node,6.25,hospital,,,,,,,,,,,,,,,,,,,,,,,,,,93743803,1,2020/11/08 14:45:54+00,ef91fe98fe16436b871f4701555d43ea
+,,"1222947182",way,12.5,doctors,doctor,Dheesarajshing Jawaheer,,,,,,,,,,,,,,,,,,,,,,,,143936389,2,2023/11/12 14:48:17+00,b1855635e4df4ca7bf90c935a7f170be
+57.4989161175557,-20.1637968323766,"10881738693",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,135907294,1,2023/05/09 18:13:10+00,bb3affa235a24b16b8a4f553899e86cf
+57.3682244774459,-20.2791630007239,"11721879694",node,12.5,pharmacy,,Love Life Pharmacy,,,,,,Mo-Su 09:00-20:00,,,,,,,,,,,,,,,,,,158614693,2,2024/11/01 11:30:38+00,6f7ebb35964f456a88ddd69d5e441128
+,,"1222927163",way,12.5,hospital,hospital,Dr Abbas Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,143937156,2,2023/11/12 15:08:08+00,ebdf7356b75c4e6b940493bacf7edcf1
+57.4919728842429,-20.2995602782777,"11259831371",node,15.625,dentist,dentist,Dentalign Clinics Ltd(Mauritius),,,orthodontics,,,,,,,,,,,,,,,,,,,,,142519494,2,2023/10/13 11:22:36+00,5065bad9cb2f4cacbf52653980ee6235
+57.4167953432225,-20.2626324627422,"4985735301",node,15.625,pharmacy,,Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Geoffroy Branch Road,,,50483674,2,2017/07/22 15:30:10+00,80ea6f6577934821a2cf32d75a6aed0e
+57.4802537263208,-20.3014356452937,"4990207220",node,18.75,pharmacy,pharmacy,Pharmacie La Caverne,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,La Caverne No. 1,,,169783774,4,2025/07/31 17:57:57+00,b0fd68f1737e4a6bb0fa3bc0c68370d2
+,,"784247534",way,12.5,hospital,hospital,Primary Health Care,,,,,,,,,,,,,,,,,,,,,,,,82580017,1,2020/03/24 16:19:25+00,469e50557dcd4cc79ce2b6a1c75f0d3a
+57.7246140317473,-20.1977871261258,"2999870444",node,9.375,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,,108090154,3,2021/07/16 06:03:23+00,b7df48910e3c40f9ad6508c6d7256edd
+,,"1214458326",way,12.5,hospital,hospital,Clinique du Sommeil et du Stresse,,,,,,,,,,,,,,,,,,,,,,,,142375584,1,2023/10/10 05:32:26+00,35c35232207748d9b7bd8ee698d04512
+57.4917346705547,-20.2992219008465,"11259660066",node,9.375,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,,169783774,2,2025/07/31 17:57:57+00,a1a735794def4fb09694d35379fe91d4
+57.4998753425548,-20.1615707665318,"9410624817",node,21.875,pharmacy,pharmacy,Pharmalink,,,,,,,,,,,,,,,,,,,,,Caudan Waterfront,"11307",Port Louis,116314114,2,2022/01/18 19:57:35+00,c083b68aa7954767a95cbaa9d74f7061
+,,"784220266",way,15.625,hospital,hospital,Moka eye hospital,,,ophthalmology,,,,,,,,,,,,,,,,,,,,,113118290,2,2021/10/29 10:43:53+00,1df658527f1640358a2ab948a70d17d1
+,,"784225078",way,15.625,hospital,hospital,Clinique du Nord,,,,,,,,,,,,,yes,,,,,,,,,,,132763020,3,2023/02/19 19:47:53+00,095fd02f69c84f0d920e2c47fcf27dbe
+57.5031782315004,-20.1599004208673,"4875789091",node,12.5,pharmacy,pharmacy,Phamacy Farquar,,,,,,,,,,,,,,,,,,,,,,,,138580670,2,2023/07/16 14:12:51+00,16fb473c546144f5be1916bf4dd431dc
+57.6462285687444,-20.0348878554337,"2162892430",node,9.375,pharmacy,,Pharma Goodlands,,,,,,,,,,,,,,,,,,,,,,,,19716774,2,2013/12/30 16:28:32+00,74f22c58b611436393690211837ddca1
+57.6295244415479,-20.0230642589981,"2601372375",node,12.5,pharmacy,pharmacy,Petite Farmacy,,,,,,,,,,,,,,,,,,,,,,,,136131676,2,2023/05/15 15:15:28+00,cf1c84f56922416baef67e185d4fa22f
+,,"372014045",way,28.125,hospital,hospital,Dr Abdool Gaffoor Jeetoo Hospital,Ministry of Health and Quality of Life,,,government,,,,,,,,,yes,,,,,,,,Volcy Pougnet Street,,Port Louis,139388181,9,2023/08/03 11:08:57+00,f8b73a6d298f49eea2e8caf7ab6e5c77
+57.4861307815499,-20.2542306106392,"4995730718",node,18.75,clinic,clinic,St Jean Clinic,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Belle Rose,,,76696292,3,2019/11/06 11:44:19+00,2c3333d6c4574fe486907a82eb6562f2
+57.6884403360404,-20.1099492232761,"4623186368",node,12.5,pharmacy,,Forme,,,,,,09:00-17:00,,,,,,,,,,,,,,,,,,50502886,2,2017/07/23 14:13:50+00,34ab39ec8e3f4d70afcf00b49468624e
+57.4028865807344,-20.2784825578243,"4151568714",node,12.5,pharmacy,pharmacy,Medactiv Cascavelle Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,147926873,4,2024/02/26 11:11:51+00,d368fd49093045ffb8c4dc59b98ceac7
+57.4787280523052,-20.2456839192492,"4995787160",node,18.75,pharmacy,pharmacy,Pharmacy Pharmalead,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,,129173809,4,2022/11/21 00:23:43+00,49c0e84a77a34a15bd4c6ecf6c87c2da
+,,"1088721083",way,18.75,pharmacy,pharmacy,Pharmacie La Pointe,,,,,,,,,,,,,,,,,,,,,Crecerelles Ave,,Port Louis,137427146,2,2023/06/16 19:57:07+00,3e2d8f4070674f9fbad2a4eb96e76a83
+,,"445169724",way,15.625,hospital,,Health Center Montagne Blanche,,,,,,,,,,,,,,,,,,,,,B54-Petit Paquet Road,,Montage Blanche,45870502,2,2017/02/07 00:11:05+00,4580b0235e0c49cb9dbb9e1b8eb20a3f
+57.5327670202551,-20.3232064653205,"4980574249",node,15.625,pharmacy,,Health Star Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue General de Caen (Centre),,,50417803,2,2017/07/19 21:34:53+00,ff751b1f2c6a4282adc1f96ef5f74f44
+57.5302260463081,-20.3058021139329,"4978376624",node,15.625,pharmacy,,Zenquil Pharma,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,New Quartier Militaire Road,,,129134435,3,2022/11/19 18:36:41+00,e40674be29b241388387ddb9a0eabd19
+57.5598528889032,-20.0085091679563,"2153376271",node,15.625,hospital,hospital,Clinique du Nord,,,,,,,,,,,,,yes,,,,,,,,,,,135770654,2,2023/05/06 10:08:05+00,c0e10273bab64f9f87dcce2fdab26f98
+57.5073801633803,-20.3272933136698,"4980155201",node,15.625,pharmacy,,Pharmacy Berthaud,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Ligne Berthaud,,,50561378,3,2017/07/25 14:55:07+00,cbff869def0443afb35318d0121893c4
+57.5010408461911,-20.1618332039201,"3104081558",node,18.75,pharmacy,pharmacy,Pharmacie du Port,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,John Kennedy Street,,,137018560,7,2023/06/06 14:54:26+00,a1c76168f38f4a12bfe31ee2ab2e788d
+57.7053793241637,-20.4127235148329,"4977946951",node,15.625,clinic,,Green Cross,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road,,,50389735,2,2017/07/18 20:56:18+00,8012dc0412274929b52265c18d1cfb8d
+,,"1213510747",way,15.625,doctors,doctor,Dr. S.N.Nazir,,,general,,,,,,,,,,,,,,,,,,,,,142216340,1,2023/10/06 06:10:47+00,5a0f670ab54c4d41ac4a742329ca8477
+57.4727607239788,-20.2721014149383,"4993350020",node,18.75,pharmacy,pharmacy,Green Cross Pharmacie,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Palma Road,,,137693907,3,2023/06/23 15:31:11+00,bb080675e4344784ba62a2bb06d93b97
+57.7054563538539,-20.4125294737745,"4977946943",node,15.625,pharmacy,,All in One Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road,,,50389735,2,2017/07/18 20:56:18+00,22b51c2bd341483a882b95438c722842
+57.7046070994244,-20.4076238811232,"6694271852",node,25,dentist,dentist,Dove Dental,,,,,,Mo-Sa 09:00-16:00,,,,,,,,,,,,,,,Rue Nyon,"50810",Mahebourg,78843378,3,2019/12/25 10:30:16+00,2e6146052bec476db095dc6f078dfecc
+57.5124116522173,-20.1601803764333,"4990686430",node,18.75,pharmacy,pharmacy,Life Care Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Sir Edgar Laurent Street,,,138580670,3,2023/07/16 14:12:51+00,9cb1adb10c064480a5b2d9ae8a05cc4e
+,,"677854653",way,12.5,clinic,clinic,Sterilisation clinic,,,,,,,,,,,,,,,,,,,,,,,,68545357,4,2019/03/26 12:42:13+00,5f72556a6fbd4609b0a5d7d8e9b75cd3
+57.466691555529,-20.1708328533575,"693046470",node,12.5,pharmacy,pharmacy,Pharmacy Pointe aux Sables,,,,,,,,,,,,,,,,,,,,,,,,135771752,5,2023/05/06 10:45:04+00,a84bcd0cc9864864972c648bcf11a7a2
+,,"1008686301",way,12.5,dentist,dentist,Labo OI Mauritius,,,,,,,,,,,,,,,,,,,,,,,,114491855,1,2021/12/02 17:24:24+00,e62af15a96f840baa47eb96beddbebca
+57.5181055628621,-20.1549068182327,"4983458155",node,15.625,pharmacy,,Medical Care Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Port Louis - Central Flaq Road,,,50440387,2,2017/07/20 19:22:32+00,9f50bd7577af4edaa207e7352ef4025b
+57.5711877365648,-20.3779238645133,"4980295702",node,15.625,pharmacy,,Nouvelle France Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Route Royale,,,50416517,2,2017/07/19 20:34:55+00,2fa287240b52469bb55fbd0a4867b546
+57.4806723185653,-20.2864934779634,"4990808920",node,18.75,pharmacy,pharmacy,Solferino Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,169782366,4,2025/07/31 17:26:45+00,c09953ca494b427daffe8f7b91583b0b
+,,"508882349",way,25,clinic,clinic,Clinique de L'Occident,,,,,,24/7,,,,,,,yes,,,,,,,,Royal Road,,Flic en Flac,144375544,4,2023/11/23 16:01:32+00,c1632d81db134c6480ebb2590ca76abb
+57.4888042733862,-20.1664566617106,"4991397654",node,21.875,pharmacy,pharmacy,Pharmacie D'Hotman,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Grand Riviere Road,,Port-Louis,170401149,4,2025/08/13 17:24:32+00,149e5d4ddaa54ddc88af3848872e92af
+,,"1215254003",way,15.625,doctors,doctor,Dr.Satiss Gowry,,,paediatrics,,,,,,,,,,,,,,,,,,,,,142518353,2,2023/10/13 10:57:36+00,0da109d92d074f3988892b1b5415d39c
+57.4188852869598,-20.2562010284372,"4985907905",node,18.75,,laboratory,Green Cross,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rivière Noire Road,,Bambous,62116700,3,2018/08/29 19:01:15+00,232c72abd1244eb896051ab509032eb2
+57.5250013546029,-20.1405310160998,"4983649668",node,18.75,clinic,clinic,Cabinet Medical,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Pamplemousses Road,,,135771752,3,2023/05/06 10:45:04+00,b779421c926f464b842b2cbdc53f45da
+57.4729827605939,-20.2186148144075,"6568466481",node,18.75,doctors,doctor,A. N. Emritte,,,orthopaedics,,,,,,,,,,,,,,,,,,Philippe Raoult street,,,71580530,2,2019/06/25 00:40:42+00,b010929ae96644d78d5fd8453c5101d5
+57.5871003606445,-20.0122225187003,"4901467332",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,135770654,2,2023/05/06 10:08:05+00,2660c5a1bcd5498883e7b382450fddc1
+57.5856945478443,-20.0131163648547,"4901462716",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,135770654,2,2023/05/06 10:08:05+00,4562319298fd459c9244d895a618dbde
+,,"472054429",way,12.5,dentist,dentist,Dental Clinc,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,46d74f962b064f64989fa61b76977847
+57.4845563248578,-20.269227008883,"9107967218",node,18.75,doctors,doctor,Dr S. Mudoo,,,otolaryngology,,,,,,,,,,,,,,,,,,Avenue des longaniers,,,111451061,1,2021/09/20 13:52:31+00,47e09a4d5b7245c9bd571890ffe458dd
+57.3731515277693,-20.2764879163261,"4983263186",node,12.5,,laboratory,,,,,,,,,,,,,,,,,,,,,,Flic en Flac Road,,Flic en Flac,62116700,4,2018/08/29 19:01:14+00,f2c98d2e476a4ca89749eea67a648b36
+,,"647952709",way,12.5,hospital,,Sir Seewoosagur Ramgoolam National Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,64801441,1,2018/11/23 04:40:40+00,3d7e11e8ffe84fc695c1aa6ae097a10c
+,,"1006363949",way,21.875,pharmacy,pharmacy,Pointe aux Sables Medical Dispensary,,,,,,,,,,,,,,,,,,,,B31,Pointe aux Sables Road,,Pointe aux Sables,137427146,2,2023/06/16 19:57:07+00,34e541216fb4482a85979cb6f932192a
+57.4823719170718,-20.2617025744042,"4995180235",node,18.75,pharmacy,pharmacy,Pharmacie Glaieul,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Jean Road,,,129173862,3,2022/11/21 00:28:26+00,dc57d1eb9a7c4a698d791b398f54cab6
+57.7092385200229,-20.4098337698948,"4976284444",node,18.75,pharmacy,pharmacy,Blue Bay Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue la Bourdonnais,,,129173862,3,2022/11/21 00:28:26+00,32196a268fee4398af2c4cbbd2f7f23d
+,,"784223084",way,12.5,hospital,hospital,Clinique du Nord,,,,,,,,,,,,,,,,,,,,,,,,82576300,1,2020/03/24 14:44:38+00,b59b4ce39b8a4fc7906a99b2ed76ee99
+63.4235920399299,-19.6803821338705,"8093957212",node,12.5,pharmacy,pharmacy,Port Mathurin pharmacy,,,,,,,,,,,,,,,,,,,,,,,,138580670,2,2023/07/16 14:12:51+00,4e0a842f4e9c4ebdbf2ee54d67e5c889
+57.4845278263871,-20.320595753939,"4983103584",node,15.625,clinic,,Green Cross Medical Laboratory,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Vacoas La Marie Road,,,50533958,2,2017/07/24 16:56:11+00,b5c63f47e483410c9b21fa9bf08a056b
+57.7031814215136,-20.4112976692841,"4612335549",node,9.375,hospital,,Mahebourg Hospital,,,,,,,,,,,,,,,,,,,,,,,,45221727,1,2017/01/16 17:59:23+00,954a9d46a0054b7bb8b5b9585e1030a0
+57.5258669537437,-20.2248612601095,"5981041612",node,15.625,pharmacy,pharmacy,Pharmacie Helvétia,,,,,,,,,,,yes,,,,,,,,,,,,,113837728,3,2021/11/16 07:22:54+00,e690f3e22dce48adb369762213e6f52a
+57.488912232299,-20.300570046153,"11243417143",node,12.5,pharmacy,pharmacy,Z-click pharmacy,,,,,,,,,,,,,,,,,,,,,,,,142517095,2,2023/10/13 10:34:26+00,9eff1bec530a47d0be25c0c3f6c8db6d
+57.4687811639901,-20.2208725638463,"4995521461",node,15.625,pharmacy,,Pharmacie Biorharm,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,A1,,,50629215,2,2017/07/27 19:17:32+00,15d7b119f96a4e7eb141726df401235c
+,,"784247368",way,18.75,hospital,hospital,Mahebourg Hospital,,,,,,,,,,,,,,,,,,,,,Rue de I'Hospital,,Mahebourg,114758659,2,2021/12/09 20:23:44+00,8ae1fdd795ac48ffb29fb604fc51c19a
+57.5049136207334,-20.1584658581392,"4990685141",node,18.75,pharmacy,pharmacy,Port Louis Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Farquar street,,,138580670,3,2023/07/16 14:12:51+00,9a4b5c5ee51f4cfea468d38a10e9d07f
+,,"1173674266",way,15.625,pharmacy,pharmacy,Florida,,,,,,,,,,,yes,,,,,,,,,,,,,136210087,1,2023/05/17 12:06:32+00,1d109838a2764b8f9026d31adfea8abb
+57.4702779204398,-20.233945650588,"4998024770",node,18.75,pharmacy,pharmacy,Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,,171178810,4,2025/08/29 11:22:22+00,364e4946eded4fb090ff18e4d2da7c22
+57.5808759593479,-20.0156641281433,"2153362362",node,12.5,pharmacy,pharmacy,Pharmacy Ducasse,,,,,,,,,,,,,,,,,,,,,,,,135770654,2,2023/05/06 10:08:05+00,fd5b2295f8ce480eb1d8fd9ca5cacccd
+,,"1222586191",way,12.5,doctors,doctor,Dr Dharry Boodhun,,,,,,,,,,,,,,,,,,,,,,,,143936389,3,2023/11/12 14:48:17+00,66fdca14ba8c4bd6917a085146aa64ca
+,,"1222947130",way,12.5,pharmacy,pharmacy,Pharmacy Central,,,,,,,,,,,,,,,,,,,,,,,,143936389,2,2023/11/12 14:48:17+00,98bf568f37c242c7a83b551192da1b7f
+57.4680297263706,-20.2741895146569,"4993447219",node,18.75,pharmacy,,Pharmasave,Suprevit,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Palma Road,,,50600524,2,2017/07/26 20:30:32+00,9d9baa0ff04c4a56a82a820bdf37c077
+57.6175983344365,-20.4747703016178,"2656293192",node,12.5,hospital,hospital,L'Escalier Medi Clinic,,,,,,,,,,,,,,,,,,,,,,,,165609547,3,2025/04/29 21:18:05+00,f3b09c0608c7452ab620627d8e0352c8
+,,"1162751516",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,134931630,1,2023/04/15 08:47:39+00,a95ff9ff11754417b3327821b7bb1995
+57.4849330914055,-20.3017267487909,"4990226731",node,18.75,pharmacy,pharmacy,Green Cross Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,142231030,4,2023/10/06 12:34:47+00,8b8e490be55e4f5aa523cfdf6968fb08
+57.4755637162191,-20.2702406324338,"4995234827",node,15.625,pharmacy,,Pharmacie Tropicale,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Jean Road,,,50600524,2,2017/07/26 20:30:39+00,674edb32672342e8b3280273d7f6a08c
+57.4805294909352,-20.2638561367865,"4995043029",node,18.75,pharmacy,pharmacy,St. Jean Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Jean Road,,,129173862,4,2022/11/21 00:28:26+00,b7b54dd381fe441da11f7a6aafbfb668
+57.4847120606188,-20.3017268326099,"4990225817",node,18.75,clinic,clinic,"Omnitronics;Pharmacie Visitation",,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,135771937,4,2023/05/06 10:51:42+00,111104e2b5da42e29fc79066a8bde00e
+,,"1213566565",way,12.5,hospital,hospital,Dr Nndagopen Narayanen,,,,,,,,,,,,,,,,,,,,,,,,142519090,3,2023/10/13 11:12:29+00,78af401eec2d408da8ae933d4975afd8
+57.5231035240864,-20.1484680078528,"4990471967",node,15.625,pharmacy,,New Pharmacy Burtally Ltee,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Port Louis - Central Flaq Road,,,50564834,2,2017/07/25 17:29:59+00,dc6689f63bc440f19ffd49b8f241dbfc
+57.661348432422,-20.432083783326,"4662965004",node,9.375,pharmacy,,Doorgakanth Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,45800069,1,2017/02/04 09:26:44+00,4c30bbc570ab47658adc9c55ec92285f
+57.5303784293078,-20.3055797420417,"4978376631",node,15.625,pharmacy,,Pharmacie Hermes,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,New Quartier Militaire Road,,,129134435,3,2022/11/19 18:36:41+00,fb1aec788452489f916e2ff29c30c3ff
+57.4709685892613,-20.4925313029854,"4625704622",node,9.375,hospital,,Chemin Grenier Dispensary,,,,,,,,,,,,,,,,,,,,,,,,45404640,1,2017/01/23 16:28:00+00,9640d8502dfe44bebfd48e1d1a6470e1
+,,"1215254307",way,15.625,,laboratory,Metropolis Bramser Lab Services MTIUS Ltd Mauritius,,,,,,,,,,,,,,,,,,,,,Floreal Road,,Vacoas-Phoenix,142523246,3,2023/10/13 12:56:33+00,edf65634c51f41928ec17f501266bcfa
+,,"1215226105",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,142506208,1,2023/10/13 05:59:08+00,c48d8f2d818145dcbb1866b5a0540aa3
+57.5525684283122,-20.0564622036501,"4694809668",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,135770654,3,2023/05/06 10:08:05+00,619a4efd5aed46c28cd7b0deac07abaf
+57.7057430987615,-20.4076542236126,"4977564362",node,18.75,pharmacy,pharmacy,Pharmacie de Mahebourg,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue Marianne,,,129173862,3,2022/11/21 00:28:26+00,83351d26fa814caab9f31f048f8ffce3
+57.7564384417165,-20.2558777384318,"4610789689",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,45204089,1,2017/01/16 00:55:08+00,69e573ffdaf244bbb656f840495a8548
+57.3687130585818,-20.2798993509177,"4981754251",node,18.75,pharmacy,,Flic en Flac Pharmacy,,Kaart Ground Survey 2017,,,,Mo-Sa 08:30-18:30,,,,,,,,,,,,,,,Avenue des Flamingos,,,140405367,3,2023/08/26 10:28:16+00,938898356cdd4b209e3a6f9a078142ef
+,,"495657120",way,21.875,clinic,clinic,City Clinic,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Sir Edgar Laurent Street,,Port Louis,138580670,5,2023/07/16 14:12:51+00,6da72b39aa6c4534bd08205422cb8875
+57.5077027828334,-20.1601673006644,"4983396137",node,15.625,,alternative,,,Kaart Ground Survey 2017,chiropractic,,,,,,,,,,,,,,,,,,Remy Ollier Street,,,76395657,6,2019/10/30 13:32:50+00,f7943393efbb437c8d311c79902df79b
+57.3631178867564,-20.3536119029014,"4304371098",node,21.875,dentist,dentist,Cosmodent,,,,,,Mo-Fr 09:00-17:00,,,,,,,,,,,,,,"17",Avenue des Tourterelles,,,78843378,4,2019/12/25 10:30:16+00,b4702967a6874d759e36753efafff87e
+,,"371851055",way,12.5,hospital,hospital,Primary School,,,,,,,,,,,,,,,,,,,,,,,,82578525,3,2020/03/24 15:41:50+00,9e0a3480542e40cbad2165d184d44138
+,,"1006710093",way,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,114291053,1,2021/11/27 11:22:13+00,4178da36a2874165a15e1194509274fe
+57.5370025635668,-20.2244748543732,"5981233804",node,9.375,pharmacy,,St Pierre Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,63485296,1,2018/10/13 13:30:48+00,8e18e73855ba48518572056c691dfe03
+,,"509025249",way,18.75,pharmacy,pharmacy,Pharmacie Royale,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Vacoas La Marie Road,,,135797512,3,2023/05/07 05:19:18+00,99eaf7c5a33e4acb911f1aefac387bff
+57.705992879476,-20.4088056456516,"6953678367",node,15.625,doctors,doctor,Cabinet Medical,,,,,,,,,,,,no,,,,,,,,,,,,76745523,1,2019/11/07 09:57:55+00,fcb7c11a69124b9ead47b2e2252911e3
+,,"1214458327",way,12.5,hospital,hospital,Clinique du sommeil et stresse,,,,,,,,,,,,,,,,,,,,,,,,142375584,1,2023/10/10 05:32:26+00,455105cd67c14c4098c6d1866278268b
+57.4879036378902,-20.3127585068337,"4983032372",node,18.75,pharmacy,pharmacy,Noush Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,John Kennedy Avenue,,,169783774,3,2025/07/31 17:57:57+00,ccf427a379714e218afe472d66476d05
+57.5525634829894,-20.4191978644822,"2177249371",node,9.375,pharmacy,,Grand Bois Pharma,,,,,,,,,,,,,,,,,,,,,,,,15186368,1,2013/02/27 14:57:54+00,ee3c5625b1db4169b6b9c153df6825d4
+57.6924181358294,-20.1087546344358,"4623226590",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,45365904,1,2017/01/22 09:41:31+00,990b0b2d9cba43648e63b2b07fd3151a
+,,"1331315165",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,158810893,1,2024/11/06 10:14:44+00,40e375b66a87451c94d011c4fd285e0a
+57.5411417988109,-20.1013339679182,"2157530287",node,12.5,pharmacy,pharmacy,Pharmancy Decase Arsenal,,,,,,,,,,,,,,,,,,,,,,,,136302228,2,2023/05/19 14:03:57+00,ffbdd6c7a79f4bb382e766c45d4cb745
+,,"1199469506",way,12.5,clinic,clinic,Medical Center,,,,,,,,,,,,,,,,,,,,,,,,158073311,2,2024/10/19 02:40:48+00,5c90b564761244ab8f0ad53a3f8c4f4d
+57.5077168644308,-20.2859964311052,"4995167682",node,18.75,pharmacy,pharmacy,Trochetia Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Phoenix,,,144307238,4,2023/11/22 00:53:16+00,723b445041a34254a5853c21e581f99d
+57.5025783386903,-20.1597614489127,"4991236109",node,18.75,clinic,clinic,Much Better Life,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,La Corderie Street,,,54934239,3,2017/12/26 16:40:43+00,00f6e1818ef7470bbf821a47232e38e9
+,,"1006964709",way,15.625,pharmacy,pharmacy,Pharmacie de Quatre Bornes,,,,,,,,,,,yes,,,,,,,,,,,,,114322506,1,2021/11/28 12:38:10+00,a147e937b1934e929aad803f0bcbfd51
+57.4948047940491,-20.1654657531174,"4993466587",node,18.75,pharmacy,pharmacy,Pharmacie,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Lord Kitchener Street,,,170401149,3,2025/08/13 17:24:32+00,dae86370196f448ba6efec493dfc12b5
+57.5404034369604,-20.2230329155702,"12047294943",node,12.5,pharmacy,pharmacy,Circonstance Saint-Pierre Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,153812290,1,2024/07/11 07:59:59+00,3606a331ad8f4e1cb9cda4aee6baf5cf
+,,"509003819",way,18.75,pharmacy,pharmacy,City Care Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Boulevard Maulana Shah Ahmad Nootani Siddiqui,,,76806515,3,2019/11/08 11:49:52+00,a436b8cb423e4841a9ee1955b28e0b12
+57.5928717200747,-19.9923814642411,"5225994871",node,18.75,pharmacy,pharmacy,The Medicine Shop,,,,,,,,,,,yes,limited,,,,,,,,,,,,135770654,2,2023/05/06 10:08:05+00,8f4a8d93db94408c806398b29f4464f8
+57.4681323208655,-20.2236051480999,"4995312473",node,15.625,pharmacy,,Pharmacie Medichem,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,A1,,,50629215,2,2017/07/27 19:17:28+00,923cd500432c45e3b7bceeef3b7bed8c
+,,"1006379250",way,9.375,,laboratory,Green Cross Medical Lab - Les Casernes,,,,,,,,,,,,,,,,,,,,,,,,135840224,2,2023/05/08 08:01:01+00,20138fae6d18428ab8bab2ffc5d8cfbc
+57.4923700188152,-20.2978380486326,"9888816856",node,9.375,,laboratory,Twinmed Ltd,,,,,,,,,,,,,,,,,,,,,,,,142517252,2,2023/10/13 10:36:51+00,29259a1bfa8345f7be05cba7447ec2f6
+57.471752297208,-20.2369887005351,"4997963233",node,18.75,clinic,clinic,Rogan Clinic,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,,129173809,4,2022/11/21 00:23:43+00,8ec514d678b64e80b0a181fa77dde0ae
+57.4748091772954,-20.2444586526433,"4305046313",node,12.5,pharmacy,pharmacy,Pharmacie Notre Dame Des Victoires,,,,,,,,,,,,,,,,,,,,,,,,129173809,5,2022/11/21 00:23:43+00,bdabceb9b5054b46b096db24685f5b34
+57.5023867283837,-20.2216524161176,"4983213391",node,18.75,clinic,clinic,Cabinet Medical,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Leclezio Ave,,,76789707,3,2019/11/08 07:08:49+00,33019cbb804a489f9530fb5c8a064ef8
+,,"509340467",way,18.75,clinic,,Bambous Area Health Centre,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rivière Noire Road,,Bambous,50606968,2,2017/07/27 04:21:49+00,06dde0d25bee4e99b2ac61ac0d7561e9
+57.4698947836458,-20.2135834093895,"4995560247",node,15.625,pharmacy,,Nupharm Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,A1,,,50629215,2,2017/07/27 19:17:33+00,a1ae60dc09a846249b6ca0d7cf2e0836
+,,"1174703249",way,12.5,doctors,doctor,SPARC Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,136360068,1,2023/05/21 06:19:33+00,2c09423b33c04d77b4356015c99ea020
+63.4211486313357,-19.6815234138066,"8093933400",node,12.5,pharmacy,pharmacy,Pharmacie d'arcy,,,,,,,,,,,,,,,,,,,,,,,,138580670,3,2023/07/16 14:12:51+00,5e8dd8df03674a5e85531b6ce297b5e4
+57.6541915443973,-20.1670645173288,"4662942946",node,6.25,,dentist,,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,6fa64fc2c70e4fa98a6917b2f990e80c
+,,"413639896",way,15.625,hospital,hospital,Poudre d'Or Hospital,,,,,,,,,,,,,,,,,,,,,,,Poudre D'Or,74849460,3,2019/09/24 10:50:00+00,c5b4e115c69d4ae0880b1489313b08d1
+57.5212596730263,-20.1523476555557,"4990501717",node,18.75,clinic,clinic,Sky Labs,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Port Louis - Central Flaq Road,,,135771752,3,2023/05/06 10:45:04+00,1de3bdd41725473f9080299e3b4efbd1
+57.6615628415052,-20.4317501835797,"4662964999",node,9.375,pharmacy,,Dodo Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,45800069,1,2017/02/04 09:26:44+00,68df61a4316e4818bc8cc90266a9b1f2
+,,"510821930",way,18.75,clinic,clinic,Medical Centre,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,,129173809,3,2022/11/21 00:23:43+00,16295eed63e94305b9a6ae5b5a3ebf37
+57.4726582971221,-20.2431787360287,"5408126624",node,12.5,dentist,dentist,Orthodondiste Dr Yan Luk Patrice,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,cb30caaee0e141a483ba5ce9b90190c7
+57.6629953925765,-20.4318373553727,"4979841757",node,15.625,clinic,,Biosante Medical Laboratories,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Macoona Road,,,50410692,2,2017/07/19 16:26:08+00,93d3f80002db4cd5b901f44322d67f63
+,,"633713779",way,12.5,clinic,clinic,Dispensaire de Buckingham,,,,,,,,,,,,,,,,,,,,,,,,63492990,1,2018/10/13 19:20:55+00,408bc5967d8c44dc801a15c73e31dac8
+57.4698175863175,-20.1940486296724,"4995491471",node,18.75,pharmacy,pharmacy,Pharmacie De Coromandel,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,A1,,,135771752,3,2023/05/06 10:45:04+00,38d748e8b91e4102abd3245c2d29bcc9
+57.5181995239967,-20.3231090676056,"11138924989",node,12.5,clinic,clinic,Cabinet médical Dr. Bholah,,,,,,,,,,,,,,,,,,,,,,,,140275788,1,2023/08/23 13:07:50+00,665e23a99a6647e3a36106291eb31846
+57.6921435446815,-20.1076368238286,"4623226598",node,9.375,pharmacy,,Devika Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,45365904,1,2017/01/22 09:41:31+00,2f0c7a12798e4597a804c3d712cca8c5
+,,"421671909",way,15.625,clinic,clinic,C-Care Darné,,,,,,,,,,,,,,,,,,,,,,,Floreal,144229270,5,2023/11/20 03:05:36+00,9f7e3a0f36b64a68a8d93641f3480f9b
+57.4780016765762,-20.2789957817556,"4990935407",node,18.75,clinic,clinic,Jian Wu Tang,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,169783774,3,2025/07/31 17:57:57+00,0c2883f035af48a6bce5448a5b9fc7be
+57.5788359717535,-20.0211140415867,"5594495759",node,12.5,pharmacy,pharmacy,For Me,,,,,,,,,,,,,,,,,,,,,,,,135770654,2,2023/05/06 10:08:05+00,38fac0efafb34a82a5f512af97222e0a
+57.7057839186299,-20.4077382102824,"6953931987",node,15.625,dentist,dentist,Dr. Peerbux,,,,,,,,,,,,no,,,,,,,,,,,,76750622,1,2019/11/07 11:13:37+00,2c32c5ac2f734378a4c233f1d4649fcc
+57.4761916884049,-20.221909656726,"12202000989",node,9.375,,laboratory,Pro Lab,,,,,,,,,,,,,,,,,,,,,,,,157133344,1,2024/09/26 15:03:34+00,90c2503289e64eda8a7bebb1e57e2822
+,,"508815021",way,15.625,clinic,,Muscular Dystrophy Association,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Gustav Colette Road,,,50418598,2,2017/07/19 22:22:41+00,0aab2391d3c7495a84b45c5b11df044c
+57.7055336350012,-20.407647350452,"6953932005",node,15.625,doctors,doctor,Medical Centre,,,,,,,,,,,,no,,,,,,,,,,,,76750622,1,2019/11/07 11:13:37+00,b53f21d169284b7c84104f2f3cef9989
+57.3840741534328,-20.3275402445373,"8091417974",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,122062687,2,2022/06/07 09:30:50+00,04eb36f8367b44f6b99287e1843c9ba4
+57.50717069962,-20.161806549468,"4983392220",node,18.75,pharmacy,pharmacy,Pharmacie Du Centre,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Sir Seewoosagur Ramgoolam Street,,,76991721,3,2019/11/13 05:19:20+00,e33ff331785048f382ea5d65d8d3ca89
+57.5508961548101,-20.0629891078323,"8085300018",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,Royal Rd 8em mile Triolet,,,135770654,2,2023/05/06 10:08:05+00,4be197b1c70644db9514bcc3d337caff
+,,"1167730094",way,9.375,hospital,,Mediclinique Floreal,,,,,,,,,,,,,,,,,,,,,,,,161090220,2,2025/01/07 10:40:37+00,c7af3ede26ac42f996ec7962ab1c9d80
+,,"1356391390",way,15.625,clinic,clinic,C-Care,,,general,,,,,,,,,,,,,,,,,,,,,162082857,1,2025/02/03 12:06:10+00,62f8149931b045b9ae8dfa760c19af06
+57.5258535426986,-20.3211010150623,"10107550975",node,18.75,pharmacy,pharmacy,Pharmacy Kestrel,,,,,,,,,,,yes,,,,,,,,,,Royal Road Curepipe,,,127646847,1,2022/10/17 04:37:53+00,54295bfeabb94305b2dfea86c3378d39
+57.4678911735112,-20.2277832753748,"4998029030",node,21.875,pharmacy,pharmacy,Pharmacie Imperiale,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,Beau Bassin,172616014,3,2025/09/29 14:24:20+00,53c54dc9aa3b40148c9c62550df28a1f
+57.4852369353955,-20.307247070221,"4985260483",node,18.75,pharmacy,pharmacy,Pharmacie 15 cantons,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Vacoas La Marie Road,,,169783774,4,2025/07/31 17:57:57+00,ccf3179b58884e45b5a8a689a441965e
+57.4692973215876,-20.1756797726866,"3103743801",node,9.375,clinic,,Medical Laboratory,,,,,,,,,,,,,,,,,,,,,,,,25862525,2,2014/10/04 22:44:45+00,a14333b52e774b47a57e806fba40379e
+57.4807871506388,-20.2635554779197,"4995164300",node,18.75,pharmacy,pharmacy,St Jean Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Jean Road,,,137693907,4,2023/06/23 15:31:11+00,47077ba3190e4e838403bd252e01b08c
+57.5225007814292,-20.1468172758419,"4983601246",node,15.625,clinic,,Cabinet Medical,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Temple Road,,,50530879,2,2017/07/24 14:52:16+00,2dce3918c6844b3189b171c3ba57db1e
+57.5161579438407,-20.3289520084888,"4634114391",node,6.25,doctors,,,,,,,,,,,,,,,,,,,,,,,,,,45502419,1,2017/01/26 07:27:28+00,84f6dff312d74af3bb2c2b85ae29b778
+,,"1179979977",way,25,clinic,clinic,Surgery gynaecology,Dr Beebeejaun,,,private,,,,,,,,,,,,,,,,,Gaetan Raynal Street,,Beau Bassin,168256135,3,2025/06/29 09:05:05+00,0d014d470efb4c7bb2cdab64f3c917d8
+,,"1214403419",way,15.625,hospital,hospital,JMR | Clinique Dentaire. (Dr. Jaumeer),,,dentistry,,,,,,,,,,,,,,,,,,,,,142517919,2,2023/10/13 10:49:45+00,eb22f425d57643048602e43cd5b620bd
+57.660902179897,-20.4319502596085,"4979802937",node,21.875,pharmacy,pharmacy,Pharmacie Jeetpharm,Mr Reaz Jeetun,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Mooljee Road,,,108702885,3,2021/07/27 17:46:48+00,0d92b101c2bf44f89f2afabdecb4cd66
+57.6542355493889,-20.1670398745334,"4662942947",node,6.25,,dentist,,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,0c045a6e610a42f9ab88177df1412f1a
+57.4851463270222,-20.2672000132386,"6123853385",node,12.5,dentist,dentist,Orthodentist Toofany,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,758a7d2a8f924194aa1f4f41ec124b11
+57.4760147464289,-20.244288667647,"10913798499",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,136328417,1,2023/05/20 08:58:49+00,c833219fb0e14c19b2e3b3c12e0713e8
+57.5029652473407,-20.159949706458,"4875789053",node,12.5,pharmacy,pharmacy,Eiman Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,138580670,2,2023/07/16 14:12:51+00,2418564ba4884e3593973a2416281ea2
+57.5250203815231,-20.1404964826587,"1815074700",node,15.625,pharmacy,,First- Aid Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Pamplemousses Road,,,50530879,4,2017/07/24 14:52:15+00,2d1bc58ddcfa462dbbcc012ec2037546
+57.5854794682089,-20.0482343598569,"5033523521",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,135770654,2,2023/05/06 10:08:05+00,3608665a4f7e4739bd48cf958a66ec8e
+,,"784246258",way,12.5,hospital,hospital,Health Centre,,,,,,,,,,,,,,,,,,,,,,,,114184253,2,2021/11/24 14:17:05+00,3437171483674970a616d37bb6ed1ca8
+57.4716013391319,-20.2317954409669,"6579472786",node,15.625,clinic,clinic,VIP Laser Clinic Med Spa,,,aesthetic_medicine,,,,,,,,,,,,,,,,,,,,,71752261,2,2019/06/30 09:54:53+00,07499280d9af439b91726aa75089c3a1
+,,"784242066",way,12.5,hospital,hospital,The Vale Area Health Centre,,,,,,,,,,,,,,,,,,,,,,,,82579138,1,2020/03/24 15:57:11+00,f05dc155c65c4993bd83dee82ab05af1
+57.4719065242264,-20.2425512667572,"4304939292",node,12.5,clinic,clinic,Clinique Bon Pasteur,,,,,,,,,,,,,,,,,,,,,,,,76696292,3,2019/11/06 11:44:19+00,a983302f3db14fe8a7f64cec70cf4889
+,,"1215229151",way,12.5,pharmacy,pharmacy,St Paul pharmacy,,,,,,,,,,,,,,,,,,,,,,,,142518736,2,2023/10/13 11:04:21+00,6ea43c3a52e5432293c9380283bb2d9c
+57.5303376932584,-20.3165722727776,"9564966495",node,12.5,,clinic,CLINIC MULLER - PAJR Medical Ltd,,,,,,,,,,,,,,,,,,,,,Higginson Street,,,118259623,1,2022/03/09 03:46:59+00,5f474b517b814c5ea58ca3e1913ad2e0
+57.4463628419432,-20.1958603780433,"4990255664",node,18.75,pharmacy,pharmacy,Pharmacy Petit Rivière,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rivière Noire Road,,,135771752,3,2023/05/06 10:45:04+00,f66e94f84e694d3f8ec05b9ef517dda4
+57.4783289898951,-20.2502850811773,"6434088687",node,18.75,pharmacy,pharmacy,Pharmarcie Ollier,,,,,,,,,,,yes,,,,,,,,,,Remy Ollier Avenue,,,69665670,1,2019/04/28 14:39:47+00,6d29b5eb3bab450d821f2ab74a77425b
+57.6553334948856,-20.1695330716324,"4622176512",node,9.375,pharmacy,,Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,45353456,1,2017/01/21 16:33:50+00,2ff328f109b44595937713574ea95a4c
+57.4704331532866,-20.2247010819398,"6681138959",node,15.625,doctors,doctor,Dr Parmessur,,,,,,,,,,,,,,,,,,,,,Lady Twining Street,,,72986071,1,2019/08/04 09:59:52+00,5416e3bcadf64bd18069f79c7686a454
+,,"1162003182",way,9.375,,laboratory,QUALITY HEALTHCARE LABORATORIES,,,,,,,,,,,,,,,,,,,,,,,,134850811,1,2023/04/13 08:30:12+00,28349740dda54b7a926aeaf2ba47e34e
+57.4803302530968,-20.2641316499438,"4995152701",node,18.75,pharmacy,pharmacy,Pharmacie Ideale,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Jean Road,,,129173862,3,2022/11/21 00:28:26+00,db5695bb2b8041598dcb346ecacfb4a4
+57.7053212375747,-20.4140781142048,"4978082266",node,15.625,pharmacy,,R.A.R. Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road,,,59312113,3,2018/05/27 12:01:54+00,81cf671c64c34271ad1f3c1272fec431
+57.4550385308229,-20.1899705823213,"4990486063",node,18.75,,laboratory,Green Cross,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rivière Noire Road,,Petit Rivière,62116700,3,2018/08/29 19:01:15+00,79e8078c0b454c4184b9d54c27d681e5
+,,"784216854",way,18.75,hospital,hospital,Victoria Hospital,,,"cardiology;dermatology;emergency;general;gynaecology;oncology;orthopaedics;paediatrics;plastic_surgery;psychiatry;pulmonology;radiology;surgery;dentistry ;haemodyalisis",,,,,,,,,,yes,,,,,,,,,,,114208393,3,2021/11/25 07:12:44+00,e334711dfb5c4269aff71a83209fa35c
+,,"509022817",way,18.75,clinic,,St. Patrick Clinic,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Avenue des Capitaines,,Flic en Flac,50443638,3,2017/07/20 22:16:45+00,a156551286cf4ea6bbeb469060e15eeb
+57.5034293533195,-20.1634822595505,"4875657927",node,9.375,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,,,,138580670,4,2023/07/16 14:12:51+00,9fd1442ec127425896a1a09f814f10b5
+,,"510058789",way,18.75,pharmacy,pharmacy,Pharmacie De L'ouest,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Souillac Street,,,170401149,3,2025/08/13 17:24:32+00,c0df86b33a444937b58bce1a59b41f62
+,,"1019960310",way,9.375,doctors,,Petit Gabriel Dispensary,,,,,,,,,,,,,,,,,,,,,,,,115976340,2,2022/01/10 10:56:21+00,b3ee77866c3944c288c77c91ebfe61c8
+57.468104744404,-20.2462337720974,"4995069685",node,15.625,pharmacy,,Suptar Vit Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Hugnin Street,,,62379806,3,2018/09/07 15:42:55+00,cbbce2446db9442b8d0471f9883dbb04
+57.722978219524,-20.1839327621893,"5106618424",node,12.5,pharmacy,pharmacy,Pharmacy Rose,,,,,,,,,,,,,,,,,,,,,,,,138580464,3,2023/07/16 14:07:57+00,2888b9661c484170b615634358d29c4d
+57.4811361730869,-20.2634323477621,"4995275218",node,18.75,pharmacy,pharmacy,Pharmaplus,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Jean Road,,,129173862,3,2022/11/21 00:28:26+00,e892737b3698406b91696b7e4187f71e
+,,"495848204",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,77009732,2,2019/11/13 12:08:26+00,63985f79292f44f3a17affc1c9ebb90b
+,,"664438856",way,15.625,,clinic,Aegle Clinic,,,,,,,,,,,,,,,,,,,,,Francois Mitterand Street,,Centre de Flacq,66430621,1,2019/01/18 15:16:35+00,4317a513e1794788a2d25a53efc5c1c0
+57.5804317184797,-20.0195466256933,"3215377680",node,15.625,clinic,clinic,Grand Bay Medical and Diagnostic Centre,,,,,,,,,,,,,,,,,,,,,Sottisse Road,,,135770654,4,2023/05/06 10:08:05+00,cd281f4b60ca42a6ab6a937ac1889f41
+57.5027910713928,-20.1616147715234,"2173164897",node,18.75,pharmacy,pharmacy,Newton Parmacy,,,,,,,,,,,,,,,,,,,,,Queen street,,Port Louis,138580670,3,2023/07/16 14:12:51+00,c9d20e4af5864d8dafdf38597f1b7364
+,,"694041049",way,15.625,,laboratory,Prolabs Medical Ltd,,,,,,"Mo-Fr 06:30-17:00; Sa 06:30-14:00; Su 06:30-12:00",,,,,,,,,,,,,,,Dupont Street,,,70853620,1,2019/06/02 10:42:47+00,08cb74dc324b4c19addfc1a65a548722
+57.5238760841019,-20.3131051823489,"4978393618",node,15.625,pharmacy,,Pharmacie D'Epinay,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Curepipe,,,50417803,2,2017/07/19 21:34:50+00,5a1c82cc08034a6ebd376580bac5928c
+,,"510217508",way,18.75,clinic,clinic,Bassin Community Health Centre,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Jawaharlall Nehru Avenue,,,169783774,3,2025/07/31 17:57:57+00,27df14828d5c43719461eb28f98b05ca
+,,"1213571790",way,12.5,doctors,doctor,Dr.(Mrs).P Gowreesunkur,,,,,,,,,,,,,,,,,,,,,,,,142227687,1,2023/10/06 11:10:46+00,3159c37a70cd4e27ae4d28e98056b895
+57.5856185239825,-20.0136080472948,"1662930789",node,12.5,pharmacy,pharmacy,Grand Bay Pharma,,,,,,,,,,,,,,,,,,,,,,,,135770654,3,2023/05/06 10:08:05+00,ef140557831a4f0c9b45911727863b24
+57.5344524533453,-20.2211261164173,"4983398684",node,15.625,pharmacy,,Pharmexpert Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Bois Cheri Road,,,50629215,2,2017/07/27 19:17:19+00,a5dd7e902fd24b1f8f35068e2a923bbc
+,,"495764618",way,12.5,clinic,clinic,Florial medi clinic,,,,,,,,,,,,,,,,,,,,,,,,139786961,2,2023/08/12 12:59:04+00,b0c6463a59c4419dbd3417e98c03e92f
+57.5273053721473,-20.329237831387,"4980852279",node,18.75,pharmacy,pharmacy,Ahmud Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Gustav Colette Road,,,140663044,3,2023/09/01 06:18:56+00,7093774a2a4148eba5ee81658dc27432
+,,"1179758469",way,21.875,clinic,clinic,ARTEMIS HOSPITAL,,,"radiology;gynaecology;emergency",,,,,,,,,,,,,,,,,,Royal Road Curepipe,,Curepipe,145888723,2,2024/01/04 16:23:11+00,0b3adc092f6942e2806891680e62f7c1
+,,"1019633008",way,25,,clinic,Shri Ram Community Health Centre,Government,,general,,,,,,,,,,,,,,,,,,Forbach Road,"20601",Fond du Sac,115931002,1,2022/01/09 06:02:01+00,9a07896933784deb96d36aa395ccd61e
+57.4717183505002,-20.2368745390139,"4997963230",node,18.75,pharmacy,pharmacy,Azm Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,,129173809,3,2022/11/21 00:23:43+00,76dc406c81114f10bd288e68a4f9b1ac
+57.5411025715041,-20.1013903781266,"4152268990",node,9.375,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,,,,136302228,2,2023/05/19 14:03:57+00,0e8a4634ca1149a8849884573a307300
+57.5976272766592,-20.0288247219541,"3754148453",node,12.5,hospital,hospital,The Vale Area Health Centre,,,,,,,,,,,,,,,,,,,,,,,,135770654,2,2023/05/06 10:08:05+00,dbb2713f0cff4a42ab7a55f2753be1b0
+57.3686645273625,-20.2805670533245,"4981754256",node,18.75,clinic,clinic,Dr. Leutéritz,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Avenue des Flamingos,,,122062687,3,2022/06/07 09:30:50+00,87e913d4275a43eea81e39a7ea45e54a
+,,"1200155426",way,28.125,clinic,clinic,Zeeva Fertility,,,fertility,,,,,,,,,,,,,,,,,"8",Pope Hennessy Street,"74208",curpipe,142245270,2,2023/10/06 19:10:59+00,1caa36c7cdba4af181458e40ce304f02
+57.7060598508824,-20.406442870966,"4976278428",node,18.75,clinic,clinic,Cabinet Medical,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue la Chaux,,,129173862,4,2022/11/21 00:28:26+00,45d02c80a23b44ac8b36066aa5573410
+57.5460858643978,-20.3439801741457,"4980458857",node,15.625,pharmacy,,Rose Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Route Royale,,,50416517,2,2017/07/19 20:34:56+00,e5b5e72b658548eb868e191f28a86d04
+57.5137297903104,-20.311393932997,"4979966752",node,15.625,pharmacy,,Pharmacy Biladams,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Floreal Main Road,,,50417803,2,2017/07/19 21:34:51+00,03ba83191fe5475a98b6e3717b2909b1
+57.5233081263428,-20.1475294023355,"4990471952",node,15.625,pharmacy,,Abercrombie Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Port Louis - Central Flaq Road,,,50564834,2,2017/07/25 17:29:58+00,80032c94897f408e9dc48ff4a1f013db
+57.4670316931598,-20.2673053737614,"6449121483",node,12.5,,laboratory,Green Cross Medical Laboratory,,,,,,,,,,,,,,,,,,,,,Berthaud Street,,,71580644,2,2019/06/25 00:51:28+00,fc1cdcc19a87452bb385c8d70b8795be
+57.3778832797488,-20.491846333858,"4151568709",node,9.375,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,,,,77651591,3,2019/11/27 20:03:11+00,e9bc4c4fcfdb4c40a0c815481c51a233
+57.5276102219657,-20.3240994732845,"4980664097",node,15.625,pharmacy,,Care 4u Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Forest Side,,,50417803,2,2017/07/19 21:34:53+00,87c559b2d1b142daaf1f81c882f5623a
+57.4931770284528,-20.2985666036564,"11243406247",node,9.375,,laboratory,BIOSANTE,,,,,,,,,,,,,,,,,,,,,,,,142228140,1,2023/10/06 11:22:41+00,1e15cd491c724eadafa9224e51e67d10
+57.402682062297,-20.278936102605,"1823089241",node,12.5,pharmacy,pharmacy,Medical Trading Cascavelle,,,,,,,,,,,,,,,,,,,,,,,,147926873,2,2024/02/26 11:11:51+00,e944160fe17f478c9a9c6db085658085
+,,"1033859389",way,28.125,hospital,hospital,Sihha Medical Centre,Sihha Medical Centre,,"general;dentistry;biology;emergency;surgery",private,,,,,,,,,,,,,,,,,Menagerie Road,,Port-Louis,132388431,3,2023/02/11 02:09:45+00,efec2221e7204e619dc78b220f6dcd5d
+57.4913749192705,-20.2992247506936,"11259647330",node,9.375,,laboratory,Dr. Mohamed Din Moraby,,,,,,,,,,,,,,,,,,,,,,,,142517187,2,2023/10/13 10:36:01+00,478e11e4a23d4e879b990c6c5ccf0d3e
+57.5095110946241,-20.1732075303456,"4991299095",node,18.75,pharmacy,pharmacy,Get Well Pharma,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Mahatma Gandhi Street,,,76897796,4,2019/11/11 09:39:16+00,d5bc978afc254900b554892b7cc45ef6
+57.4830161501497,-20.2943442199328,"4995103577",node,18.75,pharmacy,pharmacy,Bonne-Terre Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,169783774,3,2025/07/31 17:57:57+00,e01f8ef13bdb4d7695576b666ef51f9a
+57.5292201341082,-20.1311117685895,"4983717986",node,18.75,dentist,dentist,J. Smile Dental Clinic,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Pamplemousses Road,,,78843378,3,2019/12/25 10:30:16+00,a26e582b77ab4c74af3b06017a3f9d32
+57.654248792796,-20.1671543713308,"4662942949",node,6.25,,dentist,,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,a1840c1ce43945bfa5a0bf449319553d
+57.6928721835243,-20.108369569804,"4623226593",node,9.375,pharmacy,,Baroda Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,45365904,1,2017/01/22 09:41:31+00,f3d5e9d11cc048a49efc43c597b420fa
+57.4668248277894,-20.2288025148007,"7005683285",node,18.75,doctors,doctor,Neurobalance and ENT clinic,,,,,,,,,,,,,,,,,,,,,walter besant street,"71504",,154769149,3,2024/08/03 10:56:02+00,2c0d4588d4334bada0b13fc172c840d9
+,,"1213574197",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,169783774,2,2025/07/31 17:57:57+00,799d663c9e0c440e9315e532b47cc9e5
+,,"1167100848",way,18.75,pharmacy,pharmacy,Pharmacie Mesnil,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Parisot Road,,,144307238,2,2023/11/22 00:53:16+00,3b6d02b26eab44b7981fdebbbcaec104
+57.4864522275367,-20.2791952710512,"9540577295",node,15.625,,laboratory,Novalab,,,,,,"Mo-Fr 07:00-17:00; Sa 07:00-14:00",,,,,,,,,,,,,,,Sayed Hossen Road,,,117906411,1,2022/02/27 12:37:16+00,df6ecb44a3a244df9bf7c29f514c1e12
+57.5132710487497,-20.1602252196153,"4990745585",node,18.75,pharmacy,pharmacy,Le Santé Pharmacie,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Madad Ul Islam Street,,,138580670,3,2023/07/16 14:12:51+00,8c8d93e9b5a848028106f78e0149747b
+57.4718198553476,-20.2533047456146,"4995069716",node,18.75,dentist,dentist,Cabinet Dentaire,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Boundary Road,,,78843378,3,2019/12/25 10:30:16+00,621787dfcfa548b88c08418740825884
+57.4717781972888,-20.2326623812121,"6579472785",node,12.5,doctors,doctor,Docteur Reshad Sumodhee,,,,,,,,,,,,,,,,,,,,,,,,71747638,1,2019/06/30 03:55:47+00,305f7476b6e74ef8bd717590a815f4df
+57.4751046393823,-20.2714630491926,"4991102082",node,15.625,clinic,,Skylabs,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,50600524,2,2017/07/26 20:30:26+00,01fc5f628e7c4364b16f42da9debb2c6
+57.51998595902,-20.3208640586596,"1757755699",node,12.5,pharmacy,,Pharmacie du Jardin,,,,,,,,,,,yes,,,,,,,,,,,,,11638347,1,2012/05/18 22:57:51+00,4c6f2eec661e44debe6f8eb37ce25017
+57.4771306291984,-20.2766175005492,"4990972832",node,18.75,pharmacy,pharmacy,Pharmacie Capucines,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,114208393,4,2021/11/25 07:12:44+00,702eba14bd2848d2817bb01897403134
+,,"1019962182",way,6.25,doctors,,,,,,,,,,,,,,,,,,,,,,,,,,115997475,2,2022/01/10 20:38:07+00,8b65a4ed4b3b495683726531703b2c93
+,,"509977637",way,18.75,pharmacy,pharmacy,Green Cross Pharmacie,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,169783774,3,2025/07/31 17:57:57+00,74cf9f10ce3541da9072617dbcdc0a34
+,,"784247848",way,12.5,hospital,hospital,Lady Sushil Ramgoolam medi clinic,,,,,,,,,,,,,,,,,,,,,,,,124580433,2,2022/08/06 23:40:37+00,3fb097eaad57479392ca3205d7ef8095
+57.6605750342162,-20.4323120225494,"4979802928",node,15.625,clinic,,Cabinet Medicale,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Mooljee Road,,,50410692,2,2017/07/19 16:26:07+00,92fa258a0b7c4753a6ac323b3e8805b9
+57.5553178601912,-20.060463472768,"3754488545",node,15.625,hospital,hospital,Triolet Medi Clinic,,,,,,,,,,,,,,,,,,,,,,,Triolet,156604083,4,2024/09/14 09:51:48+00,3ad82d1d7f794a87be13854539944eff
+57.684459099671,-20.1483065723977,"4621711885",node,9.375,hospital,,Primary Health Care,,,,,,,,,,,,,,,,,,,,,,,,45344904,1,2017/01/21 08:22:19+00,d09c868add9b4396935acf278f181b0a
+57.4887685664787,-20.1660570125673,"4991397211",node,15.625,pharmacy,pharmacy,Bell Village Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,137305606,6,2023/06/13 23:35:55+00,3c6171c294d540d18d061413e0bb0acb
+57.5126682222734,-20.2902526777177,"4995356603",node,15.625,dentist,dentist,,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Mesnil,,,144307238,4,2023/11/22 00:53:16+00,95a7cbf19f85479a87793d5a70093559
+57.5126252231101,-20.2902308009504,"4995356602",node,18.75,pharmacy,pharmacy,Pharmacie Miopharm,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Mesnil,,,144307238,3,2023/11/22 00:53:16+00,3ae06a832f524adea3ead7e46938e61f
+57.4668276776365,-20.2443252127448,"4995247264",node,15.625,pharmacy,,Fla Pharmacie New Stanley,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Hugnin Street,,,62379806,3,2018/09/07 15:42:56+00,662695b088b64169bd7bc645fdc9634f
+57.5230208785211,-20.3158259481191,"4978294569",node,15.625,pharmacy,,Pharmacie,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Curepipe,,,50417803,2,2017/07/19 21:34:45+00,069631e145cb4038956d883a97cc8459
+57.4930954725349,-20.2959211073768,"4990304266",node,21.875,pharmacy,pharmacy,Pharmacie Moraby,,Kaart Ground Survey 2017,,,,,,,,,yes,,,,,,,,,,John Kennedy Avenue,,,111328035,4,2021/09/17 09:27:48+00,9fb5a649d4ea4cbeab07ea3ca0f11912
+,,"1360829132",way,12.5,hospital,hospital,ssrn hospital,,,,,,,,,,,,,,,,,,,,,,,,162647020,1,2025/02/18 06:48:38+00,8d5d42efae9a4949b79ea9ff2503b5d1
+57.5081304275334,-20.2911999165953,"4664917092",node,12.5,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,Saint Paul Road,,,144307238,2,2023/11/22 00:53:16+00,079b2e442c03485f86291b762db8f43e
+57.5361031853562,-20.2234331514468,"12069727905",node,28.125,doctors,doctor,Dr V. Siraz,,,orthopaedics,,,13.30 - 18.30,,,,,,,,,,,,,,,One Way Street,"81420",St Pierre,154302957,1,2024/07/23 11:38:35+00,ee94990285eb43ad8bc1609143347442
+57.5800736435761,-20.0219317800603,"4601420291",node,15.625,clinic,clinic,C-Care Clinic Grand Baie La Croisette,C-Care,,,,,,,,,,,,,,,,,,,,,,,135770654,4,2023/05/06 10:08:05+00,a8176987153641529f353be7a0d407f7
+,,"677855079",way,18.75,hospital,hospital,Belle Mare Community Health Centre,,,general,,,"Mo-Fr 08:00-16:00; Sa 08:00-12:00",,,,,,,,,,,,,,,,,,82399819,2,2020/03/19 17:02:54+00,14cc6890e49c4b6aab2f9b677a848169
+57.4717407301817,-20.2139970563111,"6534827186",node,15.625,doctors,doctor,Vincent Perdreau,,,physiotherapy,,,,,,,,,,,,,,,,,,,,,114185850,2,2021/11/24 15:03:46+00,10c87790033248d884addc3b654bba06
+57.4692836590854,-20.2174093290931,"6518841516",node,12.5,,laboratory,Green cross,,,,,,,,,,,,,,,,,,,,,Grand River Road,,,70897302,1,2019/06/03 18:55:56+00,187fa0af21454983937b2469cd9e4460
+,,"1161965999",way,12.5,pharmacy,pharmacy,PHARMACY CAMP FOUQUEREUX,,,,,,,,,,,,,,,,,,,,,,,,172014682,2,2025/09/16 13:11:25+00,9f381327b82d45da8e47b80658c69310
+57.5471728296014,-20.0372945512919,"10709155657",node,18.75,pharmacy,pharmacy,Central Pharmacy,Bissonauth & Sons.,,,,,"Mo-Sa 08:00-20:00; Su,PH 08:00-14:00",,,,,,,,,,,,,,,,,,160757103,3,2024/12/29 16:17:27+00,80c7d8270d65427294753341125856f7
+57.5170407258829,-20.1562648541849,"5741686222",node,18.75,clinic,,,Fatehmamode,,,,,Mo-Su 07:30-17:00,,,,,,,,,,,,,,"29",Jardin Despeaux Street,,,60440796,1,2018/07/05 15:45:42+00,f92be37367c440ddbcce5e607f57f48e
+57.4945107568857,-20.2545287549351,"10946046615",node,12.5,clinic,clinic,Dr.Rameez Hussain Ophthalmologist,,,,,,,,,,,,,,,,,,,,,,,,136864210,1,2023/06/02 11:28:38+00,aac93687219d4720b817689b537c519b
+57.4663152918955,-20.2439206182787,"7254457015",node,18.75,pharmacy,pharmacy,Buckingham pharmacy,,,,,,,,,,,yes,,,,,,,,,,Ratsitatane Street,,,81634699,1,2020/03/01 03:25:16+00,74ab940c0a4c4527b6f6d5699f91ebae
+57.7080947255158,-20.4096153374981,"4977549507",node,18.75,pharmacy,pharmacy,Al-Shafa Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue de Suffren,,,129173862,3,2022/11/21 00:28:26+00,bd5eb36dca734457876165e61791da9f
+57.4852188304847,-20.2692974168697,"9107967219",node,18.75,doctors,doctor,Dr. M. Dauhoo,,,orthodontics,,,,,,,,,,,,,,,,,,Sodnac Avenue,,,111451061,1,2021/09/20 13:52:31+00,c48564b53f8347ca8c21c80e298bf222
+57.6175101568151,-20.070602977218,"4160306791",node,12.5,dentist,dentist,DentCare,,,,,,,,,,,,,,,,,,,,,,,,122890403,3,2022/06/27 06:02:25+00,84eb94731e3343cdb8361f64e7e50d36
+57.651385786129,-20.0386085822524,"2601381563",node,9.375,pharmacy,,Pharmacy Cadress,,,,,,,,,,,,,,,,,,,,,,,,19716774,1,2013/12/30 16:30:01+00,ab622551fee6410d8344fd5d1d334638
+,,"1222490695",way,21.875,doctors,doctor,Dr Santosh Kumar Chukowry Orthopaedics Surgeon,,,orthopaedics,,,,,,,,,,,,,,,,,,Floreal Road,,Vacoas-Phoenix,143860672,1,2023/11/10 12:14:10+00,c33acedc04d04bc18fc7ed90f332fcb3
+57.4879009556812,-20.2434650618412,"4676442335",node,21.875,pharmacy,pharmacy,Ebene Pharmacy,MedActive,,,,,,,,,,,,,,,,,,,,Ebene Commercial Centre,,Ebene,137325916,3,2023/06/14 12:23:09+00,299f8aa4444240d889b7ffb58166a2c9
+57.4691406638172,-20.2563662357487,"4995110309",node,15.625,pharmacy,,Pharmacie Boundary,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Boundary Road,,,50629215,2,2017/07/27 19:17:22+00,36de1ffb5406408997358369f7edd6f6
+57.4772962556051,-20.2678475152587,"4995114161",node,18.75,dentist,dentist,Bright Smile,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Jean Road,,,78843378,3,2019/12/25 10:30:16+00,5ab1ddb1508b4a1f982e460df363982b
+57.7247100883577,-20.1943353745799,"2999870443",node,9.375,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,2fe8e39538da4481b7871f62ebc90eca
+57.3655848484985,-20.3532462004659,"1397554020",node,9.375,pharmacy,,London Way Pharma,,,,,,,,,,,,,,,,,,,,,,,,19867161,2,2014/01/07 17:34:51+00,5dd7be0a38a34e8abe7f8723180d12f7
+,,"574313289",way,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,57622349,1,2018/03/29 06:54:57+00,e1bf8b3b87cb496f9fabb4030f78a283
+57.5141232368453,-20.1685880120496,"5068602788",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,76806515,2,2019/11/08 11:49:52+00,41c56752f84841458e74709e3e5bcfa6
+,,"1180021382",way,12.5,pharmacy,pharmacy,Renaissance,,,,,,,,,,,,,,,,,,,,,,,,137019396,1,2023/06/06 15:15:57+00,844e5f943bc34502b2f9fa79f5484036
+57.3687286489217,-20.2794924095186,"11061520910",node,12.5,pharmacy,pharmacy,Flic-en-Flac Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,138851630,1,2023/07/22 12:18:48+00,a9791c466ce74f1b8f97128ba7cd3522
+57.5051262696169,-20.2835692834032,"4995298293",node,18.75,pharmacy,pharmacy,Phoenix Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Phoenix,,,144307238,3,2023/11/22 00:53:16+00,98276f929a82496885b7eba553e6edc5
+57.6680468303431,-20.1925068624026,"5513197333",node,9.375,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,,58626933,2,2018/05/02 20:20:20+00,970a933dfcdc47d6927f581111e88f2a
+57.525347443385,-20.3069614149608,"4978365509",node,15.625,pharmacy,,Active Care Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Curepipe,,,50417803,2,2017/07/19 21:34:47+00,afd3322f43a548d9af3a471135761127
+57.7240759973826,-20.1931790072181,"5310627623",node,15.625,doctors,doctor,Flacq Echography and X-Ray Centre,,,,,,,,,,,,,,,,,,,,,,,Centre de Flacq,129919761,2,2022/12/10 01:42:50+00,18afac755a414ab1a453dbbd045acec3
+,,"510563259",way,15.625,pharmacy,,Pharmacie Confiance,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,A1,,,50629215,2,2017/07/27 19:18:08+00,6b31e1cd100f4ef293efc697667fffae
+57.4755694997323,-20.2700184281807,"3995063593",node,15.625,pharmacy,,La Louise Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Jean Road,,,50600524,3,2017/07/26 20:30:21+00,280288288741425ab5e29ac10a7c8b61
+,,"509044660",way,18.75,clinic,,Esthétique,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Radar Avenue,,Flic en Flac,50606968,2,2017/07/27 04:21:46+00,34b82cde21e24ee19f6e9eeb48c8d849
+57.5064720679905,-20.1624682169045,"4990816694",node,18.75,pharmacy,pharmacy,Primecare,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Sir Seewoosagur Ramgoolam Street,,,76991721,4,2019/11/13 05:19:20+00,eb407534dc2c4af3bbdaedcda36815ba
+57.7060435899902,-20.4087828468749,"6953678383",node,18.75,pharmacy,pharmacy,Pharmacity Mahebourg,,,,,,,,,,,yes,no,,,,,,,,,,,,76745523,1,2019/11/07 09:57:55+00,003d96640cfc4d759dd535f5244536c5
+57.5078904536455,-20.2861889634211,"4995167688",node,15.625,dentist,dentist,,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Phoenix,,,144307238,4,2023/11/22 00:53:16+00,f2370b08753e4ba18179dd0ccf5eba7c
+,,"508782865",way,15.625,clinic,,Unilab LTD,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Route Royale,,,50416517,2,2017/07/19 20:35:03+00,9eb05fe104364087b13bb499f91f4f2c
+57.4851442315464,-20.3026521109012,"11373276114",node,12.5,doctors,doctor,Mrs  H.B. Peerally,,,,,,,,,,,,,,,,,,,,,,,,144407283,1,2023/11/24 12:50:25+00,960f3dbf77d54884960a7029af3ea2e0
+57.5249278453121,-20.3151558149603,"4978159864",node,15.625,pharmacy,,Pharmacie Jhugroo,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Jerningham,,,50415285,2,2017/07/19 19:47:23+00,fe9bad1f75c04b86bf5c3e028e72bf8b
+57.4934169185216,-20.292646549264,"4223926261",node,12.5,dentist,dentist,Dr Bhunjun,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,295d62a7b7b54d83b521c80231e252e2
+57.4630472716672,-20.2316204268286,"4995237045",node,15.625,pharmacy,,Pharmacy Mont Roches,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Pope Hennessy Street,,,50629215,2,2017/07/27 19:17:26+00,429b9e91b5e04ff3bc934098ac6b5c31
+,,"509945249",way,18.75,pharmacy,pharmacy,Vallee Pitot Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Boulevard Maulana Shah Ahmad Nootani Siddiqui,,,76806515,2,2019/11/08 11:49:52+00,2830ab8b710140ddba31f4289329181d
+57.5165080559362,-20.312727577611,"4980088245",node,18.75,pharmacy,pharmacy,Floreal Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Georges Guibert Street,,,72124261,3,2019/07/11 08:34:54+00,e83f9f73dade4af5af42c88603fa50aa
+,,"1191387197",way,12.5,clinic,clinic,VIP Lazer Clinic,,,,,,,,,,,,,,,,,,,,,,,,138851630,1,2023/07/22 12:18:48+00,92616385649840d18a1d490a6d7c51cc
+57.4080644176009,-20.2140077013282,"3658931594",node,12.5,pharmacy,pharmacy,Albion Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,129976432,3,2022/12/11 21:29:11+00,e30bf742ea2c4044a8f98fba9385bbda
+57.7069020645133,-20.406464077181,"6953931989",node,15.625,dentist,dentist,Dr. Dhooboreea,,,,,,,,,,,,no,,,,,,,,,,,,76750622,1,2019/11/07 11:13:37+00,4532e4c33c424a2a9ac95bbc06d2b45d
+,,"1006710065",way,12.5,doctors,doctor,Dr.Raj Roy,,,,,,,,,,,,,,,,,,,,,,,,114291053,1,2021/11/27 11:22:13+00,b40ab189fe094fc8bdfedb832715e5c0
+57.6634486859002,-20.0492405235138,"9263546065",node,12.5,pharmacy,pharmacy,Healthland Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,114034746,2,2021/11/20 17:19:07+00,d2a1862bdd324cf3b072a606cfc576ea
+57.5209245645374,-20.1526340651872,"4990514632",node,15.625,pharmacy,,St. Criox Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Port Louis - Central Flaq Road,,,50564834,2,2017/07/25 17:30:01+00,4d99c23829e64d2cb5287178e38fedb5
+57.7081548237616,-20.4095978193205,"4977549506",node,18.75,clinic,clinic,Al-Shafa Medical Centre,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Rue de Maurice,,,129173862,3,2022/11/21 00:28:26+00,0038675f90d74919b1331b4fec2e5ce4
+,,"495859065",way,12.5,hospital,hospital,New Cancer Centre,,,,,,,,,,,,,,,,,,,,,,,,136454060,2,2023/05/23 12:20:38+00,0a16a7a8bfc645cf9abfae3ac8d6d7aa
+57.4684660882498,-20.2790511023166,"4991120970",node,15.625,dentist,dentist,,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Jawaharlall Nehru Avenue,,,169783774,4,2025/07/31 17:57:57+00,bd77c29856b44792829416c1d9d2662e
+57.4778939691204,-20.278727309397,"4990935416",node,18.75,clinic,clinic,Clinic Candos,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road1,,,169783774,3,2025/07/31 17:57:57+00,0e628fcbeaee4984b6c9ac6c99ae6e78
+57.4993599393287,-20.1633096761641,"4875889466",node,15.625,pharmacy,pharmacy,Pharmacie Carbone,,,,,,,,,,,,,,,,,,,,,,,Port-Louis,139130248,3,2023/07/28 11:08:23+00,6b5809b6e7d54371979f38d60bbb856d
+63.4532471295387,-19.7389802704136,"9409903536",node,12.5,doctors,doctor,Port Sud Est Health Care Centre,,,,,,,,,,,,,,,,,,,,,,,,116031557,2,2022/01/11 16:39:47+00,df37920947684ff7ac9a936d10b1868b
+57.471530428231,-20.255389744029,"4304607089",node,9.375,pharmacy,,Pharmacie Boundary,,,,,,,,,,,,,,,,,,,,,,,,48943428,2,2017/05/24 10:36:53+00,42cc9bc9148b4c49a53b6aa6c151ab82
+57.7228774690478,-20.1953237686022,"8925562290",node,9.375,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,,108090154,1,2021/07/16 06:03:23+00,485bc4de4d274469884bbadc0fb9c543
+57.5053889584624,-20.2841158673092,"4995489441",node,18.75,pharmacy,pharmacy,Pharmacy S.N. Beeharry,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Phoenix,,,169783774,3,2025/07/31 17:57:57+00,b943b386ba034b3ab3a1ac8af16b0cbc
+57.5277287420766,-20.1344115562309,"4983696505",node,18.75,dentist,dentist,Cabinet Dentaire,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Pamplemousses Road,,,78843378,3,2019/12/25 10:30:16+00,e3b9ed3587394141bdd64f9f4f3ba89e
+,,"270988980",way,12.5,hospital,hospital,Clinique Mauricienne,,,,,,,,,,,,,,,,,,,,,,,,129173839,2,2022/11/21 00:25:53+00,4f62b40b5f8f46078474447a73ca6be1
+57.4738798756906,-20.2715157713636,"4993350128",node,15.625,pharmacy,,Pharmacy Pharmak,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Palma Road,,,50600524,2,2017/07/26 20:30:31+00,70a4587730af4e80b5d9445462ed6e93
+57.502810098313,-20.1603100444754,"2624972983",node,25,pharmacy,pharmacy,Pharmacie Farquhar,,,,,,"Mo-Fr 08:00-17:30; Sa 8:00-17:00; Su 08:00-12:00",,,,,,,,,,,,,,,Farquar Street,,Port Louis,155575522,4,2024/08/21 19:22:59+00,2b4be3a3119d4eb199b6adb690a93262
+57.4773385842161,-20.278687662995,"9282312806",node,15.625,hospital,hospital,Princess Margaret Orthopaedic Centre,,,orthopaedics,,,,,,,,,,,,,,,,,,,,,114208393,1,2021/11/25 07:12:44+00,478d1eb50d1a4fcbb969ea4502a645ff
+57.4779117387551,-20.2787836357863,"4990935418",node,18.75,pharmacy,pharmacy,Pharmacie Care Plus,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Candos Vacoas Road,,,80407455,3,2020/02/01 12:00:03+00,bfad79e5a27148cda47de3044e20fd23
+57.579608364131,-20.0190605591282,"4876323779",node,12.5,dentist,dentist,Fayyad Joomun,,,,,,,,,,,,,,,,,,,,,,,,78843378,3,2019/12/25 10:30:16+00,ea9a809725b2430f9ad3e3b615293f3b
+57.6590169222352,-20.2851557262169,"6478993811",node,9.375,,laboratory,,,,,,,,,,,,,,,,,,,,,,B27-Royal Road,,,70333402,1,2019/05/16 19:38:41+00,07fef46c379740b6b4d159d3aba115aa
+,,"1167471731",way,15.625,clinic,clinic,C-Care,,,"general;cardiology;chiropractic;dermatology;diabetology;endocrinology;otolaryngology;surgery;trauma",,,,,,,,,,,,,,,,,,,,,135523277,1,2023/04/30 04:15:23+00,b00080c01aec4742a90aa493f701aa1f
+57.4689928908643,-20.2180436715252,"6518841515",node,18.75,pharmacy,pharmacy,Pharmacie la confiance,,,,,,,,,,,yes,,,,,,,,,,Grand River Road,,,70897302,1,2019/06/03 18:55:56+00,4dbea1d5ff094e0da750086318ed86b3
+57.4749528431158,-20.2710777331037,"3754024943",node,12.5,pharmacy,pharmacy,Oxpharm,,,,,,,,,,,,,,,,,,,,,,,,137693907,3,2023/06/23 15:31:11+00,035286cd21924a18a20a307b7aeb7b00
+57.4783962965776,-20.2439477756449,"6433937535",node,12.5,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,Rose Hill,133459548,2,2023/03/09 00:07:49+00,bfc341820370441b970f84815adc2311
+57.3816165794223,-20.4947956741277,"7282493186",node,6.25,doctors,,,,,,,,,,,,,,,,,,,,,,,,,,82010892,1,2020/03/10 13:55:21+00,33bc2a39a96d46178990036777d1501d
+57.4685072433944,-20.2790164012374,"4991120969",node,18.75,pharmacy,pharmacy,Bassin Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Jawaharlall Nehru Avenue,,,169783774,3,2025/07/31 17:57:57+00,ed252cb1f4fe477e84e6d7b3b8cfd21e
+57.473743753583,-20.2420042637561,"4995889277",node,18.75,pharmacy,pharmacy,Standard Pharmacy,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,,137802017,6,2023/06/26 17:29:42+00,9b5b9a7b5df3420181746201c95bcfe4
+57.5044073537817,-20.1694038226855,"4990550976",node,15.625,,laboratory,Pro-Medica,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Labourdonnais Street,,,138026739,5,2023/07/02 14:48:20+00,261c7d84b3b240a482d62fd03c8dcd58
+57.5111425482578,-20.1590451314675,"4990686435",node,18.75,pharmacy,pharmacy,Pharmacie la Plaine Verte,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Sir Virgil Naz Street,,,138580670,3,2023/07/16 14:12:51+00,09a864630dce48a8b45ff6bd9f00cbc8
+57.4913787749459,-20.2993391636719,"4990272035",node,18.75,pharmacy,pharmacy,Jhugroos Bros,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Saint Paul Road,,,142517068,3,2023/10/13 10:34:00+00,bd90e692a3e841bbba9ca21acbcca0ca
+57.5379893650274,-20.2247366212093,"5981235532",node,9.375,pharmacy,,Pharmachic,,,,,,,,,,,,,,,,,,,,,,,,63485314,1,2018/10/13 13:31:38+00,0ba8831ecc5e483db95824e2cc6c8d34
+,,"737240209",way,25,clinic,clinic,Chisty Shifa Clinic,,,"general;emergency;surgery;paediatrics;cardiology",,,,,,,,,yes,,,,,,,,,Shan E Islam Street,,Port Louis,75985013,1,2019/10/21 09:21:56+00,b2a09ec2660a4b60802753978cfee033
+57.4717383832488,-20.2369482159428,"4997963234",node,21.875,doctors,doctor,Cabinet Cardiologie,,Kaart Ground Survey 2017,cardiology,,,,,,,,,,,,,,,,,,Royal Road Rose Hill,,,68225132,3,2019/03/17 10:56:39+00,4b9098a6b12c4b9fafe29d337247de1d
+57.369920387915,-20.2765160795208,"4981968903",node,21.875,pharmacy,pharmacy,Pharmacie de L'Occident,,,,,,24/7,,,,,,,,,,,,,,,Royal Road,,Flic en Flac,144375544,6,2023/11/23 16:01:32+00,4ce4d03b98a84aa1bd39c0930316df54
+57.5183068961763,-20.3233571719395,"1793503162",node,18.75,pharmacy,,Pharmacie Espace Santé,,,,,,"Mo-Th 08:30-19:30; Fr-Sa 08:30-20:00; Su 08:30-13:00",,,,,yes,,,,,,,,,,,,,16859612,2,2013/07/07 11:00:07+00,63cbd5482b45460f94e00384fd7caa2b
+57.6542927977876,-20.1671296447164,"4662942948",node,6.25,,dentist,,,,,,,,,,,,,,,,,,,,,,,,,78843378,2,2019/12/25 10:30:16+00,b9ddb56d3f1842369bea86c61f3ca1b8
+57.6168000419783,-19.9879599264981,"5623646894",node,18.75,pharmacy,pharmacy,Pharmacie Cap Malheureux,,,,,,,,,,,yes,,,,,,,,,,,,Cap Malheureux,59037396,1,2018/05/17 06:01:48+00,78743025219e462aa04128e87a1f1aa6
+57.4746831972907,-20.244397045655,"4624285293",node,12.5,pharmacy,pharmacy,Pharmacie Edward VII,,,,,,,,,,,,,,,,,,,,,,,,129173809,4,2022/11/21 00:23:43+00,02110e36bddd49da9dce40062b0055d3
+,,"1005534804",way,15.625,pharmacy,pharmacy,Pro Care Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,114133352,1,2021/11/23 10:16:17+00,1f42c0c32a3e4fadbd4eadcb9d4caa27
+57.5294247363647,-20.3186219833797,"4977976119",node,15.625,pharmacy,,Pharmacie D'Arifat,,Kaart Ground Survey 2017,,,,,,,,,,,,,,,,,,,Sir Charles Lees Street,,,50415285,2,2017/07/19 19:47:22+00,ef91c981c4334d8da40271a20340a810
+57.4883329589707,-20.2636433202649,"9103899272",node,15.625,doctors,doctor,Dr S. Sibartie,,,,,,,,,,,,,,,,,,,,,Trianon Avenue No. 2,,,111382824,1,2021/09/18 16:41:19+00,055668b10b3f404ca494f75299642f38

@@ -1,0 +1,22 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+8.78331758804822,3.7305045188254,"9196170047",node,15.625,pharmacy,pharmacy,Farmacia,,,,,,,,,,,yes,,,,,,,,,,,,,112882698,1,2021/10/23 17:35:49+00,20572f095e5e4578a3789290e09f9820
+,,"499521969",way,12.5,hospital,hospital,Centro Médico La Paz,,,,,,,,,,,,,,,,,,,,,,,,135895908,6,2023/05/09 13:20:36+00,8b5b942c08934869a946d4e0ed7a26d9
+8.78112538509222,3.75536775820899,"10740005964",node,25,pharmacy,pharmacy,La Grande Pharmacie,,,,,,,,,,,yes,,,,,,,,,"85",Calle de Kenia,,Malabo,133764423,1,2023/03/16 20:28:32+00,00af0ea0f6af422d94ac86842688b25b
+8.78011595249305,3.75380696401905,"10735799438",node,18.75,pharmacy,pharmacy,Pharmacie Moderne,,,,,,,,,,,,,,,,,,,,"42",Avenida de la Libertad,,,133683467,1,2023/03/14 20:13:29+00,a5225f14ca73426b9e51bc0808bc5e49
+8.78369594715747,3.73400161646745,"9196189937",node,25,pharmacy,pharmacy,Farmatural,Faramtural,,,,,,,,,,yes,,,,,,,,,,calle Semu,,Malabo,112882948,1,2021/10/23 17:45:06+00,228d791a3d4748c7b667cc20437b37f3
+8.77993624448899,3.75322224245366,"10803293424",node,12.5,pharmacy,pharmacy,Farmacia Amanda,,,,,,,,,,,,,,,,,,,,,,,,134793832,1,2023/04/11 23:41:11+00,394cf7f2cb944db99a5869c0ff311666
+10.6145240443064,2.14676109709137,"8755383301",node,12.5,clinic,clinic,Hospital Micomeseng,,,,,,,,,,,,,,,,,,,,,,,,105130408,1,2021/05/22 12:11:52+00,a815c7c8afa34a2d8149cfb544fbf242
+,,"272208994",way,21.875,hospital,hospital,La Paz Medical Center,,website,,,,24/7,,,,,,,yes,,,,,,,,,,,162866917,9,2025/02/23 19:52:37+00,4855e426f4bd4e50b83238bdbb75b4bf
+,,"783931912",way,15.625,hospital,hospital,Hospital Provincial de Luba,,,,,,,,,,,,,,,,,,,,,,,Luba,126107669,6,2022/09/12 22:09:50+00,76c2d0a064f14ac1997c2fea8143d3f3
+8.78212827980693,3.75251506128291,"5749901123",node,15.625,clinic,clinic,Clínica Cristiana,,,,,,,,,,,,,,,,,,,,,,,Malabo,119914418,4,2022/04/19 16:00:41+00,4577028b1d1d4c5b83a8d92cd6e11b5e
+,,"609630820",way,12.5,hospital,hospital,Hospital General de Bata,,,,,,,,,,,,,,,,,,,,,,,,140563344,7,2023/08/30 00:20:34+00,4edc203b75b349a988419851bd60970b
+,,"678133924",way,12.5,hospital,hospital,Hospital de Sampaka,,,,,,,,,,,,,,,,,,,,,,,,162701062,2,2025/02/19 13:25:12+00,dd1ce5e28cb44796bcbf9738596a3ff1
+9.80509262347658,1.83175299875756,"6260202692",node,12.5,doctors,doctor,Hermana Madang Curandería,,,,,,,,,,,,,,,,,,,,,,,,104954806,4,2021/05/19 11:01:55+00,0bd3a683aea1407c8b1f21d7f8ce4254
+9.74955589324853,1.81668418087031,"4790712822",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,109161555,2,2021/08/04 19:14:59+00,9650743b39bf4d20a25938b804d4ab9a
+,,"265308137",way,15.625,hospital,hospital,Hospital Regional de Malabo,,Bing,,,,,,,,,,,,,,,,,,,,,,162568234,6,2025/02/16 12:15:22+00,da7bb78cead14ce390a04c4d68c78924
+,,"496384099",way,15.625,hospital,hospital,Hospital Provincial de Ebebiyín,,,,,,,,,,,,,,,,,,,,,,,Ebebiyín,138192069,6,2023/07/06 14:54:17+00,7e311d808db141e98c34e77f7f72b978
+,,"654429739",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,138712110,4,2023/07/19 11:26:35+00,fc82ddfc8b9144759e68613a105cd6e9
+,,"761531507",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,79306193,1,2020/01/07 18:26:24+00,b0b82fb01cfb4bc59898e675e711aace
+,,"783930771",way,12.5,hospital,hospital,Hôpital de la Paix,,,,,,,,,,,,,,,,,,,,,,,,135811283,5,2023/05/07 13:21:26+00,d45a3387dee64a4c95dd3ed551af920d
+8.877991016755,3.76393808656584,"6308279186",node,9.375,pharmacy,,Super Pharm,,,,,,,,,,,,,,,,,,,,,,,,72365664,2,2019/07/17 21:23:50+00,0b7b4b100d064997be169c6972476c36
+8.79882595293793,3.74382126749231,"12491930116",node,12.5,pharmacy,pharmacy,TM FARMA,,,,,,,,,,,,,,,,,,,,,,,,161228898,1,2025/01/11 07:33:12+00,8b1a26cd9d7b4b85b3896cb004c575f2

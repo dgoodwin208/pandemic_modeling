@@ -1,0 +1,553 @@
+X,Y,osm_id,osm_type,completeness,amenity,healthcare,name,operator,source,speciality,operator_type,operational_status,opening_hours,beds,staff_doctors,staff_nurses,health_amenity_type,dispensing,wheelchair,emergency,insurance,water_source,electricity,is_in_health_area,is_in_health_zone,url,addr_housenumber,addr_street,addr_postcode,addr_city,changeset_id,changeset_version,changeset_timestamp,uuid
+,,"859636206",way,12.5,clinic,clinic,Catholic Health Service,,,,,,,,,,,,,,,,,,,,,,,,172557134,2,2025/09/28 09:08:36+00,775143bb01c84326adbce178e701bcff
+14.5273695320035,-22.6781577339373,"1021955718",node,12.5,doctors,doctor,Dr. Moisel,,,,,,,,,,,,,,,,,,,,,,,,108697954,5,2021/07/27 15:36:52+00,1390a66ef03543c5a3089940f29c8e8b
+17.090998841323,-22.550663370793,"598226770",node,9.375,pharmacy,,,,,,,,,,,,,,yes,,,,,,,,,,,,146037759,4,2024/01/08 17:36:28+00,6b2a89cca9874812a0392cefbd719307
+,,"97021029",way,15.625,hospital,hospital,Rosh Care Clinic,,bing aerial,,,,,,,,,,,,,,,,,,,,,,122241163,4,2022/06/11 09:23:51+00,5f7e052360c64eb89a330e9f37ae5e27
+17.0462236365794,-22.5199915563292,"8491062114",node,21.875,pharmacy,pharmacy,Wellcare Pharmacy,,,,,,,,,,,yes,,,,,,,,,,Abraham Mashego Street,,Windhoek,100529444,1,2021/03/06 10:30:20+00,419e32911c5c4cc0801ad08b4a8ecab2
+,,"1311592419",way,12.5,clinic,clinic,Omutundungu Clinic,,,,,,,,,,,,,,,,,,,,,,,,155846365,1,2024/08/27 18:28:37+00,e2547c71e5c24cc2970d0f6501db9886
+,,"1078340087",way,12.5,clinic,clinic,Otjinene Health Centre,,,,,,,,,,,,,,,,,,,,,,,,123584163,1,2022/07/13 23:30:23+00,2a02242362374bff8b82223d80548454
+15.7013989887316,-17.7916613211495,"3924243202",node,12.5,doctors,doctor,Dr. Gauda,,,,,,,,,,,,,,,,,,,,,,,,110808598,2,2021/09/06 15:03:38+00,42629e3d676e4f07a7aecfe75fa73162
+,,"1060892388",way,12.5,clinic,clinic,Ibbu Clinic,,,,,,,,,,,,,,,,,,,,,,,,121072890,1,2022/05/16 23:26:29+00,e98c0d533d034e50a5ab2cb537f4792e
+,,"1311029170",way,12.5,clinic,clinic,Omagalanga Clinic,,,,,,,,,,,,,,,,,,,,,,,,155733970,1,2024/08/25 12:06:49+00,344d8f9973f045f7bf6ee0c8396b098f
+,,"1105220139",way,15.625,hospital,hospital,Military Hospital,,,,,,,,,,,,,,,,,,,,,,,Grootfontein,127779927,1,2022/10/19 12:28:59+00,3d6086c73fb9432ab089c8442ab50f6a
+,,"1309856849",way,12.5,clinic,clinic,Onawa Clinic,,,,,,,,,,,,,,,,,,,,,,,,155608388,1,2024/08/22 14:12:43+00,77035f4114954b9c9ea7bf793bf192b4
+17.0781475397393,-22.5818066673104,"11811087015",node,9.375,,laboratory,Dentex Dental Laboratory,,,,,,,,,,,,,,,,,,,,,,,,149892804,1,2024/04/12 06:30:29+00,4d025eeb5ecf439388f5558732a746ea
+17.0928789860238,-22.5745143277304,"2624612133",node,25,doctors,doctor,Dr. Hagen Fortsch,,,urology,,,,,,,,,,,,,,,,,"19",Heinitzburg St,,Windhoek,147647156,8,2024/02/19 12:03:25+00,7a8a07df8a894b53bcb45b1c3ba694fd
+17.0789855624186,-22.5620313269721,"11306564678",node,12.5,dentist,dentist,Dr Laurell Izaak,,,,,,,,,,,,,,,,,,,,,,,,172986520,3,2025/10/08 05:55:50+00,9bbea0d3108240648ace1ffe9becae00
+,,"1093394482",way,12.5,clinic,clinic,Otjondeka Clinic,,,,,,,,,,,,,,,,,,,,,,,,126022658,1,2022/09/10 16:45:11+00,d1667c8057cc4c91995d3116500ed7cf
+,,"1080265172",way,12.5,clinic,clinic,Leonardville Clinic,,,,,,,,,,,,,,,,,,,,,,,,123891148,1,2022/07/21 12:03:40+00,0d63c09a6e04432685602e5262eb60ed
+17.0908384955153,-22.5409024769094,"11622045420",node,9.375,,laboratory,PathCare,,,,,,,,,,,,,,,,,,,,,,,,150048218,3,2024/04/15 16:36:14+00,afcecb1079d14729917312196a54ab9b
+,,"413928934",way,12.5,hospital,hospital,Karibib Health Centre,,,,,,,,,,,,,,,,,,,,,,,,105421508,3,2021/05/27 11:18:53+00,e6a3961783964747ae3a32b4e7d58a2e
+14.5107949890301,-22.957905512553,"10207089638",node,18.75,doctors,doctor,baymed - health & aesthetics,,,"general;plastic_surgery",,,"Mo-Fr 08:00-13:00, 14:00-17:00",,,,,,,,,,,,,,,,,,132442979,2,2023/02/12 12:23:01+00,a86a087cc6984c03bc496b061b3adeec
+,,"1245121983",way,12.5,clinic,clinic,Old Bagani Clinic,,,,,,,,,,,,,,,,,,,,,,,,146926017,1,2024/02/01 00:33:34+00,4b4cb17a2d9f4af38903e93059da4b87
+14.5378795165737,-22.6405766328686,"4176807145",node,12.5,pharmacy,pharmacy,Ocean View Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,132446913,3,2023/02/12 14:04:49+00,988a467f77d642b392a9036ad7d48e89
+17.1069921831303,-22.5735241735085,"12144229396",node,18.75,doctors,doctor,Dr Van Tonder,,,otolaryngology,,,,,,,,,limited,,,,,,,,,,,,155928522,1,2024/08/29 13:15:58+00,6e17faa454694aa1bc0e83ff798025c2
+17.0906585360541,-22.5415648148982,"11247664825",node,28.125,hospital,hospital,Mediclinic Windhoek,Mediclinic,,,private,,,,,,,,,,,,,,,,,Heliodoor Street,"9000",Windhoek,162496007,3,2025/02/14 09:44:14+00,6b5f88c04f7f478aa79d6aef3b9dbc10
+,,"1069233705",way,12.5,clinic,clinic,Epinga Clinic,,,,,,,,,,,,,,,,,,,,,,,,122321568,1,2022/06/13 11:38:07+00,f03c4bf6fbbb4ca7b4c75ac448571311
+17.0838790851293,-22.5675995090693,"11907046283",node,18.75,dentist,dentist,Jauch Dentists,Dr. S. G. Jauch,,,,,,,,,,,yes,,,,,,,,,,,,170292533,2,2025/08/11 13:00:19+00,5bccf82fce7441b7a65c79469257e7c0
+16.6513882202588,-20.462027042766,"1369884654",node,9.375,pharmacy,,Maihs Apteek,,,,,,,,,,,,,,,,,,,,,,,,60468923,3,2018/07/06 14:05:31+00,595cb0e0e6844018bb23907b21425bec
+17.0979633646699,-22.592032421544,"13020391397",node,15.625,doctors,doctor,Dr Buys,,,,,,,,,,,,limited,,,,,,,,,,,,169382213,1,2025/07/24 07:55:34+00,552ebcca276c45b3a706e543ea77da2f
+,,"1241217839",way,18.75,clinic,clinic,Aroab Health Centre,,,,,,,,,,,,,,,,,,,,,,"23005",Aroab,146460354,1,2024/01/19 22:43:26+00,49b91dfce98c4d5690d79176c1245a15
+17.0947093422198,-22.6212321223534,"11911951382",node,12.5,dentist,dentist,Dr Obholzer,,,,,,,,,,,,,,,,,,,,,,,,151442756,1,2024/05/17 08:56:36+00,a5b25f043d2640749241a9693e5f5605
+16.6494782359827,-20.4651872717195,"4681666295",node,28.125,pharmacy,pharmacy,Waterberg Pharmacy,,,,,,Mo-Fr 08:00-17:00,,,,,yes,,,,,,,,,,Hindenburg Street,"9000",Otjiwarongo,72787738,6,2019/07/29 21:37:22+00,06175aa56d704270bd460a98acc9f4e9
+17.075767163057,-22.5480277651592,"11257677644",node,9.375,,laboratory,Namibia Institute of Pathology (NIP),,,,,,,,,,,,,,,,,,,,,,,,142701726,2,2023/10/17 08:52:45+00,949da329cbf249b0b229bbfb686e193c
+17.0837354193089,-22.5567016100202,"9003301417",node,18.75,clinic,clinic,DiagnoLab - Coronatest,,,,,,,,,,,,,,,,,,,,"402",Independence Avenue,,,149317933,4,2024/03/29 15:26:00+00,fc3597009f834860acba23b29d97cfd0
+,,"1311685239",way,18.75,clinic,clinic,Gochas Clinic,,,,,,,,,,,,,,,,,,,,,Carl Burger Street,,Gochas,155861553,1,2024/08/28 06:06:06+00,77ac20b437854691ada74a466ab823c9
+16.6479673979356,-20.4604465511036,"4680435789",node,15.625,doctors,,Dr Düring,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,Dr. Libertina Amathila Avenue,,,69097254,4,2019/04/10 21:04:15+00,047f5a1584f04a88881b5772f756806c
+15.9289290193189,-17.6447047655695,"11036251280",node,15.625,pharmacy,pharmacy,Tuvelula Pharmacy,,,,,,,,,,,,,,,,,,,,,,,Ongha,138312289,1,2023/07/09 21:24:19+00,eece999f34214736be6e15e2a347381e
+,,"1069569575",way,12.5,clinic,clinic,Maltahohe Clinic,,,,,,,,,,,,,,,,,,,,,,,,122368869,1,2022/06/14 11:24:38+00,344b199059d44b14a275c6a1433c501d
+15.9924065969755,-17.9183148117674,"10003083968",node,12.5,pharmacy,pharmacy,Pharmacy 2000,,,,,,,,,,,,,,,,,,,,,,,,143671882,2,2023/11/05 23:55:57+00,87a62d057275438f96c8a1060739f90b
+,,"241222101",way,12.5,hospital,hospital,Osire Health Center,,,,,,,,,,,,,,,,,,,,,,,,108072097,4,2021/07/15 20:11:47+00,7dc5e586832841b4a6b6d9b0cc20c514
+16.6481740956679,-20.4604873709721,"4681344895",node,12.5,pharmacy,,Medikor Pharmacy,,,,,,,,,,,,,,,,,,,,,Dr. Libertina Amathila Avenue,,,69097254,3,2019/04/10 21:04:15+00,90077d30813d487fa48c8182e3d3f09c
+17.0914788729177,-22.5848358032982,"5001917835",node,18.75,pharmacy,pharmacy,Life Style Pharmacy,,,,,,"Mo-Fr 08:00-19:00; Sa 08:00-14:00; Su,PH 09:00-13:00",,,,,,yes,,,,,,,,,,,,151359725,7,2024/05/15 12:55:22+00,d89a5dd564ad42b985098da77cb7b091
+,,"1068441745",way,12.5,clinic,clinic,Okatope Clinic,,,,,,,,,,,,,,,,,,,,,,,,122200977,1,2022/06/10 09:23:09+00,3d5b03751dd24df9969c79911e335af3
+,,"1060893563",way,12.5,clinic,clinic,Muyako Clinic,,,,,,,,,,,,,,,,,,,,,,,,121073137,1,2022/05/16 23:49:05+00,d61b4c92a1714ffe8d76744b3f58a52b
+14.5311304919574,-22.6762475820231,"4488467298",node,12.5,clinic,clinic,Medcare Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,108694450,3,2021/07/27 14:19:18+00,70883bfa806b40be9581cd330e2a4cc3
+,,"1218815719",way,12.5,clinic,clinic,Lisikili Clinic,,,,,,,,,,,,,,,,,,,,,,,,156854369,2,2024/09/20 07:58:13+00,ba101d00e5c0486c90cbacf6f0144b2b
+,,"809837633",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,125631661,2,2022/08/31 23:00:38+00,2fd0582c94c14f3caa0f6d6261d3f479
+17.0722116435499,-23.3232032697283,"4202460996",node,15.625,clinic,,Rehoboth Clinic,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,D1210,,,39514218,1,2016/05/23 16:58:45+00,e3e7be123708482387cdf26a03a32108
+18.1041700207818,-19.5631865313365,"10058752576",node,9.375,dentist,dentist,,,,,,,,,,,,,,,,,,,,,,,,,127800615,2,2022/10/19 18:45:40+00,2f4248ad2a8f472587bbf46948aa74fc
+,,"1055231896",way,12.5,clinic,clinic,Health Care Clinic,,,,,,,,,,,,,,,,,,,,,,,,120234179,1,2022/04/26 23:58:45+00,36d16d787fef40df86513aa029f55f89
+,,"1053971309",way,12.5,clinic,clinic,Ngweze Clinic,,,,,,,,,,,,,,,,,,,,,,,,120055720,1,2022/04/22 14:53:47+00,4814f721b5984b918d13240cdd7fafad
+,,"974137537",way,15.625,clinic,clinic,Okongue Clinic,,,,,,,,,,,,,,,,,,,,,,,Dâures,109833741,1,2021/08/17 20:52:24+00,9f3fcb3e4af94bcea626eee2cf769686
+15.7013599290628,-17.7913571418833,"3924243201",node,9.375,pharmacy,,Pama Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,36325659,1,2016/01/02 19:51:26+00,24f5baf3d994425089aadde447b98e12
+17.0629347207555,-22.6003301704096,"7022359081",node,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,77766989,1,2019/11/30 20:45:39+00,4ff7e41dd7314ae8bfc91b4a82199196
+,,"1055228627",way,15.625,clinic,clinic,Hakhaseb Clinic,,,,,,,,,,,,,,,,,,,,,,,Usakos,120233813,2,2022/04/26 23:36:46+00,29cf84b7b54c445a84ba0629bb52b230
+17.0455349794147,-22.5232541283205,"8491096196",node,18.75,pharmacy,pharmacy,Soweto Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,Windhoek,100529536,1,2021/03/06 10:33:10+00,6e2522e3a1cb468082e1d48df2ea10a6
+17.0944851263099,-22.6213950665511,"11911867936",node,15.625,doctors,doctor,Dr Eagles,,,surgery,,,,,,,,,,,,,,,,,,,,,156158018,2,2024/09/03 19:55:20+00,d1733cae9f1c4ae4b5acfdd72f412e4a
+,,"805505594",way,12.5,hospital,hospital,Ovitoto Clinic,,,,,,,,,,,,,,,,,,,,,,,,120743175,5,2022/05/09 11:10:45+00,8e01cc2ee0f946e0a9ef4fd3490fd032
+,,"1036095190",way,12.5,clinic,clinic,Sachona Clinic,,,,,,,,,,,,,,,,,,,,,,,,117959592,1,2022/02/28 21:15:27+00,1c87fc80f54f45b8afe9432cb29127d8
+,,"805505061",way,12.5,hospital,hospital,Oranjemund Private Hospital,,,,,,,,,,,,,,,,,,,,,,,,137514461,2,2023/06/19 11:28:43+00,6520aac2154c46968c22c1d4855fd9b3
+18.1064960827315,-19.5686353551325,"11603499269",node,9.375,pharmacy,,Clicks,,,,,,,,,,,,,,,,,,,,,,,,147270809,1,2024/02/09 19:59:16+00,e874e999e2b74bb9ab45187ee4ba4737
+,,"1220347276",way,18.75,,laboratory,Namibia Institute of Pathology,,,,,,,,,,,,,,,,,,,,,Mandume ya Ndemufayo Street,"17001",Eenhana,171608556,2,2025/09/07 23:41:02+00,324134782ebc4266824e3160978628eb
+,,"775685997",way,15.625,hospital,hospital,Okahandja State Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,81362656,1,2020/02/23 10:07:53+00,62a9073b01034155a11195ed7ae594d7
+,,"1097069236",way,21.875,clinic,clinic,Orwetoveni Clinic,,,,,,,,,,,,,,,,,,,,,B. Khuruseb Street,"12001",Otjiwarongo,126517703,1,2022/09/22 18:41:00+00,77c100dcd98e44e1aa900a736a72bfdf
+17.0907007808461,-22.6198726614777,"11391565117",node,15.625,dentist,dentist,Skyz Dental Centre,,,,,,"Mo-Fr 08:00-17:00; Sa 08:00-14:00; Su 08:00-12:00",,,,,,,,,,,,,,,,,,150409892,2,2024/04/23 18:18:50+00,95329e5ff2804a639362ef5ee8679b2a
+,,"1049740088",way,12.5,clinic,clinic,Onyaanya Health Centre,,,,,,,,,,,,,,,,,,,,,,,,119404928,1,2022/04/06 22:08:03+00,dd739de1fa314842aeee725d55945d68
+,,"742974153",way,15.625,clinic,clinic,Tseiblaagte Clinic,,,,,,,,,,,,,,,,,,,,,,,Keetmanshoop,136294367,2,2023/05/19 11:05:00+00,476e33ce85ac4cb6ba8e8197e3f4aa30
+14.5394565716558,-22.9526840059711,"8948470290",node,25,pharmacy,pharmacy,Chembassy Chemicals,,,,,,,,,,,yes,,,,,,,,,,Plein Street,"13014",Walvis Bay,108560020,1,2021/07/25 10:39:25+00,a5a57547d13d4ef6ba28d0654f86dfd7
+,,"1157539146",way,12.5,clinic,clinic,Onesi Health Centre,,,,,,,,,,,,,,,,,,,,,,,,134154917,1,2023/03/27 00:27:56+00,0406adb40df34857ba7bacf29fb5c956
+19.7691675280608,-17.913998131633,"2679321110",node,9.375,pharmacy,,Kavango Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,54698882,2,2017/12/17 09:48:55+00,e531356b8ab94d8ab8fbb56aad6cbfbb
+,,"934311354",way,12.5,hospital,hospital,Anamulenge Clinic,,,,,,,,,,,,,,,,,,,,,,,,161396499,2,2025/01/15 21:31:07+00,c62640d5e4fb449ea325ff30db2b1669
+,,"1039233302",way,12.5,clinic,clinic,Otjimanangombe Clinic,,,,,,,,,,,,,,,,,,,,,,,,157500910,2,2024/10/05 13:25:08+00,364a939a1ebd41a48e723a7825d9d462
+,,"1322886687",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,157712845,1,2024/10/10 12:11:08+00,5d6de5abc1914c83b5c9ae2cf47481ef
+,,"763602032",way,18.75,clinic,clinic,Okahandja Medical Centre,,,,,,,,,,,,,,,,,,,,,Martin Neib Avenue,,Okahandja,107729402,2,2021/07/09 23:25:34+00,58a57be261a64769842e58bc5112309f
+,,"901707608",way,9.375,,clinic,Khomas Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,98382453,1,2021/01/29 18:25:38+00,e7a52ad32af14d07837e449a26715bb9
+,,"1056402851",way,12.5,clinic,clinic,Tubusis Clinic,,,,,,,,,,,,,,,,,,,,,,,,120417696,1,2022/05/01 12:12:24+00,5b10002dde8f446d897bfcf32d7747f5
+,,"1069230605",way,12.5,clinic,clinic,Tses Clinic,,,,,,,,,,,,,,,,,,,,,,,,122321175,1,2022/06/13 11:29:58+00,2f952db6038a43a6831206aa9a7773ed
+17.0947461387748,-22.6212783066399,"11911867941",node,9.375,,optometrist,Brand & Chapman,,,,,,,,,,,,,,,,,,,,,,,,151442111,1,2024/05/17 08:41:28+00,1dd1fc4071ea47f69c0f79ce8ab34da2
+,,"805296204",way,15.625,hospital,hospital,Aranos State Clinic,,,,,,,,,,,,,yes,,,,,,,,,,,86399504,2,2020/06/09 09:47:15+00,f40080010b6e40389d3ab854d26909f7
+,,"568588818",way,12.5,hospital,hospital,Epako Clinic,,,,,,,,,,,,,,,,,,,,,,,,105167127,4,2021/05/23 14:11:29+00,60312d734de548ac9ff7431ad801e94e
+,,"1436686973",way,12.5,clinic,clinic,Ontananga Clinic,,,,,,,,,,,,,,,,,,,,,,,,173050702,1,2025/10/09 13:13:39+00,10e239bdb586427396ff41fc7adb14d3
+,,"629305692",way,12.5,hospital,hospital,Omuthiya State Hospital,,,,,,,,,,,,,,,,,,,,,,,,132949194,4,2023/02/24 01:53:41+00,625cd3bae20a47e6ad61e7e5a712841a
+13.8419300960768,-18.0644984720557,"5026832223",node,34.375,doctors,doctor,Northlands Medical Practice,doctors and receptionist,local knowledge,general,,,Mo-Sa 08:00-18:00,,,,,,,,,,,,,,,Doctor Sam Nujoma Avenue,"065",Opuwo,156544204,5,2024/09/12 19:46:22+00,bc9830b73bbb4189bd7ad1ce568f6c3d
+,,"1317987594",way,12.5,clinic,clinic,Kaisosi Clinic,,,,,,,,,,,,,,,,,,,,,,,,157058528,1,2024/09/24 22:11:12+00,fdb3ba644d374f02b0a35f30d6686cfd
+,,"1082669425",way,12.5,clinic,clinic,Kombat Clinic,,,,,,,,,,,,,,,,,,,,,,,,124299814,1,2022/07/31 11:41:13+00,a0a2574975ca415197a4db736eea488c
+,,"807013630",way,15.625,hospital,hospital,Outapi District Hospital,,,,,,,,,,,,,,,,,,,,,,,Outapi,103489389,2,2021/04/23 14:41:00+00,a7d9362ad0794c1b92de3b0fb50dd050
+24.2462968189961,-17.4775381003337,"4483622890",node,12.5,clinic,clinic,Ebola Testing,,,,,,,,,,,,,,,,,,,,,,,,92011286,2,2020/10/06 00:59:39+00,de5a13d1a8954e10a1397702e558b500
+,,"948457907",way,15.625,clinic,clinic,Elim Health Centre,,,,,,,,,,,,,,,,,,,,,,,Elim,106719767,2,2021/06/21 13:52:02+00,3aaf43b7d57849a4a6917bd4cbaae3af
+,,"805503001",way,12.5,hospital,hospital,Outjo State Clinic,,,,,,,,,,,,,,,,,,,,,,,,86717240,3,2020/06/16 10:59:29+00,67d886c9043a41b6861d8f46186a4d47
+,,"1226771885",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,144452135,1,2023/11/25 20:03:04+00,16a175e58be04a238f94b8f42372e5cc
+16.6490266190397,-20.4655881781483,"4685657897",node,25,doctors,doctor,Arogya Fam. Practice,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,Hindenburg Street,"9000",Otjiwarongo,72787738,7,2019/07/29 21:37:22+00,59c8fed76cf14c549c86565b25b244e5
+17.1010327337929,-22.5675580186486,"9613141118",node,15.625,pharmacy,pharmacy,Bergdoring Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,158482848,3,2024/10/29 06:09:23+00,2e5635f9c16c47b78433b56a0d1ea966
+17.9660079256495,-24.6261914080851,"7434200561",node,15.625,pharmacy,pharmacy,Hardap Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,83946188,1,2020/04/22 14:08:39+00,9fb358cf332b4a918d25c2c1c47e01cd
+,,"1080747309",way,12.5,clinic,clinic,Aminuis Clinic,,,,,,,,,,,,,,,,,,,,,,,,124122621,2,2022/07/27 06:21:31+00,cb4f41ec8e714708b27388fdd828a4c1
+,,"577312528",way,25,pharmacy,pharmacy,Tsumeb Pharmacy,,,,,,,,,,,yes,,,,,,,,,,President Avenue,"14002",Tsumeb,133266791,4,2023/03/03 19:03:24+00,e78e6822076f4ba7ac9536237d691e73
+17.0780626310601,-22.5337998197982,"12058648084",node,9.375,,laboratory,Omamanya Laboratory Services,,,,,,,,,,,,,,,,,,,,,,,,154042151,1,2024/07/17 06:37:48+00,3f71939d74244404b971c10352961e7c
+,,"1201562743",way,25,clinic,clinic,Oshaala Clinic,,,general,,,08:00-17:00,,,,,,,,,,,,,,,,"16001",Outapi,155463146,3,2024/08/19 14:12:17+00,f0335dd8cba64dc18b59154c7a543088
+,,"1083975127",way,12.5,clinic,clinic,Warmbad Clinic,,,,,,,,,,,,,,,,,,,,,,,,124513550,1,2022/08/05 09:28:52+00,893ac52101f24b918f3f534a69910414
+,,"122899777",way,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,146354356,5,2024/01/17 09:19:05+00,f1dd951ce2584b438493c6927f3a85aa
+,,"1068450812",way,12.5,hospital,hospital,Okongo District Hospital,,,,,,,,,,,,,,,,,,,,,,,,122202427,1,2022/06/10 09:52:14+00,3092374f8d3d4daeafb0dcb16ece66a6
+,,"1070061965",way,12.5,clinic,clinic,Enkono Clinic,,,,,,,,,,,,,,,,,,,,,,,,122436407,1,2022/06/15 21:48:27+00,62ed79d5e72547d4b29c71eabcd552e2
+17.0983145664128,-22.6046429110495,"1744379559",node,15.625,pharmacy,pharmacy,Olympia Pharmacy,,,,,,"Mo-Fr 08:00-18:00; Sa 08:00-13:00; Su,PH off",,,,,,,,,,,,,,,,,,172881221,11,2025/10/05 18:38:41+00,e0fa41fc420a408c94fbbebbc69b7b98
+17.0468286423505,-22.5735982695325,"3686713081",node,15.625,pharmacy,pharmacy,Rocky Crest Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,106427466,3,2021/06/16 00:11:35+00,a075581732364083ac48bd37b2749f19
+17.1178307383049,-22.6035370027448,"3851443049",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,35506100,1,2015/11/22 11:17:34+00,921f8f0393da4e65a634a3891f5c6fe4
+,,"1320061349",way,12.5,clinic,clinic,Onamukulo Clinic,,,,,,,,,,,,,,,,,,,,,,,,157373245,1,2024/10/02 10:39:02+00,c54088fd27e34118b60d05d7e54051ef
+,,"743721806",way,18.75,hospital,hospital,Oshakati State Hospital,,,,,,,,,,,,,yes,,,,,,,,,,Oshakati,133165061,4,2023/03/01 10:16:03+00,bc67b113b53a4bb0bf3360b2f4ff66cf
+17.0947461387748,-22.621241426266,"11911867945",node,18.75,doctors,doctor,Dr Juline Smit,,,internal,,,"Mo-Th 08:00-16:00; Fr 08:00-12:00; Sa-Su off",,,,,,,,,,,,,,,,,,151442756,2,2024/05/17 08:56:36+00,ef4d4de53bc047bcacaaf5d26688f5cb
+,,"805503870",way,12.5,hospital,hospital,Kamanjab State Clinic,,,,,,,,,,,,,,,,,,,,,,,,99132938,3,2021/02/11 20:28:50+00,037001944c8b46fa997e65e9c0b4ac7e
+,,"819121692",way,12.5,doctors,doctor,Olympia Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,149497143,5,2024/04/02 19:54:48+00,81322f34d17a4dda946d6fb51116ce9f
+,,"1266298037",way,18.75,clinic,clinic,Maternity Hospital,,,,,,,,,,,,,,,,,,,,,,"19001",Rundu,149151631,1,2024/03/25 22:18:56+00,7bc54979dab541d99448fbda71903fb6
+,,"1159112555",way,18.75,clinic,clinic,Henties Bay Clinic,,,,,,,,,,,,,,,,,,,,,Sand Street,,Henties Bay,134404684,1,2023/04/02 08:34:05+00,0ac38b08597c4521a316a1c0327d8185
+,,"518979472",way,15.625,pharmacy,pharmacy,Multi Regional Medical Depot,,,,,,,,,,,,,,,,,,,,,,,Oshakati,133148576,2,2023/02/28 22:26:55+00,1d8eb853f0434b7fb4175576dca0c5b2
+,,"1053928832",way,12.5,clinic,clinic,Sibbinda Health Centre,,,,,,,,,,,,,,,,,,,,,,,,120046549,1,2022/04/22 11:40:29+00,e68d2e8a9af145edb87cca086806d1b3
+17.0776095891936,-23.3208631261812,"4744587428",node,9.375,pharmacy,,Rehoboth Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,47004202,1,2017/03/20 07:50:05+00,1c266a15a91a410897b4e511a880f6f8
+16.6522998360479,-20.4593733322213,"4681442429",node,15.625,pharmacy,pharmacy,Badenhorst Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,72785275,4,2019/07/29 20:07:45+00,4f240623ff0940c18a836b13b35ccb0c
+,,"526106820",way,12.5,clinic,clinic,Katere Clinic,,,,,,,,,,,,,,,,,,,,,,,,118177241,2,2022/03/06 23:05:37+00,8f2f9296f7ed48c0a554736796e0a4f3
+,,"1068124950",way,12.5,clinic,clinic,Ondobe Clinic,,,,,,,,,,,,,,,,,,,,,,,,122150824,1,2022/06/09 08:02:27+00,6b6c22715d2e46ba98a9147f4c4223b2
+,,"242368430",way,31.25,hospital,hospital,Lady Pohamba Private Hospital,,,,private,,24/7,,,,,,yes,yes,,,,,,,,Frankie Fredericks Drive,,Windhoek,156158018,7,2024/09/03 19:55:20+00,aeb080bd4d9546e7beb9731952afb96f
+14.5045504711658,-22.9562581333033,"9837360637",node,15.625,pharmacy,pharmacy,Sentrum Pharmacy,,,,,,"Mo-Fr 09:00-18:00; Sa 09:00-14:00; Su 10:00-13:00",,,,,,,,,,,,,,,,,,132442979,2,2023/02/12 12:23:01+00,8504716c12494e219fa1fb1b90a80f7c
+17.1000327727444,-22.5721676462989,"4202259214",node,18.75,doctors,doctor,Dr Susan Kruger,,,,,,,,,,,,,,,,,,,,"10",Schröder Street,,,166006994,4,2025/05/09 00:33:54+00,98be1797741e4d96b67c156f3ebdd844
+,,"805502402",way,12.5,hospital,hospital,Okahao State Hospital,,,,,,,,,,,,,,,,,,,,,,,,86399504,2,2020/06/09 09:47:15+00,c61bbef5ce5944aab3ff7ffd6df5de88
+17.0661787687407,-22.5330805686869,"9864507207",node,18.75,pharmacy,pharmacy,B1 Pharmacy,,,,,,,,,,,,,,,,,,,,,Independence Avenue,,Windhoek,150736823,3,2024/05/01 07:33:20+00,2b719047993c4f7e8fae02da3ee57ae8
+17.094757370525,-22.6212364809431,"11911867946",node,12.5,doctors,doctor,Suzan Smit Dietitian,,,,,,,,,,,,,,,,,,,,,,,,151442756,2,2024/05/17 08:56:36+00,88cd075783044882a36da4494ab5cffd
+,,"794542075",way,28.125,hospital,hospital,Mariental State Hospital,,,,,,,,,,,,yes,yes,,,,,,,"1135",Dr. Alphie Grobler Road,,Mariental,106266931,3,2021/06/12 21:53:53+00,ff5b63de20544770912b57e5fac2832f
+,,"1053924427",way,12.5,clinic,clinic,Kaenda Clinic,,,,,,,,,,,,,,,,,,,,,,,,120045769,1,2022/04/22 11:25:26+00,93470aec3c294c338acf685182aa2475
+,,"1245509279",way,12.5,clinic,clinic,Omauni Clinic,,,,,,,,,,,,,,,,,,,,,,,,146982030,1,2024/02/02 11:51:05+00,e91e5fddb99f416a8fcfe60c429cb763
+,,"287685099",way,12.5,hospital,hospital,Gobabis District Hospital,,,,,,,,,,,,,,,,,,,,,,,,135420308,6,2023/04/27 10:05:03+00,c8af4abca80f48a5b90335da72728581
+17.087871637068,-22.5503008534808,"4317536500",node,21.875,doctors,doctor,J. Terblanche,,,,,,,,,,,,,,,,,,,,"15",Outeniqua Street,,Windhoek,121626715,3,2022/05/28 17:32:58+00,330c0e90d5de4dd19aa9f17ba49c1792
+14.5309307512048,-22.9320034200901,"2499463535",node,12.5,clinic,clinic,Coastal Clinic,,,,,,,,,,,,,,,,,,,,,,,,138196885,2,2023/07/06 16:58:38+00,084c79a55d634b3fa8edd5e6649894e5
+15.7646571281631,-17.7780672153065,"4675456520",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,143819445,2,2023/11/09 12:04:26+00,8a45f2093da9455a8b7542ed288f17eb
+17.0946825201297,-22.621304877273,"11911867940",node,15.625,doctors,doctor,Dr Afshani,,,anaesthetics,,,,,,,,,,,,,,,,,,,,,151442111,1,2024/05/17 08:41:28+00,77f3097865ef4584a57d2124cc34952b
+,,"956140492",way,12.5,clinic,clinic,Omatjete Clinic,,,,,,,,,,,,,,,,,,,,,,,,106644387,1,2021/06/19 19:37:40+00,a183e8b4b2e54c8093b9d1776137ef82
+,,"1049599152",way,12.5,clinic,clinic,Tondoro Health Centre,,,,,,,,,,,,,,,,,,,,,,,,119387623,2,2022/04/06 13:25:36+00,442469c61b48404ab910d07edfd38070
+17.0820475554669,-22.5739623794064,"11078215757",node,31.25,doctors,doctor,Dr Von Wietersheim,,,general,,,"Mo-Thu 08:00-17:00; Fri 08:00-15:00",,,,,,,,,,,,,,"21",Trift Street,"9000",Windhoek,173135010,6,2025/10/11 12:30:17+00,81afa692b52e4485b8fcd4670ba620e2
+17.0855873169961,-22.5691551064793,"11118987400",node,15.625,pharmacy,pharmacy,City Plaza Pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,146637009,3,2024/01/24 16:24:03+00,1e265a2f2c7c409ea78b143453c5b306
+17.0948012916976,-22.6212254168309,"11911867944",node,9.375,,laboratory,High Care Laboratory,,,,,,,,,,,,,,,,,,,,,,,,151442756,2,2024/05/17 08:56:36+00,9a6bd0e0c07a4ae2bce774be955656ee
+,,"1068119785",way,12.5,clinic,clinic,Ongula ya Netanga Clinic,,,,,,,,,,,,,,,,,,,,,,,,122150102,1,2022/06/09 07:44:49+00,b2c2ee89331f4426a0299d24fc2f5b82
+,,"1070069082",way,12.5,clinic,clinic,Ompundja Clinic,,,,,,,,,,,,,,,,,,,,,,,,122436688,1,2022/06/15 21:58:18+00,37af4e5acecb4342810449a7e1840baf
+,,"1086823947",way,12.5,clinic,clinic,Shambyu Health Center,,,,,,,,,,,,,,,,,,,,,,,,124994721,2,2022/08/17 00:11:39+00,3e9589e083c24a14a72dd59fe3ce0fad
+17.0840058195053,-22.5634092280348,"1318831572",node,12.5,pharmacy,pharmacy,Luisen-Apotheke,,,,,,,,,,,,,,,,,,,,,,,,137449676,5,2023/06/17 14:32:41+00,024646b7e24c401cb8516efb34f8376e
+,,"1082653170",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,124295217,1,2022/07/31 09:59:41+00,24766f313b884f29a6cfe295426c8ddd
+17.0945149658852,-22.6213059669204,"11911951378",node,18.75,doctors,doctor,Dr Amwaama / Shuuya / Nashandi,Sanitas Medical Services,,general,,,,,,,,,,,,,,,,,,,,,162404949,3,2025/02/11 19:49:56+00,a295a6b7646d46f5a11e5d924336b0d0
+,,"1036324160",way,12.5,clinic,clinic,Kapako Clinic,,,,,,,,,,,,,,,,,,,,,,,,117986366,1,2022/03/01 16:33:54+00,6e17460822a7478d9436d8cb65db91c1
+,,"227396478",way,18.75,hospital,hospital,Rundu District Hospital,,,,,,,,,,,,,,,,,,,,,,"19001",Rundu,149151631,8,2024/03/25 22:18:56+00,70a01a0a1f8e477f869557298ba6cdd4
+,,"1069557817",way,12.5,clinic,clinic,Epembe Clinic,,,,,,,,,,,,,,,,,,,,,,,,122366876,1,2022/06/14 10:41:28+00,1cfc5b7c850c439e964f896999a98876
+,,"1086303430",way,12.5,clinic,clinic,Ongongo Clinic,,,,,,,,,,,,,,,,,,,,,,,,124906321,1,2022/08/14 23:16:21+00,2b2ff33cf185497698fb5872aa903cbb
+,,"474861239",way,12.5,clinic,clinic,Impalila Clinic,,,,,,,,,,,,,,,,,,,,,,,,122172227,2,2022/06/09 15:37:01+00,1a51c4b995c4452a9eee1b81a02276e9
+16.6489057519959,-20.4654535647833,"4681666296",node,25,doctors,doctor,Yahweh Repheka,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,Hindenburg Street,"9000",Otjiwarongo,72787738,6,2019/07/29 21:37:22+00,a5efad154de342cc8db5df070c17982b
+14.5243676372009,-22.6785361768656,"2233745630",node,9.375,pharmacy,,Adler-Apotheke,,,,,,,,,,,,,,,,,,,,,,,,35495805,2,2015/11/21 19:49:14+00,b916b8c4ce8d4eafa198948b66ea7976
+,,"1060899897",way,12.5,clinic,clinic,Kabbe Clinic,,,,,,,,,,,,,,,,,,,,,,,,121073782,1,2022/05/17 00:47:35+00,41a04474219b4eaeb52558e93db8525d
+16.6553843764158,-20.4582637358792,"12168262654",node,21.875,hospital,hospital,Esindano Medical Practice,,,general,,,,,,,,,,,,,,,,,,Werft Street,,Otjiwarongo,156445613,1,2024/09/10 15:11:52+00,a9b74d2a51ae49cbb4125c5611c1081b
+17.0822588632459,-22.5623503422069,"4423167690",node,12.5,doctors,doctor,Swamed Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,137449815,3,2023/06/17 14:35:55+00,142ec1c98464422cb588c3be80726b68
+,,"793863147",way,15.625,hospital,hospital,Tsandi District Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,138166803,2,2023/07/06 00:07:28+00,17fa40b124574b1f995c139652196fd3
+,,"1310947843",way,12.5,clinic,clinic,Mahanene Health Centre,,,,,,,,,,,,,,,,,,,,,,,,155716252,1,2024/08/24 22:27:12+00,a187587242ff48239ac721c38a86f1ac
+,,"808534865",way,9.375,,optometrist,Luca Optics,,,,,,,,,,,,,,,,,,,,,,,,119116366,2,2022/03/30 13:13:46+00,84c8b5f5b77a4a38bf1e2554b1f8708c
+,,"804846756",way,12.5,clinic,clinic,Mpungu Health Centre,,,,,,,,,,,,,,,,,,,,,,,,147012403,4,2024/02/03 09:18:25+00,0961eeae6a5b47889c6cf9b493f34a52
+17.0747880729473,-23.3171243782707,"4744846023",node,9.375,pharmacy,,Baines Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,77035299,4,2019/11/13 19:56:37+00,a2dc0ecd60e447148983692806abc0f2
+,,"438744905",way,25,hospital,hospital,Lüderitz Hospital,,,,,,,,,,,,,yes,,,,,,,,Hoof Street,"23016",Lüderitz,136446273,8,2023/05/23 09:00:03+00,65a44229ab38498eb16edc8947ed4d02
+,,"1083306847",way,12.5,clinic,clinic,Rehoboth Clinic,,,,,,,,,,,,,,,,,,,,,,,,124407330,1,2022/08/02 19:47:10+00,ce470d52673545208a8db89c1e2d0a4b
+13.8418795532007,-18.063941829866,"5028297634",node,12.5,dentist,dentist,Pulpmed Dental Service,,,,,,,,,,,,,,,,,,,,,,,,86245767,2,2020/06/05 12:47:22+00,3d18e19d847e4961ba0614712cd67b7e
+17.09478637191,-22.6212695056416,"11911867942",node,15.625,doctors,doctor,Dr Spangenberg,,,orthopaedics,,,,,,,,,,,,,,,,,,,,,151442111,1,2024/05/17 08:41:28+00,fdcba33c294e44998485a1d59e61f9fe
+17.0870327761984,-22.5637217053851,"11299536594",node,15.625,doctors,doctor,Dr. Wang,,,acupuncture,,,,,,,,,,,,,,,,,,,,,149808000,2,2024/04/10 08:31:14+00,22b2a51469bb4360948445e3664937f4
+17.0932209676733,-22.581834830505,"9347181713",node,25,doctors,doctor,Skin Health Clinic,Dr. N. Haitembu,,dermatology,,,,,,,,,,,,,,,,,,Seretse Khama Street,,Windhoek,120089266,2,2022/04/23 12:34:31+00,7aa6fcfe5d1c4f23a3f99634d8833303
+,,"1055227472",way,12.5,clinic,clinic,Okombahe Clinic,,,,,,,,,,,,,,,,,,,,,,,,120233611,1,2022/04/26 23:20:49+00,6f2d451112c14b17b909940c69136214
+14.9903148685885,-17.506882724249,"5038896119",node,15.625,pharmacy,pharmacy,Wap,,,,,,,,,,,,,,,,,,,,,,,Outapi,144253388,2,2023/11/20 16:06:12+00,47f3c42ad31d4cce99a700d8886ae8a2
+,,"314717588",way,12.5,hospital,hospital,Bunya Health Centre,,,,,,,,,,,,,,,,,,,,,,,,118232786,4,2022/03/08 11:35:01+00,df01fa3afb5c441cba69226793409aa5
+18.9771659396041,-22.4507019670122,"10845862709",node,12.5,doctors,doctor,Dr. Ihemba,,,,,,,,,,,,,,,,,,,,,,,,135420308,1,2023/04/27 10:05:03+00,fac077ef0e6e4bfe8f5c264d1ed6f7c8
+,,"426908949",way,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,117313713,3,2022/02/12 09:16:00+00,ffaa1fb09a774047846535416298280b
+,,"1310207191",way,12.5,clinic,clinic,Sheetekela Clinic,,,,,,,,,,,,,,,,,,,,,,,,155640063,1,2024/08/23 08:45:09+00,5bef1138107c45cd92cb3821ef261014
+17.0946981942886,-22.6212675778038,"11911951370",node,15.625,doctors,doctor,Dr V Morkel,,,general,,,,,,,,,,,,,,,,,,,,,151442756,1,2024/05/17 08:56:36+00,f61a7bdd69b04e8d9edc81941f369ce1
+,,"1316512555",way,12.5,clinic,clinic,Edundja Clinic,,,,,,,,,,,,,,,,,,,,,,,,156794003,1,2024/09/18 21:14:33+00,68e3bb5de4df4bec8e3fa382369d8a75
+,,"390308622",way,25,,physiotherapist,Magg Biokinetics,,,chiropractic,,,"Mo-Th 06:00-19:00; Fr 06:00-15:00",,,,,,,,,,,,,,"21",Trift Street,,Windhoek,173135010,10,2025/10/11 12:30:17+00,44f7a0e9ca004ffe87b6a1144b98f637
+,,"1081333313",way,31.25,hospital,clinic,Maxuilili Clinic,,,,government,,Mo-Fr 07:00-17:00,,,,,,yes,yes,,,,,,,,Tauno Hatuiikulipi Street,,Windhoek,137496138,4,2023/06/19 00:28:59+00,aa891dddd8fa48f0a9b29fd4843bf1d0
+14.5270187493556,-22.6452100651238,"12638571648",node,15.625,pharmacy,pharmacy,Clicks,Clicks,,,,,,,,,,,,,,,,,,,,,,,163244157,1,2025/03/05 13:01:35+00,f0e2d643e934492296233f94d69d0e19
+,,"1312404078",way,12.5,clinic,clinic,Onamandongo Clinic,,,,,,,,,,,,,,,,,,,,,,,,156007071,1,2024/08/31 10:01:40+00,d86e200d66314639bb605ead83efc587
+,,"1304553585",way,12.5,clinic,clinic,Mafuta Clinic,,,,,,,,,,,,,,,,,,,,,,,,154585066,1,2024/07/30 01:24:42+00,6618f19eb3ad4fc48f80ba563185e23e
+,,"1309881591",way,15.625,clinic,clinic,St. Benedict Clinic,,,,,,,,,,,,,,,,,,,,,,,Oshitutuma,155610439,1,2024/08/22 14:52:03+00,59a6684e85e0482086bc5d7a4ff87e7a
+,,"1317384347",way,12.5,clinic,clinic,Uutsathima Clinic,,,,,,,,,,,,,,,,,,,,,,,,156951340,1,2024/09/22 13:19:20+00,f9f6d098ab8841ebae3fbea773801ba7
+17.0669668352771,-22.5736849384114,"972758278",node,9.375,pharmacy,,Highlands Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,150833794,3,2024/05/03 11:59:55+00,5cd2687e89d54db89bfeaa2fee00905c
+16.6480994967296,-20.4603356585246,"4680330193",node,18.75,dentist,dentist,Medikor Dental Practice,,,,,,Mo-Fr 08:30-17:00,,,,,,,,,,,,,,,Dr. Libertina Amathila Avenue,,,149665082,3,2024/04/06 17:25:54+00,5a875909d6de445da1d720f062c88f58
+17.0758255849221,-22.5479829219772,"11257677641",node,12.5,doctors,doctor,Rhino Str 29 Medical Practice,,,,,,,,,,,,,,,,,,,,,,,,142701726,2,2023/10/17 08:52:45+00,1193541727c24d498ea4f55a0bfe95d6
+,,"722613939",way,12.5,clinic,clinic,Ncuncuni Clinic,,,,,,,,,,,,,,,,,,,,,,,,125017810,2,2022/08/17 13:16:49+00,3bb02a56e05b4bc69b84571dafda4584
+14.5300934828968,-22.6700788365635,"12994408453",node,9.375,hospital,,Swakopmund State Hospital,,,,,,,,,,,,,,,,,,,,,,,,168800987,1,2025/07/11 14:52:37+00,baa904e66b41482a8f1c41e5dfe7b9c0
+17.0946748925978,-22.6213090682246,"11911867939",node,18.75,doctors,doctor,Dr Bau,,,paediatrics,,,"Mo-Th 07:30-16:30; Fr 07:30-12:00; Sa-Su off",,,,,,,,,,,,,,,,,,151442111,1,2024/05/17 08:41:28+00,461e64a3300c4a75a61bb396da79de7f
+,,"1068261040",way,12.5,clinic,clinic,Mbalisinte Clinic,,,,,,,,,,,,,,,,,,,,,,,,122171766,1,2022/06/09 15:24:54+00,e4c01242f45a4518979f4fd755963470
+,,"804695686",way,21.875,clinic,clinic,Eeenhana Greenside Hospital,,,,,,,,,,,,,,,,,,,,,Mandume ya Ndemufayo Street,"17001",Eenhana,171608556,3,2025/09/07 23:41:02+00,4348b32783484c7eaadbf3d2e7fb43b9
+,,"805501226",way,21.875,hospital,hospital,Tamariskia Clinic,,,,,,,,,,,,,yes,,,,,,,,Franziska van Neel St,,Swakopmund,108695558,6,2021/07/27 14:43:53+00,f8d916075deb4a62bb0669df1f8a4425
+,,"318530569",way,12.5,clinic,clinic,Divundu Clinic,,,,,,,,,,,,,,,,,,,,,,,,147139873,3,2024/02/06 15:15:16+00,e76ef3204f2f4dceb7478b239ddbfa11
+,,"1039230316",way,12.5,clinic,clinic,Omatako Clinic,,,,,,,,,,,,,,,,,,,,,,,,118345652,1,2022/03/11 03:12:56+00,d6337c84ad3540be8fcaffe276f35643
+15.9916761979329,-17.9167922390559,"11459409610",node,12.5,pharmacy,pharmacy,Bom Dia Main Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,157034502,2,2024/09/24 11:18:04+00,fd7337cea6004e2d806c15ccdac029e3
+,,"1430392275",way,12.5,clinic,clinic,Onghalulu Clinic,,,,,,,,,,,,,,,,,,,,,,,,172036370,1,2025/09/16 22:08:42+00,00c46d2198434844a3beab77712b979e
+17.0465203559518,-22.519697854442,"8491107351",node,21.875,doctors,doctor,Soweto Medical Centre,,,,,,,,,,,,,,,,,,,,"81",Abraham Mashego Street,,Windhoek,100529406,1,2021/03/06 10:29:24+00,40fc216bf5424b9e9306df03580f1db2
+17.0743794551676,-23.3190173472834,"4748302328",node,9.375,pharmacy,,Chrismed Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,47059935,1,2017/03/22 07:27:10+00,a29eaa346f9f4d73b58fa3673d69ff48
+,,"1036326782",way,12.5,clinic,clinic,Mupini Health Centre,,,,,,,,,,,,,,,,,,,,,,,,117986721,1,2022/03/01 16:46:03+00,810b9b3dc369429a9d8dcccb78075243
+,,"1049646732",way,12.5,clinic,clinic,Mbambi Clinic,,,,,,,,,,,,,,,,,,,,,,,,119393630,1,2022/04/06 15:49:28+00,1fa5aa8e66994b01a97a8bdd94af5dd1
+,,"785092663",way,12.5,clinic,centre,Tsumkwe Clinic,,,,,,,,,,,,,,,,,,,,,,,,82717976,2,2020/03/27 13:56:42+00,633afc5998c442eeb95a26cce6e66ca5
+,,"1037841137",way,12.5,clinic,clinic,Biro Clinic,,,,,,,,,,,,,,,,,,,,,,,,118177409,1,2022/03/06 23:19:08+00,fcc7cbc86b724d89ba7f741077d9a9f9
+15.1541481347512,-26.6477945551294,"7819492493",node,25,pharmacy,pharmacy,Lüderitzbucht Pharmacy,,,,,,08:00-17:30,,,,,,,,,,,,,,"208",Bai Weg,,Lüderitz,136445414,3,2023/05/23 08:44:39+00,0fbeee610a1a459ea568605877c46d1d
+,,"579404304",way,28.125,doctors,doctor,Dr. Kandmiri,,,general,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,Son Road,"12001",Otjiwarongo,142474324,3,2023/10/12 11:10:02+00,9b91da33f2f14b7d869733594aa23b77
+,,"224849773",way,21.875,pharmacy,pharmacy,Helao Nafidi Pharmacy,,,,,,Mo-Fr 08:30-19:00,,,,,no,,,,,,,,,,Oshikango Main Road,,,111279633,2,2021/09/16 08:51:30+00,ba1459762f0a442f9ea5ff78deeb6432
+,,"1340813284",way,12.5,clinic,clinic,Buitepos Clinic,,,,,,,,,,,,,,,,,,,,,,,,160033331,1,2024/12/07 16:48:05+00,d2786560963e4a3e8b58aee9b9cf1dbf
+,,"1055228951",way,12.5,clinic,clinic,Kalkfeld Clinic,,,,,,,,,,,,,,,,,,,,,,,,120233813,1,2022/04/26 23:36:46+00,e4f794cc33594a8ab56601dfd9df5a64
+,,"1329883706",way,25,clinic,clinic,Donkerhoek Clinic,MoHSS,,,public,,,,,,,,,,,,,,,,,Judika Street,,Windhoek,158617046,1,2024/11/01 12:43:51+00,8a3f198734c84c9e9d4f575c9049b901
+,,"122000497",way,12.5,hospital,hospital,Windhoek Central Hospital,,,,,,,,,,,,,,,,,,,,,,,,126596036,5,2022/09/24 20:10:59+00,2006ec96f1a64b48af2394523dfbe3f7
+,,"117335243",way,25,hospital,hospital,Paramount Healthcare Centre,,,,,,24/7,,,,,,,no,,,,,,,,General Murtala Mohammed Avenue,,Windhoek,147154623,9,2024/02/06 22:54:08+00,12b3d638c1ad4caa9d16fd0703de45fb
+14.526092632874,-22.6781869029604,"1021955712",node,12.5,pharmacy,pharmacy,Swakopmund Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,108697954,8,2021/07/27 15:36:52+00,8180e084d32b49219d15943f80472de6
+17.0981444975974,-22.6038374101545,"1744379556",node,15.625,dentist,,Olympia Dental Practice,,,,,,,,,,,,,,,,,,,,"27",Hamutenya Wanahepo Ndadi Street,,,149497143,6,2024/04/02 19:54:48+00,62d45b26b7754f37aa1cbaab03f435b6
+17.0757852679679,-22.547950735469,"11257677638",node,12.5,doctors,doctor,Dr.Olga Khodkevich,,,,,,,,,,,,,,,,,,,,,,,,142957454,2,2023/10/22 08:39:11+00,8a88e6bf50ef41d4b25844e3a50a87fe
+,,"1318500426",way,12.5,clinic,clinic,Mile 10 Clinic,,,,,,,,,,,,,,,,,,,,,,,,157145161,1,2024/09/26 20:01:43+00,ec39cce1e7c241a9b7b2df677be1cd64
+,,"1226771886",way,12.5,clinic,clinic,Clinic Hoachanas,,,,,,,,,,,,,,,,,,,,,,,,144452762,2,2023/11/25 20:31:42+00,b39dcdc3312943f8a3948dfd9a11bfe6
+,,"197857513",way,12.5,hospital,,Tsumeb State Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,63291089,5,2018/10/07 22:07:07+00,280352c3217b4636ab5ef963120699b0
+,,"778709299",way,12.5,clinic,clinic,Olukonda Clinic,,,,,,,,,,,,,,,,,,,,,,,,122437177,2,2022/06/15 22:21:29+00,928514a187cb425ca69668ce1fcfca6a
+14.5098429724677,-22.9577111362184,"9852820818",node,15.625,pharmacy,pharmacy,Ocean View Chemist,,,,,,Mo-Su 08:00-20:00,,,,,,,,,,,,,,,,,,138196885,2,2023/07/06 16:58:38+00,8d7ae8809052460fba3493824852a03b
+14.5313515227441,-22.6762802714455,"8954331987",node,12.5,dentist,dentist,Medcare Dentist Centre,,,,,,,,,,,,,,,,,,,,,,,,108694450,1,2021/07/27 14:19:18+00,4ce75a7d6c7f4617976fa1535a3c653c
+17.0795693619746,-22.5680311770828,"12775787076",node,18.75,doctors,doctor,Dr. Katarzyna Jagiello,,,general,,,,,,,,,,,,,,,,,,,,Windhoek,165282756,1,2025/04/22 12:16:46+00,6a6bbbb336bb4dd7a6a4fef235e49f42
+17.0803270860215,-22.5736695157095,"11929994416",node,15.625,doctors,doctor,Winfried Eugen Weder,,,general,,,,,,,,,,,,,,,,,,,,,157938046,3,2024/10/15 20:33:38+00,3cbd75d31dab42c6916783b169952e78
+,,"805506567",way,12.5,hospital,hospital,Nankudu Hospital,,,,,,,,,,,,,,,,,,,,,,,,85396072,1,2020/05/18 17:28:04+00,5284232a622a4d308f10d399e104d600
+,,"1053978651",way,12.5,clinic,clinic,Mavuluma Clinic,,,,,,,,,,,,,,,,,,,,,,,,120056674,1,2022/04/22 15:13:25+00,34e58417986848ac9dc962b0635bbeac
+17.1008448953428,-22.5696009399091,"11120744662",node,31.25,doctors,doctor,Medical Skincare Center,Dr. Niels Holm,,dermatology,,,"Mo-Fr 08:00-17:00; Sa-Su off",,,,,,,,,,,,,,"11",Koch Street,,Windhoek,162746117,6,2025/02/20 15:17:30+00,bb3df8d12b60454bb6ca81c671b6df99
+,,"579404857",way,28.125,doctors,doctor,Dr. Tumba,,,general,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,Georges Street,"9000",Otjiwarongo,86816314,2,2020/06/18 09:30:27+00,ac1828f4f2174d4691ae2fe0f60351f4
+,,"1049331429",way,12.5,clinic,clinic,Kayengona Clinic,,,,,,,,,,,,,,,,,,,,,,,,119345466,1,2022/04/05 13:44:35+00,5eb1d5f2c82c4d9eba983a8dfa6753fe
+,,"1090867972",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,125631293,1,2022/08/31 22:36:58+00,74912618ac49472ca954ea8a441d8125
+16.6492189837175,-20.4653607771152,"4685657900",node,18.75,,physiotherapist,Pfafferot Physiotherapist,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,,"9000",Otjiwarongo,72787746,6,2019/07/29 21:37:51+00,09c21691cf8c42e588ff5ecc21821205
+,,"1056753608",way,12.5,clinic,clinic,Epukiro Post 3 Clinic,,,,,,,,,,,,,,,,,,,,,,,,120481095,1,2022/05/02 22:47:15+00,20dbffd1b2d74444a45f7a0ee0c70953
+17.0865343882357,-22.5634327811827,"7253075507",node,25,doctors,doctor,Central Family Practice,,,general,,,,,,,,,yes,,,,,,,,"5",Conradie Street,,,149808000,5,2024/04/10 08:31:14+00,e613375550e84103b48f2973a0ac0e46
+,,"759921057",way,21.875,hospital,hospital,Omaruru District Hospital,,,,,,,,,,,,,yes,,,,,,,,River Street,,Omaruru,169841955,3,2025/08/02 00:34:43+00,905123fce5f34c67816a1ac0bfba0267
+,,"369069399",way,18.75,hospital,hospital,Keetmanshoop District Hospital,,,,,,,,,,,,,yes,,,,,,,,,,Keetmanshoop,136294126,5,2023/05/19 10:59:01+00,a031037ec500411f9af64137eb825b06
+,,"1093394477",way,12.5,clinic,clinic,Ombombo Clinic,,,,,,,,,,,,,,,,,,,,,,,,126022658,1,2022/09/10 16:45:11+00,9e19edac132b4d7d97b9c59b15a63750
+17.9665785656176,-24.6268246608699,"7434124147",node,25,pharmacy,pharmacy,Clicks Pharmacy,CLICKS GROUP LIMITED,,,,,,,,,,yes,,,,,,,,,,Dr. Sam Nujoma Avenue,,Mariental,83945083,1,2020/04/22 13:46:41+00,23e53842ea0741d49070a3cacba43130
+19.7838359424335,-17.9150144373928,"11115832235",node,12.5,clinic,clinic,Nkarapamwe Clinic,,,,,,,,,,,,,,,,,,,,,,,,139902141,1,2023/08/15 08:25:37+00,2abc8394dc1745a697af6f53889f1df6
+,,"1037843223",way,12.5,clinic,clinic,Mbambi Clinic,,,,,,,,,,,,,,,,,,,,,,,,118177698,1,2022/03/06 23:45:20+00,ce74f336c60b4bba8caa47f56e16ca00
+,,"805504646",way,15.625,clinic,clinic,Oshaango Clinic,,,,,,,,,,,,,yes,,,,,,,,,,,122302210,4,2022/06/13 01:45:32+00,be32807992934f058b8c1ee2e0644919
+,,"1081358466",way,12.5,clinic,clinic,Okorusu Clinic,,,,,,,,,,,,,,,,,,,,,,,,124086563,1,2022/07/26 09:39:32+00,d1c7207ca6da4de0aa3045ce87360035
+,,"1321396253",way,15.625,clinic,clinic,N/a’an ku sê Lifeline Clinic,Naankuse Foundation,,,,,,,,,,,,,,,,,,,,,,,157499850,1,2024/10/05 13:02:54+00,6e3e5e636cb9443eba5f71127edb31c0
+,,"244026493",way,15.625,hospital,hospital,Katima Mulilo Clinic,,,,,,,,,,,,,,,,,,,,,,,Katima Mulilo,146881965,5,2024/01/30 22:31:53+00,d52b3badc8f84359b56315ae6917a076
+,,"1245123691",way,12.5,clinic,clinic,Shamaturu Clinic,,,,,,,,,,,,,,,,,,,,,,,,146926310,1,2024/02/01 00:51:41+00,dd995ef531654084a7ef43d7bfecbba9
+17.0945085956388,-22.6213777160116,"11888540548",node,12.5,,physiotherapist,Anneli Müller Physiotherapy,,,,,,,,,,,,yes,,,,,,,,,,,,151442111,3,2024/05/17 08:41:28+00,4adf4a0f011a4858b1e27402284b1050
+,,"568848412",way,12.5,hospital,hospital,Gobabis Private Hospital,,,,,,,,,,,,,,,,,,,,,,,,105166682,3,2021/05/23 13:58:21+00,a31d6cc53f444a2187b498d39237c5e3
+16.9167001823149,-21.9798850175188,"12353574101",node,18.75,pharmacy,,Motjari Pharmacy,,,,,,"Mo-Fr 09:00-18:00; Sa 09:00-12:00",,,,,,,,,,,,,,"261",Martin Neib Avenue,,,159312605,1,2024/11/19 07:51:30+00,7d51dadba1bc4cada86637688ee99aa4
+16.6490097714143,-20.4653401576334,"4685657898",node,25,doctors,doctor,Diabetes Practice,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,Hindenburg Street,"9000",Otjiwarongo,72787746,6,2019/07/29 21:37:51+00,8f0e6ff037184e04bed136bd48053f42
+16.6510978711329,-20.4698376354192,"4682296695",node,12.5,,laboratory,Pathcare Otjiwarongo,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,,,,72801274,4,2019/07/30 08:48:43+00,40d8b4a0f5664d8391473477173a1d3c
+,,"971190486",way,15.625,clinic,clinic,Ongulumbashe Clinic,,,,,,,,,,,,,,,,,,,,,,,Ongulumbashe,154551444,3,2024/07/29 08:36:11+00,752a6c9ee7af4aa2909ea06a14d5509c
+15.153619152842,-26.646486056225,"8344841611",node,21.875,pharmacy,pharmacy,Reichsapotheke,,,,,,,,,,,yes,,,,,,,,,,Bismarck Street,,Lüderitz,136533294,2,2023/05/25 08:55:14+00,4fa51e29c881455f9926280f27f0bd86
+17.0798034685302,-22.5697906223779,"11219325174",node,15.625,dentist,dentist,Bismarck 49 Dental Practice,,,,,,Mo-Fri 07:15-16:00,,,,,,,,,,,,,,,,,,150611296,2,2024/04/28 10:09:03+00,642d0b387852439dac54aa2f73c8c7f1
+,,"1086402125",way,12.5,clinic,clinic,Otjozondu Clinic,,,,,,,,,,,,,,,,,,,,,,,,124922668,1,2022/08/15 11:03:13+00,c39d6ae5ad2247288a465ace8060a921
+15.6998510188535,-17.7838008561724,"6665898930",node,9.375,,laboratory,Medical Square,,,,,,,,,,,,,,,,,,,,,,,,72859614,1,2019/07/31 14:26:43+00,88722b8081484c29b113696f92d748d2
+17.0986261217538,-22.6075854619776,"10016858692",node,25,,optometrist,Olympia Eye & Laser Centre,Emoneko Group,,,,,,,,,,,,,,,,,,,"17",David Carstens Street,"10021",Windhoek,172881200,5,2025/10/05 18:38:19+00,e93c223512fc4e3c829071e8ab18b0f4
+16.9111257976093,-21.9803539011823,"10777479691",node,9.375,hospital,hospital,,,,,,,,,,,,,,,,,,,,,,,,,134372782,1,2023/04/01 09:15:49+00,bc7c5aaea71e44559fc17e5b1e75fc34
+,,"553624312",way,15.625,,laboratory,Central Veterinary Laboratory,,,,,,,,,,,,,,,,,,,,,Goethe Street,,Windhoek,149317933,2,2024/03/29 15:26:00+00,2ffc54f4f0e0450a9c253afd7a7020d2
+18.9771478346933,-22.4504700397514,"10845862708",node,12.5,doctors,doctor,Dr. Gabi,,,,,,,,,,,,,,,,,,,,,,,,135420308,1,2023/04/27 10:05:03+00,8af171d8d11c4df698b7b9b2dfee615f
+,,"956552537",way,15.625,clinic,clinic,Onayena Health Centre,,,,,,,,,,,,,,,,,,,,,,,Onayena,106715859,2,2021/06/21 12:35:25+00,dcb2264ffc2a4aeea020acc530c5a9a7
+,,"1190123162",way,12.5,clinic,clinic,Mutjiku Clinic,,,,,,,,,,,,,,,,,,,,,,,,146728930,2,2024/01/27 00:11:59+00,ebb782dc36ba4330b16b8de210827877
+,,"1068115658",way,12.5,clinic,clinic,Oshigambo Clinic,,,,,,,,,,,,,,,,,,,,,,,,122149348,1,2022/06/09 07:28:40+00,faa928c2ca6f4eee9ed9b398ad1cd779
+,,"1081353843",way,12.5,clinic,clinic,Etunda Clinic,,,,,,,,,,,,,,,,,,,,,,,,124085665,1,2022/07/26 09:20:54+00,9a495ecbdc014b4eb5492048ab06383d
+,,"369187635",way,15.625,hospital,hospital,Katutura Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,146668664,7,2024/01/25 11:09:39+00,f12c0e05e1c0445a96127a532a5073b4
+17.0931943970402,-22.584296427829,"1374545305",node,15.625,pharmacy,pharmacy,Maerua Pharmacy,Medicine World Namibia,,,,,,,,,,,,,,,,,,,,,,,166006994,3,2025/05/09 00:33:54+00,fb0bfe9ee3654c928f4478f206c61e30
+17.062151683361,-22.5115820766943,"1374542698",node,15.625,pharmacy,pharmacy,Lafrenz Pharmacy,Medicine World Namibia,,,,,,,,,,,,,,,,,,,,,,,150477533,5,2024/04/25 06:16:28+00,7f011aab9bf6493f8e5f0f4f61b30715
+17.090935474135,-22.5409635809836,"11818517894",node,21.875,doctors,doctor,Prof CH Pieper,,,"paediatrics;neonatology",,,,,,,,,,,,,,,,,"8",Akwamaryn Street,,,150048218,3,2024/04/15 16:36:14+00,2fec3ca536cd47baad0d36dda30d0f9d
+,,"1038026977",way,12.5,clinic,clinic,Karukuta Clinic,,,,,,,,,,,,,,,,,,,,,,,,118204272,1,2022/03/07 16:42:24+00,ae694d45302f4a68b5634c406dbc0fc5
+17.0641606579136,-22.6001613588797,"3698947658",node,9.375,pharmacy,,Pionierspark Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,33357581,1,2015/08/15 19:10:56+00,29f4d5704fbb4069a945203ac5215fa6
+,,"805501496",way,15.625,hospital,hospital,Maltahöhe Health Centre,,,,,,,,,,,,,,,,,,,,,,,Maltahöhe,122368869,3,2022/06/14 11:24:38+00,6e63eed5156f4fc3a04b70016c45b26d
+,,"822848522",way,18.75,doctors,doctor,Alfline Medical Centre,,,,,,,,,,,,,,,,,,,,,Main Road,,Omuthiya,162396598,4,2025/02/11 15:48:43+00,40058163b99d4d1c81e9f96f1dbfc708
+,,"389263474",way,12.5,doctors,doctor,Medical Center,,,,,,,,,,,,,,,,,,,,,,,,110808598,2,2021/09/06 15:03:38+00,eac366b5c30f45c19c81e3e0a4cc57b0
+,,"550802516",way,12.5,hospital,hospital,Ncaute Clinic,,,,,,,,,,,,,,,,,,,,,,,,92496020,2,2020/10/14 23:29:04+00,18a61d61c13d497ca96ced859c444385
+,,"1054549225",way,12.5,clinic,clinic,Gam Clinic,,,,,,,,,,,,,,,,,,,,,,,,120141686,1,2022/04/24 23:53:14+00,4435545103744897975ba179bdf79561
+,,"1081362257",way,12.5,clinic,clinic,Thomas Adam Sheya Clinic,,,,,,,,,,,,,,,,,,,,,,,,124087012,1,2022/07/26 09:49:48+00,4b15070219d54b28ad74f3d88402fbcb
+13.8418393200654,-18.0637644687948,"1827618111",node,9.375,pharmacy,,Kunene Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,51029489,3,2017/08/11 10:54:46+00,363141829f72498c9a633723b7ca6f75
+18.1349435915501,-26.5795953675961,"10913161109",node,9.375,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,,,,136319275,1,2023/05/19 23:21:14+00,ce37a1353a274fc2b4431281f49bc026
+,,"1070080682",way,12.5,clinic,clinic,Uukwiyushona Clinic,,,,,,,,,,,,,,,,,,,,,,,,122437043,1,2022/06/15 22:15:56+00,58d08c5385164883a017c76d7151e487
+14.2804542548516,-22.1161093004564,"9806534081",node,12.5,pharmacy,pharmacy,Henties Bay Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,134405656,2,2023/04/02 09:10:31+00,c0c83d51165e4cb98c160dc042e89ea5
+,,"904080419",way,15.625,clinic,clinic,Otjokavare Clinic,Public_MoHSS,,,,,,,,,,,,,,,,,,,,,,,98757276,1,2021/02/05 09:37:38+00,1d214602d34f461ba449f7e1412f37a0
+,,"1243251605",way,12.5,hospital,hospital,Spescare,,,,,,,,,,,,,,,,,,,,,,,,146719276,1,2024/01/26 17:43:27+00,baba4e2cb714442aa30fdf212481c194
+,,"1107576315",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,128148887,1,2022/10/27 22:25:50+00,8056bba5ba154a2d9ef71a956cf6b9d9
+17.0765155831914,-22.5497047325271,"4494189989",node,12.5,doctors,doctor,Rhino Park Medical Center,,,,,,,,,,,,,,,,,,,,,,,,91231746,2,2020/09/21 13:06:34+00,f295efb1496c471d9c7c3726afee3329
+,,"1318224427",way,12.5,clinic,clinic,Kapupahedi Clinic,,,,,,,,,,,,,,,,,,,,,,,,157102868,1,2024/09/25 21:40:43+00,3456c7d837344f4bab5c0681d92ea841
+,,"948226837",way,12.5,clinic,clinic,Onaanda Clinic,,,,,,,,,,,,,,,,,,,,,,,,105503834,1,2021/05/28 16:42:30+00,fff76cae8cb74df38747023188d25bdf
+,,"1138083806",way,12.5,clinic,clinic,Ndilimani Clinic,,,,,,,,,,,,,,,,,,,,,,,,132121471,1,2023/02/05 17:07:22+00,c7dbc9dffcbb423e856f23867893ed3a
+17.0767373683494,-22.5495161397057,"4494158191",node,21.875,pharmacy,pharmacy,Rhino Pharmacy,,,,,,,,,,,,,,,,,,,,"233",Ooievaar St,,Windhoek,91231746,2,2020/09/21 13:06:34+00,3ec849855851416f94bf5ebdc2f5abdf
+17.0816544442081,-22.5642795210413,"11083382535",node,21.875,,laboratory,PathCare - Roman Catholic Hospital,PathCare Namibia,,,,,Mo-Thu 07:00-17:00,,,,,,,,,,,,,,,Mandume Ndemufayo Avenue,,Windhoek,139342177,1,2023/08/02 11:13:57+00,ddb89efa49d74c81aac14407ef663fe1
+,,"1060904746",way,12.5,clinic,clinic,Ngoma Clinic,,,,,,,,,,,,,,,,,,,,,,,,121074277,1,2022/05/17 01:29:59+00,7f8eb10f3fba42969fa3a6ea6dc9ebeb
+17.0729640869978,-22.5522273501062,"7928226936",node,12.5,dentist,dentist,Windhoek North Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,91235288,3,2020/09/21 14:24:35+00,ebf4b2f330c44ec9b7c3e3da8be05ec4
+,,"972816413",way,18.75,clinic,clinic,Gibeon Clinic,,,,,,,,,,,,,,,,,,,,,,"22006",Gibeon,160798665,3,2024/12/30 16:05:25+00,0ac9942334cd48e5a60bdf83445e7382
+,,"977879668",way,12.5,clinic,clinic,Utuseb Clinic,,,,,,,,,,,,,,,,,,,,,,,,110464564,1,2021/08/30 14:14:41+00,87f1fddaf61742c8abe000545f998afa
+,,"819121691",way,18.75,doctors,doctor,Olympia Health Centre,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,"33",,,,149497143,5,2024/04/02 19:54:48+00,24eabed2bfb44a5d9727c9ddab52f73e
+17.0876063498325,-22.5432531816544,"2726763623",node,21.875,doctors,doctor,Eros Family Practice,,,,,,,,,,,,,,,,,,,,"9",Heliodoor Street,,Windhoek,147455525,7,2024/02/14 15:16:55+00,e48be385ad2146b3bd1ce32e249e086b
+,,"1271577555",way,12.5,clinic,clinic,Oluteyi Clinic,,,,,,,,,,,,,,,,,,,,,,,,149840252,1,2024/04/10 21:50:29+00,65babf5d56ae442c96f32907c402678f
+,,"1106786059",way,12.5,clinic,clinic,Stampriet Clinic,,,,,,,,,,,,,,,,,,,,,,,,128030321,1,2022/10/25 09:27:24+00,f79b44904feb41bea4822e7ebdad9cb8
+17.0840862857758,-22.5667629113136,"5071807020",node,21.875,pharmacy,pharmacy,Luisen Apotheke,,,,,,,,,,,,,,,,,,,,"181",Independence Avenue,,Windhoek,151359002,3,2024/05/15 12:39:32+00,8c43c36e9d5345d29aea962ce00c875e
+,,"805500338",way,21.875,hospital,hospital,Swakopmund State Hospital,,,,,,,,,,,,,yes,,,,,,,,Kolonnen Street,,Swakopmund,167199004,6,2025/06/04 22:56:57+00,b187b04c944e4b78a75e3e2e7a1ab87f
+,,"1339223214",way,15.625,clinic,clinic,Omagano Health Centre,,,,,,,,,,,,,,,,,,,,,,,Oshakati,159806127,1,2024/12/01 13:24:18+00,ba183abc4a08476b926e2b37ab6e1a94
+,,"968573076",way,34.375,clinic,clinic,Okuryangava Clinic,Ministry of health and Social Services,,general,government,,"Mo-Fr 07:00-13:00,14:00-17:00",,,,,,yes,,,,,,,,,Onganga Street,,Windhoek,137165165,2,2023/06/10 09:34:35+00,02d0a0fb862e40a9b99b1596f2f9aa6d
+,,"1218613572",way,12.5,clinic,clinic,Okaku Clinic,,,,,,,,,,,,,,,,,,,,,,,,143178208,1,2023/10/26 19:39:46+00,2cb44c476e654655b18bd6b28e47aa97
+,,"389177359",way,12.5,hospital,hospital,Ongwediva MediPark,,,,,,,,,,,,,,,,,,,,,,,,143816776,7,2023/11/09 10:52:23+00,00882ad28d3a4a75888176dbbc2e3896
+,,"1433525469",way,12.5,clinic,clinic,Bergsig Clinic,,,,,,,,,,,,,,,,,,,,,,,,172516157,1,2025/09/27 08:56:18+00,4eee03d4df9847c0855b6de4be9f96e3
+,,"1083140936",way,12.5,clinic,clinic,Kalkrand Clinic,,,,,,,,,,,,,,,,,,,,,,,,124381562,1,2022/08/02 09:22:40+00,00bfee717fc845d398674c0942a7a64b
+17.0484846549605,-22.5413924829689,"12282730145",node,21.875,pharmacy,pharmacy,WAP Pharmacy Khomasdal,,,,,,,,,,,,,,,,,,,,"4850",Kanna Street,,Windhoek,158271714,1,2024/10/23 21:13:06+00,9f94eefd7d004392bcb2af66d2d18724
+,,"1205215155",way,15.625,clinic,clinic,Eloolo Clinic,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,,,,143155155,3,2023/10/26 10:25:38+00,2d709d26782d43b5a34708859f9fad5a
+18.1039446314055,-19.5631319651469,"10058752575",node,9.375,,doctor,Grootfontein Medi-Health Centre,,,,,,,,,,,,,,,,,,,,,,,,127800615,2,2022/10/19 18:45:40+00,fae46d2491584427a4e8a251c7a09b04
+17.083812029904,-22.57178752699,"1360437224",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,99229820,3,2021/02/13 20:52:45+00,323141155274469685df2724ff4c1d7b
+,,"1001665123",way,25,doctors,doctor,Omuramba Medical Center,,,"plastic_surgery;dental_oral_maxillo_facial_surgery;surgery;fertility",,,,,,,,,,,,,,,,,"43",General Murtala Mohammed Avenue (Omuramba Weg),,Windhoek,151727101,4,2024/05/23 14:39:11+00,352cf258c3744621abb8be08ff2f669d
+,,"122249961",way,28.125,hospital,hospital,Rhino Park Private Hospital,,,,,,24/7,,,,,,,yes,,,,,,,,Rhino St,"9000",Windhoek,140327109,7,2023/08/24 14:38:44+00,89d254f0ef424e3083f6b5961b76d8cc
+,,"226632787",way,15.625,hospital,hospital,Nkurenkuru Health Centre,,,,,,,,,,,,,,,,,,,,,,,Nkurenkuru,119393056,3,2022/04/06 15:32:35+00,aec5785914274cc49779aa59d4e922b2
+,,"359595673",way,15.625,hospital,hospital,Health Sciences Press M Block,University of Namibia,,,,,,,,,,,,,,,,,,,,,,,99543409,5,2021/02/18 18:45:55+00,2ea4d56fe2234859b2a9dd06bc1957a2
+,,"1055549717",way,12.5,clinic,clinic,Tallismanus Clinic,,,,,,,,,,,,,,,,,,,,,,,,157340329,2,2024/10/01 13:38:51+00,6b9674a813f749ba8f9c96932510e4d1
+,,"1090675629",way,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,143617670,2,2023/11/04 14:57:28+00,4fd88df8e054422ea7fe005b7b7421cc
+,,"422506912",way,28.125,pharmacy,pharmacy,Narraville Pharmacy,,,,,,,,,,,yes,,,,,,,,,"17",Harry van Reenen Street,"13014",Walvis Bay,109431684,2,2021/08/09 23:15:57+00,c52efa6840a24c0da0d1f8a0d8b1381f
+,,"805507981",way,15.625,hospital,hospital,Andara Hospital,,,,,,,,,,,,,,,,,,,,,,,Andara,147276329,3,2024/02/09 23:01:54+00,0810cc7fcf5346fc8e62ff808dad79fa
+14.500707871475,-22.9569529092574,"4490045793",node,12.5,pharmacy,pharmacy,Walvis Bay Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,132442979,2,2023/02/12 12:23:01+00,9d72fcd1567048b7b6f422a092d3dc3e
+,,"1088009883",way,12.5,clinic,clinic,Ariamsvlei Clinic,,,,,,,,,,,,,,,,,,,,,,,,125200183,1,2022/08/21 21:29:30+00,b15e7a1a70d04e9f8d116b201fbb0535
+16.6513506693326,-20.4642679445794,"12169523385",node,25,pharmacy,pharmacy,Family Pharmacy Otjiwarongo,,,,,,Mo-Su 08:00-20:00,,,,,,,,,,,,,,"12004",Rikumbi Kandanga Street,,Otjiwarongo,156471538,1,2024/09/11 08:26:37+00,743cb77dd9a74784b8f1ff79bbc80d1f
+16.154393162231,-20.1064789477242,"1029324173",node,9.375,doctors,,Dr. Burger,,,,,,,,,,,,,,,,,,,,,,,,12020336,3,2012/06/26 09:35:44+00,f5c265dce74145fdbe11754cf2230d35
+18.1311936957084,-26.5764094061999,"10911216335",node,15.625,pharmacy,pharmacy,Khabuser Pharmacy,,,,,,,,,,,,,,,,,,,,,,,Keetmanshoop,136294792,1,2023/05/19 11:15:26+00,a95e430548454532b1f043f7166ae124
+,,"1036258973",way,12.5,clinic,clinic,Nzinze Clinic,,,,,,,,,,,,,,,,,,,,,,,,117975258,1,2022/03/01 10:57:44+00,6791234004fd4e2fbe2e93b852051e05
+,,"982060317",way,12.5,clinic,clinic,Onamishu Clinic,,,,,,,,,,,,,,,,,,,,,,,,111074825,1,2021/09/11 19:15:31+00,6b55359419e7475481ba6fb5ca2ebe1b
+13.8846691689015,-18.3552727281152,"7663195085",node,6.25,clinic,,,,,,,,,,,,,,,,,,,,,,,,,,87275495,1,2020/06/29 06:47:33+00,966d24c71b444e5d991d7e4fd78957f9
+17.0951261742646,-22.622432829983,"12184196533",node,9.375,,laboratory,Namibia Radiology (NAMRAD),,,,,,,,,,,,,,,,,,,,,,,,156776501,1,2024/09/18 14:29:25+00,91246d9d70b2472e93c95318e6dfcac7
+,,"1088938654",way,15.625,clinic,clinic,St. Raphael Health Recovery Clinic,,,,,,,,,,,,,,,,,,,,,,,Walvis Bay,133061188,3,2023/02/26 22:09:44+00,b82ddfcac59045f0b1f73d1e0593bc4f
+,,"1198221911",way,12.5,clinic,clinic,,,,,public,,,,,,,,,,,,,,,,,,,,141472433,2,2023/09/19 14:33:17+00,8f10f90657164547817a5eebe3e30e75
+,,"805499698",way,12.5,clinic,clinic,Aus Clinic,,,,,,,,,,,,,,,,,,,,,,,,136432609,3,2023/05/22 23:06:27+00,185555efbe2d4ab9a1b47b619fc15d01
+,,"1311495678",way,12.5,clinic,clinic,Omuthitugwonyama Clinic,,,,,,,,,,,,,,,,,,,,,,,,155828370,1,2024/08/27 12:04:36+00,d9c92df04b9241d6b8503752a39498f1
+,,"666800246",way,31.25,hospital,hospital,Tsumeb Private Hospital,,,surgery,,,,,,,,,,yes,,,,,,,"1597",Reverend James Ngaripue Street,"14002",Tsumeb,133266791,5,2023/03/03 19:03:24+00,636ee4178556470db0e5d4e105cdc1e2
+,,"1201014761",way,21.875,hospital,hospital,Ongenga Clinic,,,"clinical_pathology;community;vaccination;blood_check;otolaryngology",,,,,,,,,,,,,,,,,,,"17007",Ongenga,156029093,2,2024/08/31 19:14:53+00,4c2e5aaadd4641ed9ed50fadcb7d5457
+17.0946521776402,-22.6212484670646,"11911951381",node,12.5,doctors,doctor,Mariska van Wyk Dietician,,,,,,,,,,,,,,,,,,,,,,,,151442756,1,2024/05/17 08:56:36+00,5b822c02ed384b15a94afffb2bba4895
+,,"1069093906",way,12.5,clinic,clinic,Onambutu Clinic,,,,,,,,,,,,,,,,,,,,,,,,122299979,1,2022/06/12 22:45:17+00,858b6ef4291c4b3a933e4754d943200f
+,,"1040056093",way,12.5,clinic,clinic,Mashare Clinic,,,,,,,,,,,,,,,,,,,,,,,,118447551,1,2022/03/13 22:20:24+00,968e1726ec62431682d5e122ccd025a5
+,,"729518092",way,9.375,pharmacy,,Jere-Dean Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,75058665,1,2019/09/29 10:41:22+00,db42a767a5484abcb7cb6a033721b3b4
+16.580126285306,-18.3602858605843,"12579203812",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,162396598,1,2025/02/11 15:48:43+00,e697536bf4b8471ebd3b0a2d4907b1d4
+,,"1083301046",way,12.5,clinic,clinic,Groot Aub Clinic,,,,,,,,,,,,,,,,,,,,,,,,124406557,1,2022/08/02 19:24:18+00,d7296b37c3dd4d1a964151ba3382cc4c
+17.0516631564629,-22.5227645413561,"1026355217",node,15.625,doctors,doctor,Katutura Health Center,,,,,,,,,,,,,,,,,,,,,Independence Avenue,,,78274407,4,2019/12/11 17:50:16+00,cb655537e0344f2bba7b84de3e5d34fc
+,,"805504468",way,12.5,hospital,hospital,Ongwediva State Clinic,,,,,,,,,,,,,,,,,,,,,,,,85395804,1,2020/05/18 17:20:19+00,7439db93c8c1446dbc055b202dae9afb
+,,"945124023",way,12.5,clinic,clinic,Batubaja Clinic,,,,,,,,,,,,,,,,,,,,,,,,117954938,2,2022/02/28 18:37:17+00,b8fb1cd268fb466398fd7bbd44416ed6
+17.0690156238698,-22.5774729719126,"11779840180",node,18.75,dentist,dentist,Namib Dental Suites,,,,,,,,,,,,,,,,,,,,"24",Barbet Road,,,149506278,2,2024/04/03 05:16:14+00,28a3fd0c6bb74e6680ac7cb72568d543
+,,"1049740626",way,12.5,clinic,clinic,Ndamono Clinic,,,,,,,,,,,,,,,,,,,,,,,,119405040,1,2022/04/06 22:13:50+00,a58e3acda02d482aa83b776c1e30179f
+,,"1332063609",way,15.625,clinic,clinic,Noordoewer Health Centre,,,,,,,,,,,,,,,,,,,,,,,Noordoewer,158911569,1,2024/11/08 21:02:51+00,ffe2595888cb4ef5b08d7c31c5d65585
+,,"1069912963",way,12.5,clinic,clinic,Olukula Clinic,,,,,,,,,,,,,,,,,,,,,,,,122414410,1,2022/06/15 11:42:50+00,e2fd7506be1f4fc5b49f662df0aa67fa
+15.9553135741285,-21.4193264673269,"13124676067",node,25,pharmacy,pharmacy,Ongwari Pharmacy,,,,,,,,,,,,,,,,,,,,"96",Wilhelm Zeraua Road,"13009",Omaruru,171575371,1,2025/09/07 09:41:59+00,d4219ef2764c4d7eb7938ca03ed9bebd
+,,"792160516",way,21.875,hospital,hospital,Outjo District Hospital,,,,,,,,,,,,,yes,,,,,,,,Ernst Fanuel Amporo Street,,Outjo,147213990,7,2024/02/08 11:45:09+00,8cca668134c547fb86701a7d5d2aa111
+17.1098077482253,-22.5677437616229,"10079263994",node,28.125,dentist,dentist,Dr. Mentzel Dentistry,,,"dentist;dentistry;dental",,,"Mo,Tu,Th,Fr 08:00-17:00; PH,We,Sa,Su off",,,,,,no,,,,,,,,,Hebenstreit Street,,Windhoek,162564881,6,2025/02/16 10:29:40+00,a97a2c840af54b349fc7d202f481258c
+,,"1086304502",way,12.5,clinic,clinic,Otjiu Clinic,,,,,,,,,,,,,,,,,,,,,,,,124906431,1,2022/08/14 23:25:43+00,f2b3a88646e744c3a252a36d9a7ce4b5
+,,"1147551370",way,15.625,clinic,clinic,Nampower Clinic,,,,,,,,,,,,,,,,,,,,,,,Ruacana,132741215,1,2023/02/19 09:50:06+00,7b75f8f7aa4e4553be0331681d659c2b
+,,"1320878566",way,12.5,clinic,clinic,Sendingplaas Clinic,,,,,,,,,,,,,,,,,,,,,,,,157481594,1,2024/10/05 00:40:14+00,59d0942ad7d44de2a25a91295807875d
+17.0945876369858,-22.6213422605611,"11911867938",node,15.625,pharmacy,pharmacy,Zavi-Med Pharmacy,,,,,,"Mo-Th 08:30-18:00; Fr 08:30-17:00; Sa-Su off",,,,,,,,,,,,,,,,,,156158018,2,2024/09/03 19:55:20+00,9d57c038103c4de3bc73bb9318e969ce
+17.9588702321831,-24.6251234698018,"7434200562",node,15.625,pharmacy,pharmacy,Mariental Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,83946188,1,2020/04/22 14:08:39+00,13937436adb948ec82409d8dbda5b842
+17.0949702708656,-22.6219085419395,"11160893211",node,21.875,pharmacy,pharmacy,Pharmacy at Lady Pohamba,,,,,,08:00-23:00,,,,,yes,yes,,,,,,,,,,,,156158018,4,2024/09/03 19:55:20+00,81445ff20ec04ba58b9cc33341799c4b
+14.280682242618,-22.1162239648918,"9806534083",node,18.75,doctors,doctor,Benguela Medical Centre,,,,,,,,,,,,,,,,,,,,,Benguela Street,,Henties Bay,134405656,2,2023/04/02 09:10:31+00,f2f329af7a2e4d3daf55e1ce82a5b9cd
+,,"474582741",way,28.125,hospital,hospital,Otjiwarongo District Hospital,,,,,,24/7,,,,,,,yes,,,,,,,,Dr. Libertina Amathila Avenue,"12001",Otjiwarongo,149714157,7,2024/04/08 00:59:17+00,adcc895f21774696981b7a025b21a938
+,,"854052926",way,18.75,hospital,hospital,Grootfontein State Hospital,,,,,,,,,,,,,,,,,,,,,Hospital Access Road,,Grootfontein,91846007,1,2020/10/01 20:48:37+00,4320a68d1248434aa7867f2075559c33
+,,"1080393433",way,12.5,clinic,clinic,Omungwelume Clinic,,,,,,,,,,,,,,,,,,,,,,,,123912424,1,2022/07/21 22:17:02+00,dfc35293590344cd8fd84e1bbf6e0669
+17.0946281215781,-22.6213071403868,"11911951373",node,12.5,doctors,doctor,Dr Esterhuizen,,,,,,,,,,,,,,,,,,,,,,,,151442756,1,2024/05/17 08:56:36+00,2e5af9eb38a74854a162fe6a84528a87
+17.0859841162923,-22.5443151687865,"11157985439",node,12.5,pharmacy,pharmacy,,,,,,,"Mo-Fr 08:00-17:30; Sa-Su,PH off",,,,,,,,,,,,,,,,,,147154623,2,2024/02/06 22:54:08+00,4339f5412f964d95b9b9960cccec66a4
+,,"550834436",way,15.625,hospital,hospital,Khorixas Hospital,,,,,,,,,,,,,,,,,,,,,,,Khorixas,127099057,3,2022/10/06 11:48:34+00,088eb9b34dc349f6a55235bb7e964fb7
+17.0851609295817,-22.5747545530753,"1255504309",node,15.625,pharmacy,pharmacy,Langerhans Apotheke,,,,,,,,,,,,,,,,,,,,,,,Windhoek,121675140,7,2022/05/29 19:19:51+00,ad687e2186574f88ac5de69ead6e4f68
+,,"1309876947",way,12.5,clinic,clinic,Epoko Clinic,,,,,,,,,,,,,,,,,,,,,,,,155609272,1,2024/08/22 14:29:02+00,5b10d6ff021f44f480c4196f8690918f
+17.0820070708746,-22.5739681629196,"11078215756",node,31.25,doctors,doctor,Dr Roxin,,,general,,,"Mo-Thu 08:00-17:00; Fri 08:00-15:00",,,,,,,,,,,,,,"21",Trift Street,"9000",Windhoek,162071604,5,2025/02/03 06:03:38+00,2a2287bcf0584aacba59242bb5c98842
+,,"993424390",way,15.625,clinic,clinic,Bethanie Health Centre,,,,,,,,,,,,,,,,,,,,,,,Bethanie,112628077,2,2021/10/17 21:22:48+00,edc9cf46265840659f2a1748a1f77c9c
+17.0947479827935,-22.6212186274893,"11911946676",node,15.625,doctors,doctor,Dr Y. Mostert,,,general,,,,,,,,,,,,,,,,,,,,,151442836,1,2024/05/17 08:58:26+00,7ab416ee7ed148668093ae4a91b63ad3
+19.7697829273918,-17.9158050185002,"7357723188",node,9.375,pharmacy,,Rundu Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,83051832,2,2020/04/03 19:46:29+00,afe479582ca7413db0a39fdb3f116297
+17.2244293521138,-17.5795692474652,"6847971205",node,15.625,pharmacy,pharmacy,Okongo Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,75241694,1,2019/10/03 15:24:56+00,33177f3885ec43d0ba6ba77ec9ecd55f
+17.075302218888,-23.3226174585155,"4744847221",node,12.5,doctors,doctor,Dr. Witbooi Practice,,,,,,,,,,,,,,,,,,,,,,,,158577163,2,2024/10/31 11:29:59+00,15bcd321219247b4a5d6d6804f005f90
+,,"1358230995",way,12.5,clinic,clinic,Onyuulaye Clinic,,,,,,,,,,,,,,,,,,,,,,,,162297896,1,2025/02/08 23:28:12+00,520643ad277a4c209f71f5ddf5a57f93
+17.0557805987588,-22.5733922423526,"2514825054",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,121717970,6,2022/05/30 13:32:21+00,a20a86467e384932b51874b2366bd4ec
+,,"766540394",way,18.75,clinic,clinic,Meatco Clinic,,,,,,,,,,,,,,,,,,,,,Noord Street,,Okahandja,128339213,3,2022/11/01 11:00:18+00,b0d946051a9b4097906685dc60bb5f55
+17.47524405826,-17.6491948672805,"10894089405",node,9.375,dentist,,pts1,,,,,,,,,,,,,,,,,,,,,,,,136061978,1,2023/05/13 17:36:50+00,7ca6063c3494478089ddb6493e1f3c14
+,,"439913826",way,21.875,hospital,hospital,Walvis Bay District Hospital,,,,,,,,,,,,,,,,,,,,,Tom Swemmer Street,"13013",Walvis Bay,150481795,3,2024/04/25 08:14:12+00,6ed4f3ffa93345d9bc9cb73894d79386
+17.0745315867102,-22.5696619601642,"3672061823",node,15.625,pharmacy,pharmacy,Medicine World,,,,,,"Mo-Fr 08:00-18:00, Sa 09:00-13:00",,,,,,,,,,,,,,,,,,160263503,7,2024/12/13 22:14:12+00,d5fd50ff1fde47c3a69336dce58e271f
+,,"1070086098",way,12.5,clinic,clinic,Amilema Clinic,,,,,,,,,,,,,,,,,,,,,,,,122437636,1,2022/06/15 22:45:53+00,80411ddb7fae49c7a508ec2035de0eff
+,,"723255529",way,21.875,hospital,hospital,St Mary's Hospital,,,,,,24/7,,,,,,,,,,,,,,,Maharero St,,Rehoboth,75059387,4,2019/09/29 11:15:18+00,7261161710ca4050b4e01335c75ace6d
+15.7004973474073,-17.7832866264127,"3923136344",node,12.5,doctors,doctor,Doctors Consulting Rooms,,,,,,,,,,,,,,,,,,,,,,,,72859614,2,2019/07/31 14:26:43+00,7e8e306eb8c8455084a670d9e59556ef
+,,"1057852239",way,21.875,clinic,clinic,Otjomuise Clinic,,,,,,,,,,,,,,,,,,,,,Katjikuru Katjiuongua Street,"10032",Windhoek,120622711,1,2022/05/06 10:01:39+00,dced1e2c371c4d199b05e3d5abc82984
+,,"1188518463",way,12.5,clinic,clinic,Onekwaya Clinic,,,,,,,,,,,,,,,,,,,,,,,,138311719,1,2023/07/09 21:02:09+00,d1e38c86dab7403985dbfc032c5fc33e
+17.0949776469404,-22.622377341784,"12184196532",node,12.5,,laboratory,PathCare Namibia,,,,,,"Mo-Fr 07:00-17:00; Sa 08:00-12:00",,,,,,,,,,,,,,,,,,156776501,1,2024/09/18 14:29:25+00,c4a969e5218c4e8b96c3f7f784ffe429
+,,"744589658",way,18.75,clinic,clinic,Khabuser Clinic,,,,,,,,,,,,,,,,,,,,,Mittel Street,,Keetmanshoop,136294792,2,2023/05/19 11:15:26+00,17add12d7c2547a486a7ac2a880e34e8
+17.0974303594471,-22.6041854267743,"11165484787",node,9.375,,physiotherapist,Marlize le Roux,,,,,,,,,,,,,,,,,,,,,,,,140770825,1,2023/09/03 18:01:00+00,21f0c99462354f6aa751a946666968e3
+14.1067600987004,-18.9188787706629,"5350930531",node,15.625,clinic,clinic,Orovanjai Clinic,,,,,,,,,,,,,,,,,,,,,,,Orovanjai,55601479,1,2018/01/20 11:56:05+00,910f74ed53394ae7bad8431c3380890d
+,,"1248667984",way,12.5,clinic,clinic,Shadikongoro Clinic,,,,,,,,,,,,,,,,,,,,,,,,147276688,1,2024/02/09 23:24:01+00,1a565d0b914b485190d91eae8e6ed943
+17.0945218390458,-22.6213384048857,"11911951375",node,12.5,doctors,doctor,Dr Nel / Steytler / Klazen,,,,,,,,,,,,,,,,,,,,,,,,162404949,2,2025/02/11 19:49:56+00,9113fb4bd0c94d6ea28f806f61bae6ac
+,,"805509907",way,18.75,hospital,hospital,Private Grootfontein Hospital,,,,,,,,,,,,,,,,,,,,,Kaptein Lombaar Street,,Grootfontein,127725996,2,2022/10/18 12:48:36+00,b95752462dcc4606a2466f1884505889
+,,"1070085823",way,12.5,clinic,clinic,Omuntele Clinic,,,,,,,,,,,,,,,,,,,,,,,,122437602,1,2022/06/15 22:43:30+00,acf5720a84814332832d313480c9cd61
+17.0800421851326,-22.5677189511896,"9729983596",node,15.625,,laboratory,Namibia Central Pathology (NCP),,,,,,,,,,,,,,,,,,,,,Wecke Street,,Windhoek,150611296,3,2024/04/28 10:09:03+00,efec10b840a04f71816986f654abd5d5
+17.0373139249631,-22.5216752292197,"4485724696",node,15.625,pharmacy,pharmacy,Wanaheda Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,118869278,5,2022/03/24 15:12:04+00,5a33da2a4c6a4ab0b789dc3d0e3426c7
+,,"1081960768",way,12.5,clinic,clinic,Anichab Clinic,,,,,,,,,,,,,,,,,,,,,,,,124161752,1,2022/07/28 00:33:43+00,f3c8895349a84c28af919311975a0652
+,,"608960142",way,12.5,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,,,Okakarara,157712845,2,2024/10/10 12:11:08+00,51dbafb47b1f4548998d43ebe0a9d6eb
+24.0174418609742,-18.0714547811375,"9688810465",node,12.5,clinic,clinic,Linyanti Clinic,,,,,,,,,,,,,,,,,,,,,,,,120107922,1,2022/04/24 00:10:48+00,bda53dfd735a413d8cc942a03d7c2663
+15.9720280948849,-17.9148267665808,"12202051720",node,12.5,,blood_donation,NAMBTS Blood Donation Centre,,,,,,"Mo,We-Su off; Tu 10:00-18:00",,,,,,,,,,,,,,,,,,157135058,1,2024/09/26 15:37:30+00,82652ce010a34d9d897f30c72608ad76
+,,"1312018254",way,12.5,clinic,clinic,Ilyateko Clinic,,,,,,,,,,,,,,,,,,,,,,,,155927423,1,2024/08/29 12:51:23+00,75d1a88e3a5c4c3090eae6d8e0fc8fe7
+17.0947106833243,-22.6213660651661,"11911951371",node,12.5,doctors,doctor,Shipanga Medical Suite,,,,,,,,,,,,,,,,,,,,,,,,156158018,2,2024/09/03 19:55:20+00,7e58afad36444038a768b638285080a6
+,,"244026490",way,18.75,hospital,hospital,Katima Mulilo State Hospital,,,,,,,,,,,,,yes,,,,,,,,,,Katima Mulilo,154584052,6,2024/07/29 23:49:50+00,3576a949f6874a3fbef005b2bcfc0a86
+14.5280981708463,-22.6403957513981,"11508960424",node,12.5,dentist,dentist,Dr Stephan van der Merwe Dental Practice,,,,,,,,,,,,,,,,,,,,,,,,146152162,1,2024/01/11 17:20:58+00,0a86564a36e341259bb9f0ccb655bdef
+,,"1069546594",way,12.5,clinic,clinic,Hamukoto Wakapa Clinic,,,,,,,,,,,,,,,,,,,,,,,,122364906,1,2022/06/14 09:57:26+00,bf5c6cd370ce4ebc928e5f88db072afb
+,,"777342431",way,21.875,clinic,clinic,Hakahana Clinic,,,,,,,,,,,,,,,,,,,,"1",Omutula Street,,Windhoek,148696686,4,2024/03/15 16:16:50+00,4ac6c8baad954c8eaf115c4bcfa7696b
+,,"1086403349",way,12.5,clinic,clinic,Uitkoms Clinic,,,,,,,,,,,,,,,,,,,,,,,,124922952,1,2022/08/15 11:09:07+00,7517e50736e34deb8f1c5682838abcf5
+,,"1249023154",way,15.625,hospital,hospital,Opuwo State Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,147321760,1,2024/02/11 10:22:58+00,6d1985a94c8a471eb6cbb14b7d62cc4e
+17.0771329941792,-22.5365239383297,"12503909415",node,9.375,,laboratory,Namib Laboratories,,,,,,,,,,,,,,,,,,,,,,,,161368060,2,2025/01/15 06:28:05+00,168128b0538242b8bd342bd78d9031ba
+17.0834962836114,-22.5868884475664,"5982771013",node,15.625,pharmacy,pharmacy,Auas Valley Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,150575603,4,2024/04/27 11:34:33+00,b0299aacef9d40588362d74e3ce4d20c
+17.094435170167,-22.6214275045164,"11911867935",node,15.625,doctors,doctor,Dr Westhuizen,,,otolaryngology,,,,,,,,,,,,,,,,,,,,,173171269,3,2025/10/12 09:45:54+00,cc3bc7387df043ceb123c93d2863f0c5
+15.7003731276022,-17.7829549545041,"3923136343",node,12.5,pharmacy,,Oshakati Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,75254511,3,2019/10/03 22:21:43+00,68ee067aac824ee6910a7c6599996c1c
+,,"1310058848",way,12.5,clinic,clinic,Ogongo Clinic,,,,,,,,,,,,,,,,,,,,,,,,155637946,1,2024/08/23 07:48:35+00,e77f4f0c45994ea5b0de5c421e51c2cc
+,,"1305008194",way,21.875,clinic,clinic,Mondesa Clinic,,https://digitalnamibia.nsa.org.na/,,,,,,,,,,,,,,,,,,,Kleofas //Kuruseb Street,,Swakopmund,154684284,1,2024/08/01 09:26:16+00,2b6bca87f5cd4aa5aa228a1dd6bf8f16
+,,"709658338",way,12.5,doctors,doctor,Olundango Medical Square,,,,,,,,,,,,,,,,,,,,,,,,72900003,1,2019/08/01 13:48:32+00,1fdb0d95711b4f62be581a4b564ebe3a
+,,"1433917262",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,172587874,1,2025/09/28 23:37:23+00,5e9d451906884040a3c4d0e3dbf7d532
+17.0746989733166,-22.5683582389446,"11823855897",node,15.625,dentist,dentist,Dental Practice,,,dentist,,,,,,,,,,,,,,,,,,,,,152001957,2,2024/05/29 18:21:56+00,3bf5b660905849058463469fb4569b7f
+,,"849455897",way,15.625,clinic,clinic,Okanguati Health Centre,,,,,,,,,,,,,,,,,,,,,,,Okanguati,108543649,2,2021/07/24 19:21:06+00,892d51d526404f1c9b6b265bfe1d3d1d
+,,"1086302378",way,12.5,clinic,clinic,Ohandungu Clinic,,,,,,,,,,,,,,,,,,,,,,,,124906123,1,2022/08/14 23:01:37+00,beadd580293b47e5a490f642caaa3ae2
+17.7155345306006,-19.2419095238002,"5407531621",node,15.625,pharmacy,pharmacy,Etosha Pharmacy,,,,,,,,,,,,,,,,,,,,,,,Tsumeb,133296145,3,2023/03/04 16:03:26+00,300ce2cb93954182b91dfb5b7e5dbf68
+,,"982451002",way,15.625,clinic,clinic,Eheke Clinic,,,,,,,,,,,,,,,,,,,,,,,Eheke,158829304,2,2024/11/06 18:36:04+00,57959690cb334cc6a6a2550683b0a283
+,,"795605992",way,15.625,clinic,clinic,Daan Viljoen Clinic,,,,,,,,,,,,,,,,,,,,,,,Keetmanshoop,136294367,2,2023/05/19 11:05:00+00,e15d0d7545004bc799df3759fa1354c5
+,,"1093399674",way,12.5,clinic,clinic,Otuani Clinic,,,,,,,,,,,,,,,,,,,,,,,,126023754,1,2022/09/10 17:14:49+00,3da47c6ba0a947f0bccb625752f0fb4b
+17.0947893893951,-22.6212050488062,"11911946677",node,15.625,doctors,doctor,Dr Spuy / Heyman / Bekker,,,orthopaedics,,,,,,,,,,,,,,,,,,,,,151442836,1,2024/05/17 08:58:26+00,28055a6b739a4c4c95dc47e0379d2a1f
+14.5274311389918,-22.6458122210478,"9500118144",node,15.625,pharmacy,pharmacy,Dis-Chem,,,,,,,,,,,no,,,,,,,,,,,,,163244157,4,2025/03/05 13:01:35+00,21ca60d2d1c341a08e97f05edf9043ef
+16.4270171613396,-28.5520634629612,"5236540223",node,15.625,pharmacy,pharmacy,Golden Pharmacy,,,,,,,,,,,,,,,,,,,,,,,Oranjemund,109648970,2,2021/08/13 20:58:20+00,5292a3448ed4414091bff5bea6f5c289
+17.0948296225304,-22.6212558431394,"11911867943",node,15.625,doctors,doctor,Dr Moolman / Dr Jonck,,,orthopaedics,,,,,,,,,,,,,,,,,,,,,151442111,1,2024/05/17 08:41:28+00,f73b511c21ad40efab19088ef3dfeb76
+14.2817505999965,-22.1154018678285,"9806534086",node,6.25,,optometrist,,,,,,,,,,,,,,,,,,,,,,,,,134408665,2,2023/04/02 10:50:27+00,e3b2f26f6c2d430a8610b2efd51749a6
+,,"1047591902",way,12.5,clinic,clinic,Sangwali Health Centre,,,,,,,,,,,,,,,,,,,,,,,,119256455,3,2022/04/03 08:42:41+00,a4b84c74958843e29326e666e41c82f3
+,,"1038028978",way,12.5,hospital,hospital,Nyangana District Hospital,,,,,,,,,,,,,,,,,,,,,,,,118204672,1,2022/03/07 16:53:20+00,abf5284f40df4b529e912ef6a49adeb2
+,,"1313816430",way,12.5,clinic,clinic,Iipandayamiti Clinic,,,,,,,,,,,,,,,,,,,,,,,,156416183,2,2024/09/09 22:18:12+00,1eb96a02c52c4f0ca0ab10bdbbcd6866
+17.0849739293218,-22.5719510579209,"5071807122",node,12.5,pharmacy,pharmacy,Niemeyer Apotheke,,,,,,,,,,,,,,,,,,,,,,,,120185085,3,2022/04/25 21:49:24+00,0cd475ed70644fe18660f1ad57d69ea4
+14.5301463727058,-22.9334813172577,"8950880704",node,15.625,pharmacy,pharmacy,Onehealth Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,108611484,1,2021/07/26 09:44:03+00,a4b766ce11904d97a68914ac66757fe8
+,,"1318512869",way,12.5,clinic,clinic,Katjinakatji Clinic,,,,,,,,,,,,,,,,,,,,,,,,157146811,1,2024/09/26 21:38:31+00,db0ec8218178423f81389e69ad982fb9
+17.0807907729051,-22.5667701197503,"3698965668",node,18.75,pharmacy,pharmacy,Clicks,,,,,,,,,,,yes,,,,,,,,,,,,Windhoek,166006994,5,2025/05/09 00:33:54+00,7d91f7ee84a74198b9b0967d74e4d312
+,,"521523397",way,12.5,clinic,clinic,Otjimuhaka Clinic,,,,,,,,,,,,,,,,,,,,,,,,119031928,2,2022/03/28 17:22:52+00,4d585ed748c94d4fb2d8bb665f7f87f9
+,,"521937834",way,12.5,clinic,clinic,Mpora Clinic,,,,,,,,,,,,,,,,,,,,,,,,157147149,2,2024/09/26 21:50:31+00,7822f85a259341259978c8653f6e270f
+,,"422060309",way,21.875,doctors,doctor,Cottage Family Practice,,,,,,,,,,,,,,,,,,,,,Daniel Kamho Avenue,"13001",Swakopmund,108447348,3,2021/07/22 19:23:40+00,a540a108ae524137a9e5f13d5dbfda92
+,,"1312402848",way,12.5,clinic,clinic,Orumana Clinic,,,,,,,,,,,,,,,,,,,,,,,,156006537,1,2024/08/31 09:51:06+00,bcdb83400dbd4a19a45b1dd1b7fc9a21
+,,"701777430",way,15.625,hospital,hospital,Robert Mugabe Clinic,,,,,,,,,,,,,,,,,,,,,,,Windhoek,137446860,3,2023/06/17 13:02:55+00,f612c62e8da04484b7b1eef9f259c5eb
+,,"1245853124",way,12.5,clinic,clinic,Nepara Clinic,,,,,,,,,,,,,,,,,,,,,,,,147025114,1,2024/02/03 15:53:39+00,ad0cbe54cea049cebb05623bb76941fd
+16.6923998666584,-20.4679849833608,"12159801895",node,9.375,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,,,,163736478,2,2025/03/17 15:03:58+00,aeeb985a00944952856e97f720e445ca
+19.764263192695,-17.9184718048138,"7357723092",node,6.25,doctors,,,,,,,,,,,,,,,,,,,,,,,,,,82955008,1,2020/04/02 05:03:41+00,40cc03e59927433a9c3c1cbcf47d6134
+17.0802897865524,-22.5682667085619,"12775776302",node,21.875,doctors,doctor,Dr. Undjizuva Katjiuongua,,,general,,,,,,,,,,,,,,,,,,Wecke Street,,Windhoek,165282756,2,2025/04/22 12:16:46+00,e26463c7bb06459cb17e652da07dba9a
+17.0840852799474,-22.5666375180421,"11907022066",node,12.5,pharmacy,pharmacy,Namib Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,151359002,1,2024/05/15 12:39:32+00,f55b105b60cc4c008c14f59cd2ef9c49
+,,"1147441538",way,12.5,clinic,clinic,Eudafano Clinic,,,,,,,,,,,,,,,,,,,,,,,,132727817,1,2023/02/18 20:05:50+00,2942fb11296a412096e7725e3ed0c3d6
+17.0780691689446,-22.5620893297421,"12019337586",node,12.5,dentist,dentist,Dr Kadiso Moloi,,,,,,,,,,,,,,,,,,,,,,,,153316868,1,2024/06/29 04:12:04+00,65cfc0b434354f6eb2753d2a70f7bedf
+17.0946876330906,-22.621378805659,"11911951372",node,12.5,doctors,doctor,Dr Simba,,,,,,,,,,,,,,,,,,,,,,,,156158018,2,2024/09/03 19:55:20+00,ab12f73823ad4f65a8af8298d1d11e12
+,,"487008862",way,15.625,,laboratory,NIP,Namibia Institute of Pathology,,,,,,,,,,,,,,,,,,,,,,Swakopmund,108911779,3,2021/07/30 21:54:43+00,d3e67d417cbc472ab01cfc9a4682da56
+,,"582955930",way,18.75,doctors,doctor,Medical Centre,,,,,,,,,,,,,,,,,,,,,Cuito Cuanavale Street,,Gobabis,135420444,2,2023/04/27 10:08:29+00,2666c69b3663498a81f724f22bfb6b17
+,,"1152884581",way,12.5,clinic,clinic,Oshivelo Clinic,,,,,,,,,,,,,,,,,,,,,,,,133475522,1,2023/03/09 11:39:55+00,72b6b420368848a0be36bc23e8e101ce
+,,"1311685238",way,9.375,clinic,clinic,,,,,,,,,,,,,,,,,,,,,,,,,155861553,1,2024/08/28 06:06:06+00,20e1ea214444427780219cbb74e89424
+,,"1310097489",way,15.625,clinic,clinic,Olutsiidhi Clinic,,https://digitalnamibia.nsa.org.na/,,,,,,,,,,,,,,,,,,,,,,155639295,1,2024/08/23 08:23:25+00,93ec7414d93248bcace3d9f242cdb789
+,,"229409034",way,12.5,clinic,clinic,Berseba Clinic,,,,,,,,,,,,,,,,,,,,,,,,124701714,3,2022/08/09 20:06:41+00,c41cc6f02a3243a3ad67de5bc94645be
+,,"82228110",way,18.75,clinic,clinic,Mediclinic Swakopmund,,,,,,,,,,,,,,,,,,,,,Franziska van Neel St,,Swakopmund,108911779,4,2021/07/30 21:54:43+00,ecf034980cf9460ab3b44013aa3bdfb1
+,,"1086302846",way,12.5,clinic,clinic,Etanga Clinic,,,,,,,,,,,,,,,,,,,,,,,,124906264,1,2022/08/14 23:12:05+00,3769b242c134411f9851b46925a3717a
+,,"1218811157",way,12.5,clinic,clinic,Luhonono Clinic,,,,,,,,,,,,,,,,,,,,,,,,143217849,1,2023/10/27 15:52:06+00,3891e408da074c9eb56f760b189276ee
+15.69954834833,-17.7833970160775,"3923136342",node,9.375,pharmacy,,Pharmacy 2000,,,,,,,,,,,,,,,,,,,,,,,,36315276,2,2016/01/02 10:49:57+00,b6bbc50bd4244a2fa74f95a9df12b8b9
+,,"1318196437",way,12.5,clinic,clinic,Baramashoni Clinic,,,,,,,,,,,,,,,,,,,,,,,,157099035,1,2024/09/25 19:35:31+00,7060cf408c0d43c5a8000fdade26ea86
+,,"983727290",way,12.5,clinic,clinic,Ongha Clinic,,,,,,,,,,,,,,,,,,,,,,,,111264752,1,2021/09/15 23:02:05+00,433e015140974e5a8ce193701b2c7bab
+,,"359832849",way,21.875,hospital,hospital,Roman Catholic Hospital,,,,,,,,,,,,,yes,,,,,,,"92",Mandume Ndemufayo Avenue,,,141700581,8,2023/09/24 21:13:55+00,a607b2ca826346efb152ad1ced6bc4e8
+18.9682866542963,-22.4514405803198,"2288090777",node,9.375,pharmacy,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,75870261,2,2019/10/18 04:34:05+00,113a4029544c4fc09f286052beedee9c
+13.2447030664337,-17.0033259771409,"5034116000",node,12.5,clinic,clinic,Primary Healthcare,,,,,,,,,,,,,,,,,,,,,,,,84069872,4,2020/04/24 15:54:50+00,8781ed22a94c4cccaf134ffc51e1d0aa
+,,"966020490",way,18.75,clinic,clinic,Walvis Bay Clinic,,,,,,,,,,,,,,,,,,,,,Moses ǁGaroëb Street,,Walvis Bay,128007987,3,2022/10/24 17:39:37+00,0af608a85ac14cc48e35f56d073bdb0f
+,,"1205185367",way,12.5,clinic,clinic,Onamutai Clinic,,,,,,,,,,,,,,,,,,,,,,,,140937863,2,2023/09/07 12:06:39+00,925ab80eab454d4895664ebef90933e8
+,,"1287411538",way,18.75,clinic,clinic,Park Primary Health Clinic,,,,,,,,,,,,,,,,,,,,,Kornalyn Street,,Windhoek,151948738,1,2024/05/28 14:40:31+00,9333176cabac4ae7b8dacbb0ac4f729a
+14.5281802296784,-22.6385007707286,"8733990119",node,25,dentist,dentist,Integrated Dental Holdings,,,dentist,,,Mo-Fr 09:00-17:00,,,,,,,,,,,,,,"9",Emerald St,,,132446913,3,2023/02/12 14:04:49+00,6f39944314864a529670aa601e81d429
+17.1170051208424,-22.8590603268178,"2290501143",node,12.5,clinic,,The Well @ Omeya,,,,,,,,,,,,,no,,,,,,,,,,,151925534,3,2024/05/28 05:16:22+00,a29fb2a89e9a4941aa94b7fca1b9cae8
+17.0944730563694,-22.6213677415468,"11911951376",node,15.625,doctors,doctor,Dr Gerald Morkel,,,paediatrics,,,,,,,,,,,,,,,,,,,,,162404949,2,2025/02/11 19:49:56+00,bbb6cd5b0f9d4ec9b74fbf23e1ebd641
+,,"805506267",way,12.5,hospital,hospital,Oshikuku Hospital,,,,,,,,,,,,,,,,,,,,,,,,110197462,4,2021/08/24 23:36:20+00,c7cad1f6241e441bbf1c8df485199541
+,,"945118687",way,12.5,clinic,clinic,Kanono Clinic,,,,,,,,,,,,,,,,,,,,,,,,120107990,2,2022/04/24 00:15:13+00,bfeb3d00a70d409fa5b4eec2274291ae
+,,"1081962638",way,12.5,clinic,clinic,Spitzkoppe Clinic,,,,,,,,,,,,,,,,,,,,,,,,124162044,1,2022/07/28 00:56:59+00,7d5382fe370a4d27be4473f227b0cf1e
+,,"1088937771",way,12.5,clinic,clinic,Narraville Clinic,,,,,,,,,,,,,,,,,,,,,,,,125334503,1,2022/08/24 21:58:22+00,9016402c5cb444c78864a5acd5690f8d
+,,"633662631",way,12.5,doctors,doctor,Otjivero Medical Aid,,,,,,,,,,,,,,,,,,,,,,,,63486785,1,2018/10/13 14:36:29+00,180bba55a9c94a19bd900a0ab86879ee
+17.0945489964121,-22.6212925558753,"11911951379",node,15.625,doctors,doctor,Dr Bruwer / Makambwa,,,general,,,,,,,,,,,,,,,,,,,,,162404949,3,2025/02/11 19:49:56+00,22360d7bc4e7411b81de1af49f51add6
+,,"1080413838",way,12.5,clinic,clinic,Okalongo Health Centre,,,,,,,,,,,,,,,,,,,,,,,,123915337,1,2022/07/22 00:43:00+00,0a7e1e7832dc47d59d7013526caedee0
+,,"531183684",way,12.5,clinic,clinic,Oshikunde Clinic,,,,,,,,,,,,,,,,,,,,,,,,122301912,3,2022/06/13 01:20:28+00,5d089b90515d4c9a9c259db73bcc3153
+,,"978742119",way,12.5,clinic,clinic,Onkani Clinic,,,,,,,,,,,,,,,,,,,,,,,,110620275,1,2021/09/02 13:20:23+00,18287e903d7741e997785b7134ef3188
+16.6492527627873,-20.4652246550077,"4685657899",node,21.875,doctors,,Otji. Med. Pract.,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,Hindenburg Street,"9000",Otjiwarongo,72787738,7,2019/07/29 21:37:22+00,4f6909f628a84e35af93675bb8f5e68a
+16.6518861891263,-20.4626666657972,"4682973388",node,9.375,dentist,,State Dentist and Laboratory,,,,,,,,,,,,,,,,,,,,,,,,46051933,2,2017/02/13 16:17:18+00,e64491b4e6ac4ccea0f330300fd2e15c
+17.0946559494966,-22.6213971620269,"11911951380",node,15.625,doctors,doctor,Kilian Orthopaedic Services,,,orthopaedics,,,,,,,,,,,,,,,,,,,,,156158018,2,2024/09/03 19:55:20+00,75a767cfd1f745f4ac3e6591bb217e04
+,,"1051025018",way,12.5,clinic,clinic,Okankolo Health Centre,,,,,,,,,,,,,,,,,,,,,,,,119578536,1,2022/04/11 12:56:40+00,21d97a18d1774c4fa4670d3f36b82f83
+,,"1037837976",way,12.5,clinic,clinic,Kangongo Clinic,,,,,,,,,,,,,,,,,,,,,,,,118177065,1,2022/03/06 22:54:58+00,ce20f4b326ef4737a2bbb99ebb855b7a
+16.5835001689714,-18.3634781084079,"7687189853",node,12.5,pharmacy,pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,,87591513,1,2020/07/06 09:39:00+00,522e2717a9a94e8eaba4ec321f08a075
+16.1541457284493,-20.1064979746444,"1029324153",node,18.75,pharmacy,pharmacy,Outjo Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,Outjo,121087464,5,2022/05/17 08:43:03+00,08e7ccdd8e1e4ba68224d2bb1c8220a3
+14.5351873330934,-22.6556627174764,"11987277938",node,12.5,,physiotherapist,FlowForm Rehab & Physiotherapy,,,,,,,,,,,,yes,,,,,,,,,,,,152795798,1,2024/06/17 10:27:59+00,a6df57b7ccf746e5aa343e84852f1894
+,,"1205737743",way,12.5,clinic,clinic,Lusese Clinic,,,,,,,,,,,,,,,,,,,,,,,,159142659,2,2024/11/14 18:56:40+00,ed333200c8094212b14dc3a5fe385816
+15.7534311614238,-17.7844932013745,"3923136356",node,12.5,pharmacy,pharmacy,Cuvelai Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,117470193,4,2022/02/16 10:36:05+00,6bfee4a75a964d93b3fb4399d78cc7ed
+13.841740329789,-18.0637009339688,"5028297629",node,12.5,doctors,doctor,,,,,,,Mo-Sa 08:00-18:00,,,,,,,,,,,,,,,,,,156544204,3,2024/09/12 19:46:22+00,25d96c3f33104c8798c9683232915276
+,,"246235161",way,15.625,hospital,hospital,Onandjokwe Hospital,,,,,,,,,,,,,,,,,,,,,,,Oniipa,115714336,5,2022/01/03 14:30:57+00,c5cdb80d581b41d78bc09b914f74422e
+,,"1069096604",way,12.5,clinic,clinic,Omundaungilo Clinic,,,,,,,,,,,,,,,,,,,,,,,,122300511,1,2022/06/12 23:24:23+00,42f83a9a32a94325a43f2bcf9ceaf2f2
+,,"1068455475",way,12.5,clinic,clinic,Omboloka Clinic,,,,,,,,,,,,,,,,,,,,,,,,122203141,1,2022/06/10 10:06:27+00,9921130337f243ae93319598456195cc
+,,"1080407141",way,12.5,clinic,clinic,Onheleiwa Clinic,,,,,,,,,,,,,,,,,,,,,,,,123914589,1,2022/07/21 23:54:14+00,b0bdb31a1d794754b52e0bebf37221e0
+14.530640821174,-22.9337006716637,"8950880705",node,15.625,pharmacy,pharmacy,Oasis Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,108611484,1,2021/07/26 09:44:03+00,a7bee2ccae5e425ebadcc0f3fa424081
+,,"552795937",way,18.75,hospital,hospital,Okakarara Hospital,,,,,,,,,,,,,,,,,,,,,John Tjikua Street,,Okakarara,120233162,5,2022/04/26 22:51:27+00,0bf08c11a57d4d558a97fe1b5b9ed8fb
+,,"1070086416",way,12.5,clinic,clinic,Onanke Clinic,,,,,,,,,,,,,,,,,,,,,,,,122437708,1,2022/06/15 22:49:59+00,4815045bc0ef40d8ac422c2886332ead
+15.9727268941524,-17.9141167355629,"12206763053",node,12.5,doctors,doctor,Outapi Medical Centre 2,,,,,,,,,,,,,,,,,,,,,,,,157205548,1,2024/09/28 11:16:38+00,567583a6212f4e51ac543df223b70b64
+,,"1081419379",way,12.5,clinic,clinic,Okondjatu Clinic,,,,,,,,,,,,,,,,,,,,,,,,124097005,1,2022/07/26 13:25:12+00,26e4091ac38040fe879aaeec4b4d3b98
+,,"1049594217",way,12.5,clinic,clinic,Muveve Clinic,,,,,,,,,,,,,,,,,,,,,,,,119386061,1,2022/04/06 12:47:28+00,382f8748aacb4f2d9e2fef5a5bdd260a
+,,"551004172",way,12.5,clinic,clinic,Kasheshe Clinic,,,,,,,,,,,,,,,,,,,,,,,,120047739,2,2022/04/22 12:03:34+00,79812c8c7834407faa79e6e6cf6ec85d
+17.0353237258736,-22.5218065736424,"1091264533",node,12.5,doctors,doctor,,,,,,,,,,,,,,no,,,,,,,,,,,78466341,4,2019/12/16 09:50:24+00,253141cd35f74d33bd63a129b79b4e1e
+,,"331255834",way,25,doctors,doctor,Dr. Thelma von Schauroth,,,general,,,,,,,,,,,,,,,,,,Park Street,"23008",Karasburg,118888253,3,2022/03/25 00:57:28+00,f723f469b0544876afbcf8a8176f3854
+,,"1220955873",way,12.5,clinic,clinic,Eunda Clinic,,,,,,,,,,,,,,,,,,,,,,,,143608550,1,2023/11/04 11:20:57+00,cf60ed8ce05e4ba5918a93d4faf7d9d5
+,,"1305007822",way,18.75,clinic,clinic,DRC Clinic,,,,,,,,,,,,,,,,,,,,,Ondjamba Street,,Swakopmund,154684158,1,2024/08/01 09:23:32+00,045180002c7041c1864fea6d882fb038
+,,"1210416125",way,15.625,clinic,clinic,Omona Watjihozu Health Centre,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,,,,,141690397,2,2023/09/24 16:32:26+00,f16a7af9de434d4d91f6aaeac164cc1d
+,,"1069910731",way,12.5,clinic,clinic,Ekoka Clinic,,,,,,,,,,,,,,,,,,,,,,,,122414001,1,2022/06/15 11:33:49+00,3e2d89b54a3d43a39e32fda55a7180e0
+17.0835262908248,-22.572814980681,"3646094217",node,25,,blood_donation,The Blood Transfusion Service of Namibia (NamBTS),,,,,,"Mo-We,Fr 07:00-16:00; Th 07:00-18:00",,,,,,limited,,,,,,,,"35",Tal Street,,Windhoek,142674478,9,2023/10/16 16:36:28+00,e2545aa493464b8a89d9754b812abf6f
+,,"1081955914",way,12.5,clinic,clinic,Uis Clinic,,,,,,,,,,,,,,,,,,,,,,,,124161151,1,2022/07/27 23:43:54+00,43347ebe98304d2cb73591c07ba096ce
+,,"1036260519",way,12.5,clinic,clinic,Rupara Health Centre,,,,,,,,,,,,,,,,,,,,,,,,147074597,2,2024/02/05 01:11:05+00,35f8e821d4824bb286a575c1fa2b8385
+,,"805380634",way,12.5,hospital,hospital,Ohangwena Clinic,,,,,,,,,,,,,,,,,,,,,,,,122151336,4,2022/06/09 08:13:00+00,6cb97f8a825646d8b3a1e96d47485de6
+,,"1311501413",way,12.5,clinic,clinic,Okathitu Clinic,,,,,,,,,,,,,,,,,,,,,,,,155829611,1,2024/08/27 12:31:28+00,4caad84f4ff94c94b560188967c46471
+15.7667611534977,-17.7781511181573,"4675456519",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,72904275,2,2019/08/01 15:17:51+00,267ed7d347284d0daf0b4503f49584f4
+,,"369046415",way,25,hospital,hospital,Karasburg State Hospital,,,,,,,,,,,,,yes,,,,,,,,Johannes Nangura Street,"23008",Karasburg,118887362,5,2022/03/24 23:59:53+00,f6fe0d7def114f618608338d2b826223
+,,"1312337984",way,12.5,clinic,clinic,Omakange Clinic,,,,,,,,,,,,,,,,,,,,,,,,155995245,1,2024/08/30 23:43:08+00,d1cb5afc90584594939aa2aaec2564f2
+,,"1038021535",way,12.5,clinic,clinic,Ndonga Linena Clinic,,,,,,,,,,,,,,,,,,,,,,,,118203255,1,2022/03/07 16:16:50+00,f5f37cd3c2804e388a980c2893aa40cc
+,,"1085170092",way,15.625,clinic,clinic,Nau-Aib Clinic,,,,,,,,,,,,,,,,,,,,,,,Okahandja,124700100,1,2022/08/09 19:21:39+00,e485a0d42b5c4731b5d74b16a0b97503
+,,"1060897168",way,12.5,clinic,clinic,Bukalo Health Centre,,,,,,,,,,,,,,,,,,,,,,,,121073566,1,2022/05/17 00:26:09+00,8ee981bcd0a5459c9eb855ddd8bbfccb
+17.0627580302366,-22.6002286655622,"8743236517",node,12.5,dentist,,Dr Diaan Burger,,,,,,,,,,,,,,,,,,,,,Gous St,,,104906380,1,2021/05/18 17:34:33+00,477973dcfa8b4bf89ea03114422c4435
+,,"1080397808",way,12.5,clinic,clinic,Omundudu Clinic,,,,,,,,,,,,,,,,,,,,,,,,123913088,1,2022/07/21 22:49:01+00,41a16d8402774047b3da2039ad3e9bf3
+,,"981615961",way,15.625,clinic,clinic,Oluno Clinic,,,,,,,,,,,,,,,,,,,,,,,Ondangwa,111025802,1,2021/09/10 13:57:27+00,24fcffb671c14b9a8d3cc8ca54866743
+,,"629905652",way,12.5,clinic,clinic,Primary Health Care Clinic,,,,,,,,,,,,,,,,,,,,,,,,87607844,2,2020/07/06 14:58:02+00,81fb62c3db1d4156822c75fb1a2ffe4f
+,,"1069094806",way,12.5,clinic,clinic,Onangolo Clinic,,,,,,,,,,,,,,,,,,,,,,,,122300134,1,2022/06/12 22:55:14+00,7001578a473f404e92f9706214c104d4
+,,"1036060525",way,15.625,clinic,clinic,Chincimane Clinic,Chincimane Clinic,,,,,,,,,,,,,,,,,,,,,,,120107800,2,2022/04/24 00:02:40+00,52a28520590947e680f8045e504b1bdb
+,,"947535644",way,12.5,clinic,clinic,Otamanzi Clinic,,,,,,,,,,,,,,,,,,,,,,,,105550639,2,2021/05/29 22:37:00+00,6bda33864cbd42698678f6c5fd854e45
+,,"1314504561",way,12.5,clinic,clinic,Olupandu Clinic,,,,,,,,,,,,,,,,,,,,,,,,156416810,1,2024/09/09 23:00:31+00,bcca92c7cb23479999593eb92f2048b9
+,,"1087586939",way,12.5,clinic,clinic,Schlip Clinic,,,,,,,,,,,,,,,,,,,,,,,,125125279,1,2022/08/19 20:26:29+00,7e0cb2087dba45838218e9e321cfd59c
+17.0944786722445,-22.6213299391635,"11911951377",node,15.625,doctors,doctor,Dr J. H. T. Nel,,,surgery,,,,,,,,,,,,,,,,,,,,,162404949,2,2025/02/11 19:49:56+00,f684208a66a746dc946465481c8f0840
+,,"947531897",way,12.5,clinic,clinic,Etilyasa Clinic,,,,,,,,,,,,,,,,,,,,,,,,105383327,2,2021/05/26 23:35:22+00,5643d5a71b0c4560973d972b3ad19947
+17.0918259675281,-22.5852041041237,"4208927690",node,18.75,dentist,dentist,Medicare Centre,,,,,,Mo-Fr 08:00-05:30,,,,,,,,,,,,,,,Centaurus Road,,,151359725,3,2024/05/15 12:55:22+00,c38ff81d34774727ac67dd4342b6949a
+,,"1313550775",way,12.5,clinic,clinic,Oshalongo Clinic,,,,,,,,,,,,,,,,,,,,,,,,172547073,2,2025/09/27 23:18:56+00,83360ac670604408bd6a11ea97277232
+17.0980632769557,-22.6049978008299,"11165771734",node,18.75,,laboratory,Namib Laboratories,Feedmaster,,"biochemistry;covid19",,,,,,,,,yes,,,,,,,,,,,,141005647,4,2023/09/08 23:24:56+00,0f707e9728aa4c6f8b73ff3b3e14213d
+,,"1089314885",way,12.5,clinic,clinic,Koës Clinic,,,,,,,,,,,,,,,,,,,,,,,,125378809,1,2022/08/25 20:41:01+00,ba100d84d7d5484ba6a88502ab0630d8
+,,"1080401200",way,12.5,clinic,clinic,Odimbwa Clinic,,,,,,,,,,,,,,,,,,,,,,,,123913708,1,2022/07/21 23:16:04+00,0185c9d39fd5498bb12a14ebef40ff7c
+,,"474227415",way,25,hospital,hospital,Otjiwarongo Medi-Clinic,,,,,,,,,,,,,yes,,,,,,,,Son Road,"12001",Otjiwarongo,142474324,5,2023/10/12 11:10:02+00,9c370a1d3fa640eeb90138b24c835f12
+,,"1037841432",way,12.5,clinic,clinic,Mayara Clinic,,,,,,,,,,,,,,,,,,,,,,,,118177464,1,2022/03/06 23:22:54+00,3f3ca77285c5404b87a5eeff4a7b25fc
+14.5240681518005,-22.6785853786373,"1255210922",node,15.625,doctors,doctor,Bismarck Medical Centre,,,,,,,,,,,,,,,,,,,,,,,Swakopmund,111685352,4,2021/09/25 12:06:10+00,884ff9ac570e4c25a2b6162edf0d4ef7
+,,"485398251",way,25,hospital,hospital,Welwitschia Private Hospital,,,,,,,,,,,,,yes,,,,,,,,Dr. Putch Harries Drive,"13013",Walvis Bay,131374818,7,2023/01/17 11:34:30+00,a6e11b7cabbc480ca53fa50b03fdd1fe
+,,"1015475842",way,12.5,clinic,clinic,Odibo Primary Health Centre,,,,,,,,,,,,,,,,,,,,,,,,115398696,3,2021/12/26 20:15:30+00,fc819bb7ab1d4e95b7775ec9cfe5c681
+,,"804680859",way,15.625,hospital,hospital,Eenhana District Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,143542498,6,2023/11/02 17:24:09+00,deaa5a029d804ca0a538a88ef95d17c7
+14.5299088295699,-22.9346026482642,"9943532419",node,12.5,,alternative,Multi Purpose Center Walvis Bay,,,,,,,,,,,,,,,,,,,,,Khomashochland Street,,,124703913,1,2022/08/09 21:15:57+00,a93163d1dde24def9f71abe64b4ca972
+,,"805508762",way,12.5,clinic,clinic,Gcwatjinga Clinic,,,,,,,,,,,,,,,,,,,,,,,,125018057,2,2022/08/17 13:24:13+00,f79f00ca3b8d4bafa3340b1c5c340ce5
+,,"1092546869",way,25,hospital,hospital,NAPPA Clinic,,,community,,,,,,,,,,,,,,,,,"490",Simon Kempere Street,,Rundu,125886417,1,2022/09/07 07:04:56+00,01f9bf8b3a4e4a9db20117507dc0a07a
+,,"1036027244",way,12.5,clinic,clinic,Sesheke Clinic,,,,,,,,,,,,,,,,,,,,,,,,117950009,1,2022/02/28 16:07:09+00,1cc21910a3064592917810585fb53339
+,,"1318980576",way,12.5,clinic,clinic,Mile 30 Clinic,,,,,,,,,,,,,,,,,,,,,,,,157205697,1,2024/09/28 11:20:01+00,fa099da121994434b77e32f6f3b03e7f
+,,"948240152",way,25,hospital,hospital,Indira Gandhi Clinic,,,maternity,,,,,,,,,,,,,,,,,,Onemanya,"16008",Okahao,105507155,2,2021/05/28 18:10:44+00,773798eba2cc48abbafa0c02f7f605d8
+17.1017883623641,-22.5715901331702,"1083462077",node,15.625,pharmacy,pharmacy,International Pharmacy,,,,,,,,,,,,yes,,,,,,,,,,,,166006994,6,2025/05/09 00:33:54+00,c63955d899a84b6084547236cfae81ee
+,,"1311492028",way,12.5,clinic,clinic,Okando Clinic,,,,,,,,,,,,,,,,,,,,,,,,155827178,1,2024/08/27 11:38:41+00,7fe09899ddcb42b7a3ba053c10ee53fe
+17.1177287305433,-22.6034525131608,"3851449659",node,9.375,clinic,,Auas Hills Medical Centre,,,,,,,,,,,,,,,,,,,,,,,,35506100,1,2015/11/22 11:22:56+00,c99c86b656f2441fb93588cf1ef6e3cb
+17.0461053679256,-22.5209935290346,"4501274590",node,15.625,pharmacy,pharmacy,Corner Pharmacy,,,,,,,,,,,yes,,,,,,,,,,,,,78366679,3,2019/12/13 10:29:56+00,c75ee8f579284cfdb111cd1b321aa89f
+,,"1306445803",way,15.625,clinic,clinic,Oikokola Clinic,,https://digitalnamibia.nsa.org.na/,,,,,,,,,,,,,,,,,,,,,,154998523,1,2024/08/08 21:44:09+00,b8f860b025794791bd2f0e9104b8e719
+,,"1331960957",way,12.5,clinic,clinic,Corridor Clinic,,,,,,,,,,,,,,,,,,,,,,,,158897853,1,2024/11/08 14:19:43+00,3143902fc2b84417bf97483826d26e4c
+17.0947267765784,-22.6212550049491,"11911951369",node,15.625,doctors,doctor,Dr Kumire,,,neurology,,,,,,,,,,,,,,,,,,,,,151442756,1,2024/05/17 08:56:36+00,914e5c0b7b13449ebc9428a33afb5cf3
+,,"98924623",way,12.5,clinic,clinic,Baumgartsbrunn Clinic,,,,,,,,,,,,,,,,,,,,,,,,73281872,4,2019/08/12 20:00:14+00,9d149025307f47a4a1d290c277d715c2
+,,"224883999",way,15.625,hospital,hospital,Engela Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,85385970,2,2020/05/18 13:06:13+00,37bcb4ff5cd24de0931b59dc3e6218fa
+17.0770840438646,-22.5487598405823,"11257614115",node,12.5,pharmacy,pharmacy,Windhoek West Pharmacy,,,,,,,,,,,,,,,,,,,,,,,,150477658,3,2024/04/25 06:21:12+00,acc9c27bff75405fad695e9225ad866b
+17.0982929411026,-22.5559172315212,"334203320",node,15.625,doctors,,"Dr. Whitaker, Dermatologist",,,dermatology,,,,,,,,,limited,,,,,,,,,,,,141748561,7,2023/09/25 21:06:43+00,35b8baec1035482e99787040011f99e2
+17.100882194812,-22.6033702028716,"2293430790",node,9.375,clinic,,Integrated Dental Holdings,,,,,,,,,,,,,,,,,,,,,,,,143655878,5,2023/11/05 15:48:31+00,76b6c91b28344ee9be2e0283af480f7e
+17.0468599906683,-22.5735311304881,"3686713080",node,9.375,doctors,doctor,,,,,,,,,,,,,,,,,,,,,,,,,106427466,4,2021/06/16 00:11:35+00,9c9653192e1c4c1091f8ffca827a6964
+,,"1069544189",way,12.5,clinic,clinic,Oshandi Clinic,,,,,,,,,,,,,,,,,,,,,,,,122364429,1,2022/06/14 09:48:17+00,5d0baca422cb42c7bfc65d1a41779e05
+,,"1039231744",way,12.5,clinic,clinic,Otjituuo Clinic,,,,,,,,,,,,,,,,,,,,,,,,118345834,1,2022/03/11 03:27:53+00,c68be67ec3164c4a92b6bc20b3d48e08
+,,"1433776832",way,15.625,clinic,clinic,Ndama Clinic,,,,,,,,,,,,,,,,,,,,,,,Rundu,172572233,1,2025/09/28 15:28:25+00,e295d430641e4157b2531ce71ae3849e
+,,"724174222",way,15.625,hospital,hospital,Usakos Hospital,,,,,,,,,,,,,yes,,,,,,,,,,,136674763,3,2023/05/28 23:46:30+00,fb84b297058340d8b05c2eeb6eeb8d17
+,,"1314783578",way,12.5,clinic,clinic,Witvlei Clinic,,,,,,,,,,,,,,,,,,,,,,,,157675328,2,2024/10/09 14:24:25+00,a26d81ae28864b60892cca0bd97940e4
+,,"1045103438",way,12.5,clinic,clinic,Etoto Clinic,,,,,,,,,,,,,,,,,,,,,,,,119032121,1,2022/03/28 17:28:19+00,528be963bb7244c6ba675af216c23012
+,,"897956146",way,21.875,pharmacy,pharmacy,Eitaalo Medical Center,,,,,,,,,,,,,,,,,,,,"2460",Boitumelo Street,,Windhoek,137516401,2,2023/06/19 12:12:36+00,6f29483d75cd4b8c94625df8fe0f47a8
+16.1519372646012,-20.1061252314102,"11613039769",node,6.25,pharmacy,,,,,,,,,,,,,,,,,,,,,,,,,,161533784,2,2025/01/19 17:36:32+00,43c3ef58876b48208db41b09db523204
+17.0799520796735,-22.5701801294184,"11219325175",node,21.875,,optometrist,Rita Frank Optometrist,,,,,,Mo-Fr 08:00-17:00,,,,,,,,,,,,,,"47",Simeon Shixungileni Street,,Windhoek,150611296,3,2024/04/28 10:09:03+00,f6f4d2ad87d9477bba244f79453f5628
+,,"1082659839",way,12.5,clinic,clinic,Otavi Health Centre,,,,,,,,,,,,,,,,,,,,,,,,124297211,1,2022/07/31 10:46:09+00,4e0221729c6942bdaa4e4b1621a79e7d
+17.0747610832191,-22.5682689716758,"11823855899",node,15.625,doctors,doctor,Holding Hope,,,psychiatry,,,,,,,,,,,,,,,,,,,,,152001957,2,2024/05/29 18:21:56+00,2fd71e544ffd43759b1d3066a052ec32
