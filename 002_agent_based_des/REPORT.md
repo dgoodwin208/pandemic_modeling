@@ -176,7 +176,7 @@ Each transition in the chain adds one measurable correction:
 
 1. **SEIR → Vanilla DES** (network topology correction): Peak drops from 14.8%
    to 11.4%, peak day shifts from 90 to 122, attack rate from 89% to 78%. This
-   gap — documented in `validation/results/ANALYSIS.md` — reflects local
+   gap — documented in `001_validation/results/ANALYSIS.md` — reflects local
    depletion of susceptibles on the clustered Watts-Strogatz network.
 
 2. **Vanilla DES → Agent DES (iso=0%)**: No change. Confirms the agent layer is

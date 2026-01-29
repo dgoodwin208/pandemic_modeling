@@ -7,10 +7,10 @@ Self-contained demo that:
 2. Runs Monte Carlo DES simulations with matched parameters
 3. Produces publication-quality comparison plots
 
-Outputs saved to validation/results/ directory.
+Outputs saved to 001_validation/results/ directory.
 
 Usage (from project root):
-    python validation/validation_des_seir.py
+    python 001_validation/validation_des_seir.py
 """
 
 import sys

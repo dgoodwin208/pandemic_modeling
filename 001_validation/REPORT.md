@@ -456,10 +456,10 @@ All code is in the project repository. To reproduce the results:
 
 ```bash
 cd pandemic_modeling
-python validation/validation_des_seir.py
+python 001_validation/validation_des_seir.py
 ```
 
-Output plots are written to `validation/results/`. The validation script is
+Output plots are written to `001_validation/results/`. The validation script is
 self-contained and requires only `numpy`, `scipy`, `matplotlib`, and `seaborn`.
 
 ### 6.1 Architecture
@@ -475,7 +475,7 @@ pandemic_modeling/
 │   ├── seir_ode.py              # SEIR ODE solver (new)
 │   ├── validation_config.py     # EpidemicScenario parameter bridge (new)
 │   └── monte_carlo.py           # Monte Carlo DES runner (new)
-└── validation/                  # Validation artifacts (new)
+└── 001_validation/              # Validation artifacts (new)
     ├── validation_des_seir.py   # Self-contained demo script
     ├── REPORT.md                # This document
     └── results/
@@ -488,7 +488,7 @@ pandemic_modeling/
 ### 6.2 Key Design Decisions
 
 **No existing files were modified.** All validation code is additive — three new
-modules in `des_system/` and the validation script in `validation/`. This
+modules in `des_system/` and the validation script in `001_validation/`. This
 preserves the DES as a black box and ensures the validation tests the actual
 simulation, not a modified version.
 

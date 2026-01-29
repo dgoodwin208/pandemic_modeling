@@ -12,7 +12,7 @@ Two experiments:
    with 100 Monte Carlo runs and variability bands
 
 Usage (from project root):
-    python agent_based_des/validation_agent_vs_des.py
+    python 002_agent_based_des/validation_agent_vs_des.py
 """
 
 import sys
