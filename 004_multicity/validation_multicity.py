@@ -37,7 +37,7 @@ DEMO_CITIES = ["Cairo", "Lagos", "Nairobi", "Johannesburg", "Kinshasa"]
 SCENARIO = COVID_LIKE
 DAYS = 300
 SEED_CITY = "Cairo"
-INITIAL_INFECTED = 10
+INITIAL_INFECTED = 100
 
 # Gravity model parameters
 GRAVITY_ALPHA = 2.0

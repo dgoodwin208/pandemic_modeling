@@ -14,10 +14,10 @@ that healthcare provider advice shifts isolation compliance from ~5% to ~40%.
 Cities with stronger health systems experience lower peak infections and attack
 rates.
 
-The core finding: **a pandemic seeded in Cairo propagates to all 5 demo cities,
-with both timing and severity shaped by travel connectivity and local health
-system capacity**. Kinshasa (score 28, R_eff=2.29) reaches 12.8% peak infection
-while Cairo (score 55, R_eff=2.09) peaks at only 10.7%.
+The core finding: **a pandemic seeded in Cairo (100 initial infections) propagates
+to all 5 demo cities, with both timing and severity shaped by travel connectivity
+and local health system capacity**. Kinshasa (score 28, R_eff=2.29) reaches 12.8%
+peak infection while Cairo (score 55, R_eff=2.09) peaks at only 10.7%.
 
 ---
 
@@ -100,7 +100,7 @@ needed.
 | Cities | Cairo, Lagos, Nairobi, Johannesburg, Kinshasa | 5 major African cities |
 | Scenario | COVID-like | R₀=2.5, incubation=5d, infectious=9d |
 | Duration | 300 days | |
-| Seed city | Cairo | 10 initial infections |
+| Seed city | Cairo | 100 initial infections |
 | α (gravity) | 2.0 | Distance decay exponent |
 | scale (gravity) | 1×10⁻⁴ | Produces 100-2300 daily travelers |
 | Transmission factor | 0.3 | P(traveler causes exposure at destination) |
@@ -138,17 +138,17 @@ Cairo↔Johannesburg (104/day), separated by 6,261 km.
 
 | City | Population | Score | R_eff | Peak Day | Peak I% | Attack Rate % |
 |------|-----------|-------|-------|----------|---------|--------------|
-| Cairo | 11,893,000 | 55 | 2.09 | 214 | 10.7 | 81.6 |
-| Kinshasa | 7,843,000 | 28 | 2.29 | 285 | 12.8 | 75.2 |
-| Lagos | 9,466,000 | 37 | 2.22 | 292 | 12.2 | 68.1 |
-| Nairobi | 3,010,000 | 42 | 2.19 | 294 | 11.8 | 65.1 |
-| Johannesburg | 3,435,000 | 52 | 2.11 | 300 | 7.5 | 29.5 |
+| Cairo | 11,893,000 | 55 | 2.09 | 179 | 10.7 | 81.9 |
+| Kinshasa | 7,843,000 | 28 | 2.29 | 255 | 12.8 | 84.3 |
+| Lagos | 9,466,000 | 37 | 2.22 | 261 | 12.2 | 82.0 |
+| Nairobi | 3,010,000 | 42 | 2.19 | 262 | 11.8 | 80.7 |
+| Johannesburg | 3,435,000 | 52 | 2.11 | 289 | 11.0 | 67.0 |
 
-Key observation: **cities now show differentiated outcomes**. Kinshasa (weakest
+Key observation: **cities show differentiated outcomes**. Kinshasa (weakest
 health system, score=28) reaches the highest peak (12.8%), while Cairo (strongest,
-score=55) peaks at only 10.7%. Johannesburg's epidemic is still growing at day 300,
-dampened by its relatively strong health system (score=52) and late seeding from
-the weakest travel link to Cairo.
+score=55) peaks at only 10.7%. With 100 initial infections, all cities complete
+their epidemic curves within the 300-day window. Johannesburg peaks last (day 289)
+due to its weak travel link to Cairo and moderate health system.
 
 ---
 
@@ -157,13 +157,13 @@ the weakest travel link to Cairo.
 ![Wave propagation](results/01_wave_propagation.png)
 
 **Figure 1.** Infection curves (I/N %) for all 5 cities on a single plot, with
-per-city R_eff shown in the legend. Cairo (seeded, R_eff=2.09) peaks at day 214.
-The wave propagates to Kinshasa (day 285), Lagos (day 292), Nairobi (day 294),
-and Johannesburg (day 300, still rising). Unlike the uniform-R₀ version, **cities
-now show different peak heights**: Kinshasa (R_eff=2.29) peaks highest at 12.8%
-while Cairo (R_eff=2.09) peaks at 10.7%. The health system heuristic creates
-heterogeneous epidemic severity — the inter-city coupling determines *when* the
-epidemic arrives, while R_eff determines *how severe* it becomes.
+per-city R_eff shown in the legend. Cairo (seeded, R_eff=2.09) peaks at day 179.
+The wave propagates to Kinshasa (day 255), Lagos (day 261), Nairobi (day 262),
+and Johannesburg (day 289). **Cities show different peak heights**: Kinshasa
+(R_eff=2.29) peaks highest at 12.8% while Cairo (R_eff=2.09) peaks at 10.7%.
+The health system heuristic creates heterogeneous epidemic severity — the
+inter-city coupling determines *when* the epidemic arrives, while R_eff
+determines *how severe* it becomes.
 
 ### Figure 2: Geographic Spread
 
@@ -183,11 +183,10 @@ darkening last (day 270).
 
 **Figure 3.** Full S/E/I/R dynamics for each city, with medical_services_score
 and R_eff shown in each subplot title. Cairo shows the classic SEIR curve starting
-around day 100. Other cities show delayed dynamics with **different final attack
+around day 80. Other cities show delayed dynamics with **different final attack
 rates**: Cairo (score 55) retains ~18% susceptible, while Kinshasa (score 28)
-retains less. Johannesburg's epidemic is still growing at day 300, illustrating
-how the combination of weak travel coupling and moderate health system capacity
-delays and dampens spread.
+retains less. Johannesburg peaks last (day 289) due to weak travel coupling to
+Cairo and moderate health system capacity.
 
 ### Figure 4: Travel Matrix Heatmap
 
@@ -231,7 +230,7 @@ behaves as intended.
 
 ### Wave propagation speed
 
-The ~70-85 day delay between Cairo's peak and the secondary cities' peaks is
+The ~75-110 day delay between Cairo's peak and the secondary cities' peaks is
 governed by three factors:
 
 1. **Travel volume** (gravity model): More travelers = faster seeding
@@ -248,12 +247,12 @@ local epidemic growth once seeded.
 
 The R_eff heuristic creates a spectrum of outcomes:
 
-- **Kinshasa** (score 28, R_eff=2.29): 12.8% peak, 75.2% attack rate — weakest
+- **Kinshasa** (score 28, R_eff=2.29): 12.8% peak, 84.3% attack rate — weakest
   health system leads to most severe epidemic
-- **Cairo** (score 55, R_eff=2.09): 10.7% peak, 81.6% attack rate — best health
+- **Cairo** (score 55, R_eff=2.09): 10.7% peak, 81.9% attack rate — best health
   system among demo cities, but seeded first so high cumulative attack rate
-- **Johannesburg** (score 52, R_eff=2.11): 7.5% peak at day 300 (still rising) —
-  moderate health system + late arrival = mildest epidemic in the window
+- **Johannesburg** (score 52, R_eff=2.11): 11.0% peak at day 289, 67.0% attack
+  rate — moderate health system + late arrival = lowest attack rate
 
 This demonstrates a key policy insight: **health system capacity determines
 epidemic severity, while travel connectivity determines epidemic timing**. Both

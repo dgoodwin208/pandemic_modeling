@@ -29,7 +29,7 @@ network, COVID-like parameters, 180-day simulations.
 
 ### How they interact
 
-Each day, as a parallel DES process (`provider_simulation.py:135-150`):
+Each day, as a parallel DES process (`provider_simulation.py:118-147`):
 
 1. Each provider randomly samples 20 people from the population
 2. For each person screened:

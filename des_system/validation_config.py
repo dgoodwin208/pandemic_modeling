@@ -142,9 +142,31 @@ MEASLES_LIKE = EpidemicScenario(
     infectious_days=8.0,
 )
 
+COVID_BIOATTACK = EpidemicScenario(
+    name="COVID-like Bioattack",
+    R0=3.5,
+    incubation_days=4.0,
+    infectious_days=9.0,
+)
+
+EBOLA_LIKE = EpidemicScenario(
+    name="Ebola-like",
+    R0=2.0,
+    incubation_days=10.0,
+    infectious_days=10.0,
+)
+
+EBOLA_BIOATTACK = EpidemicScenario(
+    name="Ebola-like Bioattack",
+    R0=2.5,
+    incubation_days=8.0,
+    infectious_days=10.0,
+)
+
 
 if __name__ == "__main__":
-    for scenario in [COVID_LIKE, FLU_LIKE, MEASLES_LIKE]:
+    for scenario in [COVID_LIKE, FLU_LIKE, MEASLES_LIKE,
+                     COVID_BIOATTACK, EBOLA_LIKE, EBOLA_BIOATTACK]:
         print(scenario.describe())
 
         # Show DES derivation for N=5000
