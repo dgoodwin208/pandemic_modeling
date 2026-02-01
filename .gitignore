@@ -24,6 +24,9 @@ yarn-error.log*
 frontend/dist/
 *.local
 
+# Simulation app generated outputs
+simulation_app/backend/outputs/
+
 # IDE
 .idea/
 .vscode/
