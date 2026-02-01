@@ -32,6 +32,7 @@ from simulation import run_absdes_simulation, SimulationParams, load_cities
 from renderer import render_all_frames, load_africa_boundaries
 from progress import ProgressManager
 from schemas import SimulationRequest
+from sim_config import load_disease_params
 
 # =============================================================================
 # App initialization
@@ -344,7 +345,6 @@ async def get_summary(session_id: str):
     n_cities = len(result.city_names)
     n_people = result.n_people_per_city
     last_day = result.actual_S.shape[1] - 1
-    ifr = getattr(result, 'ifr', 0.005)
 
     # Real population total
     real_pops = np.array(result.city_populations, dtype=float)
@@ -355,32 +355,36 @@ async def get_summary(session_id: str):
 
     # --- Aggregate totals (scaled to real populations) ---
 
-    # Final-day DES counts per city, then scale and sum
     agg_infected = 0.0
     agg_susceptible = 0.0
     agg_recovered = 0.0
+    agg_dead = 0.0
     agg_detected = 0.0
 
     for i in range(n_cities):
         s = scale[i]
         city_infected = (result.actual_R[i, last_day] +
                          result.actual_I[i, last_day] +
-                         result.actual_E[i, last_day])
+                         result.actual_E[i, last_day] +
+                         result.actual_D[i, last_day])
         agg_infected += city_infected * s
         agg_susceptible += result.actual_S[i, last_day] * s
         agg_recovered += result.actual_R[i, last_day] * s
+        agg_dead += result.actual_D[i, last_day] * s
         agg_detected += (result.observed_I[i, last_day] +
-                         result.observed_R[i, last_day]) * s
+                         result.observed_R[i, last_day] +
+                         result.observed_D[i, last_day]) * s
 
     total_infected = int(round(agg_infected))
     total_susceptible = int(round(agg_susceptible))
     total_recovered = int(round(agg_recovered))
+    total_dead = int(round(agg_dead))
     total_detected = int(round(agg_detected))
-    estimated_deaths = int(round(agg_infected * ifr))
 
     # Infection rate as fraction of total real population
     infection_rate = agg_infected / max(1, total_real_pop)
     detection_rate = agg_detected / max(1, agg_infected)
+    fatality_rate = agg_dead / max(1, agg_infected)
 
     # Peak infectious (scaled): for each day, sum scaled I across cities
     scaled_I_per_day = np.zeros(last_day + 1)
@@ -395,14 +399,16 @@ async def get_summary(session_id: str):
         s = scale[i]
         city_infected_des = (result.actual_R[i, last_day] +
                              result.actual_I[i, last_day] +
-                             result.actual_E[i, last_day])
+                             result.actual_E[i, last_day] +
+                             result.actual_D[i, last_day])
         city_infected = int(round(city_infected_des * s))
-        city_inf_rate = city_infected_des / n_people  # fraction (same at any scale)
+        city_inf_rate = city_infected_des / n_people
         city_peak_I = int(round(float(np.max(result.actual_I[i, :])) * s))
         city_peak_day = int(np.argmax(result.actual_I[i, :]))
         city_detected = int(round((result.observed_I[i, last_day] +
-                                   result.observed_R[i, last_day]) * s))
-        city_deaths = int(round(city_infected_des * s * ifr))
+                                   result.observed_R[i, last_day] +
+                                   result.observed_D[i, last_day]) * s))
+        city_deaths = int(round(result.actual_D[i, last_day] * s))
         city_summaries.append({
             "name": result.city_names[i],
             "population": result.city_populations[i],
@@ -411,7 +417,7 @@ async def get_summary(session_id: str):
             "peak_infectious": city_peak_I,
             "peak_day": city_peak_day,
             "total_detected": city_detected,
-            "estimated_deaths": city_deaths,
+            "deaths": city_deaths,
         })
 
     # Sort by total infected descending
@@ -421,7 +427,6 @@ async def get_summary(session_id: str):
         "total_population": total_real_pop,
         "simulation_days": last_day,
         "scenario": result.scenario_name,
-        "ifr": ifr,
         "provider_density": result.provider_density,
         "n_cities": n_cities,
         "n_people_per_city": n_people,
@@ -430,7 +435,8 @@ async def get_summary(session_id: str):
             "infection_rate": round(infection_rate, 4),
             "peak_infectious": peak_infectious,
             "peak_day": peak_day,
-            "estimated_deaths": estimated_deaths,
+            "total_deaths": total_dead,
+            "fatality_rate": round(fatality_rate, 4),
             "final_susceptible": total_susceptible,
             "final_recovered": total_recovered,
             "total_detected": total_detected,
@@ -462,17 +468,21 @@ async def export_csv(session_id: str):
 
     # Header
     header = ["day",
-              "actual_S", "actual_E", "actual_I", "actual_R",
-              "observed_S", "observed_E", "observed_I", "observed_R"]
+              "actual_S", "actual_E", "actual_I", "actual_I_minor",
+              "actual_I_needs", "actual_I_care", "actual_R", "actual_D",
+              "observed_S", "observed_E", "observed_I", "observed_R", "observed_D"]
     # Add per-city columns if more than 1 city
     if n_cities > 1:
         for i, name in enumerate(result.city_names):
             safe = name.replace(",", "")
             header.extend([
                 f"{safe}_actual_S", f"{safe}_actual_E",
-                f"{safe}_actual_I", f"{safe}_actual_R",
+                f"{safe}_actual_I", f"{safe}_actual_I_minor",
+                f"{safe}_actual_I_needs", f"{safe}_actual_I_care",
+                f"{safe}_actual_R", f"{safe}_actual_D",
                 f"{safe}_observed_S", f"{safe}_observed_E",
                 f"{safe}_observed_I", f"{safe}_observed_R",
+                f"{safe}_observed_D",
             ])
     writer.writerow(header)
 
@@ -483,19 +493,27 @@ async def export_csv(session_id: str):
         row.append(int(np.sum(result.actual_S[:, d])))
         row.append(int(np.sum(result.actual_E[:, d])))
         row.append(int(np.sum(result.actual_I[:, d])))
+        row.append(int(np.sum(result.actual_I_minor[:, d])))
+        row.append(int(np.sum(result.actual_I_needs[:, d])))
+        row.append(int(np.sum(result.actual_I_care[:, d])))
         row.append(int(np.sum(result.actual_R[:, d])))
+        row.append(int(np.sum(result.actual_D[:, d])))
         row.append(int(np.sum(result.observed_S[:, d])))
         row.append(int(np.sum(result.observed_E[:, d])))
         row.append(int(np.sum(result.observed_I[:, d])))
         row.append(int(np.sum(result.observed_R[:, d])))
+        row.append(int(np.sum(result.observed_D[:, d])))
 
         if n_cities > 1:
             for i in range(n_cities):
                 row.extend([
                     int(result.actual_S[i, d]), int(result.actual_E[i, d]),
-                    int(result.actual_I[i, d]), int(result.actual_R[i, d]),
+                    int(result.actual_I[i, d]), int(result.actual_I_minor[i, d]),
+                    int(result.actual_I_needs[i, d]), int(result.actual_I_care[i, d]),
+                    int(result.actual_R[i, d]), int(result.actual_D[i, d]),
                     int(result.observed_S[i, d]), int(result.observed_E[i, d]),
                     int(result.observed_I[i, d]), int(result.observed_R[i, d]),
+                    int(result.observed_D[i, d]),
                 ])
         writer.writerow(row)
 
@@ -555,6 +573,31 @@ async def list_scenarios():
             }
             for scenario_id, params in DISEASE_SCENARIOS.items()
         }
+    }
+
+
+@app.get("/disease-params")
+async def get_disease_params():
+    """Return disease parameters from disease_params.csv for frontend display.
+
+    Includes severity model parameters: severe_fraction, care_survival_prob,
+    death probabilities, gamma distribution shape, etc.
+    """
+    params = load_disease_params()
+    return {
+        scenario: {
+            "scenario": dp.scenario,
+            "R0": dp.R0,
+            "incubation_days": dp.incubation_days,
+            "infectious_days": dp.infectious_days,
+            "severe_fraction": dp.severe_fraction,
+            "care_survival_prob": dp.care_survival_prob,
+            "ifr": dp.ifr,
+            "gamma_shape": dp.gamma_shape,
+            "base_daily_death_prob": dp.base_daily_death_prob,
+            "death_prob_increase_per_day": dp.death_prob_increase_per_day,
+        }
+        for scenario, dp in params.items()
     }
 
 

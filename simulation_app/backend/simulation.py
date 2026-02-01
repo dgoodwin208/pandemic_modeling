@@ -2,14 +2,15 @@
 Simulation wrapper for the pandemic modeling web app.
 
 Runs the multicity DES with dual ACTUAL/OBSERVED tracking.
-The ACTUAL view shows true SEIR compartment counts from the DES.
+The ACTUAL view shows true SEIR-D compartment counts from the DES.
 The OBSERVED view shows only what the healthcare system has detected
 through provider screening, plus estimates for unobserved compartments.
+
+7-state model: S, E, I_minor, I_needs_care, I_receiving_care, R, D
 """
 
 import csv
 import sys
-import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
@@ -30,6 +31,14 @@ from validation_config import (  # noqa: E402
 )
 from gravity_model import compute_distance_matrix  # noqa: E402
 from city_des_extended import CityDES  # noqa: E402
+from sim_config import (  # noqa: E402
+    BIOATTACK_SEED_CITIES,
+    score_to_receptivity,
+    score_to_care_quality,
+    load_disease_params,
+    load_household_sizes,
+    household_size_to_avg_contacts,
+)
 
 
 # -- Data types ----------------------------------------------------------------
@@ -39,7 +48,7 @@ class SimulationParams:
     country: str = "Nigeria"
     scenario: str = "covid_natural"
     n_people: int = 5000
-    avg_contacts: int = 10
+    avg_contacts: int | None = None  # None = infer from country household size
     rewire_prob: float = 0.4
     daily_contact_rate: float = 0.5
     transmission_factor: float = 0.3
@@ -66,21 +75,29 @@ class DualViewResult:
     city_coords: list[tuple[float, float]]
     city_populations: list[int]
     t: np.ndarray
-    actual_S: np.ndarray   # (n_cities, days+1)
+    # ACTUAL view — full 7-state compartments
+    actual_S: np.ndarray        # (n_cities, days+1)
     actual_E: np.ndarray
-    actual_I: np.ndarray
+    actual_I: np.ndarray        # Total I (minor + needs + care)
+    actual_I_minor: np.ndarray
+    actual_I_needs: np.ndarray
+    actual_I_care: np.ndarray
     actual_R: np.ndarray
+    actual_D: np.ndarray
+    # OBSERVED view — provider-detected counts
     observed_S: np.ndarray
     observed_E: np.ndarray
     observed_I: np.ndarray
     observed_R: np.ndarray
+    observed_D: np.ndarray
+    # Metadata
     seed_city_indices: list[int]
     n_people_per_city: int
     scenario_name: str
     provider_density: float
     incubation_days: float
     infectious_days: float
-    ifr: float  # Infection fatality rate
+    ifr: float  # Infection fatality rate (reference from disease_params.csv)
 
 
 # -- City helper ---------------------------------------------------------------
@@ -118,11 +135,6 @@ def load_cities(country: str) -> list[dict]:
                 cities.append(row)
     cities.sort(key=lambda x: int(x["population"]), reverse=True)
     return cities
-
-
-def _score_to_receptivity(score: float) -> float:
-    """Convert medical_services_score (0-100) to receptivity (0.2-0.8)."""
-    return 0.2 + 0.6 * (score / 100.0)
 
 
 # -- DES-scale travel matrix ---------------------------------------------------
@@ -169,22 +181,6 @@ def _apply_travel_coupling_des(
 
     Same formula as module 004, but infection fractions come from the DES
     and new exposures are injected via inject_exposed().
-
-    Two travel matrix modes:
-
-    1. Real-population scale (des_scale_travel=False, default):
-       The travel matrix uses real city populations. We scale injected
-       exposures by (n_people / real_population) so the DES receives a
-       proportional number. Works well at large N (e.g. 50,000).
-
-    2. DES-population scale (des_scale_travel=True):
-       The travel matrix was computed using n_people (uniform DES
-       population) instead of real populations. The coupling rates are
-       already at DES scale, so no population scaling is needed. This
-       enables reliable coupling at small N (e.g. 5,000).
-
-    In both modes, fractional exposures accumulate in ``exposure_debt``
-    and inject whole persons when the debt reaches >= 1.
     """
     n = len(city_sims)
 
@@ -198,10 +194,8 @@ def _apply_travel_coupling_des(
             daily += travelers * inf_frac * transmission_factor
 
         if des_scale_travel:
-            # Travel matrix already at DES scale -- no population scaling
             exposure_debt[i] += daily
         else:
-            # Scale from real population to DES population
             scale = city_sims[i].n_people / city_real_populations[i]
             exposure_debt[i] += daily * scale
 
@@ -215,20 +209,18 @@ def _apply_travel_coupling_des(
 
 # -- Scenario configuration ----------------------------------------------------
 
-BIOATTACK_SEED_CITIES = ["Cairo", "Lagos", "Nairobi", "Kinshasa", "Johannesburg"]
-
-
 def _build_scenarios(largest_city_name: str) -> dict:
     """
     Build scenario mapping for the given country context.
 
-    Each entry: scenario_key -> (EpidemicScenario, seed_city_names, ifr)
+    Each entry: scenario_key -> (EpidemicScenario, seed_city_names)
+    IFR now comes from disease_params.csv, not hardcoded here.
     """
     return {
-        "covid_natural": (COVID_LIKE, [largest_city_name], 0.005),
-        "covid_bioattack": (COVID_BIOATTACK, BIOATTACK_SEED_CITIES, 0.005),
-        "ebola_natural": (EBOLA_LIKE, [largest_city_name], 0.50),
-        "ebola_bioattack": (EBOLA_BIOATTACK, BIOATTACK_SEED_CITIES, 0.50),
+        "covid_natural": (COVID_LIKE, [largest_city_name]),
+        "covid_bioattack": (COVID_BIOATTACK, BIOATTACK_SEED_CITIES),
+        "ebola_natural": (EBOLA_LIKE, [largest_city_name]),
+        "ebola_bioattack": (EBOLA_BIOATTACK, BIOATTACK_SEED_CITIES),
     }
 
 
@@ -254,6 +246,9 @@ def run_absdes_simulation(
         if progress_callback is not None:
             progress_callback(phase, current, total, message)
 
+    # -- Load disease parameters from CSV --------------------------------------
+    disease_params_map = load_disease_params()
+
     # -- Load cities -----------------------------------------------------------
     _progress("initializing", 0, 0, f"Loading cities for {params.country}...")
     raw_cities = load_cities(params.country)
@@ -278,7 +273,13 @@ def run_absdes_simulation(
             f"Unknown scenario: {params.scenario}. "
             f"Valid: {list(scenarios.keys())}"
         )
-    scenario, seed_city_names, ifr = scenarios[params.scenario]
+    scenario, seed_city_names = scenarios[params.scenario]
+
+    # Get disease params for severity model
+    dp = disease_params_map.get(params.scenario)
+    if dp is None:
+        raise ValueError(f"No disease parameters found for scenario: {params.scenario}")
+    ifr = dp.ifr
 
     # Override scenario parameters if requested
     if params.incubation_days is not None:
@@ -296,7 +297,6 @@ def run_absdes_simulation(
         name for name in seed_city_names if name in city_names
     ]
     if not seed_city_names_filtered:
-        # Fallback to largest city if no bioattack seed cities exist in country
         seed_city_names_filtered = [largest_city_name]
 
     seed_indices = [city_names.index(name) for name in seed_city_names_filtered]
@@ -309,14 +309,29 @@ def run_absdes_simulation(
         scale=params.gravity_scale,
     )
 
-    # -- Per-city receptivity from medical scores ------------------------------
+    # -- Resolve avg_contacts from household size data --------------------------
+    if params.avg_contacts is not None:
+        avg_contacts = params.avg_contacts
+    else:
+        hh_sizes = load_household_sizes()
+        hh_size = hh_sizes.get(params.country, 5.0)  # default 5.0 if missing
+        avg_contacts = household_size_to_avg_contacts(hh_size)
+    _progress("initializing", 0, 0,
+              f"Network contacts: {avg_contacts} (per agent)")
+
+    # -- Per-city receptivity and care quality from medical scores --------------
     if params.receptivity_override is not None:
         per_city_receptivity = [params.receptivity_override] * n_cities
     else:
         per_city_receptivity = [
-            _score_to_receptivity(float(c.get("medical_services_score", 0)))
+            score_to_receptivity(float(c.get("medical_services_score", 0)))
             for c in raw_cities
         ]
+
+    per_city_care_quality = [
+        score_to_care_quality(float(c.get("medical_services_score", 0)))
+        for c in raw_cities
+    ]
 
     # -- Compute provider count from density -----------------------------------
     n_providers = max(0, int(params.provider_density * params.n_people / 1000))
@@ -332,7 +347,7 @@ def run_absdes_simulation(
             scenario=scenario,
             seed_infected=seed_count,
             random_seed=params.random_seed + i,
-            avg_contacts=params.avg_contacts,
+            avg_contacts=avg_contacts,
             rewire_prob=params.rewire_prob,
             daily_contact_rate=params.daily_contact_rate,
             r0_override=params.r0_override,
@@ -343,6 +358,13 @@ def run_absdes_simulation(
             base_isolation_prob=params.base_isolation_prob,
             advised_isolation_prob=params.advised_isolation_prob,
             advice_decay_prob=params.advice_decay_prob,
+            # Severity parameters from disease_params.csv
+            severe_fraction=dp.severe_fraction,
+            care_survival_prob=dp.care_survival_prob,
+            base_daily_death_prob=dp.base_daily_death_prob,
+            death_prob_increase_per_day=dp.death_prob_increase_per_day,
+            gamma_shape=dp.gamma_shape,
+            care_quality=per_city_care_quality[i],
         ))
 
     # -- Allocate time-series storage ------------------------------------------
@@ -352,24 +374,34 @@ def run_absdes_simulation(
     actual_S = np.zeros((n_cities, days + 1))
     actual_E = np.zeros((n_cities, days + 1))
     actual_I = np.zeros((n_cities, days + 1))
+    actual_I_minor = np.zeros((n_cities, days + 1))
+    actual_I_needs = np.zeros((n_cities, days + 1))
+    actual_I_care = np.zeros((n_cities, days + 1))
     actual_R = np.zeros((n_cities, days + 1))
+    actual_D = np.zeros((n_cities, days + 1))
 
     observed_S = np.zeros((n_cities, days + 1))
     observed_E = np.zeros((n_cities, days + 1))
     observed_I = np.zeros((n_cities, days + 1))
     observed_R = np.zeros((n_cities, days + 1))
+    observed_D = np.zeros((n_cities, days + 1))
 
     # Record initial state (day 0)
     for i in range(n_cities):
         actual_S[i, 0] = city_sims[i].S
         actual_E[i, 0] = city_sims[i].E
         actual_I[i, 0] = city_sims[i].I
+        actual_I_minor[i, 0] = city_sims[i].I_minor
+        actual_I_needs[i, 0] = city_sims[i].I_needs_care
+        actual_I_care[i, 0] = city_sims[i].I_receiving_care
         actual_R[i, 0] = city_sims[i].R
+        actual_D[i, 0] = city_sims[i].D
         # Observed: nothing detected yet on day 0
         observed_S[i, 0] = n_people
         observed_E[i, 0] = 0
         observed_I[i, 0] = 0
         observed_R[i, 0] = 0
+        observed_D[i, 0] = 0
 
     # Exposure debt accumulators
     exposure_debt = np.zeros(n_cities)
@@ -397,32 +429,38 @@ def run_absdes_simulation(
             actual_S[i, day] = city_sims[i].S
             actual_E[i, day] = city_sims[i].E
             actual_I[i, day] = city_sims[i].I
+            actual_I_minor[i, day] = city_sims[i].I_minor
+            actual_I_needs[i, day] = city_sims[i].I_needs_care
+            actual_I_care[i, day] = city_sims[i].I_receiving_care
             actual_R[i, day] = city_sims[i].R
+            actual_D[i, day] = city_sims[i].D
 
         # Step 4: Record OBSERVED snapshot
         for i in range(n_cities):
             obs_i = city_sims[i].observed_I
             obs_r = city_sims[i].observed_R
+            obs_d = city_sims[i].observed_D
 
             # Estimate observed E: new_detections_today * incubation_days
-            # Clamped to [0, n_people - obs_i - obs_r]
             obs_e_raw = city_sims[i].new_detections_today * incubation_days
-            obs_e = max(0, min(int(obs_e_raw), n_people - obs_i - obs_r))
+            obs_e = max(0, min(int(obs_e_raw), n_people - obs_i - obs_r - obs_d))
 
-            obs_s = n_people - obs_i - obs_r - obs_e
+            obs_s = n_people - obs_i - obs_r - obs_e - obs_d
 
             observed_S[i, day] = obs_s
             observed_E[i, day] = obs_e
             observed_I[i, day] = obs_i
             observed_R[i, day] = obs_r
+            observed_D[i, day] = obs_d
 
         # Progress callback
-        if day % 1 == 0:
-            total_i = sum(city_sims[i].I for i in range(n_cities))
-            _progress(
-                "simulation", day, days,
-                f"Day {day}/{days} | Total infectious: {total_i:,}",
-            )
+        total_ever = sum(city_sims[i].n_people - city_sims[i].S for i in range(n_cities))
+        total_i = sum(city_sims[i].I for i in range(n_cities))
+        total_d = sum(city_sims[i].D for i in range(n_cities))
+        _progress(
+            "simulation", day, days,
+            f"Day {day}/{days} | Infected: {total_ever:,} | Active: {total_i:,} | Deaths: {total_d:,}",
+        )
 
     _progress("simulation", days, days, "Simulation phase complete.")
 
@@ -434,11 +472,16 @@ def run_absdes_simulation(
         actual_S=actual_S,
         actual_E=actual_E,
         actual_I=actual_I,
+        actual_I_minor=actual_I_minor,
+        actual_I_needs=actual_I_needs,
+        actual_I_care=actual_I_care,
         actual_R=actual_R,
+        actual_D=actual_D,
         observed_S=observed_S,
         observed_E=observed_E,
         observed_I=observed_I,
         observed_R=observed_R,
+        observed_D=observed_D,
         seed_city_indices=seed_indices,
         n_people_per_city=n_people,
         scenario_name=params.scenario,

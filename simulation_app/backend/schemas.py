@@ -19,7 +19,7 @@ class SimulationRequest(BaseModel):
     country: str = "Nigeria"
     scenario: DiseaseScenario = DiseaseScenario.COVID_NATURAL
     n_people: int = Field(5000, ge=500, le=50000)
-    avg_contacts: int = Field(10, ge=2, le=50)
+    avg_contacts: int | None = Field(None, ge=2, le=50)
     rewire_prob: float = Field(0.4, ge=0.0, le=1.0)
     daily_contact_rate: float = Field(0.5, ge=0.1, le=1.0)
     transmission_factor: float = Field(0.3, ge=0.01, le=1.0)

@@ -73,7 +73,7 @@ export default function SimulationSummary({ sessionId }) {
           <span className="px-2 py-0.5 bg-slate-100 rounded-full">{summary.n_cities} cities</span>
           <span className="px-2 py-0.5 bg-slate-100 rounded-full">{fmt(summary.n_people_per_city)} agents/city</span>
           <span className="px-2 py-0.5 bg-slate-100 rounded-full">{summary.simulation_days} days</span>
-          <span className="px-2 py-0.5 bg-slate-100 rounded-full">IFR: {pct(summary.ifr)}</span>
+          <span className="px-2 py-0.5 bg-slate-100 rounded-full">Fatality: {pct(agg.fatality_rate)}</span>
           <span className="px-2 py-0.5 bg-slate-100 rounded-full">Providers: {summary.provider_density}/1k</span>
         </div>
       </div>
@@ -95,9 +95,9 @@ export default function SimulationSummary({ sessionId }) {
         />
         <StatCard
           icon={Skull}
-          label="Est. Deaths"
-          value={fmt(agg.estimated_deaths)}
-          sub={`IFR ${pct(summary.ifr)}`}
+          label="Deaths"
+          value={fmt(agg.total_deaths)}
+          sub={`${pct(agg.fatality_rate)} fatality rate`}
           color="text-red-800"
         />
         <StatCard
@@ -140,7 +140,7 @@ export default function SimulationSummary({ sessionId }) {
                 <th className="px-3 py-2 font-medium text-right">Peak I</th>
                 <th className="px-3 py-2 font-medium text-right">Peak Day</th>
                 <th className="px-3 py-2 font-medium text-right">Detected</th>
-                <th className="px-3 py-2 font-medium text-right">Est. Deaths</th>
+                <th className="px-3 py-2 font-medium text-right">Deaths</th>
               </tr>
             </thead>
             <tbody>
@@ -153,7 +153,7 @@ export default function SimulationSummary({ sessionId }) {
                   <td className="px-3 py-1.5 text-right font-mono text-amber-600">{city.peak_infectious.toLocaleString()}</td>
                   <td className="px-3 py-1.5 text-right font-mono text-slate-500">{city.peak_day}</td>
                   <td className="px-3 py-1.5 text-right font-mono text-blue-600">{city.total_detected.toLocaleString()}</td>
-                  <td className="px-3 py-1.5 text-right font-mono text-red-800">{city.estimated_deaths.toLocaleString()}</td>
+                  <td className="px-3 py-1.5 text-right font-mono text-red-800">{city.deaths.toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>

@@ -35,8 +35,8 @@ const PARAM_INFO = {
   },
   avg_contacts: {
     title: 'Average Contacts',
-    description: 'Average number of close contacts per person in the social network (Watts-Strogatz small-world graph). These are the people each agent can potentially transmit infection to.',
-    ranges: '2-5 = sparse network (rural, socially distant). 10 = default moderate urban contacts. 15-25 = dense urban environments, crowded housing. 30+ = extremely dense (mass gatherings, slums). Higher values accelerate epidemic spread.',
+    description: 'Average number of close contacts per person in the social network (Watts-Strogatz small-world graph). When left at default, this is inferred from UN household size data for the selected country (≈2× avg household size). You can override it manually.',
+    ranges: '2-5 = sparse network (rural, socially distant). 6-10 = typical African countries (derived from household size). 15-25 = dense urban environments, crowded housing. 30+ = extremely dense (mass gatherings, slums). Higher values accelerate epidemic spread.',
   },
   rewire_prob: {
     title: 'Rewire Probability',
@@ -548,7 +548,7 @@ export default function ParameterForm({ params, setParams, onRun, disabled, comp
         {/* Collapsible Sections */}
         <CollapsibleSection title="Network Parameters" icon={Sliders} compact={compact}>
           <RangeField label="Population Size" paramKey="n_people" value={params.n_people} onChange={handleChange} min={500} max={50000} step={500} disabled={disabled} compact={compact} onInfo={openInfo} />
-          <RangeField label="Average Contacts" paramKey="avg_contacts" value={params.avg_contacts} onChange={handleChange} min={2} max={50} step={1} disabled={disabled} compact={compact} onInfo={openInfo} />
+          <RangeField label="Average Contacts" paramKey="avg_contacts" value={params.avg_contacts} onChange={handleChange} min={2} max={50} step={1} disabled={disabled} compact={compact} onInfo={openInfo} placeholder="Auto" />
           <RangeField label="Rewire Probability" paramKey="rewire_prob" value={params.rewire_prob} onChange={handleChange} min={0} max={1} step={0.05} disabled={disabled} compact={compact} onInfo={openInfo} />
           <RangeField label="Daily Contact Rate" paramKey="daily_contact_rate" value={params.daily_contact_rate} onChange={handleChange} min={0.1} max={1.0} step={0.05} disabled={disabled} compact={compact} onInfo={openInfo} />
         </CollapsibleSection>

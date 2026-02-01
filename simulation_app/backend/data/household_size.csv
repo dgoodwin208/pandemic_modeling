@@ -1,0 +1,84 @@
+# Average household size by African country.
+#
+# Source: UN Database on Household Size and Composition, via statbase.org
+#         (https://statbase.org/datasets/society/average-household-size/)
+#         Original data: UN DESA Population Division, compiled from
+#         Demographic and Health Surveys (DHS), Multiple Indicator Cluster
+#         Surveys (MICS), and national censuses.
+#
+# Reference years vary by country (2011-2021, most 2017-2020).
+# See: UN (2022) "Household Size and Composition Around the World"
+#      https://www.un.org/development/desa/pd/data/household-size-and-composition
+#
+# Usage in simulation:
+#   avg_contacts = household_size * 2
+#
+# Rationale: Household members form the core close-contact network.
+# Epidemiological contact surveys (POLYMOD, Prem et al. 2017/2021) show
+# that total daily close contacts are approximately 2x household size:
+# household members plus a similar number of regular out-of-household
+# contacts (workplace, school, market, neighbors). This 2x multiplier
+# produces avg_contacts in the range 6-20 across African countries,
+# consistent with the Prem et al. projected contact matrices for Africa.
+#
+# References:
+#   Prem K et al. (2017) "Projecting social contact matrices in 152 countries"
+#     PLOS Computational Biology. doi:10.1371/journal.pcbi.1005697
+#   Prem K et al. (2021) "Projecting contact matrices in 177 geographical regions"
+#     PLOS Computational Biology. doi:10.1371/journal.pcbi.1009098
+#
+# Countries without data use the Sub-Saharan Africa median (~5.0).
+#
+country,household_size,source_year
+Algeria,4.94,2018
+Angola,4.82,2016
+Benin,5.19,2018
+Botswana,3.52,2011
+Burkina Faso,5.92,2014
+Burundi,4.83,2016
+Cameroon,4.99,2018
+Cape Verde,4.10,2012
+Central African Republic,5.59,2018
+Chad,5.97,2019
+Comoros,5.00,2012
+Congo (Brazzaville),4.22,2014
+Congo (Kinshasa),5.17,2017
+Djibouti,5.00,2012
+Egypt,4.13,2014
+Equatorial Guinea,5.00,2012
+Eritrea,5.00,2012
+Ethiopia,4.73,2019
+eSwatini,4.04,2014
+Gabon,4.10,2012
+Ghana,3.83,2019
+Guinea,6.39,2021
+Guinea Bissau,6.81,2018
+Ivory Coast,4.58,2016
+Kenya,3.75,2020
+Lesotho,3.73,2018
+Liberia,4.58,2019
+Libya,5.00,2012
+Madagascar,4.50,2018
+Malawi,4.28,2019
+Mali,5.81,2018
+Mauritania,5.77,2015
+Mauritius,3.48,2011
+Morocco,4.58,2014
+Mozambique,4.52,2018
+Namibia,4.24,2013
+Niger,5.92,2012
+Nigeria,4.66,2018
+Rwanda,4.28,2020
+Senegal,8.66,2017
+Sierra Leone,6.50,2015
+Somalia,6.16,2011
+South Africa,3.20,2016
+South Sudan,5.00,2012
+Sudan,5.89,2014
+Tanzania,4.85,2015
+The Gambia,8.07,2020
+Togo,4.35,2017
+Tunisia,3.89,2018
+Uganda,4.87,2019
+Zambia,5.00,2018
+Zimbabwe,4.02,2019

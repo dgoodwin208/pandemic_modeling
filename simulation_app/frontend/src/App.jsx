@@ -1,15 +1,16 @@
 import React, { useState, useCallback } from 'react';
-import { Activity, Download } from 'lucide-react';
+import { Activity, Download, FlaskConical } from 'lucide-react';
 import ParameterForm from './components/ParameterForm';
 import ProgressBar from './components/ProgressBar';
 import TimelineViewer from './components/TimelineViewer';
 import SimulationSummary from './components/SimulationSummary';
+import DiseaseParamsViewer from './components/DiseaseParamsViewer';
 
 const DEFAULT_PARAMS = {
   country: 'Nigeria',
   scenario: 'covid_natural',
   n_people: 5000,
-  avg_contacts: 10,
+  avg_contacts: null,
   rewire_prob: 0.4,
   daily_contact_rate: 0.5,
   transmission_factor: 0.3,
@@ -42,6 +43,7 @@ export default function App() {
   const [sessionId, setSessionId] = useState(null);
   const [totalDays, setTotalDays] = useState(0);
   const [error, setError] = useState(null);
+  const [showDiseaseParams, setShowDiseaseParams] = useState(false);
 
   const handleRunSimulation = useCallback(async () => {
     setError(null);
@@ -131,15 +133,24 @@ export default function App() {
                 </p>
               </div>
             </div>
-            {isViewing && (
+            <div className="flex items-center gap-2">
               <button
-                onClick={handleExportCSV}
+                onClick={() => setShowDiseaseParams(true)}
                 className="btn-secondary flex items-center gap-2 text-sm"
               >
-                <Download className="w-4 h-4" />
-                Export CSV
+                <FlaskConical className="w-4 h-4" />
+                Disease Model
               </button>
-            )}
+              {isViewing && (
+                <button
+                  onClick={handleExportCSV}
+                  className="btn-secondary flex items-center gap-2 text-sm"
+                >
+                  <Download className="w-4 h-4" />
+                  Export CSV
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </header>
@@ -235,6 +246,10 @@ export default function App() {
           </div>
         )}
       </main>
+
+      {showDiseaseParams && (
+        <DiseaseParamsViewer onClose={() => setShowDiseaseParams(false)} />
+      )}
     </div>
   );
 }

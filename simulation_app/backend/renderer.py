@@ -96,31 +96,45 @@ def _render_map_panel(ax, africa_gdf, lons, lats, pops, size_scale, infection_pc
 
 
 def _render_seir_panel(ax, result, seed_idx, day, n_people, view_label):
-    """Render the SEIR time-series curve panel onto the given axes."""
+    """Render the SEIR-D time-series curve panel onto the given axes.
+
+    ACTUAL view shows 7 compartments (S, E, I_minor, I_needs, I_care, R, D).
+    OBSERVED view shows 5 compartments (S, E, I, R, D).
+    """
     seed_name = result.city_names[seed_idx]
     total_days = result.actual_S.shape[1]
     t = np.arange(total_days)
 
-    # Select SEIR arrays based on view (actual or observed)
     if view_label == "ACTUAL":
-        s_arr, e_arr, i_arr, r_arr = (
-            result.actual_S, result.actual_E, result.actual_I, result.actual_R
-        )
+        # Full severity breakdown for ACTUAL view
+        s_vals = result.actual_S[seed_idx, :] / n_people
+        e_vals = result.actual_E[seed_idx, :] / n_people
+        i_minor_vals = result.actual_I_minor[seed_idx, :] / n_people
+        i_needs_vals = result.actual_I_needs[seed_idx, :] / n_people
+        i_care_vals = result.actual_I_care[seed_idx, :] / n_people
+        r_vals = result.actual_R[seed_idx, :] / n_people
+        d_vals = result.actual_D[seed_idx, :] / n_people
+
+        ax.plot(t, s_vals, color="#3498db", linewidth=1.2, label="S")
+        ax.plot(t, e_vals, color="#f39c12", linewidth=1.2, label="E")
+        ax.plot(t, i_minor_vals, color="#e67e22", linewidth=1.2, label="I (minor)")
+        ax.plot(t, i_needs_vals, color="#e74c3c", linewidth=1.2, label="I (needs care)")
+        ax.plot(t, i_care_vals, color="#9b59b6", linewidth=1.2, label="I (receiving)")
+        ax.plot(t, r_vals, color="#2ecc71", linewidth=1.2, label="R")
+        ax.plot(t, d_vals, color="#2c3e50", linewidth=1.2, linestyle="--", label="D")
     else:
-        s_arr, e_arr, i_arr, r_arr = (
-            result.observed_S, result.observed_E, result.observed_I, result.observed_R
-        )
+        # Aggregated view for OBSERVED
+        s_vals = result.observed_S[seed_idx, :] / n_people
+        e_vals = result.observed_E[seed_idx, :] / n_people
+        i_vals = result.observed_I[seed_idx, :] / n_people
+        r_vals = result.observed_R[seed_idx, :] / n_people
+        d_vals = result.observed_D[seed_idx, :] / n_people
 
-    # Extract SEIR compartments for the seed city, normalized to fractions
-    s_vals = s_arr[seed_idx, :] / n_people
-    e_vals = e_arr[seed_idx, :] / n_people
-    i_vals = i_arr[seed_idx, :] / n_people
-    r_vals = r_arr[seed_idx, :] / n_people
-
-    ax.plot(t, s_vals, color="#3498db", linewidth=1.2, label="S (Susceptible)")
-    ax.plot(t, e_vals, color="#f39c12", linewidth=1.2, label="E (Exposed)")
-    ax.plot(t, i_vals, color="#e74c3c", linewidth=1.2, label="I (Infectious)")
-    ax.plot(t, r_vals, color="#2ecc71", linewidth=1.2, label="R (Recovered)")
+        ax.plot(t, s_vals, color="#3498db", linewidth=1.2, label="S")
+        ax.plot(t, e_vals, color="#f39c12", linewidth=1.2, label="E")
+        ax.plot(t, i_vals, color="#e74c3c", linewidth=1.2, label="I")
+        ax.plot(t, r_vals, color="#2ecc71", linewidth=1.2, label="R")
+        ax.plot(t, d_vals, color="#2c3e50", linewidth=1.2, linestyle="--", label="D")
 
     # Vertical dotted line at the current day
     ax.axvline(x=day, color="#555555", linestyle=":", linewidth=1.0, alpha=0.8)
@@ -130,8 +144,8 @@ def _render_seir_panel(ax, result, seed_idx, day, n_people, view_label):
     ax.set_xlabel("Day", fontsize=7)
     ax.set_ylabel("Fraction of N", fontsize=7)
     ax.tick_params(labelsize=6)
-    ax.legend(loc="upper right", fontsize=6, framealpha=0.8)
-    ax.set_title(f"Seed City: {seed_name} -- SEIR Dynamics ({view_label})",
+    ax.legend(loc="upper right", fontsize=5, framealpha=0.8, ncol=2)
+    ax.set_title(f"Seed City: {seed_name} -- SEIR-D Dynamics ({view_label})",
                  fontsize=8, fontweight="bold", pad=4)
     ax.grid(True, alpha=0.3, linewidth=0.5)
 
