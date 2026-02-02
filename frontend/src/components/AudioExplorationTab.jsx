@@ -2,248 +2,536 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { Volume2, VolumeX, Globe, Mic } from 'lucide-react';
 
 // =============================================================================
-// Country → Language + Audio Data
+// Country → Multi-Language Audio Data
+// Each country has a `languages` array ordered by national importance.
+// First click plays languages[0], click again cycles to next, loops back.
 // =============================================================================
 
 const COUNTRY_DATA = {
   // ── Arabic-speaking ──────────────────────────────────────────────────────
-  DZA: { language: 'Arabic', languageNative: 'العربية', flag: '🇩🇿',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في الجزائر',
-    greetingEnglish: 'Hello! Welcome to Algeria.',
-    audioFile: '/audio/algeria_arabic.mp3' },
-  TCD: { language: 'Arabic / French', languageNative: 'العربية', flag: '🇹🇩',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في تشاد',
-    greetingEnglish: 'Hello! Welcome to Chad.',
-    audioFile: '/audio/chad_arabic.mp3' },
-  DJI: { language: 'Arabic / French', languageNative: 'العربية', flag: '🇩🇯',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في جيبوتي',
-    greetingEnglish: 'Hello! Welcome to Djibouti.',
-    audioFile: '/audio/djibouti_arabic.mp3' },
-  EGY: { language: 'Arabic', languageNative: 'العربية', flag: '🇪🇬',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في مصر',
-    greetingEnglish: 'Hello! Welcome to Egypt.',
-    audioFile: '/audio/egypt_arabic.mp3',
-    agentIntro: 'If this were an AI agent serving Egypt, this is how it might greet you — in the local language, with warmth and authority.' },
-  ERI: { language: 'Tigrinya / Arabic', languageNative: 'ትግርኛ / العربية', flag: '🇪🇷',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في إريتريا',
-    greetingEnglish: 'Hello! Welcome to Eritrea.',
-    audioFile: '/audio/eritrea_arabic.mp3' },
-  LBY: { language: 'Arabic', languageNative: 'العربية', flag: '🇱🇾',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في ليبيا',
-    greetingEnglish: 'Hello! Welcome to Libya.',
-    audioFile: '/audio/libya_arabic.mp3' },
-  MRT: { language: 'Arabic', languageNative: 'العربية', flag: '🇲🇷',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في موريتانيا',
-    greetingEnglish: 'Hello! Welcome to Mauritania.',
-    audioFile: '/audio/mauritania_arabic.mp3' },
-  MAR: { language: 'Arabic', languageNative: 'العربية', flag: '🇲🇦',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في المغرب',
-    greetingEnglish: 'Hello! Welcome to Morocco.',
-    audioFile: '/audio/morocco_arabic.mp3' },
-  SOM: { language: 'Somali / Arabic', languageNative: 'Soomaali / العربية', flag: '🇸🇴',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في الصومال',
-    greetingEnglish: 'Hello! Welcome to Somalia.',
-    audioFile: '/audio/somalia_arabic.mp3' },
-  SDN: { language: 'Arabic', languageNative: 'العربية', flag: '🇸🇩',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في السودان',
-    greetingEnglish: 'Hello! Welcome to Sudan.',
-    audioFile: '/audio/sudan_arabic.mp3' },
-  TUN: { language: 'Arabic', languageNative: 'العربية', flag: '🇹🇳',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في تونس',
-    greetingEnglish: 'Hello! Welcome to Tunisia.',
-    audioFile: '/audio/tunisia_arabic.mp3' },
-  ESH: { language: 'Arabic', languageNative: 'العربية', flag: '🇪🇭',
-    greeting: 'مرحباً! أهلاً وسهلاً بكم في الصحراء الغربية',
-    greetingEnglish: 'Hello! Welcome to Western Sahara.',
-    audioFile: '/audio/western_sahara_arabic.mp3' },
+  DZA: { flag: '🇩🇿', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في الجزائر',
+      greetingEnglish: 'Hello! Welcome to Algeria.',
+      audioFile: '/audio/algeria_arabic.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue en Algérie.',
+      greetingEnglish: 'Hello! Welcome to Algeria.',
+      audioFile: '/audio/algeria_french.mp3' },
+  ]},
+  TCD: { flag: '🇹🇩', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في تشاد',
+      greetingEnglish: 'Hello! Welcome to Chad.',
+      audioFile: '/audio/chad_arabic.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Tchad.',
+      greetingEnglish: 'Hello! Welcome to Chad.',
+      audioFile: '/audio/chad_french.mp3' },
+  ]},
+  DJI: { flag: '🇩🇯', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في جيبوتي',
+      greetingEnglish: 'Hello! Welcome to Djibouti.',
+      audioFile: '/audio/djibouti_arabic.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue à Djibouti.',
+      greetingEnglish: 'Hello! Welcome to Djibouti.',
+      audioFile: '/audio/djibouti_french.mp3' },
+  ]},
+  EGY: { flag: '🇪🇬', agentIntro: 'If this were an AI agent serving Egypt, this is how it might greet you — in the local language, with warmth and authority.', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في مصر',
+      greetingEnglish: 'Hello! Welcome to Egypt.',
+      audioFile: '/audio/egypt_arabic.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Egypt.',
+      greetingEnglish: 'Hello! Welcome to Egypt.',
+      audioFile: '/audio/egypt_english.mp3' },
+  ]},
+  ERI: { flag: '🇪🇷', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في إريتريا',
+      greetingEnglish: 'Hello! Welcome to Eritrea.',
+      audioFile: '/audio/eritrea_arabic.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Eritrea.',
+      greetingEnglish: 'Hello! Welcome to Eritrea.',
+      audioFile: '/audio/eritrea_english.mp3' },
+  ]},
+  LBY: { flag: '🇱🇾', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في ليبيا',
+      greetingEnglish: 'Hello! Welcome to Libya.',
+      audioFile: '/audio/libya_arabic.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Libya.',
+      greetingEnglish: 'Hello! Welcome to Libya.',
+      audioFile: '/audio/libya_english.mp3' },
+  ]},
+  MRT: { flag: '🇲🇷', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في موريتانيا',
+      greetingEnglish: 'Hello! Welcome to Mauritania.',
+      audioFile: '/audio/mauritania_arabic.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue en Mauritanie.',
+      greetingEnglish: 'Hello! Welcome to Mauritania.',
+      audioFile: '/audio/mauritania_french.mp3' },
+  ]},
+  MAR: { flag: '🇲🇦', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في المغرب',
+      greetingEnglish: 'Hello! Welcome to Morocco.',
+      audioFile: '/audio/morocco_arabic.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Maroc.',
+      greetingEnglish: 'Hello! Welcome to Morocco.',
+      audioFile: '/audio/morocco_french.mp3' },
+  ]},
+  SOM: { flag: '🇸🇴', languages: [
+    { language: 'Somali', languageNative: 'Soomaali',
+      greeting: 'Salaan! Ku soo dhawoow Soomaaliya.',
+      greetingEnglish: 'Hello! Welcome to Somalia.',
+      audioFile: '/audio/somalia_somali.mp3' },
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في الصومال',
+      greetingEnglish: 'Hello! Welcome to Somalia.',
+      audioFile: '/audio/somalia_arabic.mp3' },
+  ]},
+  SDN: { flag: '🇸🇩', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في السودان',
+      greetingEnglish: 'Hello! Welcome to Sudan.',
+      audioFile: '/audio/sudan_arabic.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Sudan.',
+      greetingEnglish: 'Hello! Welcome to Sudan.',
+      audioFile: '/audio/sudan_english.mp3' },
+  ]},
+  TUN: { flag: '🇹🇳', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في تونس',
+      greetingEnglish: 'Hello! Welcome to Tunisia.',
+      audioFile: '/audio/tunisia_arabic.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue en Tunisie.',
+      greetingEnglish: 'Hello! Welcome to Tunisia.',
+      audioFile: '/audio/tunisia_french.mp3' },
+  ]},
+  ESH: { flag: '🇪🇭', languages: [
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في الصحراء الغربية',
+      greetingEnglish: 'Hello! Welcome to Western Sahara.',
+      audioFile: '/audio/western_sahara_arabic.mp3' },
+  ]},
 
   // ── French-speaking ──────────────────────────────────────────────────────
-  BEN: { language: 'French', languageNative: 'Français', flag: '🇧🇯',
-    greeting: 'Bonjour ! Bienvenue au Bénin.',
-    greetingEnglish: 'Hello! Welcome to Benin.',
-    audioFile: '/audio/benin_french.mp3' },
-  BFA: { language: 'French', languageNative: 'Français', flag: '🇧🇫',
-    greeting: 'Bonjour ! Bienvenue au Burkina Faso.',
-    greetingEnglish: 'Hello! Welcome to Burkina Faso.',
-    audioFile: '/audio/burkina_faso_french.mp3' },
-  BDI: { language: 'Kirundi / French', languageNative: 'Kirundi', flag: '🇧🇮',
-    greeting: 'Bonjour ! Bienvenue au Burundi.',
-    greetingEnglish: 'Hello! Welcome to Burundi.',
-    audioFile: '/audio/burundi_french.mp3' },
-  CMR: { language: 'French / English', languageNative: 'Français', flag: '🇨🇲',
-    greeting: 'Bonjour ! Bienvenue au Cameroun.',
-    greetingEnglish: 'Hello! Welcome to Cameroon.',
-    audioFile: '/audio/cameroon_french.mp3' },
-  CAF: { language: 'French / Sango', languageNative: 'Français', flag: '🇨🇫',
-    greeting: 'Bonjour ! Bienvenue en République centrafricaine.',
-    greetingEnglish: 'Hello! Welcome to the Central African Republic.',
-    audioFile: '/audio/central_african_republic_french.mp3' },
-  COM: { language: 'French / Arabic / Comorian', languageNative: 'Français', flag: '🇰🇲',
-    greeting: 'Bonjour ! Bienvenue aux Comores.',
-    greetingEnglish: 'Hello! Welcome to Comoros.',
-    audioFile: '/audio/comoros_french.mp3' },
-  COD: { language: 'French / Lingala', languageNative: 'Français', flag: '🇨🇩',
-    greeting: 'Bonjour ! Bienvenue en République démocratique du Congo.',
-    greetingEnglish: 'Hello! Welcome to the Democratic Republic of the Congo.',
-    audioFile: '/audio/drc_french.mp3' },
-  COG: { language: 'French', languageNative: 'Français', flag: '🇨🇬',
-    greeting: 'Bonjour ! Bienvenue au Congo.',
-    greetingEnglish: 'Hello! Welcome to the Republic of the Congo.',
-    audioFile: '/audio/congo_french.mp3' },
-  CIV: { language: 'French', languageNative: 'Français', flag: '🇨🇮',
-    greeting: "Bonjour ! Bienvenue en Côte d'Ivoire.",
-    greetingEnglish: 'Hello! Welcome to Ivory Coast.',
-    audioFile: '/audio/ivory_coast_french.mp3' },
-  GAB: { language: 'French', languageNative: 'Français', flag: '🇬🇦',
-    greeting: 'Bonjour ! Bienvenue au Gabon.',
-    greetingEnglish: 'Hello! Welcome to Gabon.',
-    audioFile: '/audio/gabon_french.mp3' },
-  GIN: { language: 'French', languageNative: 'Français', flag: '🇬🇳',
-    greeting: 'Bonjour ! Bienvenue en Guinée.',
-    greetingEnglish: 'Hello! Welcome to Guinea.',
-    audioFile: '/audio/guinea_french.mp3' },
-  MDG: { language: 'Malagasy / French', languageNative: 'Malagasy', flag: '🇲🇬',
-    greeting: 'Bonjour ! Bienvenue à Madagascar.',
-    greetingEnglish: 'Hello! Welcome to Madagascar.',
-    audioFile: '/audio/madagascar_french.mp3' },
-  MLI: { language: 'French / Bambara', languageNative: 'Français', flag: '🇲🇱',
-    greeting: 'Bonjour ! Bienvenue au Mali.',
-    greetingEnglish: 'Hello! Welcome to Mali.',
-    audioFile: '/audio/mali_french.mp3' },
-  NER: { language: 'French / Hausa', languageNative: 'Français', flag: '🇳🇪',
-    greeting: 'Bonjour ! Bienvenue au Niger.',
-    greetingEnglish: 'Hello! Welcome to Niger.',
-    audioFile: '/audio/niger_french.mp3' },
-  RWA: { language: 'Kinyarwanda / French / English', languageNative: 'Kinyarwanda', flag: '🇷🇼',
-    greeting: 'Bonjour ! Bienvenue au Rwanda.',
-    greetingEnglish: 'Hello! Welcome to Rwanda.',
-    audioFile: '/audio/rwanda_french.mp3' },
-  SEN: { language: 'French / Wolof', languageNative: 'Français', flag: '🇸🇳',
-    greeting: 'Bonjour ! Bienvenue au Sénégal.',
-    greetingEnglish: 'Hello! Welcome to Senegal.',
-    audioFile: '/audio/senegal_french.mp3' },
-  STP: { language: 'Portuguese / French', languageNative: 'Português', flag: '🇸🇹',
-    greeting: 'Bonjour ! Bienvenue à São Tomé-et-Príncipe.',
-    greetingEnglish: 'Hello! Welcome to São Tomé and Príncipe.',
-    audioFile: '/audio/sao_tome_french.mp3' },
-  TGO: { language: 'French', languageNative: 'Français', flag: '🇹🇬',
-    greeting: 'Bonjour ! Bienvenue au Togo.',
-    greetingEnglish: 'Hello! Welcome to Togo.',
-    audioFile: '/audio/togo_french.mp3' },
+  BEN: { flag: '🇧🇯', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Bénin.',
+      greetingEnglish: 'Hello! Welcome to Benin.',
+      audioFile: '/audio/benin_french.mp3' },
+    { language: 'Yoruba', languageNative: 'Yorùbá',
+      greeting: 'Ẹ kú àbọ̀! Ẹ kú ilé Benin.',
+      greetingEnglish: 'Hello! Welcome to Benin.',
+      audioFile: '/audio/benin_yoruba.mp3' },
+  ]},
+  BFA: { flag: '🇧🇫', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Burkina Faso.',
+      greetingEnglish: 'Hello! Welcome to Burkina Faso.',
+      audioFile: '/audio/burkina_faso_french.mp3' },
+  ]},
+  BDI: { flag: '🇧🇮', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Burundi.',
+      greetingEnglish: 'Hello! Welcome to Burundi.',
+      audioFile: '/audio/burundi_french.mp3' },
+    { language: 'Kinyarwanda', languageNative: 'Ikinyarwanda',
+      greeting: 'Muraho! Murakaza neza mu Burundi.',
+      greetingEnglish: 'Hello! Welcome to Burundi.',
+      audioFile: '/audio/burundi_kinyarwanda.mp3' },
+  ]},
+  CMR: { flag: '🇨🇲', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Cameroun.',
+      greetingEnglish: 'Hello! Welcome to Cameroon.',
+      audioFile: '/audio/cameroon_french.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Cameroon.',
+      greetingEnglish: 'Hello! Welcome to Cameroon.',
+      audioFile: '/audio/cameroon_english.mp3' },
+  ]},
+  CAF: { flag: '🇨🇫', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue en République centrafricaine.',
+      greetingEnglish: 'Hello! Welcome to the Central African Republic.',
+      audioFile: '/audio/central_african_republic_french.mp3' },
+  ]},
+  COM: { flag: '🇰🇲', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue aux Comores.',
+      greetingEnglish: 'Hello! Welcome to Comoros.',
+      audioFile: '/audio/comoros_french.mp3' },
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في جزر القمر',
+      greetingEnglish: 'Hello! Welcome to Comoros.',
+      audioFile: '/audio/comoros_arabic.mp3' },
+  ]},
+  COD: { flag: '🇨🇩', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue en République démocratique du Congo.',
+      greetingEnglish: 'Hello! Welcome to the Democratic Republic of the Congo.',
+      audioFile: '/audio/drc_french.mp3' },
+    { language: 'Lingala', languageNative: 'Lingála',
+      greeting: 'Mbote! Boyei malamu na République démocratique ya Congo.',
+      greetingEnglish: 'Hello! Welcome to the Democratic Republic of the Congo.',
+      audioFile: '/audio/drc_lingala.mp3' },
+    { language: 'Swahili', languageNative: 'Kiswahili',
+      greeting: 'Habari! Karibu Jamhuri ya Kidemokrasia ya Kongo.',
+      greetingEnglish: 'Hello! Welcome to the Democratic Republic of the Congo.',
+      audioFile: '/audio/drc_swahili.mp3' },
+  ]},
+  COG: { flag: '🇨🇬', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Congo.',
+      greetingEnglish: 'Hello! Welcome to the Republic of the Congo.',
+      audioFile: '/audio/congo_french.mp3' },
+    { language: 'Lingala', languageNative: 'Lingála',
+      greeting: 'Mbote! Boyei malamu na Congo.',
+      greetingEnglish: 'Hello! Welcome to the Republic of the Congo.',
+      audioFile: '/audio/congo_lingala.mp3' },
+  ]},
+  CIV: { flag: '🇨🇮', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: "Bonjour ! Bienvenue en Côte d'Ivoire.",
+      greetingEnglish: 'Hello! Welcome to Ivory Coast.',
+      audioFile: '/audio/ivory_coast_french.mp3' },
+  ]},
+  GAB: { flag: '🇬🇦', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Gabon.',
+      greetingEnglish: 'Hello! Welcome to Gabon.',
+      audioFile: '/audio/gabon_french.mp3' },
+  ]},
+  GIN: { flag: '🇬🇳', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue en Guinée.',
+      greetingEnglish: 'Hello! Welcome to Guinea.',
+      audioFile: '/audio/guinea_french.mp3' },
+  ]},
+  MDG: { flag: '🇲🇬', languages: [
+    { language: 'Malagasy', languageNative: 'Malagasy',
+      greeting: 'Manao ahoana! Tongasoa eto Madagasikara.',
+      greetingEnglish: 'Hello! Welcome to Madagascar.',
+      audioFile: '/audio/madagascar_malagasy.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue à Madagascar.',
+      greetingEnglish: 'Hello! Welcome to Madagascar.',
+      audioFile: '/audio/madagascar_french.mp3' },
+  ]},
+  MLI: { flag: '🇲🇱', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Mali.',
+      greetingEnglish: 'Hello! Welcome to Mali.',
+      audioFile: '/audio/mali_french.mp3' },
+  ]},
+  NER: { flag: '🇳🇪', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Niger.',
+      greetingEnglish: 'Hello! Welcome to Niger.',
+      audioFile: '/audio/niger_french.mp3' },
+    { language: 'Hausa', languageNative: 'Hausa',
+      greeting: 'Sannu! Barka da zuwa Niger.',
+      greetingEnglish: 'Hello! Welcome to Niger.',
+      audioFile: '/audio/niger_hausa.mp3' },
+  ]},
+  RWA: { flag: '🇷🇼', languages: [
+    { language: 'Kinyarwanda', languageNative: 'Ikinyarwanda',
+      greeting: 'Muraho! Murakaza neza mu Rwanda.',
+      greetingEnglish: 'Hello! Welcome to Rwanda.',
+      audioFile: '/audio/rwanda_kinyarwanda.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Rwanda.',
+      greetingEnglish: 'Hello! Welcome to Rwanda.',
+      audioFile: '/audio/rwanda_french.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Rwanda.',
+      greetingEnglish: 'Hello! Welcome to Rwanda.',
+      audioFile: '/audio/rwanda_english.mp3' },
+  ]},
+  SEN: { flag: '🇸🇳', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Sénégal.',
+      greetingEnglish: 'Hello! Welcome to Senegal.',
+      audioFile: '/audio/senegal_french.mp3' },
+  ]},
+  STP: { flag: '🇸🇹', languages: [
+    { language: 'Portuguese', languageNative: 'Português',
+      greeting: 'Olá! Bem-vindo a São Tomé e Príncipe.',
+      greetingEnglish: 'Hello! Welcome to São Tomé and Príncipe.',
+      audioFile: '/audio/sao_tome_portuguese.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue à São Tomé-et-Príncipe.',
+      greetingEnglish: 'Hello! Welcome to São Tomé and Príncipe.',
+      audioFile: '/audio/sao_tome_french.mp3' },
+  ]},
+  TGO: { flag: '🇹🇬', languages: [
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue au Togo.',
+      greetingEnglish: 'Hello! Welcome to Togo.',
+      audioFile: '/audio/togo_french.mp3' },
+  ]},
 
   // ── English-speaking ─────────────────────────────────────────────────────
-  BWA: { language: 'English / Setswana', languageNative: 'Setswana', flag: '🇧🇼',
-    greeting: 'Hello! Welcome to Botswana.',
-    greetingEnglish: 'Hello! Welcome to Botswana.',
-    audioFile: '/audio/botswana_english.mp3' },
-  GMB: { language: 'English / Mandinka', languageNative: 'English', flag: '🇬🇲',
-    greeting: 'Hello! Welcome to The Gambia.',
-    greetingEnglish: 'Hello! Welcome to The Gambia.',
-    audioFile: '/audio/gambia_english.mp3' },
-  GHA: { language: 'English / Twi', languageNative: 'English', flag: '🇬🇭',
-    greeting: 'Hello! Welcome to Ghana.',
-    greetingEnglish: 'Hello! Welcome to Ghana.',
-    audioFile: '/audio/ghana_english.mp3' },
-  KEN: { language: 'Swahili / English', languageNative: 'Kiswahili', flag: '🇰🇪',
-    greeting: 'Hello! Welcome to Kenya. Karibu sana!',
-    greetingEnglish: 'Hello! Welcome to Kenya.',
-    audioFile: '/audio/kenya_english.mp3' },
-  LSO: { language: 'Sesotho / English', languageNative: 'Sesotho', flag: '🇱🇸',
-    greeting: 'Hello! Welcome to Lesotho.',
-    greetingEnglish: 'Hello! Welcome to Lesotho.',
-    audioFile: '/audio/lesotho_english.mp3' },
-  LBR: { language: 'English', languageNative: 'English', flag: '🇱🇷',
-    greeting: 'Hello! Welcome to Liberia.',
-    greetingEnglish: 'Hello! Welcome to Liberia.',
-    audioFile: '/audio/liberia_english.mp3' },
-  MWI: { language: 'English / Chichewa', languageNative: 'Chichewa', flag: '🇲🇼',
-    greeting: 'Hello! Welcome to Malawi, the warm heart of Africa.',
-    greetingEnglish: 'Hello! Welcome to Malawi, the warm heart of Africa.',
-    audioFile: '/audio/malawi_english.mp3' },
-  MUS: { language: 'English / French / Creole', languageNative: 'English', flag: '🇲🇺',
-    greeting: 'Hello! Welcome to Mauritius.',
-    greetingEnglish: 'Hello! Welcome to Mauritius.',
-    audioFile: '/audio/mauritius_english.mp3' },
-  NGA: { language: 'English / Hausa / Yoruba', languageNative: 'English', flag: '🇳🇬',
-    greeting: 'Hello! Welcome to Nigeria.',
-    greetingEnglish: 'Hello! Welcome to Nigeria.',
-    audioFile: '/audio/nigeria_english.mp3' },
-  SYC: { language: 'English / French / Creole', languageNative: 'English', flag: '🇸🇨',
-    greeting: 'Hello! Welcome to Seychelles.',
-    greetingEnglish: 'Hello! Welcome to Seychelles.',
-    audioFile: '/audio/seychelles_english.mp3' },
-  SLE: { language: 'English / Krio', languageNative: 'English', flag: '🇸🇱',
-    greeting: 'Hello! Welcome to Sierra Leone.',
-    greetingEnglish: 'Hello! Welcome to Sierra Leone.',
-    audioFile: '/audio/sierra_leone_english.mp3' },
-  SSD: { language: 'English / Arabic', languageNative: 'English', flag: '🇸🇸',
-    greeting: 'Hello! Welcome to South Sudan.',
-    greetingEnglish: 'Hello! Welcome to South Sudan.',
-    audioFile: '/audio/south_sudan_english.mp3' },
-  SWZ: { language: 'Swazi / English', languageNative: 'siSwati', flag: '🇸🇿',
-    greeting: 'Hello! Welcome to eSwatini.',
-    greetingEnglish: 'Hello! Welcome to eSwatini.',
-    audioFile: '/audio/eswatini_english.mp3' },
-  UGA: { language: 'English / Swahili', languageNative: 'English', flag: '🇺🇬',
-    greeting: 'Hello! Welcome to Uganda, the Pearl of Africa.',
-    greetingEnglish: 'Hello! Welcome to Uganda, the Pearl of Africa.',
-    audioFile: '/audio/uganda_english.mp3' },
-  ZMB: { language: 'English', languageNative: 'English', flag: '🇿🇲',
-    greeting: 'Hello! Welcome to Zambia.',
-    greetingEnglish: 'Hello! Welcome to Zambia.',
-    audioFile: '/audio/zambia_english.mp3' },
-  ZWE: { language: 'English / Shona', languageNative: 'English', flag: '🇿🇼',
-    greeting: 'Hello! Welcome to Zimbabwe.',
-    greetingEnglish: 'Hello! Welcome to Zimbabwe.',
-    audioFile: '/audio/zimbabwe_english.mp3' },
+  BWA: { flag: '🇧🇼', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Botswana.',
+      greetingEnglish: 'Hello! Welcome to Botswana.',
+      audioFile: '/audio/botswana_english.mp3' },
+    { language: 'Setswana', languageNative: 'Setswana',
+      greeting: 'Dumela! O amogetswe mo Botswana.',
+      greetingEnglish: 'Hello! Welcome to Botswana.',
+      audioFile: '/audio/botswana_setswana.mp3' },
+  ]},
+  GMB: { flag: '🇬🇲', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to The Gambia.',
+      greetingEnglish: 'Hello! Welcome to The Gambia.',
+      audioFile: '/audio/gambia_english.mp3' },
+  ]},
+  GHA: { flag: '🇬🇭', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Ghana.',
+      greetingEnglish: 'Hello! Welcome to Ghana.',
+      audioFile: '/audio/ghana_english.mp3' },
+  ]},
+  KEN: { flag: '🇰🇪', languages: [
+    { language: 'Swahili', languageNative: 'Kiswahili',
+      greeting: 'Habari! Karibu Kenya. Mimi ni msaidizi wako wa akili bandia.',
+      greetingEnglish: 'Hello! Welcome to Kenya.',
+      audioFile: '/audio/kenya_swahili.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Kenya. Karibu sana!',
+      greetingEnglish: 'Hello! Welcome to Kenya.',
+      audioFile: '/audio/kenya_english.mp3' },
+  ]},
+  LSO: { flag: '🇱🇸', languages: [
+    { language: 'Sesotho', languageNative: 'Sesotho',
+      greeting: 'Lumela! Rea u amohela Lesotho.',
+      greetingEnglish: 'Hello! Welcome to Lesotho.',
+      audioFile: '/audio/lesotho_sesotho.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Lesotho.',
+      greetingEnglish: 'Hello! Welcome to Lesotho.',
+      audioFile: '/audio/lesotho_english.mp3' },
+  ]},
+  LBR: { flag: '🇱🇷', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Liberia.',
+      greetingEnglish: 'Hello! Welcome to Liberia.',
+      audioFile: '/audio/liberia_english.mp3' },
+  ]},
+  MWI: { flag: '🇲🇼', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Malawi, the warm heart of Africa.',
+      greetingEnglish: 'Hello! Welcome to Malawi, the warm heart of Africa.',
+      audioFile: '/audio/malawi_english.mp3' },
+    { language: 'Chichewa', languageNative: 'Chicheŵa',
+      greeting: 'Moni! Takulandirani ku Malawi, mtima wofunda wa Africa.',
+      greetingEnglish: 'Hello! Welcome to Malawi, the warm heart of Africa.',
+      audioFile: '/audio/malawi_chichewa.mp3' },
+  ]},
+  MUS: { flag: '🇲🇺', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Mauritius.',
+      greetingEnglish: 'Hello! Welcome to Mauritius.',
+      audioFile: '/audio/mauritius_english.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue à Maurice.',
+      greetingEnglish: 'Hello! Welcome to Mauritius.',
+      audioFile: '/audio/mauritius_french.mp3' },
+  ]},
+  NGA: { flag: '🇳🇬', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Nigeria.',
+      greetingEnglish: 'Hello! Welcome to Nigeria.',
+      audioFile: '/audio/nigeria_english.mp3' },
+    { language: 'Yoruba', languageNative: 'Yorùbá',
+      greeting: 'Ẹ kú àbọ̀! Ẹ kú ilé Nigeria.',
+      greetingEnglish: 'Hello! Welcome to Nigeria.',
+      audioFile: '/audio/nigeria_yoruba.mp3' },
+    { language: 'Hausa', languageNative: 'Hausa',
+      greeting: 'Sannu! Barka da zuwa Nigeria.',
+      greetingEnglish: 'Hello! Welcome to Nigeria.',
+      audioFile: '/audio/nigeria_hausa.mp3' },
+  ]},
+  SYC: { flag: '🇸🇨', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Seychelles.',
+      greetingEnglish: 'Hello! Welcome to Seychelles.',
+      audioFile: '/audio/seychelles_english.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue aux Seychelles.',
+      greetingEnglish: 'Hello! Welcome to Seychelles.',
+      audioFile: '/audio/seychelles_french.mp3' },
+  ]},
+  SLE: { flag: '🇸🇱', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Sierra Leone.',
+      greetingEnglish: 'Hello! Welcome to Sierra Leone.',
+      audioFile: '/audio/sierra_leone_english.mp3' },
+  ]},
+  SSD: { flag: '🇸🇸', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to South Sudan.',
+      greetingEnglish: 'Hello! Welcome to South Sudan.',
+      audioFile: '/audio/south_sudan_english.mp3' },
+    { language: 'Arabic', languageNative: 'العربية',
+      greeting: 'مرحباً! أهلاً وسهلاً بكم في جنوب السودان',
+      greetingEnglish: 'Hello! Welcome to South Sudan.',
+      audioFile: '/audio/south_sudan_arabic.mp3' },
+  ]},
+  SWZ: { flag: '🇸🇿', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to eSwatini.',
+      greetingEnglish: 'Hello! Welcome to eSwatini.',
+      audioFile: '/audio/eswatini_english.mp3' },
+  ]},
+  UGA: { flag: '🇺🇬', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Uganda, the Pearl of Africa.',
+      greetingEnglish: 'Hello! Welcome to Uganda, the Pearl of Africa.',
+      audioFile: '/audio/uganda_english.mp3' },
+    { language: 'Swahili', languageNative: 'Kiswahili',
+      greeting: 'Habari! Karibu Uganda, Lulu ya Afrika.',
+      greetingEnglish: 'Hello! Welcome to Uganda, the Pearl of Africa.',
+      audioFile: '/audio/uganda_swahili.mp3' },
+  ]},
+  ZMB: { flag: '🇿🇲', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Zambia.',
+      greetingEnglish: 'Hello! Welcome to Zambia.',
+      audioFile: '/audio/zambia_english.mp3' },
+  ]},
+  ZWE: { flag: '🇿🇼', languages: [
+    { language: 'Shona', languageNative: 'chiShona',
+      greeting: 'Mhoro! Titambire kuZimbabwe.',
+      greetingEnglish: 'Hello! Welcome to Zimbabwe.',
+      audioFile: '/audio/zimbabwe_shona.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Zimbabwe.',
+      greetingEnglish: 'Hello! Welcome to Zimbabwe.',
+      audioFile: '/audio/zimbabwe_english.mp3' },
+  ]},
 
   // ── Portuguese-speaking ──────────────────────────────────────────────────
-  AGO: { language: 'Portuguese', languageNative: 'Português', flag: '🇦🇴',
-    greeting: 'Olá! Bem-vindo a Angola.',
-    greetingEnglish: 'Hello! Welcome to Angola.',
-    audioFile: '/audio/angola_portuguese.mp3' },
-  CPV: { language: 'Portuguese / Creole', languageNative: 'Português', flag: '🇨🇻',
-    greeting: 'Olá! Bem-vindo a Cabo Verde.',
-    greetingEnglish: 'Hello! Welcome to Cabo Verde.',
-    audioFile: '/audio/cabo_verde_portuguese.mp3' },
-  GNB: { language: 'Portuguese', languageNative: 'Português', flag: '🇬🇼',
-    greeting: 'Olá! Bem-vindo à Guiné-Bissau.',
-    greetingEnglish: 'Hello! Welcome to Guinea-Bissau.',
-    audioFile: '/audio/guinea_bissau_portuguese.mp3' },
-  MOZ: { language: 'Portuguese', languageNative: 'Português', flag: '🇲🇿',
-    greeting: 'Olá! Bem-vindo a Moçambique.',
-    greetingEnglish: 'Hello! Welcome to Mozambique.',
-    audioFile: '/audio/mozambique_portuguese.mp3' },
+  AGO: { flag: '🇦🇴', languages: [
+    { language: 'Portuguese', languageNative: 'Português',
+      greeting: 'Olá! Bem-vindo a Angola.',
+      greetingEnglish: 'Hello! Welcome to Angola.',
+      audioFile: '/audio/angola_portuguese.mp3' },
+    { language: 'Lingala', languageNative: 'Lingála',
+      greeting: 'Mbote! Boyei malamu na Angola.',
+      greetingEnglish: 'Hello! Welcome to Angola.',
+      audioFile: '/audio/angola_lingala.mp3' },
+  ]},
+  CPV: { flag: '🇨🇻', languages: [
+    { language: 'Portuguese', languageNative: 'Português',
+      greeting: 'Olá! Bem-vindo a Cabo Verde.',
+      greetingEnglish: 'Hello! Welcome to Cabo Verde.',
+      audioFile: '/audio/cabo_verde_portuguese.mp3' },
+  ]},
+  GNB: { flag: '🇬🇼', languages: [
+    { language: 'Portuguese', languageNative: 'Português',
+      greeting: 'Olá! Bem-vindo à Guiné-Bissau.',
+      greetingEnglish: 'Hello! Welcome to Guinea-Bissau.',
+      audioFile: '/audio/guinea_bissau_portuguese.mp3' },
+  ]},
+  MOZ: { flag: '🇲🇿', languages: [
+    { language: 'Portuguese', languageNative: 'Português',
+      greeting: 'Olá! Bem-vindo a Moçambique.',
+      greetingEnglish: 'Hello! Welcome to Mozambique.',
+      audioFile: '/audio/mozambique_portuguese.mp3' },
+    { language: 'Swahili', languageNative: 'Kiswahili',
+      greeting: 'Habari! Karibu Msumbiji.',
+      greetingEnglish: 'Hello! Welcome to Mozambique.',
+      audioFile: '/audio/mozambique_swahili.mp3' },
+  ]},
 
   // ── Spanish-speaking ─────────────────────────────────────────────────────
-  GNQ: { language: 'Spanish / French', languageNative: 'Español', flag: '🇬🇶',
-    greeting: '¡Hola! Bienvenido a Guinea Ecuatorial.',
-    greetingEnglish: 'Hello! Welcome to Equatorial Guinea.',
-    audioFile: '/audio/equatorial_guinea_spanish.mp3' },
+  GNQ: { flag: '🇬🇶', languages: [
+    { language: 'Spanish', languageNative: 'Español',
+      greeting: '¡Hola! Bienvenido a Guinea Ecuatorial.',
+      greetingEnglish: 'Hello! Welcome to Equatorial Guinea.',
+      audioFile: '/audio/equatorial_guinea_spanish.mp3' },
+    { language: 'French', languageNative: 'Français',
+      greeting: 'Bonjour ! Bienvenue en Guinée équatoriale.',
+      greetingEnglish: 'Hello! Welcome to Equatorial Guinea.',
+      audioFile: '/audio/equatorial_guinea_french.mp3' },
+  ]},
 
-  // ── isiZulu / Afrikaans ──────────────────────────────────────────────────
-  ZAF: { language: 'isiZulu / English / Afrikaans', languageNative: 'isiZulu', flag: '🇿🇦',
-    greeting: 'Sawubona! Uyemukelwa eNingizimu Afrika.',
-    greetingEnglish: 'Hello! Welcome to South Africa.',
-    audioFile: '/audio/south_africa_isizulu.mp3',
-    agentIntro: "An AI agent for South Africa greets you in isiZulu — the most widely spoken home language in the country." },
-  NAM: { language: 'Afrikaans / English', languageNative: 'Afrikaans', flag: '🇳🇦',
-    greeting: 'Hallo! Welkom in Namibië.',
-    greetingEnglish: 'Hello! Welcome to Namibia.',
-    audioFile: '/audio/namibia_afrikaans.mp3' },
+  // ── South Africa — multiple official languages ─────────────────────────
+  ZAF: { flag: '🇿🇦', agentIntro: "South Africa has eleven official languages. Click again to hear greetings in isiXhosa and Afrikaans.", languages: [
+    { language: 'isiZulu', languageNative: 'isiZulu',
+      greeting: 'Sawubona! Uyemukelwa eNingizimu Afrika.',
+      greetingEnglish: 'Hello! Welcome to South Africa.',
+      audioFile: '/audio/south_africa_isizulu.mp3' },
+    { language: 'isiXhosa', languageNative: 'isiXhosa',
+      greeting: 'Molo! Wamkelekile eMzantsi Afrika.',
+      greetingEnglish: 'Hello! Welcome to South Africa.',
+      audioFile: '/audio/south_africa_isixhosa.mp3' },
+    { language: 'Afrikaans', languageNative: 'Afrikaans',
+      greeting: 'Hallo! Welkom in Suid-Afrika.',
+      greetingEnglish: 'Hello! Welcome to South Africa.',
+      audioFile: '/audio/south_africa_afrikaans.mp3' },
+  ]},
+
+  // ── Namibia — English primary per colleague request ─────────────────────
+  NAM: { flag: '🇳🇦', languages: [
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Namibia.',
+      greetingEnglish: 'Hello! Welcome to Namibia.',
+      audioFile: '/audio/namibia_english.mp3' },
+    { language: 'Afrikaans', languageNative: 'Afrikaans',
+      greeting: 'Hallo! Welkom in Namibië.',
+      greetingEnglish: 'Hello! Welcome to Namibia.',
+      audioFile: '/audio/namibia_afrikaans.mp3' },
+  ]},
 
   // ── Swahili ──────────────────────────────────────────────────────────────
-  TZA: { language: 'Swahili', languageNative: 'Kiswahili', flag: '🇹🇿',
-    greeting: 'Habari! Karibu Tanzania.',
-    greetingEnglish: 'Hello! Welcome to Tanzania.',
-    audioFile: '/audio/tanzania_swahili.mp3' },
+  TZA: { flag: '🇹🇿', languages: [
+    { language: 'Swahili', languageNative: 'Kiswahili',
+      greeting: 'Habari! Karibu Tanzania.',
+      greetingEnglish: 'Hello! Welcome to Tanzania.',
+      audioFile: '/audio/tanzania_swahili.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Tanzania.',
+      greetingEnglish: 'Hello! Welcome to Tanzania.',
+      audioFile: '/audio/tanzania_english.mp3' },
+  ]},
 
   // ── Amharic ──────────────────────────────────────────────────────────────
-  ETH: { language: 'Amharic', languageNative: 'አማርኛ', flag: '🇪🇹',
-    greeting: 'ሰላም! ወደ ኢትዮጵያ እንኳን ደህና መጡ።',
-    greetingEnglish: 'Hello! Welcome to Ethiopia.',
-    audioFile: '/audio/ethiopia_amharic.mp3' },
+  ETH: { flag: '🇪🇹', languages: [
+    { language: 'Amharic', languageNative: 'አማርኛ',
+      greeting: 'ሰላም! ወደ ኢትዮጵያ እንኳን ደህና መጡ።',
+      greetingEnglish: 'Hello! Welcome to Ethiopia.',
+      audioFile: '/audio/ethiopia_amharic.mp3' },
+    { language: 'English', languageNative: 'English',
+      greeting: 'Hello! Welcome to Ethiopia.',
+      greetingEnglish: 'Hello! Welcome to Ethiopia.',
+      audioFile: '/audio/ethiopia_english.mp3' },
+  ]},
 };
+
+// Compute stats once
+const ALL_LANGUAGES = (() => {
+  const langs = new Set();
+  Object.values(COUNTRY_DATA).forEach(c => c.languages.forEach(l => langs.add(l.language)));
+  return [...langs].sort();
+})();
+const TOTAL_COUNTRIES = Object.keys(COUNTRY_DATA).length;
 
 function getCountryInfo(iso3) {
   if (COUNTRY_DATA[iso3]) return { ...COUNTRY_DATA[iso3], hasAudio: true };
@@ -360,6 +648,7 @@ export default function AudioExplorationTab() {
   const [audioError, setAudioError] = useState(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [voiceMode, setVoiceMode] = useState('one-voice'); // 'one-voice' | 'local'
+  const [langIndexMap, setLangIndexMap] = useState({}); // { [iso3]: number }
   const audioRef = useRef(null);
   const svgRef = useRef(null);
   const containerRef = useRef(null);
@@ -408,8 +697,14 @@ export default function AudioExplorationTab() {
     return { countryPaths: paths, bounds: paddedBounds };
   }, [geoData]);
 
-  // Audio management — use a ref for activeCountry to avoid stale closures
+  // Audio management — use refs to avoid stale closures
   const activeCountryRef = useRef(null);
+  const isPlayingRef = useRef(false);
+  const langIndexMapRef = useRef({});
+
+  // Keep refs in sync
+  isPlayingRef.current = isPlaying;
+  langIndexMapRef.current = langIndexMap;
 
   const stopAudio = useCallback(() => {
     if (audioRef.current) {
@@ -425,15 +720,15 @@ export default function AudioExplorationTab() {
   const voiceModeRef = useRef(voiceMode);
   voiceModeRef.current = voiceMode;
 
-  const playAudio = useCallback((countryData) => {
+  const playAudio = useCallback((langEntry) => {
     // Always fully stop any existing audio first
     stopAudio();
 
     setAudioError(null);
     // Swap path prefix based on voice mode
     const audioPath = voiceModeRef.current === 'local'
-      ? countryData.audioFile.replace('/audio/', '/audio/local/')
-      : countryData.audioFile;
+      ? langEntry.audioFile.replace('/audio/', '/audio/local/')
+      : langEntry.audioFile;
     const audio = new Audio(audioPath);
     audioRef.current = audio;
 
@@ -463,7 +758,7 @@ export default function AudioExplorationTab() {
     audio.load();
   }, [stopAudio]);
 
-  // Mouse leave always stops audio unconditionally
+  // Mouse leave always stops audio unconditionally and resets language index
   const handleMouseLeave = useCallback((iso3) => {
     setHoveredCountry(null);
     // If this was the active country, stop everything
@@ -471,6 +766,7 @@ export default function AudioExplorationTab() {
       stopAudio();
       setActiveCountry(null);
       activeCountryRef.current = null;
+      setLangIndexMap(prev => ({ ...prev, [iso3]: 0 }));
     }
   }, [stopAudio]);
 
@@ -479,20 +775,35 @@ export default function AudioExplorationTab() {
   }, []);
 
   const handleClick = useCallback((iso3) => {
-    const info = getCountryInfo(iso3);
-    if (!info?.hasAudio) return;
+    const data = COUNTRY_DATA[iso3];
+    if (!data?.languages?.length) return;
 
-    // If clicking the same country that's already playing, toggle off
+    const totalLangs = data.languages.length;
+
     if (activeCountryRef.current === iso3) {
-      stopAudio();
-      setActiveCountry(null);
-      activeCountryRef.current = null;
+      // Same country clicked again
+      if (isPlayingRef.current && totalLangs > 1) {
+        // Currently playing — cycle to next language
+        const currentIdx = langIndexMapRef.current[iso3] || 0;
+        const nextIdx = (currentIdx + 1) % totalLangs;
+        setLangIndexMap(prev => ({ ...prev, [iso3]: nextIdx }));
+        stopAudio();
+        playAudio(data.languages[nextIdx]);
+      } else {
+        // Not playing or single language — toggle off
+        stopAudio();
+        setActiveCountry(null);
+        activeCountryRef.current = null;
+        setLangIndexMap(prev => ({ ...prev, [iso3]: 0 }));
+      }
     } else {
-      // Stop any previous audio, then start new one
+      // New country clicked — start with primary language
       stopAudio();
+      const startIdx = 0;
+      setLangIndexMap(prev => ({ ...prev, [iso3]: startIdx }));
       setActiveCountry(iso3);
       activeCountryRef.current = iso3;
-      playAudio(info);
+      playAudio(data.languages[startIdx]);
     }
   }, [playAudio, stopAudio]);
 
@@ -518,6 +829,11 @@ export default function AudioExplorationTab() {
     ? countryPaths.find((c) => c.iso3 === hoveredCountry)?.name
     : null;
 
+  // Current language for active country
+  const activeLangIdx = activeCountry ? (langIndexMap[activeCountry] || 0) : 0;
+  const activeData = activeCountry ? COUNTRY_DATA[activeCountry] : null;
+  const activeLang = activeData ? activeData.languages[activeLangIdx] : null;
+
   if (loading) {
     return (
       <div className="h-full flex items-center justify-center">
@@ -538,21 +854,21 @@ export default function AudioExplorationTab() {
             Voices of Africa
           </h1>
           <p className="text-slate-400 text-base max-w-xl mx-auto leading-relaxed">
-            Hover over a country to see its primary language. Click to hear how an
-            AI agent might greet you in the local tongue.
+            Hover over a country to see its languages. Click to hear a greeting
+            — click again to cycle through additional languages.
           </p>
           {/* Voice mode toggle */}
           <div className="voice-mode-toggle mt-4">
             <button
               className={`voice-mode-btn ${voiceMode === 'one-voice' ? 'voice-mode-btn-active' : ''}`}
-              onClick={() => { stopAudio(); setActiveCountry(null); activeCountryRef.current = null; setVoiceMode('one-voice'); }}
+              onClick={() => { stopAudio(); setActiveCountry(null); activeCountryRef.current = null; setLangIndexMap({}); setVoiceMode('one-voice'); }}
             >
               <Mic className="w-3.5 h-3.5" />
               One Voice
             </button>
             <button
               className={`voice-mode-btn ${voiceMode === 'local' ? 'voice-mode-btn-active' : ''}`}
-              onClick={() => { stopAudio(); setActiveCountry(null); activeCountryRef.current = null; setVoiceMode('local'); }}
+              onClick={() => { stopAudio(); setActiveCountry(null); activeCountryRef.current = null; setLangIndexMap({}); setVoiceMode('local'); }}
             >
               <Globe className="w-3.5 h-3.5" />
               Local Voices
@@ -569,7 +885,7 @@ export default function AudioExplorationTab() {
               <div className="w-3 h-3 rounded-full bg-amber-400/80" />
               <span className="text-xs text-slate-500">Click to hear greeting</span>
             </div>
-            <div className="text-xs text-slate-400">55 countries &middot; 9 languages</div>
+            <div className="text-xs text-slate-400">{TOTAL_COUNTRIES} countries &middot; {ALL_LANGUAGES.length} languages</div>
           </div>
         </div>
 
@@ -706,15 +1022,16 @@ export default function AudioExplorationTab() {
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <Globe className="w-3.5 h-3.5 text-slate-400" />
-                  <span className="text-slate-600">{hoveredInfo.language}</span>
-                  {hoveredInfo.languageNative && hoveredInfo.languageNative !== hoveredInfo.language && (
-                    <span className="text-slate-400">({hoveredInfo.languageNative})</span>
-                  )}
+                  <span className="text-slate-600">
+                    {hoveredInfo.languages.map(l => l.language).join(' / ')}
+                  </span>
                 </div>
                 {hoveredInfo.hasAudio && (
                   <div className="flex items-center gap-1.5 mt-1.5 text-xs text-amber-600">
                     <Volume2 className="w-3 h-3" />
-                    Click to hear greeting
+                    {hoveredInfo.languages.length > 1
+                      ? 'Click to hear greeting \u00b7 click again to cycle'
+                      : 'Click to hear greeting'}
                   </div>
                 )}
               </div>
@@ -725,7 +1042,7 @@ export default function AudioExplorationTab() {
           <div className="w-80 flex flex-col gap-4">
             {/* Now playing card */}
             <div className={`audio-now-playing-card ${activeCountry ? 'card-active' : ''}`}>
-              {activeCountry && COUNTRY_DATA[activeCountry] ? (
+              {activeCountry && activeData && activeLang ? (
                 <>
                   <div className="flex items-center gap-3 mb-4">
                     <div className="audio-speaker-icon">
@@ -740,10 +1057,30 @@ export default function AudioExplorationTab() {
                         {countryPaths.find((c) => c.iso3 === activeCountry)?.name}
                       </div>
                       <div className="text-sm text-slate-500">
-                        {COUNTRY_DATA[activeCountry].language}
+                        {activeLang.language}
+                        {activeLang.languageNative !== activeLang.language && (
+                          <span className="text-slate-400 ml-1">({activeLang.languageNative})</span>
+                        )}
                       </div>
+                      {/* Language dot indicators */}
+                      {activeData.languages.length > 1 && (
+                        <div className="flex items-center gap-1.5 mt-1.5">
+                          {activeData.languages.map((lang, i) => (
+                            <div
+                              key={i}
+                              className={`w-2 h-2 rounded-full transition-colors ${
+                                i === activeLangIdx ? 'bg-amber-500' : 'bg-slate-300'
+                              }`}
+                              title={lang.language}
+                            />
+                          ))}
+                          <span className="text-xs text-slate-400 ml-1">
+                            {activeLangIdx + 1}/{activeData.languages.length}
+                          </span>
+                        </div>
+                      )}
                     </div>
-                    <span className="text-2xl ml-auto">{COUNTRY_DATA[activeCountry].flag}</span>
+                    <span className="text-2xl ml-auto">{activeData.flag}</span>
                   </div>
 
                   {/* Waveform */}
@@ -754,17 +1091,17 @@ export default function AudioExplorationTab() {
                   {/* Greeting text */}
                   <div className="bg-slate-50 rounded-xl p-4 mb-3 border border-slate-100">
                     <div className="text-base font-medium text-slate-700 leading-relaxed" dir="auto">
-                      "{COUNTRY_DATA[activeCountry].greeting}"
+                      &ldquo;{activeLang.greeting}&rdquo;
                     </div>
                     <div className="text-sm text-slate-400 mt-2 italic">
-                      {COUNTRY_DATA[activeCountry].greetingEnglish}
+                      {activeLang.greetingEnglish}
                     </div>
                   </div>
 
                   {/* Agent description */}
-                  {COUNTRY_DATA[activeCountry].agentIntro && (
+                  {activeData.agentIntro && (
                     <p className="text-sm text-slate-500 leading-relaxed">
-                      {COUNTRY_DATA[activeCountry].agentIntro}
+                      {activeData.agentIntro}
                     </p>
                   )}
 
@@ -797,15 +1134,9 @@ export default function AudioExplorationTab() {
                 demonstrating how AI agents can communicate naturally in local languages across the continent.
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
-                <span className="audio-tag">Arabic</span>
-                <span className="audio-tag">French</span>
-                <span className="audio-tag">English</span>
-                <span className="audio-tag">Portuguese</span>
-                <span className="audio-tag">isiZulu</span>
-                <span className="audio-tag">Afrikaans</span>
-                <span className="audio-tag">Swahili</span>
-                <span className="audio-tag">Amharic</span>
-                <span className="audio-tag">Spanish</span>
+                {ALL_LANGUAGES.map(lang => (
+                  <span key={lang} className="audio-tag">{lang}</span>
+                ))}
               </div>
             </div>
           </div>
