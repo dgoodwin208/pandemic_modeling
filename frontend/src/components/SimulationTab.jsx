@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from 'react';
-import { Download, FlaskConical } from 'lucide-react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
+import { Download, FlaskConical, History, X, Skull, Users, TrendingUp, Package, Trash2 } from 'lucide-react';
 import ParameterForm from './ParameterForm';
 import ProgressBar from './ProgressBar';
 import TimelineViewer from './TimelineViewer';
@@ -24,8 +24,8 @@ const DEFAULT_PARAMS = {
   advised_isolation_prob: 0.40,
   advice_decay_prob: 0.05,
   receptivity_override: null,
-  days: 200,
-  seed_fraction: 0.002,
+  days: 150,
+  seed_fraction: 0.005,
   random_seed: 42,
   incubation_days: null,
   infectious_days: null,
@@ -48,6 +48,170 @@ const APP_STATES = {
   VIEWING: 'VIEWING',
 };
 
+function restoreParams(p) {
+  const rc = p.resource_config || {};
+  return {
+    ...DEFAULT_PARAMS,
+    country: p.country ?? DEFAULT_PARAMS.country,
+    scenario: p.scenario ?? DEFAULT_PARAMS.scenario,
+    n_people: p.n_people ?? DEFAULT_PARAMS.n_people,
+    avg_contacts: p.avg_contacts ?? null,
+    rewire_prob: p.rewire_prob ?? DEFAULT_PARAMS.rewire_prob,
+    daily_contact_rate: p.daily_contact_rate ?? DEFAULT_PARAMS.daily_contact_rate,
+    transmission_factor: p.transmission_factor ?? DEFAULT_PARAMS.transmission_factor,
+    gravity_scale: p.gravity_scale ?? DEFAULT_PARAMS.gravity_scale,
+    gravity_alpha: p.gravity_alpha ?? DEFAULT_PARAMS.gravity_alpha,
+    provider_density: p.provider_density ?? DEFAULT_PARAMS.provider_density,
+    screening_capacity: p.screening_capacity ?? DEFAULT_PARAMS.screening_capacity,
+    disclosure_prob: p.disclosure_prob ?? DEFAULT_PARAMS.disclosure_prob,
+    base_isolation_prob: p.base_isolation_prob ?? DEFAULT_PARAMS.base_isolation_prob,
+    advised_isolation_prob: p.advised_isolation_prob ?? DEFAULT_PARAMS.advised_isolation_prob,
+    advice_decay_prob: p.advice_decay_prob ?? DEFAULT_PARAMS.advice_decay_prob,
+    receptivity_override: p.receptivity_override ?? null,
+    days: p.days ?? DEFAULT_PARAMS.days,
+    seed_fraction: p.seed_fraction ?? DEFAULT_PARAMS.seed_fraction,
+    random_seed: p.random_seed ?? DEFAULT_PARAMS.random_seed,
+    incubation_days: p.incubation_days ?? null,
+    infectious_days: p.infectious_days ?? null,
+    r0_override: p.r0_override ?? null,
+    enable_supply_chain: rc.enable_supply_chain ?? false,
+    beds_per_hospital: rc.beds_per_hospital ?? DEFAULT_PARAMS.beds_per_hospital,
+    beds_per_clinic: rc.beds_per_clinic ?? DEFAULT_PARAMS.beds_per_clinic,
+    ppe_sets_per_facility: rc.ppe_sets_per_facility ?? DEFAULT_PARAMS.ppe_sets_per_facility,
+    swabs_per_lab: rc.swabs_per_lab ?? DEFAULT_PARAMS.swabs_per_lab,
+    reagents_per_lab: rc.reagents_per_lab ?? DEFAULT_PARAMS.reagents_per_lab,
+    lead_time_mean_days: rc.lead_time_mean_days ?? DEFAULT_PARAMS.lead_time_mean_days,
+    continent_vaccine_stockpile: rc.continent_vaccine_stockpile ?? DEFAULT_PARAMS.continent_vaccine_stockpile,
+    continent_pill_stockpile: rc.continent_pill_stockpile ?? DEFAULT_PARAMS.continent_pill_stockpile,
+  };
+}
+
+const fmt = (n) => {
+  if (n >= 1e9) return `${(n / 1e9).toFixed(1)}B`;
+  if (n >= 1e6) return `${(n / 1e6).toFixed(1)}M`;
+  if (n >= 1e3) return `${(n / 1e3).toFixed(1)}K`;
+  return Math.round(n).toLocaleString();
+};
+
+function SessionBrowser({ onSelect, onClose }) {
+  const [sessions, setSessions] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/simulate/absdes/sessions')
+      .then((res) => res.json())
+      .then((data) => { setSessions(data.sessions || []); setLoading(false); })
+      .catch(() => { setSessions([]); setLoading(false); });
+  }, []);
+
+  const handleDelete = useCallback((e, sessionId) => {
+    e.stopPropagation();
+    fetch(`/api/simulate/absdes/${sessionId}`, { method: 'DELETE' })
+      .then((res) => {
+        if (res.ok) setSessions((prev) => prev.filter((s) => s.session_id !== sessionId));
+      })
+      .catch(() => {});
+  }, []);
+
+  const scenarioLabel = (s) => s.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const timeAgo = (ts) => {
+    const diff = (Date.now() / 1000) - ts;
+    if (diff < 60) return 'just now';
+    if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+    return `${Math.floor(diff / 3600)}h ago`;
+  };
+
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/30 backdrop-blur-sm" onClick={onClose}>
+      <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-3xl max-h-[80vh] flex flex-col animate-fade-in" onClick={(e) => e.stopPropagation()}>
+        {/* Header */}
+        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center">
+              <History className="w-4 h-4 text-slate-600" />
+            </div>
+            <div>
+              <h2 className="text-sm font-semibold text-slate-800">Previous Results</h2>
+              <p className="text-[10px] text-slate-400">Select a simulation run to load</p>
+            </div>
+          </div>
+          <button onClick={onClose} className="p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+            <X className="w-4 h-4 text-slate-400" />
+          </button>
+        </div>
+
+        {/* Table */}
+        <div className="overflow-auto flex-1">
+          {loading ? (
+            <div className="flex items-center justify-center py-12 text-sm text-slate-400">
+              <div className="w-4 h-4 border-2 border-slate-300 border-t-emerald-500 rounded-full animate-spin mr-2" />
+              Loading sessions...
+            </div>
+          ) : sessions.length === 0 ? (
+            <div className="flex items-center justify-center py-12 text-sm text-slate-400">
+              No completed simulations yet
+            </div>
+          ) : (
+            <table className="w-full text-xs">
+              <thead>
+                <tr className="bg-slate-50 text-slate-500 text-left sticky top-0">
+                  <th className="px-4 py-2.5 font-medium">When</th>
+                  <th className="px-4 py-2.5 font-medium">Scenario</th>
+                  <th className="px-4 py-2.5 font-medium">Country</th>
+                  <th className="px-4 py-2.5 font-medium text-right">Cities</th>
+                  <th className="px-4 py-2.5 font-medium text-right">Population</th>
+                  <th className="px-4 py-2.5 font-medium text-right">Infected</th>
+                  <th className="px-4 py-2.5 font-medium text-right">Deaths</th>
+                  <th className="px-4 py-2.5 font-medium text-right">Peak I</th>
+                  <th className="px-4 py-2.5 font-medium text-center">Supply</th>
+                  <th className="px-4 py-2.5 font-medium"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {sessions.map((s, idx) => (
+                  <tr
+                    key={s.session_id}
+                    className={`${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'} hover:bg-emerald-50/50 cursor-pointer transition-colors`}
+                    onClick={() => onSelect(s)}
+                  >
+                    <td className="px-4 py-2.5 text-slate-500 whitespace-nowrap">{timeAgo(s.timestamp)}</td>
+                    <td className="px-4 py-2.5 font-medium text-slate-700">{scenarioLabel(s.scenario)}</td>
+                    <td className="px-4 py-2.5 text-slate-600">{s.country === 'ALL' ? 'All Africa' : s.country}</td>
+                    <td className="px-4 py-2.5 text-right font-mono text-slate-500">{s.n_cities}</td>
+                    <td className="px-4 py-2.5 text-right font-mono text-slate-600">{fmt(s.total_population)}</td>
+                    <td className="px-4 py-2.5 text-right font-mono text-red-600">{fmt(s.total_infected)}</td>
+                    <td className="px-4 py-2.5 text-right font-mono text-red-800 font-semibold">{fmt(s.total_deaths)}</td>
+                    <td className="px-4 py-2.5 text-right font-mono text-amber-600">{fmt(s.peak_infectious)}</td>
+                    <td className="px-4 py-2.5 text-center">
+                      {s.supply_chain_enabled ? (
+                        <Package className="w-3.5 h-3.5 text-purple-500 mx-auto" />
+                      ) : (
+                        <span className="text-slate-300">—</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-2.5">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] text-emerald-600 font-medium hover:underline">Load</span>
+                        <button
+                          onClick={(e) => handleDelete(e, s.session_id)}
+                          className="p-1 rounded hover:bg-red-50 text-slate-300 hover:text-red-500 transition-colors"
+                          title="Delete this result"
+                        >
+                          <Trash2 className="w-3 h-3" />
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function SimulationTab() {
   const [appState, setAppState] = useState(APP_STATES.CONFIGURE);
   const [params, setParams] = useState(DEFAULT_PARAMS);
@@ -55,6 +219,30 @@ export default function SimulationTab() {
   const [totalDays, setTotalDays] = useState(0);
   const [error, setError] = useState(null);
   const [showDiseaseParams, setShowDiseaseParams] = useState(false);
+  const [showSessionBrowser, setShowSessionBrowser] = useState(false);
+  const didLoadLatest = useRef(false);
+
+  // On mount, try to restore the latest completed simulation
+  useEffect(() => {
+    if (didLoadLatest.current) return;
+    didLoadLatest.current = true;
+
+    fetch('/api/simulate/absdes/latest')
+      .then((res) => {
+        if (!res.ok) return null;
+        return res.json();
+      })
+      .then((data) => {
+        if (!data) return;
+        setSessionId(data.session_id);
+        setTotalDays(data.total_days);
+        if (data.params) setParams(restoreParams(data.params));
+        setAppState(APP_STATES.VIEWING);
+      })
+      .catch(() => {
+        // No previous session — stay in CONFIGURE
+      });
+  }, []);
 
   const handleRunSimulation = useCallback(async () => {
     setError(null);
@@ -115,6 +303,15 @@ export default function SimulationTab() {
     setError(null);
   }, []);
 
+  const handleLoadSession = useCallback((session) => {
+    setSessionId(session.session_id);
+    setTotalDays(session.total_days);
+    if (session.params) setParams(restoreParams(session.params));
+    setAppState(APP_STATES.VIEWING);
+    setShowSessionBrowser(false);
+    setError(null);
+  }, []);
+
   const handleExportCSV = useCallback(async () => {
     if (!sessionId) return;
     try {
@@ -152,6 +349,13 @@ export default function SimulationTab() {
           >
             <FlaskConical className="w-4 h-4" />
             Disease Model
+          </button>
+          <button
+            onClick={() => setShowSessionBrowser(true)}
+            className="btn-secondary flex items-center gap-2 text-sm"
+          >
+            <History className="w-4 h-4" />
+            Load Previous Result
           </button>
           {isViewing && (
             <button
@@ -260,6 +464,10 @@ export default function SimulationTab() {
 
       {showDiseaseParams && (
         <DiseaseParamsViewer onClose={() => setShowDiseaseParams(false)} />
+      )}
+
+      {showSessionBrowser && (
+        <SessionBrowser onSelect={handleLoadSession} onClose={() => setShowSessionBrowser(false)} />
       )}
     </div>
   );

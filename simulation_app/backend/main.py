@@ -13,6 +13,7 @@ Endpoints:
 import asyncio
 import csv
 import json
+import pickle
 import shutil
 import time
 import threading
@@ -64,7 +65,49 @@ _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent  # pandemic_modeli
 # Session cleanup: track session creation times
 _session_timestamps: dict[str, float] = {}
 _session_results: dict[str, object] = {}  # Store DualViewResult for CSV export
+_session_params: dict[str, dict] = {}  # Store request params for restoration
 _SESSION_TTL_SECONDS = 3600  # 1 hour
+
+# Persistent session storage
+_SESSIONS_DIR = Path(__file__).parent / "sessions"
+_SESSIONS_DIR.mkdir(exist_ok=True)
+
+
+def _save_session(session_id: str):
+    """Persist a completed session (result + params + timestamp) to disk."""
+    try:
+        data = {
+            "result": _session_results[session_id],
+            "params": _session_params.get(session_id, {}),
+            "timestamp": _session_timestamps.get(session_id, time.time()),
+        }
+        path = _SESSIONS_DIR / f"{session_id}.pkl"
+        with open(path, "wb") as f:
+            pickle.dump(data, f, protocol=pickle.HIGHEST_PROTOCOL)
+    except Exception as e:
+        print(f"[sessions] Failed to save {session_id}: {e}")
+
+
+def _load_persisted_sessions():
+    """Load all persisted sessions from disk into memory on startup."""
+    count = 0
+    for path in _SESSIONS_DIR.glob("*.pkl"):
+        sid = path.stem
+        try:
+            with open(path, "rb") as f:
+                data = pickle.load(f)
+            _session_results[sid] = data["result"]
+            _session_params[sid] = data.get("params", {})
+            _session_timestamps[sid] = data.get("timestamp", path.stat().st_mtime)
+            count += 1
+        except Exception as e:
+            print(f"[sessions] Failed to load {sid}: {e}")
+    if count:
+        print(f"[sessions] Restored {count} persisted session(s)")
+
+
+# Restore sessions on import
+_load_persisted_sessions()
 
 # =============================================================================
 # Disease scenarios
@@ -102,6 +145,40 @@ DISEASE_SCENARIOS = {
 }
 
 # =============================================================================
+# Vaccine supply model
+# =============================================================================
+
+def _compute_vaccine_supply_curve(n_days: int, total_population: int, lead_time: int = 120) -> list[float]:
+    """Model vaccine supply as cumulative doses available per day.
+
+    Assumes:
+    - Configurable lead time before first doses arrive (manufacturing setup)
+    - Logistic (S-curve) manufacturing ramp-up after lead time
+    - Max daily production capacity reaches ~0.5% of total population per day
+      at peak (roughly matching real-world pandemic vaccine rollout rates)
+    - Cumulative supply is capped at total population (one dose per person)
+    """
+    lead_time_days = lead_time
+    # Logistic growth rate (steepness of ramp-up)
+    k = 0.04  # moderate ramp — reaches ~50% of max capacity ~40 days after lead time
+    # Max daily production at peak (doses/day across entire region)
+    max_daily = total_population * 0.005
+
+    cumulative = 0.0
+    supply = []
+    for day in range(n_days):
+        if day < lead_time_days:
+            daily = 0.0
+        else:
+            t = day - lead_time_days
+            # Logistic function: daily production ramps from 0 toward max_daily
+            daily = max_daily / (1.0 + np.exp(-k * (t - 60)))
+        cumulative = min(cumulative + daily, total_population)
+        supply.append(round(cumulative))
+    return supply
+
+
+# =============================================================================
 # Session cleanup
 # =============================================================================
 
@@ -121,6 +198,9 @@ def _cleanup_stale_sessions():
                 pass
         _session_timestamps.pop(sid, None)
         _session_results.pop(sid, None)
+        _session_params.pop(sid, None)
+        pkl_path = _SESSIONS_DIR / f"{sid}.pkl"
+        pkl_path.unlink(missing_ok=True)
         progress_manager.cleanup(sid)
 
 
@@ -177,6 +257,7 @@ def _run_simulation_thread(session_id: str, request: SimulationRequest):
 
         result = run_absdes_simulation(params, sim_progress)
         _session_results[session_id] = result
+        _save_session(session_id)
 
         output_dir = OUTPUTS_BASE / session_id
         output_dir.mkdir(parents=True, exist_ok=True)
@@ -215,6 +296,105 @@ async def root():
 
 # -- Simulation lifecycle ------------------------------------------------------
 
+@app.get("/simulate/absdes/latest")
+async def get_latest_session():
+    """Return the most recent completed simulation session ID and its params."""
+    if not _session_timestamps:
+        raise HTTPException(status_code=404, detail="No sessions available")
+
+    completed = [
+        (sid, ts) for sid, ts in _session_timestamps.items()
+        if sid in _session_results
+    ]
+    if not completed:
+        raise HTTPException(status_code=404, detail="No completed sessions")
+
+    latest_sid = max(completed, key=lambda x: x[1])[0]
+    result = _session_results[latest_sid]
+
+    return {
+        "session_id": latest_sid,
+        "total_days": int(result.t[-1]),
+        "params": _session_params.get(latest_sid),
+    }
+
+
+@app.get("/simulate/absdes/sessions")
+async def list_sessions():
+    """Return all completed sessions with top-line summary stats."""
+    completed = [
+        (sid, ts) for sid, ts in _session_timestamps.items()
+        if sid in _session_results
+    ]
+    if not completed:
+        return {"sessions": []}
+
+    # Sort by timestamp descending (most recent first)
+    completed.sort(key=lambda x: -x[1])
+
+    sessions = []
+    for sid, ts in completed:
+        result = _session_results[sid]
+        n_cities = len(result.city_names)
+        n_people = result.n_people_per_city
+        last_day = result.actual_S.shape[1] - 1
+        real_pops = np.array(result.city_populations, dtype=float)
+        total_real_pop = int(np.sum(real_pops))
+        scale = real_pops / n_people
+
+        # Scaled aggregates
+        total_infected = int(np.sum(
+            result.actual_R[:, last_day] * scale +
+            result.actual_D[:, last_day] * scale +
+            result.actual_I[:, last_day] * scale +
+            result.actual_E[:, last_day] * scale
+        ))
+        total_dead = int(np.sum(result.actual_D[:, last_day] * scale))
+        peak_I_per_city = result.actual_I.max(axis=1)
+        peak_infectious = int(np.sum(peak_I_per_city * scale))
+        total_detected = int(np.sum(result.observed_I.max(axis=1) * scale))
+
+        params = _session_params.get(sid, {})
+
+        sessions.append({
+            "session_id": sid,
+            "timestamp": ts,
+            "scenario": getattr(result, 'scenario_name', params.get('scenario', '?')),
+            "country": params.get('country', '?'),
+            "n_cities": n_cities,
+            "total_population": total_real_pop,
+            "total_days": last_day,
+            "total_infected": total_infected,
+            "total_deaths": total_dead,
+            "peak_infectious": peak_infectious,
+            "total_detected": total_detected,
+            "supply_chain_enabled": getattr(result, 'supply_chain_enabled', False),
+            "params": params,
+        })
+
+    return {"sessions": sessions}
+
+
+@app.delete("/simulate/absdes/{session_id}")
+async def delete_session(session_id: str):
+    """Delete a session and its persisted data."""
+    if session_id not in _session_timestamps and session_id not in _session_results:
+        raise HTTPException(status_code=404, detail="Session not found")
+    _session_timestamps.pop(session_id, None)
+    _session_results.pop(session_id, None)
+    _session_params.pop(session_id, None)
+    pkl_path = _SESSIONS_DIR / f"{session_id}.pkl"
+    pkl_path.unlink(missing_ok=True)
+    output_dir = OUTPUTS_BASE / session_id
+    if output_dir.exists():
+        try:
+            shutil.rmtree(output_dir)
+        except OSError:
+            pass
+    progress_manager.cleanup(session_id)
+    return {"status": "deleted"}
+
+
 @app.post("/simulate/absdes")
 async def start_simulation(request: SimulationRequest):
     """
@@ -226,6 +406,7 @@ async def start_simulation(request: SimulationRequest):
 
     session_id = str(uuid.uuid4())
     _session_timestamps[session_id] = time.time()
+    _session_params[session_id] = request.model_dump()
 
     progress_manager.create_session(session_id)
 
@@ -526,14 +707,28 @@ async def get_resource_timeseries(session_id: str):
 
     # Shadow demand (always populated)
     if result.shadow_demand_ppe is not None:
+        # Vaccine supply: use manufacturing lead time from simulation result
+        mfg_lead = getattr(result, 'vaccine_manufacturing_lead_days', 120)
+        total_pop = int(np.sum(np.array(result.city_populations, dtype=float)))
+        vaccine_supply = _compute_vaccine_supply_curve(days, total_pop, lead_time=mfg_lead)
+
         response["demand"] = {
             "ppe": result.shadow_demand_ppe.sum(axis=0).tolist(),
             "swabs": result.shadow_demand_swabs.sum(axis=0).tolist(),
             "reagents": result.shadow_demand_reagents.sum(axis=0).tolist(),
             "pills": result.shadow_demand_pills.sum(axis=0).tolist(),
             "beds": result.shadow_demand_beds.sum(axis=0).tolist(),
-            "vaccines": result.shadow_demand_vaccines.sum(axis=0).tolist() if result.shadow_demand_vaccines is not None else None,
+            "vaccines": vaccine_supply,
         }
+
+        # Include manufacturing metadata
+        mfg_sites = getattr(result, 'vaccine_manufacturing_sites', None)
+        if mfg_sites:
+            response["vaccine_manufacturing"] = {
+                "sites": mfg_sites,
+                "lead_days": mfg_lead,
+                "cumulative_produced": getattr(result, 'vaccine_cumulative_production', 0),
+            }
 
     return response
 

@@ -348,6 +348,9 @@ class ContinentSupplyManager:
         defaults: ResourceDefaults,
         rng: np.random.RandomState,
         strategy: AllocationStrategy | None = None,
+        manufacturing_sites: list[str] | None = None,
+        manufacturing_lead_days: int = 120,
+        total_population: int = 0,
     ):
         self.countries = country_managers
         self.reserves = dict(reserves)  # mutable copy
@@ -356,6 +359,54 @@ class ContinentSupplyManager:
         self.strategy = strategy
         # Track cumulative deployments
         self.total_deployed: dict[str, int] = {r: 0 for r in reserves}
+
+        # Vaccine manufacturing model
+        # Sites are the N largest cities; production starts after lead_days
+        # with logistic ramp-up, split across sites.
+        self.manufacturing_sites = manufacturing_sites or []
+        self.manufacturing_lead_days = manufacturing_lead_days
+        self._total_population = total_population
+        # Max daily production across all sites: 0.5% of total pop/day at peak
+        self._max_daily_production = max(1, int(total_population * 0.005))
+        # Cumulative produced (for reporting)
+        self.cumulative_vaccine_production = 0
+
+    def produce_vaccines(self, day: int, elog: EventLog | None = None) -> int:
+        """Simulate daily vaccine manufacturing output.
+
+        Production begins after manufacturing_lead_days with a logistic ramp-up.
+        Output is added to continental reserves for distribution via the
+        existing push deployment pipeline.
+
+        Returns daily production amount.
+        """
+        if not self.manufacturing_sites or day < self.manufacturing_lead_days:
+            return 0
+
+        t = day - self.manufacturing_lead_days
+        # Logistic ramp: reaches ~50% of max capacity around t=60
+        daily = self._max_daily_production / (1.0 + np.exp(-0.04 * (t - 60)))
+        daily = int(daily)
+        if daily <= 0:
+            return 0
+
+        # Cap cumulative production at total population
+        if self.cumulative_vaccine_production >= self._total_population:
+            return 0
+        daily = min(daily, self._total_population - self.cumulative_vaccine_production)
+
+        # Add to reserves for push deployment
+        self.reserves["vaccines"] = self.reserves.get("vaccines", 0) + daily
+        self.cumulative_vaccine_production += daily
+
+        if elog is not None:
+            per_site = daily // len(self.manufacturing_sites)
+            for site in self.manufacturing_sites:
+                elog.log(day, site, "manufacturing", "vaccine_production",
+                         resource="vaccines", quantity=per_site,
+                         reason="domestic_manufacturing")
+
+        return daily
 
     def deploy_reserves(
         self,

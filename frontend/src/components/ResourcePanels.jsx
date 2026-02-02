@@ -179,10 +179,11 @@ const RESOURCE_META = {
   },
   vaccines: {
     icon: Syringe,
-    label: 'Vaccines',
+    label: 'Vaccine Supply',
     unit: 'doses',
     color: '#8b5cf6',
     demandColor: '#c4b5fd',
+    isSupplyModel: true,
   },
 };
 
@@ -194,18 +195,23 @@ const fmt = (n) => {
   return Math.round(n).toLocaleString();
 };
 
-function ResourceCard({ resourceKey, supply, demand, supplyEnabled }) {
+function ResourceCard({ resourceKey, supply, demand, supplyEnabled, vaccineManufacturing }) {
   const meta = RESOURCE_META[resourceKey];
   if (!meta) return null;
 
   const Icon = meta.icon;
   const hasDemand = demand && demand.length > 0;
   const hasSupply = supply && supply.length > 0;
+  const isVaccineSupply = meta.isSupplyModel;
 
   // Compute stats
   const peakDemand = hasDemand ? Math.max(...demand) : 0;
   const totalDemand = hasDemand ? demand.reduce((a, b) => a + b, 0) : 0;
   const peakDay = hasDemand ? demand.indexOf(peakDemand) : 0;
+
+  // Vaccine supply stats
+  const vaccineLeadTime = isVaccineSupply && hasDemand ? demand.findIndex(v => v > 0) : -1;
+  const vaccineFinalSupply = isVaccineSupply && hasDemand ? demand[demand.length - 1] : 0;
 
   // Supply stats
   const initialSupply = hasSupply ? supply[0] : null;
@@ -248,7 +254,13 @@ function ResourceCard({ resourceKey, supply, demand, supplyEnabled }) {
             </div>
             <div>
               <div className="text-xs font-semibold text-slate-700 leading-tight">{meta.label}</div>
-              <div className="text-[10px] text-slate-400">peak day {peakDay}</div>
+              <div className="text-[10px] text-slate-400">
+                {isVaccineSupply
+                  ? (vaccineManufacturing?.sites
+                    ? `mfg: ${vaccineManufacturing.sites.slice(0, 3).join(', ')}`
+                    : (vaccineLeadTime >= 0 ? `first doses day ${vaccineLeadTime}` : 'no supply in window'))
+                  : `peak day ${peakDay}`}
+              </div>
             </div>
           </div>
           {supplyEnabled && (
@@ -260,21 +272,40 @@ function ResourceCard({ resourceKey, supply, demand, supplyEnabled }) {
 
         {/* Key metrics row */}
         <div className="grid grid-cols-2 gap-3 mt-3">
-          <div>
-            <div className="text-[9px] uppercase tracking-wider text-slate-400 font-medium">Peak Demand</div>
-            <div className="text-base font-bold tabular-nums" style={{ color: meta.demandColor }}>
-              {fmt(peakDemand)}
-              <span className="text-[10px] text-slate-400 font-normal ml-1">/{meta.unit.charAt(0)}</span>
-            </div>
-          </div>
-          <div>
-            <div className="text-[9px] uppercase tracking-wider text-slate-400 font-medium">
-              {supplyEnabled && hasSupply ? 'Remaining' : 'Total Need'}
-            </div>
-            <div className="text-base font-bold tabular-nums" style={{ color: supplyEnabled && hasSupply ? meta.color : meta.demandColor }}>
-              {supplyEnabled && hasSupply ? fmt(finalSupply) : fmt(totalDemand)}
-            </div>
-          </div>
+          {isVaccineSupply ? (
+            <>
+              <div>
+                <div className="text-[9px] uppercase tracking-wider text-slate-400 font-medium">Lead Time</div>
+                <div className="text-base font-bold tabular-nums" style={{ color: meta.color }}>
+                  {vaccineLeadTime >= 0 ? `${vaccineLeadTime}d` : '—'}
+                </div>
+              </div>
+              <div>
+                <div className="text-[9px] uppercase tracking-wider text-slate-400 font-medium">Doses by End</div>
+                <div className="text-base font-bold tabular-nums" style={{ color: meta.demandColor }}>
+                  {fmt(vaccineFinalSupply)}
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <div>
+                <div className="text-[9px] uppercase tracking-wider text-slate-400 font-medium">Peak Demand</div>
+                <div className="text-base font-bold tabular-nums" style={{ color: meta.demandColor }}>
+                  {fmt(peakDemand)}
+                  <span className="text-[10px] text-slate-400 font-normal ml-1">/day</span>
+                </div>
+              </div>
+              <div>
+                <div className="text-[9px] uppercase tracking-wider text-slate-400 font-medium">
+                  {supplyEnabled && hasSupply ? 'Remaining' : 'Total Need'}
+                </div>
+                <div className="text-base font-bold tabular-nums" style={{ color: supplyEnabled && hasSupply ? meta.color : meta.demandColor }}>
+                  {supplyEnabled && hasSupply ? fmt(finalSupply) : fmt(totalDemand)}
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
 
@@ -315,7 +346,7 @@ function ResourceCard({ resourceKey, supply, demand, supplyEnabled }) {
         {hasDemand && (
           <div className="flex items-center gap-1.5">
             <div className="w-4 h-0.5 rounded-full" style={{ backgroundColor: meta.demandColor }} />
-            <span>Demand</span>
+            <span>{isVaccineSupply ? 'Cumulative Supply' : 'Demand'}</span>
           </div>
         )}
         {supplyEnabled && stockoutDays > 0 && (
@@ -404,12 +435,12 @@ export default function ResourcePanels({ sessionId, supplyChainEnabled }) {
             </div>
             <div>
               <h3 className="text-sm font-semibold text-slate-700">
-                {isSupplyEnabled ? 'Supply Chain — Supply vs Demand' : 'Resource Demand (Shadow Accounting)'}
+                {isSupplyEnabled ? 'Supply Chain — Supply vs Demand' : 'Resource Demand (Predicted but not included in model)'}
               </h3>
               <p className="text-[10px] text-slate-400">
                 {isSupplyEnabled
                   ? 'Actual supply levels and daily consumption across all cities'
-                  : 'Projected resource needs if supply chain were active'}
+                  : 'Enable supply chain resource tracking in simulation parameters on the left to include'}
               </p>
             </div>
           </div>
@@ -440,6 +471,7 @@ export default function ResourcePanels({ sessionId, supplyChainEnabled }) {
               supply={supplyData}
               demand={demandData}
               supplyEnabled={isSupplyEnabled}
+              vaccineManufacturing={key === 'vaccines' ? data.vaccine_manufacturing : null}
             />
           );
         })}

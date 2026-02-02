@@ -238,9 +238,10 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
     norm = mcolors.Normalize(vmin=0, vmax=vmax)
     cmap = plt.cm.YlOrRd
 
-    # Pick the seed city with the largest population for SEIR curves
-    seed_idx = max(result.seed_city_indices,
-                   key=lambda i: result.city_populations[i])
+    # Pick the city with the highest peak infectious count for SEIR curves
+    # (more informative than largest-population seed city, which may have minimal activity)
+    peak_I_per_city = result.actual_I.max(axis=1)
+    seed_idx = int(np.argmax(peak_I_per_city))
 
     # Country zoom bounds
     country_bounds = _get_country_bounds(africa_gdf, country)
@@ -250,10 +251,6 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
     frame_count = 0
 
     output_dir.mkdir(parents=True, exist_ok=True)
-
-    # Check if supply chain data is available
-    has_resources = (getattr(result, 'supply_chain_enabled', False)
-                     and result.resource_beds_occupied is not None)
 
     # -- Render loop -----------------------------------------------------------
 
@@ -265,13 +262,9 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
             # Compute per-city infection percentages for this day
             infection_pcts = data_array[:, day] / n_people * 100
 
-            # Create composite figure: map + SEIR curve (+ resource panel if enabled)
-            if has_resources:
-                fig = plt.figure(figsize=(8, 13), dpi=100)
-                gs = GridSpec(3, 1, figure=fig, height_ratios=[3, 2, 1.5], hspace=0.28)
-            else:
-                fig = plt.figure(figsize=(8, 10), dpi=100)
-                gs = GridSpec(2, 1, figure=fig, height_ratios=[3, 2], hspace=0.28)
+            # Create composite figure: map + SEIR curve
+            fig = plt.figure(figsize=(8, 10), dpi=100)
+            gs = GridSpec(2, 1, figure=fig, height_ratios=[3, 2], hspace=0.28)
             ax_map = fig.add_subplot(gs[0])
             ax_seir = fig.add_subplot(gs[1])
 
@@ -294,11 +287,6 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
             # SEIR curve panel
             _render_seir_panel(ax_seir, result, seed_idx, day, n_people,
                                label_prefix.upper())
-
-            # Resource panel (if supply chain enabled)
-            if has_resources:
-                ax_res = fig.add_subplot(gs[2])
-                _render_resource_panel(ax_res, result, day)
 
             # Add infection stats text on map
             mean_inf = infection_pcts.mean()

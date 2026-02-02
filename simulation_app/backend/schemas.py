@@ -49,7 +49,7 @@ class SimulationRequest(BaseModel):
     incubation_days: float | None = None
     infectious_days: float | None = None
     r0_override: float | None = None
-    seed_fraction: float = Field(0.002, ge=0.0001, le=0.1)
+    seed_fraction: float = Field(0.005, ge=0.0001, le=0.1)
     provider_density: float = Field(5.0, ge=0.0, le=200.0)
     screening_capacity: int = Field(20, ge=1, le=100)
     disclosure_prob: float = Field(0.5, ge=0.0, le=1.0)

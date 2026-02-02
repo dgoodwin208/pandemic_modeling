@@ -83,7 +83,7 @@ class SimulationParams:
     # AI healthcare worker reach (fraction of population reachable via mobile phone)
     mobile_phone_reach: float = 0.84  # 84% of Africans have a cell phone
     days: int = 200
-    seed_fraction: float = 0.002
+    seed_fraction: float = 0.005
     random_seed: int = 42
     incubation_days: float | None = None   # Override scenario default
     infectious_days: float | None = None
@@ -152,6 +152,10 @@ class DualViewResult:
     ifr: float = 0.0
     supply_chain_enabled: bool = False
     event_log: EventLog | None = None
+    # Vaccine manufacturing metadata
+    vaccine_manufacturing_sites: list[str] | None = None
+    vaccine_manufacturing_lead_days: int = 120
+    vaccine_cumulative_production: int = 0
 
 
 # -- City helper ---------------------------------------------------------------
@@ -689,12 +693,21 @@ def run_absdes_simulation(
             "swabs": 0,
             "reagents": 0,
         }
+
+        # Identify top-3 cities by population as vaccine manufacturing sites
+        pop_order = sorted(range(n_cities), key=lambda i: city_pops[i], reverse=True)
+        mfg_sites = [city_names[i] for i in pop_order[:3]]
+        total_real_pop = int(sum(city_pops))
+
         continent_manager = ContinentSupplyManager(
             country_managers=country_managers,
             reserves=continent_reserves,
             defaults=res_defaults,
             rng=supply_rng,
             strategy=strategy,
+            manufacturing_sites=mfg_sites,
+            manufacturing_lead_days=120,
+            total_population=total_real_pop,
         )
 
     # -- Allocate time-series storage ------------------------------------------
@@ -797,10 +810,12 @@ def run_absdes_simulation(
             screened_count = screening_result.get("screened", 0)
             new_detected = city_sims[i].new_detections_today
 
-            # Shadow demand: screening uses 1 PPE + 1 swab + 1 reagent per person screened
-            shadow_ppe[i, day] += screened_count
-            shadow_swabs[i, day] += screened_count
-            shadow_reagents[i, day] += screened_count
+            # Shadow demand: testing resources driven by observed illness
+            # Each detected case triggers contact-tracing tests (~3 contacts tested per case)
+            observed_i = city_sims[i].observed_I
+            shadow_swabs[i, day] += observed_i * 3
+            shadow_reagents[i, day] += observed_i * 3
+            shadow_ppe[i, day] += observed_i * 3  # PPE for testing contacts
 
             if new_detected > 0:
                 elog.log(day, city_names[i], "screening", "detect",
@@ -872,8 +887,6 @@ def run_absdes_simulation(
             shadow_pills[i, day] += care_patients
             # Beds demanded = patients needing or receiving care
             shadow_beds[i, day] = care_patients + city_sims[i].I_needs_care
-            # Vaccine demand: 2% of susceptible pop per day
-            shadow_vaccines[i, day] = max(1, int(city_sims[i].S * 0.02))
 
         # Step 6: Record OBSERVED snapshot
         for i in range(n_cities):
@@ -926,6 +939,9 @@ def run_absdes_simulation(
             # Country redistribution (daily)
             for mgr in country_managers.values():
                 mgr.update_and_redistribute(day, elog, snapshot=eod_snapshot)
+
+            # Vaccine manufacturing (daily production)
+            continent_manager.produce_vaccines(day, elog)
 
             # Continent deployment (weekly)
             if day % 7 == 0:
@@ -982,4 +998,7 @@ def run_absdes_simulation(
         ifr=ifr,
         supply_chain_enabled=supply_enabled,
         event_log=elog,
+        vaccine_manufacturing_sites=continent_manager.manufacturing_sites if continent_manager else None,
+        vaccine_manufacturing_lead_days=continent_manager.manufacturing_lead_days if continent_manager else 120,
+        vaccine_cumulative_production=continent_manager.cumulative_vaccine_production if continent_manager else 0,
     )
