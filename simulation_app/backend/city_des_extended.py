@@ -74,7 +74,7 @@ class CityDES:
         disclosure_prob: float = 0.5,
         receptivity: float = 0.6,
         base_isolation_prob: float = 0.0,
-        advised_isolation_prob: float = 0.40,
+        advised_isolation_prob: float = 0.20,
         advice_decay_prob: float = 0.0,
         # Severity parameters (from disease_params.csv via sim_config)
         severe_fraction: float = 0.15,
@@ -83,12 +83,21 @@ class CityDES:
         death_prob_increase_per_day: float = 0.015,
         gamma_shape: float = 6.25,
         care_quality: float = 1.0,
+        # Random mixing: fraction of contacts with random agents (vs network neighbors)
+        p_random: float = 0.15,
+        # Mobile phone reach: fraction of population reachable by AI providers.
+        # Gates effective disclosure, receptivity, and isolation compliance.
+        # Agents without phones fall back to baseline behavioral parameters.
+        mobile_phone_reach: float = 1.0,
+        # Supply chain (None = disabled, backward compatible)
+        city_supply=None,
     ):
         # Seed RNGs
         self._rng = random.Random(random_seed)
         self._np_rng = np.random.RandomState(random_seed)
 
         self.n_people = n_people
+        self._p_random = p_random
         self.env = simpy.Environment()
 
         # Disease parameters (same derivation as validation_config.to_des_config)
@@ -124,6 +133,9 @@ class CityDES:
         self._advised_isolation_prob = advised_isolation_prob
         self._advice_decay_prob = advice_decay_prob
 
+        # Per-agent mobile phone ownership (gates AI provider reach)
+        self._has_phone = self._np_rng.random(n_people) < mobile_phone_reach
+
         # Per-agent behavioral state: has this person accepted provider advice?
         self._provider_advised = np.zeros(n_people, dtype=np.bool_)
 
@@ -148,6 +160,11 @@ class CityDES:
         self._obs_counts = [0, 0, 0, 0, 0, 0, 0]
         # Cached contact candidates for targeted screening (grows monotonically)
         self._contact_candidates: set[int] = set()
+
+        # Supply chain integration (None = no resource constraints)
+        self._supply = city_supply
+        # Vaccination tracking: set of vaccinated agent PIDs
+        self._vaccinated: set[int] = set()
 
         # Seed initial infections (directly to I_minor, matching ODE seeding)
         indices = self._rng.sample(range(n_people), min(seed_infected, n_people))
@@ -307,6 +324,17 @@ class CityDES:
                     "decayed": decayed}
 
         capacity = self._n_providers * self._screening_capacity
+
+        # If supply chain is enabled, cap screening by available diagnostics/PPE
+        if self._supply is not None:
+            max_by_ppe = self._supply.ppe
+            max_by_swabs = self._supply.swabs
+            max_by_reagents = self._supply.reagents
+            capacity = min(capacity, max_by_ppe, max_by_swabs, max_by_reagents)
+            if capacity <= 0:
+                return {"screened": 0, "detected": 0, "advice_accepted": 0,
+                        "decayed": decayed, "limited_by_supplies": True}
+
         sample_size = min(capacity, self.n_people)
 
         # 70% random, 30% contact-based
@@ -355,9 +383,17 @@ class CityDES:
         states = self._states[sample_arr]
         det_rolls = self._np_rng.random(len(sample_arr))
 
+        # Per-agent disclosure probability: agents with phones use the
+        # configured disclosure_prob (which may be elevated for AI scenarios);
+        # agents without phones fall back to the baseline (0.5).
+        has_phone_mask = self._has_phone[sample_arr]
+        disclosure_probs = np.where(
+            has_phone_mask, self._disclosure_prob, 0.5
+        )
+
         # Bulk detection: infectious (state 2,3,4) AND disclosed
         infectious_mask = (states >= 2) & (states <= 4)
-        detected_mask = infectious_mask & (det_rolls < self._disclosure_prob)
+        detected_mask = infectious_mask & (det_rolls < disclosure_probs)
         detected_pids = sample_arr[detected_mask]
         detected = len(detected_pids)
         self._new_detections_today = detected
@@ -373,15 +409,28 @@ class CityDES:
                         self._contact_candidates.add(nb)
                 self._contact_candidates.discard(pid)
 
+        # Per-agent receptivity: agents with phones use the configured
+        # receptivity (elevated for AI); agents without fall back to baseline (0.6).
+        receptivity_probs = np.where(
+            has_phone_mask, self._receptivity, 0.6
+        )
+
         # Bulk advice: not already advised AND receptive
         not_advised = ~self._provider_advised[sample_arr]
         advice_rolls = self._np_rng.random(len(sample_arr))
-        accept_mask = not_advised & (advice_rolls < self._receptivity)
+        accept_mask = not_advised & (advice_rolls < receptivity_probs)
         self._provider_advised[sample_arr[accept_mask]] = True
         advice_accepted = int(accept_mask.sum())
 
+        # Consume screening resources (bulk for all screened)
+        screened_count = len(sample_arr)
+        if self._supply is not None and screened_count > 0:
+            self._supply.try_consume("ppe", screened_count)
+            self._supply.try_consume("swabs", screened_count)
+            self._supply.try_consume("reagents", screened_count)
+
         return {
-            "screened": len(sample_arr),
+            "screened": screened_count,
             "detected": detected,
             "advice_accepted": advice_accepted,
             "decayed": decayed,
@@ -404,9 +453,16 @@ class CityDES:
         yield from self._infectious_minor_process(idx)
 
     def _is_isolating(self, idx: int) -> bool:
-        """Daily stochastic isolation check (module 003 semantics)."""
-        prob = (self._advised_isolation_prob if self._provider_advised[idx]
-                else self._base_isolation_prob)
+        """Daily stochastic isolation check (module 003 semantics).
+
+        Advised agents with phones use advised_isolation_prob.
+        Advised agents WITHOUT phones fall back to base_isolation_prob
+        (they can't receive AI monitoring/reminders).
+        """
+        if self._provider_advised[idx] and self._has_phone[idx]:
+            prob = self._advised_isolation_prob
+        else:
+            prob = self._base_isolation_prob
         return self._rng.random() < prob
 
     def _infectious_minor_process(self, idx: int):
@@ -441,12 +497,22 @@ class CityDES:
                     if self.env.now >= day_end:
                         break
 
-                    # Pick random neighbor and attempt transmission
-                    neighbor = self._rng.choice(neighbors)
-                    if (self._states[neighbor] == 0
-                            and self._rng.random() < self.transmission_prob):
-                        self._transition(neighbor, 0, 1)  # S -> E
-                        self.env.process(self._exposed_process(neighbor))
+                    # Pick contact: random agent (mass-action) or network neighbor
+                    if self._p_random > 0 and self._rng.random() < self._p_random:
+                        target = self._rng.randrange(self.n_people)
+                        if target == idx:
+                            continue
+                    else:
+                        target = self._rng.choice(neighbors)
+
+                    if self._states[target] == 0:
+                        tp = self.transmission_prob
+                        # Vaccinated targets have reduced susceptibility
+                        if target in self._vaccinated:
+                            tp *= 0.3
+                        if self._rng.random() < tp:
+                            self._transition(target, 0, 1)  # S -> E
+                            self.env.process(self._exposed_process(target))
 
         # End of infectious period: severity branching
         if self._states[idx] != 2:
@@ -463,12 +529,12 @@ class CityDES:
     def _needs_care_process(self, idx: int):
         """I_needs_care: daily increasing death probability until care is received.
 
-        For now (state flag only, no resource scarcity), automatically
-        transitions to I_receiving_care after 1 day. The daily death check
-        still runs for that first day, so some patients die before care arrives.
+        If supply chain is enabled, admission to care is gated by bed
+        availability (city_supply.try_admit()). If no beds are available,
+        the patient waits with escalating death probability each day.
 
-        Future: resource scarcity will delay or prevent the transition to
-        I_receiving_care, making the escalating death probability meaningful.
+        If supply chain is disabled (self._supply is None), automatically
+        transitions to I_receiving_care after 1 day (legacy behavior).
         """
         days_waiting = 0
 
@@ -486,9 +552,14 @@ class CityDES:
 
             days_waiting += 1
 
-            # Auto-receive care after 1 day (state flag only for now)
-            # Future: this will be gated by resource availability
-            if days_waiting >= 1:
+            # Check if patient can be admitted to care
+            if self._supply is not None:
+                admitted = self._supply.try_admit()
+            else:
+                # Legacy behavior: auto-admit after 1 day
+                admitted = (days_waiting >= 1)
+
+            if admitted:
                 self._transition(idx, 3, 4)
                 yield from self._receiving_care_process(idx)
                 return
@@ -501,15 +572,65 @@ class CityDES:
         Care duration is Gamma-distributed (half of infectious_days).
         Survival probability is care_survival_prob * care_quality,
         where care_quality is derived from the city's medical_services_score.
+
+        If supply chain is enabled:
+        - Consumes 1 pill per day during care
+        - Releases bed on exit (R or D)
+        - Consumes PPE per care-day
         """
         care_duration = self._gamma_wait(self.infectious_days * 0.5)
-        yield self.env.timeout(care_duration)
+
+        # Consume resources daily during care
+        if self._supply is not None:
+            days_in_care = max(1, int(care_duration))
+            for _ in range(days_in_care):
+                self._supply.try_consume("pills", 1)
+                self._supply.try_consume("ppe", 2)  # PPE per care-day
+                yield self.env.timeout(1.0)
+            # Wait for any fractional remainder
+            remainder = care_duration - days_in_care
+            if remainder > 0:
+                yield self.env.timeout(remainder)
+        else:
+            yield self.env.timeout(care_duration)
 
         if self._states[idx] != 4:
-            return  # state changed externally
+            # Release bed even if state changed externally
+            if self._supply is not None:
+                self._supply.release_bed()
+            return
 
         effective_survival = self._care_survival_prob * self._care_quality
         if self._rng.random() < effective_survival:
             self._transition(idx, 4, 5)  # Survives -> R
         else:
             self._transition(idx, 4, 6)  # Dies despite care -> D
+
+        # Release bed on exit
+        if self._supply is not None:
+            self._supply.release_bed()
+
+    # -- Vaccination -----------------------------------------------------------
+
+    def apply_vaccinations(self, count: int) -> int:
+        """Vaccinate up to `count` susceptible, unvaccinated people.
+
+        Vaccinated people have 0.3x susceptibility to transmission.
+        Returns the actual number vaccinated.
+        """
+        susceptible = [
+            i for i in range(self.n_people)
+            if self._states[i] == 0 and i not in self._vaccinated
+        ]
+        n_to_vaccinate = min(count, len(susceptible))
+        if n_to_vaccinate <= 0:
+            return 0
+        chosen = self._rng.sample(susceptible, n_to_vaccinate)
+        for pid in chosen:
+            self._vaccinated.add(pid)
+        return n_to_vaccinate
+
+    @property
+    def vaccinated_count(self) -> int:
+        """Number of people who have been vaccinated."""
+        return len(self._vaccinated)

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { ChevronDown, Settings, Sliders, Zap, Clock, Activity, Info, X, HeartPulse } from 'lucide-react';
+import { ChevronDown, Settings, Sliders, Zap, Clock, Activity, Info, X, HeartPulse, Package } from 'lucide-react';
 
 const SCENARIOS = [
   { value: 'covid_natural', label: 'COVID-19 — Natural Outbreak' },
@@ -144,6 +144,52 @@ const PARAM_INFO = {
     title: 'Random Seed',
     description: 'Seed for the random number generator. Using the same seed with the same parameters produces identical results. Change this to explore stochastic variation between runs.',
     ranges: 'Any integer. Different seeds produce different epidemic trajectories due to stochastic network generation and transmission events. Some seeds may produce mild epidemics, others severe — this is realistic stochastic variation.',
+  },
+  // Supply chain parameters
+  enable_supply_chain: {
+    title: 'Enable Supply Chain',
+    description: 'Enable finite resource tracking: hospital beds, PPE, diagnostics (swabs/reagents), vaccines, and therapeutic pills. Resources are consumed during screening and care, with three-tier replenishment (city, country, continent).',
+    ranges: 'Off = unlimited resources (default). On = resources are finite and can run out, affecting screening capacity and patient care.',
+  },
+  beds_per_hospital: {
+    title: 'Beds per Hospital',
+    description: 'Number of hospital beds per hospital facility. Combined with facility counts from the city data to derive initial bed capacity per city.',
+    ranges: '50-200 is typical for African hospitals. Default: 120. Beds are capacity-limited: patients occupy beds during care and release them on recovery or death.',
+  },
+  beds_per_clinic: {
+    title: 'Beds per Clinic',
+    description: 'Number of beds per clinic facility. Clinics provide fewer beds than hospitals but are more numerous in many cities.',
+    ranges: '2-20 is typical. Default: 8. Some cities have many clinics (e.g., Kinshasa: 849) which can provide significant bed capacity.',
+  },
+  ppe_sets_per_facility: {
+    title: 'PPE Sets per Facility',
+    description: 'Initial stock of PPE (masks, gloves, gowns) per hospital or clinic. Consumed during screening (1 per test) and patient care (2 per care-day).',
+    ranges: '100-1000. Default: 500. PPE stockouts halt screening and reduce care quality.',
+  },
+  swabs_per_lab: {
+    title: 'Swabs per Lab',
+    description: 'Initial stock of diagnostic swabs per laboratory. Consumed 1 per screening test.',
+    ranges: '500-5000. Default: 1000. Swab stockouts halt diagnostic screening.',
+  },
+  reagents_per_lab: {
+    title: 'Reagents per Lab',
+    description: 'Initial stock of testing reagents per laboratory. Consumed 1 per screening test.',
+    ranges: '1000-10000. Default: 2000. Reagent stockouts halt diagnostic screening.',
+  },
+  lead_time_mean_days: {
+    title: 'Lead Time (Days)',
+    description: 'Average number of days for country-level supply orders to arrive. Uses Gamma distribution (CV ~0.5) for realistic variation.',
+    ranges: '3-30 days. Default: 7. Continent-level deployments take ~2x longer. Shorter lead times reduce stockout duration.',
+  },
+  continent_vaccine_stockpile: {
+    title: 'Continent Vaccine Stockpile',
+    description: 'Total vaccine doses available at the continental level for deployment to countries in need. Deployed weekly to countries below critical thresholds.',
+    ranges: '0 = no vaccines (default). 100,000-10,000,000 for meaningful coverage. Vaccines reduce susceptibility by 70% for vaccinated individuals.',
+  },
+  continent_pill_stockpile: {
+    title: 'Continent Pill Stockpile',
+    description: 'Total therapeutic pills available at the continental level. Deployed weekly. Consumed 1 per patient-day during care.',
+    ranges: '0 = no pills (default). 100,000-10,000,000 for meaningful supply.',
   },
 };
 
@@ -563,6 +609,45 @@ export default function ParameterForm({ params, setParams, onRun, disabled, comp
           <RangeField label="Incubation Days" paramKey="incubation_days" value={params.incubation_days} onChange={handleChange} min={1} max={30} step={0.5} disabled={disabled} compact={compact} placeholder={scenarioDefaults.incubation_days} onInfo={openInfo} />
           <RangeField label="Infectious Days" paramKey="infectious_days" value={params.infectious_days} onChange={handleChange} min={1} max={30} step={0.5} disabled={disabled} compact={compact} placeholder={scenarioDefaults.infectious_days} onInfo={openInfo} />
           <RangeField label="R0 Override" paramKey="r0_override" value={params.r0_override} onChange={handleChange} min={0.5} max={15} step={0.1} disabled={disabled} compact={compact} placeholder={scenarioDefaults.r0} onInfo={openInfo} />
+        </CollapsibleSection>
+
+        <CollapsibleSection title="Supply Chain Resources" icon={Package} compact={compact}>
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-1.5">
+                <label className={`text-slate-500 ${compact ? 'text-[10px]' : 'text-xs'}`}>
+                  Enable Supply Chain
+                </label>
+                <InfoButton paramKey="enable_supply_chain" onClick={openInfo} compact={compact} />
+              </div>
+              <button
+                type="button"
+                onClick={() => handleChange('enable_supply_chain', !params.enable_supply_chain)}
+                disabled={disabled}
+                className={`relative inline-flex h-5 w-9 items-center rounded-full transition-colors ${
+                  params.enable_supply_chain ? 'bg-emerald-500' : 'bg-slate-300'
+                } ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+              >
+                <span
+                  className={`inline-block h-3.5 w-3.5 transform rounded-full bg-white transition-transform ${
+                    params.enable_supply_chain ? 'translate-x-4' : 'translate-x-0.5'
+                  }`}
+                />
+              </button>
+            </div>
+          </div>
+          {params.enable_supply_chain && (
+            <>
+              <RangeField label="Beds per Hospital" paramKey="beds_per_hospital" value={params.beds_per_hospital} onChange={handleChange} min={10} max={500} step={10} disabled={disabled} compact={compact} onInfo={openInfo} />
+              <RangeField label="Beds per Clinic" paramKey="beds_per_clinic" value={params.beds_per_clinic} onChange={handleChange} min={0} max={50} step={1} disabled={disabled} compact={compact} onInfo={openInfo} />
+              <RangeField label="PPE Sets per Facility" paramKey="ppe_sets_per_facility" value={params.ppe_sets_per_facility} onChange={handleChange} min={50} max={5000} step={50} disabled={disabled} compact={compact} onInfo={openInfo} />
+              <RangeField label="Swabs per Lab" paramKey="swabs_per_lab" value={params.swabs_per_lab} onChange={handleChange} min={100} max={10000} step={100} disabled={disabled} compact={compact} onInfo={openInfo} />
+              <RangeField label="Reagents per Lab" paramKey="reagents_per_lab" value={params.reagents_per_lab} onChange={handleChange} min={100} max={20000} step={100} disabled={disabled} compact={compact} onInfo={openInfo} />
+              <RangeField label="Lead Time (Days)" paramKey="lead_time_mean_days" value={params.lead_time_mean_days} onChange={handleChange} min={1} max={30} step={1} disabled={disabled} compact={compact} onInfo={openInfo} />
+              <NumberField label="Continent Vaccine Stockpile" paramKey="continent_vaccine_stockpile" value={params.continent_vaccine_stockpile} onChange={handleChange} min={0} max={10000000} step={10000} disabled={disabled} compact={compact} onInfo={openInfo} />
+              <NumberField label="Continent Pill Stockpile" paramKey="continent_pill_stockpile" value={params.continent_pill_stockpile} onChange={handleChange} min={0} max={10000000} step={10000} disabled={disabled} compact={compact} onInfo={openInfo} />
+            </>
+          )}
         </CollapsibleSection>
 
         <CollapsibleSection title="Simulation Control" icon={Activity} compact={compact}>

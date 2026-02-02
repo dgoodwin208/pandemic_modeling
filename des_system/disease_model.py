@@ -118,7 +118,18 @@ class DiseaseModel:
     def _transmission_process(self, person: Person) -> Generator:
         """
         Attempt to spread disease to contacts while contagious.
+
+        Contacts are split between network neighbors and random agents
+        (mass-action mixing) controlled by config.p_random. This ensures
+        epidemic dynamics are independent of population size N.
+
+        Contacts are selected from ALL agents (not pre-filtered to
+        susceptible), matching the ODE's implicit S/N factor — contacts
+        with already-infected agents are "wasted", as in real life.
         """
+        all_people = list(self.network.people.values())
+        n_population = len(all_people)
+
         while person.is_contagious():
             # Wait one day between transmission attempts
             yield self.env.timeout(1.0)
@@ -126,25 +137,31 @@ class DiseaseModel:
             if not person.is_contagious():
                 break
 
-            # Get susceptible contacts
-            susceptible = self.network.get_susceptible_contacts(person.id)
-            if not susceptible:
-                continue
-
-            # Interact with fraction of contacts
+            # Total interactions for the day (based on full contact list size)
+            all_contacts = self.network.get_contacts(person.id)
             n_interactions = max(
                 1,
-                int(len(susceptible) * self.config.daily_contact_rate)
-            )
-            contacts_today = random.sample(
-                susceptible,
-                min(n_interactions, len(susceptible))
+                int(len(all_contacts) * self.config.daily_contact_rate)
             )
 
-            # Attempt transmission to each contact
-            for contact in contacts_today:
-                if random.random() < self.config.transmission_prob:
-                    self.infect_person(contact, source=person)
+            # Select contacts: mix of network neighbors and random agents
+            p_random = self.config.p_random
+            for _ in range(n_interactions):
+                if p_random > 0 and random.random() < p_random:
+                    # Random mass-action contact: pick ANY agent in population
+                    contact = all_people[random.randrange(n_population)]
+                    if contact.id == person.id:
+                        continue
+                else:
+                    # Network neighbor contact: pick ANY neighbor (not just susceptible)
+                    if not all_contacts:
+                        continue
+                    contact = random.choice(all_contacts)
+
+                # Only transmit if target is susceptible
+                if contact.is_susceptible():
+                    if random.random() < self.config.transmission_prob:
+                        self.infect_person(contact, source=person)
 
     def _determine_outcome(self, person: Person) -> Generator:
         """Determine final outcome: recovery, hospitalization, or death."""

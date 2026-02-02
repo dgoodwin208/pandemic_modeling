@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BarChart3, Skull, Users, Eye, TrendingUp, MapPin } from 'lucide-react';
+import { BarChart3, Skull, Users, Eye, TrendingUp, MapPin, Package, AlertTriangle } from 'lucide-react';
 
 function StatCard({ icon: Icon, label, value, sub, color = 'text-slate-700' }) {
   return (
@@ -115,6 +115,46 @@ export default function SimulationSummary({ sessionId }) {
           color="text-blue-600"
         />
       </div>
+
+      {/* Resource Summary (when supply chain enabled) */}
+      {summary.supply_chain_enabled && summary.resource_summary && (
+        <div className="card p-4">
+          <div className="flex items-center gap-2 mb-3">
+            <Package className="w-4 h-4 text-purple-600" />
+            <h3 className="text-sm font-semibold text-slate-700">Supply Chain Summary</h3>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <StatCard
+              icon={AlertTriangle}
+              label="Beds at Capacity"
+              value={`${summary.resource_summary.beds_at_capacity_days} days`}
+              sub={`${summary.resource_summary.final_beds_occupied}/${summary.resource_summary.final_beds_total} final`}
+              color="text-red-600"
+            />
+            <StatCard
+              icon={AlertTriangle}
+              label="PPE Stockouts"
+              value={`${summary.resource_summary.ppe_stockout_days} days`}
+              sub={`${fmt(summary.resource_summary.final_ppe)} remaining`}
+              color="text-blue-600"
+            />
+            <StatCard
+              icon={AlertTriangle}
+              label="Swab Stockouts"
+              value={`${summary.resource_summary.swab_stockout_days} days`}
+              sub={`${fmt(summary.resource_summary.final_swabs)} remaining`}
+              color="text-green-600"
+            />
+            <StatCard
+              icon={AlertTriangle}
+              label="Reagent Stockouts"
+              value={`${summary.resource_summary.reagent_stockout_days} days`}
+              sub={`${fmt(summary.resource_summary.final_reagents)} remaining`}
+              color="text-amber-600"
+            />
+          </div>
+        </div>
+      )}
 
       {/* City Table */}
       <div className="card overflow-hidden">

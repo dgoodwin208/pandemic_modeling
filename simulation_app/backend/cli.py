@@ -43,11 +43,15 @@ def main():
     parser.add_argument("--seed", type=int, default=42, help="Random seed (default: 42)")
     parser.add_argument("--provider-density", type=float, default=5.0, help="Providers per 100k (default: 5.0)")
     parser.add_argument("--screening-capacity", type=int, default=20, help="Screenings per provider per day (default: 20)")
-    parser.add_argument("--transmission-factor", type=float, default=0.3, help="Transmission factor (default: 0.3)")
-    parser.add_argument("--seed-fraction", type=float, default=0.002, help="Initial infection fraction (default: 0.002)")
-    parser.add_argument("--gravity-scale", type=float, default=0.01, help="Inter-city gravity scale (default: 0.01)")
+    _defaults = SimulationParams()
+    parser.add_argument("--transmission-factor", type=float, default=_defaults.transmission_factor, help=f"Transmission factor (default: {_defaults.transmission_factor})")
+    parser.add_argument("--seed-fraction", type=float, default=_defaults.seed_fraction, help=f"Initial infection fraction (default: {_defaults.seed_fraction})")
+    parser.add_argument("--gravity-scale", type=float, default=_defaults.gravity_scale, help=f"Inter-city gravity scale (default: {_defaults.gravity_scale})")
     parser.add_argument("--quiet", "-q", action="store_true", help="Suppress progress output")
     parser.add_argument("--per-city", action="store_true", help="Show per-city breakdown")
+    parser.add_argument("--validate", action="store_true", help="Run conservation law checks after simulation")
+    parser.add_argument("--events", action="store_true", help="Show notable simulation events")
+    parser.add_argument("--supply-chain", action="store_true", help="Enable supply chain resources")
 
     args = parser.parse_args()
 
@@ -63,6 +67,8 @@ def main():
         transmission_factor=args.transmission_factor,
         seed_fraction=args.seed_fraction,
         gravity_scale=args.gravity_scale,
+        enable_supply_chain=args.supply_chain,
+        debug_validation=args.validate,
     )
 
     callback = None if args.quiet else _progress
@@ -125,6 +131,50 @@ def main():
             rate = deaths / infected if infected > 0 else 0
             print(f"  {result.city_names[i]:<20} {_fmt(pop):>10} {_fmt(infected):>10} {_fmt(deaths):>8} {rate:>6.2%}")
         print(f"{'─' * 60}")
+
+    # Validation report
+    if args.validate:
+        from tests.test_validation import run_all_validators
+        print(f"\n{'=' * 60}")
+        print(f"  Validation Report")
+        print(f"{'=' * 60}")
+        all_errors = run_all_validators(result)
+        any_errors = False
+        for check_name, errors in all_errors.items():
+            status = "PASS" if not errors else "FAIL"
+            print(f"  {check_name}: {status}")
+            for err in errors:
+                print(f"    - {err}")
+                any_errors = True
+        if not any_errors:
+            print(f"\n  All checks passed.")
+        print(f"{'=' * 60}")
+
+    # Event summary
+    if args.events and result.event_log is not None:
+        elog = result.event_log
+        summary = elog.summary()
+        print(f"\n{'=' * 60}")
+        print(f"  Event Summary ({summary['total_events']} total)")
+        print(f"{'=' * 60}")
+        if summary['total_events'] > 0:
+            for cat, count in sorted(summary['by_category'].items(), key=lambda x: -x[1]):
+                print(f"  {cat:<20} {count:>6}")
+            print(f"{'─' * 60}")
+            notable = elog.notable_events()
+            if notable:
+                print(f"  Notable events:")
+                for e in notable:
+                    detail = f"Day {e.day}: {e.category}/{e.action}"
+                    if e.resource:
+                        detail += f" — {e.resource}"
+                    if e.quantity:
+                        detail += f" ({e.quantity})"
+                    detail += f" [{e.city}]"
+                    if e.reason:
+                        detail += f" ({e.reason})"
+                    print(f"    {detail}")
+        print(f"{'=' * 60}")
 
     print()
 

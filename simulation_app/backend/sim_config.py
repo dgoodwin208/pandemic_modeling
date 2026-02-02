@@ -36,6 +36,12 @@ def score_to_care_quality(medical_services_score: float) -> float:
 
 BIOATTACK_SEED_CITIES = ["Cairo", "Lagos", "Nairobi", "Kinshasa", "Johannesburg"]
 
+# Major international air hubs — realistic entry points for natural pandemics
+NATURAL_SEED_CITIES = [
+    "Cairo", "Lagos", "Nairobi", "Johannesburg", "Addis Ababa",
+    "Casablanca", "Accra", "Dar es Salaam", "Luanda", "Algiers",
+]
+
 
 # -- Disease parameters --------------------------------------------------------
 

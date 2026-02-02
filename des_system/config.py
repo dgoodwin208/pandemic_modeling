@@ -124,6 +124,7 @@ class DiseaseConfig:
     # Transmission
     transmission_prob: float = 0.15   # Per-contact transmission probability
     daily_contact_rate: float = 0.5   # Fraction of contacts interacted with daily
+    p_random: float = 0.15            # Fraction of contacts with random agents (mass-action mixing)
 
     # State durations (days) - means
     exposure_period: float = 3.0      # Days in EXPOSED before INFECTIOUS

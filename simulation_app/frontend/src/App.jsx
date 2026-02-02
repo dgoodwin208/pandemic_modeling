@@ -29,6 +29,16 @@ const DEFAULT_PARAMS = {
   incubation_days: null,
   infectious_days: null,
   r0_override: null,
+  // Supply chain
+  enable_supply_chain: false,
+  beds_per_hospital: 120,
+  beds_per_clinic: 8,
+  ppe_sets_per_facility: 500,
+  swabs_per_lab: 1000,
+  reagents_per_lab: 2000,
+  lead_time_mean_days: 7.0,
+  continent_vaccine_stockpile: 0,
+  continent_pill_stockpile: 0,
 };
 
 const APP_STATES = {
@@ -48,11 +58,25 @@ export default function App() {
   const handleRunSimulation = useCallback(async () => {
     setError(null);
 
+    // Build payload, nesting supply chain params into resource_config
+    const SUPPLY_KEYS = new Set([
+      'enable_supply_chain', 'beds_per_hospital', 'beds_per_clinic',
+      'ppe_sets_per_facility', 'swabs_per_lab', 'reagents_per_lab',
+      'lead_time_mean_days', 'continent_vaccine_stockpile', 'continent_pill_stockpile',
+    ]);
     const payload = {};
+    const resourceConfig = {};
     for (const [key, value] of Object.entries(params)) {
       if (value !== null && value !== '') {
-        payload[key] = value;
+        if (SUPPLY_KEYS.has(key)) {
+          resourceConfig[key] = value;
+        } else {
+          payload[key] = value;
+        }
       }
+    }
+    if (params.enable_supply_chain) {
+      payload.resource_config = resourceConfig;
     }
 
     try {

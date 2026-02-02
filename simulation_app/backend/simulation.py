@@ -19,9 +19,13 @@ import numpy as np
 
 # Add module paths for imports from the pandemic_modeling package
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(_PROJECT_ROOT / "des_system"))
-sys.path.insert(0, str(_PROJECT_ROOT / "004_multicity"))
-sys.path.insert(0, str(_PROJECT_ROOT / "005_multicity_des"))
+# Insert local backend dir FIRST so our supply_chain.py wins over des_system/supply_chain.py
+_BACKEND_DIR = str(Path(__file__).resolve().parent)
+if _BACKEND_DIR not in sys.path:
+    sys.path.insert(0, _BACKEND_DIR)
+sys.path.insert(1, str(_PROJECT_ROOT / "des_system"))
+sys.path.insert(2, str(_PROJECT_ROOT / "004_multicity"))
+sys.path.insert(3, str(_PROJECT_ROOT / "005_multicity_des"))
 
 from validation_config import (  # noqa: E402
     COVID_LIKE,
@@ -33,12 +37,16 @@ from gravity_model import compute_distance_matrix  # noqa: E402
 from city_des_extended import CityDES  # noqa: E402
 from sim_config import (  # noqa: E402
     BIOATTACK_SEED_CITIES,
+    NATURAL_SEED_CITIES,
     score_to_receptivity,
     score_to_care_quality,
     load_disease_params,
     load_household_sizes,
     household_size_to_avg_contacts,
 )
+from supply_config import ResourceDefaults, derive_city_resources, load_facility_data  # noqa: E402
+from supply_chain import CitySupply, CountrySupplyManager, ContinentSupplyManager  # noqa: E402
+from event_log import EventLog  # noqa: E402
 
 
 # -- Data types ----------------------------------------------------------------
@@ -51,22 +59,37 @@ class SimulationParams:
     avg_contacts: int | None = None  # None = infer from country household size
     rewire_prob: float = 0.4
     daily_contact_rate: float = 0.5
+    p_random: float = 0.15  # fraction of contacts with random agents (mass-action mixing)
     transmission_factor: float = 0.3
-    gravity_scale: float = 0.01
+    gravity_scale: float = 0.04
     gravity_alpha: float = 2.0
     provider_density: float = 5.0
     screening_capacity: int = 20
     disclosure_prob: float = 0.5
-    base_isolation_prob: float = 0.0
-    advised_isolation_prob: float = 0.40
+    base_isolation_prob: float = 0.05
+    advised_isolation_prob: float = 0.20
     advice_decay_prob: float = 0.05
     receptivity_override: float | None = None  # Override per-city receptivity
+    # AI healthcare worker reach (fraction of population reachable via mobile phone)
+    mobile_phone_reach: float = 0.84  # 84% of Africans have a cell phone
     days: int = 200
     seed_fraction: float = 0.002
     random_seed: int = 42
     incubation_days: float | None = None   # Override scenario default
     infectious_days: float | None = None
     r0_override: float | None = None
+    # Supply chain
+    enable_supply_chain: bool = False
+    beds_per_hospital: int = 120
+    beds_per_clinic: int = 8
+    ppe_sets_per_facility: int = 500
+    swabs_per_lab: int = 1000
+    reagents_per_lab: int = 2000
+    lead_time_mean_days: float = 7.0
+    continent_vaccine_stockpile: int = 0
+    continent_pill_stockpile: int = 0
+    # Debug / validation
+    debug_validation: bool = False
 
 
 @dataclass
@@ -90,14 +113,24 @@ class DualViewResult:
     observed_I: np.ndarray
     observed_R: np.ndarray
     observed_D: np.ndarray
+    # Resource tracking (None when supply chain disabled)
+    resource_beds_occupied: np.ndarray | None = None  # (n_cities, days+1)
+    resource_beds_total: np.ndarray | None = None
+    resource_ppe: np.ndarray | None = None
+    resource_swabs: np.ndarray | None = None
+    resource_reagents: np.ndarray | None = None
+    resource_vaccines: np.ndarray | None = None
+    resource_pills: np.ndarray | None = None
     # Metadata
-    seed_city_indices: list[int]
-    n_people_per_city: int
-    scenario_name: str
-    provider_density: float
-    incubation_days: float
-    infectious_days: float
-    ifr: float  # Infection fatality rate (reference from disease_params.csv)
+    seed_city_indices: list[int] = None
+    n_people_per_city: int = 0
+    scenario_name: str = ""
+    provider_density: float = 0.0
+    incubation_days: float = 0.0
+    infectious_days: float = 0.0
+    ifr: float = 0.0
+    supply_chain_enabled: bool = False
+    event_log: EventLog | None = None
 
 
 # -- City helper ---------------------------------------------------------------
@@ -217,9 +250,9 @@ def _build_scenarios(largest_city_name: str) -> dict:
     IFR now comes from disease_params.csv, not hardcoded here.
     """
     return {
-        "covid_natural": (COVID_LIKE, [largest_city_name]),
+        "covid_natural": (COVID_LIKE, NATURAL_SEED_CITIES),
         "covid_bioattack": (COVID_BIOATTACK, BIOATTACK_SEED_CITIES),
-        "ebola_natural": (EBOLA_LIKE, [largest_city_name]),
+        "ebola_natural": (EBOLA_LIKE, NATURAL_SEED_CITIES),
         "ebola_bioattack": (EBOLA_BIOATTACK, BIOATTACK_SEED_CITIES),
     }
 
@@ -365,7 +398,110 @@ def run_absdes_simulation(
             death_prob_increase_per_day=dp.death_prob_increase_per_day,
             gamma_shape=dp.gamma_shape,
             care_quality=per_city_care_quality[i],
+            p_random=params.p_random,
+            mobile_phone_reach=params.mobile_phone_reach,
         ))
+
+    # -- Initialize supply chain (if enabled) ----------------------------------
+    supply_enabled = params.enable_supply_chain
+    city_supplies: list[CitySupply] | None = None
+    country_managers: dict[str, CountrySupplyManager] | None = None
+    continent_manager: ContinentSupplyManager | None = None
+
+    if supply_enabled:
+        _progress("initializing", 0, 0, "Setting up supply chain resources...")
+
+        # Build ResourceDefaults from params
+        res_defaults = ResourceDefaults(
+            beds_per_hospital=params.beds_per_hospital,
+            beds_per_clinic=params.beds_per_clinic,
+            ppe_sets_per_facility=params.ppe_sets_per_facility,
+            swabs_per_lab=params.swabs_per_lab,
+            reagents_per_lab=params.reagents_per_lab,
+            lead_time_mean_days=params.lead_time_mean_days,
+        )
+
+        # Load facility data
+        facility_data = load_facility_data()
+
+        # Create CitySupply for each city
+        city_supplies = []
+        for i in range(n_cities):
+            city_name = city_names[i]
+            fac = facility_data.get(city_name, {})
+            hospitals = fac.get("hospitals", 0)
+            clinics = fac.get("clinics", 0)
+            labs = fac.get("laboratories", 0)
+            total_beds_csv = fac.get("total_beds", 0)
+
+            resources = derive_city_resources(
+                hospitals=hospitals,
+                clinics=clinics,
+                labs=labs,
+                total_beds_csv=total_beds_csv,
+                defaults=res_defaults,
+            )
+
+            # Scale resources to DES population using per-capita density.
+            # Real-world resource counts (from facility data) are for real
+            # populations (millions). We derive per-capita rates, then scale
+            # to the DES agent count to preserve realistic ratios.
+            real_pop = city_pops[i]
+            des_pop = params.n_people
+            if real_pop > 0:
+                beds_pc = resources["beds"] / real_pop
+                ppe_pc = resources["ppe"] / real_pop
+                swabs_pc = resources["swabs"] / real_pop
+                reagents_pc = resources["reagents"] / real_pop
+            else:
+                beds_pc = ppe_pc = swabs_pc = reagents_pc = 0
+
+            cs = CitySupply(
+                beds_total=max(1, int(beds_pc * des_pop)),
+                ppe=max(0, int(ppe_pc * des_pop)),
+                swabs=max(0, int(swabs_pc * des_pop)),
+                reagents=max(0, int(reagents_pc * des_pop)),
+                vaccines=resources["vaccines"],
+                pills=resources["pills"],
+                n_days=params.days + 1,
+            )
+            city_supplies.append(cs)
+
+            # Attach to CityDES
+            city_sims[i]._supply = cs
+
+        # Build CountrySupplyManagers (group cities by country)
+        # For single-country sims, there's one manager; for ALL, group by country
+        country_city_map: dict[str, dict[str, CitySupply]] = {}
+        for i in range(n_cities):
+            country_name = raw_cities[i].get("country", params.country)
+            if country_name not in country_city_map:
+                country_city_map[country_name] = {}
+            country_city_map[country_name][city_names[i]] = city_supplies[i]
+
+        supply_rng = np.random.RandomState(params.random_seed + 9999)
+        country_managers = {}
+        for country_name, city_map in country_city_map.items():
+            country_managers[country_name] = CountrySupplyManager(
+                city_supplies=city_map,
+                defaults=res_defaults,
+                rng=supply_rng,
+            )
+
+        # Build ContinentSupplyManager
+        continent_reserves = {
+            "vaccines": params.continent_vaccine_stockpile,
+            "pills": params.continent_pill_stockpile,
+            "ppe": 0,
+            "swabs": 0,
+            "reagents": 0,
+        }
+        continent_manager = ContinentSupplyManager(
+            country_managers=country_managers,
+            reserves=continent_reserves,
+            defaults=res_defaults,
+            rng=supply_rng,
+        )
 
     # -- Allocate time-series storage ------------------------------------------
     days = params.days
@@ -386,6 +522,15 @@ def run_absdes_simulation(
     observed_R = np.zeros((n_cities, days + 1))
     observed_D = np.zeros((n_cities, days + 1))
 
+    # Resource time-series (only if supply chain enabled)
+    res_beds_occupied = np.zeros((n_cities, days + 1)) if supply_enabled else None
+    res_beds_total = np.zeros((n_cities, days + 1)) if supply_enabled else None
+    res_ppe = np.zeros((n_cities, days + 1)) if supply_enabled else None
+    res_swabs = np.zeros((n_cities, days + 1)) if supply_enabled else None
+    res_reagents = np.zeros((n_cities, days + 1)) if supply_enabled else None
+    res_vaccines = np.zeros((n_cities, days + 1)) if supply_enabled else None
+    res_pills = np.zeros((n_cities, days + 1)) if supply_enabled else None
+
     # Record initial state (day 0)
     for i in range(n_cities):
         actual_S[i, 0] = city_sims[i].S
@@ -403,28 +548,69 @@ def run_absdes_simulation(
         observed_R[i, 0] = 0
         observed_D[i, 0] = 0
 
+    # Record initial resource state (day 0)
+    if supply_enabled:
+        for i in range(n_cities):
+            res_beds_occupied[i, 0] = city_supplies[i].beds_occupied
+            res_beds_total[i, 0] = city_supplies[i].beds_total
+            res_ppe[i, 0] = city_supplies[i].ppe
+            res_swabs[i, 0] = city_supplies[i].swabs
+            res_reagents[i, 0] = city_supplies[i].reagents
+            res_vaccines[i, 0] = city_supplies[i].vaccines
+            res_pills[i, 0] = city_supplies[i].pills
+
     # Exposure debt accumulators
     exposure_debt = np.zeros(n_cities)
+
+    # Event log for interpretability
+    elog = EventLog()
 
     # -- Daily stepping loop ---------------------------------------------------
     _progress("simulation", 0, days, "Starting simulation...")
 
     for day in range(1, days + 1):
+        # Step 0: Receive arrived shipments (supply chain)
+        if supply_enabled:
+            for i in range(n_cities):
+                received = city_supplies[i].receive_shipments(day)
+                if received > 0:
+                    elog.log(day, city_names[i], "shipment", "receive",
+                             quantity=received, reason="pending_arrival")
+
         # Step 1: Advance each city's DES by 1 day
         for i in range(n_cities):
             city_sims[i].step(until=day)
 
-        # Step 1.5: Provider screening (if providers deployed)
+        # Step 2: Provider screening (consumes diagnostics + PPE if supply enabled)
         for i in range(n_cities):
+            pre_detected = city_sims[i].observed_I
             city_sims[i].run_provider_screening()
+            new_detected = city_sims[i].new_detections_today
+            if new_detected > 0:
+                elog.log(day, city_names[i], "screening", "detect",
+                         quantity=new_detected,
+                         screened=city_sims[i]._last_screened_count if hasattr(city_sims[i], '_last_screened_count') else 0)
 
-        # Step 2: Apply inter-city travel coupling
+        # Step 3: Apply vaccinations (supply chain)
+        if supply_enabled:
+            for i in range(n_cities):
+                vaccines_available = city_supplies[i].vaccines
+                if vaccines_available > 0:
+                    max_daily = max(1, int(city_sims[i].n_people * res_defaults.daily_vaccine_rate_pct / 100))
+                    daily_doses = min(vaccines_available, max_daily)
+                    actually_vaccinated = city_sims[i].apply_vaccinations(daily_doses)
+                    if actually_vaccinated > 0:
+                        city_supplies[i].try_consume("vaccines", actually_vaccinated)
+                        elog.log(day, city_names[i], "vaccination", "administer",
+                                 resource="vaccines", quantity=actually_vaccinated)
+
+        # Step 4: Apply inter-city travel coupling
         _apply_travel_coupling_des(
             city_sims, city_pops, travel_matrix, params.transmission_factor,
             exposure_debt, des_scale_travel=True,
         )
 
-        # Step 3: Record ACTUAL snapshot
+        # Step 5: Record ACTUAL snapshot + conservation check
         for i in range(n_cities):
             actual_S[i, day] = city_sims[i].S
             actual_E[i, day] = city_sims[i].E
@@ -435,7 +621,18 @@ def run_absdes_simulation(
             actual_R[i, day] = city_sims[i].R
             actual_D[i, day] = city_sims[i].D
 
-        # Step 4: Record OBSERVED snapshot
+            # B4: Conservation law assertion (debug mode)
+            if params.debug_validation:
+                total = (city_sims[i].S + city_sims[i].E +
+                         city_sims[i].I_minor + city_sims[i].I_needs_care +
+                         city_sims[i].I_receiving_care + city_sims[i].R +
+                         city_sims[i].D)
+                assert total == n_people, (
+                    f"Conservation violated: city {city_names[i]}, day {day}: "
+                    f"S+E+I+R+D={total} != {n_people}"
+                )
+
+        # Step 6: Record OBSERVED snapshot
         for i in range(n_cities):
             obs_i = city_sims[i].observed_I
             obs_r = city_sims[i].observed_R
@@ -452,6 +649,37 @@ def run_absdes_simulation(
             observed_I[i, day] = obs_i
             observed_R[i, day] = obs_r
             observed_D[i, day] = obs_d
+
+        # Step 7: Record resource snapshot + end-of-day supply updates
+        if supply_enabled:
+            for i in range(n_cities):
+                res_beds_occupied[i, day] = city_supplies[i].beds_occupied
+                res_beds_total[i, day] = city_supplies[i].beds_total
+                res_ppe[i, day] = city_supplies[i].ppe
+                res_swabs[i, day] = city_supplies[i].swabs
+                res_reagents[i, day] = city_supplies[i].reagents
+                res_vaccines[i, day] = city_supplies[i].vaccines
+                res_pills[i, day] = city_supplies[i].pills
+                city_supplies[i].record_day()
+
+                # Log stockouts and capacity events
+                cs = city_supplies[i]
+                cn = city_names[i]
+                if cs.beds_occupied >= cs.beds_total:
+                    elog.log(day, cn, "admission", "capacity_full",
+                             resource="beds", quantity=cs.beds_occupied)
+                for res_name in ("ppe", "swabs", "reagents"):
+                    if getattr(cs, res_name) == 0 and getattr(cs, f"_initial_{res_name}", 0) > 0:
+                        elog.log(day, cn, "stockout", "depleted",
+                                 resource=res_name)
+
+            # Country redistribution (daily)
+            for mgr in country_managers.values():
+                mgr.update_and_redistribute(day, elog)
+
+            # Continent deployment (weekly)
+            if day % 7 == 0:
+                continent_manager.deploy_reserves(day, elog)
 
         # Progress callback
         total_ever = sum(city_sims[i].n_people - city_sims[i].S for i in range(n_cities))
@@ -482,6 +710,13 @@ def run_absdes_simulation(
         observed_I=observed_I,
         observed_R=observed_R,
         observed_D=observed_D,
+        resource_beds_occupied=res_beds_occupied,
+        resource_beds_total=res_beds_total,
+        resource_ppe=res_ppe,
+        resource_swabs=res_swabs,
+        resource_reagents=res_reagents,
+        resource_vaccines=res_vaccines,
+        resource_pills=res_pills,
         seed_city_indices=seed_indices,
         n_people_per_city=n_people,
         scenario_name=params.scenario,
@@ -489,4 +724,6 @@ def run_absdes_simulation(
         incubation_days=incubation_days,
         infectious_days=infectious_days,
         ifr=ifr,
+        supply_chain_enabled=supply_enabled,
+        event_log=elog,
     )

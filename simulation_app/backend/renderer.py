@@ -95,6 +95,42 @@ def _render_map_panel(ax, africa_gdf, lons, lats, pops, size_scale, infection_pc
     return sc
 
 
+def _render_resource_panel(ax, result, day):
+    """Render the resource utilization panel (aggregated across all cities)."""
+    total_days = result.actual_S.shape[1]
+    t = np.arange(total_days)
+
+    # Aggregate across cities
+    beds_occ = result.resource_beds_occupied.sum(axis=0)
+    beds_tot = result.resource_beds_total.sum(axis=0)
+    ppe = result.resource_ppe.sum(axis=0)
+    swabs = result.resource_swabs.sum(axis=0)
+    reagents = result.resource_reagents.sum(axis=0)
+
+    # Normalize to initial values for comparable scale
+    beds_max = beds_tot.max() if beds_tot.max() > 0 else 1
+    ppe_max = ppe[0] if ppe[0] > 0 else max(1, ppe.max())
+    swabs_max = swabs[0] if swabs[0] > 0 else max(1, swabs.max())
+    reagents_max = reagents[0] if reagents[0] > 0 else max(1, reagents.max())
+
+    ax.plot(t, beds_occ / beds_max, color="#e74c3c", linewidth=1.2, label="Beds (occupied/total)")
+    ax.plot(t, ppe / ppe_max, color="#3498db", linewidth=1.2, label="PPE stock")
+    ax.plot(t, swabs / swabs_max, color="#2ecc71", linewidth=1.2, label="Swabs stock")
+    ax.plot(t, reagents / reagents_max, color="#f39c12", linewidth=1.2, label="Reagents stock")
+
+    ax.axvline(x=day, color="#555555", linestyle=":", linewidth=1.0, alpha=0.8)
+    ax.axhline(y=1.0, color="#e74c3c", linestyle="--", linewidth=0.5, alpha=0.5)
+
+    ax.set_xlim(0, total_days - 1)
+    ax.set_ylim(0, 1.2)
+    ax.set_xlabel("Day", fontsize=7)
+    ax.set_ylabel("Fraction of capacity/initial", fontsize=7)
+    ax.tick_params(labelsize=6)
+    ax.legend(loc="upper right", fontsize=5, framealpha=0.8, ncol=2)
+    ax.set_title("Supply Chain Resources (aggregated)", fontsize=8, fontweight="bold", pad=4)
+    ax.grid(True, alpha=0.3, linewidth=0.5)
+
+
 def _render_seir_panel(ax, result, seed_idx, day, n_people, view_label):
     """Render the SEIR-D time-series curve panel onto the given axes.
 
@@ -215,6 +251,10 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Check if supply chain data is available
+    has_resources = (getattr(result, 'supply_chain_enabled', False)
+                     and result.resource_beds_occupied is not None)
+
     # -- Render loop -----------------------------------------------------------
 
     for day in range(total_days):
@@ -225,9 +265,13 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
             # Compute per-city infection percentages for this day
             infection_pcts = data_array[:, day] / n_people * 100
 
-            # Create composite figure: map (top 60%) + SEIR curve (bottom 40%)
-            fig = plt.figure(figsize=(8, 10), dpi=100)
-            gs = GridSpec(2, 1, figure=fig, height_ratios=[3, 2], hspace=0.28)
+            # Create composite figure: map + SEIR curve (+ resource panel if enabled)
+            if has_resources:
+                fig = plt.figure(figsize=(8, 13), dpi=100)
+                gs = GridSpec(3, 1, figure=fig, height_ratios=[3, 2, 1.5], hspace=0.28)
+            else:
+                fig = plt.figure(figsize=(8, 10), dpi=100)
+                gs = GridSpec(2, 1, figure=fig, height_ratios=[3, 2], hspace=0.28)
             ax_map = fig.add_subplot(gs[0])
             ax_seir = fig.add_subplot(gs[1])
 
@@ -250,6 +294,11 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
             # SEIR curve panel
             _render_seir_panel(ax_seir, result, seed_idx, day, n_people,
                                label_prefix.upper())
+
+            # Resource panel (if supply chain enabled)
+            if has_resources:
+                ax_res = fig.add_subplot(gs[2])
+                _render_resource_panel(ax_res, result, day)
 
             # Add infection stats text on map
             mean_inf = infection_pcts.mean()

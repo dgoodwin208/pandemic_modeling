@@ -31,8 +31,9 @@ from enum import Enum
 from simulation import run_absdes_simulation, SimulationParams, load_cities
 from renderer import render_all_frames, load_africa_boundaries
 from progress import ProgressManager
-from schemas import SimulationRequest
+from schemas import SimulationRequest, ResourceConfig
 from sim_config import load_disease_params
+from supply_config import ResourceDefaults
 
 # =============================================================================
 # App initialization
@@ -133,6 +134,9 @@ def _run_simulation_thread(session_id: str, request: SimulationRequest):
         progress_manager.update(session_id, "initializing", 0, 0,
                                 "Loading city data and computing travel matrix...")
 
+        # Build supply chain params from resource_config
+        rc = request.resource_config or ResourceConfig()
+
         params = SimulationParams(
             country=request.country,
             scenario=request.scenario.value,
@@ -156,6 +160,16 @@ def _run_simulation_thread(session_id: str, request: SimulationRequest):
             incubation_days=request.incubation_days,
             infectious_days=request.infectious_days,
             r0_override=request.r0_override,
+            # Supply chain
+            enable_supply_chain=rc.enable_supply_chain,
+            beds_per_hospital=rc.beds_per_hospital,
+            beds_per_clinic=rc.beds_per_clinic,
+            ppe_sets_per_facility=rc.ppe_sets_per_facility,
+            swabs_per_lab=rc.swabs_per_lab,
+            reagents_per_lab=rc.reagents_per_lab,
+            lead_time_mean_days=rc.lead_time_mean_days,
+            continent_vaccine_stockpile=rc.continent_vaccine_stockpile,
+            continent_pill_stockpile=rc.continent_pill_stockpile,
         )
 
         def sim_progress(phase, current, total, message=""):
@@ -423,13 +437,41 @@ async def get_summary(session_id: str):
     # Sort by total infected descending
     city_summaries.sort(key=lambda c: -c["total_infected"])
 
-    return {
+    # Resource summary (when supply chain enabled)
+    resource_summary = None
+    if result.supply_chain_enabled and result.resource_beds_occupied is not None:
+        # Compute aggregate resource stats
+        agg_beds_occupied = result.resource_beds_occupied.sum(axis=0)
+        agg_beds_total = result.resource_beds_total.sum(axis=0)
+        agg_ppe = result.resource_ppe.sum(axis=0)
+        agg_swabs = result.resource_swabs.sum(axis=0)
+        agg_reagents = result.resource_reagents.sum(axis=0)
+
+        beds_at_capacity_days = int(np.sum(agg_beds_occupied >= agg_beds_total))
+        ppe_stockout_days = int(np.sum(agg_ppe == 0))
+        swab_stockout_days = int(np.sum(agg_swabs == 0))
+        reagent_stockout_days = int(np.sum(agg_reagents == 0))
+
+        resource_summary = {
+            "beds_at_capacity_days": beds_at_capacity_days,
+            "ppe_stockout_days": ppe_stockout_days,
+            "swab_stockout_days": swab_stockout_days,
+            "reagent_stockout_days": reagent_stockout_days,
+            "final_beds_occupied": int(agg_beds_occupied[-1]),
+            "final_beds_total": int(agg_beds_total[-1]),
+            "final_ppe": int(agg_ppe[-1]),
+            "final_swabs": int(agg_swabs[-1]),
+            "final_reagents": int(agg_reagents[-1]),
+        }
+
+    response = {
         "total_population": total_real_pop,
         "simulation_days": last_day,
         "scenario": result.scenario_name,
         "provider_density": result.provider_density,
         "n_cities": n_cities,
         "n_people_per_city": n_people,
+        "supply_chain_enabled": result.supply_chain_enabled,
         "aggregate": {
             "total_infected": total_infected,
             "infection_rate": round(infection_rate, 4),
@@ -443,6 +485,73 @@ async def get_summary(session_id: str):
             "detection_rate": round(detection_rate, 4),
         },
         "cities": city_summaries[:20],
+    }
+    if resource_summary is not None:
+        response["resource_summary"] = resource_summary
+    return response
+
+
+@app.get("/simulate/absdes/{session_id}/events")
+async def get_events(
+    session_id: str,
+    day: Optional[int] = None,
+    city: Optional[str] = None,
+    category: Optional[str] = None,
+):
+    """Return filtered event log as JSON.
+
+    Query parameters:
+        day: Filter to events on a specific day.
+        city: Filter to events for a specific city.
+        category: Filter by event category (screening, stockout, redistribution, etc.)
+    """
+    result = _session_results.get(session_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    elog = getattr(result, "event_log", None)
+    if elog is None:
+        return {"events": [], "summary": {"total_events": 0}}
+
+    if day is not None:
+        events = elog.events_on_day(day, city=city, category=category)
+    elif category is not None:
+        events = elog.events_by_category(category)
+        if city is not None:
+            events = [e for e in events if e.city == city]
+    elif city is not None:
+        events = [e for e in elog.events if e.city == city]
+    else:
+        events = elog.events
+
+    return {
+        "events": [
+            {
+                "day": e.day,
+                "city": e.city,
+                "category": e.category,
+                "action": e.action,
+                "resource": e.resource,
+                "quantity": e.quantity,
+                "reason": e.reason,
+                "metadata": e.metadata,
+            }
+            for e in events[:1000]  # cap at 1000 events per response
+        ],
+        "total_matching": len(events),
+        "summary": elog.summary(),
+        "notable": [
+            {
+                "day": e.day,
+                "city": e.city,
+                "category": e.category,
+                "action": e.action,
+                "resource": e.resource,
+                "quantity": e.quantity,
+                "reason": e.reason,
+            }
+            for e in elog.notable_events()
+        ],
     }
 
 
@@ -573,6 +682,23 @@ async def list_scenarios():
             }
             for scenario_id, params in DISEASE_SCENARIOS.items()
         }
+    }
+
+
+@app.get("/resources/defaults")
+async def get_resource_defaults():
+    """Return default resource configuration for the frontend form."""
+    d = ResourceDefaults()
+    return {
+        "beds_per_hospital": d.beds_per_hospital,
+        "beds_per_clinic": d.beds_per_clinic,
+        "ppe_sets_per_facility": d.ppe_sets_per_facility,
+        "swabs_per_lab": d.swabs_per_lab,
+        "reagents_per_lab": d.reagents_per_lab,
+        "lead_time_mean_days": d.lead_time_mean_days,
+        "continent_lead_time_mean": d.continent_lead_time_mean,
+        "country_reorder_threshold": d.country_reorder_threshold,
+        "continent_deploy_threshold": d.continent_deploy_threshold,
     }
 
 

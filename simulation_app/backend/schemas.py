@@ -14,6 +14,19 @@ class DiseaseScenario(str, Enum):
     EBOLA_BIOATTACK = "ebola_bioattack"
 
 
+class ResourceConfig(BaseModel):
+    """Supply chain resource configuration."""
+    enable_supply_chain: bool = False
+    beds_per_hospital: int = Field(120, ge=1, le=1000)
+    beds_per_clinic: int = Field(8, ge=0, le=100)
+    ppe_sets_per_facility: int = Field(500, ge=0, le=10000)
+    swabs_per_lab: int = Field(1000, ge=0, le=50000)
+    reagents_per_lab: int = Field(2000, ge=0, le=100000)
+    lead_time_mean_days: float = Field(7.0, ge=1.0, le=60.0)
+    continent_vaccine_stockpile: int = Field(0, ge=0, le=10000000)
+    continent_pill_stockpile: int = Field(0, ge=0, le=10000000)
+
+
 class SimulationRequest(BaseModel):
     """Request body for starting a new simulation run."""
     country: str = "Nigeria"
@@ -38,6 +51,8 @@ class SimulationRequest(BaseModel):
     receptivity_override: float | None = None  # Override per-city medical-score-derived receptivity
     days: int = Field(200, ge=10, le=1000)
     random_seed: int = Field(42)
+    # Supply chain
+    resource_config: ResourceConfig | None = None
 
 
 class ProgressResponse(BaseModel):

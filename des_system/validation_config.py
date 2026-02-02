@@ -42,6 +42,7 @@ class EpidemicScenario:
         avg_contacts: int = 10,
         rewire_prob: float = 0.4,
         daily_contact_rate: float = 0.5,
+        p_random: float = 0.15,
         random_seed: int | None = None,
     ) -> SimulationConfig:
         """
@@ -95,6 +96,7 @@ class EpidemicScenario:
         config.disease = DiseaseConfig(
             transmission_prob=transmission_prob,
             daily_contact_rate=daily_contact_rate,
+            p_random=p_random,
             exposure_period=self.incubation_days,
             infectious_period=infectious_period,
             symptomatic_period=symptomatic_period,
