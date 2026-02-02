@@ -11,6 +11,7 @@ import {
 import AfricaMap from './components/AfricaMap';
 import DataTab from './components/DataTab';
 import InterventionsTab from './components/InterventionsTab';
+import AudioExplorationTab from './components/AudioExplorationTab';
 import APRLogo from './components/APRLogo';
 
 // =============================================================================
@@ -300,6 +301,17 @@ export default function App() {
                   <Lightbulb className="w-4 h-4" />
                   Interventions
                 </button>
+                <button
+                  onClick={() => setActiveTab('audio')}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                    activeTab === 'audio'
+                      ? 'bg-white text-slate-800 shadow-sm'
+                      : 'text-slate-500 hover:text-slate-700'
+                  }`}
+                >
+                  <Zap className="w-4 h-4" />
+                  Audio
+                </button>
               </div>
             </div>
 
@@ -346,6 +358,10 @@ export default function App() {
       ) : activeTab === 'interventions' ? (
         <main className="h-[calc(100vh-64px)]">
           <InterventionsTab />
+        </main>
+      ) : activeTab === 'audio' ? (
+        <main className="h-[calc(100vh-64px)]">
+          <AudioExplorationTab />
         </main>
       ) : (
       <main className="max-w-[1800px] mx-auto p-6">
