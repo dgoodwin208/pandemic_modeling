@@ -10,13 +10,21 @@ from pydantic import BaseModel, Field
 class DiseaseScenario(str, Enum):
     COVID_NATURAL = "covid_natural"
     COVID_BIOATTACK = "covid_bioattack"
+    COVID_RING3 = "covid_ring3"
     EBOLA_NATURAL = "ebola_natural"
     EBOLA_BIOATTACK = "ebola_bioattack"
+    EBOLA_RING3 = "ebola_ring3"
+
+
+class AllocationStrategyType(str, Enum):
+    RULE_BASED = "rule_based"
+    AI_OPTIMIZED = "ai_optimized"
 
 
 class ResourceConfig(BaseModel):
     """Supply chain resource configuration."""
     enable_supply_chain: bool = False
+    allocation_strategy: AllocationStrategyType = AllocationStrategyType.RULE_BASED
     beds_per_hospital: int = Field(120, ge=1, le=1000)
     beds_per_clinic: int = Field(8, ge=0, le=100)
     ppe_sets_per_facility: int = Field(500, ge=0, le=10000)

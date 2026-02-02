@@ -4,8 +4,10 @@ import { X, FlaskConical } from 'lucide-react';
 const SCENARIO_LABELS = {
   covid_natural: 'COVID-19 Natural',
   covid_bioattack: 'COVID-19 Bioattack',
+  covid_ring3: 'COVID-19 Ring Propagation',
   ebola_natural: 'Ebola Natural',
   ebola_bioattack: 'Ebola Bioattack',
+  ebola_ring3: 'Ebola Ring Propagation',
 };
 
 export default function DiseaseParamsViewer({ onClose }) {

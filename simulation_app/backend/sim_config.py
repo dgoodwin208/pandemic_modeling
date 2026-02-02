@@ -32,11 +32,55 @@ def score_to_care_quality(medical_services_score: float) -> float:
     return 0.7 + 0.3 * (medical_services_score / 100.0)
 
 
-# -- Constants -----------------------------------------------------------------
+# -- Seed scheduling -----------------------------------------------------------
 
+@dataclass
+class SeedEvent:
+    """A single seeding event: inject infected agents into a city on a given day.
+
+    Args:
+        city: City name (must match african_cities.csv).
+        day: Simulation day to inject (0 = start).
+        count: Number of agents to seed. None = use seed_fraction * n_people.
+    """
+    city: str
+    day: int = 0
+    count: int | None = None
+
+
+SeedSchedule = list[SeedEvent]
+
+
+# -- Predefined seed schedules ------------------------------------------------
+
+# Bioattack: 5 major hubs seeded simultaneously (current behavior)
+BIOATTACK_SCHEDULE: SeedSchedule = [
+    SeedEvent("Cairo", 0), SeedEvent("Lagos", 0), SeedEvent("Nairobi", 0),
+    SeedEvent("Kinshasa", 0), SeedEvent("Johannesburg", 0),
+]
+
+# Natural: single origin city, epidemic spreads via travel coupling
+NATURAL_SCHEDULE_LAGOS: SeedSchedule = [SeedEvent("Lagos", 0)]
+NATURAL_SCHEDULE_KINSHASA: SeedSchedule = [SeedEvent("Kinshasa", 0)]
+
+# Ring model: 3 concentric waves at 0, 14, 28 days
+# Simulates staged international spread through air travel hubs
+RING_3_SCHEDULE: SeedSchedule = [
+    # Ring 1: major international hubs (day 0)
+    SeedEvent("Cairo", 0), SeedEvent("Lagos", 0), SeedEvent("Nairobi", 0),
+    SeedEvent("Kinshasa", 0), SeedEvent("Johannesburg", 0),
+    # Ring 2: secondary regional hubs (day 14)
+    SeedEvent("Addis Ababa", 14), SeedEvent("Accra", 14),
+    SeedEvent("Dar es Salaam", 14), SeedEvent("Casablanca", 14),
+    SeedEvent("Luanda", 14),
+    # Ring 3: tertiary cities (day 28)
+    SeedEvent("Khartoum", 28), SeedEvent("Abidjan", 28),
+    SeedEvent("Maputo", 28), SeedEvent("Lusaka", 28),
+    SeedEvent("Kampala", 28),
+]
+
+# Legacy flat lists (kept for backward compatibility with older analysis scripts)
 BIOATTACK_SEED_CITIES = ["Cairo", "Lagos", "Nairobi", "Kinshasa", "Johannesburg"]
-
-# Major international air hubs — realistic entry points for natural pandemics
 NATURAL_SEED_CITIES = [
     "Cairo", "Lagos", "Nairobi", "Johannesburg", "Addis Ababa",
     "Casablanca", "Accra", "Dar es Salaam", "Luanda", "Algiers",

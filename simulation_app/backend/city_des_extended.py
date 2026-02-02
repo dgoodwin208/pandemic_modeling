@@ -612,23 +612,48 @@ class CityDES:
 
     # -- Vaccination -----------------------------------------------------------
 
-    def apply_vaccinations(self, count: int) -> int:
+    def apply_vaccinations(self, count: int, priority_pids: list[int] | None = None) -> int:
         """Vaccinate up to `count` susceptible, unvaccinated people.
 
         Vaccinated people have 0.3x susceptibility to transmission.
+
+        Args:
+            count: Maximum number of vaccinations to administer.
+            priority_pids: Optional list of agent IDs to vaccinate first
+                (e.g., contact-traced or high-degree nodes). Only susceptible,
+                unvaccinated agents from this list are chosen; remaining doses
+                go to random susceptible agents.
+
         Returns the actual number vaccinated.
         """
-        susceptible = [
+        susceptible_set = {
             i for i in range(self.n_people)
             if self._states[i] == 0 and i not in self._vaccinated
-        ]
-        n_to_vaccinate = min(count, len(susceptible))
-        if n_to_vaccinate <= 0:
+        }
+        if not susceptible_set:
             return 0
-        chosen = self._rng.sample(susceptible, n_to_vaccinate)
+
+        chosen: list[int] = []
+        remaining = count
+
+        # Phase 1: Priority PIDs (if provided)
+        if priority_pids and remaining > 0:
+            priority_eligible = [p for p in priority_pids if p in susceptible_set]
+            n_priority = min(remaining, len(priority_eligible))
+            if n_priority > 0:
+                chosen.extend(priority_eligible[:n_priority])
+                remaining -= n_priority
+
+        # Phase 2: Random from remaining susceptible
+        if remaining > 0:
+            random_pool = list(susceptible_set - set(chosen))
+            n_random = min(remaining, len(random_pool))
+            if n_random > 0:
+                chosen.extend(self._rng.sample(random_pool, n_random))
+
         for pid in chosen:
             self._vaccinated.add(pid)
-        return n_to_vaccinate
+        return len(chosen)
 
     @property
     def vaccinated_count(self) -> int:

@@ -1,0 +1,54 @@
+country,country_code,has_local_production,manufacturer_count,import_dependency_pct
+Algeria,DZ,1,45,70
+Angola,AO,0,0,99
+Benin,BJ,0,0,99
+Botswana,BW,0,0,99
+Burkina Faso,BF,0,0,99
+Burundi,BI,0,0,99
+Cameroon,CM,1,8,90
+Cape Verde,CV,0,0,99
+Central African Republic,CF,0,0,99
+Chad,TD,0,0,99
+Comoros,KM,0,0,99
+Congo (Brazzaville),CG,0,0,99
+Congo (Kinshasa),CD,1,5,95
+Djibouti,DJ,0,0,99
+Egypt,EG,1,130,70
+Equatorial Guinea,GQ,0,0,99
+Eritrea,ER,0,0,99
+Eswatini,SZ,0,0,99
+Ethiopia,ET,1,20,85
+Gabon,GA,0,0,99
+Gambia,GM,0,0,99
+Ghana,GH,1,35,80
+Guinea,GN,0,0,99
+Guinea-Bissau,GW,0,0,99
+Ivory Coast,CI,1,10,88
+Kenya,KE,1,40,75
+Lesotho,LS,0,0,99
+Liberia,LR,0,0,99
+Libya,LY,0,0,99
+Madagascar,MG,0,0,99
+Malawi,MW,0,0,99
+Mali,ML,0,0,99
+Mauritania,MR,0,0,99
+Mauritius,MU,1,5,90
+Morocco,MA,1,50,70
+Mozambique,MZ,0,0,99
+Namibia,NA,0,0,99
+Niger,NE,0,0,99
+Nigeria,NG,1,200,75
+Rwanda,RW,1,5,92
+Sao Tome and Principe,ST,0,0,99
+Senegal,SN,1,8,90
+Sierra Leone,SL,0,0,99
+Somalia,SO,0,0,99
+South Africa,ZA,1,80,72
+South Sudan,SS,0,0,99
+Sudan,SD,1,15,88
+Tanzania,TZ,1,12,88
+Togo,TG,0,0,99
+Tunisia,TN,1,45,72
+Uganda,UG,1,15,85
+Zambia,ZM,1,5,93
+Zimbabwe,ZW,1,8,90

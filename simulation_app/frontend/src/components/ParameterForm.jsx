@@ -4,15 +4,19 @@ import { ChevronDown, Settings, Sliders, Zap, Clock, Activity, Info, X, HeartPul
 const SCENARIOS = [
   { value: 'covid_natural', label: 'COVID-19 — Natural Outbreak' },
   { value: 'covid_bioattack', label: 'COVID-19 — Bioattack' },
+  { value: 'covid_ring3', label: 'COVID-19 — Ring Propagation' },
   { value: 'ebola_natural', label: 'Ebola — Natural Outbreak' },
   { value: 'ebola_bioattack', label: 'Ebola — Bioattack' },
+  { value: 'ebola_ring3', label: 'Ebola — Ring Propagation' },
 ];
 
 const SCENARIO_DEFAULTS = {
   covid_natural: { incubation_days: 5.0, infectious_days: 9.0, r0: 2.5 },
   covid_bioattack: { incubation_days: 4.0, infectious_days: 9.0, r0: 3.5 },
+  covid_ring3: { incubation_days: 4.0, infectious_days: 9.0, r0: 3.5 },
   ebola_natural: { incubation_days: 10.0, infectious_days: 10.0, r0: 2.0 },
   ebola_bioattack: { incubation_days: 8.0, infectious_days: 10.0, r0: 2.5 },
+  ebola_ring3: { incubation_days: 8.0, infectious_days: 10.0, r0: 2.5 },
 };
 
 // -- Parameter descriptions for info modals ----------------------------------

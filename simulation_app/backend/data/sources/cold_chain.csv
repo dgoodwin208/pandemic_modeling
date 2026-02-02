@@ -1,0 +1,54 @@
+country,country_code,cold_chain_equipment_score,electricity_access_pct
+Algeria,DZ,82,99.8
+Angola,AO,35,48.0
+Benin,BJ,45,40.0
+Botswana,BW,65,75.0
+Burkina Faso,BF,42,22.0
+Burundi,BI,30,10.3
+Cameroon,CM,48,65.0
+Cape Verde,CV,55,95.0
+Central African Republic,CF,20,15.0
+Chad,TD,22,11.0
+Comoros,KM,35,85.0
+Congo (Brazzaville),CG,38,50.0
+Congo (Kinshasa),CD,30,21.0
+Djibouti,DJ,42,62.0
+Egypt,EG,85,100.0
+Equatorial Guinea,GQ,32,68.0
+Eritrea,ER,28,53.0
+Eswatini,SZ,55,80.0
+Ethiopia,ET,62,55.0
+Gabon,GA,45,92.0
+Gambia,GM,48,62.0
+Ghana,GH,68,85.9
+Guinea,GN,35,44.0
+Guinea-Bissau,GW,28,35.0
+Ivory Coast,CI,50,70.0
+Kenya,KE,65,71.4
+Lesotho,LS,45,50.0
+Liberia,LR,32,28.0
+Libya,LY,58,70.0
+Madagascar,MG,35,35.0
+Malawi,MW,48,15.0
+Mali,ML,40,50.0
+Mauritania,MR,38,47.0
+Mauritius,MU,78,100.0
+Morocco,MA,82,100.0
+Mozambique,MZ,40,35.0
+Namibia,NA,58,56.0
+Niger,NE,35,19.0
+Nigeria,NG,45,60.0
+Rwanda,RW,70,48.0
+Sao Tome and Principe,ST,40,78.0
+Senegal,SN,55,68.0
+Sierra Leone,SL,35,26.0
+Somalia,SO,18,36.0
+South Africa,ZA,80,87.7
+South Sudan,SS,15,8.4
+Sudan,SD,38,55.0
+Tanzania,TZ,62,42.0
+Togo,TG,42,55.0
+Tunisia,TN,82,100.0
+Uganda,UG,55,42.0
+Zambia,ZM,50,44.0
+Zimbabwe,ZW,45,50.0
