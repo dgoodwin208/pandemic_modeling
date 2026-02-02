@@ -221,12 +221,12 @@ const COUNTRY_DATA = {
     greetingEnglish: 'Hello! Welcome to Equatorial Guinea.',
     audioFile: '/audio/equatorial_guinea_spanish.mp3' },
 
-  // ── Afrikaans ────────────────────────────────────────────────────────────
-  ZAF: { language: 'Afrikaans / Zulu / English', languageNative: 'Afrikaans', flag: '🇿🇦',
-    greeting: 'Hallo! Welkom in Suid-Afrika.',
+  // ── isiZulu / Afrikaans ──────────────────────────────────────────────────
+  ZAF: { language: 'isiZulu / English / Afrikaans', languageNative: 'isiZulu', flag: '🇿🇦',
+    greeting: 'Sawubona! Uyemukelwa eNingizimu Afrika.',
     greetingEnglish: 'Hello! Welcome to South Africa.',
-    audioFile: '/audio/south_africa_afrikaans.mp3',
-    agentIntro: "An AI agent for South Africa might greet you in Afrikaans — one of the country's eleven official languages." },
+    audioFile: '/audio/south_africa_isizulu.mp3',
+    agentIntro: "An AI agent for South Africa greets you in isiZulu — the most widely spoken home language in the country." },
   NAM: { language: 'Afrikaans / English', languageNative: 'Afrikaans', flag: '🇳🇦',
     greeting: 'Hallo! Welkom in Namibië.',
     greetingEnglish: 'Hello! Welcome to Namibia.',
@@ -569,7 +569,7 @@ export default function AudioExplorationTab() {
               <div className="w-3 h-3 rounded-full bg-amber-400/80" />
               <span className="text-xs text-slate-500">Click to hear greeting</span>
             </div>
-            <div className="text-xs text-slate-400">55 countries &middot; 8 languages</div>
+            <div className="text-xs text-slate-400">55 countries &middot; 9 languages</div>
           </div>
         </div>
 
@@ -801,6 +801,7 @@ export default function AudioExplorationTab() {
                 <span className="audio-tag">French</span>
                 <span className="audio-tag">English</span>
                 <span className="audio-tag">Portuguese</span>
+                <span className="audio-tag">isiZulu</span>
                 <span className="audio-tag">Afrikaans</span>
                 <span className="audio-tag">Swahili</span>
                 <span className="audio-tag">Amharic</span>

@@ -126,8 +126,8 @@ GREETINGS = [
      "text": "Hello! Welcome to Malawi, the warm heart of Africa. I'm your AI assistant, and I'm here to help you."},
 
     # ── Southern Africa — Mark Williams, South African male ─────────────────
-    {"iso": "ZAF", "file": "south_africa_afrikaans.mp3","region": "southern_africa", "model": "v3", "lang": None,
-     "text": "Hallo! Welkom in Suid-Afrika. Ek is jou slim assistent, en ek is hier om jou te help. Stel jou voor elke land in Afrika het sy eie kunsmatige intelligensie-agent wat jou taal praat."},
+    {"iso": "ZAF", "file": "south_africa_isizulu.mp3", "region": "southern_africa", "model": "v3", "lang": None,
+     "text": "Sawubona! Uyemukelwa eNingizimu Afrika. Ngingumlekeleli wakho ohlakanipha, futhi ngilapha ukukusiza. Cabanga ukuthi lonke izwe lase-Afrika linomlekeleli we-AI okhuluma ulimi lwakho."},
     {"iso": "NAM", "file": "namibia_afrikaans.mp3",     "region": "southern_africa", "model": "v3", "lang": None,
      "text": "Hallo! Welkom in Namibië. Ek is jou slim assistent, en ek is hier om jou te help met alles wat jy nodig het. Dis wonderlik om jou hier te hê."},
     {"iso": "BWA", "file": "botswana_english.mp3",      "region": "southern_africa", "model": "v2", "lang": "en",

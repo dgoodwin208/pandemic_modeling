@@ -491,6 +491,53 @@ async def get_summary(session_id: str):
     return response
 
 
+@app.get("/simulate/absdes/{session_id}/resources")
+async def get_resource_timeseries(session_id: str):
+    """Return daily resource supply and demand time series for charts.
+
+    Returns aggregated (across all cities) daily values for:
+    - Actual supply levels (when supply chain enabled)
+    - Shadow demand (always available — what resources WOULD be consumed)
+    """
+    result = _session_results.get(session_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    days = int(result.t[-1]) + 1
+
+    response: dict = {
+        "days": days,
+        "supply_chain_enabled": result.supply_chain_enabled,
+        "supply": None,
+        "demand": None,
+    }
+
+    # Actual supply levels (only when supply chain was enabled)
+    if result.supply_chain_enabled and result.resource_beds_occupied is not None:
+        response["supply"] = {
+            "beds_occupied": result.resource_beds_occupied.sum(axis=0).tolist(),
+            "beds_total": result.resource_beds_total.sum(axis=0).tolist(),
+            "ppe": result.resource_ppe.sum(axis=0).tolist(),
+            "swabs": result.resource_swabs.sum(axis=0).tolist(),
+            "reagents": result.resource_reagents.sum(axis=0).tolist(),
+            "vaccines": result.resource_vaccines.sum(axis=0).tolist() if result.resource_vaccines is not None else None,
+            "pills": result.resource_pills.sum(axis=0).tolist() if result.resource_pills is not None else None,
+        }
+
+    # Shadow demand (always populated)
+    if result.shadow_demand_ppe is not None:
+        response["demand"] = {
+            "ppe": result.shadow_demand_ppe.sum(axis=0).tolist(),
+            "swabs": result.shadow_demand_swabs.sum(axis=0).tolist(),
+            "reagents": result.shadow_demand_reagents.sum(axis=0).tolist(),
+            "pills": result.shadow_demand_pills.sum(axis=0).tolist(),
+            "beds": result.shadow_demand_beds.sum(axis=0).tolist(),
+            "vaccines": result.shadow_demand_vaccines.sum(axis=0).tolist() if result.shadow_demand_vaccines is not None else None,
+        }
+
+    return response
+
+
 @app.get("/simulate/absdes/{session_id}/events")
 async def get_events(
     session_id: str,

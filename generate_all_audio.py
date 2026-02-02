@@ -142,9 +142,11 @@ GREETINGS = [
     {"iso": "GNQ", "file": "equatorial_guinea_spanish.mp3","model": "v2", "lang": "es",
      "text": "¡Hola! Bienvenido a Guinea Ecuatorial. Soy tu asistente inteligente, y estoy aquí para ayudarte en todo lo que necesites."},
 
-    # ── Afrikaans (v3, auto-detect) ─────────────────────────────────────────
-    {"iso": "ZAF", "file": "south_africa_afrikaans.mp3","model": "v3", "lang": None,
-     "text": "Hallo! Welkom in Suid-Afrika. Ek is jou slim assistent, en ek is hier om jou te help. Stel jou voor elke land in Afrika het sy eie kunsmatige intelligensie-agent wat jou taal praat."},
+    # ── isiZulu (v3, auto-detect) ────────────────────────────────────────────
+    {"iso": "ZAF", "file": "south_africa_isizulu.mp3", "model": "v3", "lang": None,
+     "text": "Sawubona! Uyemukelwa eNingizimu Afrika. Ngingumlekeleli wakho ohlakanipha, futhi ngilapha ukukusiza. Cabanga ukuthi lonke izwe lase-Afrika linomlekeleli we-AI okhuluma ulimi lwakho."},
+
+    # ── Afrikaans (v3, auto-detect) ───────────────────────────────────────
     {"iso": "NAM", "file": "namibia_afrikaans.mp3",    "model": "v3", "lang": None,
      "text": "Hallo! Welkom in Namibië. Ek is jou slim assistent, en ek is hier om jou te help met alles wat jy nodig het. Dis wonderlik om jou hier te hê."},
 
