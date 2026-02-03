@@ -157,20 +157,20 @@ CityDES maintains both **actual** and **observed** compartment counts. Observed 
 **Figure 3.1.** True active cases (blue) vs detected active cases (orange) at six provider densities. With 0 providers, no detection occurs. At 50/1000, detected cases closely track true cases with a systematic undercount (detection requires disclosure).
 
 ![Epidemic outcomes vs density](003_absdes_providers/results_v2/02_epidemic_outcomes.png)
-**Figure 3.2.** Peak infected, peak day, and attack rate by provider density. More providers monotonically reduce peak infection (9.0% → 4.9%) and attack rate (65.4% → 40.1%).
+**Figure 3.2.** Peak infected, peak day, and attack rate by provider density. More providers monotonically reduce peak infection (9.0% → 5.1%) and attack rate (65.4% → 40.1%).
 
 ![Observed vs actual epidemic](003_absdes_providers/results_v2/03_observed_vs_actual.png)
 **Figure 3.3.** Observed vs actual epidemic curves for infectious, recovered, and dead compartments at 10/1000 density. The observed view consistently underestimates the actual epidemic, quantifying the surveillance gap.
 
 ![Severity with providers](003_absdes_providers/results_v2/04_severity_with_providers.png)
-**Figure 3.4.** Deaths over time with severity enabled (severe_fraction=0.15) at four provider densities. More providers reduce final deaths from 77 ± 30 (no providers) to 42 ± 23 (25/1000), a 45% reduction.
+**Figure 3.4.** Deaths over time with severity enabled (severe_fraction=0.15) at four provider densities. More providers reduce final deaths from 77 ± 30 (no providers) to 46 ± 23 (25/1000), a 40% reduction. Detection memory is limited to 7 days, requiring providers to re-screen lapsed contacts.
 
 | Density (/1000) | Providers | Peak I (%) | Attack Rate (%) | Deaths (sev=0.15) |
 |:---:|:---:|:---:|:---:|:---:|
 | 0 | 0 | 9.0 ± 2.5 | 65.4 ± 18.0 | 77 ± 30 |
-| 5 | 25 | 7.1 ± 2.1 | 53.1 ± 17.9 | 55 ± 31 |
-| 10 | 50 | 6.5 ± 1.5 | 52.8 ± 14.0 | 58 ± 20 |
-| 50 | 250 | 4.9 ± 2.6 | 40.1 ± 22.1 | — |
+| 5 | 25 | 6.9 ± 2.4 | 54.1 ± 18.9 | 58 ± 29 |
+| 10 | 50 | 6.0 ± 2.3 | 49.5 ± 20.4 | 53 ± 25 |
+| 50 | 250 | 5.1 ± 2.3 | 40.1 ± 20.0 | — |
 
 **Table 3.1.** Provider density impact on epidemic outcomes (N=5,000, 30 runs).
 
@@ -322,30 +322,32 @@ Ten provider density levels (0, 1, 2, 5, 10, 20, 30, 50, 75, 100 per 1,000) are 
 ### 8.3 Results
 
 ![Deaths vs provider density](007_coverage_sweep/results_v2/01_deaths_vs_density.png)
-**Figure 7.1.** Dose-response curve: estimated deaths (red, left axis) and lives saved (teal, right axis) vs provider density. Deaths decrease from 7.21M (baseline) to 6.78M at saturation, saving approximately 430,000 lives. Diminishing returns set in around 10/1000 providers.
+**Figure 7.1.** Dose-response curve: estimated deaths (red, left axis) and lives saved (teal, right axis) vs provider density. Deaths decrease from 7.21M (baseline) to 6.55M at saturation, saving approximately 660,000 lives. Diminishing returns set in around 30/1000 providers.
 
 ![Epidemic characteristics](007_coverage_sweep/results_v2/02_epidemic_characteristics.png)
-**Figure 7.2.** Three epidemic characteristics vs provider density: mean peak infection (%), mean peak day, and attack rate (%). All show improvement with increasing coverage, plateauing above 10–20/1000.
+**Figure 7.2.** Three epidemic characteristics vs provider density: mean peak infection (%), mean peak day, and attack rate (%). All show improvement with increasing coverage, plateauing above 30/1000.
 
 | Density (/1000) | Deaths (M) | Lives Saved (M) | Attack Rate (%) | Peak I (%) |
 |:---:|:---:|:---:|:---:|:---:|
 | 0 | 7.21 | — | 75.9 | 30.3 |
-| 1 | 7.27 | -0.06 | 76.4 | 30.3 |
-| 5 | 6.87 | 0.34 | 73.9 | 29.2 |
-| 10 | 6.71 | 0.50 | 72.8 | 28.9 |
-| 20 | 6.73 | 0.48 | 72.3 | 28.5 |
-| 50 | 6.78 | 0.43 | 72.3 | 28.3 |
-| 100 | 6.78 | 0.43 | 72.3 | 28.3 |
+| 1 | 7.27 | -0.06 | 76.1 | 30.1 |
+| 5 | 6.97 | 0.25 | 74.2 | 29.4 |
+| 10 | 7.01 | 0.20 | 74.2 | 29.1 |
+| 20 | 6.79 | 0.42 | 72.7 | 28.6 |
+| 30 | 6.55 | 0.66 | 71.1 | 28.2 |
+| 50 | 6.63 | 0.58 | 71.7 | 28.1 |
+| 100 | 6.63 | 0.58 | 71.7 | 28.1 |
 
 **Table 7.1.** Coverage sweep results for Ebola bioattack on Nigeria.
 
 ### 8.4 Discussion
 
-The dose-response curve reveals a "diminishing returns" threshold around 10 providers per 1,000 population, beyond which additional healthcare workers provide minimal additional benefit. This occurs because:
+The dose-response curve reveals a "diminishing returns" threshold around 30 providers per 1,000 population, beyond which additional healthcare workers provide minimal additional benefit. This occurs because:
 
-1. **Screening saturation:** At 10/1000 (50 providers × 20 screens/day = 1,000 screens/day for 5,000 agents), the screening capacity approaches 20% of the population daily, reaching most infectious individuals within a few days.
-2. **Behavioral ceiling:** Even with full detection, isolation compliance is capped by `advised_isolation_prob` (20%) and decays daily.
-3. **Ebola kinetics:** The high fatality rate (50%) means many severe cases die before behavioral intervention can alter their trajectory.
+1. **Detection memory decay:** Providers retain knowledge of screened individuals for only 7 days (the `detection_memory_days` parameter). After this window, detected agents must be re-screened to maintain surveillance. This means higher provider density is needed to sustain continuous coverage — the system must re-detect lapsed contacts, not just discover new ones.
+2. **Screening throughput vs memory:** At 30/1000 (150 providers × 20 screens/day = 3,000 screens/day for 5,000 agents), the daily screening capacity reaches 60% of the population. This is the threshold needed to keep pace with the 7-day detection expiry — re-screening most known contacts before they lapse while still finding new cases.
+3. **Behavioral ceiling:** Even with full detection, isolation compliance is capped by `advised_isolation_prob` (20%) and decays daily.
+4. **Ebola kinetics:** The high fatality rate (50%) means many severe cases die before behavioral intervention can alter their trajectory.
 
 For a COVID scenario with lower lethality, the provider effect would be larger because the longer infectious period creates more opportunity for behavioral intervention.
 
@@ -361,7 +363,7 @@ We have demonstrated a modular, incrementally validated agent-based pandemic sim
 4. **Spatial dynamics** (004): Gravity coupling produces realistic wave propagation
 5. **Country-scale** (005): Structurally correct at 51-city scale with provider dose-response
 6. **Continental scale** (006): 442-city simulation across 4 scenarios produces order-of-magnitude agreement with Lancet COVID first-wave reference
-7. **Policy analysis** (007): Coverage sweep reveals diminishing returns at ~10/1000 provider density
+7. **Policy analysis** (007): Coverage sweep reveals diminishing returns at ~30/1000 provider density, driven by 7-day detection memory window
 
 ### 9.1 Limitations and Future Work
 
