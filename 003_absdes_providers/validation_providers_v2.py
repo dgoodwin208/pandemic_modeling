@@ -357,7 +357,7 @@ def plot_severity_with_providers():
     print(f"Figure 4: Severity + Providers (7-state model)")
     print(f"{'='*60}")
 
-    densities_test = [0, 5, 10, 25]
+    densities_test = [0, 5, 10, 50]
     n_runs = 20
 
     fig, axes = plt.subplots(1, len(densities_test), figsize=(5 * len(densities_test), 5),

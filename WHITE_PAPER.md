@@ -163,14 +163,14 @@ CityDES maintains both **actual** and **observed** compartment counts. Observed 
 **Figure 3.3.** Observed vs actual epidemic curves for infectious, recovered, and dead compartments at 10/1000 density. The observed view consistently underestimates the actual epidemic, quantifying the surveillance gap.
 
 ![Severity with providers](003_absdes_providers/results_v2/04_severity_with_providers.png)
-**Figure 3.4.** Deaths over time with severity enabled (severe_fraction=0.15) at four provider densities. More providers reduce final deaths from 77 ± 30 (no providers) to 46 ± 23 (25/1000), a 40% reduction. Detection memory is limited to 7 days, requiring providers to re-screen lapsed contacts.
+**Figure 3.4.** Deaths over time with severity enabled (severe_fraction=0.15) at four provider densities. More providers reduce final deaths from 77 ± 30 (no providers) to 54 ± 22 (50/1000), a 30% reduction. Diminishing returns are evident beyond 10/1000 density. Detection memory is limited to 7 days, requiring providers to re-screen lapsed contacts.
 
 | Density (/1000) | Providers | Peak I (%) | Attack Rate (%) | Deaths (sev=0.15) |
 |:---:|:---:|:---:|:---:|:---:|
 | 0 | 0 | 9.0 ± 2.5 | 65.4 ± 18.0 | 77 ± 30 |
 | 5 | 25 | 6.9 ± 2.4 | 54.1 ± 18.9 | 58 ± 29 |
 | 10 | 50 | 6.0 ± 2.3 | 49.5 ± 20.4 | 53 ± 25 |
-| 50 | 250 | 5.1 ± 2.3 | 40.1 ± 20.0 | — |
+| 50 | 250 | 5.1 ± 2.3 | 40.1 ± 20.0 | 54 ± 22 |
 
 **Table 3.1.** Provider density impact on epidemic outcomes (N=5,000, 30 runs).
 
