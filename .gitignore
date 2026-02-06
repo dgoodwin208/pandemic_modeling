@@ -26,6 +26,10 @@ frontend/dist/
 
 # Simulation app generated outputs
 simulation_app/backend/outputs/
+simulation_app/backend/sessions/
+
+# Absdes explorer
+absdes_explorer/dist/
 
 # IDE
 .idea/

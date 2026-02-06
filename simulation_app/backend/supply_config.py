@@ -75,11 +75,17 @@ def derive_city_resources(
     else:
         beds = hospitals * d.beds_per_hospital + clinics * d.beds_per_clinic
 
+    # Ensure minimum resource levels even if data shows 0 facilities.
+    # Cities without labs in the data should still have some screening capacity
+    # (via mobile units, regional sharing, etc).
+    facilities = max(1, hospitals + clinics)
+    lab_capacity = max(1, labs)  # At least 1 lab's worth of supplies
+
     return {
-        "beds": beds,
-        "ppe": (hospitals + clinics) * d.ppe_sets_per_facility,
-        "swabs": labs * d.swabs_per_lab,
-        "reagents": labs * d.reagents_per_lab,
+        "beds": max(10, beds),  # At least 10 beds
+        "ppe": facilities * d.ppe_sets_per_facility,
+        "swabs": lab_capacity * d.swabs_per_lab,
+        "reagents": lab_capacity * d.reagents_per_lab,
         "vaccines": 0,  # deployed by continent, not seeded locally
         "pills": 0,    # deployed by continent, not seeded locally
     }
@@ -216,12 +222,16 @@ def derive_city_resources_enriched(
     hospitals = city_data.get("hospitals", 0)
     clinics = city_data.get("clinics", 0)
 
+    # Ensure minimum resource levels
+    facilities = max(1, hospitals + clinics)
+    lab_capacity = max(1, labs)
+
     return {
-        "beds": beds,
+        "beds": max(10, beds),
         "icu_beds": icu_beds,
-        "ppe": (hospitals + clinics) * d.ppe_sets_per_facility,
-        "swabs": labs * d.swabs_per_lab,
-        "reagents": labs * d.reagents_per_lab,
+        "ppe": facilities * d.ppe_sets_per_facility,
+        "swabs": lab_capacity * d.swabs_per_lab,
+        "reagents": lab_capacity * d.reagents_per_lab,
         "vaccines": 0,
         "pills": 0,
     }

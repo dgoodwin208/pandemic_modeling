@@ -59,6 +59,7 @@ class SimulationRequest(BaseModel):
     receptivity_override: float | None = None  # Override per-city medical-score-derived receptivity
     days: int = Field(200, ge=10, le=1000)
     random_seed: int = Field(42)
+    detection_memory_days: int = Field(7, ge=0, le=30)
     # Supply chain
     resource_config: ResourceConfig | None = None
 

@@ -187,7 +187,7 @@ def _render_seir_panel(ax, result, seed_idx, day, n_people, view_label):
 
 
 def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
-                      country: str = "ALL"):
+                      country: str = "ALL", params: dict | None = None):
     """
     Generate actual_dayNNN.png and observed_dayNNN.png for each simulation day.
 
@@ -322,6 +322,167 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
         "vmax_shared": float(vmax),
         "country_filter": country,
     }
+    # Include full simulation parameters for reproducibility
+    if params is not None:
+        metadata["params"] = params
     metadata_path = output_dir / "metadata.json"
     with open(metadata_path, "w") as f:
         json.dump(metadata, f, indent=2)
+
+
+def generate_video(
+    output_dir: Path,
+    view: str = "actual",
+    fps: int = 10,
+    output_format: str = "webm",
+) -> Path:
+    """
+    Generate a video from rendered PNG frames using ffmpeg.
+
+    Args:
+        output_dir: Directory containing the frame PNGs.
+        view: "actual" or "observed" - which view to render.
+        fps: Frames per second (default 10 = 20 seconds for 200 days).
+        output_format: Output format - "mp4" (H.264) or "webm" (VP9).
+
+    Returns:
+        Path to the generated video file.
+
+    Raises:
+        FileNotFoundError: If no frames found or ffmpeg not available.
+        RuntimeError: If ffmpeg fails.
+    """
+    import subprocess
+    import shutil
+
+    # Check ffmpeg is available
+    if shutil.which("ffmpeg") is None:
+        raise FileNotFoundError("ffmpeg not found. Install with: brew install ffmpeg")
+
+    # Find frames
+    pattern = output_dir / f"{view}_day*.png"
+    frames = sorted(output_dir.glob(f"{view}_day*.png"))
+    if not frames:
+        raise FileNotFoundError(f"No frames found matching {pattern}")
+
+    # Output path
+    video_path = output_dir / f"{view}_animation.{output_format}"
+
+    # Build ffmpeg command
+    # -framerate: input fps
+    # -pattern_type glob: use glob pattern for input
+    # -i: input pattern
+    # -c:v libx264: H.264 codec (widely compatible)
+    # -pix_fmt yuv420p: pixel format for compatibility
+    # -crf 23: quality (lower = better, 18-28 is good range)
+    # -preset medium: encoding speed/quality tradeoff
+
+    if output_format == "mp4":
+        cmd = [
+            "ffmpeg", "-y",  # overwrite output
+            "-framerate", str(fps),
+            "-pattern_type", "glob",
+            "-i", str(output_dir / f"{view}_day*.png"),
+            "-c:v", "libx264",
+            "-pix_fmt", "yuv420p",
+            "-crf", "23",
+            "-preset", "medium",
+            str(video_path),
+        ]
+    elif output_format == "webm":
+        cmd = [
+            "ffmpeg", "-y",
+            "-framerate", str(fps),
+            "-pattern_type", "glob",
+            "-i", str(output_dir / f"{view}_day*.png"),
+            "-c:v", "libvpx-vp9",
+            "-crf", "30",
+            "-b:v", "0",
+            str(video_path),
+        ]
+    else:
+        raise ValueError(f"Unsupported format: {output_format}")
+
+    # Run ffmpeg
+    result = subprocess.run(
+        cmd,
+        capture_output=True,
+        text=True,
+    )
+
+    if result.returncode != 0:
+        raise RuntimeError(f"ffmpeg failed: {result.stderr}")
+
+    return video_path
+
+
+def generate_combined_video(
+    output_dir: Path,
+    fps: int = 10,
+    output_format: str = "webm",
+) -> Path:
+    """
+    Generate a side-by-side video with actual (left) and observed (right) views.
+
+    Args:
+        output_dir: Directory containing the frame PNGs.
+        fps: Frames per second.
+        output_format: Output format - "mp4" or "webm".
+
+    Returns:
+        Path to the generated video file.
+    """
+    import subprocess
+    import shutil
+
+    if shutil.which("ffmpeg") is None:
+        raise FileNotFoundError("ffmpeg not found. Install with: brew install ffmpeg")
+
+    # Check frames exist
+    actual_frames = sorted(output_dir.glob("actual_day*.png"))
+    observed_frames = sorted(output_dir.glob("observed_day*.png"))
+    if not actual_frames or not observed_frames:
+        raise FileNotFoundError("Missing actual or observed frames")
+
+    video_path = output_dir / f"combined_animation.{output_format}"
+
+    # ffmpeg filter to stack videos horizontally
+    if output_format == "mp4":
+        cmd = [
+            "ffmpeg", "-y",
+            "-framerate", str(fps),
+            "-pattern_type", "glob",
+            "-i", str(output_dir / "actual_day*.png"),
+            "-framerate", str(fps),
+            "-pattern_type", "glob",
+            "-i", str(output_dir / "observed_day*.png"),
+            "-filter_complex", "[0:v][1:v]hstack=inputs=2[v]",
+            "-map", "[v]",
+            "-c:v", "libx264",
+            "-pix_fmt", "yuv420p",
+            "-crf", "23",
+            "-preset", "medium",
+            str(video_path),
+        ]
+    else:
+        cmd = [
+            "ffmpeg", "-y",
+            "-framerate", str(fps),
+            "-pattern_type", "glob",
+            "-i", str(output_dir / "actual_day*.png"),
+            "-framerate", str(fps),
+            "-pattern_type", "glob",
+            "-i", str(output_dir / "observed_day*.png"),
+            "-filter_complex", "[0:v][1:v]hstack=inputs=2[v]",
+            "-map", "[v]",
+            "-c:v", "libvpx-vp9",
+            "-crf", "30",
+            "-b:v", "0",
+            str(video_path),
+        ]
+
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        raise RuntimeError(f"ffmpeg failed: {result.stderr}")
+
+    return video_path

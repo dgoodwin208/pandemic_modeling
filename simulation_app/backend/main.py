@@ -30,7 +30,7 @@ from pydantic import BaseModel, Field
 from enum import Enum
 
 from simulation import run_absdes_simulation, SimulationParams, load_cities
-from renderer import render_all_frames, load_africa_boundaries
+from renderer import render_all_frames, load_africa_boundaries, generate_video, generate_combined_video
 from progress import ProgressManager
 from schemas import SimulationRequest, ResourceConfig
 from sim_config import load_disease_params
@@ -237,6 +237,7 @@ def _run_simulation_thread(session_id: str, request: SimulationRequest):
             seed_fraction=request.seed_fraction,
             random_seed=request.random_seed,
             receptivity_override=request.receptivity_override,
+            detection_memory_days=request.detection_memory_days,
             incubation_days=request.incubation_days,
             infectious_days=request.infectious_days,
             r0_override=request.r0_override,
@@ -263,8 +264,11 @@ def _run_simulation_thread(session_id: str, request: SimulationRequest):
         output_dir.mkdir(parents=True, exist_ok=True)
 
         africa_gdf = load_africa_boundaries()
+        # Convert params dataclass to dict for metadata storage
+        from dataclasses import asdict
+        params_dict = asdict(params)
         render_all_frames(result, africa_gdf, output_dir, sim_progress,
-                          country=request.country)
+                          country=request.country, params=params_dict)
 
         progress_manager.update(session_id, "complete", 0, 0,
                                 "Simulation complete")
@@ -880,6 +884,71 @@ async def export_csv(session_id: str):
     )
 
 
+@app.get("/simulate/absdes/{session_id}/export/video")
+async def export_video(
+    session_id: str,
+    view: str = "actual",
+    fps: int = 10,
+    format: str = "mp4",
+):
+    """
+    Export simulation frames as a video file.
+
+    Args:
+        session_id: The simulation session ID.
+        view: Which view to export - "actual", "observed", or "combined".
+        fps: Frames per second (default 10).
+        format: Output format - "mp4" (recommended for Google Slides) or "webm".
+
+    Returns:
+        The video file as a download.
+    """
+    result = _session_results.get(session_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    output_dir = OUTPUTS_BASE / session_id
+
+    if not output_dir.exists():
+        raise HTTPException(
+            status_code=400,
+            detail="No frames available. Run simulation with render_maps=True first.",
+        )
+
+    # Check if frames exist
+    actual_frames = list(output_dir.glob("actual_day*.png"))
+    if not actual_frames:
+        raise HTTPException(
+            status_code=400,
+            detail="No frame images found in output directory.",
+        )
+
+    try:
+        if view == "combined":
+            video_path = generate_combined_video(output_dir, fps=fps, output_format=format)
+        elif view in ("actual", "observed"):
+            video_path = generate_video(output_dir, view=view, fps=fps, output_format=format)
+        else:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid view: {view}. Use 'actual', 'observed', or 'combined'.",
+            )
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    except RuntimeError as e:
+        raise HTTPException(status_code=500, detail=f"Video generation failed: {e}")
+
+    # Return video file
+    media_type = "video/mp4" if format == "mp4" else "video/webm"
+    filename = f"simulation_{session_id[:8]}_{view}.{format}"
+
+    return FileResponse(
+        path=video_path,
+        media_type=media_type,
+        filename=filename,
+    )
+
+
 # -- Reference data endpoints --------------------------------------------------
 
 @app.get("/countries")
@@ -967,6 +1036,294 @@ async def get_disease_params():
         }
         for scenario, dp in params.items()
     }
+
+
+# =============================================================================
+# ABS-DES Visualization API (Multi-Level Zoom)
+# =============================================================================
+
+@app.get("/api/absdes/{session_id}/schema")
+async def get_schema(session_id: str):
+    """Return simulation schema for frontend visualization.
+
+    The schema defines entity types, state machines, aggregation levels,
+    and current parameter values - enabling the frontend to render
+    schema-driven visualizations without hardcoding model specifics.
+    """
+    result = _session_results.get(session_id)
+    params = _session_params.get(session_id, {})
+
+    # Load disease params for current scenario
+    disease_params = load_disease_params()
+    scenario_key = params.get("scenario", "covid_natural")
+    dp = disease_params.get(scenario_key)
+
+    # Build schema with current parameter values
+    schema = {
+        "name": "ABS-DES Pandemic Model",
+        "sessionId": session_id,
+        "entityTypes": [
+            {
+                "id": "person",
+                "name": "Person Agent",
+                "stateVariable": "compartment",
+                "attributes": [
+                    {"name": "compartment", "type": "enum",
+                     "enumValues": ["S", "E", "I_mild", "I_needs", "I_care", "R", "D"]},
+                    {"name": "has_phone", "type": "boolean", "description": "Can receive health messages"},
+                    {"name": "is_advised", "type": "boolean", "description": "Has received health advice"},
+                    {"name": "is_vaccinated", "type": "boolean", "description": "Has been vaccinated"},
+                ]
+            },
+            {
+                "id": "city",
+                "name": "City Environment",
+                "stateVariable": None,
+                "attributes": [
+                    {"name": "name", "type": "string"},
+                    {"name": "population", "type": "number"},
+                    {"name": "latitude", "type": "number"},
+                    {"name": "longitude", "type": "number"},
+                ]
+            },
+            {
+                "id": "resource",
+                "name": "Supply Resource",
+                "stateVariable": "type",
+                "attributes": [
+                    {"name": "type", "type": "enum",
+                     "enumValues": ["beds", "ppe", "swabs", "reagents", "vaccines", "pills"]},
+                    {"name": "quantity", "type": "number"},
+                    {"name": "burn_rate", "type": "number"},
+                ]
+            }
+        ],
+        "stateMachines": [
+            {
+                "entityType": "person",
+                "states": [
+                    {"id": "S", "name": "Susceptible", "color": "#4ade80"},
+                    {"id": "E", "name": "Exposed", "color": "#fbbf24"},
+                    {"id": "I_mild", "name": "Infectious (Mild)", "color": "#f97316"},
+                    {"id": "I_needs", "name": "Needs Care", "color": "#ef4444"},
+                    {"id": "I_care", "name": "Receiving Care", "color": "#ec4899"},
+                    {"id": "R", "name": "Recovered", "color": "#3b82f6"},
+                    {"id": "D", "name": "Dead", "color": "#1f2937"},
+                ],
+                "transitions": [
+                    {"from": "S", "to": "E", "trigger": "event",
+                     "description": "Contact with infectious agent"},
+                    {"from": "E", "to": "I_mild", "trigger": "time",
+                     "meanDuration": dp.incubation_days if dp else 5.5,
+                     "distribution": "gamma", "description": "Incubation period"},
+                    {"from": "I_mild", "to": "R", "trigger": "time",
+                     "probability": 1 - (dp.severe_fraction if dp else 0.15),
+                     "description": "Mild case recovers"},
+                    {"from": "I_mild", "to": "I_needs", "trigger": "time",
+                     "probability": dp.severe_fraction if dp else 0.15,
+                     "description": "Case becomes severe"},
+                    {"from": "I_needs", "to": "I_care", "trigger": "event",
+                     "description": "Admitted to hospital bed"},
+                    {"from": "I_needs", "to": "D", "trigger": "time",
+                     "probability": 0.6, "description": "Death without care"},
+                    {"from": "I_care", "to": "R", "trigger": "time",
+                     "probability": dp.care_survival_prob if dp else 0.9,
+                     "description": "Recovers with care"},
+                    {"from": "I_care", "to": "D", "trigger": "time",
+                     "probability": 1 - (dp.care_survival_prob if dp else 0.9),
+                     "description": "Death despite care"},
+                ]
+            }
+        ],
+        "aggregationLevels": [
+            {"id": "agent", "name": "Individual Agent", "parent": "city"},
+            {"id": "city", "name": "City", "parent": "country", "groupBy": "city_id"},
+            {"id": "country", "name": "Country", "parent": "system", "groupBy": "country"},
+            {"id": "system", "name": "System", "parent": None},
+        ],
+        "parameters": [
+            {"id": "R0", "name": "Basic Reproduction Number", "type": "number",
+             "value": dp.R0 if dp else 2.5, "description": "Expected secondary infections"},
+            {"id": "incubation_days", "name": "Incubation Period", "type": "number",
+             "value": dp.incubation_days if dp else 5.5, "unit": "days"},
+            {"id": "infectious_days", "name": "Infectious Period", "type": "number",
+             "value": dp.infectious_days if dp else 9.0, "unit": "days"},
+            {"id": "severe_fraction", "name": "Severe Fraction", "type": "number",
+             "value": dp.severe_fraction if dp else 0.15},
+            {"id": "provider_density", "name": "Provider Density", "type": "number",
+             "value": params.get("provider_density", 5.0), "unit": "per 1000"},
+            {"id": "disclosure_prob", "name": "Disclosure Probability", "type": "number",
+             "value": params.get("disclosure_prob", 0.5)},
+            {"id": "transmission_factor", "name": "Transmission Factor", "type": "number",
+             "value": params.get("transmission_factor", 0.3)},
+        ]
+    }
+
+    # Add simulation metadata if result exists
+    if result:
+        schema["simulationInfo"] = {
+            "cities": result.city_names,
+            "totalDays": int(result.t[-1]),
+            "nPeoplePerCity": result.n_people_per_city,
+            "supplyChainEnabled": result.supply_chain_enabled,
+        }
+
+    return schema
+
+
+@app.get("/api/absdes/{session_id}/aggregates/{level}")
+async def get_aggregates(
+    session_id: str,
+    level: str,
+    day: Optional[int] = None,
+):
+    """Return aggregated metrics at specified hierarchy level.
+
+    Levels:
+      - system: Continent-wide totals
+      - country: Per-country aggregates (currently single-country)
+      - city: Per-city breakdowns
+    """
+    result = _session_results.get(session_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    n_cities = len(result.city_names)
+    total_days = result.actual_S.shape[1]
+    target_day = day if day is not None else total_days - 1
+    target_day = min(max(0, target_day), total_days - 1)
+
+    real_pops = np.array(result.city_populations, dtype=float)
+    n_people = result.n_people_per_city
+    scale = real_pops / n_people
+
+    if level == "system":
+        # Aggregate across all cities
+        return {
+            "level": "system",
+            "day": target_day,
+            "metrics": {
+                "S": int(np.sum(result.actual_S[:, target_day] * scale)),
+                "E": int(np.sum(result.actual_E[:, target_day] * scale)),
+                "I": int(np.sum(result.actual_I[:, target_day] * scale)),
+                "I_mild": int(np.sum(result.actual_I_minor[:, target_day] * scale)),
+                "I_needs": int(np.sum(result.actual_I_needs[:, target_day] * scale)),
+                "I_care": int(np.sum(result.actual_I_care[:, target_day] * scale)),
+                "R": int(np.sum(result.actual_R[:, target_day] * scale)),
+                "D": int(np.sum(result.actual_D[:, target_day] * scale)),
+                "observed_I": int(np.sum(result.observed_I[:, target_day] * scale)),
+                "observed_R": int(np.sum(result.observed_R[:, target_day] * scale)),
+                "observed_D": int(np.sum(result.observed_D[:, target_day] * scale)),
+            },
+            "totalPopulation": int(np.sum(real_pops)),
+            "nCities": n_cities,
+        }
+
+    elif level == "city":
+        # Per-city metrics
+        cities = []
+        for i in range(n_cities):
+            s = scale[i]
+            cities.append({
+                "name": result.city_names[i],
+                "population": result.city_populations[i],
+                "metrics": {
+                    "S": int(result.actual_S[i, target_day] * s),
+                    "E": int(result.actual_E[i, target_day] * s),
+                    "I": int(result.actual_I[i, target_day] * s),
+                    "I_mild": int(result.actual_I_minor[i, target_day] * s),
+                    "I_needs": int(result.actual_I_needs[i, target_day] * s),
+                    "I_care": int(result.actual_I_care[i, target_day] * s),
+                    "R": int(result.actual_R[i, target_day] * s),
+                    "D": int(result.actual_D[i, target_day] * s),
+                    "observed_I": int(result.observed_I[i, target_day] * s),
+                    "observed_R": int(result.observed_R[i, target_day] * s),
+                    "observed_D": int(result.observed_D[i, target_day] * s),
+                }
+            })
+        return {
+            "level": "city",
+            "day": target_day,
+            "cities": cities,
+        }
+
+    else:
+        raise HTTPException(status_code=400, detail=f"Unknown level: {level}")
+
+
+@app.get("/api/absdes/{session_id}/timeseries/{level}")
+async def get_timeseries(
+    session_id: str,
+    level: str,
+    entity_id: Optional[str] = None,
+):
+    """Return time series data at specified aggregation level.
+
+    Levels:
+      - system: Aggregate time series across all cities
+      - city: Time series for a specific city (requires entity_id)
+    """
+    result = _session_results.get(session_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Session not found")
+
+    n_cities = len(result.city_names)
+    total_days = result.actual_S.shape[1]
+    real_pops = np.array(result.city_populations, dtype=float)
+    n_people = result.n_people_per_city
+    scale = real_pops / n_people
+
+    if level == "system":
+        # Aggregate time series
+        return {
+            "level": "system",
+            "days": list(range(total_days)),
+            "actual": {
+                "S": [int(np.sum(result.actual_S[:, d] * scale)) for d in range(total_days)],
+                "E": [int(np.sum(result.actual_E[:, d] * scale)) for d in range(total_days)],
+                "I": [int(np.sum(result.actual_I[:, d] * scale)) for d in range(total_days)],
+                "R": [int(np.sum(result.actual_R[:, d] * scale)) for d in range(total_days)],
+                "D": [int(np.sum(result.actual_D[:, d] * scale)) for d in range(total_days)],
+            },
+            "observed": {
+                "I": [int(np.sum(result.observed_I[:, d] * scale)) for d in range(total_days)],
+                "R": [int(np.sum(result.observed_R[:, d] * scale)) for d in range(total_days)],
+                "D": [int(np.sum(result.observed_D[:, d] * scale)) for d in range(total_days)],
+            }
+        }
+
+    elif level == "city":
+        if not entity_id:
+            raise HTTPException(status_code=400, detail="entity_id required for city level")
+
+        # Find city index
+        try:
+            city_idx = result.city_names.index(entity_id)
+        except ValueError:
+            raise HTTPException(status_code=404, detail=f"City not found: {entity_id}")
+
+        s = scale[city_idx]
+        return {
+            "level": "city",
+            "cityName": entity_id,
+            "population": result.city_populations[city_idx],
+            "days": list(range(total_days)),
+            "actual": {
+                "S": [int(result.actual_S[city_idx, d] * s) for d in range(total_days)],
+                "E": [int(result.actual_E[city_idx, d] * s) for d in range(total_days)],
+                "I": [int(result.actual_I[city_idx, d] * s) for d in range(total_days)],
+                "R": [int(result.actual_R[city_idx, d] * s) for d in range(total_days)],
+                "D": [int(result.actual_D[city_idx, d] * s) for d in range(total_days)],
+            },
+            "observed": {
+                "I": [int(result.observed_I[city_idx, d] * s) for d in range(total_days)],
+                "R": [int(result.observed_R[city_idx, d] * s) for d in range(total_days)],
+                "D": [int(result.observed_D[city_idx, d] * s) for d in range(total_days)],
+            }
+        }
+
+    else:
+        raise HTTPException(status_code=400, detail=f"Unknown level: {level}")
 
 
 # =============================================================================

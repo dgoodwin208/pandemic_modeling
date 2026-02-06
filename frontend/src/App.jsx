@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { Activity, Database, Lightbulb, Zap } from 'lucide-react';
+import { Activity, Database, Lightbulb, Zap, Package } from 'lucide-react';
 import APRLogo from './components/APRLogo';
 import SimulationTab from './components/SimulationTab';
 import DataTab from './components/DataTab';
 import InterventionsTab from './components/InterventionsTab';
 import AudioExplorationTab from './components/AudioExplorationTab';
+import SupplyChainDataModel from './components/SupplyChainDataModel';
 
 const TABS = [
   { id: 'simulation', label: 'Simulation', icon: Activity },
   { id: 'data', label: 'Data', icon: Database },
+  { id: 'supply-chain', label: 'Supply Chain', icon: Package },
   { id: 'interventions', label: 'Interventions', icon: Lightbulb },
   { id: 'audio', label: 'Audio', icon: Zap },
 ];
@@ -63,6 +65,11 @@ export default function App() {
       <div style={{ display: activeTab === 'audio' ? 'block' : 'none' }}>
         <main className="h-[calc(100vh-64px)]">
           <AudioExplorationTab />
+        </main>
+      </div>
+      <div style={{ display: activeTab === 'supply-chain' ? 'block' : 'none' }}>
+        <main className="h-[calc(100vh-64px)] overflow-auto">
+          <SupplyChainDataModel asTab={true} />
         </main>
       </div>
     </div>

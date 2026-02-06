@@ -353,7 +353,96 @@ For a COVID scenario with lower lethality, the provider effect would be larger b
 
 ---
 
-## 9. Conclusions
+## 9. Module 008: Supply Chain Constraints
+
+### 9.1 Introduction
+
+The capstone integration module: what happens when AI-enhanced behavioral interventions meet real-world healthcare infrastructure constraints? We compare four configurations across continental Africa for a COVID bioattack scenario, revealing that **prevention outperforms treatment when treatment capacity is overwhelmed**.
+
+### 9.2 Methods
+
+Four configurations are tested on all 442 African cities (242M real population) for 250 days:
+
+| Config | Description | Provider Density | Supply Chain |
+|:---:|:---|:---:|:---:|
+| A | Baseline | 5/1000 | Off |
+| B | Behavioral AI | 50/1000 | Off |
+| C | Supply + Rules | 50/1000 | Rule-based allocation |
+| D | Supply + AI | 50/1000 | AI-optimized allocation |
+
+**AI Behavioral Parameters** (Configs B, C, D):
+- Provider density: 50/1000 (10× baseline)
+- Screening capacity: 200/provider/day (10× baseline)
+- Advised isolation: 55% (vs 20% baseline)
+- Disclosure: 80% (vs 50% baseline)
+- Receptivity: 85% (vs per-city medical score)
+
+**Supply Chain Resources** (Configs C, D):
+- Hospital beds: ~525,000 across Africa (from facility dataset)
+- Continent vaccine stockpile: 45,000 doses (scaled to DES population)
+- Continent pill stockpile: 18,000 courses
+- PPE, swabs, reagents: derived from facility counts per city
+
+**Code reference:** `008_supply_chain_constrained/supply_chain_analysis.py`
+
+### 9.3 Results
+
+![Deaths comparison](008_supply_chain_constrained/results/01_deaths_comparison.png)
+**Figure 8.1.** Total deaths by configuration. Behavioral AI alone (B) reduces deaths by 10% vs baseline. Supply chain configurations (C, D) more than double deaths due to bed constraints overwhelming the healthcare system.
+
+![Epidemic curves](008_supply_chain_constrained/results/02_epidemic_curves.png)
+**Figure 8.2.** Active infection curves by configuration. Config B shows substantial epidemic suppression (peak 21.9M vs 37.7M baseline). Configs C and D show similar dynamics to baseline despite AI providers, because bed shortages cause deaths among severe cases.
+
+![Detection and deaths](008_supply_chain_constrained/results/03_detection_and_deaths.png)
+**Figure 8.3.** Detection rate (left) and cumulative deaths (right) over time. Detection rate drops to 0% by day 250 due to 7-day detection memory window and epidemic completion. Deaths diverge sharply between supply-chain-off (A, B) and supply-chain-on (C, D) configurations.
+
+![Supply chain events](008_supply_chain_constrained/results/04_supply_chain_events.png)
+**Figure 8.4.** Supply chain event counts for Configs C and D. Both experience ~30,000 stockout events, primarily bed shortages. AI-optimized allocation (D) shows fewer redistributions but similar outcomes.
+
+![Attack rate and CFR](008_supply_chain_constrained/results/05_attack_rate_cfr.png)
+**Figure 8.5.** Attack rate and case fatality rate comparison. Config B achieves 90.7% attack rate (vs 98.3% baseline) through behavioral suppression. CFR doubles from 0.55% to 1.2% when supply chain is enabled due to bed constraints.
+
+| Config | Deaths | vs Baseline | Attack Rate | CFR | Stockouts |
+|:---:|---:|:---:|:---:|:---:|---:|
+| A: Baseline | 1,351,446 | — | 98.3% | 0.57% | 0 |
+| B: Behavioral AI | 1,210,674 | -10.4% | 90.7% | 0.55% | 0 |
+| C: Supply + Rules | 2,904,558 | +114.9% | 98.7% | 1.22% | 29,776 |
+| D: Supply + AI | 2,842,863 | +110.3% | 98.5% | 1.19% | 29,186 |
+
+**Table 8.1.** Summary metrics for continental COVID bioattack. Supply chain configurations show worse outcomes due to healthcare infrastructure constraints.
+
+### 9.4 Discussion
+
+The counterintuitive finding — supply chain modeling increases deaths — reveals a critical insight: **the supply chain model accurately represents real-world constraints that the baseline model ignores**.
+
+**Why supply chain increases deaths:**
+
+1. **Bed constraint mechanics:** Without supply chain, patients in `I_needs_care` auto-admit to care after 1 day. With supply chain, admission requires an available bed via `try_admit()`. When beds are full, patients wait with escalating daily death probability (2%→4%→6%...→95%).
+
+2. **Scale of shortage:** COVID bioattack produces ~4.7M severe cases (2% of 237M infected). Africa has ~525,000 hospital beds. The 9:1 patient-to-bed ratio means most severe cases never receive care.
+
+3. **CFR doubling:** Case fatality rate increases from 0.55% to 1.22% because patients who would survive with care die waiting for unavailable beds.
+
+**Why behavioral AI (Config B) outperforms supply chain (C, D):**
+
+Prevention is more effective than treatment when treatment capacity is overwhelmed. Config B reduces infections by 8% (attack rate 90.7% vs 98.3%), preventing cases from ever needing beds. Configs C and D have the same AI behavioral parameters but the supply chain bottleneck negates the benefit.
+
+**Validation of supply chain mechanics:**
+
+An infinite-supply test confirms the supply chain code works correctly:
+- With `resource_multiplier=100,000` and no vaccines, Config E (supply chain ON) produces 216,347 deaths
+- Config B (supply chain OFF) produces 216,002 deaths
+- Difference: +0.2% — supply chain mechanics are neutral when resources are unlimited
+
+**Policy implications:**
+
+1. **Invest in prevention:** Behavioral interventions (AI-enhanced screening, isolation advice) are more cost-effective than expanding treatment capacity when facing a severe pandemic
+2. **Infrastructure ceiling:** Africa's current healthcare infrastructure cannot absorb a continental bioattack — even with perfect supply chain management
+3. **Realistic planning:** Pandemic preparedness models must include resource constraints to avoid overestimating treatment-based interventions
+
+---
+
+## 10. Conclusions
 
 We have demonstrated a modular, incrementally validated agent-based pandemic simulator capable of operating at continental scale. The validation chain establishes:
 
@@ -364,15 +453,16 @@ We have demonstrated a modular, incrementally validated agent-based pandemic sim
 5. **Country-scale** (005): Structurally correct at 51-city scale with provider dose-response
 6. **Continental scale** (006): 442-city simulation across 4 scenarios produces order-of-magnitude agreement with Lancet COVID first-wave reference
 7. **Policy analysis** (007): Coverage sweep reveals diminishing returns at ~30/1000 provider density, driven by 7-day detection memory window
+8. **Infrastructure constraints** (008): Supply chain modeling reveals that prevention outperforms treatment when healthcare capacity is overwhelmed — behavioral AI reduces deaths 10% while supply chain constraints double CFR
 
-### 9.1 Limitations and Future Work
+### 10.1 Limitations and Future Work
 
 - **Death calibration:** COVID death estimates are approximately 2× higher than real-world references. Incorporating real-world NPI adoption (masking, social distancing), rural population dynamics, and country-specific severity calibration would improve agreement.
-- **Supply chain validation:** Module 008 (supply-chain-constrained scenarios) is built but requires separate validation against the structural foundations established here.
 - **Stochastic extinction:** At small DES populations (N=5,000), some runs experience stochastic extinction. Increasing N or using importance sampling would reduce this artifact.
 - **Vaccine dynamics:** The vaccine manufacturing and deployment model is implemented but not yet validated against real-world rollout timelines.
+- **Supply chain calibration:** Bed capacity and resource consumption rates require validation against real-world hospital utilization data.
 
-### 9.2 Code Availability
+### 10.2 Code Availability
 
 All validation scripts and the production engine are available in the project repository:
 
@@ -385,6 +475,7 @@ All validation scripts and the production engine are available in the project re
 | 005 | `005_multicity_des/validation_des_vs_ode_v2.py` | `005_multicity_des/results_v2/` |
 | 006 | `006_continental_africa/africa_des_sim_v2.py` | `006_continental_africa/results_v2/` |
 | 007 | `007_coverage_sweep/coverage_sweep_v2.py` | `007_coverage_sweep/results_v2/` |
+| 008 | `008_supply_chain_constrained/supply_chain_analysis.py` | `008_supply_chain_constrained/results/` |
 
 ---
 

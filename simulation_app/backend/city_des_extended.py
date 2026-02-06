@@ -22,6 +22,13 @@ Provider mechanics (from module 003, with decay extension):
     Advised persons isolate with P=advised_isolation_prob vs baseline.
     Advice decays: each day, advised persons revert with P=advice_decay_prob.
 
+    Detection tracking has two layers:
+    1. Permanent (_detected_ever): Once detected, an agent's state transitions
+       are always tracked in observed counts (I -> R -> D).
+    2. Active (_detected_day): Expires after detection_memory_days (default 7).
+       After expiry, neighbors leave the contact-candidate pool (contact tracing
+       stops), but outcome tracking continues.
+
 State machine:
     S(0) -> E(1) -> I_minor(2) -> R(5)          [mild case]
                   -> I_needs_care(3) -> D(6)     [untreated, dies]
@@ -89,6 +96,11 @@ class CityDES:
         # Gates effective disclosure, receptivity, and isolation compliance.
         # Agents without phones fall back to baseline behavioral parameters.
         mobile_phone_reach: float = 1.0,
+        # Detection memory window (days). 0 = infinite (legacy).
+        detection_memory_days: int = 7,
+        # Behavioral diagnosis accuracy when lab supplies are depleted.
+        # 0.0 = disabled, 0.5 = 50% (default), 1.0 = perfect clinical dx.
+        behavioral_diagnosis_accuracy: float = 0.5,
         # Supply chain (None = disabled, backward compatible)
         city_supply=None,
     ):
@@ -153,13 +165,26 @@ class CityDES:
         self._counts = [n_people, 0, 0, 0, 0, 0, 0]
 
         # --- OBSERVED tracking (incremental counters) ---
+        # Permanent set of all agents ever detected (for outcome tracking).
+        # Once detected, an agent's state transitions are always tracked.
         self._detected_ever: set[int] = set()
+        # Maps PID -> day of detection. Detections expire after
+        # detection_memory_days (for contact tracing only).
+        self._detected_day: dict[int, int] = {}
         self._new_detections_today: int = 0
         # Observed compartment counts: [S, E, I_minor, I_needs, I_care, R, D]
-        # Updated incrementally on state transitions for detected agents.
+        # Updated incrementally on state transitions for detected-ever agents.
         self._obs_counts = [0, 0, 0, 0, 0, 0, 0]
-        # Cached contact candidates for targeted screening (grows monotonically)
+        # Contact candidates for targeted screening, rebuilt from active
+        # detections' neighbors after each expiry pass.
         self._contact_candidates: set[int] = set()
+
+        # Detection memory: how many days a detection remains "active".
+        # After this window, the agent's state is no longer tracked in
+        # _obs_counts and their neighbors leave the contact-candidate pool.
+        # 0 = infinite memory (legacy behavior).
+        self._detection_memory_days = detection_memory_days
+        self._behavioral_dx_accuracy = behavioral_diagnosis_accuracy
 
         # Supply chain integration (None = no resource constraints)
         self._supply = city_supply
@@ -188,6 +213,7 @@ class CityDES:
         self._states[idx] = to_state
         self._counts[from_state] -= 1
         self._counts[to_state] += 1
+        # Track observed state for ALL ever-detected agents (permanent)
         if idx in self._detected_ever:
             self._obs_counts[from_state] -= 1
             self._obs_counts[to_state] += 1
@@ -232,6 +258,44 @@ class CityDES:
         return self.I / self.n_people if self.n_people > 0 else 0.0
 
     @property
+    def traveling_infection_fraction(self) -> float:
+        """Fraction of population that is infectious AND not isolating.
+
+        Isolating individuals don't travel, so inter-city coupling should
+        use this instead of raw infection_fraction.
+
+        For each infectious person:
+        - If not advised: they travel normally (count as 1)
+        - If advised with phone: isolate with P=advised_isolation_prob (count as 1-P)
+        - If advised without phone: use base_isolation_prob
+        """
+        if self.n_people == 0:
+            return 0.0
+
+        # Find infectious agents (states 2, 3, 4)
+        infectious_mask = (self._states >= 2) & (self._states <= 4)
+        n_infectious = infectious_mask.sum()
+
+        if n_infectious == 0:
+            return 0.0
+
+        # Calculate expected travelers among infectious
+        # Advised with phone: travel with P = (1 - advised_isolation_prob)
+        # Advised without phone: travel with P = (1 - base_isolation_prob)
+        # Not advised: travel with P = 1
+        advised_with_phone = infectious_mask & self._provider_advised & self._has_phone
+        advised_no_phone = infectious_mask & self._provider_advised & ~self._has_phone
+        not_advised = infectious_mask & ~self._provider_advised
+
+        expected_travelers = (
+            not_advised.sum() * 1.0 +
+            advised_no_phone.sum() * (1.0 - self._base_isolation_prob) +
+            advised_with_phone.sum() * (1.0 - self._advised_isolation_prob)
+        )
+
+        return expected_travelers / self.n_people
+
+    @property
     def advised_fraction(self) -> float:
         """Fraction of population that has accepted provider advice."""
         return self._provider_advised.sum() / self.n_people if self.n_people > 0 else 0.0
@@ -255,7 +319,13 @@ class CityDES:
 
     @property
     def total_detected(self) -> int:
+        """Total agents ever detected (permanent)."""
         return len(self._detected_ever)
+
+    @property
+    def active_detections(self) -> int:
+        """Agents with active detection (for contact tracing)."""
+        return len(self._detected_day)
 
     @property
     def new_detections_today(self) -> int:
@@ -289,24 +359,70 @@ class CityDES:
             self._transition(idx, 0, 1)  # S -> E
             self.env.process(self._exposed_process(idx))
 
+    # -- Detection memory expiry ------------------------------------------------
+
+    def _expire_detections(self, current_day: int) -> int:
+        """Remove active detections older than detection_memory_days.
+
+        Detection expiry ONLY affects contact tracing, not outcome tracking.
+        When a detection expires:
+        1. Agent is removed from _detected_day (contact tracing stops)
+        2. _contact_candidates is rebuilt from remaining active detections
+        3. Agent remains in _detected_ever (outcome tracking continues)
+
+        Returns number of expired detections.
+        """
+        if self._detection_memory_days <= 0:
+            return 0  # infinite memory
+
+        expired_pids = [
+            pid for pid, day in self._detected_day.items()
+            if current_day - day >= self._detection_memory_days
+        ]
+
+        if not expired_pids:
+            return 0
+
+        for pid in expired_pids:
+            # Remove from active tracking (contact tracing only)
+            # NOTE: Do NOT touch _obs_counts - agent stays in _detected_ever
+            del self._detected_day[pid]
+
+        # Rebuild contact candidates from remaining active detections
+        self._contact_candidates = set()
+        for pid in self._detected_day:
+            for nb in self._neighbors[pid]:
+                if nb not in self._detected_day:
+                    self._contact_candidates.add(nb)
+
+        return len(expired_pids)
+
     # -- Provider screening (targeted 70/30 split) -----------------------------
 
     def run_provider_screening(self) -> dict:
         """
         Run one day of provider screening with targeted contact tracing.
 
-        Two phases each day:
+        Three phases each day:
+
+        0. **Expiry**: Detections older than detection_memory_days are removed.
+           Their state is no longer tracked in _obs_counts and their neighbors
+           leave the contact-candidate pool.
 
         1. **Decay**: Each currently-advised person reverts to baseline with
            P=advice_decay_prob.
 
         2. **Screening**: 70% random population sample + 30% contact-based
-           (neighbors of previously detected agents). Detection requires
+           (neighbors of recently detected agents). Detection requires
            infectious state + disclosure. Advice accepted with P=receptivity.
 
         Returns dict with screening stats.
         """
         self._new_detections_today = 0
+        current_day = int(self.env.now)
+
+        # Phase 0: Expire old detections
+        expired = self._expire_detections(current_day)
 
         # Phase 1: Advice decay (vectorized)
         decayed = 0
@@ -323,19 +439,23 @@ class CityDES:
             return {"screened": 0, "detected": 0, "advice_accepted": 0,
                     "decayed": decayed}
 
-        capacity = self._n_providers * self._screening_capacity
+        # Clinical visit capacity: determined by providers (no supply dependency).
+        # Providers can visit, observe symptoms, and give isolation advice
+        # without consuming test supplies.
+        visit_capacity = self._n_providers * self._screening_capacity
 
-        # If supply chain is enabled, cap screening by available diagnostics/PPE
+        # Diagnostic test capacity: limited by available supplies.
+        # Confirmatory testing requires swabs + reagents + PPE.
+        test_capacity = visit_capacity  # unlimited when supply chain disabled
         if self._supply is not None:
             max_by_ppe = self._supply.ppe
             max_by_swabs = self._supply.swabs
             max_by_reagents = self._supply.reagents
-            capacity = min(capacity, max_by_ppe, max_by_swabs, max_by_reagents)
-            if capacity <= 0:
-                return {"screened": 0, "detected": 0, "advice_accepted": 0,
-                        "decayed": decayed, "limited_by_supplies": True}
+            test_capacity = min(visit_capacity, max_by_ppe, max_by_swabs,
+                                max_by_reagents)
+            test_capacity = max(0, test_capacity)
 
-        sample_size = min(capacity, self.n_people)
+        sample_size = min(visit_capacity, self.n_people)
 
         # 70% random, 30% contact-based
         random_count = int(sample_size * 0.7)
@@ -378,36 +498,11 @@ class CityDES:
             contact_sample = self._np_rng.choice(pool, size=take, replace=False) if take > 0 else np.array([], dtype=np.intp)
 
         sample_arr = np.concatenate([random_sample, np.asarray(contact_sample, dtype=np.intp)])
+        screened_count = len(sample_arr)
 
-        # -- Vectorized detection and advice ---------------------------------------
-        states = self._states[sample_arr]
-        det_rolls = self._np_rng.random(len(sample_arr))
-
-        # Per-agent disclosure probability: agents with phones use the
-        # configured disclosure_prob (which may be elevated for AI scenarios);
-        # agents without phones fall back to the baseline (0.5).
+        # -- Advice (given to ALL visited, no supplies needed) ---------------------
+        # Providers advise everyone they visit to reduce contacts/isolate.
         has_phone_mask = self._has_phone[sample_arr]
-        disclosure_probs = np.where(
-            has_phone_mask, self._disclosure_prob, 0.5
-        )
-
-        # Bulk detection: infectious (state 2,3,4) AND disclosed
-        infectious_mask = (states >= 2) & (states <= 4)
-        detected_mask = infectious_mask & (det_rolls < disclosure_probs)
-        detected_pids = sample_arr[detected_mask]
-        detected = len(detected_pids)
-        self._new_detections_today = detected
-
-        # Only loop over genuinely NEW detections (small subset)
-        for pid in detected_pids:
-            pid = int(pid)
-            if pid not in self._detected_ever:
-                self._detected_ever.add(pid)
-                self._obs_counts[self._states[pid]] += 1
-                for nb in self._neighbors[pid]:
-                    if nb not in self._detected_ever:
-                        self._contact_candidates.add(nb)
-                self._contact_candidates.discard(pid)
 
         # Per-agent receptivity: agents with phones use the configured
         # receptivity (elevated for AI); agents without fall back to baseline (0.6).
@@ -415,25 +510,96 @@ class CityDES:
             has_phone_mask, self._receptivity, 0.6
         )
 
-        # Bulk advice: not already advised AND receptive
         not_advised = ~self._provider_advised[sample_arr]
         advice_rolls = self._np_rng.random(len(sample_arr))
         accept_mask = not_advised & (advice_rolls < receptivity_probs)
         self._provider_advised[sample_arr[accept_mask]] = True
         advice_accepted = int(accept_mask.sum())
 
-        # Consume screening resources (bulk for all screened)
-        screened_count = len(sample_arr)
-        if self._supply is not None and screened_count > 0:
-            self._supply.try_consume("ppe", screened_count)
-            self._supply.try_consume("swabs", screened_count)
-            self._supply.try_consume("reagents", screened_count)
+        # -- Diagnostic testing (requires supplies) --------------------------------
+        # Only test up to test_capacity agents. Tests confirm infection
+        # and feed the surveillance/contact-tracing system.
+        detected = 0
+        if test_capacity > 0:
+            testable_count = min(screened_count, test_capacity)
+            testable_arr = sample_arr[:testable_count]
+
+            states = self._states[testable_arr]
+            det_rolls = self._np_rng.random(len(testable_arr))
+
+            # Per-agent disclosure probability
+            has_phone_test = self._has_phone[testable_arr]
+            disclosure_probs = np.where(
+                has_phone_test, self._disclosure_prob, 0.5
+            )
+
+            # Bulk detection: infectious (state 2,3,4) AND disclosed
+            infectious_mask = (states >= 2) & (states <= 4)
+            detected_mask = infectious_mask & (det_rolls < disclosure_probs)
+            detected_pids = testable_arr[detected_mask]
+            detected = len(detected_pids)
+            self._new_detections_today = detected
+
+            # Only loop over genuinely NEW detections (small subset)
+            for pid in detected_pids:
+                pid = int(pid)
+                if pid not in self._detected_ever:
+                    self._detected_ever.add(pid)
+                    self._obs_counts[self._states[pid]] += 1
+                if pid not in self._detected_day:
+                    self._detected_day[pid] = current_day
+                    for nb in self._neighbors[pid]:
+                        if nb not in self._detected_day:
+                            self._contact_candidates.add(nb)
+                    self._contact_candidates.discard(pid)
+
+            # Consume test supplies only for tested agents
+            if self._supply is not None and testable_count > 0:
+                self._supply.try_consume("ppe", testable_count)
+                self._supply.try_consume("swabs", testable_count)
+                self._supply.try_consume("reagents", testable_count)
+        else:
+            self._new_detections_today = 0
+
+        # -- Behavioral diagnosis (no supplies needed) ----------------------------
+        # Agents visited but not lab-tested can still be clinically assessed.
+        # Lower accuracy than lab testing, but provides non-zero detection
+        # when diagnostic supplies are depleted.
+        behavioral_detected = 0
+        untested_start = min(screened_count, max(0, test_capacity))
+        if untested_start < screened_count and self._behavioral_dx_accuracy > 0:
+            untested_arr = sample_arr[untested_start:]
+            states_u = self._states[untested_arr]
+            beh_rolls = self._np_rng.random(len(untested_arr))
+            infectious_mask_u = (states_u >= 2) & (states_u <= 4)
+            detected_mask_u = infectious_mask_u & (beh_rolls < self._behavioral_dx_accuracy)
+            beh_detected_pids = untested_arr[detected_mask_u]
+            behavioral_detected = len(beh_detected_pids)
+
+            for pid in beh_detected_pids:
+                pid = int(pid)
+                if pid not in self._detected_ever:
+                    self._detected_ever.add(pid)
+                    self._obs_counts[self._states[pid]] += 1
+                if pid not in self._detected_day:
+                    self._detected_day[pid] = current_day
+                    for nb in self._neighbors[pid]:
+                        if nb not in self._detected_day:
+                            self._contact_candidates.add(nb)
+                    self._contact_candidates.discard(pid)
+
+            self._new_detections_today += behavioral_detected
 
         return {
             "screened": screened_count,
-            "detected": detected,
+            "tested": min(screened_count, max(0, test_capacity)),
+            "detected": detected + behavioral_detected,
+            "lab_detected": detected,
+            "behavioral_detected": behavioral_detected,
             "advice_accepted": advice_accepted,
             "decayed": decayed,
+            "expired": expired,
+            "limited_by_supplies": (test_capacity < visit_capacity),
         }
 
     # -- Disease processes -----------------------------------------------------
@@ -468,8 +634,8 @@ class CityDES:
     def _infectious_minor_process(self, idx: int):
         """I_minor: make contacts during infectious period, then branch to R or I_needs_care.
 
-        Same contact-spreading mechanics as validated DES, with severity
-        branching at the end of the infectious period.
+        OPTIMIZED: Batches all contacts per day using numpy vectorization.
+        Yields once per day instead of per-contact (reduces SimPy overhead).
         """
         neighbors = self._neighbors[idx]
         if not neighbors:
@@ -479,40 +645,73 @@ class CityDES:
         else:
             contact_rate = self.daily_contact_rate * len(neighbors)
             recovery_time = self.env.now + self._gamma_wait(self.infectious_days)
+            neighbors_arr = np.array(neighbors)  # Pre-convert for numpy
 
             while self.env.now < recovery_time:
                 current_day = int(self.env.now)
                 day_end = min(float(current_day + 1), recovery_time)
+                time_in_day = day_end - self.env.now
 
                 # Daily isolation check
                 if self._is_isolating(idx):
-                    wait = day_end - self.env.now
-                    if wait > 0:
-                        yield self.env.timeout(wait)
+                    if time_in_day > 0:
+                        yield self.env.timeout(time_in_day)
                     continue
 
-                # Poisson contacts until day_end
-                while self.env.now < day_end:
-                    yield self.env.timeout(self._rng.expovariate(contact_rate))
-                    if self.env.now >= day_end:
-                        break
+                # BATCH: Sample number of contacts for this day (Poisson)
+                expected_contacts = contact_rate * time_in_day
+                n_contacts = self._np_rng.poisson(expected_contacts)
 
-                    # Pick contact: random agent (mass-action) or network neighbor
-                    if self._p_random > 0 and self._rng.random() < self._p_random:
-                        target = self._rng.randrange(self.n_people)
-                        if target == idx:
-                            continue
+                if n_contacts > 0:
+                    # BATCH: Sample all targets at once
+                    if self._p_random > 0:
+                        # Mix of random and neighbor contacts
+                        random_mask = self._np_rng.random(n_contacts) < self._p_random
+                        n_random = int(random_mask.sum())
+                        n_neighbor = n_contacts - n_random
+
+                        targets = np.empty(n_contacts, dtype=np.int64)
+                        if n_random > 0:
+                            rand_targets = self._np_rng.randint(0, self.n_people, size=n_random)
+                            # Exclude self-contacts
+                            rand_targets[rand_targets == idx] = (idx + 1) % self.n_people
+                            targets[random_mask] = rand_targets
+                        if n_neighbor > 0:
+                            targets[~random_mask] = self._np_rng.choice(neighbors_arr, size=n_neighbor)
                     else:
-                        target = self._rng.choice(neighbors)
+                        # All neighbor contacts
+                        targets = self._np_rng.choice(neighbors_arr, size=n_contacts)
 
-                    if self._states[target] == 0:
+                    # BATCH: Filter to susceptible targets
+                    target_states = self._states[targets]
+                    susceptible_mask = target_states == 0
+
+                    if susceptible_mask.any():
+                        susceptible_targets = targets[susceptible_mask]
+
+                        # BATCH: Transmission rolls with vaccination adjustment
                         tp = self.transmission_prob
-                        # Vaccinated targets have reduced susceptibility
-                        if target in self._vaccinated:
-                            tp *= 0.3
-                        if self._rng.random() < tp:
-                            self._transition(target, 0, 1)  # S -> E
-                            self.env.process(self._exposed_process(target))
+                        trans_rolls = self._np_rng.random(len(susceptible_targets))
+
+                        # Vectorized vaccination check
+                        if self._vaccinated:
+                            vaccinated_mask = np.isin(susceptible_targets, list(self._vaccinated))
+                            effective_tp = np.where(vaccinated_mask, tp * 0.3, tp)
+                        else:
+                            effective_tp = tp
+
+                        infected_mask = trans_rolls < effective_tp
+                        new_infections = susceptible_targets[infected_mask]
+
+                        # Transition each new infection (must be sequential for state consistency)
+                        for target in new_infections:
+                            if self._states[target] == 0:  # Double-check still susceptible
+                                self._transition(target, 0, 1)  # S -> E
+                                self.env.process(self._exposed_process(target))
+
+                # Yield once per day (not per contact)
+                if time_in_day > 0:
+                    yield self.env.timeout(time_in_day)
 
         # End of infectious period: severity branching
         if self._states[idx] != 2:
@@ -659,3 +858,23 @@ class CityDES:
     def vaccinated_count(self) -> int:
         """Number of people who have been vaccinated."""
         return len(self._vaccinated)
+
+    @property
+    def vaccine_priority_targets(self) -> list[int]:
+        """Contact-traced susceptible agents who should be vaccinated first.
+
+        Returns agent IDs that are:
+        - Contacts of detected infectious agents (high exposure risk)
+        - Currently susceptible (state 0)
+        - Not yet vaccinated
+
+        This enables provider-driven vaccine prioritization: more providers
+        → more detections → more contacts identified → better targeting.
+        """
+        if not self._contact_candidates:
+            return []
+        targets = [
+            pid for pid in self._contact_candidates
+            if self._states[pid] == 0 and pid not in self._vaccinated
+        ]
+        return targets

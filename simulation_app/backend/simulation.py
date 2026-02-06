@@ -102,6 +102,14 @@ class SimulationParams:
     lead_time_mean_days: float = 7.0
     continent_vaccine_stockpile: int = 0
     continent_pill_stockpile: int = 0
+    # Resource multiplier for testing (scales all resources by this factor)
+    resource_multiplier: float = 1.0
+    # Provider detection memory window (days). 0 = infinite (legacy).
+    detection_memory_days: int = 7
+    # Behavioral diagnosis: clinical assessment accuracy when lab supplies depleted.
+    # Providers can still observe symptoms (fever, cough, fatigue) without test kits.
+    # 0.0 = disabled, 0.5 = 50% accuracy (default), 1.0 = perfect clinical dx.
+    behavioral_diagnosis_accuracy: float = 0.5
     # Debug / validation
     debug_validation: bool = False
 
@@ -239,6 +247,9 @@ def _apply_travel_coupling_des(
 
     Same formula as module 004, but infection fractions come from the DES
     and new exposures are injected via inject_exposed().
+
+    Uses traveling_infection_fraction (not raw infection_fraction) to account
+    for the fact that isolating individuals don't travel between cities.
     """
     n = len(city_sims)
 
@@ -248,7 +259,8 @@ def _apply_travel_coupling_des(
             if i == j:
                 continue
             travelers = travel_matrix[j, i]
-            inf_frac = city_sims[j].infection_fraction
+            # Use traveling fraction: isolating people don't travel
+            inf_frac = city_sims[j].traveling_infection_fraction
             daily += travelers * inf_frac * transmission_factor
 
         if des_scale_travel:
@@ -579,6 +591,8 @@ def run_absdes_simulation(
             care_quality=per_city_care_quality[i],
             p_random=params.p_random,
             mobile_phone_reach=params.mobile_phone_reach,
+            detection_memory_days=params.detection_memory_days,
+            behavioral_diagnosis_accuracy=params.behavioral_diagnosis_accuracy,
         ))
 
     # -- Initialize supply chain (if enabled) ----------------------------------
@@ -648,13 +662,15 @@ def run_absdes_simulation(
             else:
                 beds_pc = ppe_pc = swabs_pc = reagents_pc = 0
 
+            # Apply resource multiplier for testing
+            mult = params.resource_multiplier
             cs = CitySupply(
-                beds_total=max(1, int(beds_pc * des_pop)),
-                ppe=max(0, int(ppe_pc * des_pop)),
-                swabs=max(0, int(swabs_pc * des_pop)),
-                reagents=max(0, int(reagents_pc * des_pop)),
-                vaccines=resources["vaccines"],
-                pills=resources["pills"],
+                beds_total=max(1, int(beds_pc * des_pop * mult)),
+                ppe=max(0, int(ppe_pc * des_pop * mult)),
+                swabs=max(0, int(swabs_pc * des_pop * mult)),
+                reagents=max(0, int(reagents_pc * des_pop * mult)),
+                vaccines=int(resources["vaccines"] * mult),
+                pills=int(resources["pills"] * mult),
                 n_days=params.days + 1,
             )
             city_supplies.append(cs)
@@ -685,10 +701,11 @@ def run_absdes_simulation(
             mgr.city_global_indices = country_city_indices[country_name]
             country_managers[country_name] = mgr
 
-        # Build ContinentSupplyManager
+        # Build ContinentSupplyManager (apply resource multiplier)
+        mult = params.resource_multiplier
         continent_reserves = {
-            "vaccines": params.continent_vaccine_stockpile,
-            "pills": params.continent_pill_stockpile,
+            "vaccines": int(params.continent_vaccine_stockpile * mult),
+            "pills": int(params.continent_pill_stockpile * mult),
             "ppe": 0,
             "swabs": 0,
             "reagents": 0,
@@ -820,6 +837,10 @@ def run_absdes_simulation(
             if new_detected > 0:
                 elog.log(day, city_names[i], "screening", "detect",
                          quantity=new_detected, screened=screened_count)
+            beh_detected = screening_result.get("behavioral_detected", 0)
+            if beh_detected > 0:
+                elog.log(day, city_names[i], "screening", "behavioral_diagnosis",
+                         quantity=beh_detected)
 
         # Step 3: Apply vaccinations (supply chain, strategy-aware)
         if supply_enabled:
@@ -846,7 +867,11 @@ def run_absdes_simulation(
             for i in range(n_cities):
                 daily_doses = int(doses_per_city[i])
                 if daily_doses > 0:
-                    actually_vaccinated = city_sims[i].apply_vaccinations(daily_doses)
+                    # Prioritize contact-traced agents (provider-driven targeting)
+                    priority = city_sims[i].vaccine_priority_targets
+                    actually_vaccinated = city_sims[i].apply_vaccinations(
+                        daily_doses, priority_pids=priority if priority else None,
+                    )
                     if actually_vaccinated > 0:
                         city_supplies[i].try_consume("vaccines", actually_vaccinated)
                         elog.log(day, city_names[i], "vaccination", "administer",
