@@ -54,7 +54,6 @@ class SupplyChainConfig:
     reagents_per_patient: int = 2
 
     def get_unit(self, field_name: str) -> str:
-        """Get the unit for a field, or empty string if not defined."""
         return self.UNITS.get(field_name, "")
 
     @property
@@ -91,7 +90,6 @@ class NetworkConfig:
     rewire_prob: float = 0.3   # p: probability of rewiring each edge
 
     def get_unit(self, field_name: str) -> str:
-        """Get the unit for a field, or empty string if not defined."""
         return self.UNITS.get(field_name, "")
 
 
@@ -153,7 +151,6 @@ class DiseaseConfig:
     age_risk_multiplier: float = 2.0     # Risk multiplier for elderly
 
     def get_unit(self, field_name: str) -> str:
-        """Get the unit for a field, or empty string if not defined."""
         return self.UNITS.get(field_name, "")
 
 
@@ -183,11 +180,9 @@ class SimulationConfig:
     snapshot_interval: float = 1.0   # Days between status snapshots
 
     def get_unit(self, field_name: str) -> str:
-        """Get the unit for a field, or empty string if not defined."""
         return self.UNITS.get(field_name, "")
 
     def summary(self) -> str:
-        """Return a human-readable summary of the configuration."""
         return f"""
 ╔══════════════════════════════════════════════════════════════╗
 ║                    SIMULATION CONFIGURATION                   ║

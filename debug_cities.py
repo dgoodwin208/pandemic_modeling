@@ -23,7 +23,7 @@ def read_dbf(filename):
                 if ftype == 'N' and value:
                     try:
                         record[name] = float(value) if '.' in value else int(value)
-                    except:
+                    except (ValueError, TypeError):
                         record[name] = 0
                 else:
                     record[name] = value
@@ -39,11 +39,9 @@ for r in records:
     if r.get('name') in african_names:
         print(f"  {r['name']}: iso_a2={r.get('iso_a2')!r}, adm0_a3={r.get('adm0_a3')!r}, pop_max={r.get('pop_max')}, adm0name={r.get('adm0name')!r}")
 
-# Get unique iso_a2 values 
 iso_values = set(r.get('iso_a2', '') for r in records)
 print(f"\nSample iso_a2 values: {list(iso_values)[:20]}")
 
-# Check for Nigeria entries
 print("\nAll Nigerian cities (by adm0name):")
 for r in records:
     if r.get('adm0name') == 'Nigeria':

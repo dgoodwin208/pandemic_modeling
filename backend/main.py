@@ -16,7 +16,6 @@ app = FastAPI(
     version="0.1.0"
 )
 
-# CORS for frontend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", "http://localhost:5173"],
@@ -38,7 +37,6 @@ class DiseaseScenario(str, Enum):
 
 
 class InterventionParams(BaseModel):
-    """Parameters for AI-powered interventions"""
     contact_trace_efficacy: float = Field(0.3, ge=0, le=1, description="Probability of successful contact trace")
     time_to_contact: float = Field(48, ge=1, le=168, description="Hours from positive test to first contact")
     quarantine_compliance: float = Field(0.5, ge=0, le=1, description="Proportion complying with quarantine")
@@ -47,7 +45,6 @@ class InterventionParams(BaseModel):
 
 
 class SimulationRequest(BaseModel):
-    """Request parameters for epidemic simulation"""
     population: int = Field(100_000_000, gt=0)
     scenario: DiseaseScenario = DiseaseScenario.COVID_LIKE
     days: int = Field(180, ge=1, le=730)
@@ -57,7 +54,6 @@ class SimulationRequest(BaseModel):
 
 
 class CountryData(BaseModel):
-    """Country information with supply chain data"""
     id: str
     name: str
     lat: float
@@ -70,7 +66,6 @@ class CountryData(BaseModel):
 
 
 class SimulationResult(BaseModel):
-    """Single day simulation result"""
     day: int
     susceptible: float
     exposed: float
@@ -198,16 +193,13 @@ def run_seir_simulation(
     
     Parameters are modified by intervention efficacy.
     """
-    # Calculate rates
     beta = R0 / infectious_days  # Transmission rate
     sigma = 1 / incubation_days   # Rate E -> I
     gamma = 1 / infectious_days   # Rate I -> R/D
     
-    # Apply intervention effect
     intervention_multiplier = calculate_intervention_effect(intervention_params)
     effective_beta = beta * intervention_multiplier
     
-    # Initialize compartments
     S = float(population - initial_infected)
     E = 0.0
     I = float(initial_infected)
@@ -225,7 +217,6 @@ def run_seir_simulation(
         new_recovered = gamma * I * (1 - ifr)
         new_deaths = gamma * I * ifr
         
-        # Update compartments
         S -= new_exposed
         E += new_exposed - new_infected
         I += new_infected - new_recovered - new_deaths
@@ -234,7 +225,6 @@ def run_seir_simulation(
         cum_cases += new_infected
         cum_deaths += new_deaths
         
-        # Calculate effective R
         r_eff = (effective_beta / gamma) * (S / population) if population > 0 else 0
         
         results.append(SimulationResult(
@@ -269,7 +259,6 @@ async def root():
 
 @app.get("/scenarios")
 async def get_scenarios() -> Dict[str, Any]:
-    """Get available disease scenarios and their parameters"""
     return {
         scenario.value: {
             **params,
@@ -281,13 +270,11 @@ async def get_scenarios() -> Dict[str, Any]:
 
 @app.get("/countries")
 async def get_countries() -> List[CountryData]:
-    """Get all African Union countries with supply chain data"""
     return AFRICAN_COUNTRIES
 
 
 @app.get("/countries/{country_id}")
 async def get_country(country_id: str) -> CountryData:
-    """Get a specific country by ID"""
     for country in AFRICAN_COUNTRIES:
         if country.id == country_id:
             return country
@@ -303,7 +290,6 @@ async def run_simulation(request: SimulationRequest) -> Dict[str, Any]:
     """
     disease = DISEASE_PARAMS[request.scenario]
     
-    # Run baseline simulation
     baseline_results = run_seir_simulation(
         population=request.population,
         R0=disease["R0"],
@@ -315,7 +301,6 @@ async def run_simulation(request: SimulationRequest) -> Dict[str, Any]:
         intervention_params=request.baseline_params,
     )
     
-    # Run AI-augmented simulation if params provided
     ai_results = None
     if request.ai_params:
         ai_results = run_seir_simulation(
@@ -329,7 +314,6 @@ async def run_simulation(request: SimulationRequest) -> Dict[str, Any]:
             intervention_params=request.ai_params,
         )
     
-    # Calculate summary statistics
     baseline_peak = max(r.infected for r in baseline_results)
     baseline_total_deaths = baseline_results[-1].cumulative_deaths
     
@@ -383,7 +367,6 @@ async def run_sensitivity_analysis(
     Useful for understanding which interventions have the most impact.
     """
     if not hasattr(InterventionParams, parameter.replace("_", "")):
-        # Check with underscores
         test_params = InterventionParams()
         if not hasattr(test_params, parameter):
             raise HTTPException(
@@ -395,7 +378,6 @@ async def run_sensitivity_analysis(
     results = []
     
     for value in values:
-        # Create params with varied parameter
         params_dict = request.baseline_params.model_dump()
         params_dict[parameter] = value
         params = InterventionParams(**params_dict)

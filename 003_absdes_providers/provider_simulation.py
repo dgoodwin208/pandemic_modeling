@@ -79,19 +79,16 @@ class ProviderSimulation:
         if config.random_seed is not None:
             random.seed(config.random_seed)
 
-        # Standard components
         self.env = Environment()
         self.supply_chain = create_supply_chain(self.env, config.supply_chain)
         self.network = SocialNetwork(config.network)
 
-        # Build behavior map
         factory = behavior_factory or (lambda pid: RuleBasedBehavior())
         self.behaviors: dict[int, RuleBasedBehavior] = {
             pid: factory(pid)
             for pid in self.network.people
         }
 
-        # Disease model (uses IntelligentDiseaseModel for behavioral hooks)
         self.disease = IntelligentDiseaseModel(
             env=self.env,
             network=self.network,
@@ -101,7 +98,6 @@ class ProviderSimulation:
             supply_config=config.supply_chain,
         )
 
-        # Provider setup
         self.providers = [
             StatisticalProvider(screening_capacity=screening_capacity)
             for _ in range(n_providers)
@@ -110,21 +106,18 @@ class ProviderSimulation:
         self.screening_capacity = screening_capacity
         self.healthcare_system = HealthcareSystem(config.network.n_people)
 
-        # Tracking (same as AgentSimulation)
         self.daily_snapshots: list[dict] = []
         self.peak_active_cases = 0
         self.peak_day = 0.0
         self.min_ppe = config.supply_chain.initial_ppe
         self.min_reagents = config.supply_chain.initial_reagents
 
-        # Provider screening stats
         self._total_screened = 0
         self._total_detected = 0
         self._total_advice_given = 0
         self._total_advice_accepted = 0
 
     def run(self) -> ProviderResult:
-        """Run the simulation and return results."""
         self.disease.seed_infections(self.config.initial_infections)
         self.env.process(self._daily_monitor())
         if self.providers:
@@ -133,7 +126,6 @@ class ProviderSimulation:
         return self._compile_results()
 
     def _provider_screening_process(self):
-        """Daily provider screening of the population."""
         while True:
             yield self.env.timeout(1.0)
 
@@ -150,13 +142,11 @@ class ProviderSimulation:
                 self._total_advice_accepted += stats["advice_accepted"]
 
     def _daily_monitor(self):
-        """Monitor and record statistics daily, including surveillance."""
         while True:
             yield self.env.timeout(self.config.snapshot_interval)
             stats = self.disease.get_statistics()
             self.daily_snapshots.append(stats)
 
-            # Record surveillance snapshot (always, regardless of providers)
             contagious_ids = {
                 pid for pid, p in self.network.people.items()
                 if p.is_contagious()
@@ -178,7 +168,6 @@ class ProviderSimulation:
                 self.min_reagents = stats["supply_chain"]["reagent_level"]
 
     def _compile_results(self) -> ProviderResult:
-        """Compile final results from simulation."""
         final_stats = self.disease.get_statistics()
         state_counts = final_stats["state_counts"]
 

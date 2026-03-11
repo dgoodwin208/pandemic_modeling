@@ -2,16 +2,16 @@
 """
 Healthcare Provider Impact Validation.
 
-Sweeps provider density (0–50 per 1000 population) and demonstrates:
-1. More providers → better surveillance accuracy (true vs estimated sick)
-2. More providers → faster detection & higher cumulative detection
-3. More providers → reduced epidemic severity (via behavioral modification)
+Validates 003 using the production CityDES engine with its built-in
+70/30 targeted screening (random + contact-based).
 
-Four figures:
-    01_surveillance_accuracy.png — Observe-only (receptivity=0): true vs detected
-    02_outreach_efficacy.png     — Receptivity sweep (10% vs 40%) at 0/1/5 density
-    03_surveillance_metrics.png  — Detection error, delay, and coverage
-    04_epidemic_outcomes.png     — Peak I%, Peak Day, Attack Rate
+Four experiments:
+1. Surveillance accuracy: detected vs true active at varying provider density
+2. Provider density sweep: epidemic outcomes vs density (0–50 per 1000)
+3. Observed vs actual epidemic: how well does provider detection track reality
+4. Severity validation: providers with severity enabled (the full 7-state model)
+
+Outputs saved to 003_absdes_providers/results/ directory.
 
 Usage (from project root):
     python 003_absdes_providers/validation_providers.py
@@ -20,47 +20,36 @@ Usage (from project root):
 import sys
 from pathlib import Path
 
-_PROJECT_ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(_PROJECT_ROOT / "des_system"))
-sys.path.insert(0, str(_PROJECT_ROOT / "agent_based_des"))
-sys.path.insert(0, str(_PROJECT_ROOT / "003_absdes_providers"))
+_SCRIPT_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _SCRIPT_DIR.parent
+_BACKEND_DIR = str(_PROJECT_ROOT / "simulation_app" / "backend")
+_DES_SYSTEM_DIR = str(_PROJECT_ROOT / "des_system")
 
+if _BACKEND_DIR not in sys.path:
+    sys.path.insert(0, _BACKEND_DIR)
+if _DES_SYSTEM_DIR not in sys.path:
+    sys.path.insert(1, _DES_SYSTEM_DIR)
+
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import numpy as np
 import seaborn as sns
 
-from config import SimulationConfig
+from city_des_extended import CityDES
 from validation_config import COVID_LIKE
-from provider_simulation import run_provider_simulation, ProviderResult
-from rule_based_behavior import RuleBasedBehavior
 
 # ── Configuration ─────────────────────────────────────────────────
 sns.set_theme(style="whitegrid", context="paper", font_scale=1.2)
+PALETTE = sns.color_palette("muted")
 
-RESULTS_DIR = Path(__file__).parent / "results"
-
+RESULTS_DIR = _SCRIPT_DIR / "results"
 N_PEOPLE = 5000
-N_RUNS = 50
 DURATION = 180
-SCREENING_CAPACITY = 20  # per provider per day
-PROVIDER_DENSITIES = [0, 1, 5, 10, 20, 50]  # per 1000 population
-
-# Outreach efficacy figure: subset of densities × receptivity levels
-OUTREACH_DENSITIES = [0, 1, 5]  # per 1000 population
-OUTREACH_RECEPTIVITIES = [0.10, 0.40]
-
-# RuleBasedBehavior defaults for all persons
-BEHAVIOR_DEFAULTS = dict(
-    disclosure_prob=0.5,
-    receptivity=0.6,
-    base_isolation_prob=0.05,
-    advised_isolation_prob=0.4,
-    base_care_prob=0.0,
-    advised_care_prob=0.5,
-)
-
-# Epidemic die-out threshold
+SCREENING_CAPACITY = 20
+PROVIDER_DENSITIES = [0, 1, 5, 10, 20, 50]  # per 1000 pop
+N_RUNS = 30
 EPIDEMIC_THRESHOLD_PCT = 5.0
 
 
@@ -68,218 +57,132 @@ def ensure_results_dir():
     RESULTS_DIR.mkdir(exist_ok=True)
 
 
-def _n_providers(density_per_1000: float) -> int:
-    """Convert density per 1000 to absolute provider count."""
+def _n_providers(density_per_1000):
     return int(N_PEOPLE * density_per_1000 / 1000)
 
 
-def _make_behavior_factory(**overrides):
-    """Create a behavior factory with optional parameter overrides."""
-    kwargs = {**BEHAVIOR_DEFAULTS, **overrides}
-    def factory(pid: int) -> RuleBasedBehavior:
-        return RuleBasedBehavior(**kwargs)
-    return factory
+# ── Run single CityDES with provider tracking ────────────────────
 
-
-# ── Data Collection ───────────────────────────────────────────────
-
-def _extract_daily_I(result: ProviderResult) -> np.ndarray:
-    """Extract daily infectious count from snapshots."""
-    counts = []
-    for snap in result.sim_result.daily_snapshots:
-        sc = snap["state_counts"]
-        counts.append(sc.get("infectious", 0) + sc.get("symptomatic", 0))
-    return np.array(counts, dtype=float)
-
-
-def _extract_daily_S(result: ProviderResult) -> np.ndarray:
-    """Extract daily susceptible count from snapshots."""
-    return np.array(
-        [snap["state_counts"].get("susceptible", 0)
-         for snap in result.sim_result.daily_snapshots],
-        dtype=float,
+def run_single(
+    seed, n_providers=0, screening_capacity=SCREENING_CAPACITY,
+    severe_fraction=0.0, base_isolation_prob=0.05,
+    advised_isolation_prob=0.20, disclosure_prob=0.5,
+    receptivity=0.6,
+):
+    """Run a single CityDES simulation with full tracking."""
+    city = CityDES(
+        n_people=N_PEOPLE,
+        scenario=COVID_LIKE,
+        seed_infected=3,
+        random_seed=seed,
+        avg_contacts=10,
+        rewire_prob=0.4,
+        daily_contact_rate=0.5,
+        p_random=0.15,
+        n_providers=n_providers,
+        screening_capacity=screening_capacity,
+        disclosure_prob=disclosure_prob,
+        receptivity=receptivity,
+        base_isolation_prob=base_isolation_prob,
+        advised_isolation_prob=advised_isolation_prob,
+        advice_decay_prob=0.05,
+        severe_fraction=severe_fraction,
+        gamma_shape=6.25,
     )
 
+    n_days = DURATION + 1
+    S = np.zeros(n_days)
+    I = np.zeros(n_days)
+    R = np.zeros(n_days)
+    D = np.zeros(n_days)
+    obs_I = np.zeros(n_days)
+    obs_R = np.zeros(n_days)
+    obs_D = np.zeros(n_days)
+    total_detected = np.zeros(n_days)
+    daily_screened = np.zeros(n_days)
+    daily_detected = np.zeros(n_days)
 
-def _extract_surveillance(result: ProviderResult) -> tuple[np.ndarray, np.ndarray]:
-    """Extract daily true_active and detected_active from surveillance."""
-    true_active = np.array(
-        [s["true_active"] for s in result.surveillance], dtype=float,
-    )
-    detected_active = np.array(
-        [s["detected_active"] for s in result.surveillance], dtype=float,
-    )
-    return true_active, detected_active
+    S[0], I[0], R[0], D[0] = city.S, city.I, city.R, city.D
+    obs_I[0] = city.observed_I
+
+    for day in range(1, n_days):
+        city.step(until=day)
+
+        if n_providers > 0:
+            stats = city.run_provider_screening()
+            daily_screened[day] = stats["screened"]
+            daily_detected[day] = stats["detected"]
+
+        S[day] = city.S
+        I[day] = city.I
+        R[day] = city.R
+        D[day] = city.D
+        obs_I[day] = city.observed_I
+        obs_R[day] = city.observed_R
+        obs_D[day] = city.observed_D
+        total_detected[day] = city.total_detected
+
+    t = np.arange(0, n_days, dtype=float)
+    return {
+        "t": t, "S": S, "I": I, "R": R, "D": D,
+        "obs_I": obs_I, "obs_R": obs_R, "obs_D": obs_D,
+        "total_detected": total_detected,
+        "daily_screened": daily_screened,
+        "daily_detected": daily_detected,
+    }
 
 
-def collect_runs(
-    density: float,
-    n_runs: int,
-    behavior_overrides: dict | None = None,
-    seed_base: int = 3000,
-    label: str = "",
-) -> list[ProviderResult]:
-    """Run n_runs simulations at given provider density."""
-    n_prov = _n_providers(density)
-    factory = _make_behavior_factory(**(behavior_overrides or {}))
-    desc = label or f"density={density}/1000 ({n_prov} providers)"
-    results = []
+def run_mc(n_runs, label, **kwargs):
+    """Run Monte Carlo, return stacked arrays."""
+    n_days = DURATION + 1
+    keys = ["S", "I", "R", "D", "obs_I", "obs_R", "obs_D",
+            "total_detected", "daily_screened", "daily_detected"]
+    stacked = {k: np.zeros((n_runs, n_days)) for k in keys}
+
     for i in range(n_runs):
+        seed = 1000 + i * 137
+        result = run_single(seed=seed, **kwargs)
+        for k in keys:
+            stacked[k][i] = result[k]
         if (i + 1) % 10 == 0 or i == 0:
-            print(f"      {desc}: run {i+1}/{n_runs}...", flush=True)
-        config = COVID_LIKE.to_des_config(
-            population=N_PEOPLE,
-            duration_days=DURATION,
-            random_seed=seed_base + int(density * 1000) + i,
-        )
-        result = run_provider_simulation(
-            config,
-            n_providers=n_prov,
-            screening_capacity=SCREENING_CAPACITY,
-            behavior_factory=factory,
-        )
-        results.append(result)
-    return results
+            print(f"    {label}: run {i+1}/{n_runs}", flush=True)
+
+    stacked["t"] = np.arange(0, n_days, dtype=float)
+    stacked["n_runs"] = n_runs
+    return stacked
 
 
-# ── Metric Computation ────────────────────────────────────────────
+# ── Figure 1: Surveillance Accuracy ──────────────────────────────
 
-def compute_surveillance_metrics(results: list[ProviderResult]) -> dict:
-    """
-    Compute surveillance accuracy metrics across MC runs.
+def plot_surveillance_accuracy():
+    """True active vs detected active at each provider density."""
+    print(f"\n{'='*60}")
+    print(f"Figure 1: Surveillance Accuracy")
+    print(f"{'='*60}")
 
-    Returns dict with mean ± std for:
-        - mean_abs_error: average daily |detected - true| / N
-        - detection_delay: days until detected > 50% of true (or NaN)
-        - cumulative_rate: % of total infections ever detected
-    """
-    errors = []
-    delays = []
-    cum_rates = []
-
-    for r in results:
-        if not r.surveillance:
-            errors.append(1.0)
-            delays.append(float(DURATION))
-            cum_rates.append(0.0)
-            continue
-
-        # Mean absolute estimation error for this run
-        daily_errors = [s["estimation_error"] for s in r.surveillance]
-        errors.append(np.mean(daily_errors) * 100)  # as % of N
-
-        # Detection delay: first day where detected_active > 0.5 * true_active
-        delay_found = False
-        for s in r.surveillance:
-            if s["true_active"] > 0 and s["detected_active"] >= 0.5 * s["true_active"]:
-                delays.append(s["day"])
-                delay_found = True
-                break
-        if not delay_found:
-            delays.append(float(DURATION))
-
-        # Cumulative detection rate
-        total_inf = r.sim_result.total_infections
-        if total_inf > 0:
-            cum_rates.append(r.total_detected / total_inf * 100)
-        else:
-            cum_rates.append(0.0)
-
-    return {
-        "error_mean": np.mean(errors),
-        "error_std": np.std(errors),
-        "delay_mean": np.mean(delays),
-        "delay_std": np.std(delays),
-        "cum_rate_mean": np.mean(cum_rates),
-        "cum_rate_std": np.std(cum_rates),
-    }
-
-
-def compute_epidemic_metrics(results: list[ProviderResult]) -> dict:
-    """Compute epidemic outcome metrics across MC runs."""
-    peak_I_vals = []
-    peak_day_vals = []
-    attack_vals = []
-
-    for r in results:
-        I_arr = _extract_daily_I(r)
-        S_arr = _extract_daily_S(r)
-        peak_I_vals.append(I_arr.max() / N_PEOPLE * 100)
-        peak_day_vals.append(I_arr.argmax() + 1)  # +1 for 1-indexed days
-        attack = (N_PEOPLE - S_arr[-1]) / N_PEOPLE * 100
-        attack_vals.append(attack)
-
-    peak_I = np.array(peak_I_vals)
-    peak_day = np.array(peak_day_vals)
-    attack = np.array(attack_vals)
-
-    # Filter peak day to established epidemics
-    established = attack > EPIDEMIC_THRESHOLD_PCT
-    n_est = int(established.sum())
-
-    return {
-        "peak_I_mean": peak_I.mean(),
-        "peak_I_std": peak_I.std(),
-        "peak_day_mean": peak_day[established].mean() if n_est > 0 else 0.0,
-        "peak_day_std": peak_day[established].std() if n_est > 0 else 0.0,
-        "attack_mean": attack.mean(),
-        "attack_std": attack.std(),
-        "n_established": n_est,
-        "n_runs": len(results),
-    }
-
-
-# ── Figure 1: Surveillance Accuracy (Observe Only) ──────────────
-
-def plot_surveillance_accuracy(all_results: dict[float, list[ProviderResult]]):
-    """
-    2×3 grid: true vs detected active cases over time per density.
-    Observe-only mode: receptivity=0, providers detect but don't change behavior.
-    """
     fig, axes = plt.subplots(2, 3, figsize=(16, 9), sharex=True, sharey=True)
-    axes_flat = axes.flatten()
-
     fig.suptitle(
         "Surveillance Accuracy: True vs Detected Active Cases\n"
-        f"Observe only (receptivity = 0) — N={N_PEOPLE:,}, {N_RUNS} MC runs, "
-        f"screening={SCREENING_CAPACITY}/provider/day",
-        fontsize=14, fontweight="bold",
+        f"N={N_PEOPLE:,}, {N_RUNS} MC runs, 70/30 targeted screening",
+        fontsize=13, fontweight="bold",
     )
 
+    all_mc = {}
     for idx, density in enumerate(PROVIDER_DENSITIES):
-        ax = axes_flat[idx]
-        results = all_results[density]
+        n_prov = _n_providers(density)
+        print(f"\n  density={density}/1000 ({n_prov} providers):")
+        mc = run_mc(N_RUNS, f"d={density}", n_providers=n_prov)
+        all_mc[density] = mc
 
-        # Collect surveillance time series across runs
-        true_arrays = []
-        detected_arrays = []
-        for r in results:
-            if r.surveillance:
-                true_a, det_a = _extract_surveillance(r)
-                true_arrays.append(true_a)
-                detected_arrays.append(det_a)
+        ax = axes.flat[idx]
+        t = mc["t"]
 
-        if not true_arrays:
-            ax.set_title(f"{density}/1000 — no surveillance data")
-            continue
+        true_mean = mc["I"].mean(axis=0)
+        true_std = mc["I"].std(axis=0)
+        det_mean = mc["obs_I"].mean(axis=0)
+        det_std = mc["obs_I"].std(axis=0)
 
-        # Pad to same length
-        max_len = max(len(a) for a in true_arrays)
-        true_mat = np.zeros((len(true_arrays), max_len))
-        det_mat = np.zeros((len(detected_arrays), max_len))
-        for i, (ta, da) in enumerate(zip(true_arrays, detected_arrays)):
-            true_mat[i, :len(ta)] = ta
-            det_mat[i, :len(da)] = da
-
-        t = np.arange(1, max_len + 1)
-
-        true_mean = true_mat.mean(axis=0)
-        true_std = true_mat.std(axis=0)
-        det_mean = det_mat.mean(axis=0)
-        det_std = det_mat.std(axis=0)
-
-        # Plot
-        ax.plot(t, true_mean, color="steelblue", linewidth=1.8, label="True active")
+        ax.plot(t, true_mean, color="steelblue", linewidth=1.8, label="True active (I)")
         ax.fill_between(t, true_mean - true_std, true_mean + true_std,
                          color="steelblue", alpha=0.15)
         ax.plot(t, det_mean, color="orangered", linewidth=1.8,
@@ -287,214 +190,83 @@ def plot_surveillance_accuracy(all_results: dict[float, list[ProviderResult]]):
         ax.fill_between(t, det_mean - det_std, det_mean + det_std,
                          color="orangered", alpha=0.15)
 
-        # Compute mean error for title
-        surv_m = compute_surveillance_metrics(results)
-        n_prov = _n_providers(density)
-        ax.set_title(
-            f"{density}/1000 ({n_prov} providers)\n"
-            f"Mean error: {surv_m['error_mean']:.2f}% of N",
-            fontsize=10,
-        )
-
+        # Mean detection gap
+        gap = np.mean(np.abs(true_mean - det_mean))
+        ax.set_title(f"{density}/1000 ({n_prov} prov)\ngap={gap:.0f} agents", fontsize=10)
         ax.legend(fontsize=8, loc="upper right")
         if idx >= 3:
             ax.set_xlabel("Day")
         if idx % 3 == 0:
             ax.set_ylabel("Active cases")
 
-    plt.tight_layout(rect=[0, 0, 1, 0.90])
+    plt.tight_layout(rect=[0, 0, 1, 0.88])
     fname = RESULTS_DIR / "01_surveillance_accuracy.png"
     fig.savefig(fname, dpi=150, bbox_inches="tight")
     print(f"\n  Saved: {fname}")
     plt.close(fig)
 
-
-# ── Figure 2: Outreach Efficacy ─────────────────────────────────
-
-def plot_outreach_efficacy(
-    outreach_data: dict[tuple[float, float], list[ProviderResult]],
-):
-    """
-    2×3 grid: true vs detected active cases.
-    Top row: receptivity=10%, Bottom row: receptivity=40%.
-    Columns: density 0, 1, 5 per 1000.
-    """
-    fig, axes = plt.subplots(2, 3, figsize=(16, 9), sharex=True, sharey=True)
-
-    fig.suptitle(
-        "Outreach Efficacy: Impact of Provider Advice Receptivity\n"
-        f"N={N_PEOPLE:,}, {N_RUNS} MC runs, screening={SCREENING_CAPACITY}/provider/day",
-        fontsize=14, fontweight="bold",
-    )
-
-    for row_idx, recep in enumerate(OUTREACH_RECEPTIVITIES):
-        for col_idx, density in enumerate(OUTREACH_DENSITIES):
-            ax = axes[row_idx, col_idx]
-            results = outreach_data[(density, recep)]
-
-            # Collect surveillance time series
-            true_arrays = []
-            detected_arrays = []
-            for r in results:
-                if r.surveillance:
-                    true_a, det_a = _extract_surveillance(r)
-                    true_arrays.append(true_a)
-                    detected_arrays.append(det_a)
-
-            if not true_arrays:
-                ax.set_title(f"{density}/1000, recep={recep:.0%} — no data")
-                continue
-
-            max_len = max(len(a) for a in true_arrays)
-            true_mat = np.zeros((len(true_arrays), max_len))
-            det_mat = np.zeros((len(detected_arrays), max_len))
-            for i, (ta, da) in enumerate(zip(true_arrays, detected_arrays)):
-                true_mat[i, :len(ta)] = ta
-                det_mat[i, :len(da)] = da
-
-            t = np.arange(1, max_len + 1)
-            true_mean = true_mat.mean(axis=0)
-            true_std = true_mat.std(axis=0)
-            det_mean = det_mat.mean(axis=0)
-            det_std = det_mat.std(axis=0)
-
-            ax.plot(t, true_mean, color="steelblue", linewidth=1.8,
-                    label="True active")
-            ax.fill_between(t, true_mean - true_std, true_mean + true_std,
-                             color="steelblue", alpha=0.15)
-            ax.plot(t, det_mean, color="orangered", linewidth=1.8,
-                    linestyle="--", label="Detected active")
-            ax.fill_between(t, det_mean - det_std, det_mean + det_std,
-                             color="orangered", alpha=0.15)
-
-            n_prov = _n_providers(density)
-            surv_m = compute_surveillance_metrics(results)
-            ax.set_title(
-                f"{density}/1000 ({n_prov} prov), receptivity={recep:.0%}\n"
-                f"Mean error: {surv_m['error_mean']:.2f}% of N",
-                fontsize=10,
-            )
-
-            ax.legend(fontsize=8, loc="upper right")
-            if row_idx == 1:
-                ax.set_xlabel("Day")
-            if col_idx == 0:
-                ax.set_ylabel("Active cases")
-
-    plt.tight_layout(rect=[0, 0, 1, 0.90])
-    fname = RESULTS_DIR / "02_outreach_efficacy.png"
-    fig.savefig(fname, dpi=150, bbox_inches="tight")
-    print(f"  Saved: {fname}")
-    plt.close(fig)
+    return all_mc
 
 
-# ── Figure 3: Surveillance Metrics ───────────────────────────────
+# ── Figure 2: Epidemic Outcomes vs Density ───────────────────────
 
-def plot_surveillance_metrics(all_results: dict[float, list[ProviderResult]]):
-    """
-    3-panel bar chart: estimation error, detection delay, cumulative rate.
-    """
-    metrics_by_density = {}
-    for density in PROVIDER_DENSITIES:
-        metrics_by_density[density] = compute_surveillance_metrics(all_results[density])
+def plot_epidemic_outcomes(all_mc):
+    """Peak I, peak day, attack rate, final deaths by provider density."""
+    print(f"\n{'='*60}")
+    print(f"Figure 2: Epidemic Outcomes vs Provider Density")
+    print(f"{'='*60}")
 
-    conditions = [f"{d}/1000" for d in PROVIDER_DENSITIES]
-    colors = sns.color_palette("viridis", n_colors=len(PROVIDER_DENSITIES))
+    densities = list(all_mc.keys())
+    conditions = [f"{d}/1000" for d in densities]
+    colors = sns.color_palette("viridis", n_colors=len(densities))
+
+    # Compute metrics
+    peak_I_m, peak_I_s = [], []
+    attack_m, attack_s = [], []
+    peak_day_m, peak_day_s = [], []
+
+    for d in densities:
+        mc = all_mc[d]
+        peaks = mc["I"].max(axis=1) / N_PEOPLE * 100
+        attacks = (N_PEOPLE - mc["S"][:, -1]) / N_PEOPLE * 100
+        peak_days = np.array([mc["t"][run.argmax()] for run in mc["I"]])
+
+        established = attacks > EPIDEMIC_THRESHOLD_PCT
+        n_est = established.sum()
+
+        peak_I_m.append(peaks.mean())
+        peak_I_s.append(peaks.std())
+        attack_m.append(attacks.mean())
+        attack_s.append(attacks.std())
+        if n_est > 0:
+            peak_day_m.append(peak_days[established].mean())
+            peak_day_s.append(peak_days[established].std())
+        else:
+            peak_day_m.append(0)
+            peak_day_s.append(0)
 
     metric_groups = [
-        ("Mean Estimation Error",
-         "Error (% of population)",
-         [metrics_by_density[d]["error_mean"] for d in PROVIDER_DENSITIES],
-         [metrics_by_density[d]["error_std"] for d in PROVIDER_DENSITIES]),
-        ("Detection Delay",
-         "Days to 50% detected",
-         [metrics_by_density[d]["delay_mean"] for d in PROVIDER_DENSITIES],
-         [metrics_by_density[d]["delay_std"] for d in PROVIDER_DENSITIES]),
-        ("Cumulative Detection Rate",
-         "Detection rate (%)",
-         [metrics_by_density[d]["cum_rate_mean"] for d in PROVIDER_DENSITIES],
-         [metrics_by_density[d]["cum_rate_std"] for d in PROVIDER_DENSITIES]),
-    ]
-
-    fig, axes = plt.subplots(1, 3, figsize=(16, 6))
-    fig.suptitle(
-        f"Surveillance Performance vs Provider Density\n"
-        f"N={N_PEOPLE:,}, {N_RUNS} MC runs, {SCREENING_CAPACITY}/provider/day",
-        fontsize=13, fontweight="bold",
-    )
-
-    for ax, (label, ylabel, means, stds) in zip(axes, metric_groups):
-        x = range(len(conditions))
-        bars = ax.bar(x, means, color=colors, edgecolor="black",
-                      linewidth=0.5, width=0.7)
-        ax.errorbar(x, means, yerr=stds, fmt="none", color="black",
-                    capsize=5, capthick=1.0, linewidth=1.0)
-        ax.set_xticks(list(x))
-        ax.set_xticklabels(conditions, fontsize=9)
-        ax.set_xlabel("Provider density (per 1000)")
-        ax.set_ylabel(ylabel, fontsize=10)
-        ax.set_title(label, fontsize=11)
-
-        for bar, val in zip(bars, means):
-            ax.text(bar.get_x() + bar.get_width() / 2,
-                    bar.get_height() + 0.5,
-                    f"{val:.1f}", ha="center", va="bottom",
-                    fontsize=8, fontweight="bold")
-
-    plt.tight_layout(rect=[0, 0, 1, 0.88])
-    fname = RESULTS_DIR / "03_surveillance_metrics.png"
-    fig.savefig(fname, dpi=150, bbox_inches="tight")
-    print(f"  Saved: {fname}")
-    plt.close(fig)
-
-
-# ── Figure 4: Epidemic Outcomes ───────────────────────────────────
-
-def plot_epidemic_outcomes(all_results: dict[float, list[ProviderResult]]):
-    """
-    3-panel bar chart: Peak I%, Peak Day, Attack Rate by density.
-    """
-    epi_metrics = {}
-    for density in PROVIDER_DENSITIES:
-        epi_metrics[density] = compute_epidemic_metrics(all_results[density])
-
-    conditions = [f"{d}/1000" for d in PROVIDER_DENSITIES]
-    colors = sns.color_palette("viridis", n_colors=len(PROVIDER_DENSITIES))
-
-    metric_groups = [
-        ("Peak Infected",
-         "Infected (% of population)",
-         [epi_metrics[d]["peak_I_mean"] for d in PROVIDER_DENSITIES],
-         [epi_metrics[d]["peak_I_std"] for d in PROVIDER_DENSITIES]),
-        ("Peak Day (established runs)",
-         "Day",
-         [epi_metrics[d]["peak_day_mean"] for d in PROVIDER_DENSITIES],
-         [epi_metrics[d]["peak_day_std"] for d in PROVIDER_DENSITIES]),
-        ("Attack Rate",
-         "Attack rate (% of population)",
-         [epi_metrics[d]["attack_mean"] for d in PROVIDER_DENSITIES],
-         [epi_metrics[d]["attack_std"] for d in PROVIDER_DENSITIES]),
+        ("Peak Infected (%)", peak_I_m, peak_I_s),
+        ("Peak Day (est. runs)", peak_day_m, peak_day_s),
+        ("Attack Rate (%)", attack_m, attack_s),
     ]
 
     fig, axes = plt.subplots(1, 3, figsize=(16, 6))
     fig.suptitle(
         f"Epidemic Outcomes vs Provider Density\n"
-        f"N={N_PEOPLE:,}, {N_RUNS} MC runs, "
-        f"RuleBasedBehavior(iso_base={BEHAVIOR_DEFAULTS['base_isolation_prob']:.0%}, "
-        f"iso_advised={BEHAVIOR_DEFAULTS['advised_isolation_prob']:.0%})",
+        f"N={N_PEOPLE:,}, {N_RUNS} runs, base_iso=5%, advised_iso=20%",
         fontsize=13, fontweight="bold",
     )
 
-    for ax, (label, ylabel, means, stds) in zip(axes, metric_groups):
+    for ax, (label, means, stds) in zip(axes, metric_groups):
         x = range(len(conditions))
         bars = ax.bar(x, means, color=colors, edgecolor="black",
                       linewidth=0.5, width=0.7)
         ax.errorbar(x, means, yerr=stds, fmt="none", color="black",
-                    capsize=5, capthick=1.0, linewidth=1.0)
+                    capsize=5, capthick=1.0)
         ax.set_xticks(list(x))
         ax.set_xticklabels(conditions, fontsize=9)
         ax.set_xlabel("Provider density (per 1000)")
-        ax.set_ylabel(ylabel, fontsize=10)
         ax.set_title(label, fontsize=11)
 
         for bar, val in zip(bars, means):
@@ -503,104 +275,169 @@ def plot_epidemic_outcomes(all_results: dict[float, list[ProviderResult]]):
                     f"{val:.1f}", ha="center", va="bottom",
                     fontsize=8, fontweight="bold")
 
-    # Annotate n_established on peak day
-    ax_day = axes[1]
-    for i, density in enumerate(PROVIDER_DENSITIES):
-        m = epi_metrics[density]
-        ax_day.text(i, -0.06 * ax_day.get_ylim()[1],
-                    f"{m['n_established']}/{m['n_runs']}\nest.",
-                    ha="center", va="top", fontsize=7, color="gray")
+    plt.tight_layout(rect=[0, 0, 1, 0.86])
+    fname = RESULTS_DIR / "02_epidemic_outcomes.png"
+    fig.savefig(fname, dpi=150, bbox_inches="tight")
+    print(f"  Saved: {fname}")
+    plt.close(fig)
 
-    plt.tight_layout(rect=[0, 0.02, 1, 0.86])
-    fname = RESULTS_DIR / "04_epidemic_outcomes.png"
+    # Print summary table
+    print(f"\n  {'Density':<10} {'Providers':>10} {'PeakI%':>8} {'std':>6} "
+          f"{'PkDay':>7} {'Attack%':>8} {'std':>6}")
+    print(f"  {'─'*55}")
+    for i, d in enumerate(densities):
+        print(f"  {d:<10} {_n_providers(d):>10} {peak_I_m[i]:>8.1f} {peak_I_s[i]:>6.1f} "
+              f"{peak_day_m[i]:>7.0f} {attack_m[i]:>8.1f} {attack_s[i]:>6.1f}")
+
+
+# ── Figure 3: Observed vs Actual Epidemic ────────────────────────
+
+def plot_observed_vs_actual():
+    """
+    At moderate provider density (10/1000), show observed vs actual
+    epidemic curves for all compartments.
+    """
+    print(f"\n{'='*60}")
+    print(f"Figure 3: Observed vs Actual Epidemic (10/1000 density)")
+    print(f"{'='*60}")
+
+    density = 10
+    n_prov = _n_providers(density)
+    mc = run_mc(N_RUNS, f"obs_vs_actual", n_providers=n_prov, severe_fraction=0.15)
+
+    fig, axes = plt.subplots(1, 3, figsize=(16, 5))
+    fig.suptitle(
+        f"Observed vs Actual Epidemic — {density}/1000 ({n_prov} providers)\n"
+        f"N={N_PEOPLE:,}, {N_RUNS} MC runs",
+        fontsize=13, fontweight="bold",
+    )
+
+    t = mc["t"]
+    panels = [
+        ("Infectious", mc["I"], mc["obs_I"], "steelblue", "orangered"),
+        ("Recovered", mc["R"], mc["obs_R"], "seagreen", "orange"),
+        ("Dead", mc["D"], mc["obs_D"], "mediumpurple", "crimson"),
+    ]
+
+    for ax, (label, actual, observed, c_act, c_obs) in zip(axes, panels):
+        act_mean = actual.mean(axis=0)
+        obs_mean = observed.mean(axis=0)
+        act_std = actual.std(axis=0)
+        obs_std = observed.std(axis=0)
+
+        ax.plot(t, act_mean, color=c_act, linewidth=1.8, label=f"Actual {label}")
+        ax.fill_between(t, act_mean - act_std, act_mean + act_std,
+                         color=c_act, alpha=0.15)
+        ax.plot(t, obs_mean, color=c_obs, linewidth=1.8, linestyle="--",
+                label=f"Observed {label}")
+        ax.fill_between(t, obs_mean - obs_std, obs_mean + obs_std,
+                         color=c_obs, alpha=0.15)
+
+        ax.set_xlabel("Day")
+        ax.set_ylabel("Count")
+        ax.set_title(label, fontsize=11)
+        ax.legend(fontsize=9, loc="best")
+
+    plt.tight_layout(rect=[0, 0, 1, 0.86])
+    fname = RESULTS_DIR / "03_observed_vs_actual.png"
     fig.savefig(fname, dpi=150, bbox_inches="tight")
     print(f"  Saved: {fname}")
     plt.close(fig)
 
 
-# ── Print Summary ─────────────────────────────────────────────────
+# ── Figure 4: Full 7-state with severity ─────────────────────────
 
-def print_summary(all_results: dict[float, list[ProviderResult]]):
-    """Print tabular summary of all conditions."""
-    print(f"\n  {'Density':<10} {'Providers':>10} {'Screen/d':>10} "
-          f"{'EstErr%':>8} {'Delay_d':>8} {'DetRate%':>9} "
-          f"{'PeakI%':>8} {'PkDay':>7} {'Attack%':>9}")
-    print(f"  {'─' * 90}")
+def plot_severity_with_providers():
+    """
+    Show provider impact with severity enabled (severe_fraction=0.15).
+    Compare 0 vs 10 vs 25 providers: deaths should decrease with more providers
+    because more patients get detected and transition to I_receiving_care.
+    """
+    print(f"\n{'='*60}")
+    print(f"Figure 4: Severity + Providers (7-state model)")
+    print(f"{'='*60}")
 
-    for density in PROVIDER_DENSITIES:
+    densities_test = [0, 5, 10, 50]
+    n_runs = 20
+
+    fig, axes = plt.subplots(1, len(densities_test), figsize=(5 * len(densities_test), 5),
+                             sharey=True)
+    fig.suptitle(
+        f"Deaths vs Provider Density (severe_fraction=0.15)\n"
+        f"N={N_PEOPLE:,}, {n_runs} runs each",
+        fontsize=13, fontweight="bold",
+    )
+
+    death_means = []
+    death_stds = []
+
+    for ax, density in zip(axes, densities_test):
         n_prov = _n_providers(density)
-        surv = compute_surveillance_metrics(all_results[density])
-        epi = compute_epidemic_metrics(all_results[density])
-        print(
-            f"  {density:<10} {n_prov:>10} {n_prov * SCREENING_CAPACITY:>10} "
-            f"{surv['error_mean']:>8.2f} {surv['delay_mean']:>8.1f} "
-            f"{surv['cum_rate_mean']:>9.1f} "
-            f"{epi['peak_I_mean']:>8.1f} {epi['peak_day_mean']:>7.0f} "
-            f"{epi['attack_mean']:>9.1f}"
-        )
+        print(f"\n  density={density}/1000 ({n_prov} providers):")
+        mc = run_mc(n_runs, f"sev_d={density}",
+                    n_providers=n_prov,
+                    severe_fraction=0.15)
+
+        t = mc["t"]
+        D_mean = mc["D"].mean(axis=0)
+        D_std = mc["D"].std(axis=0)
+        I_mean = mc["I"].mean(axis=0)
+
+        ax.plot(t, D_mean, color="mediumpurple", linewidth=1.8, label="Deaths (mean)")
+        ax.fill_between(t, D_mean - D_std, D_mean + D_std,
+                         color="mediumpurple", alpha=0.15)
+        ax.plot(t, I_mean, color="orangered", linewidth=1.2, linestyle="--",
+                label="Infectious (mean)", alpha=0.7)
+
+        final_D = mc["D"][:, -1]
+        death_means.append(final_D.mean())
+        death_stds.append(final_D.std())
+
+        ax.set_title(f"{density}/1000 ({n_prov} prov)\nDeaths: {final_D.mean():.0f}+/-{final_D.std():.0f}",
+                      fontsize=10)
+        ax.set_xlabel("Day")
+        if ax == axes[0]:
+            ax.set_ylabel("Count")
+        ax.legend(fontsize=8, loc="best")
+
+    plt.tight_layout(rect=[0, 0, 1, 0.86])
+    fname = RESULTS_DIR / "04_severity_with_providers.png"
+    fig.savefig(fname, dpi=150, bbox_inches="tight")
+    print(f"\n  Saved: {fname}")
+    plt.close(fig)
+
+    # Print death summary
+    print(f"\n  Provider density vs Final Deaths:")
+    for d, dm, ds in zip(densities_test, death_means, death_stds):
+        print(f"    {d}/1000: {dm:.0f} +/- {ds:.0f} deaths")
 
 
-# ── Main ──────────────────────────────────────────────────────────
+# ── Main ─────────────────────────────────────────────────────────
 
 def main():
     ensure_results_dir()
 
-    print(f"\n{'='*60}")
-    print(f"Healthcare Provider Impact Validation")
-    print(f"  N={N_PEOPLE:,}, {N_RUNS} MC runs per condition, {DURATION} days")
-    print(f"  Provider densities: {PROVIDER_DENSITIES} per 1000")
-    print(f"  Screening capacity: {SCREENING_CAPACITY}/provider/day")
-    print(f"  Behavior: {BEHAVIOR_DEFAULTS}")
-    print(f"{'='*60}")
+    print(f"{'='*62}")
+    print(f"  Provider Screening Validation")
+    print(f"  Engine: simulation_app/backend/city_des_extended.py")
+    print(f"  70/30 targeted screening, {N_RUNS} MC runs")
+    print(f"{'='*62}")
 
-    # ── Phase 1: Observe-only sweep (receptivity=0) for Figure 1 ──
-    print(f"\n  Phase 1: Observe-only sweep (receptivity=0)...")
-    observe_results: dict[float, list[ProviderResult]] = {}
-    for density in PROVIDER_DENSITIES:
-        print(f"\n  [observe] density={density}/1000...")
-        observe_results[density] = collect_runs(
-            density, N_RUNS,
-            behavior_overrides={"receptivity": 0.0},
-            seed_base=4000,
-            label=f"observe density={density}/1000",
-        )
+    # Figure 1: Surveillance accuracy
+    all_mc = plot_surveillance_accuracy()
 
-    # ── Phase 2: Outreach sweep (receptivity=10%/40%) for Figure 2 ──
-    print(f"\n  Phase 2: Outreach efficacy sweep...")
-    outreach_results: dict[tuple[float, float], list[ProviderResult]] = {}
-    for recep in OUTREACH_RECEPTIVITIES:
-        for density in OUTREACH_DENSITIES:
-            print(f"\n  [outreach] density={density}/1000, recep={recep:.0%}...")
-            outreach_results[(density, recep)] = collect_runs(
-                density, N_RUNS,
-                behavior_overrides={"receptivity": recep},
-                seed_base=5000 + int(recep * 100),
-                label=f"outreach d={density}/1000 r={recep:.0%}",
-            )
+    # Figure 2: Epidemic outcomes vs density
+    plot_epidemic_outcomes(all_mc)
 
-    # ── Phase 3: Full sweep (default behavior) for Figures 3 & 4 ──
-    print(f"\n  Phase 3: Full sweep (default behavior)...")
-    full_results: dict[float, list[ProviderResult]] = {}
-    for density in PROVIDER_DENSITIES:
-        print(f"\n  [full] density={density}/1000...")
-        full_results[density] = collect_runs(
-            density, N_RUNS,
-            seed_base=3000,
-        )
+    # Figure 3: Observed vs actual
+    plot_observed_vs_actual()
 
-    # ── Generate figures ──
-    print(f"\n  Generating figures...")
-    plot_surveillance_accuracy(observe_results)
-    plot_outreach_efficacy(outreach_results)
-    plot_surveillance_metrics(full_results)
-    plot_epidemic_outcomes(full_results)
+    # Figure 4: Severity + providers
+    plot_severity_with_providers()
 
-    # Summary table (from full sweep)
-    print_summary(full_results)
-
-    print(f"\n{'='*60}")
+    print(f"\n{'='*62}")
     print(f"All plots saved to: {RESULTS_DIR.resolve()}")
-    print(f"{'='*60}")
+    print(f"{'='*62}")
 
 
 if __name__ == "__main__":

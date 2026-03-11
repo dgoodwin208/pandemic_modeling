@@ -16,7 +16,6 @@ from typing import Any
 
 @dataclass(slots=True)
 class SimulationEvent:
-    """A single logged event from the simulation."""
     day: int
     city: str
     category: str   # shipment, screening, vaccination, travel, redistribution, deployment, admission, stockout
@@ -47,7 +46,6 @@ class EventLog:
         reason: str = "",
         **metadata: Any,
     ) -> None:
-        """Append a new event."""
         self._events.append(SimulationEvent(
             day=day,
             city=city,
@@ -69,7 +67,6 @@ class EventLog:
         city: str | None = None,
         category: str | None = None,
     ) -> list[SimulationEvent]:
-        """Return events for a specific day, optionally filtered."""
         result = [e for e in self._events if e.day == day]
         if city is not None:
             result = [e for e in result if e.city == city]
@@ -82,7 +79,6 @@ class EventLog:
         category: str,
         day_range: tuple[int, int] | None = None,
     ) -> list[SimulationEvent]:
-        """Return all events of a given category, optionally within a day range."""
         result = [e for e in self._events if e.category == category]
         if day_range is not None:
             lo, hi = day_range
@@ -90,7 +86,6 @@ class EventLog:
         return result
 
     def first_event(self, category: str, resource: str = "") -> SimulationEvent | None:
-        """Return the first event matching category (and optionally resource)."""
         for e in self._events:
             if e.category == category:
                 if resource and e.resource != resource:
@@ -99,7 +94,6 @@ class EventLog:
         return None
 
     def summary(self) -> dict[str, Any]:
-        """Return a summary dict of the event log."""
         if not self._events:
             return {"total_events": 0, "by_category": {}}
 
@@ -149,7 +143,6 @@ class EventLog:
         return notable
 
     def to_dicts(self) -> list[dict[str, Any]]:
-        """Serialize all events to a list of dicts (for JSON API)."""
         return [
             {
                 "day": e.day,

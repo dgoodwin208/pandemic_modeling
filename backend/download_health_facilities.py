@@ -79,14 +79,12 @@ AFRICAN_COUNTRIES = {
 
 
 def fetch_json(url: str) -> dict[str, Any]:
-    """Fetch JSON from URL with proper headers."""
     req = Request(url, headers={'User-Agent': 'PandemicModeling/1.0'})
     with urlopen(req, timeout=30) as response:
         return json.loads(response.read().decode('utf-8'))
 
 
 def get_hdx_dataset_info(country_slug: str) -> dict[str, Any] | None:
-    """Get dataset info from HDX API for a healthsites dataset."""
     dataset_name = f"{country_slug}-healthsites"
     api_url = f"https://data.humdata.org/api/3/action/package_show?id={dataset_name}"
 
@@ -104,7 +102,6 @@ def get_hdx_dataset_info(country_slug: str) -> dict[str, Any] | None:
 
 
 def download_csv(url: str, output_path: Path) -> bool:
-    """Download CSV file from URL."""
     try:
         req = Request(url, headers={'User-Agent': 'PandemicModeling/1.0'})
         with urlopen(req, timeout=60) as response:
@@ -117,7 +114,6 @@ def download_csv(url: str, output_path: Path) -> bool:
 
 
 def find_csv_resource(dataset: dict) -> tuple[str, str] | None:
-    """Find the main CSV resource (non-HXL version) in a dataset."""
     for resource in dataset.get('resources', []):
         if resource.get('format', '').upper() == 'CSV':
             name = resource.get('name', '').lower()
@@ -134,7 +130,6 @@ def find_csv_resource(dataset: dict) -> tuple[str, str] | None:
 
 
 def download_all_countries(output_dir: Path) -> dict[str, dict]:
-    """Download health facility data for all African countries."""
     output_dir.mkdir(parents=True, exist_ok=True)
 
     results = {}
@@ -146,14 +141,12 @@ def download_all_countries(output_dir: Path) -> dict[str, dict]:
 
         print(f"[{i}/{total}] {country_name} ({iso_code})...")
 
-        # Get dataset info
         dataset = get_hdx_dataset_info(hdx_slug)
         if not dataset:
             print(f"  ⚠ No healthsites dataset found")
             results[iso_code] = {'status': 'not_found', 'facilities': 0}
             continue
 
-        # Find CSV resource
         csv_info = find_csv_resource(dataset)
         if not csv_info:
             print(f"  ⚠ No CSV resource found")
@@ -163,9 +156,7 @@ def download_all_countries(output_dir: Path) -> dict[str, dict]:
         csv_url, resource_name = csv_info
         output_file = output_dir / f"{iso_code.lower()}_healthsites.csv"
 
-        # Download
         if download_csv(csv_url, output_file):
-            # Count rows
             try:
                 with open(output_file, 'r', encoding='utf-8') as f:
                     reader = csv.reader(f)
@@ -203,7 +194,6 @@ def main():
 
     results = download_all_countries(output_dir)
 
-    # Summary
     print()
     print("=" * 60)
     print("DOWNLOAD SUMMARY")
@@ -216,7 +206,6 @@ def main():
     print(f"Total facilities: {total_facilities:,}")
     print()
 
-    # List countries without data
     missing = [f"{AFRICAN_COUNTRIES[iso]['name']} ({iso})"
                for iso, r in results.items() if r['status'] != 'success']
     if missing:
@@ -224,7 +213,6 @@ def main():
         for m in missing:
             print(f"  - {m}")
 
-    # Save metadata
     metadata_file = output_dir / "download_metadata.json"
     with open(metadata_file, 'w', encoding='utf-8') as f:
         json.dump({

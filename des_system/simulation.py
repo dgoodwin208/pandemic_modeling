@@ -56,7 +56,6 @@ class SimulationResult:
     transmission_events: list[dict]
 
     def summary(self) -> str:
-        """Return human-readable summary."""
         return f"""
 ╔══════════════════════════════════════════════════════════════╗
 ║                     SIMULATION RESULTS                        ║
@@ -92,11 +91,9 @@ class PandemicSimulation:
     def __init__(self, config: Optional[SimulationConfig] = None):
         self.config = config or SimulationConfig()
 
-        # Set random seed for reproducibility
         if self.config.random_seed is not None:
             random.seed(self.config.random_seed)
 
-        # Initialize components
         self.env = Environment()
         self.supply_chain = create_supply_chain(self.env, self.config.supply_chain)
         self.network = SocialNetwork(self.config.network)

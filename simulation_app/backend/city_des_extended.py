@@ -209,7 +209,6 @@ class CityDES:
         return max(0.01, self._np_rng.gamma(self._gamma_shape, scale))
 
     def _transition(self, idx: int, from_state: int, to_state: int) -> None:
-        """Move agent idx from from_state to to_state, updating all counters."""
         self._states[idx] = to_state
         self._counts[from_state] -= 1
         self._counts[to_state] += 1
@@ -297,34 +296,28 @@ class CityDES:
 
     @property
     def advised_fraction(self) -> float:
-        """Fraction of population that has accepted provider advice."""
         return self._provider_advised.sum() / self.n_people if self.n_people > 0 else 0.0
 
     # -- OBSERVED state readouts -----------------------------------------------
 
     @property
     def observed_I(self) -> int:
-        """Count of detected-ever agents currently infectious (states 2, 3, or 4)."""
         return self._obs_counts[2] + self._obs_counts[3] + self._obs_counts[4]
 
     @property
     def observed_R(self) -> int:
-        """Count of detected-ever agents currently recovered (state 5)."""
         return self._obs_counts[5]
 
     @property
     def observed_D(self) -> int:
-        """Count of detected-ever agents currently dead (state 6)."""
         return self._obs_counts[6]
 
     @property
     def total_detected(self) -> int:
-        """Total agents ever detected (permanent)."""
         return len(self._detected_ever)
 
     @property
     def active_detections(self) -> int:
-        """Agents with active detection (for contact tracing)."""
         return len(self._detected_day)
 
     @property
@@ -334,7 +327,6 @@ class CityDES:
     # -- Stepping interface ----------------------------------------------------
 
     def step(self, until: float) -> None:
-        """Advance the SimPy environment to the given time."""
         self.env.run(until=until)
 
     def inject_exposed(self, n_exposed: float) -> None:
@@ -605,8 +597,6 @@ class CityDES:
     # -- Disease processes -----------------------------------------------------
 
     def _exposed_process(self, idx: int):
-        """E -> I_minor progression."""
-        # Incubation period (Gamma-distributed)
         duration = self._gamma_wait(self.incubation_days)
         yield self.env.timeout(duration)
 
@@ -856,7 +846,6 @@ class CityDES:
 
     @property
     def vaccinated_count(self) -> int:
-        """Number of people who have been vaccinated."""
         return len(self._vaccinated)
 
     @property

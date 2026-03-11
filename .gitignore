@@ -24,9 +24,11 @@ yarn-error.log*
 frontend/dist/
 *.local
 
-# Simulation app generated outputs
+# Simulation and validation outputs
 simulation_app/backend/outputs/
 simulation_app/backend/sessions/
+**/results/*
+!**/results/.gitkeep
 
 # Absdes explorer
 absdes_explorer/dist/
@@ -64,3 +66,6 @@ htmlcov/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Claude Code
+.claude/

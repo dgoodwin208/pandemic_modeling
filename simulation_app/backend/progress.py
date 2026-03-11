@@ -15,7 +15,6 @@ from dataclasses import dataclass
 
 @dataclass
 class ProgressState:
-    """Current progress state for a simulation session."""
     phase: str = "idle"  # idle | initializing | simulation | rendering | complete | error
     current: int = 0
     total: int = 0
@@ -39,7 +38,6 @@ class ProgressManager:
         self._loop: asyncio.AbstractEventLoop | None = None
 
     def set_loop(self, loop: asyncio.AbstractEventLoop):
-        """Store reference to the asyncio event loop (called at startup)."""
         self._loop = loop
 
     def create_session(self, session_id: str | None = None) -> str:
@@ -137,5 +135,4 @@ class ProgressManager:
 
     @property
     def active_sessions(self) -> int:
-        """Number of currently tracked sessions."""
         return len(self._sessions)

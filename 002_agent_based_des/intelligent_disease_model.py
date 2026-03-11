@@ -16,7 +16,6 @@ import sys
 from pathlib import Path
 from typing import Generator, Optional
 
-# Add des_system to path so we can import the parent class
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_PROJECT_ROOT / "des_system"))
 
@@ -53,12 +52,10 @@ class IntelligentDiseaseModel(DiseaseModel):
         super().__init__(env, network, supply_chain, disease_config, supply_config)
         self.behaviors = behaviors
 
-        # Track behavioral events for analysis
         self.isolation_events: list[dict] = []
         self.care_decisions: list[dict] = []
 
     def _get_behavior(self, person: Person) -> Optional[BehaviorStrategy]:
-        """Get behavior strategy for a person, or None."""
         return self.behaviors.get(person.id)
 
     def _transmission_process(self, person: Person) -> Generator:
@@ -77,7 +74,6 @@ class IntelligentDiseaseModel(DiseaseModel):
             if not person.is_contagious():
                 break
 
-            # Behavioral check: isolating person skips transmission
             if behavior and behavior.is_isolating():
                 self.isolation_events.append({
                     "time": self.env.now,
@@ -85,7 +81,6 @@ class IntelligentDiseaseModel(DiseaseModel):
                 })
                 continue
 
-            # Standard transmission logic (identical to parent)
             susceptible = self.network.get_susceptible_contacts(person.id)
             if not susceptible:
                 continue
@@ -138,7 +133,6 @@ class IntelligentDiseaseModel(DiseaseModel):
         yield from super()._determine_outcome(person)
 
     def get_behavioral_statistics(self) -> dict:
-        """Get statistics on behavioral modifications."""
         total_care = len(self.care_decisions)
         sought_care = sum(1 for d in self.care_decisions if d["seeks_care"])
 

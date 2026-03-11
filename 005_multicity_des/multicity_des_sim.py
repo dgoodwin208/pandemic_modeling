@@ -160,7 +160,6 @@ def run_multicity_des_simulation(
     """
     n = len(city_names)
 
-    # Compute per-city effective R₀ (if health modulation enabled)
     r0_overrides = [None] * n
     if isolation_effect > 0.0:
         if medical_scores is None:
@@ -169,16 +168,13 @@ def run_multicity_des_simulation(
             normalized = medical_scores[i] / 100.0
             r0_overrides[i] = max(0.0, scenario.R0 * (1.0 - isolation_effect * normalized))
 
-    # Compute provider count from density
     n_providers = max(0, int(provider_density * n_people / 1000))
 
-    # Normalize seed city index to list for multi-seed support
     seed_indices = (
         [seed_city_index] if isinstance(seed_city_index, int)
         else list(seed_city_index)
     )
 
-    # Create DES for each city
     city_sims = []
     for i in range(n):
         seed_count = initial_infected if i in seed_indices else 0
@@ -199,13 +195,11 @@ def run_multicity_des_simulation(
             advice_decay_prob=advice_decay_prob,
         ))
 
-    # Allocate time-series storage (as fractions of n_people)
     S = np.zeros((n, days + 1))
     E = np.zeros((n, days + 1))
     I = np.zeros((n, days + 1))
     R = np.zeros((n, days + 1))
 
-    # Record initial state (day 0)
     for i in range(n):
         S[i, 0] = city_sims[i].S
         E[i, 0] = city_sims[i].E
@@ -216,23 +210,18 @@ def run_multicity_des_simulation(
     # produced a whole person to inject)
     exposure_debt = np.zeros(n)
 
-    # Daily stepping loop
     for day in range(1, days + 1):
-        # Step 1: Advance each city's DES by 1 day
         for i in range(n):
             city_sims[i].step(until=day)
 
-        # Step 1.5: Provider screening (if providers deployed)
         for i in range(n):
             city_sims[i].run_provider_screening()
 
-        # Step 2: Apply inter-city travel coupling
         _apply_travel_coupling_des(
             city_sims, city_populations, travel_matrix, transmission_factor,
             exposure_debt, des_scale_travel=des_scale_travel,
         )
 
-        # Step 3: Record snapshot
         for i in range(n):
             S[i, day] = city_sims[i].S
             E[i, day] = city_sims[i].E

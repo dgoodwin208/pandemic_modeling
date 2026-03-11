@@ -74,7 +74,6 @@ _SESSIONS_DIR.mkdir(exist_ok=True)
 
 
 def _save_session(session_id: str):
-    """Persist a completed session (result + params + timestamp) to disk."""
     try:
         data = {
             "result": _session_results[session_id],
@@ -89,7 +88,6 @@ def _save_session(session_id: str):
 
 
 def _load_persisted_sessions():
-    """Load all persisted sessions from disk into memory on startup."""
     count = 0
     for path in _SESSIONS_DIR.glob("*.pkl"):
         sid = path.stem
@@ -183,7 +181,6 @@ def _compute_vaccine_supply_curve(n_days: int, total_population: int, lead_time:
 # =============================================================================
 
 def _cleanup_stale_sessions():
-    """Remove output directories for sessions older than TTL."""
     now = time.time()
     stale_ids = [
         sid for sid, created_at in _session_timestamps.items()
@@ -209,12 +206,10 @@ def _cleanup_stale_sessions():
 # =============================================================================
 
 def _run_simulation_thread(session_id: str, request: SimulationRequest):
-    """Execute the full simulation + rendering pipeline in a background thread."""
     try:
         progress_manager.update(session_id, "initializing", 0, 0,
                                 "Loading city data and computing travel matrix...")
 
-        # Build supply chain params from resource_config
         rc = request.resource_config or ResourceConfig()
 
         params = SimulationParams(
@@ -264,7 +259,6 @@ def _run_simulation_thread(session_id: str, request: SimulationRequest):
         output_dir.mkdir(parents=True, exist_ok=True)
 
         africa_gdf = load_africa_boundaries()
-        # Convert params dataclass to dict for metadata storage
         from dataclasses import asdict
         params_dict = asdict(params)
         render_all_frames(result, africa_gdf, output_dir, sim_progress,
@@ -302,7 +296,6 @@ async def root():
 
 @app.get("/simulate/absdes/latest")
 async def get_latest_session():
-    """Return the most recent completed simulation session ID and its params."""
     if not _session_timestamps:
         raise HTTPException(status_code=404, detail="No sessions available")
 
@@ -325,7 +318,6 @@ async def get_latest_session():
 
 @app.get("/simulate/absdes/sessions")
 async def list_sessions():
-    """Return all completed sessions with top-line summary stats."""
     completed = [
         (sid, ts) for sid, ts in _session_timestamps.items()
         if sid in _session_results
@@ -333,7 +325,6 @@ async def list_sessions():
     if not completed:
         return {"sessions": []}
 
-    # Sort by timestamp descending (most recent first)
     completed.sort(key=lambda x: -x[1])
 
     sessions = []
@@ -381,7 +372,6 @@ async def list_sessions():
 
 @app.delete("/simulate/absdes/{session_id}")
 async def delete_session(session_id: str):
-    """Delete a session and its persisted data."""
     if session_id not in _session_timestamps and session_id not in _session_results:
         raise HTTPException(status_code=404, detail="Session not found")
     _session_timestamps.pop(session_id, None)
@@ -405,7 +395,6 @@ async def start_simulation(request: SimulationRequest):
     Start an ABS-DES pandemic simulation in a background thread.
     Returns a session_id to poll for progress and retrieve frames.
     """
-    # Cleanup stale sessions on new simulation start
     _cleanup_stale_sessions()
 
     session_id = str(uuid.uuid4())
@@ -509,12 +498,10 @@ async def get_frame(session_id: str, view: str, day: int):
 
 @app.get("/simulate/absdes/{session_id}/metadata")
 async def get_metadata(session_id: str):
-    """Return the metadata.json contents for a completed simulation session."""
     output_dir = OUTPUTS_BASE / session_id
     metadata_path = output_dir / "metadata.json"
 
     if not metadata_path.exists():
-        # Check if session exists but is still running
         state = progress_manager.get_state(session_id)
         if state and state.phase not in ("complete", "error"):
             raise HTTPException(status_code=202,
@@ -619,7 +606,6 @@ async def get_summary(session_id: str):
             "deaths": city_deaths,
         })
 
-    # Sort by total infected descending
     city_summaries.sort(key=lambda c: -c["total_infected"])
 
     # Resource summary (when supply chain enabled)
@@ -826,7 +812,6 @@ async def export_csv(session_id: str):
               "actual_S", "actual_E", "actual_I", "actual_I_minor",
               "actual_I_needs", "actual_I_care", "actual_R", "actual_D",
               "observed_S", "observed_E", "observed_I", "observed_R", "observed_D"]
-    # Add per-city columns if more than 1 city
     if n_cities > 1:
         for i, name in enumerate(result.city_names):
             safe = name.replace(",", "")
@@ -915,7 +900,6 @@ async def export_video(
             detail="No frames available. Run simulation with render_maps=True first.",
         )
 
-    # Check if frames exist
     actual_frames = list(output_dir.glob("actual_day*.png"))
     if not actual_frames:
         raise HTTPException(
@@ -938,7 +922,6 @@ async def export_video(
     except RuntimeError as e:
         raise HTTPException(status_code=500, detail=f"Video generation failed: {e}")
 
-    # Return video file
     media_type = "video/mp4" if format == "mp4" else "video/webm"
     filename = f"simulation_{session_id[:8]}_{view}.{format}"
 
@@ -969,7 +952,6 @@ async def list_countries():
             country_name = row.get("country", "Unknown")
             countries[country_name] = countries.get(country_name, 0) + 1
 
-    # Sort by city count descending
     sorted_countries = sorted(countries.items(), key=lambda x: -x[1])
 
     return {
@@ -984,7 +966,6 @@ async def list_countries():
 
 @app.get("/scenarios")
 async def list_scenarios():
-    """Return the 4 disease scenarios with their parameters."""
     return {
         "scenarios": {
             scenario_id: {
@@ -998,7 +979,6 @@ async def list_scenarios():
 
 @app.get("/resources/defaults")
 async def get_resource_defaults():
-    """Return default resource configuration for the frontend form."""
     d = ResourceDefaults()
     return {
         "beds_per_hospital": d.beds_per_hospital,
@@ -1053,12 +1033,10 @@ async def get_schema(session_id: str):
     result = _session_results.get(session_id)
     params = _session_params.get(session_id, {})
 
-    # Load disease params for current scenario
     disease_params = load_disease_params()
     scenario_key = params.get("scenario", "covid_natural")
     dp = disease_params.get(scenario_key)
 
-    # Build schema with current parameter values
     schema = {
         "name": "ABS-DES Pandemic Model",
         "sessionId": session_id,
@@ -1159,7 +1137,6 @@ async def get_schema(session_id: str):
         ]
     }
 
-    # Add simulation metadata if result exists
     if result:
         schema["simulationInfo"] = {
             "cities": result.city_names,

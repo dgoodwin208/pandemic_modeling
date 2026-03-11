@@ -60,14 +60,12 @@ def load_cities(
     Raises:
         ValueError: If any requested city is not found in the CSV.
     """
-    # Read all cities from CSV
     city_data: dict[str, dict] = {}
     with open(csv_path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             city_data[row["city"]] = row
 
-    # Build CityState objects in requested order
     cities = []
     missing = []
     for name in city_names:

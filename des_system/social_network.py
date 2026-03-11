@@ -44,14 +44,12 @@ class Person:
     deceased_at: Optional[float] = None
 
     def is_contagious(self) -> bool:
-        """Returns True if person can spread disease."""
         return self.state in (
             DiseaseState.INFECTIOUS,
             DiseaseState.SYMPTOMATIC,
         )
 
     def is_susceptible(self) -> bool:
-        """Returns True if person can be infected."""
         return self.state == DiseaseState.SUSCEPTIBLE
 
 
@@ -81,7 +79,6 @@ class SocialNetwork:
         k = self.config.avg_contacts
         p = self.config.rewire_prob
 
-        # Create people with random ages
         first_names = [
             "Alex", "Jordan", "Taylor", "Morgan", "Casey", "Riley",
             "Quinn", "Avery", "Parker", "Sage", "Drew", "Jamie",
@@ -106,9 +103,7 @@ class SocialNetwork:
             for j in range(1, half_k + 1):
                 if random.random() < p:
                     neighbor = (i + j) % n
-                    # Remove old edge
                     self._remove_edge(i, neighbor)
-                    # Add new random edge (avoid self-loops and duplicates)
                     new_neighbor = random.randint(0, n - 1)
                     attempts = 0
                     while (
@@ -135,23 +130,19 @@ class SocialNetwork:
             self.people[b].contacts.remove(a)
 
     def get_contacts(self, person_id: int) -> list[Person]:
-        """Get all contacts of a person."""
         contact_ids = self.people[person_id].contacts
         return [self.people[cid] for cid in contact_ids]
 
     def get_susceptible_contacts(self, person_id: int) -> list[Person]:
-        """Get susceptible contacts of a person."""
         return [p for p in self.get_contacts(person_id) if p.is_susceptible()]
 
     def count_by_state(self) -> dict[DiseaseState, int]:
-        """Count people in each disease state."""
         counts = {state: 0 for state in DiseaseState}
         for person in self.people.values():
             counts[person.state] += 1
         return counts
 
     def get_age_distribution(self) -> dict:
-        """Get age distribution statistics."""
         ages = [p.age for p in self.people.values()]
         return {
             "min": min(ages),
@@ -162,7 +153,6 @@ class SocialNetwork:
         }
 
     def get_statistics(self) -> dict:
-        """Get network statistics."""
         degrees = [len(p.contacts) for p in self.people.values()]
         counts = self.count_by_state()
         age_stats = self.get_age_distribution()

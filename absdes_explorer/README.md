@@ -78,6 +78,5 @@ absdes_explorer/
 
 ## Related
 
-- **WHITE_PAPER.md** — Full methodology documentation
 - **PERSON_JOURNEY.md** — Mermaid diagram of disease state transitions
 - **simulation_app/backend/** — The actual simulation implementation

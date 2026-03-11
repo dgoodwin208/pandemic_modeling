@@ -22,7 +22,6 @@ BASE = "https://api.elevenlabs.io/v1"
 
 
 def search_voices(accent=None, language=None, gender=None, search=None, page_size=20):
-    """Query the shared voice library."""
     params = {"page_size": page_size}
     if accent: params["accent"] = accent
     if language: params["language"] = language
@@ -61,7 +60,6 @@ def main():
     print("ElevenLabs Voice Discovery for African Regions")
     print("=" * 60)
 
-    # Search strategies for each region
     searches = [
         ("African accent (English)", {"accent": "african", "language": "en"}),
         ("African accent (general)", {"accent": "african"}),
@@ -86,7 +84,6 @@ def main():
         for v in voices:
             all_found[v["voice_id"]] = v
 
-    # Summary
     print("\n" + "=" * 60)
     print(f"  TOTAL UNIQUE VOICES FOUND: {len(all_found)}")
     print("=" * 60)

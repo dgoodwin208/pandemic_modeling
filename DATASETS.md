@@ -102,12 +102,19 @@ Custom extract of 55 AU member state boundaries.
 
 ## Health Infrastructure Data
 
-### To Be Added
+### Healthsites.io (Health Facility Locations)
 
-- [ ] Hospital locations (WHO, OpenStreetMap)
-- [ ] Testing facility data
-- [ ] Supply chain hub locations
-- [ ] Healthcare worker distribution
+Health facility locations for 49 African countries, sourced from the Humanitarian Data Exchange (HDX).
+
+| Item | Detail |
+|------|--------|
+| Source | [healthsites.io](https://healthsites.io) via [Humanitarian Data Exchange](https://data.humdata.org) |
+| Coverage | 49 African countries, 82,895 facilities (62,253 after filtering) |
+| Format | CSV per country |
+| License | **Open Database License (ODbL) v1.0** |
+| Data Origin | OpenStreetMap derivative |
+
+**Files:** `backend/data/healthsites_raw/*.csv`, `backend/data/health_facilities_processed.json`
 
 ---
 
@@ -149,10 +156,15 @@ When using these datasets, include the following attributions:
 **WorldPop:**
 > WorldPop (www.worldpop.org - School of Geography and Environmental Science, University of Southampton)
 
+**Healthsites.io:**
+> Health facility data (c) OpenStreetMap contributors, Open Database License (ODbL) v1.0. Provided by healthsites.io via the Humanitarian Data Exchange (HDX). https://www.openstreetmap.org/copyright
+
 ---
 
-## Version History
+## Licensing Notes
 
-| Date | Change | Author |
-|------|--------|--------|
-| 2025-01-20 | Initial dataset documentation | AI Assistant |
+This project's source code is MIT-licensed. Third-party datasets bundled in this repository retain their original licenses:
+
+- **Natural Earth data** is public domain — no restrictions.
+- **Healthsites.io data** is licensed under ODbL v1.0. The raw and processed health facility data files in `backend/data/` are governed by the ODbL. If you redistribute these files (modified or unmodified), the ODbL share-alike and attribution requirements apply.
+- **Kontur / WorldPop data** is CC BY 4.0 — attribution required.

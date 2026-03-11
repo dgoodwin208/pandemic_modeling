@@ -48,7 +48,6 @@ class DiseaseModel:
         self.total_recoveries = 0
 
     def infect_person(self, person: Person, source: Optional[Person] = None) -> None:
-        """Start infection process for a person."""
         if person.state != DiseaseState.SUSCEPTIBLE:
             return
 
@@ -164,7 +163,6 @@ class DiseaseModel:
                         self.infect_person(contact, source=person)
 
     def _determine_outcome(self, person: Person) -> Generator:
-        """Determine final outcome: recovery, hospitalization, or death."""
         # Calculate hospitalization probability (age-adjusted)
         hosp_prob = self.config.hospitalization_prob
         if person.age >= self.config.age_risk_threshold:
@@ -221,7 +219,6 @@ class DiseaseModel:
             self.total_recoveries += 1
 
     def seed_infections(self, n: int = 3) -> list[Person]:
-        """Seed initial infections in the network."""
         infected = self.network.infect_random(n)
         for person in infected:
             person.state = DiseaseState.SUSCEPTIBLE  # Reset for proper infection
@@ -229,7 +226,6 @@ class DiseaseModel:
         return infected
 
     def get_statistics(self) -> dict:
-        """Get current disease statistics."""
         network_stats = self.network.get_statistics()
         supply_stats = self.supply_chain.get_status()
 

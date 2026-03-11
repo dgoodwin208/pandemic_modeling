@@ -14,7 +14,6 @@ from typing import Any
 
 
 def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    """Calculate distance in km between two lat/lon points using Haversine formula."""
     R = 6371  # Earth's radius in km
 
     lat1_rad = math.radians(lat1)
@@ -30,14 +29,12 @@ def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> fl
 
 
 def normalize_facility_type(amenity: str, healthcare: str) -> str:
-    """Normalize facility type from amenity and healthcare fields."""
     amenity = (amenity or '').lower().strip()
     healthcare = (healthcare or '').lower().strip()
 
     # Priority: more specific healthcare field, then amenity
     type_val = healthcare if healthcare else amenity
 
-    # Normalize common types
     type_mapping = {
         'hospital': 'hospital',
         'clinic': 'clinic',
@@ -67,7 +64,6 @@ def normalize_facility_type(amenity: str, healthcare: str) -> str:
 
 
 def parse_int_or_none(value: str) -> int | None:
-    """Parse integer from string, return None if invalid."""
     if not value:
         return None
     try:
@@ -77,14 +73,12 @@ def parse_int_or_none(value: str) -> int | None:
 
 
 def load_cities(cities_file: Path) -> list[dict]:
-    """Load cities data from JSON file."""
     with open(cities_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data['cities']
 
 
 def find_nearest_city(lat: float, lon: float, cities: list[dict], max_distance_km: float = 50) -> dict | None:
-    """Find the nearest city within max_distance_km."""
     nearest = None
     min_distance = float('inf')
 
@@ -101,7 +95,6 @@ def find_nearest_city(lat: float, lon: float, cities: list[dict], max_distance_k
 
 
 def process_raw_files(raw_dir: Path, cities: list[dict]) -> tuple[list[dict], dict]:
-    """Process all raw CSV files and associate with cities."""
     all_facilities = []
     stats = defaultdict(lambda: defaultdict(int))
 
@@ -145,7 +138,6 @@ def process_raw_files(raw_dir: Path, cities: list[dict]) -> tuple[list[dict], di
                         'osm_id': row.get('osm_id', ''),
                     }
 
-                    # Find nearest city
                     nearest_city = find_nearest_city(lat, lon, cities)
                     if nearest_city:
                         facility['city'] = nearest_city['city']
@@ -169,7 +161,6 @@ def process_raw_files(raw_dir: Path, cities: list[dict]) -> tuple[list[dict], di
 
 
 def aggregate_by_city(facilities: list[dict], cities: list[dict]) -> list[dict]:
-    """Aggregate facility counts by city."""
     city_stats = defaultdict(lambda: {
         'total_facilities': 0,
         'hospitals': 0,
@@ -228,7 +219,6 @@ def aggregate_by_city(facilities: list[dict], cities: list[dict]) -> list[dict]:
             'emergency_facilities': 0,
         })
 
-        # Calculate facilities per 100k population
         population = city.get('population', 0)
         facilities_per_100k = 0
         if population > 0:
@@ -245,7 +235,6 @@ def aggregate_by_city(facilities: list[dict], cities: list[dict]) -> list[dict]:
 
 
 def calculate_health_capacity_score(city: dict) -> int:
-    """Calculate a 0-100 health capacity score based on available data."""
     score = 0
 
     # Base score from medical services score (0-100, weight: 40%)
@@ -289,29 +278,23 @@ def main():
     print("=" * 60)
     print()
 
-    # Load cities
     print("Loading cities data...")
     cities = load_cities(cities_file)
     print(f"  Loaded {len(cities)} cities")
     print()
 
-    # Process raw files
     facilities, country_stats = process_raw_files(raw_dir, cities)
     print()
     print(f"Total facilities processed: {len(facilities):,}")
 
-    # Aggregate by city
     print("\nAggregating facilities by city...")
     enriched_cities = aggregate_by_city(facilities, cities)
 
-    # Calculate health capacity scores
     for city in enriched_cities:
         city['health_capacity_score'] = calculate_health_capacity_score(city)
 
-    # Sort by population
     enriched_cities.sort(key=lambda x: x.get('population', 0), reverse=True)
 
-    # Save processed facilities (full dataset)
     facilities_file = output_dir / "health_facilities_processed.json"
     with open(facilities_file, 'w', encoding='utf-8') as f:
         json.dump({
@@ -321,13 +304,11 @@ def main():
         }, f, indent=2)
     print(f"\nSaved processed facilities to: {facilities_file}")
 
-    # Save country statistics
     stats_file = output_dir / "health_facilities_stats.json"
     with open(stats_file, 'w', encoding='utf-8') as f:
         json.dump(country_stats, f, indent=2)
     print(f"Saved country statistics to: {stats_file}")
 
-    # Save enriched cities for frontend
     cities_output = frontend_output / "african_cities.json"
     with open(cities_output, 'w', encoding='utf-8') as f:
         json.dump({'cities': enriched_cities}, f, indent=2)
@@ -342,7 +323,6 @@ def main():
             writer.writerows(enriched_cities)
     print(f"Saved CSV to: {csv_output}")
 
-    # Print summary
     print()
     print("=" * 60)
     print("SUMMARY")
@@ -359,7 +339,6 @@ def main():
     print(f"Total hospitals: {total_hospitals:,}")
     print()
 
-    # Top 10 cities by facilities
     print("Top 10 cities by health facilities:")
     for i, city in enumerate(sorted(enriched_cities, key=lambda x: x['total_facilities'], reverse=True)[:10], 1):
         print(f"  {i}. {city['city']}, {city['country']}: {city['total_facilities']:,} facilities "

@@ -86,7 +86,6 @@ def _apply_travel_coupling(
             inf_frac = cities[j].infection_fraction
             new_exposures[i] += travelers * inf_frac * transmission_factor
 
-    # Inject exposures
     for i in range(n):
         actual = min(new_exposures[i], cities[i].S)
         cities[i].S -= actual
@@ -152,10 +151,8 @@ def run_multicity_simulation(
     """
     n = len(cities)
 
-    # Seed the epidemic
     seed_infection(cities[seed_city_index], initial_infected)
 
-    # Pre-compute SEIR params for each city with per-city effective R₀
     params_list = []
     for i in range(n):
         r_eff = _compute_effective_r0(
@@ -168,29 +165,23 @@ def run_multicity_simulation(
             population=cities[i].population,
         ))
 
-    # Allocate time-series storage
     S = np.zeros((n, days + 1))
     E = np.zeros((n, days + 1))
     I = np.zeros((n, days + 1))
     R = np.zeros((n, days + 1))
 
-    # Record initial state (day 0)
     for i in range(n):
         S[i, 0] = cities[i].S
         E[i, 0] = cities[i].E
         I[i, 0] = cities[i].I
         R[i, 0] = cities[i].R
 
-    # Daily stepping loop
     for day in range(1, days + 1):
-        # Step 1: Advance each city's ODE by 1 day
         for i in range(n):
             _step_city_ode(cities[i], params_list[i])
 
-        # Step 2: Apply inter-city travel coupling
         _apply_travel_coupling(cities, travel_matrix, transmission_factor)
 
-        # Step 3: Record snapshot
         for i in range(n):
             S[i, day] = cities[i].S
             E[i, day] = cities[i].E

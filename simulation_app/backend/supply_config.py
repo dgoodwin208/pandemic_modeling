@@ -18,7 +18,6 @@ _DATA_DIR = Path(__file__).resolve().parent.parent.parent / "backend" / "data"
 
 @dataclass
 class ResourceDefaults:
-    """Default resource parameters for supply chain initialization."""
 
     # Facility-to-resource derivation
     beds_per_hospital: int = 120
@@ -131,7 +130,6 @@ def load_enriched_supply_data() -> dict[str, dict]:
 
     path = _DATA_DIR / "african_medical_supply_chain.csv"
     if not path.exists():
-        # Fall back to basic facility data
         basic = load_facility_data()
         return {
             city: {

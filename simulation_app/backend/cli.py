@@ -19,13 +19,11 @@ SCENARIOS = ["covid_natural", "covid_bioattack", "ebola_natural", "ebola_bioatta
 
 
 def _progress(phase: str, current: int, total: int, message: str) -> None:
-    """Print progress updates to stderr."""
     sys.stderr.write(f"\r\033[K{message}")
     sys.stderr.flush()
 
 
 def _fmt(n: int | float) -> str:
-    """Format a number with commas."""
     if isinstance(n, float):
         return f"{n:,.1f}"
     return f"{n:,}"
@@ -79,7 +77,6 @@ def main():
     if not args.quiet:
         sys.stderr.write("\n")
 
-    # Aggregate final-day results (scaled to real populations)
     n_cities = len(result.city_names)
     last = result.actual_S.shape[1] - 1
     scale = [result.city_populations[i] / result.n_people_per_city for i in range(n_cities)]
@@ -97,7 +94,6 @@ def main():
     )
     fatality_rate = total_deaths / total_infected if total_infected > 0 else 0
 
-    # Peak infection day
     agg_I = result.actual_I.sum(axis=0)
     peak_day = int(agg_I.argmax())
     peak_I = sum(int(result.actual_I[i, peak_day]) * scale[i] for i in range(n_cities))

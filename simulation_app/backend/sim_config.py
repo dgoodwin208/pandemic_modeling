@@ -91,7 +91,6 @@ NATURAL_SEED_CITIES = [
 
 @dataclass
 class DiseaseParams:
-    """Per-scenario disease parameters loaded from disease_params.csv."""
     scenario: str
     R0: float
     incubation_days: float
@@ -105,7 +104,6 @@ class DiseaseParams:
 
 
 def load_household_sizes() -> dict[str, float]:
-    """Load household_size.csv into a dict: country name -> household size."""
     path = _DATA_DIR / "household_size.csv"
     sizes: dict[str, float] = {}
     with open(path, newline="", encoding="utf-8") as f:
@@ -132,7 +130,6 @@ def household_size_to_avg_contacts(household_size: float) -> int:
 
 
 def load_disease_params() -> dict[str, DiseaseParams]:
-    """Load disease_params.csv into a dict keyed by scenario name."""
     path = _DATA_DIR / "disease_params.csv"
     params: dict[str, DiseaseParams] = {}
     with open(path, newline="", encoding="utf-8") as f:

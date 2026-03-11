@@ -29,7 +29,6 @@ CONSUMABLE_RESOURCES = ("ppe", "swabs", "reagents", "vaccines", "pills")
 
 @dataclass
 class PendingShipment:
-    """A shipment in transit with a scheduled arrival day."""
     resource: str
     amount: int
     arrival_day: int
@@ -87,20 +86,17 @@ class CitySupply:
     # -- Bed management --------------------------------------------------------
 
     def try_admit(self) -> bool:
-        """Try to admit a patient to a bed. Returns True if bed available."""
         if self.beds_occupied < self.beds_total:
             self.beds_occupied += 1
             return True
         return False
 
     def release_bed(self) -> None:
-        """Release a bed when patient exits care (R or D)."""
         self.beds_occupied = max(0, self.beds_occupied - 1)
 
     # -- Consumable resources --------------------------------------------------
 
     def try_consume(self, resource: str, amount: int = 1) -> bool:
-        """Try to consume a resource. Returns True if sufficient stock."""
         current = getattr(self, resource)
         if current >= amount:
             setattr(self, resource, current - amount)
@@ -109,18 +105,15 @@ class CitySupply:
         return False
 
     def add_resource(self, resource: str, amount: int) -> None:
-        """Add resources (from shipment or redistribution)."""
         current = getattr(self, resource)
         setattr(self, resource, current + amount)
 
     # -- Shipments -------------------------------------------------------------
 
     def add_shipment(self, shipment: PendingShipment) -> None:
-        """Queue a pending shipment."""
         self._pending.append(shipment)
 
     def receive_shipments(self, current_day: int) -> int:
-        """Process arrived shipments. Returns total units received."""
         received = 0
         still_pending = []
         for s in self._pending:
@@ -135,7 +128,6 @@ class CitySupply:
     # -- Daily recording -------------------------------------------------------
 
     def record_day(self) -> None:
-        """Record current resource levels to history."""
         self.history_beds_occupied.append(self.beds_occupied)
         self.history_beds_total.append(self.beds_total)
         self.history_ppe.append(self.ppe)
@@ -145,7 +137,6 @@ class CitySupply:
         self.history_pills.append(self.pills)
 
     def reset_daily_consumption(self) -> None:
-        """Reset daily consumption counters and update burn-rate EMA."""
         alpha = 2.0 / 8.0  # 7-day EMA
         for r in CONSUMABLE_RESOURCES:
             consumed = self._daily_consumed[r]
@@ -153,7 +144,6 @@ class CitySupply:
             self._daily_consumed[r] = 0
 
     def get_deficit_ratio(self, resource: str) -> float:
-        """Get current stock as fraction of initial stock (0 if no initial)."""
         initial = getattr(self, f"_initial_{resource}", 0)
         if initial <= 0:
             return 1.0  # no initial stock, no deficit
@@ -196,7 +186,6 @@ class CountrySupplyManager:
         and reorder decisions to the strategy. Otherwise, uses the original
         hardcoded threshold logic.
         """
-        # Update burn-rate EMAs
         for cs in self.cities.values():
             cs.reset_daily_consumption()
 
@@ -213,11 +202,9 @@ class CountrySupplyManager:
         snapshot: EpidemicSnapshot,
         elog: EventLog | None = None,
     ) -> None:
-        """Delegate redistribution and reorder to the strategy."""
         plan = self.strategy.plan_redistribution(snapshot, self.city_global_indices)
         city_name_list = list(self.cities.keys())
 
-        # Execute transfers
         for from_idx, to_idx, resource, amount in plan.transfers:
             from_name = snapshot.city_names[from_idx]
             to_name = snapshot.city_names[to_idx]
@@ -230,7 +217,6 @@ class CountrySupplyManager:
                              reason="strategy_redistribution",
                              from_city=from_name)
 
-        # Strategy-driven reorder
         for resource in ("ppe", "swabs", "reagents", "pills", "vaccines"):
             total_current = sum(getattr(cs, resource) for cs in self.cities.values())
             total_initial = sum(getattr(cs, f"_initial_{resource}", 0) for cs in self.cities.values())
@@ -257,7 +243,6 @@ class CountrySupplyManager:
                         ))
 
     def _redistribute_resource(self, resource: str, day: int, elog: EventLog | None = None) -> None:
-        """Redistribute a single resource from surplus to deficit cities."""
         threshold = self.defaults.country_reorder_threshold
 
         surplus_cities: list[tuple[str, CitySupply, float]] = []
@@ -274,9 +259,7 @@ class CountrySupplyManager:
         if not deficit_cities:
             return
 
-        # Sort: worst deficit first
         deficit_cities.sort(key=lambda x: x[2])
-        # Sort surplus: most surplus first
         surplus_cities.sort(key=lambda x: -x[2])
 
         for d_name, d_cs, d_ratio in deficit_cities:
@@ -309,7 +292,6 @@ class CountrySupplyManager:
                 if needed <= 0:
                     break
 
-        # Check if country-wide stock is below threshold — order externally
         total_current = sum(getattr(cs, resource) for cs in self.cities.values())
         total_initial = sum(getattr(cs, f"_initial_{resource}", 0) for cs in self.cities.values())
         if total_initial > 0 and total_current / total_initial < threshold:
@@ -319,7 +301,6 @@ class CountrySupplyManager:
                     self.defaults.lead_time_shape,
                     self.defaults.lead_time_mean_days / self.defaults.lead_time_shape,
                 )))
-                # Distribute order across deficit cities proportionally
                 deficit_names = [name for name, cs, _ in deficit_cities]
                 if not deficit_names:
                     deficit_names = list(self.cities.keys())
@@ -357,7 +338,6 @@ class ContinentSupplyManager:
         self.defaults = defaults
         self._rng = rng
         self.strategy = strategy
-        # Track cumulative deployments
         self.total_deployed: dict[str, int] = {r: 0 for r in reserves}
 
         # Vaccine manufacturing model
@@ -430,7 +410,6 @@ class ContinentSupplyManager:
         snapshot: EpidemicSnapshot,
         elog: EventLog | None = None,
     ) -> None:
-        """Delegate deployment to the strategy."""
         decision = self.strategy.should_deploy_reserves(snapshot, self.reserves)
         if not decision.deploy:
             return
@@ -539,10 +518,7 @@ class ContinentSupplyManager:
             if not country_deficits:
                 continue
 
-            # Sort by severity (worst first)
             country_deficits.sort(key=lambda x: x[1])
-
-            # Deploy proportional to deficit severity
             total_deficit = sum(
                 int(init * (threshold - ratio))
                 for _, ratio, init in country_deficits
@@ -565,7 +541,6 @@ class ContinentSupplyManager:
                 )))
 
                 mgr = self.countries[country_name]
-                # Distribute to cities in that country
                 n_cities = len(mgr.cities)
                 if n_cities == 0:
                     continue

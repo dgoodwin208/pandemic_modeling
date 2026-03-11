@@ -58,12 +58,10 @@ class RuleBasedBehavior:
     # ── BehaviorStrategy protocol ─────────────────────────────────
 
     def is_isolating(self) -> bool:
-        """Whether this person isolates this tick."""
         prob = self.advised_isolation_prob if self._provider_advised else self.base_isolation_prob
         return random.random() < prob
 
     def seeks_care(self) -> Optional[bool]:
-        """Whether this person seeks medical care."""
         prob = self.advised_care_prob if self._provider_advised else self.base_care_prob
         if prob <= 0.0:
             return None  # Defer to default disease model logic
@@ -72,7 +70,6 @@ class RuleBasedBehavior:
     # ── Provider interaction ──────────────────────────────────────
 
     def would_disclose(self) -> bool:
-        """Whether this person reveals symptoms when screened by a provider."""
         return random.random() < self.disclosure_prob
 
     def receive_advice(self) -> bool:
@@ -89,7 +86,6 @@ class RuleBasedBehavior:
 
     @property
     def is_advised(self) -> bool:
-        """Whether this person has been successfully advised by a provider."""
         return self._provider_advised
 
     def __repr__(self) -> str:

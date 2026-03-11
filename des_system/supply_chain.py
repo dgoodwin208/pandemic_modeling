@@ -64,7 +64,6 @@ class SupplyChain:
         self.reagent_sources: list[SupplySource] = []
 
     def add_ppe_source(self, name: str, production_rate: float) -> SupplySource:
-        """Add a PPE production source."""
         source = SupplySource(
             name=name,
             production_rate=production_rate,
@@ -76,7 +75,6 @@ class SupplyChain:
         return source
 
     def add_reagent_source(self, name: str, production_rate: float) -> SupplySource:
-        """Add a testing reagent production source."""
         source = SupplySource(
             name=name,
             production_rate=production_rate,
@@ -96,7 +94,6 @@ class SupplyChain:
         return self.reagents.consume(quantity, consumer)
 
     def get_status(self) -> dict:
-        """Get current supply chain status."""
         return {
             "ppe_level": self.ppe.level,
             "reagent_level": self.reagents.level,
@@ -118,11 +115,9 @@ def create_supply_chain(env: Environment, config: Optional[SupplyChainConfig] = 
     config = config or SupplyChainConfig()
     chain = SupplyChain(env, config)
 
-    # Add PPE sources from config
     for name, rate in config.ppe_sources:
         chain.add_ppe_source(name, rate)
 
-    # Add reagent sources from config
     for name, rate in config.reagent_sources:
         chain.add_reagent_source(name, rate)
 

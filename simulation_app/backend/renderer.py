@@ -23,13 +23,11 @@ _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent  # pandemic_modeli
 
 
 def load_africa_boundaries():
-    """Load Africa country boundaries from cached GeoJSON."""
     path = _PROJECT_ROOT / "006_continental_africa" / "africa_boundaries.geojson"
     return gpd.read_file(str(path))
 
 
 def _get_country_bounds(africa_gdf, country: str):
-    """Return (minx, miny, maxx, maxy) for a specific country, or None for ALL."""
     if country == "ALL":
         return None
     # Try matching on NAME, ADMIN, or NAME_LONG columns
@@ -43,20 +41,16 @@ def _get_country_bounds(africa_gdf, country: str):
 
 def _render_map_panel(ax, africa_gdf, lons, lats, pops, size_scale, infection_pcts,
                       norm, cmap, seed_indices, city_names, country_bounds, title):
-    """Render the geographic map panel onto the given axes."""
     ax.set_title(title, fontsize=9, fontweight="bold", pad=6)
 
-    # Plot Africa boundaries
     africa_gdf.plot(ax=ax, color="#f0ede4", edgecolor="#333333",
                     linewidth=0.6, zorder=0)
 
-    # City scatter colored by infection percentage
     sc = ax.scatter(
         lons, lats, s=size_scale, c=infection_pcts, cmap=cmap,
         norm=norm, edgecolors="black", linewidths=0.3, zorder=2,
     )
 
-    # Highlight seed cities with blue rings
     for si in seed_indices:
         ax.scatter(
             [lons[si]], [lats[si]],
@@ -64,7 +58,6 @@ def _render_map_panel(ax, africa_gdf, lons, lats, pops, size_scale, infection_pc
             facecolors="none", edgecolors="blue", linewidths=1.5, zorder=3,
         )
 
-    # Label top 10 cities by population
     pop_order = np.argsort(-pops)
     for rank, i in enumerate(pop_order[:10]):
         ax.annotate(
@@ -75,7 +68,6 @@ def _render_map_panel(ax, africa_gdf, lons, lats, pops, size_scale, infection_pc
                       alpha=0.6, edgecolor="none"),
         )
 
-    # Set map extent
     if country_bounds is not None:
         pad = 2.0
         ax.set_xlim(country_bounds[0] - pad, country_bounds[2] + pad)
@@ -96,18 +88,15 @@ def _render_map_panel(ax, africa_gdf, lons, lats, pops, size_scale, infection_pc
 
 
 def _render_resource_panel(ax, result, day):
-    """Render the resource utilization panel (aggregated across all cities)."""
     total_days = result.actual_S.shape[1]
     t = np.arange(total_days)
 
-    # Aggregate across cities
     beds_occ = result.resource_beds_occupied.sum(axis=0)
     beds_tot = result.resource_beds_total.sum(axis=0)
     ppe = result.resource_ppe.sum(axis=0)
     swabs = result.resource_swabs.sum(axis=0)
     reagents = result.resource_reagents.sum(axis=0)
 
-    # Normalize to initial values for comparable scale
     beds_max = beds_tot.max() if beds_tot.max() > 0 else 1
     ppe_max = ppe[0] if ppe[0] > 0 else max(1, ppe.max())
     swabs_max = swabs[0] if swabs[0] > 0 else max(1, swabs.max())
@@ -172,7 +161,6 @@ def _render_seir_panel(ax, result, seed_idx, day, n_people, view_label):
         ax.plot(t, r_vals, color="#2ecc71", linewidth=1.2, label="R")
         ax.plot(t, d_vals, color="#2c3e50", linewidth=1.2, linestyle="--", label="D")
 
-    # Vertical dotted line at the current day
     ax.axvline(x=day, color="#555555", linestyle=":", linewidth=1.0, alpha=0.8)
 
     ax.set_xlim(0, total_days - 1)
@@ -220,18 +208,13 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
     total_days = result.actual_I.shape[1]
     n_people = result.n_people_per_city
 
-    # -- Pre-compute static data -----------------------------------------------
-
-    # City coordinates: result.city_coords is list of (lat, lon) tuples
     lats = np.array([c[0] for c in result.city_coords])
     lons = np.array([c[1] for c in result.city_coords])
     pops = np.array(result.city_populations, dtype=float)
 
-    # Size scale based on population
     size_scale = np.sqrt(pops / pops.min()) * 15
     size_scale = np.clip(size_scale, 8, 200)
 
-    # Shared color normalization across both views for fair comparison
     vmax_actual = result.actual_I.max() / n_people * 100
     vmax_observed = result.observed_I.max() / n_people * 100
     vmax = max(vmax_actual, vmax_observed, 0.1)
@@ -243,10 +226,7 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
     peak_I_per_city = result.actual_I.max(axis=1)
     seed_idx = int(np.argmax(peak_I_per_city))
 
-    # Country zoom bounds
     country_bounds = _get_country_bounds(africa_gdf, country)
-
-    # Total frames to render (2 per day: actual + observed)
     total_frames = total_days * 2
     frame_count = 0
 
@@ -259,16 +239,13 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
             ("actual", result.actual_I, "actual", "ACTUAL -- True Epidemic State"),
             ("observed", result.observed_I, "observed", "OBSERVED -- Provider-Inferred State"),
         ]:
-            # Compute per-city infection percentages for this day
             infection_pcts = data_array[:, day] / n_people * 100
 
-            # Create composite figure: map + SEIR curve
             fig = plt.figure(figsize=(8, 10), dpi=100)
             gs = GridSpec(2, 1, figure=fig, height_ratios=[3, 2], hspace=0.28)
             ax_map = fig.add_subplot(gs[0])
             ax_seir = fig.add_subplot(gs[1])
 
-            # Map panel
             title = f"{label_title} -- Day {day}"
             _render_map_panel(
                 ax_map, africa_gdf, lons, lats, pops, size_scale,
@@ -276,7 +253,6 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
                 result.city_names, country_bounds, title,
             )
 
-            # Colorbar for map
             sm = plt.cm.ScalarMappable(norm=norm, cmap=cmap)
             sm.set_array([])
             cbar = fig.colorbar(sm, ax=ax_map, orientation="horizontal",
@@ -284,11 +260,9 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
             cbar.set_label("Infection (% of city population)", fontsize=7)
             cbar.ax.tick_params(labelsize=6)
 
-            # SEIR curve panel
             _render_seir_panel(ax_seir, result, seed_idx, day, n_people,
                                label_prefix.upper())
 
-            # Add infection stats text on map
             mean_inf = infection_pcts.mean()
             max_inf = infection_pcts.max()
             max_city = result.city_names[np.argmax(infection_pcts)]
@@ -300,7 +274,6 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
                 bbox=dict(boxstyle="round,pad=0.3", facecolor="white", alpha=0.85),
             )
 
-            # Save frame
             fname = output_dir / f"{label_prefix}_day{day:03d}.png"
             fig.savefig(str(fname), dpi=100, bbox_inches="tight",
                         facecolor="white", edgecolor="none")
@@ -322,7 +295,6 @@ def render_all_frames(result, africa_gdf, output_dir: Path, progress_callback,
         "vmax_shared": float(vmax),
         "country_filter": country,
     }
-    # Include full simulation parameters for reproducibility
     if params is not None:
         metadata["params"] = params
     metadata_path = output_dir / "metadata.json"
@@ -355,27 +327,15 @@ def generate_video(
     import subprocess
     import shutil
 
-    # Check ffmpeg is available
     if shutil.which("ffmpeg") is None:
         raise FileNotFoundError("ffmpeg not found. Install with: brew install ffmpeg")
 
-    # Find frames
     pattern = output_dir / f"{view}_day*.png"
     frames = sorted(output_dir.glob(f"{view}_day*.png"))
     if not frames:
         raise FileNotFoundError(f"No frames found matching {pattern}")
 
-    # Output path
     video_path = output_dir / f"{view}_animation.{output_format}"
-
-    # Build ffmpeg command
-    # -framerate: input fps
-    # -pattern_type glob: use glob pattern for input
-    # -i: input pattern
-    # -c:v libx264: H.264 codec (widely compatible)
-    # -pix_fmt yuv420p: pixel format for compatibility
-    # -crf 23: quality (lower = better, 18-28 is good range)
-    # -preset medium: encoding speed/quality tradeoff
 
     if output_format == "mp4":
         cmd = [
@@ -403,7 +363,6 @@ def generate_video(
     else:
         raise ValueError(f"Unsupported format: {output_format}")
 
-    # Run ffmpeg
     result = subprocess.run(
         cmd,
         capture_output=True,
@@ -438,7 +397,6 @@ def generate_combined_video(
     if shutil.which("ffmpeg") is None:
         raise FileNotFoundError("ffmpeg not found. Install with: brew install ffmpeg")
 
-    # Check frames exist
     actual_frames = sorted(output_dir.glob("actual_day*.png"))
     observed_frames = sorted(output_dir.glob("observed_day*.png"))
     if not actual_frames or not observed_frames:
@@ -446,7 +404,6 @@ def generate_combined_video(
 
     video_path = output_dir / f"combined_animation.{output_format}"
 
-    # ffmpeg filter to stack videos horizontally
     if output_format == "mp4":
         cmd = [
             "ffmpeg", "-y",

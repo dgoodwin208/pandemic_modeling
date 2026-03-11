@@ -62,23 +62,19 @@ class AgentSimulation:
     ):
         self.config = config
 
-        # Set random seed for reproducibility
         if config.random_seed is not None:
             random.seed(config.random_seed)
 
-        # Initialize components (same as PandemicSimulation)
         self.env = Environment()
         self.supply_chain = create_supply_chain(self.env, config.supply_chain)
         self.network = SocialNetwork(config.network)
 
-        # Build behavior map
         factory = behavior_factory or (lambda pid: NullBehavior())
         behaviors = {
             pid: factory(pid)
             for pid in self.network.people
         }
 
-        # Use IntelligentDiseaseModel instead of DiseaseModel
         self.disease = IntelligentDiseaseModel(
             env=self.env,
             network=self.network,
@@ -88,7 +84,6 @@ class AgentSimulation:
             supply_config=config.supply_chain,
         )
 
-        # Tracking (same as PandemicSimulation)
         self.daily_snapshots: list[dict] = []
         self.peak_active_cases = 0
         self.peak_day = 0.0
@@ -96,14 +91,12 @@ class AgentSimulation:
         self.min_reagents = config.supply_chain.initial_reagents
 
     def run(self) -> SimulationResult:
-        """Run the simulation and return results."""
         self.disease.seed_infections(self.config.initial_infections)
         self.env.process(self._daily_monitor())
         self.env.run(until=self.config.duration_days)
         return self._compile_results()
 
     def _daily_monitor(self):
-        """Monitor and record statistics daily."""
         while True:
             yield self.env.timeout(self.config.snapshot_interval)
             stats = self.disease.get_statistics()
@@ -119,7 +112,6 @@ class AgentSimulation:
                 self.min_reagents = stats["supply_chain"]["reagent_level"]
 
     def _compile_results(self) -> SimulationResult:
-        """Compile final results from simulation."""
         final_stats = self.disease.get_statistics()
         state_counts = final_stats["state_counts"]
 

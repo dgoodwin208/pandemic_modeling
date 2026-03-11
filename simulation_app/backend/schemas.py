@@ -22,7 +22,6 @@ class AllocationStrategyType(str, Enum):
 
 
 class ResourceConfig(BaseModel):
-    """Supply chain resource configuration."""
     enable_supply_chain: bool = False
     allocation_strategy: AllocationStrategyType = AllocationStrategyType.RULE_BASED
     beds_per_hospital: int = Field(120, ge=1, le=1000)
@@ -36,7 +35,6 @@ class ResourceConfig(BaseModel):
 
 
 class SimulationRequest(BaseModel):
-    """Request body for starting a new simulation run."""
     country: str = "Nigeria"
     scenario: DiseaseScenario = DiseaseScenario.COVID_NATURAL
     n_people: int = Field(5000, ge=500, le=50000)
@@ -65,7 +63,6 @@ class SimulationRequest(BaseModel):
 
 
 class ProgressResponse(BaseModel):
-    """SSE progress update sent to the client."""
     phase: str
     current: int
     total: int
@@ -74,12 +71,10 @@ class ProgressResponse(BaseModel):
 
 
 class SimulationStartResponse(BaseModel):
-    """Response returned when a simulation is started."""
     session_id: str
 
 
 class ScenarioInfo(BaseModel):
-    """Information about a disease scenario preset."""
     id: str
     name: str
     R0: float
@@ -88,6 +83,5 @@ class ScenarioInfo(BaseModel):
 
 
 class CountryInfo(BaseModel):
-    """Information about an available country."""
     name: str
     city_count: int

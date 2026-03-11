@@ -32,7 +32,6 @@ class Event:
 
 
 class Timeout:
-    """A timeout event - process resumes after delay."""
     def __init__(self, env: Environment, delay: float):
         self.env = env
         self.delay = delay
@@ -72,7 +71,6 @@ class Environment:
         self._active_process: Optional[Process] = None
 
     def timeout(self, delay: float) -> Timeout:
-        """Create a timeout event - process resumes after delay."""
         if delay < 0:
             raise ValueError(f"Timeout delay must be >= 0, got {delay}")
         return Timeout(self, delay)
@@ -121,7 +119,6 @@ class Environment:
             self._active_process = None
 
     def peek(self) -> float:
-        """Return time of next scheduled event, or inf if none."""
         return self._queue[0].time if self._queue else float('inf')
 
 
@@ -241,5 +238,4 @@ class Inventory:
         return False
 
     def get_history(self) -> list[dict]:
-        """Get inventory transaction history."""
         return self._history.copy()

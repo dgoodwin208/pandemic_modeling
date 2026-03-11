@@ -25,10 +25,6 @@ class StatisticalProvider:
     """
 
     def __init__(self, screening_capacity: int = 20):
-        """
-        Args:
-            screening_capacity: Number of people this provider screens per day.
-        """
         self.screening_capacity = screening_capacity
 
     def screen_daily(
@@ -63,13 +59,11 @@ class StatisticalProvider:
             if behavior is None:
                 continue
 
-            # Detection: sick person who discloses
             if person.is_contagious() and behavior.would_disclose():
                 new = healthcare_system.detect_case(pid, current_time)
                 if new:
                     detected += 1
 
-            # Advice: provider advises, person may or may not accept
             if behavior.receive_advice():
                 advice_accepted += 1
 

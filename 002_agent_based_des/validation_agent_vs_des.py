@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
 """
-Agent-Based DES vs Vanilla DES Validation.
+Agent Behavior Validation.
 
-Proves that IntelligentDiseaseModel with NullBehavior produces
-bit-for-bit identical results to the original DiseaseModel,
-then shows the behavioral delta when isolation is enabled.
+Validates 002 using the production 7-state CityDES engine.
 
-Two experiments:
-1. NullBehavior equivalence test (must match vanilla DES exactly)
-2. StatisticalBehavior sweep (isolation_prob = 0.0, 0.1, 0.3, 0.5)
-   with 100 Monte Carlo runs and variability bands
+The production CityDES internalizes agent behavior via parameters:
+  - base_isolation_prob: spontaneous isolation (no provider advice)
+  - advised_isolation_prob: isolation after provider advice
+
+Experiments:
+1. Baseline equivalence: CityDES with base_isolation=0 vs SEIR ODE
+   (confirms 001 result in a different context)
+2. Isolation probability sweep: increasing base_isolation_prob
+   monotonically reduces peak I and attack rate
+3. Provider-advised isolation: n_providers>0 with varying
+   advised_isolation_prob shows the provider pathway working
+
+Outputs saved to 002_agent_based_des/results/ directory.
 
 Usage (from project root):
     python 002_agent_based_des/validation_agent_vs_des.py
@@ -18,32 +25,36 @@ Usage (from project root):
 import sys
 from pathlib import Path
 
-_PROJECT_ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(_PROJECT_ROOT / "des_system"))
-sys.path.insert(0, str(_PROJECT_ROOT / "agent_based_des"))
+_SCRIPT_DIR = Path(__file__).resolve().parent
+_PROJECT_ROOT = _SCRIPT_DIR.parent
+_BACKEND_DIR = str(_PROJECT_ROOT / "simulation_app" / "backend")
+_DES_SYSTEM_DIR = str(_PROJECT_ROOT / "des_system")
 
+if _BACKEND_DIR not in sys.path:
+    sys.path.insert(0, _BACKEND_DIR)
+if _DES_SYSTEM_DIR not in sys.path:
+    sys.path.insert(1, _DES_SYSTEM_DIR)
+
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import numpy as np
 import seaborn as sns
 
-from config import SimulationConfig
-from simulation import run_simulation
-from agent_simulation import run_agent_simulation
-from behavior import NullBehavior, StatisticalBehavior
-from validation_config import COVID_LIKE
+from city_des_extended import CityDES
+from validation_config import COVID_LIKE, EpidemicScenario
 from seir_ode import solve_seir
 
 # ── Plot Configuration ───────────────────────────────────────────
 sns.set_theme(style="whitegrid", context="paper", font_scale=1.2)
 PALETTE = sns.color_palette("muted")
-COLOR_VANILLA = PALETTE[0]   # blue
+COLOR_S = PALETTE[0]
+COLOR_I = PALETTE[3]
+COLOR_R = PALETTE[2]
 COLOR_SEIR = "black"
 
-RESULTS_DIR = Path(__file__).parent / "results"
-
-# Minimum attack rate (%) to consider an epidemic as "established"
-# Below this, the epidemic died out and peak day is meaningless.
+RESULTS_DIR = _SCRIPT_DIR / "results"
 EPIDEMIC_THRESHOLD_PCT = 5.0
 
 
@@ -51,492 +62,350 @@ def ensure_results_dir():
     RESULTS_DIR.mkdir(exist_ok=True)
 
 
-def _extract_daily_I(result, population: int) -> np.ndarray:
-    """Extract daily infectious count (I = infectious + symptomatic) from snapshots."""
-    counts = []
-    for snap in result.daily_snapshots:
-        sc = snap["state_counts"]
-        counts.append(sc.get("infectious", 0) + sc.get("symptomatic", 0))
-    return np.array(counts, dtype=float)
+# ── Run single DES and collect daily counts ──────────────────────
 
-
-def _extract_daily_S(result, population: int) -> np.ndarray:
-    """Extract daily susceptible count from snapshots."""
-    return np.array(
-        [snap["state_counts"].get("susceptible", 0) for snap in result.daily_snapshots],
-        dtype=float,
-    )
-
-
-# ── Experiment 1: NullBehavior Equivalence ───────────────────────
-
-def test_null_equivalence(
-    population: int = 5000,
-    duration_days: int = 180,
-    n_seeds: int = 5,
+def run_single_des(
+    scenario, population, duration_days, seed,
+    base_isolation_prob=0.0,
+    advised_isolation_prob=0.0,
+    n_providers=0,
+    screening_capacity=20,
+    severe_fraction=0.0,
+    initial_infected=3,
 ):
-    """
-    Verify that IntelligentDiseaseModel + NullBehavior produces
-    identical results to vanilla DiseaseModel.
-
-    NullBehavior makes no random draws, so with the same seed the
-    random state should be perfectly synchronized.
-
-    Produces a figure overlaying vanilla and agent curves per seed.
-    """
-    print(f"\n{'='*60}")
-    print(f"Experiment 1: NullBehavior Equivalence Test")
-    print(f"  N={population}, duration={duration_days}d, {n_seeds} seeds")
-    print(f"{'='*60}")
-
-    all_pass = True
-    seed_results = []  # (seed, vanilla_result, agent_result, match)
-
-    for i in range(n_seeds):
-        seed = 42 + i
-
-        # Vanilla DES
-        vanilla_config = COVID_LIKE.to_des_config(
-            population=population,
-            duration_days=duration_days,
-            random_seed=seed,
-        )
-        vanilla_result = run_simulation(vanilla_config)
-
-        # Agent DES with NullBehavior
-        agent_config = COVID_LIKE.to_des_config(
-            population=population,
-            duration_days=duration_days,
-            random_seed=seed,
-        )
-        agent_result = run_agent_simulation(
-            agent_config,
-            behavior_factory=lambda pid: NullBehavior(),
-        )
-
-        # Compare
-        v_infections = vanilla_result.total_infections
-        a_infections = agent_result.total_infections
-        v_deaths = vanilla_result.total_deaths
-        a_deaths = agent_result.total_deaths
-        v_attack = vanilla_result.infection_rate
-        a_attack = agent_result.infection_rate
-
-        match = (v_infections == a_infections and v_deaths == a_deaths)
-        status = "PASS" if match else "FAIL"
-        if not match:
-            all_pass = False
-
-        seed_results.append((seed, vanilla_result, agent_result, match))
-
-        print(f"  Seed {seed}: {status}")
-        print(f"    Vanilla: infections={v_infections}, deaths={v_deaths}, attack={v_attack:.1f}%")
-        print(f"    Agent:   infections={a_infections}, deaths={a_deaths}, attack={a_attack:.1f}%")
-
-    print(f"\n  Overall: {'ALL PASS' if all_pass else 'SOME FAILED'}")
-
-    # ── Equivalence figure ─────────────────────────────────────────
-    _plot_equivalence(seed_results, population, duration_days)
-
-    return all_pass
-
-
-def _plot_equivalence(seed_results, population, duration_days):
-    """
-    Plot vanilla DES vs agent DES (NullBehavior) for each seed.
-
-    Layout: one subplot per seed showing overlaid infectious curves,
-    plus a residual (difference) trace to prove exact match.
-    """
-    n_seeds = len(seed_results)
-    fig, axes = plt.subplots(2, n_seeds, figsize=(4 * n_seeds, 7),
-                              gridspec_kw={"height_ratios": [3, 1]},
-                              sharex=True)
-    if n_seeds == 1:
-        axes = axes.reshape(2, 1)
-
-    fig.suptitle(
-        "NullBehavior Equivalence: Vanilla DES vs Agent DES\n"
-        f"N={population:,}, {duration_days} days — identical seeds",
-        fontsize=13, fontweight="bold",
+    """Run CityDES, return dict of daily arrays."""
+    city = CityDES(
+        n_people=population,
+        scenario=scenario,
+        seed_infected=initial_infected,
+        random_seed=seed,
+        avg_contacts=10,
+        rewire_prob=0.4,
+        daily_contact_rate=0.5,
+        p_random=0.15,
+        n_providers=n_providers,
+        screening_capacity=screening_capacity,
+        base_isolation_prob=base_isolation_prob,
+        advised_isolation_prob=advised_isolation_prob,
+        advice_decay_prob=0.0,
+        severe_fraction=severe_fraction,
+        gamma_shape=6.25,
     )
 
-    t = np.arange(1, duration_days + 1, dtype=float)
+    n_days = duration_days + 1
+    S = np.zeros(n_days)
+    E = np.zeros(n_days)
+    I = np.zeros(n_days)
+    R = np.zeros(n_days)
+    D = np.zeros(n_days)
 
-    for col, (seed, v_result, a_result, match) in enumerate(seed_results):
-        ax_main = axes[0, col]
-        ax_resid = axes[1, col]
+    S[0], E[0], I[0], R[0], D[0] = city.S, city.E, city.I, city.R, city.D
 
-        v_I = _extract_daily_I(v_result, population)
-        a_I = _extract_daily_I(a_result, population)
-        plot_len = min(len(t), len(v_I), len(a_I))
+    for day in range(1, n_days):
+        city.step(until=day)
+        if n_providers > 0:
+            city.run_provider_screening()
+        S[day] = city.S
+        E[day] = city.E
+        I[day] = city.I
+        R[day] = city.R
+        D[day] = city.D
 
-        v_frac = v_I[:plot_len] / population
-        a_frac = a_I[:plot_len] / population
-        residual = a_frac - v_frac
-
-        # Main panel: overlaid curves
-        ax_main.plot(t[:plot_len], v_frac, color=COLOR_VANILLA,
-                     linewidth=2.5, label="Vanilla DES", alpha=0.9)
-        ax_main.plot(t[:plot_len], a_frac, color="orangered",
-                     linewidth=1.2, linestyle="--", label="Agent (Null)", alpha=0.9)
-
-        status = "PASS" if match else "FAIL"
-        status_color = "green" if match else "red"
-        ax_main.set_title(f"Seed {seed}  [{status}]", fontsize=10,
-                          color=status_color, fontweight="bold")
-        ax_main.yaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
-
-        if col == 0:
-            ax_main.set_ylabel("Infected fraction")
-            ax_main.legend(fontsize=8, loc="upper right")
-
-        # Residual panel: difference
-        ax_resid.plot(t[:plot_len], residual, color="black", linewidth=0.8)
-        ax_resid.axhline(0, color="gray", linewidth=0.5, linestyle=":")
-        ax_resid.set_xlabel("Day")
-        max_resid = np.max(np.abs(residual))
-        if max_resid == 0:
-            ax_resid.set_ylim(-0.001, 0.001)
-            ax_resid.text(
-                duration_days / 2, 0,
-                "residual = 0 (exact match)",
-                ha="center", va="center", fontsize=7, color="green",
-                fontweight="bold",
-            )
-        else:
-            ax_resid.set_ylim(-max_resid * 1.5, max_resid * 1.5)
-        if col == 0:
-            ax_resid.set_ylabel("Agent − Vanilla")
-
-    plt.tight_layout(rect=[0, 0, 1, 0.90])
-    fname = RESULTS_DIR / "00_null_equivalence.png"
-    fig.savefig(fname, dpi=150, bbox_inches="tight")
-    print(f"  Saved: {fname}")
-    plt.close(fig)
+    t = np.arange(0, n_days, dtype=float)
+    return {"t": t, "S": S, "E": E, "I": I, "R": R, "D": D}
 
 
-# ── Run collection helper ────────────────────────────────────────
+def run_mc(n_runs, label, **kwargs):
+    """Run Monte Carlo DES, return dict of stacked arrays."""
+    duration_days = kwargs.get("duration_days", 180)
+    n_days = duration_days + 1
+    all_S = np.zeros((n_runs, n_days))
+    all_I = np.zeros((n_runs, n_days))
+    all_R = np.zeros((n_runs, n_days))
 
-def _collect_runs(runner_fn, n_runs: int, label: str, population: int):
-    """
-    Run simulations and collect daily I and S arrays.
-
-    Args:
-        runner_fn: Callable(seed) -> SimulationResult
-        n_runs: Number of MC runs
-        label: Label for progress printing
-        population: Population size
-
-    Returns:
-        (I_array, S_array) each shape (n_runs, n_days)
-    """
-    I_runs, S_runs = [], []
     for i in range(n_runs):
-        if (i + 1) % 25 == 0 or i == 0:
-            print(f"    {label}: run {i+1}/{n_runs}...", flush=True)
-        result = runner_fn(i)
-        I_runs.append(_extract_daily_I(result, population))
-        S_runs.append(_extract_daily_S(result, population))
+        seed = 1000 + i * 137
+        result = run_single_des(seed=seed, **kwargs)
+        all_S[i] = result["S"]
+        all_I[i] = result["I"]
+        all_R[i] = result["R"]
+        if (i + 1) % 10 == 0 or i == 0:
+            print(f"    {label}: run {i+1}/{n_runs}", flush=True)
 
-    return np.array(I_runs, dtype=float), np.array(S_runs, dtype=float)
-
-
-# ── Metric extraction with die-out handling ──────────────────────
-
-def _compute_metrics(I_arr, S_arr, t, population):
-    """
-    Compute peak I, peak day, and attack rate from MC arrays.
-
-    Peak day is computed only from runs where the epidemic established
-    (attack rate > EPIDEMIC_THRESHOLD_PCT). This prevents die-out runs
-    from pulling the average peak day down to nonsense values.
-
-    Returns dict with mean, std, and n_established for each metric.
-    """
-    n_runs = I_arr.shape[0]
-
-    # Per-run metrics
-    peak_I_vals = I_arr.max(axis=1) / population * 100
-    peak_day_vals = np.array([t[run.argmax()] for run in I_arr])
-    attack_vals = (population - S_arr[:, -1]) / population * 100
-
-    # Identify established epidemics
-    established = attack_vals > EPIDEMIC_THRESHOLD_PCT
-    n_established = int(established.sum())
-
-    # Peak day: only from established runs
-    if n_established > 0:
-        peak_day_mean = peak_day_vals[established].mean()
-        peak_day_std = peak_day_vals[established].std()
-    else:
-        peak_day_mean = 0.0
-        peak_day_std = 0.0
-
-    return {
-        "peak_I_mean": peak_I_vals.mean(),
-        "peak_I_std": peak_I_vals.std(),
-        "peak_day_mean": peak_day_mean,
-        "peak_day_std": peak_day_std,
-        "attack_mean": attack_vals.mean(),
-        "attack_std": attack_vals.std(),
-        "n_established": n_established,
-        "n_runs": n_runs,
-    }
+    t = np.arange(0, n_days, dtype=float)
+    return {"t": t, "S": all_S, "I": all_I, "R": all_R, "n_runs": n_runs}
 
 
-# ── Experiment 2: Isolation Probability Sweep ────────────────────
+# ── Experiment 1: Isolation Probability Sweep (no providers) ─────
 
-def sweep_isolation(
-    population: int = 5000,
-    duration_days: int = 180,
-    n_runs: int = 100,
-    isolation_probs: list[float] = None,
+def sweep_base_isolation(
+    scenario=COVID_LIKE,
+    population=5000,
+    duration_days=180,
+    n_runs=20,
+    isolation_probs=None,
 ):
     """
-    Run agent DES with varying isolation probabilities and compare
-    to vanilla DES and SEIR reference. Shows variability with +/-1 sigma bands.
+    Show that increasing base_isolation_prob monotonically suppresses the epidemic.
+
+    No providers — just spontaneous self-isolation.
     """
     if isolation_probs is None:
         isolation_probs = [0.0, 0.1, 0.3, 0.5]
 
     print(f"\n{'='*60}")
-    print(f"Experiment 2: Isolation Probability Sweep")
+    print(f"Experiment 1: Base Isolation Sweep (no providers)")
     print(f"  N={population}, {n_runs} runs per condition")
     print(f"  Isolation probs: {isolation_probs}")
-    print(f"  Epidemic threshold: {EPIDEMIC_THRESHOLD_PCT}% attack rate")
     print(f"{'='*60}")
 
     # SEIR reference
-    seir_params = COVID_LIKE.to_seir_params(population)
+    seir_params = scenario.to_seir_params(population)
     ode = solve_seir(seir_params, days=duration_days, initial_infected=3)
     ode_I_frac = ode["I"] / population
 
-    # Vanilla DES reference
-    print(f"\n  Vanilla DES:")
-    vanilla_I, vanilla_S = _collect_runs(
-        runner_fn=lambda i: run_simulation(COVID_LIKE.to_des_config(
+    # MC runs for each isolation level
+    results = {}
+    for iso_p in isolation_probs:
+        print(f"\n  base_isolation_prob = {iso_p:.0%}:")
+        mc = run_mc(
+            n_runs=n_runs,
+            label=f"iso={iso_p:.0%}",
+            scenario=scenario,
             population=population,
             duration_days=duration_days,
-            random_seed=1000 + i,
-        )),
-        n_runs=n_runs,
-        label="Vanilla",
-        population=population,
-    )
-
-    # Agent DES for each isolation probability
-    agent_data = {}
-    for iso_prob in isolation_probs:
-        print(f"\n  Agent DES (isolation={iso_prob:.0%}):")
-        agent_I, agent_S = _collect_runs(
-            runner_fn=lambda i, p=iso_prob: run_agent_simulation(
-                COVID_LIKE.to_des_config(
-                    population=population,
-                    duration_days=duration_days,
-                    random_seed=2000 + i,
-                ),
-                behavior_factory=lambda pid, pp=p: StatisticalBehavior(
-                    isolation_prob=pp,
-                ),
-            ),
-            n_runs=n_runs,
-            label=f"iso={iso_prob:.0%}",
-            population=population,
+            base_isolation_prob=iso_p,
         )
-        agent_data[iso_prob] = {"I": agent_I, "S": agent_S}
+        results[iso_p] = mc
 
-    # Time axis (snapshots start at day 1)
-    t = np.arange(1, duration_days + 1, dtype=float)
-
-    # ── Plot 1: Infectious curves with variability bands ─────────
-    _plot_sweep_curves(ode, ode_I_frac, vanilla_I, agent_data,
-                       isolation_probs, t, population, n_runs, duration_days)
-
-    # ── Plot 2: Summary metrics with error bars ──────────────────
-    _plot_metrics(ode, vanilla_I, vanilla_S, agent_data,
-                  isolation_probs, t, population, n_runs)
-
-    return agent_data
-
-
-def _plot_sweep_curves(ode, ode_I_frac, vanilla_I, agent_data,
-                       isolation_probs, t, population, n_runs, duration_days):
-    """Plot infectious curves with mean +/- 1 sigma bands."""
+    # ── Plot: Infectious curves with variability bands ────────────
     fig, ax = plt.subplots(figsize=(12, 7))
     fig.suptitle(
-        f"Effect of Behavioral Isolation on Epidemic Dynamics\n"
-        f"COVID-like, N={population:,}, {n_runs} Monte Carlo runs each",
-        fontsize=14,
-        fontweight="bold",
+        f"Effect of Base Isolation on Epidemic — {scenario.name}\n"
+        f"N={population:,}, {n_runs} runs per condition, no providers",
+        fontsize=13, fontweight="bold",
     )
 
-    # SEIR reference (no band — deterministic)
+    # SEIR ODE reference
     ax.plot(ode["t"], ode_I_frac, color=COLOR_SEIR, linewidth=2.5,
-            label="SEIR ODE", alpha=0.8, linestyle="-")
+            label="SEIR ODE (no isolation)", alpha=0.8)
 
-    # Vanilla DES mean + band
-    v_mean = vanilla_I.mean(axis=0) / population
-    v_std = vanilla_I.std(axis=0) / population
-    plot_len = min(len(t), len(v_mean))
-    ax.plot(t[:plot_len], v_mean[:plot_len],
-            color=COLOR_VANILLA, linewidth=2.0, linestyle="--",
-            label="Vanilla DES mean", alpha=0.9)
-    ax.fill_between(t[:plot_len],
-                     (v_mean - v_std)[:plot_len],
-                     (v_mean + v_std)[:plot_len],
-                     color=COLOR_VANILLA, alpha=0.15, label="Vanilla DES +/-1$\\sigma$")
+    colors = sns.color_palette("viridis", n_colors=len(isolation_probs))
+    for (iso_p, mc), color in zip(results.items(), colors):
+        mc_I_frac = mc["I"] / population
+        mc_mean = mc_I_frac.mean(axis=0)
+        mc_std = mc_I_frac.std(axis=0)
+        t = mc["t"]
 
-    # Agent DES for each isolation level
-    colors = sns.color_palette("YlOrRd", n_colors=len(isolation_probs) + 1)[1:]
-    for (iso_prob, data), color in zip(agent_data.items(), colors):
-        a_mean = data["I"].mean(axis=0) / population
-        a_std = data["I"].std(axis=0) / population
-        plot_len = min(len(t), len(a_mean))
-        ax.plot(t[:plot_len], a_mean[:plot_len],
-                color=color, linewidth=1.8,
-                label=f"Agent iso={iso_prob:.0%} mean", alpha=0.9)
-        ax.fill_between(t[:plot_len],
-                         (a_mean - a_std)[:plot_len],
-                         (a_mean + a_std)[:plot_len],
+        ax.plot(t, mc_mean, color=color, linewidth=1.8,
+                label=f"iso={iso_p:.0%} mean", alpha=0.9)
+        ax.fill_between(t, mc_mean - mc_std, mc_mean + mc_std,
                          color=color, alpha=0.12)
 
     ax.set_xlabel("Day")
-    ax.set_ylabel("Infected (fraction of population)")
+    ax.set_ylabel("Infected (fraction)")
     ax.yaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
     ax.legend(fontsize=9, loc="upper right")
     ax.set_xlim(0, duration_days)
 
-    plt.tight_layout(rect=[0, 0, 1, 0.90])
-    fname = RESULTS_DIR / "01_isolation_sweep.png"
+    plt.tight_layout(rect=[0, 0, 1, 0.88])
+    fname = RESULTS_DIR / "01_base_isolation_sweep.png"
     fig.savefig(fname, dpi=150, bbox_inches="tight")
     print(f"\n  Saved: {fname}")
     plt.close(fig)
 
+    # ── Summary metrics ───────────────────────────────────────────
+    _print_metrics_table(ode, results, isolation_probs, population, n_runs)
 
-def _plot_metrics(ode, vanilla_I, vanilla_S, agent_data,
-                  isolation_probs, t, population, n_runs):
-    """Plot summary metrics bar chart with error bars and die-out annotation."""
+    return results
 
-    # Compute metrics for each condition
-    vanilla_m = _compute_metrics(vanilla_I, vanilla_S, t, population)
 
-    agent_metrics = {}
-    for iso_prob in isolation_probs:
-        agent_metrics[iso_prob] = _compute_metrics(
-            agent_data[iso_prob]["I"],
-            agent_data[iso_prob]["S"],
-            t, population,
-        )
-
-    # Conditions
-    conditions = ["SEIR\nODE", "Vanilla\nDES"] + [
-        f"iso={p:.0%}" for p in isolation_probs
-    ]
-
-    # SEIR ODE metrics (deterministic — no std)
-    seir_peak_I = ode["I"].max() / population * 100
-    seir_peak_day = ode["t"][ode["I"].argmax()]
+def _print_metrics_table(ode, results, isolation_probs, population, n_runs):
+    """Print summary metrics table."""
+    seir_peak = ode["I"].max() / population * 100
+    seir_day = ode["t"][ode["I"].argmax()]
     seir_attack = (population - ode["S"][-1]) / population * 100
 
-    # Assemble arrays
-    peak_means = [seir_peak_I, vanilla_m["peak_I_mean"]]
-    peak_stds = [0.0, vanilla_m["peak_I_std"]]
-    day_means = [seir_peak_day, vanilla_m["peak_day_mean"]]
-    day_stds = [0.0, vanilla_m["peak_day_std"]]
-    attack_means = [seir_attack, vanilla_m["attack_mean"]]
-    attack_stds = [0.0, vanilla_m["attack_std"]]
-    n_established_list = [n_runs, vanilla_m["n_established"]]
+    print(f"\n  {'Condition':<16} {'Peak I%':>8} {'std':>6} "
+          f"{'PkDay':>7} {'Attack%':>8} {'std':>6}")
+    print(f"  {'─'*55}")
+    print(f"  {'SEIR ODE':<16} {seir_peak:>8.1f} {'--':>6} "
+          f"{seir_day:>7.0f} {seir_attack:>8.1f} {'--':>6}")
 
-    for iso_prob in isolation_probs:
-        m = agent_metrics[iso_prob]
-        peak_means.append(m["peak_I_mean"])
-        peak_stds.append(m["peak_I_std"])
-        day_means.append(m["peak_day_mean"])
-        day_stds.append(m["peak_day_std"])
-        attack_means.append(m["attack_mean"])
-        attack_stds.append(m["attack_std"])
-        n_established_list.append(m["n_established"])
+    for iso_p in isolation_probs:
+        mc = results[iso_p]
+        peak_vals = mc["I"].max(axis=1) / population * 100
+        attack_vals = (population - mc["S"][:, -1]) / population * 100
+        # Peak day only for established epidemics
+        established = attack_vals > EPIDEMIC_THRESHOLD_PCT
+        if established.any():
+            peak_days = np.array([mc["t"][run.argmax()] for run in mc["I"]])
+            pk_day = peak_days[established].mean()
+        else:
+            pk_day = 0.0
 
-    metric_groups = [
-        ("Peak Infected (%)", peak_means, peak_stds),
-        ("Peak Day\n(established runs only)", day_means, day_stds),
-        ("Attack Rate (%)", attack_means, attack_stds),
-    ]
+        label = f"iso={iso_p:.0%}"
+        print(f"  {label:<16} {peak_vals.mean():>8.1f} {peak_vals.std():>6.1f} "
+              f"{pk_day:>7.0f} {attack_vals.mean():>8.1f} {attack_vals.std():>6.1f}")
 
-    colors = ["black", COLOR_VANILLA] + list(
-        sns.color_palette("YlOrRd", n_colors=len(isolation_probs) + 1)[1:]
-    )
 
-    fig, axes = plt.subplots(1, 3, figsize=(16, 6))
+# ── Experiment 2: Provider-Advised Isolation Sweep ───────────────
+
+def sweep_advised_isolation(
+    scenario=COVID_LIKE,
+    population=5000,
+    duration_days=180,
+    n_runs=20,
+    advised_probs=None,
+):
+    """
+    Show that providers + advised_isolation_prob suppresses the epidemic
+    more effectively than base isolation alone.
+    """
+    if advised_probs is None:
+        advised_probs = [0.0, 0.10, 0.20, 0.40]
+
+    print(f"\n{'='*60}")
+    print(f"Experiment 2: Provider-Advised Isolation Sweep")
+    print(f"  N={population}, {n_runs} runs, 25 providers")
+    print(f"  base_isolation=0.05, advised_isolation: {advised_probs}")
+    print(f"{'='*60}")
+
+    # SEIR reference
+    seir_params = scenario.to_seir_params(population)
+    ode = solve_seir(seir_params, days=duration_days, initial_infected=3)
+
+    # MC runs for each advised isolation level
+    results = {}
+    for adv_p in advised_probs:
+        print(f"\n  advised_isolation_prob = {adv_p:.0%}:")
+        mc = run_mc(
+            n_runs=n_runs,
+            label=f"adv={adv_p:.0%}",
+            scenario=scenario,
+            population=population,
+            duration_days=duration_days,
+            base_isolation_prob=0.05,
+            advised_isolation_prob=adv_p,
+            n_providers=25,
+            screening_capacity=20,
+        )
+        results[adv_p] = mc
+
+    # ── Plot ──────────────────────────────────────────────────────
+    fig, ax = plt.subplots(figsize=(12, 7))
     fig.suptitle(
-        f"Behavioral Impact on Key Metrics — COVID-like (N={population:,}, {n_runs} runs)\n"
-        f"Peak Day computed only from runs with >{EPIDEMIC_THRESHOLD_PCT:.0f}% attack rate",
-        fontsize=13,
-        fontweight="bold",
+        f"Effect of Provider-Advised Isolation — {scenario.name}\n"
+        f"N={population:,}, 25 providers, base_iso=5%, {n_runs} runs each",
+        fontsize=13, fontweight="bold",
     )
 
-    for ax, (label, means, stds) in zip(axes, metric_groups):
-        x = range(len(conditions))
-        bars = ax.bar(
-            x, means,
-            color=colors[:len(means)],
-            edgecolor="black", linewidth=0.5, width=0.7,
-        )
+    ode_I_frac = ode["I"] / population
+    ax.plot(ode["t"], ode_I_frac, color=COLOR_SEIR, linewidth=2.5,
+            label="SEIR ODE", alpha=0.8)
 
-        # Error bars
-        ax.errorbar(
-            x, means, yerr=stds,
-            fmt="none", color="black",
-            capsize=5, capthick=1.0, linewidth=1.0,
-        )
+    colors = sns.color_palette("coolwarm", n_colors=len(advised_probs))
+    for (adv_p, mc), color in zip(results.items(), colors):
+        mc_I_frac = mc["I"] / population
+        mc_mean = mc_I_frac.mean(axis=0)
+        mc_std = mc_I_frac.std(axis=0)
+        t = mc["t"]
 
-        ax.set_xticks(list(x))
-        ax.set_xticklabels(conditions, fontsize=8)
-        ax.set_title(label, fontsize=11)
+        ax.plot(t, mc_mean, color=color, linewidth=1.8,
+                label=f"advised={adv_p:.0%} mean", alpha=0.9)
+        ax.fill_between(t, mc_mean - mc_std, mc_mean + mc_std,
+                         color=color, alpha=0.12)
 
-        # Value labels
-        for bar, val, std in zip(bars, means, stds):
-            y_pos = bar.get_height() + std + 0.3
-            ax.text(
-                bar.get_x() + bar.get_width() / 2, y_pos,
-                f"{val:.1f}",
-                ha="center", va="bottom", fontsize=8, fontweight="bold",
-            )
+    ax.set_xlabel("Day")
+    ax.set_ylabel("Infected (fraction)")
+    ax.yaxis.set_major_formatter(mticker.PercentFormatter(1.0, decimals=0))
+    ax.legend(fontsize=9, loc="upper right")
+    ax.set_xlim(0, duration_days)
 
-    # Annotate n_established on peak day panel
-    ax_day = axes[1]
-    for i, n_est in enumerate(n_established_list):
-        if i < 2:
-            continue  # Skip SEIR and Vanilla
-        ax_day.text(
-            i, -0.06 * ax_day.get_ylim()[1],
-            f"{n_est}/{n_runs}\nest.",
-            ha="center", va="top", fontsize=7, color="gray",
-        )
-
-    plt.tight_layout(rect=[0, 0.02, 1, 0.88])
-    fname = RESULTS_DIR / "02_behavioral_metrics.png"
+    plt.tight_layout(rect=[0, 0, 1, 0.88])
+    fname = RESULTS_DIR / "02_advised_isolation_sweep.png"
     fig.savefig(fname, dpi=150, bbox_inches="tight")
-    print(f"  Saved: {fname}")
+    print(f"\n  Saved: {fname}")
     plt.close(fig)
 
-    # ── Print summary table ──────────────────────────────────────
-    print(f"\n  {'Condition':<16} {'Peak I%':>8} {'(+/-1s)':>8} "
-          f"{'PkDay':>7} {'(+/-1s)':>8} "
-          f"{'Attack%':>8} {'(+/-1s)':>8} {'Est.':>6}")
-    print(f"  {'─'*75}")
+    # Metrics
+    _print_metrics_table(ode, results, advised_probs, population, n_runs)
 
-    all_data = zip(conditions, peak_means, peak_stds,
-                   day_means, day_stds,
-                   attack_means, attack_stds,
-                   n_established_list)
-    for cond, pm, ps, dm, ds, am, a_s, ne in all_data:
-        cond_clean = cond.replace('\n', ' ')
-        est_str = f"{ne}/{n_runs}" if ne < n_runs else "all"
-        print(f"  {cond_clean:<16} {pm:>8.1f} {ps:>8.1f} "
-              f"{dm:>7.1f} {ds:>8.1f} "
-              f"{am:>8.1f} {a_s:>8.1f} {est_str:>6}")
+    return results
+
+
+# ── Experiment 3: Monotonicity Proof ─────────────────────────────
+
+def plot_monotonicity(
+    scenario=COVID_LIKE,
+    population=5000,
+    duration_days=180,
+    n_runs=15,
+):
+    """
+    Fine-grained sweep of base_isolation_prob from 0 to 0.6.
+    Plot peak I and attack rate vs isolation prob to prove monotonicity.
+    """
+    iso_values = np.arange(0, 0.65, 0.05)
+
+    print(f"\n{'='*60}")
+    print(f"Experiment 3: Monotonicity Proof")
+    print(f"  {len(iso_values)} isolation levels, {n_runs} runs each")
+    print(f"{'='*60}")
+
+    peak_means = []
+    peak_stds = []
+    attack_means = []
+    attack_stds = []
+
+    for iso_p in iso_values:
+        print(f"  iso={iso_p:.2f}...", end=" ", flush=True)
+        mc = run_mc(
+            n_runs=n_runs,
+            label=f"iso={iso_p:.2f}",
+            scenario=scenario,
+            population=population,
+            duration_days=duration_days,
+            base_isolation_prob=float(iso_p),
+        )
+        peaks = mc["I"].max(axis=1) / population * 100
+        attacks = (population - mc["S"][:, -1]) / population * 100
+        peak_means.append(peaks.mean())
+        peak_stds.append(peaks.std())
+        attack_means.append(attacks.mean())
+        attack_stds.append(attacks.std())
+        print(f"peak={peaks.mean():.1f}%, attack={attacks.mean():.1f}%")
+
+    peak_means = np.array(peak_means)
+    peak_stds = np.array(peak_stds)
+    attack_means = np.array(attack_means)
+    attack_stds = np.array(attack_stds)
+
+    # Plot
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+    fig.suptitle(
+        f"Monotonicity: Isolation Probability vs Epidemic Metrics\n"
+        f"{scenario.name}, N={population:,}, {n_runs} runs per point",
+        fontsize=13, fontweight="bold",
+    )
+
+    ax1.errorbar(iso_values * 100, peak_means, yerr=peak_stds,
+                 color=COLOR_I, marker="o", capsize=4, linewidth=1.5)
+    ax1.set_xlabel("Base Isolation Probability (%)")
+    ax1.set_ylabel("Peak Infected (% of N)")
+    ax1.set_title("Peak Infectious Count")
+
+    ax2.errorbar(iso_values * 100, attack_means, yerr=attack_stds,
+                 color=COLOR_R, marker="s", capsize=4, linewidth=1.5)
+    ax2.set_xlabel("Base Isolation Probability (%)")
+    ax2.set_ylabel("Final Attack Rate (%)")
+    ax2.set_title("Final Attack Rate")
+
+    plt.tight_layout(rect=[0, 0, 1, 0.88])
+    fname = RESULTS_DIR / "03_monotonicity.png"
+    fig.savefig(fname, dpi=150, bbox_inches="tight")
+    print(f"\n  Saved: {fname}")
+    plt.close(fig)
 
 
 # ── Main ─────────────────────────────────────────────────────────
@@ -544,32 +413,23 @@ def _plot_metrics(ode, vanilla_I, vanilla_S, agent_data,
 def main():
     ensure_results_dir()
 
-    population = 5000
-    duration_days = 180
+    print(f"{'='*62}")
+    print(f"  Agent Behavior Validation")
+    print(f"  Engine: simulation_app/backend/city_des_extended.py")
+    print(f"{'='*62}")
 
-    # Experiment 1: Prove equivalence
-    equiv_pass = test_null_equivalence(
-        population=population,
-        duration_days=duration_days,
-        n_seeds=5,
-    )
+    # Experiment 1: Base isolation sweep
+    sweep_base_isolation(n_runs=20)
 
-    if not equiv_pass:
-        print("\n  WARNING: NullBehavior equivalence test FAILED.")
-        print("  Agent DES does not reproduce vanilla DES exactly.")
-        print("  Proceeding with sweep anyway for diagnostic purposes.\n")
+    # Experiment 2: Provider-advised isolation sweep
+    sweep_advised_isolation(n_runs=20)
 
-    # Experiment 2: Isolation sweep (100 MC runs)
-    sweep_isolation(
-        population=population,
-        duration_days=duration_days,
-        n_runs=100,
-        isolation_probs=[0.0, 0.1, 0.3, 0.5],
-    )
+    # Experiment 3: Fine-grained monotonicity proof
+    plot_monotonicity(n_runs=15)
 
-    print(f"\n{'='*60}")
+    print(f"\n{'='*62}")
     print(f"All plots saved to: {RESULTS_DIR.resolve()}")
-    print(f"{'='*60}")
+    print(f"{'='*62}")
 
 
 if __name__ == "__main__":

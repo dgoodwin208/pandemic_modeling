@@ -64,7 +64,6 @@ class CityDES:
         advised_isolation_prob: float = 0.40,
         advice_decay_prob: float = 0.0,
     ):
-        # Seed RNGs
         self._rng = random.Random(random_seed)
         self._np_rng = np.random.RandomState(random_seed)
 
@@ -88,7 +87,6 @@ class CityDES:
                 f"Derived transmission_prob={self.transmission_prob:.3f} > 1.0."
             )
 
-        # Provider parameters
         self._n_providers = n_providers
         self._screening_capacity = screening_capacity
         self._disclosure_prob = disclosure_prob
@@ -101,7 +99,6 @@ class CityDES:
         # Reverts to False each day with P=advice_decay_prob (0 = no decay).
         self._provider_advised = np.zeros(n_people, dtype=np.bool_)
 
-        # Build social network (Watts-Strogatz small-world)
         G = nx.watts_strogatz_graph(
             n_people, k=avg_contacts, p=rewire_prob,
             seed=random_seed,
@@ -111,7 +108,6 @@ class CityDES:
         # Agent states: 0=S, 1=E, 2=I, 3=R
         self._states = np.zeros(n_people, dtype=np.int8)
 
-        # Compartment counts
         self._counts = [n_people, 0, 0, 0]  # [S, E, I, R]
 
         # Seed initial infections (directly to I, matching ODE seeding)
@@ -152,7 +148,6 @@ class CityDES:
     # ── Stepping interface ────────────────────────────────────────────
 
     def step(self, until: float) -> None:
-        """Advance the SimPy environment to the given time."""
         self.env.run(until=until)
 
     def inject_exposed(self, n_exposed: float) -> None:
@@ -245,7 +240,6 @@ class CityDES:
 
     def _exposed_process(self, idx: int):
         """E -> I -> R progression starting from exposed state."""
-        # Incubation period (exponentially distributed)
         duration = self._rng.expovariate(1.0 / self.incubation_days)
         yield self.env.timeout(duration)
 
@@ -256,7 +250,6 @@ class CityDES:
         self._counts[1] -= 1  # E--
         self._counts[2] += 1  # I++
 
-        # Run infectious phase
         yield from self._infectious_process(idx)
 
     def _is_isolating(self, idx: int) -> bool:
@@ -307,7 +300,6 @@ class CityDES:
                     if self.env.now >= day_end:
                         break
 
-                    # Pick random neighbor and attempt transmission
                     neighbor = self._rng.choice(neighbors)
                     if (self._states[neighbor] == 0
                             and self._rng.random() < self.transmission_prob):

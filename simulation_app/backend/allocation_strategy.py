@@ -77,20 +77,17 @@ class EpidemicSnapshot:
 
 @dataclass
 class VaccineAllocation:
-    """Per-city vaccine dose allocation for today."""
     doses_per_city: np.ndarray  # length n_cities, how many doses each city gets
 
 
 @dataclass
 class RedistributionPlan:
-    """Resource transfers within a country."""
     # Each tuple: (from_city_idx, to_city_idx, resource, amount)
     transfers: list[tuple[int, int, str, int]]
 
 
 @dataclass
 class DeploymentDecision:
-    """Whether to deploy continental reserves and how."""
     deploy: bool
     # Per-resource allocation to countries: resource -> {country_name: amount}
     allocations: dict[str, dict[str, int]]
@@ -98,7 +95,6 @@ class DeploymentDecision:
 
 @dataclass
 class ReorderDecision:
-    """How much to order from external suppliers."""
     orders: dict[str, int]  # resource -> amount
 
 
@@ -107,7 +103,6 @@ class ReorderDecision:
 # ---------------------------------------------------------------------------
 
 class AllocationStrategy(ABC):
-    """Interface for pluggable allocation strategies."""
 
     @abstractmethod
     def allocate_vaccines(
@@ -116,7 +111,6 @@ class AllocationStrategy(ABC):
         available_per_city: np.ndarray,
         max_daily_per_city: np.ndarray,
     ) -> VaccineAllocation:
-        """Decide vaccine distribution across cities."""
         ...
 
     @abstractmethod
@@ -125,7 +119,6 @@ class AllocationStrategy(ABC):
         snapshot: EpidemicSnapshot,
         country_city_indices: list[int],
     ) -> RedistributionPlan:
-        """Plan resource redistribution within a country."""
         ...
 
     @abstractmethod
@@ -134,7 +127,6 @@ class AllocationStrategy(ABC):
         snapshot: EpidemicSnapshot,
         reserves: dict[str, int],
     ) -> DeploymentDecision:
-        """Decide whether to deploy continental reserves."""
         ...
 
     @abstractmethod
@@ -145,7 +137,6 @@ class AllocationStrategy(ABC):
         total_current: int,
         total_initial: int,
     ) -> ReorderDecision:
-        """Decide reorder quantity."""
         ...
 
 
@@ -187,7 +178,6 @@ class RuleBasedStrategy(AllocationStrategy):
         available_per_city: np.ndarray,
         max_daily_per_city: np.ndarray,
     ) -> VaccineAllocation:
-        """Uniform distribution: each city gets min(available, max_daily)."""
         doses = np.minimum(available_per_city, max_daily_per_city).astype(int)
         return VaccineAllocation(doses_per_city=doses)
 
@@ -206,7 +196,6 @@ class RuleBasedStrategy(AllocationStrategy):
             stock = snapshot.stock_levels[resource]
             initial = snapshot.initial_stock[resource]
 
-            # Compute stock-to-initial ratio per city
             init_vals = initial[country_city_indices]
             safe_init = np.where(init_vals > 0, init_vals, 1.0)
             ratios = np.where(
@@ -215,7 +204,6 @@ class RuleBasedStrategy(AllocationStrategy):
                 1.0,
             )
 
-            # Identify surplus and deficit cities (within this country)
             surplus_local: list[tuple[int, float]] = []   # (local_idx, ratio)
             deficit_local: list[tuple[int, float]] = []
 
@@ -228,7 +216,6 @@ class RuleBasedStrategy(AllocationStrategy):
             if not deficit_local:
                 continue
 
-            # Sort: worst deficit first, most surplus first
             deficit_local.sort(key=lambda x: x[1])
             surplus_local.sort(key=lambda x: -x[1])
 
@@ -325,7 +312,6 @@ class RuleBasedStrategy(AllocationStrategy):
             if continent_ratio >= self.deploy_threshold:
                 continue
 
-            # Proportional allocation to cities below threshold
             safe_initial = np.where(initial > 0, initial, 1.0)
             ratios = np.where(initial > 0, stock / safe_initial, 1.0)
             deficit_mask = ratios < self.deploy_threshold
@@ -463,10 +449,7 @@ class AIOptimizedStrategy(AllocationStrategy):
             doses = np.minimum(available_per_city, max_daily_per_city).astype(int)
             return VaccineAllocation(doses_per_city=doses)
 
-        # Total available vaccines across all cities
         total_available = int(np.sum(available_per_city))
-
-        # Allocate proportionally to priority, respecting per-city caps
         raw_alloc = (priority / total_priority) * total_available
         doses = np.minimum(raw_alloc, max_daily_per_city)
         doses = np.minimum(doses, available_per_city).astype(int)
@@ -510,14 +493,12 @@ class AIOptimizedStrategy(AllocationStrategy):
             if not np.any(critical_mask) or not np.any(surplus_mask):
                 continue
 
-            # Sort critical cities by urgency (fewest days first)
             critical_local = np.where(critical_mask)[0]
             critical_local = critical_local[np.argsort(days_of_stock[critical_local])]
 
             surplus_local = np.where(surplus_mask)[0]
             surplus_local = surplus_local[np.argsort(-days_of_stock[surplus_local])]
 
-            # Track remaining donatable amounts
             donatable = np.zeros(len(idx), dtype=float)
             for s in surplus_local:
                 # Keep 14 days of buffer
@@ -652,7 +633,6 @@ class AIOptimizedStrategy(AllocationStrategy):
         if total_burn <= 0:
             return ReorderDecision(orders={})
 
-        # Continent-wide growth rate proxy
         traj = snapshot.recent_active_trajectory
         if len(traj) >= 2 and traj[-2] > 0:
             growth_rate = float((traj[-1] - traj[-2]) / traj[-2])

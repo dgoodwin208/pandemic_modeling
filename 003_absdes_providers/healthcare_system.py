@@ -53,7 +53,6 @@ class HealthcareSystem:
         Returns:
             The snapshot dict (also appended to daily_surveillance).
         """
-        # Detected people who are STILL contagious
         detected_active = len(self.detected_ids & contagious_ids)
 
         snapshot = {
@@ -78,7 +77,6 @@ class HealthcareSystem:
             if total_infections > 0 else 0.0
         )
 
-        # Mean estimation error over all daily snapshots
         errors = [s["estimation_error"] for s in self.daily_surveillance]
         mean_error = sum(errors) / len(errors) if errors else 0.0
 

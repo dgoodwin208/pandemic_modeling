@@ -26,7 +26,6 @@ class EpidemicScenario:
     infectious_days: float   # Mean total days infectious (maps to SEIR I→R)
 
     def to_seir_params(self, population: int) -> SEIRParams:
-        """Generate SEIR ODE parameters."""
         return SEIRParams(
             R0=self.R0,
             incubation_days=self.incubation_days,
@@ -109,7 +108,6 @@ class EpidemicScenario:
         return config
 
     def describe(self) -> str:
-        """Human-readable summary of the scenario and derived parameters."""
         gamma = 1.0 / self.infectious_days
         beta = self.R0 * gamma
         return (

@@ -127,14 +127,12 @@ def extract_cities(
     african_cities = gdf[gdf['iso_a2'].isin(AFRICAN_ISO_CODES)]
     print(f"African cities (all sizes): {len(african_cities)}")
 
-    # Filter by population
     large_cities = african_cities[african_cities['pop_max'] >= min_population]
     print(f"Cities with population >= {min_population:,}: {len(large_cities)}")
 
-    # Sort by population descending
     large_cities = large_cities.sort_values('pop_max', ascending=False)
 
-    # Prepare output data
+
     rows = []
     for _, row in large_cities.iterrows():
         iso_code = row['iso_a2']

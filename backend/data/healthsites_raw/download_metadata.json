@@ -7,28 +7,28 @@
     "DZ": {
       "status": "success",
       "facilities": 9342,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/dz_healthsites.csv",
+      "file": "backend/data/healthsites_raw/dz_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/1acd7dfd-d797-4922-b0f5-82db92440e30/resource/2873f6ea-7df9-4824-8934-1aa5ca5042fc/download/algeria.csv",
       "last_modified": "2025-10-15T09:27:30.855981"
     },
     "AO": {
       "status": "success",
       "facilities": 789,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ao_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ao_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/a36cc6ab-520e-4dab-b91e-7bbe4b3248b4/resource/8ba90b78-34bd-4a8b-8162-845eb6c68e65/download/angola.csv",
       "last_modified": "2025-10-15T09:28:14.545623"
     },
     "BJ": {
       "status": "success",
       "facilities": 882,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/bj_healthsites.csv",
+      "file": "backend/data/healthsites_raw/bj_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/94aa3149-111b-41b0-9c4b-a82dfc7e3c2b/resource/2c4e156b-12db-4f4d-b217-02494fb9a4b3/download/benin.csv",
       "last_modified": "2025-10-15T09:49:48.716789"
     },
     "BW": {
       "status": "success",
       "facilities": 235,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/bw_healthsites.csv",
+      "file": "backend/data/healthsites_raw/bw_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/5445b83e-0f7d-42f5-ae00-ea02798017d2/resource/74dc8501-e170-4b53-bcac-03ed03649009/download/botswana.csv",
       "last_modified": "2025-10-15T09:52:51.516836"
     },
@@ -39,42 +39,42 @@
     "BI": {
       "status": "success",
       "facilities": 940,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/bi_healthsites.csv",
+      "file": "backend/data/healthsites_raw/bi_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/9f00207c-d3b2-4328-9d54-8ed505ccc83a/resource/ed67660e-517b-4bd6-aeb3-9934557a5b8a/download/burundi.csv",
       "last_modified": "2025-10-15T10:08:14.659738"
     },
     "CV": {
       "status": "success",
       "facilities": 17,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/cv_healthsites.csv",
+      "file": "backend/data/healthsites_raw/cv_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/12518ba0-e387-49f4-a8bd-4e066389b173/resource/2ccca8ad-ee0d-460c-9e4b-ecfcec950d30/download/cape-verde.csv",
       "last_modified": "2019-01-09T11:52:18.148776"
     },
     "CM": {
       "status": "success",
       "facilities": 1868,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/cm_healthsites.csv",
+      "file": "backend/data/healthsites_raw/cm_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/e4ef8126-9d18-48b1-8063-80e924ebbd9f/resource/262515cd-1e2e-4e81-9235-d64f66e4b581/download/cameroon.csv",
       "last_modified": "2025-10-15T10:09:34.540295"
     },
     "CF": {
       "status": "success",
       "facilities": 431,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/cf_healthsites.csv",
+      "file": "backend/data/healthsites_raw/cf_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/eedeabac-e17c-4143-bb30-9ef0e55e8dbc/resource/20748b40-af6d-497b-ae51-5fcccf2f68be/download/central-african-republic.csv",
       "last_modified": "2025-10-15T10:15:40.721710"
     },
     "TD": {
       "status": "success",
       "facilities": 439,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/td_healthsites.csv",
+      "file": "backend/data/healthsites_raw/td_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/9ae842b2-5d50-4350-bdb5-f9e21261ae66/resource/8167d571-8ade-4f98-a9d8-3d7c05409db3/download/chad.csv",
       "last_modified": "2025-10-15T10:16:02.789511"
     },
     "KM": {
       "status": "success",
       "facilities": 68,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/km_healthsites.csv",
+      "file": "backend/data/healthsites_raw/km_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/d713e963-20ee-4f84-8de8-9de6d2d3b986/resource/22edb676-0252-4880-8860-34097dad78e1/download/comoros.csv",
       "last_modified": "2025-10-15T10:25:46.801020"
     },
@@ -85,35 +85,35 @@
     "CD": {
       "status": "success",
       "facilities": 3957,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/cd_healthsites.csv",
+      "file": "backend/data/healthsites_raw/cd_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/104bfeb2-f102-4770-90a7-fc8372b488f0/resource/a6d4da5e-6137-41f7-ac2a-738a86f389d1/download/democratic-republic-of-the-congo.csv",
       "last_modified": "2025-10-15T10:32:48.597762"
     },
     "DJ": {
       "status": "success",
       "facilities": 48,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/dj_healthsites.csv",
+      "file": "backend/data/healthsites_raw/dj_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/43609174-913d-42e9-8cd5-4a80c78276b2/resource/6420c2a4-d1ba-4035-b036-bb8bc43fe3d8/download/djibouti.csv",
       "last_modified": "2025-10-15T10:33:43.486814"
     },
     "EG": {
       "status": "success",
       "facilities": 1686,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/eg_healthsites.csv",
+      "file": "backend/data/healthsites_raw/eg_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/fd8b5629-df68-412e-bc93-6e1e91745a5f/resource/b1fa774a-8776-4fd2-9306-4d54fd635f1c/download/egypt.csv",
       "last_modified": "2025-10-15T10:37:29.117227"
     },
     "GQ": {
       "status": "success",
       "facilities": 21,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/gq_healthsites.csv",
+      "file": "backend/data/healthsites_raw/gq_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/b9de787e-1a3f-4d51-9427-aead54de156b/resource/401faa7a-369d-4daf-9f7f-651c266fdf42/download/equatorial-guinea.csv",
       "last_modified": "2025-10-15T10:38:22.621294"
     },
     "ER": {
       "status": "success",
       "facilities": 36,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/er_healthsites.csv",
+      "file": "backend/data/healthsites_raw/er_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/4856a18b-d426-4ccf-8a1a-9993e7057956/resource/33e4a61d-b80a-4a3c-9d43-e601e05e5d50/download/eritrea.csv",
       "last_modified": "2025-10-15T10:38:38.663226"
     },
@@ -124,42 +124,42 @@
     "ET": {
       "status": "success",
       "facilities": 1115,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/et_healthsites.csv",
+      "file": "backend/data/healthsites_raw/et_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/0cc29a44-cc6d-449a-b3b7-d28fb2066c26/resource/0f2b98c4-4fb2-4fa4-853a-ef69b7d3cfa4/download/ethiopia.csv",
       "last_modified": "2025-10-15T10:39:36.316887"
     },
     "GA": {
       "status": "success",
       "facilities": 379,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ga_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ga_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/a2d11078-9a73-413f-b573-364c50ef3f51/resource/d11e2c65-d8ca-4de9-892a-a8fd5aaec3eb/download/gabon.csv",
       "last_modified": "2025-10-15T10:41:16.095673"
     },
     "GM": {
       "status": "success",
       "facilities": 73,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/gm_healthsites.csv",
+      "file": "backend/data/healthsites_raw/gm_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/1c80fbdb-6221-4c8f-ab15-263b7aa65fdb/resource/af676351-a74c-4ae7-96f7-9fc63e9a2b19/download/gambia.csv",
       "last_modified": "2019-10-09T22:01:27.455835"
     },
     "GH": {
       "status": "success",
       "facilities": 2168,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/gh_healthsites.csv",
+      "file": "backend/data/healthsites_raw/gh_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/364c5aca-7cd7-4248-b394-335113293c7a/resource/a67daf24-9df4-4df6-b980-def3274d1b70/download/ghana.csv",
       "last_modified": "2025-10-15T10:43:05.124562"
     },
     "GN": {
       "status": "success",
       "facilities": 1057,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/gn_healthsites.csv",
+      "file": "backend/data/healthsites_raw/gn_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/315b346f-796f-4782-87c1-ac5a4b1ac681/resource/db942c5d-d327-4491-9047-d542bbf260c7/download/guinea.csv",
       "last_modified": "2025-10-15T10:47:27.158975"
     },
     "GW": {
       "status": "success",
       "facilities": 61,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/gw_healthsites.csv",
+      "file": "backend/data/healthsites_raw/gw_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/782b713b-8087-4788-ac42-192827c85c3d/resource/aa75ad76-a1c2-4cf2-8008-95fd7e262e81/download/guinea-bissau.csv",
       "last_modified": "2025-10-15T10:47:42.340857"
     },
@@ -170,105 +170,105 @@
     "KE": {
       "status": "success",
       "facilities": 2558,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ke_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ke_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/df79db22-da00-4c05-bda0-79c14f27132d/resource/4549ff39-acc4-433f-b7e2-48e1ab6b7367/download/kenya.csv",
       "last_modified": "2025-10-15T11:45:54.021818"
     },
     "LS": {
       "status": "success",
       "facilities": 181,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ls_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ls_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/b6fed87c-9e2b-49e4-8bea-cbfea54238fb/resource/eead2e83-9426-472f-b196-a9d2354e4b62/download/lesotho.csv",
       "last_modified": "2025-10-15T11:48:31.923181"
     },
     "LR": {
       "status": "success",
       "facilities": 1175,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/lr_healthsites.csv",
+      "file": "backend/data/healthsites_raw/lr_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/d12cba0a-6065-4621-9066-cce1588520d6/resource/b939ffe8-c7e0-4c75-8c13-54bc482f7235/download/liberia.csv",
       "last_modified": "2025-10-15T11:49:03.022454"
     },
     "LY": {
       "status": "success",
       "facilities": 2945,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ly_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ly_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/26e349af-9547-479c-ba2a-adf5eed2dd7a/resource/418ebe7d-0cd7-4f5b-9031-bbbcb13c7c93/download/libya.csv",
       "last_modified": "2025-10-15T11:50:00.151950"
     },
     "MG": {
       "status": "success",
       "facilities": 1572,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/mg_healthsites.csv",
+      "file": "backend/data/healthsites_raw/mg_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/991f056e-0984-49be-852d-0d72f82f4908/resource/ab96e584-5c4b-4782-8888-8cfc995f4740/download/madagascar.csv",
       "last_modified": "2025-10-15T11:51:53.382762"
     },
     "MW": {
       "status": "success",
       "facilities": 305,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/mw_healthsites.csv",
+      "file": "backend/data/healthsites_raw/mw_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/2840df95-7873-4181-a553-e631b6a2f52b/resource/9f82f1a8-d7bd-4e14-a1a6-903e60974507/download/malawi.csv",
       "last_modified": "2025-10-15T11:52:16.723210"
     },
     "ML": {
       "status": "success",
       "facilities": 1509,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ml_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ml_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/a512111d-9b60-4b8c-9b24-24a64da1506b/resource/8202a010-5c05-4bf8-95d7-0a0877266e1d/download/mali.csv",
       "last_modified": "2025-10-15T11:54:37.724318"
     },
     "MR": {
       "status": "success",
       "facilities": 414,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/mr_healthsites.csv",
+      "file": "backend/data/healthsites_raw/mr_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/5ce97948-669e-43fe-9101-ae693d4f236b/resource/8c339222-7e51-4927-a73f-3574bb090a94/download/mauritania.csv",
       "last_modified": "2025-10-15T11:55:37.800062"
     },
     "MU": {
       "status": "success",
       "facilities": 341,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/mu_healthsites.csv",
+      "file": "backend/data/healthsites_raw/mu_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/16a16e2b-8007-44ae-9893-046798cfccde/resource/251e7ef7-db35-4c30-aa67-394965553fac/download/mauritius.csv",
       "last_modified": "2025-10-15T11:55:58.835479"
     },
     "MA": {
       "status": "success",
       "facilities": 8306,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ma_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ma_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/ca8ee396-a1ff-4a8a-bdcb-60aa81edb860/resource/cf3adf58-1734-4bbe-9a5d-cdfc585c3503/download/morocco.csv",
       "last_modified": "2025-10-15T12:05:38.664824"
     },
     "MZ": {
       "status": "success",
       "facilities": 1113,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/mz_healthsites.csv",
+      "file": "backend/data/healthsites_raw/mz_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/33d3a4f8-976b-4f1e-92d8-621751c2d3b8/resource/ba8949be-c4ab-41a2-9999-4934e8a8dc43/download/mozambique.csv",
       "last_modified": "2025-10-15T12:06:10.275483"
     },
     "NA": {
       "status": "success",
       "facilities": 552,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/na_healthsites.csv",
+      "file": "backend/data/healthsites_raw/na_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/655c7c70-37b8-4b87-a6b4-1529db31b353/resource/61ee98cb-a8ee-4e2d-b5bc-2fb44d56af79/download/namibia.csv",
       "last_modified": "2025-10-15T12:07:56.328145"
     },
     "NE": {
       "status": "success",
       "facilities": 627,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ne_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ne_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/5de12e13-fa97-4bbc-92a7-7269bd6fff86/resource/6869a2f6-fc2c-4a9f-b5f1-f9e4bce6cfa4/download/niger.csv",
       "last_modified": "2025-10-15T12:14:11.411562"
     },
     "NG": {
       "status": "success",
       "facilities": 7179,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ng_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ng_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/fea18f4e-0463-4194-a21c-602e48e098e1/resource/a3c95492-bfdb-484b-9f2f-79febad801d9/download/nigeria.csv",
       "last_modified": "2025-10-15T12:16:09.715858"
     },
     "RW": {
       "status": "success",
       "facilities": 1345,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/rw_healthsites.csv",
+      "file": "backend/data/healthsites_raw/rw_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/67ca8390-678a-4eb0-8c06-a12d86df1033/resource/e375029c-9de0-4089-a2aa-581cb28f9310/download/rwanda.csv",
       "last_modified": "2025-10-15T12:43:32.552101"
     },
@@ -279,91 +279,91 @@
     "SN": {
       "status": "success",
       "facilities": 1881,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/sn_healthsites.csv",
+      "file": "backend/data/healthsites_raw/sn_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/c0137f69-bf61-4991-8ed6-50bf603beed5/resource/b1fbf3a0-85a0-4fdc-bd9f-6c7d2aecac13/download/senegal.csv",
       "last_modified": "2025-10-15T12:46:29.429172"
     },
     "SC": {
       "status": "success",
       "facilities": 37,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/sc_healthsites.csv",
+      "file": "backend/data/healthsites_raw/sc_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/f616880b-61de-412d-b1e1-318eacb16a70/resource/0c468fab-ba94-4df8-a5c2-e8cdce494e60/download/seychelles.csv",
       "last_modified": "2025-10-15T12:47:41.381810"
     },
     "SL": {
       "status": "success",
       "facilities": 556,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/sl_healthsites.csv",
+      "file": "backend/data/healthsites_raw/sl_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/7cf66396-0514-43c7-b750-bbc584a17919/resource/3faba6d2-4a67-47c9-a6ee-a205c65f7b1b/download/sierra-leone.csv",
       "last_modified": "2025-10-15T12:48:04.783340"
     },
     "SO": {
       "status": "success",
       "facilities": 99,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/so_healthsites.csv",
+      "file": "backend/data/healthsites_raw/so_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/e9d3a67f-08c4-4465-9a0f-e9ab67d38bb4/resource/9c0e230e-81d5-4e13-a072-a72695c59f8d/download/somalia.csv",
       "last_modified": "2025-10-15T12:50:49.451219"
     },
     "ZA": {
       "status": "success",
       "facilities": 3055,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/za_healthsites.csv",
+      "file": "backend/data/healthsites_raw/za_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/2868920e-94ea-472b-a153-e3766e8d68f9/resource/893ca94f-b72d-4466-8178-36a7553cbf6b/download/south-africa.csv",
       "last_modified": "2025-10-15T12:51:51.515385"
     },
     "SS": {
       "status": "success",
       "facilities": 497,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ss_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ss_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/e3184d68-b883-4fc4-b06a-cf2e5cfd7d69/resource/e868adbf-f7ee-4066-b07d-e5d7ea444347/download/south-sudan.csv",
       "last_modified": "2025-10-15T12:52:16.249101"
     },
     "SD": {
       "status": "success",
       "facilities": 1425,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/sd_healthsites.csv",
+      "file": "backend/data/healthsites_raw/sd_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/3842033d-cdd9-477c-ab16-6ca3df1d7553/resource/4c78b779-e4de-4daa-99a4-69ff5f634efa/download/sudan.csv",
       "last_modified": "2025-10-15T13:03:26.000006"
     },
     "TZ": {
       "status": "success",
       "facilities": 6794,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/tz_healthsites.csv",
+      "file": "backend/data/healthsites_raw/tz_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/eac6c9b4-5d0d-48cc-8914-a667c716c4c5/resource/2d3a9a6f-9ba8-49c6-a912-aad079717121/download/tanzania.csv",
       "last_modified": "2025-10-15T13:09:02.466391"
     },
     "TG": {
       "status": "success",
       "facilities": 965,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/tg_healthsites.csv",
+      "file": "backend/data/healthsites_raw/tg_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/bfd67f3e-7b03-42c2-a1ce-abb5a229c5d9/resource/ed287a53-6af5-4ae3-98fc-630ad44a921e/download/togo.csv",
       "last_modified": "2025-10-15T13:11:12.598332"
     },
     "TN": {
       "status": "success",
       "facilities": 1416,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/tn_healthsites.csv",
+      "file": "backend/data/healthsites_raw/tn_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/a640129a-924c-4356-8332-1646df4aa4e0/resource/dcaec63b-7990-4af4-abdd-542c3e1d5560/download/tunisia.csv",
       "last_modified": "2025-10-15T13:12:45.890848"
     },
     "UG": {
       "status": "success",
       "facilities": 8005,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/ug_healthsites.csv",
+      "file": "backend/data/healthsites_raw/ug_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/eaeaf616-7629-476e-a908-bf50a2d6b440/resource/47b5598e-c1bf-4648-a88a-04a8180fcd2e/download/uganda.csv",
       "last_modified": "2025-10-15T13:24:10.176209"
     },
     "ZM": {
       "status": "success",
       "facilities": 1486,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/zm_healthsites.csv",
+      "file": "backend/data/healthsites_raw/zm_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/117402aa-bd50-47c9-8f58-4f6a04f287c6/resource/31b219bc-fe94-472c-81c8-ce33fa8e2075/download/zambia.csv",
       "last_modified": "2025-04-10T17:40:39.225095"
     },
     "ZW": {
       "status": "success",
       "facilities": 945,
-      "file": "/Users/danielgoodwin/Work/personal/pandemic_modeling/backend/data/healthsites_raw/zw_healthsites.csv",
+      "file": "backend/data/healthsites_raw/zw_healthsites.csv",
       "source_url": "https://data.humdata.org/dataset/ebba44cc-e275-4e31-8072-fa607ee19a55/resource/b62f3049-66fc-4c35-9d69-13419241df0d/download/zimbabwe.csv",
       "last_modified": "2025-04-10T17:41:08.687787"
     },
