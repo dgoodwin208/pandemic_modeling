@@ -78,5 +78,4 @@ absdes_explorer/
 
 ## Related
 
-- **PERSON_JOURNEY.md** — Mermaid diagram of disease state transitions
 - **simulation_app/backend/** — The actual simulation implementation

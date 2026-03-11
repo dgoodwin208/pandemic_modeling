@@ -97,8 +97,6 @@ pandemic_modeling/
 ├── 009_717assessment/             # 7-1-7 outbreak response evaluation
 │
 ├── absdes_explorer/               # Interactive ABS-DES model explorer
-├── PERSON_JOURNEY.md              # Disease state transition diagram
-├── DATASETS.md                    # Data sources, licensing, and attribution
 └── README.md
 ```
 
@@ -113,7 +111,7 @@ The core engine (`city_des_extended.py`) uses agent-based discrete-event simulat
 - **Behavioral mechanics**: Isolation compliance, care-seeking, advice receptivity
 - **Supply chain**: Finite diagnostics, vaccines (manufactured from day 120), antivirals, PPE
 
-See `PERSON_JOURNEY.md` for the full state transition diagram.
+Disease states: S (susceptible) → E (exposed) → I_minor → I_needs_care → I_receiving_care → R (recovered) / D (dead).
 
 ## Validation
 
@@ -179,8 +177,6 @@ Each module has a self-contained validation script that generates figures into a
 
 ## Data Sources and Attribution
 
-See `DATASETS.md` for full details and licensing.
-
 - **Natural Earth** -- public domain. City locations and country boundaries.
 - **Healthsites.io** -- ODbL v1.0 (OpenStreetMap derivative). Health facility locations for 49 African countries.
 - **UN World Urbanization Prospects** -- city population data.
@@ -199,4 +195,4 @@ Health facility data: &copy; OpenStreetMap contributors, ODbL 1.0. Provided by [
 
 MIT License. See [LICENSE](LICENSE).
 
-Third-party datasets bundled in this repository retain their original licenses. See `DATASETS.md` for details.
+Third-party datasets bundled in this repository retain their original licenses (Natural Earth: public domain; Healthsites.io: ODbL v1.0; Kontur/WorldPop: CC BY 4.0).
