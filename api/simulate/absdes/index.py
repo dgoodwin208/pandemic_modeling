@@ -18,7 +18,7 @@ import numpy as np
 # ---------------------------------------------------------------------------
 # Set up sys.path so we can import the simulation engine
 # ---------------------------------------------------------------------------
-_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 _BACKEND_DIR = str(_PROJECT_ROOT / "simulation_app" / "backend")
 _DES_DIR = str(_PROJECT_ROOT / "des_system")
 _MULTI_DIR = str(_PROJECT_ROOT / "004_multicity")
