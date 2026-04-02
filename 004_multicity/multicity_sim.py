@@ -21,7 +21,11 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
-from scipy.integrate import odeint
+
+try:
+    from scipy.integrate import odeint
+except ImportError:
+    from odeint_lite import odeint
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(_PROJECT_ROOT / "des_system"))

@@ -10,7 +10,11 @@ from dataclasses import dataclass
 from typing import Callable, Optional
 
 import numpy as np
-from scipy.integrate import odeint
+
+try:
+    from scipy.integrate import odeint
+except ImportError:
+    from odeint_lite import odeint
 
 
 @dataclass

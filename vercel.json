@@ -4,7 +4,8 @@
   "framework": null,
   "functions": {
     "api/**/*.py": {
-      "maxDuration": 60
+      "maxDuration": 60,
+      "excludeFiles": "{frontend/**,001_*/**,002_*/**,003_*/**,006_*/**,007_*/**,008_*/**,009_*/**,backend/**,simulation_app/frontend/**,.git/**,node_modules/**}"
     }
   },
   "rewrites": [
