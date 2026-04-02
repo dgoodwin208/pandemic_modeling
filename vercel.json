@@ -9,11 +9,7 @@
     }
   },
   "rewrites": [
-    { "source": "/api/simulate/absdes/sessions", "destination": "/api/simulate/absdes/sessions" },
-    { "source": "/api/simulate/absdes/latest", "destination": "/api/simulate/absdes/latest" },
-    { "source": "/api/simulate/absdes", "destination": "/api/simulate/absdes" },
-    { "source": "/api/countries", "destination": "/api/countries" },
-    { "source": "/api/disease-params", "destination": "/api/disease-params" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
