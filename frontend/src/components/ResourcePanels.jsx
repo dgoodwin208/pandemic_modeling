@@ -362,12 +362,19 @@ function ResourceCard({ resourceKey, supply, demand, supplyEnabled, vaccineManuf
 
 // ─── Main Panel ───────────────────────────────────────────────────────────────
 
-export default function ResourcePanels({ sessionId, supplyChainEnabled }) {
+export default function ResourcePanels({ sessionId, supplyChainEnabled, data: dataProp }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // If data was passed directly (sync/serverless mode), use it
+    if (dataProp) {
+      setData(dataProp);
+      setLoading(false);
+      setError(null);
+      return;
+    }
     if (!sessionId) return;
     setLoading(true);
     setError(null);
@@ -385,7 +392,7 @@ export default function ResourcePanels({ sessionId, supplyChainEnabled }) {
         setError(err.message);
         setLoading(false);
       });
-  }, [sessionId]);
+  }, [sessionId, dataProp]);
 
   if (loading) {
     return (

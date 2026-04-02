@@ -1,0 +1,6 @@
+fastapi
+numpy
+scipy
+simpy
+networkx
+pydantic

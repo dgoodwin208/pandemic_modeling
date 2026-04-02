@@ -14,12 +14,19 @@ function StatCard({ icon: Icon, label, value, sub, color = 'text-slate-700' }) {
   );
 }
 
-export default function SimulationSummary({ sessionId }) {
+export default function SimulationSummary({ sessionId, data }) {
   const [summary, setSummary] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // If data was passed directly (sync/serverless mode), use it
+    if (data) {
+      setSummary(data);
+      setLoading(false);
+      setError(null);
+      return;
+    }
     if (!sessionId) return;
     setLoading(true);
     setError(null);
@@ -29,15 +36,15 @@ export default function SimulationSummary({ sessionId }) {
         if (!res.ok) throw new Error('Failed to load summary');
         return res.json();
       })
-      .then((data) => {
-        setSummary(data);
+      .then((d) => {
+        setSummary(d);
         setLoading(false);
       })
       .catch((err) => {
         setError(err.message);
         setLoading(false);
       });
-  }, [sessionId]);
+  }, [sessionId, data]);
 
   if (loading) {
     return (

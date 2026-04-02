@@ -221,6 +221,8 @@ export default function SimulationTab() {
   const [showDiseaseParams, setShowDiseaseParams] = useState(false);
   const [showSessionBrowser, setShowSessionBrowser] = useState(false);
   const didLoadLatest = useRef(false);
+  // Sync mode: when the server returns full results in the POST response
+  const [syncData, setSyncData] = useState(null);
 
   // On mount, try to restore the latest completed simulation
   useEffect(() => {
@@ -268,6 +270,9 @@ export default function SimulationTab() {
     }
 
     try {
+      setAppState(APP_STATES.RUNNING);
+      setSyncData(null);
+
       const response = await fetch('/api/simulate/absdes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -281,10 +286,19 @@ export default function SimulationTab() {
 
       const data = await response.json();
       setSessionId(data.session_id);
-      setTotalDays(params.days);
-      setAppState(APP_STATES.RUNNING);
+      setTotalDays(data.total_days || params.days);
+
+      if (data.sync_mode) {
+        // Serverless mode: results returned directly in response
+        setSyncData({ summary: data.summary, resources: data.resources });
+        setAppState(APP_STATES.VIEWING);
+      } else {
+        // Traditional mode: poll SSE for progress
+        setAppState(APP_STATES.RUNNING);
+      }
     } catch (err) {
       setError(err.message || 'Failed to start simulation');
+      setAppState(APP_STATES.CONFIGURE);
     }
   }, [params]);
 
@@ -300,6 +314,7 @@ export default function SimulationTab() {
   const handleReset = useCallback(() => {
     setAppState(APP_STATES.CONFIGURE);
     setSessionId(null);
+    setSyncData(null);
     setError(null);
   }, []);
 
@@ -405,11 +420,23 @@ export default function SimulationTab() {
         {isRunning && (
           <div className="animate-fade-in">
             <div className="max-w-2xl mx-auto mb-8">
-              <ProgressBar
-                sessionId={sessionId}
-                onComplete={handleSimulationComplete}
-                onError={handleSimulationError}
-              />
+              {sessionId ? (
+                <ProgressBar
+                  sessionId={sessionId}
+                  onComplete={handleSimulationComplete}
+                  onError={handleSimulationError}
+                />
+              ) : (
+                <div className="card p-6">
+                  <div className="flex items-center gap-3 text-slate-500 text-sm">
+                    <div className="w-5 h-5 border-2 border-slate-300 border-t-emerald-500 rounded-full animate-spin" />
+                    Running simulation... This may take up to 60 seconds.
+                  </div>
+                  <p className="text-xs text-slate-400 mt-2">
+                    Demo mode — simulation runs on a serverless backend with limited capacity.
+                  </p>
+                </div>
+              )}
             </div>
             <div className="max-w-2xl mx-auto opacity-50 pointer-events-none">
               <ParameterForm
@@ -454,9 +481,10 @@ export default function SimulationTab() {
               <TimelineViewer
                 sessionId={sessionId}
                 totalDays={totalDays}
+                framesAvailable={!syncData}
               />
-              <SimulationSummary sessionId={sessionId} />
-              <ResourcePanels sessionId={sessionId} supplyChainEnabled={params.enable_supply_chain} />
+              <SimulationSummary sessionId={sessionId} data={syncData?.summary} />
+              <ResourcePanels sessionId={sessionId} supplyChainEnabled={params.enable_supply_chain} data={syncData?.resources} />
             </div>
           </div>
         )}
