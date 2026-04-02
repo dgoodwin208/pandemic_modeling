@@ -5,7 +5,7 @@
   "functions": {
     "api/**/*.py": {
       "maxDuration": 60,
-      "excludeFiles": "{frontend/**,001_*/**,002_*/**,003_*/**,006_*/**,007_*/**,008_*/**,009_*/**,backend/**,simulation_app/frontend/**,.git/**,node_modules/**}"
+      "excludeFiles": "{frontend/**,001_*/**,002_*/**,003_*/**,006_*/**,007_*/**,008_*/**,009_*/**,backend/venv/**,backend/data/healthsites_raw/**,simulation_app/frontend/**,.git/**,node_modules/**,**/__pycache__/**}"
     }
   },
   "rewrites": [
