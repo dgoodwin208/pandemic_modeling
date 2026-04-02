@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nigeria-covid-natural",
+    "label": "Nigeria \u2013 COVID-19 Natural Spread",
+    "description": "COVID-19 spreading naturally across Nigerian cities with 5 providers per 1,000 population.",
+    "scenario": "covid_natural",
+    "country": "Nigeria",
+    "days": 150,
+    "supply_chain": false,
+    "file": "/precomputed/nigeria-covid-natural.json"
+  },
+  {
+    "id": "nigeria-covid-bioattack",
+    "label": "Nigeria \u2013 COVID-19 Bioattack",
+    "description": "Deliberate COVID-19 release in Lagos with higher initial seeding and rapid spread.",
+    "scenario": "covid_bioattack",
+    "country": "Nigeria",
+    "days": 150,
+    "supply_chain": false,
+    "file": "/precomputed/nigeria-covid-bioattack.json"
+  },
+  {
+    "id": "nigeria-supply-chain",
+    "label": "Nigeria \u2013 Supply Chain Constrained",
+    "description": "COVID-19 natural spread with supply chain modeling enabled \u2013 PPE, swabs, reagents, and hospital beds tracked.",
+    "scenario": "covid_natural",
+    "country": "Nigeria",
+    "days": 150,
+    "supply_chain": true,
+    "file": "/precomputed/nigeria-supply-chain.json"
+  }
+]

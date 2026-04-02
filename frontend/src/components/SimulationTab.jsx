@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react';
-import { Download, FlaskConical, History, X, Skull, Users, TrendingUp, Package, Trash2 } from 'lucide-react';
+import { Download, FlaskConical, History, X, Package, Trash2, Github, Play, ExternalLink } from 'lucide-react';
 import ParameterForm from './ParameterForm';
 import ProgressBar from './ProgressBar';
 import TimelineViewer from './TimelineViewer';
@@ -96,6 +96,7 @@ const fmt = (n) => {
 function SessionBrowser({ onSelect, onClose }) {
   const [sessions, setSessions] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [loadingSession, setLoadingSession] = useState(null);
 
   useEffect(() => {
     fetch('/api/simulate/absdes/sessions')
@@ -103,6 +104,24 @@ function SessionBrowser({ onSelect, onClose }) {
       .then((data) => { setSessions(data.sessions || []); setLoading(false); })
       .catch(() => { setSessions([]); setLoading(false); });
   }, []);
+
+  const handleSelect = useCallback(async (session) => {
+    if (session.precomputed) {
+      setLoadingSession(session.session_id);
+      try {
+        const res = await fetch(session.precomputed);
+        if (!res.ok) throw new Error('Failed to load precomputed data');
+        const data = await res.json();
+        onSelect({ ...session, _precomputedData: data });
+      } catch {
+        onSelect(session);
+      } finally {
+        setLoadingSession(null);
+      }
+    } else {
+      onSelect(session);
+    }
+  }, [onSelect]);
 
   const handleDelete = useCallback((e, sessionId) => {
     e.stopPropagation();
@@ -114,12 +133,6 @@ function SessionBrowser({ onSelect, onClose }) {
   }, []);
 
   const scenarioLabel = (s) => s.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-  const timeAgo = (ts) => {
-    const diff = (Date.now() / 1000) - ts;
-    if (diff < 60) return 'just now';
-    if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
-    return `${Math.floor(diff / 3600)}h ago`;
-  };
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/30 backdrop-blur-sm" onClick={onClose}>
@@ -131,8 +144,8 @@ function SessionBrowser({ onSelect, onClose }) {
               <History className="w-4 h-4 text-slate-600" />
             </div>
             <div>
-              <h2 className="text-sm font-semibold text-slate-800">Previous Results</h2>
-              <p className="text-[10px] text-slate-400">Select a simulation run to load</p>
+              <h2 className="text-sm font-semibold text-slate-800">Load Simulation Results</h2>
+              <p className="text-[10px] text-slate-400">Select a pre-computed scenario to explore</p>
             </div>
           </div>
           <button onClick={onClose} className="p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
@@ -140,8 +153,8 @@ function SessionBrowser({ onSelect, onClose }) {
           </button>
         </div>
 
-        {/* Table */}
-        <div className="overflow-auto flex-1">
+        {/* Sessions list */}
+        <div className="overflow-auto flex-1 p-4 space-y-3">
           {loading ? (
             <div className="flex items-center justify-center py-12 text-sm text-slate-400">
               <div className="w-4 h-4 border-2 border-slate-300 border-t-emerald-500 rounded-full animate-spin mr-2" />
@@ -149,63 +162,179 @@ function SessionBrowser({ onSelect, onClose }) {
             </div>
           ) : sessions.length === 0 ? (
             <div className="flex items-center justify-center py-12 text-sm text-slate-400">
-              No completed simulations yet
+              No simulation results available
             </div>
           ) : (
-            <table className="w-full text-xs">
-              <thead>
-                <tr className="bg-slate-50 text-slate-500 text-left sticky top-0">
-                  <th className="px-4 py-2.5 font-medium">When</th>
-                  <th className="px-4 py-2.5 font-medium">Scenario</th>
-                  <th className="px-4 py-2.5 font-medium">Country</th>
-                  <th className="px-4 py-2.5 font-medium text-right">Cities</th>
-                  <th className="px-4 py-2.5 font-medium text-right">Population</th>
-                  <th className="px-4 py-2.5 font-medium text-right">Infected</th>
-                  <th className="px-4 py-2.5 font-medium text-right">Deaths</th>
-                  <th className="px-4 py-2.5 font-medium text-right">Peak I</th>
-                  <th className="px-4 py-2.5 font-medium text-center">Supply</th>
-                  <th className="px-4 py-2.5 font-medium"></th>
-                </tr>
-              </thead>
-              <tbody>
-                {sessions.map((s, idx) => (
-                  <tr
-                    key={s.session_id}
-                    className={`${idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'} hover:bg-emerald-50/50 cursor-pointer transition-colors`}
-                    onClick={() => onSelect(s)}
-                  >
-                    <td className="px-4 py-2.5 text-slate-500 whitespace-nowrap">{timeAgo(s.timestamp)}</td>
-                    <td className="px-4 py-2.5 font-medium text-slate-700">{scenarioLabel(s.scenario)}</td>
-                    <td className="px-4 py-2.5 text-slate-600">{s.country === 'ALL' ? 'All Africa' : s.country}</td>
-                    <td className="px-4 py-2.5 text-right font-mono text-slate-500">{s.n_cities}</td>
-                    <td className="px-4 py-2.5 text-right font-mono text-slate-600">{fmt(s.total_population)}</td>
-                    <td className="px-4 py-2.5 text-right font-mono text-red-600">{fmt(s.total_infected)}</td>
-                    <td className="px-4 py-2.5 text-right font-mono text-red-800 font-semibold">{fmt(s.total_deaths)}</td>
-                    <td className="px-4 py-2.5 text-right font-mono text-amber-600">{fmt(s.peak_infectious)}</td>
-                    <td className="px-4 py-2.5 text-center">
-                      {s.supply_chain_enabled ? (
-                        <Package className="w-3.5 h-3.5 text-purple-500 mx-auto" />
-                      ) : (
-                        <span className="text-slate-300">—</span>
+            sessions.map((s) => (
+              <button
+                key={s.session_id}
+                className="w-full text-left p-4 rounded-xl border border-slate-200 hover:border-emerald-300 hover:bg-emerald-50/30 transition-all group"
+                onClick={() => handleSelect(s)}
+                disabled={loadingSession === s.session_id}
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <h3 className="text-sm font-semibold text-slate-800 group-hover:text-emerald-700 transition-colors">
+                        {s.label || scenarioLabel(s.scenario)}
+                      </h3>
+                      {s.supply_chain_enabled && (
+                        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-purple-50 text-purple-600 text-[10px] font-medium">
+                          <Package className="w-2.5 h-2.5" />
+                          Supply Chain
+                        </span>
                       )}
-                    </td>
-                    <td className="px-4 py-2.5">
-                      <div className="flex items-center gap-2">
-                        <span className="text-[10px] text-emerald-600 font-medium hover:underline">Load</span>
-                        <button
-                          onClick={(e) => handleDelete(e, s.session_id)}
-                          className="p-1 rounded hover:bg-red-50 text-slate-300 hover:text-red-500 transition-colors"
-                          title="Delete this result"
-                        >
-                          <Trash2 className="w-3 h-3" />
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+                    </div>
+                    {s.description && (
+                      <p className="text-xs text-slate-500 mb-2">{s.description}</p>
+                    )}
+                    <div className="flex items-center gap-4 text-[11px]">
+                      <span className="text-slate-500">{s.n_cities} cities</span>
+                      <span className="text-slate-500">{fmt(s.total_population)} pop</span>
+                      {s.total_infected != null && (
+                        <span className="text-red-600">{fmt(s.total_infected)} infected</span>
+                      )}
+                      {s.total_deaths != null && (
+                        <span className="text-red-800 font-medium">{fmt(s.total_deaths)} deaths</span>
+                      )}
+                      {s.peak_infectious != null && (
+                        <span className="text-amber-600">peak {fmt(s.peak_infectious)}</span>
+                      )}
+                      <span className="text-slate-400">{s.total_days} days</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    {loadingSession === s.session_id ? (
+                      <div className="w-4 h-4 border-2 border-slate-300 border-t-emerald-500 rounded-full animate-spin" />
+                    ) : (
+                      <span className="text-xs text-emerald-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                        Load
+                      </span>
+                    )}
+                    {!s.precomputed && (
+                      <button
+                        onClick={(e) => handleDelete(e, s.session_id)}
+                        className="p-1 rounded hover:bg-red-50 text-slate-300 hover:text-red-500 transition-colors"
+                        title="Delete this result"
+                      >
+                        <Trash2 className="w-3 h-3" />
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </button>
+            ))
           )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DemoIntroModal({ onLoadDataset, onConfigure, onClose }) {
+  const [sessions, setSessions] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [loadingSession, setLoadingSession] = useState(null);
+
+  useEffect(() => {
+    fetch('/api/simulate/absdes/sessions')
+      .then((res) => res.json())
+      .then((data) => { setSessions(data.sessions || []); setLoading(false); })
+      .catch(() => { setSessions([]); setLoading(false); });
+  }, []);
+
+  const handleLoad = useCallback(async (session) => {
+    if (session.precomputed) {
+      setLoadingSession(session.session_id);
+      try {
+        const res = await fetch(session.precomputed);
+        if (!res.ok) throw new Error('Failed to load');
+        const data = await res.json();
+        onLoadDataset({ ...session, _precomputedData: data });
+      } catch {
+        onLoadDataset(session);
+      } finally {
+        setLoadingSession(null);
+      }
+    } else {
+      onLoadDataset(session);
+    }
+  }, [onLoadDataset]);
+
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/30 backdrop-blur-sm" onClick={onClose}>
+      <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 w-full max-w-lg flex flex-col animate-fade-in" onClick={(e) => e.stopPropagation()}>
+        {/* Header */}
+        <div className="px-6 pt-6 pb-4 text-center">
+          <h2 className="text-xl font-bold text-slate-800 mb-1">
+            AI Pandemic Response Explorer
+          </h2>
+          <p className="text-sm text-slate-500 leading-relaxed">
+            This demo runs on a minimal serverless instance.
+            Explore pre-computed simulation results below, or clone the repo to run your own.
+          </p>
+        </div>
+
+        {/* Precomputed datasets */}
+        <div className="px-6 pb-4 space-y-2">
+          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
+            Load a dataset to explore
+          </p>
+          {loading ? (
+            <div className="flex items-center justify-center py-6 text-sm text-slate-400">
+              <div className="w-4 h-4 border-2 border-slate-300 border-t-emerald-500 rounded-full animate-spin mr-2" />
+              Loading...
+            </div>
+          ) : (
+            sessions.map((s) => (
+              <button
+                key={s.session_id}
+                className="w-full text-left p-3 rounded-lg border border-slate-200 hover:border-emerald-300 hover:bg-emerald-50/30 transition-all group flex items-center gap-3"
+                onClick={() => handleLoad(s)}
+                disabled={loadingSession === s.session_id}
+              >
+                <div className="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center shrink-0 group-hover:bg-emerald-100 transition-colors">
+                  {loadingSession === s.session_id ? (
+                    <div className="w-4 h-4 border-2 border-slate-300 border-t-emerald-500 rounded-full animate-spin" />
+                  ) : (
+                    <Play className="w-3.5 h-3.5 text-emerald-600" />
+                  )}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-sm font-medium text-slate-700 group-hover:text-emerald-700 transition-colors">
+                    {s.label}
+                  </h3>
+                  <p className="text-[11px] text-slate-400 truncate">{s.description}</p>
+                </div>
+              </button>
+            ))
+          )}
+        </div>
+
+        {/* Footer actions */}
+        <div className="px-6 pb-6 pt-2 border-t border-slate-100 flex flex-col gap-3">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={onConfigure}
+              className="flex-1 btn-secondary text-sm py-2.5 text-center"
+            >
+              Configure Custom Simulation
+            </button>
+            <a
+              href="https://github.com/dgoodwin208/pandemic_modeling"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 btn-primary text-sm py-2.5 text-center flex items-center justify-center gap-2"
+            >
+              <Github className="w-4 h-4" />
+              Clone & Run Locally
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          </div>
+          <p className="text-[10px] text-slate-400 text-center">
+            Full simulations with geographic rendering require local execution.
+            See the README for setup instructions.
+          </p>
         </div>
       </div>
     </div>
@@ -220,30 +349,16 @@ export default function SimulationTab() {
   const [error, setError] = useState(null);
   const [showDiseaseParams, setShowDiseaseParams] = useState(false);
   const [showSessionBrowser, setShowSessionBrowser] = useState(false);
+  const [showIntroModal, setShowIntroModal] = useState(false);
   const didLoadLatest = useRef(false);
   // Sync mode: when the server returns full results in the POST response
   const [syncData, setSyncData] = useState(null);
 
-  // On mount, try to restore the latest completed simulation
+  // On mount, show the intro modal for demo
   useEffect(() => {
     if (didLoadLatest.current) return;
     didLoadLatest.current = true;
-
-    fetch('/api/simulate/absdes/latest')
-      .then((res) => {
-        if (!res.ok) return null;
-        return res.json();
-      })
-      .then((data) => {
-        if (!data || !data.session_id) return;
-        setSessionId(data.session_id);
-        setTotalDays(data.total_days);
-        if (data.params) setParams(restoreParams(data.params));
-        setAppState(APP_STATES.VIEWING);
-      })
-      .catch(() => {
-        // No previous session — stay in CONFIGURE
-      });
+    setShowIntroModal(true);
   }, []);
 
   const handleRunSimulation = useCallback(async () => {
@@ -322,9 +437,20 @@ export default function SimulationTab() {
     setSessionId(session.session_id);
     setTotalDays(session.total_days);
     if (session.params) setParams(restoreParams(session.params));
-    setAppState(APP_STATES.VIEWING);
-    setShowSessionBrowser(false);
     setError(null);
+    setShowSessionBrowser(false);
+
+    // If precomputed data was fetched by SessionBrowser, load it as syncData
+    if (session._precomputedData) {
+      const d = session._precomputedData;
+      setSyncData({ summary: d.summary, resources: d.resources });
+      if (session.supply_chain_enabled != null) {
+        setParams((prev) => ({ ...prev, enable_supply_chain: session.supply_chain_enabled }));
+      }
+    } else {
+      setSyncData(null);
+    }
+    setAppState(APP_STATES.VIEWING);
   }, []);
 
   const handleExportCSV = useCallback(async () => {
@@ -496,6 +622,17 @@ export default function SimulationTab() {
 
       {showSessionBrowser && (
         <SessionBrowser onSelect={handleLoadSession} onClose={() => setShowSessionBrowser(false)} />
+      )}
+
+      {showIntroModal && (
+        <DemoIntroModal
+          onLoadDataset={(session) => {
+            setShowIntroModal(false);
+            handleLoadSession(session);
+          }}
+          onConfigure={() => setShowIntroModal(false)}
+          onClose={() => setShowIntroModal(false)}
+        />
       )}
     </div>
   );
