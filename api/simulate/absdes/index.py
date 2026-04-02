@@ -24,10 +24,12 @@ _DES_DIR = str(_PROJECT_ROOT / "des_system")
 _MULTI_DIR = str(_PROJECT_ROOT / "004_multicity")
 _MULTI_DES_DIR = str(_PROJECT_ROOT / "005_multicity_des")
 
-for p in [_BACKEND_DIR, _DES_DIR, _MULTI_DIR, _MULTI_DES_DIR]:
+for p in [_DES_DIR, _MULTI_DIR, _MULTI_DES_DIR, _BACKEND_DIR]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
+# _BACKEND_DIR must be first on sys.path (inserted last above) so that
+# simulation_app/backend/simulation.py is found before des_system/simulation.py
 from simulation import run_absdes_simulation, SimulationParams  # noqa: E402
 
 

@@ -235,7 +235,7 @@ export default function SimulationTab() {
         return res.json();
       })
       .then((data) => {
-        if (!data) return;
+        if (!data || !data.session_id) return;
         setSessionId(data.session_id);
         setTotalDays(data.total_days);
         if (data.params) setParams(restoreParams(data.params));
