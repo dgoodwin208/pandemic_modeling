@@ -1,0 +1,12 @@
+{
+  "total_days": 151,
+  "seed_city": "Ife",
+  "seed_city_indices": [
+    0
+  ],
+  "scenario_name": "covid_natural",
+  "city_count": 51,
+  "n_people_per_city": 5000,
+  "vmax_shared": 45.96,
+  "country_filter": "Nigeria"
+}

@@ -353,6 +353,8 @@ export default function SimulationTab() {
   const didLoadLatest = useRef(false);
   // Sync mode: when the server returns full results in the POST response
   const [syncData, setSyncData] = useState(null);
+  // Base URL for precomputed frame PNGs (e.g. /precomputed/frames/nigeria-covid-natural)
+  const [frameBaseUrl, setFrameBaseUrl] = useState(null);
 
   // On mount, show the intro modal for demo
   useEffect(() => {
@@ -387,6 +389,7 @@ export default function SimulationTab() {
     try {
       setAppState(APP_STATES.RUNNING);
       setSyncData(null);
+      setFrameBaseUrl(null);
 
       const response = await fetch('/api/simulate/absdes', {
         method: 'POST',
@@ -430,6 +433,7 @@ export default function SimulationTab() {
     setAppState(APP_STATES.CONFIGURE);
     setSessionId(null);
     setSyncData(null);
+    setFrameBaseUrl(null);
     setError(null);
   }, []);
 
@@ -444,11 +448,14 @@ export default function SimulationTab() {
     if (session._precomputedData) {
       const d = session._precomputedData;
       setSyncData({ summary: d.summary, resources: d.resources });
+      // Set frame base URL for precomputed PNGs
+      setFrameBaseUrl(`/precomputed/frames/${session.session_id}`);
       if (session.supply_chain_enabled != null) {
         setParams((prev) => ({ ...prev, enable_supply_chain: session.supply_chain_enabled }));
       }
     } else {
       setSyncData(null);
+      setFrameBaseUrl(null);
     }
     setAppState(APP_STATES.VIEWING);
   }, []);
@@ -607,7 +614,8 @@ export default function SimulationTab() {
               <TimelineViewer
                 sessionId={sessionId}
                 totalDays={totalDays}
-                framesAvailable={!syncData}
+                framesAvailable={!syncData || !!frameBaseUrl}
+                frameBaseUrl={frameBaseUrl}
               />
               <SimulationSummary sessionId={sessionId} data={syncData?.summary} />
               <ResourcePanels sessionId={sessionId} supplyChainEnabled={params.enable_supply_chain} data={syncData?.resources} />

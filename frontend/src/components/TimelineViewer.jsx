@@ -4,11 +4,19 @@ import { Play, Pause, RotateCcw } from 'lucide-react';
 const PLAYBACK_INTERVAL_MS = 150; // ~6.7 fps
 const PRELOAD_AHEAD = 5;
 
-function useImagePreloader(sessionId, totalDays, currentDay) {
+function buildFrameUrl(sessionId, view, day, frameBaseUrl) {
+  if (frameBaseUrl) {
+    const dayStr = String(day).padStart(3, '0');
+    return `${frameBaseUrl}/${view}_day${dayStr}.png`;
+  }
+  return `/api/simulate/absdes/${sessionId}/frame/${view}/${day}`;
+}
+
+function useImagePreloader(sessionId, totalDays, currentDay, frameBaseUrl) {
   const cacheRef = useRef({ actual: {}, observed: {} });
 
   useEffect(() => {
-    if (!sessionId) return;
+    if (!sessionId && !frameBaseUrl) return;
 
     const startDay = currentDay;
     const endDay = Math.min(currentDay + PRELOAD_AHEAD, totalDays);
@@ -16,16 +24,16 @@ function useImagePreloader(sessionId, totalDays, currentDay) {
     for (let day = startDay; day <= endDay; day++) {
       if (!cacheRef.current.actual[day]) {
         const imgActual = new Image();
-        imgActual.src = `/api/simulate/absdes/${sessionId}/frame/actual/${day}`;
+        imgActual.src = buildFrameUrl(sessionId, 'actual', day, frameBaseUrl);
         cacheRef.current.actual[day] = imgActual;
       }
       if (!cacheRef.current.observed[day]) {
         const imgObserved = new Image();
-        imgObserved.src = `/api/simulate/absdes/${sessionId}/frame/observed/${day}`;
+        imgObserved.src = buildFrameUrl(sessionId, 'observed', day, frameBaseUrl);
         cacheRef.current.observed[day] = imgObserved;
       }
     }
-  }, [sessionId, totalDays, currentDay]);
+  }, [sessionId, totalDays, currentDay, frameBaseUrl]);
 
   return cacheRef;
 }
@@ -75,13 +83,13 @@ function FramePanel({ title, description, src, alt }) {
   );
 }
 
-export default function TimelineViewer({ sessionId, totalDays, framesAvailable = true }) {
+export default function TimelineViewer({ sessionId, totalDays, framesAvailable = true, frameBaseUrl = null }) {
   const [currentDay, setCurrentDay] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const intervalRef = useRef(null);
 
   // Preload frames ahead (only when frames are available)
-  useImagePreloader(framesAvailable ? sessionId : null, totalDays, currentDay);
+  useImagePreloader(framesAvailable ? sessionId : null, totalDays, currentDay, frameBaseUrl);
 
   // If no frames available (serverless/sync mode), show placeholder
   if (!framesAvailable) {
@@ -146,8 +154,8 @@ export default function TimelineViewer({ sessionId, totalDays, framesAvailable =
     setCurrentDay(day);
   }, []);
 
-  const actualSrc = `/api/simulate/absdes/${sessionId}/frame/actual/${currentDay}`;
-  const observedSrc = `/api/simulate/absdes/${sessionId}/frame/observed/${currentDay}`;
+  const actualSrc = buildFrameUrl(sessionId, 'actual', currentDay, frameBaseUrl);
+  const observedSrc = buildFrameUrl(sessionId, 'observed', currentDay, frameBaseUrl);
 
   return (
     <div className="space-y-4">
